@@ -1,0 +1,29 @@
+@import 'node_modules/swiper/swiper-bundle';
+@import '../mixins';
+@import '../vars';
+@import '../colors';
+
+.swiper-container {
+    overflow: hidden;
+
+    @include md {
+        overflow: inherit;
+    }
+}
+
+.swiper-button-next, .swiper-button-prev {
+    top: auto;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    display: none;
+}
+
+.swiper-pagination {
+    text-align: left;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 26px;
+    left: 54px;
+}
