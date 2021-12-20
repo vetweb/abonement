@@ -212,3 +212,174 @@ hr {
 .hidden {
 	display: none;
 }
+
+.container {
+	width: 100%;
+	max-width: $container-width;
+	padding: 0 $container-padding-sm;
+	margin: 0 auto;
+
+	@include sm {
+		padding: 0 $container-padding-md;
+	}
+
+	@include md {
+		padding: 0 $container-padding;
+	}
+}
+
+h1, .h1 {
+	font-size: 24px;
+	line-height: 29px;
+	font-weight: 700;
+
+	@include sm {
+		font-size: 48px;
+		line-height: 57px;
+	}
+}
+
+h2, .h2 {
+	font-size: 24px;
+	line-height: 29px;
+	font-weight: 700;
+
+	@include sm {
+		font-size: 28px;
+		line-height: 33px;
+	}
+
+	@include md {
+		font-size: 48px;
+		line-height: 57px;
+	}
+}
+
+h3, .h3 {
+	font-size: 24px;
+	line-height: 29px;
+	font-weight: 500;
+
+	@include sm {
+		font-size: 28px;
+		line-height: 33px;
+	}
+
+	@include md {
+		font-size: 42px;
+		line-height: 50px;
+	}
+}
+
+h4, .h4 {
+	font-size: 24px;
+	line-height: 29px;
+	font-weight: 500;
+
+	@include sm {
+		font-size: 28px;
+		line-height: 33px;
+	}
+
+	@include md {
+		font-size: 36px;
+		line-height: 43px;
+	}
+}
+
+h5, .h5 {
+	font-size: 18px;
+	line-height: 21px;
+	font-weight: 500;
+}
+
+h6, .h6 {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.text-xs {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+
+	@include sm {
+		font-size: 16px;
+		line-height: 19px;
+	}
+}
+
+.text-s {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+
+	@include sm {
+		font-size: 16px;
+		line-height: 19px;
+	}
+
+	@include md {
+		font-size: 18px;
+		line-height: 24px;
+	}
+}
+.text-m {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+
+	@include md {
+		font-size: 18px;
+		line-height: 26px;
+	}
+}
+
+//price
+.text-l {
+	font-size: 26px;
+	line-height: 31px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+
+	@include sm {
+		font-size: 32px;
+		line-height: 39px;
+	}
+}
+
+//text rating
+.text-m {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 30px;
+
+	@include sm {
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+	@include md {
+		font-size: 18px;
+		line-height: 30px;
+	}
+}
+
+//text button
+.button-xs {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.button-s {
+	font-weight: 800;
+	font-size: 14px;
+	line-height: 17px;
+
+	@include md {
+		font-size: 18px;
+		line-height: 21px;
+	}
+}
