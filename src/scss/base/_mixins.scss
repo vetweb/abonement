@@ -78,8 +78,14 @@
 	}
 }
 
-@mixin cxs {
+@mixin csx {
 	@media screen and (min-width: #{$csx_width}) {
+		@content;
+	}
+}
+
+@mixin csx-down  {
+	@media screen and (max-width: #{$csx_width - 1}) {
 		@content;
 	}
 }
@@ -122,6 +128,18 @@
 
 @mixin lg-inner {
 	@media screen and (min-width: #{$lg_width_inner}) {
+		@content;
+	}
+}
+
+@mixin lgx {
+	@media screen and (min-width: #{$lgx_width}) {
+		@content;
+	}
+}
+
+@mixin lgx-down {
+	@media screen and (max-width: #{$lgx_width - 1}) {
 		@content;
 	}
 }
