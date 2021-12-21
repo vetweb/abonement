@@ -1,0 +1,15 @@
+.favorites-block {
+  width: 40%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #646A7D;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.favorites-block img {
+  width: 20%;
+  height: 21%;
+}
