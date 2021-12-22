@@ -1,0 +1,14 @@
+.circle-el {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: auto;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include lg {
+    height: 92px;
+  }
+}
