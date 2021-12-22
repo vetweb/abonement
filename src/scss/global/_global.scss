@@ -336,8 +336,19 @@ h6, .h6 {
 	}
 }
 
-//price
 .text-l {
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 26px;
+
+	@include sm {
+		font-size: 24px;
+		line-height: 29px;
+	}
+}
+
+//price
+.text-xl {
 	font-size: 26px;
 	line-height: 31px;
 	font-weight: 700;

@@ -1,0 +1,153 @@
+.index-s7 {
+  padding: $indent-60 0 $indent-130;
+  background-color: $blue-light;
+
+  @include sm {
+    padding-bottom: $indent-215;
+  }
+
+  @include lg {
+    padding-bottom: $indent-120;
+  }
+}
+
+.index-s7 .index-s7__top {
+  margin-bottom: $indent-115;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include sm {
+    margin-bottom: $indent-30;
+  }
+
+  @include lg {
+    margin-bottom: $indent-60;
+  }
+}
+
+.circles-block {
+  display: grid;
+  justify-content: center;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, 60px);
+  margin-bottom: $indent-50;
+
+  @include lg {
+    grid-gap: 14px;
+    grid-template-columns: repeat(auto-fit, 92px);
+    margin-bottom: $indent-180;
+  }
+}
+
+.link-s {
+  display: inline-flex;
+
+  @include lgx {
+    display: none;
+  }
+}
+
+.index-s7__top .button-rect {
+  display: none;
+
+  @include lgx {
+    display: inline-flex;
+  }
+}
+
+.form-gray {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $indent-25 $indent-20 $indent-20;
+  background: $gray-light;
+  box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
+  border-radius: 15px;
+  position: relative;
+
+  @include sm {
+    align-items: flex-start;
+    padding: $indent-30 $indent-30 $indent-35;
+    flex-direction: row;
+  }
+
+  @include lg {
+    flex-direction: row;
+    padding: $indent-90 $indent-110;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.form-gray__inner {
+  //order: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @include md-down {
+    order: 2;
+    flex-direction: column;
+  }
+}
+
+.form-gray .button-rect {
+  border-radius: 5px;
+  color: #ffffff;
+  padding: $indent-15 $indent-40;
+
+  @include lg {
+    padding: $indent-20 $indent-40;
+  }
+}
+
+.form-gray  .text-l {
+  margin: 0 0 20px 0;
+
+  @include sm-down {
+    text-align: center;
+  }
+
+  @include lg {
+    margin: 0 10px 0 0;
+  }
+}
+
+.form-gray__img {
+  position: relative;
+
+  @include sm-down {
+    order: 1;
+  }
+
+  @include lgx {
+    position: absolute;
+    top: -50%;
+    right: 0;
+    z-index: 1;
+    width: 149px;
+    height: 389px;
+    background: red;
+  }
+}
+
+.form-gray__input {
+  width: 100%;
+  max-width: 405px;
+  padding: 11px 16px;
+  margin: 0 0 15px 0;
+  border: 1px solid $blue-bg3;
+  border-radius: 5px;
+
+  @include lg {
+    margin: 0 10px 0 0;
+  }
+}
+
+.form-gray__input::placeholder {
+  color: $blue-bg3;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+}
