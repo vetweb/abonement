@@ -11,6 +11,54 @@
 @@include('components/blocks/page/_header.html')
 <main class="main">
 <!--    @@include('components/blocks/bem/_metro-block.html')-->
+    <section class="index-s5">
+        <div class="container">
+            <div class="index-s__top">
+                <h2 class="h2">Топ абонементов</h2>
+                <a href="#" class="link-s">Показать все</a>
+            </div>
+            <div class="grid-cards__list">
+                <div class="card-m__list-el card-m">
+                    <div class="card-m__el-inner">
+                        <div class="card-m__el-images">
+                            <div class="card-m__el-img" style="background-image: url('src/images/card-m-bg1.png');">
+                                <div class="card-m__el-top">
+                                    <span class="card-m__el-title text-sx">Заголовок абонемента</span>
+                                    <div class="favorites-block">
+                                        <img src="src/svg/heart.svg" alt="">
+                                        <!--    <span class="feedback_img">-->
+                                        <!--        <svg viewBox="0 0 20 21">-->
+                                        <!--            <use xlink:href="#heart"></use>-->
+                                        <!--        </svg>-->
+                                        <!--    </span>-->
+                                    </div>
+                                </div>
+                                <div class="card-m__el-bottom">
+                                    <div class="card-m__el-tags">
+                                        <div class="card-m__el-tag online" style="background-color: #2C4CA1">Онлайн</div>
+                                        <div class="card-m__el-tag offline" style="background-color: #051138">Оффлайн</div>
+                                    </div>
+                                    <div class="rating-block">
+                                        <div class="rating-block__el"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-m__el-content">
+                            <div class="card-m__el-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, seddo eiusmod tempor</div>
+                            @@include('components/blocks/bem/_metro-block.html')
+                            @@include('components/blocks/bem/_icon-block.html')
+                        </div>
+                        <div class="button-full btn-blue" type="button">
+                            <img src="src/svg/cart.svg" class="button-full__i" alt="">
+                            <span class="value button-s">1000</span>
+                            <span class="currency button-s ">Br</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="index-s6">
         <div class="color-block dark-bg">
             <div class="container-half">
@@ -57,7 +105,7 @@
     </section>
     <section class="index-s7">
         <div class="container">
-            <div class="index-s7__top">
+            <div class="index-s__top index-s7__top">
                 <h2 class="h2">Виды спорта</h2>
                 <a href="#" class="link-s">Показать все</a>
                 <button class="button-rect btn-blue btn">Подробнее о нас</button>

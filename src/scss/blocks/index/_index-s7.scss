@@ -11,7 +11,11 @@
   }
 }
 
-.index-s7 .index-s7__top {
+.index-s__top h2::first-letter {
+  color: $blue;
+}
+
+.index-s__top {
   margin-bottom: $indent-115;
   display: flex;
   align-items: center;
@@ -40,7 +44,7 @@
   }
 }
 
-.link-s {
+.index-s7 .link-s {
   display: inline-flex;
 
   @include lgx {
