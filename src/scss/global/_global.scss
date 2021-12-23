@@ -228,6 +228,19 @@ hr {
 	}
 }
 
+.container-half {
+	padding: 0 $container-padding-sm;
+	margin: 0 auto;
+
+	@include sm {
+		padding: 0 $container-padding-md;
+	}
+
+	@include md {
+		padding: 0 $container-padding;
+	}
+}
+
 h1, .h1 {
 	font-size: 24px;
 	line-height: 29px;
@@ -383,6 +396,17 @@ h6, .h6 {
 	line-height: 17px;
 }
 
+.title-block {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 21px;
+
+	@include sm {
+		font-size: 30px;
+		line-height: 36px;
+	}
+}
+
 //text button
 .button-xs {
 	font-weight: 600;
@@ -392,6 +416,17 @@ h6, .h6 {
 
 .button-s {
 	font-weight: 800;
+	font-size: 14px;
+	line-height: 17px;
+
+	@include md {
+		font-size: 18px;
+		line-height: 21px;
+	}
+}
+
+.text-sx {
+	font-weight: 400;
 	font-size: 14px;
 	line-height: 17px;
 

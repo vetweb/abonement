@@ -1,3 +1,13 @@
+button {
+  appearance: none;
+  border: none;
+  padding: 0;
+  font-size: inherit;
+  line-height: inherit;
+  outline: none;
+  background: transparent;
+}
+
 .btn {
 
 }
@@ -5,3 +15,9 @@
 .btn-blue {
   background-color: $blue;
 }
+
+.button-rect {
+  padding: $indent-20 $indent-25;
+  color: $white;
+}
+

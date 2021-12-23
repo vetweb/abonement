@@ -1,0 +1,144 @@
+.index-s6 {
+  display: flex;
+  flex-direction: column;
+
+  @include lg {
+    flex-direction: row;
+  }
+}
+
+.index-s6 .container-half {
+  display: flex;
+
+  @include lg {
+    flex-wrap: wrap;
+  }
+}
+
+.color-block.dark-bg {
+  background-color: $blue;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: $indent-30 0 $indent-40;
+
+  @include lg {
+    width: 50%;
+    padding: $indent-50 0 $indent-40;
+  }
+
+  @include sm {
+    padding: $indent-80 0 $indent-90;
+    flex-direction: row;
+  }
+}
+
+.color-block.dark-bg .h1 {
+  padding-bottom: $indent-30;
+
+  @include sm {
+    padding-bottom: $indent-25;
+  }
+}
+
+.blockquote-block {
+  display: flex;
+  min-height: 147px;
+  height: auto;
+  position: relative;
+}
+
+.blockquote-block__desc {
+  margin-left: $indent-10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include sm {
+    margin-left: $indent-25;
+  }
+}
+
+.blockquote-block__text:not(:last-child) {
+  margin-bottom: $indent-10;
+
+  @include sm {
+    margin-bottom: $indent-20;
+  }
+}
+
+.color-block.dark-bg .color-block__col50 {
+  width: 50%;
+  padding: 0 $indent-20;
+
+  @include lg {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.color-block__col50--img {
+  background-color: red;
+  width: 100%;
+  height: 100px;
+}
+
+.blockquote-block__line {
+  width: 1px;
+  height: 100%;
+  background-color: $white;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.color-block.light-bg {
+  background-color: $turquoise;
+  color: $white;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @include lg {
+    width: 50%;
+  }
+}
+
+.color-block.light-bg .color-block__col50 {
+  width: 100%;
+  padding-top: $indent-20;
+  padding-bottom: $indent-25;
+  padding-left: $indent-10;
+  padding-right: $indent-10;
+  border: 1px solid $white;
+
+  @include sm {
+    width: 50%;
+    padding-bottom: $indent-35;
+    padding-left: $indent-35;
+    padding-right: $indent-35;
+  }
+
+  @include lg {
+    padding-top: $indent-80;
+    padding-bottom: $indent-120;
+    padding-left: $indent-25;
+    padding-right: $indent-25;
+  }
+}
+
+.color-block__col50 .title-block {
+  display: inline-block;
+  margin-bottom: 11px;
+
+  @include sm {
+    margin-bottom: 13px;
+  }
+
+  @include lg {
+    margin-bottom: 17px;
+  }
+}
