@@ -11,7 +11,7 @@ padding: 0 0 $indent-80;
 .card-m__list-el,
 .card-m {
   //width: 50%;
-  //width: 140px;
+  width: 140px;
   height: 194px;
   //flex: 0 0 auto;
   order: 1;
@@ -19,14 +19,14 @@ padding: 0 0 $indent-80;
   display: flex;
 
   @include md {
-    width: 33.33%;
-    //width: 210px;
+    //width: 33.33%;
+    width: 210px;
     height: 262px;
   }
 
   @include lg {
-    width: 25%;
-    //width: 297px;
+    //width: 25%;
+    width: 297px;
     min-height: 363px;
   }
 }
