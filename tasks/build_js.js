@@ -29,5 +29,5 @@ module.exports = function build_js() {
 			this.emit('end')
 		})
 		.pipe(concat('main.min.js'))
-		.pipe(dest('build/new/js/'))
+		.pipe(dest('build/js/'))
 }

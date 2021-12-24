@@ -33,6 +33,6 @@ module.exports = function dev_js() {
 		.pipe(uglify())
 		.pipe(concat('main.min.js'))
 		.pipe(map.write('../sourcemaps'))
-		.pipe(dest('build/new/js/'))
+		.pipe(dest('build/js/'))
 		.pipe(bs.stream())
 }
