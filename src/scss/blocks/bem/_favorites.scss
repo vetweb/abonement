@@ -4,12 +4,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #646A7D;
+  background-color: rgba(0, 0, 0, 0.3);;
   border-radius: 50%;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
-.favorites-block img {
+.feedback_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feedback_img svg {
   width: 20px;
   height: 21px;
+  color: $gold;
 }
+
+
+.feedback_img.feedback_img--gray svg {
+  color: $gray-l;
+}
+
+

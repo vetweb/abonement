@@ -11,13 +11,24 @@
   width: 32px;
   height: 32px;
   display: flex;
-  color: #fff;
   align-items: center;
   justify-content: center;
 }
 
+.soc-list__icon a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
 .soc-list__icon:not(:last-child) {
   margin-right: 8px;
+}
+
+.soc-list__icon svg {
+  width: 10px;
+  height: 10px;
 }
 
 .soc-list__icon1 {

@@ -8,20 +8,24 @@ button {
   background: transparent;
 }
 
-.btn {
-
-}
-
 .btn-blue {
   background-color: $blue;
 }
 
 .button-rect {
-  padding: $indent-20 $indent-25;
+  padding: $indent-20 0;
   color: $white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .button-full {
   width: 100%;
 }
 
+.button-max {
+
+}

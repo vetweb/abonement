@@ -1,0 +1,28 @@
+.rating-block {
+  width: 64px;
+  height: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+
+.rating-block__el {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating-block__el svg {
+  width: 9px;
+  height: 9px;
+  color: $orange;
+}
+
+.rating-block__el:not(:last-child) {
+  margin-right: 4px;
+}
+
+.rating-block__el.active svg #star-i {
+  fill: $orange;
+}

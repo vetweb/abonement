@@ -1,0 +1,76 @@
+.index-s3 {
+  padding: 0 0 $indent-80;
+}
+
+.index-s3 .card-m-slider {
+  margin-bottom: $indent-30;
+
+  @include sm {
+    margin-bottom: $indent-40;
+  }
+
+  @include lg {
+    margin-bottom: $indent-65;
+  }
+}
+
+.swiper-slide.card-l__list-el {
+  width: calc(51% - 10px);
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include lg {
+    width: calc(51% - 30px);
+    min-height: 235px;
+  }
+
+  @include sm-down {
+    min-width: 300px;
+  }
+}
+
+.card-l {
+  padding: $indent-65 $indent-20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide.card-l__list-el:not(:last-child) {
+  margin-right: 10px;
+
+  @include lg {
+    margin-right: 30px;
+  }
+}
+
+.button-max {
+  background: rgba(255, 255, 255, 0.71);
+  backdrop-filter: blur(10px);
+  border-radius: 26px;
+  max-width: 445px;
+  width: 100%;
+  padding: $indent-15 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+
+  @include sm {
+    padding: $indent-35 0;
+  }
+
+  @include lg {
+    padding: $indent-35 0;
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+.card-l-slider {
+  position: relative;
+}

@@ -19,6 +19,7 @@
   margin-bottom: 26px;
   display: flex;
   flex-direction: row;
+  align-items: center;
 
   @include md {
     margin-bottom: 41px;
@@ -269,10 +270,6 @@
     padding-bottom: $indent-40;
   }
 }
-.footer-icon__el img {
-  width: 30px;
-  height: 30px;
-}
 
 .cont-row {
   display: flex;
@@ -286,7 +283,7 @@
   }
 }
 
-.cont-row img {
+.cont-row svg {
   width: 20px;
   height: 20px;
 }

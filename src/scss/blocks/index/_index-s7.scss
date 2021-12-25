@@ -16,7 +16,7 @@
 }
 
 .index-s__top {
-  margin-bottom: $indent-115;
+  margin-bottom: $indent-15;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -57,7 +57,13 @@
 
   @include lgx {
     display: inline-flex;
+    position: relative;
+    z-index: 2;
   }
+}
+
+.index-s7__top {
+  position: relative;
 }
 
 .form-gray__inner {
@@ -88,28 +94,29 @@
   //order: 1;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 
-  @include md-down {
+  @include lg-down {
     order: 2;
     flex-direction: column;
   }
 }
 
-.form-gray__inner .button-rect {
+.index-s7 .form-gray .button-rect {
   border-radius: 5px;
   color: #ffffff;
-  padding: $indent-15 $indent-40;
+  padding: $indent-15 0;
+  width: 100%;
+  max-width: 180px;
 
   @include lg {
-    padding: $indent-20 $indent-40;
+    padding: $indent-10 0;
   }
 }
 
-.form-gray__inner .text-l {
+.form-gray__inner .text-m {
   margin: 0 0 20px 0;
 
   @include sm-down {
@@ -123,32 +130,36 @@
 
 .form-gray__img {
   position: relative;
+  width: 105px;
+  height: 275px;
 
   @include sm-down {
     order: 1;
+    width: 86px;
+    height: 226px;
   }
 
   @include lgx {
     position: absolute;
-    top: -50%;
+    top: -60%;
     right: 0;
     z-index: 1;
-    width: 149px;
-    height: 389px;
-    background: red;
+    width: 150px;
+    height: 390px;
   }
 }
 
 .form-gray__input {
   width: 100%;
-  max-width: 405px;
+  max-width: 421px;
   padding: 11px 16px;
-  margin: 0 0 15px 0;
+  margin: 0 10px 15px 0;
   border: 1px solid $blue-bg3;
   border-radius: 5px;
 
   @include lg {
     margin: 0 10px 0 0;
+    max-width: 405px;
   }
 }
 
@@ -161,4 +172,8 @@
 
 .index-s7 .button-rect {
   border-radius: 15px;
+}
+
+.index-s7__top .button-rect {
+  max-width: 180px;
 }
