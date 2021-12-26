@@ -33,4 +33,31 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 
+	//js-banner-slider
+	const bannerSwiper = document.querySelector('.js-banner-slider');
+	const bannerSwipers = document.querySelectorAll('.js-sbanner-slider');
+	let myBannerSwiper;
+
+	if (bannerSwiper) {
+		createBannerSwiper();
+	}
+
+	function createBannerSwiper() {
+		bannerSwipers.forEach((el) => {
+			myBannerSwiper = new Swiper(el, {
+				direction: "horizontal",
+				loop: true,
+				speed: 1000,
+				slidesPerView: 1,
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+			});
+		});
+	}
 });
