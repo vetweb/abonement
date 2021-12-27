@@ -10,20 +10,20 @@
   flex-shrink: 0;
 }
 
-.feedback_img {
+.feedback__img {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.feedback_img svg {
+.feedback__img svg {
   width: 20px;
   height: 21px;
   color: $gold;
 }
 
 
-.feedback_img.feedback_img--gray svg {
+.feedback__img.feedback_img--gray svg {
   color: $gray-l;
 }
 

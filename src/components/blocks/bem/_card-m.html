@@ -1,0 +1,61 @@
+<div class="card-m card">
+    <div class="card__el-inner card-m__el-inner">
+        <div class="card-m__el-images">
+            <div class="card-m__el-img" style="background-image: url('/img/bg1-sl.png');">
+                <div class="card-m__el-top">
+                    <span class="card-m__el-title text-sx">Заголовок абонемента</span>
+                    @@include('_favorites.html')
+                </div>
+                <div class="card-m__el-bottom">
+                    <div class="card-m__el-tags">
+                        <div class="card-m__el-tag online"
+                             style="background-color: #2C4CA1">Онлайн
+                        </div>
+                        <div class="card-m__el-tag offline"
+                             style="background-color: #051138">Оффлайн
+                        </div>
+                    </div>
+                    <div class="rating-block">
+                        <span class="rating-block__el">
+                            <svg viewBox="0 0 12 12">
+                                <use xlink:href="/img/sprite.svg#star"></use>
+                            </svg>
+                        </span>
+                        <span class="rating-block__el">
+                            <svg viewBox="0 0 12 12">
+                                <use xlink:href="/img/sprite.svg#star"></use>
+                            </svg>
+                        </span>
+                        <span class="rating-block__el">
+                            <svg viewBox="0 0 12 12">
+                                <use xlink:href="/img/sprite.svg#star"></use>
+                            </svg>
+                        </span>
+                        <span class="rating-block__el">
+                            <svg viewBox="0 0 12 12">
+                                <use xlink:href="/img/sprite.svg#star"></use>
+                            </svg>
+                        </span>
+                        <span class="rating-block__el">
+                            <svg viewBox="0 0 12 12">
+                                <use xlink:href="/img/sprite.svg#star"></use>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-m__el-content">
+            <div class="card-m__el-desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit,seddo eiusmod tempor
+            </div>
+            @@include('_metro-block.html')
+            @@include('_icon-block.html')
+        </div>
+        <div class="button-full btn-blue" type="button">
+            <img src="/img/cart.svg" class="button__i" alt="">
+            <span class="value button-s">1000</span>
+            <span class="currency button-s ">Br</span>
+        </div>
+    </div>
+</div>
