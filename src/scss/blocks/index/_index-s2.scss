@@ -197,6 +197,19 @@
 }
 
 .banner-slider__mask {
+  &:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    mask-image: url("/img/mask.svg");
+    mask-size: 100%;
+    mask-repeat: no-repeat;
+    z-index: 3;
+    background: white;
+  }
   mask-image: url("/img/mask2.svg");
   mask-size: 70%;
   mask-repeat: no-repeat;
@@ -231,6 +244,7 @@
 
 .main-banner__col-small .main-banner__col20-col {
   padding: $indent-20 $indent-10;
+  cursor: pointer;
 
   @include lg {
     padding: $indent-20 $indent-25;
