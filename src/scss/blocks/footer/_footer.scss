@@ -1,4 +1,4 @@
-.footer-section {
+.footer {
   background-color: $blue-bg;
   color: $white;
   padding: $indent-60 0 $indent-40;
@@ -15,23 +15,6 @@
   }
 }
 
-.logo-block {
-  margin-bottom: 26px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
-  @include md {
-    margin-bottom: 41px;
-  }
-}
-
-@include lg {
-  .cont-row:not(:last-child) {
-    margin-bottom: 20px;
-  }
-}
-
 .cont-block {
   display: flex;
   flex-direction: row;
@@ -39,13 +22,6 @@
   @include lg {
     flex-direction: column;
   }
-}
-
-.logo-block__title {
-  text-transform: uppercase;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 24px;
 }
 
 .footer-top {
@@ -310,11 +286,6 @@
   @include sm {
     margin-bottom: 29px;
   }
-}
-
-.logo-block img {
-  width: 30px;
-  height: 40px;
 }
 
 .footer-logo {

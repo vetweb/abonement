@@ -1,0 +1,28 @@
+.logo-block {
+  margin-bottom: 26px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @include md {
+    margin-bottom: 41px;
+  }
+}
+
+@include lg {
+  .cont-row:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.logo-block img {
+  width: 30px;
+  height: 40px;
+}
+
+.logo-block__title {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+}
