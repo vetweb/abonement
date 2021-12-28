@@ -108,7 +108,7 @@
   position: absolute;
   top: 0;
   left: $indent-10;
-  z-index: 2;
+  z-index: 3;
   max-width: 176px;
   width: 100%;
 
@@ -149,9 +149,19 @@
 }
 
 .banner-slider__mask {
-  mask-image: url("/img/mask.svg");
-  mask-size: 70%;
-  mask-repeat: no-repeat;
+  &:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    mask-image: url("/img/mask.svg");
+    mask-size: 100%;
+    mask-repeat: no-repeat;
+    z-index: 3;
+    background: white;
+  }
 }
 
 .main-banner__col-small .card-s__el-img {
@@ -179,6 +189,7 @@
 
 .main-banner__col-small .main-banner__col20-col {
   padding: $indent-20 $indent-10;
+  cursor: pointer;
 
   @include lg {
     padding: $indent-20 $indent-25;
