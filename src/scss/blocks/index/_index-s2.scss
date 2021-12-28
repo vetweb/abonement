@@ -94,7 +94,6 @@
   }
 }
 
-
 .main-banner__col-small .main-banner__col20-visible .main-banner__col20-col {
   display: flex;
   flex-direction: column;
@@ -105,14 +104,54 @@
   }
 }
 
-.banner-slider__mask {
+.banner-slider__inner {
+  position: absolute;
+  top: 0;
+  left: $indent-10;
+  z-index: 2;
+  max-width: 176px;
   width: 100%;
-  height: 100%;
+
+  @include sm {
+    max-width: 325px;
+    left: $indent-50;
+  }
+}
+
+.banner-slider__inner .button-s {
+  margin-bottom: $indent-20;
+
+  @include sm {
+    margin-bottom: $indent-75;
+
+  }
+}
+
+.banner-slider__inner .h1 {
+  margin-bottom: $indent-15;
+
+  @include xl {
+    margin-bottom: $indent-40;
+  }
 }
 
 .banner-slider__img {
+  position: relative;
+  max-width: 100%;
   width: 100%;
-  height: 100%;
+  height: auto;
+  z-index: 2;
+
+  @include xl {
+    width: 97%;
+    max-width: 100%;
+  }
+}
+
+.banner-slider__mask {
+  mask-image: url("/img/mask.svg");
+  mask-size: 70%;
+  mask-repeat: no-repeat;
 }
 
 .main-banner__col-small .card-s__el-img {
