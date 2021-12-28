@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	//js-banner-slider
 	const bannerSwiper = document.querySelector('.js-banner-slider');
-	const bannerSwipers = document.querySelectorAll('.js-sbanner-slider');
+	const bannerSwipers = document.querySelectorAll('.js-banner-slider');
 	let myBannerSwiper;
 
 	if (bannerSwiper) {

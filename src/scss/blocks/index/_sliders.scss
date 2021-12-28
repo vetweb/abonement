@@ -28,7 +28,8 @@
 
 .card-m-slider,
 .card-s-slider,
-.card-l-slider {
+.card-l-slider,
+.banner-slider {
   position: relative;
 }
 
@@ -41,6 +42,19 @@
   height: 50px;
   border-radius: 5px;
   background-color: $blue;
+  cursor: pointer;
+}
+
+.swiper-btn__wrap .swiper-button-prev.btn__prev,
+.swiper-btn__wrap .swiper-button-next.btn__next {
+  position: relative;
+  z-index: 3;
+  left: 0;
+  top: 14px;
+
+  @include sm-down {
+    z-index: 10;
+  }
 }
 
 .card-m-slider .swiper-button-prev.btn__prev,
@@ -89,3 +103,27 @@
     display: none;
   }
 }
+
+.banner-slider .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+  z-index: 4;
+  width: max-content;
+  transform: translateX(-50%);
+  left: 50%;
+
+  @include sm-down {
+    bottom: $indent-15;
+  }
+}
+
+.banner-slider .swiper-pagination-bullet {
+  border: 1px solid $blue;
+  background-color: transparent;
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: $gold;
+  border: 1px solid transparent;
+}
+
