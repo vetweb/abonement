@@ -73,7 +73,13 @@
 }
 
 @mixin xs {
-	@media screen and (min-width: #{$xs_width}) {
+	@media screen and (max-width: #{$xs_width}) {
+		@content;
+	}
+}
+
+@mixin xs-down  {
+	@media screen and (max-width: #{$xs_width - 1}) {
 		@content;
 	}
 }

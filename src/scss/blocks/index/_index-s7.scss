@@ -91,7 +91,6 @@
 }
 
 .form-gray {
-  //order: 1;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -176,4 +175,18 @@
 
 .index-s7__top .button-rect {
   max-width: 180px;
+}
+
+.index-s7 .index-s__top-img {
+  display: none;
+
+  @include lg {
+    display: block;
+    right: 92px;
+    top: 0;
+  }
+}
+
+.index-s7 .index-s__top-img img {
+  transform: rotate(8deg);
 }

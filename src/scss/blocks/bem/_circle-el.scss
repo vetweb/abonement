@@ -12,21 +12,3 @@
     height: 92px;
   }
 }
-
-.index-s__top-img {
-  display: none;
-
-  @include lg {
-    display: block;
-    width: 200px;
-    position: absolute;
-    right: 92px;
-    top: 0;
-    z-index: 1;
-  }
-}
-
-.index-s__top-img img {
-    width: 100%;
-    transform: rotate(8deg);
-}
