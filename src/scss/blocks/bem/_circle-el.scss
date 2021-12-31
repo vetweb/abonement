@@ -1,14 +1,40 @@
 .circle-el {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   overflow: hidden;
-  width: auto;
+  max-width: 60px;
   height: 60px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  cursor: pointer;
+  background-color: $white;
+  position: relative;
+  transition: all .3s;
 
   @include lg {
     height: 92px;
+    max-width: 92px;
   }
+}
+
+.circle-el:active,
+.circle-el:hover {
+  background-color: $blue;
+}
+
+.circle-el svg {
+  width: 45px;
+  height: auto;
+  color: $blue;
+  transition: all .3s;
+
+  @include lg {
+    width: 60px;
+    height: 70px;
+  }
+}
+
+.circle-el:active svg,
+.circle-el:hover svg {
+  color: $white;
 }
