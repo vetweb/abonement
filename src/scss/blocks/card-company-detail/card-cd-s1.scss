@@ -1,0 +1,57 @@
+.grid-row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @include xl {
+    flex-direction: row;
+  }
+}
+
+.grid-col50 {
+  width: 100%;
+
+  @include xl {
+    width: 50%;
+  }
+}
+
+.grid-icon {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: -10px;
+
+  @include sm {
+    flex-direction: row;
+    margin: -15px;
+  }
+}
+
+.grid-icon__el {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+
+  @include sm {
+    width: 50%;
+    padding: 15px;
+  }
+}
+
+.grid-icon-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-icon__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: $blue-bg;
+  margin-right: $indent-10;
+}

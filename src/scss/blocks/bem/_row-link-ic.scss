@@ -1,0 +1,17 @@
+.row-link-ic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.row-link-ic__title {
+  color: $blue;
+  margin-right: $indent-15;
+}
+
+.row-link-ic svg {
+  width: 6px;
+  height: 12px;
+  color: $blue;
+}

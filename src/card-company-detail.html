@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+@@include('components/blocks/page/_head.html',{
+"lang":"en",
+"title":"Абонемент",
+"description":"Абонемент",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+@@include('components/blocks/page/_header.html')
+<main class="main">
+  <section class="card-cd-s1">
+      <div class="card-cd-s1__row grid-row">
+          <div class="card-cd-s1__col50 grid-col50">
+              <h3 class="h3">Фитнес зал + баня</h3>
+              <div class="grid-column">
+                  @@include('components/blocks/bem/_row-link-ic.html')
+                  <div class="grid-row">
+                      <p class="grid-col50 grid-row__address">г. Свилочь, ул. К.Калиновского 2</p>
+                      <a href="#" class="link-s grid-row__link" >Посмотреть на карте</a>
+                  </div>
+              </div>
+              <div class="grid-icon">
+                  <div class="grid-icon__el">
+                      <div class="grid-icon__image">
+                          <img src="/img/grid-icon1.svg" alt="">
+                      </div>
+                      <div class="grid-icon-info">
+                          <span class="link-s">Кол-во в месяц</span>
+                          <span class="text-sx">8 занятий</span>
+                      </div>
+                  </div>
+                  <div class="grid-icon__el">
+                      <div class="grid-icon__image">
+                          <img src="/img/grid-icon2.svg" alt="">
+                      </div>
+                      <div class="grid-icon-info">
+                          <span class="link-s">Дни занятий</span>
+                          <span class="text-sx">Пн, Пт</span>
+                      </div>
+                  </div>
+                  <div class="grid-icon__el">
+                      <div class="grid-icon__image">
+                          <img src="/img/grid-icon3.svg" alt="">
+                      </div>
+                      <div class="grid-icon-info">
+                          <span class="link-s">Начало занятий</span>
+                          <span class="text-sx">16:00, 20:00</span>
+                      </div>
+                  </div>
+                  <div class="grid-icon__el">
+                      <div class="grid-icon__image">
+                          <img src="/img/grid-icon4.svg" alt="">
+                      </div>
+                      <div class="grid-icon-info">
+                          <span class="link-s">Тип занятия</span>
+                          <span class="text-sx">Индивидуальное</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="card-cd-s1__col50 grid-col50"></div>
+      </div>
+  </section>
+</main>
+@@include('components/blocks/page/_footer.html')
+@@include('components/blocks/page/_scripts.html')
+</body>
+
+</html>
