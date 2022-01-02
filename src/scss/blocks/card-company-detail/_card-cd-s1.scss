@@ -1,17 +1,28 @@
 .card-cd-s1 {
-  padding-top: 60px;
-  //@include lg {
-  //  padding-top: 90px;
-  //}
+  padding: 90px 0 50px;
+
+  @include sm {
+    padding: 120px 0 85px;
+  }
+
+  @include lg {
+    padding: 90px 0 120px;
+  }
 }
 
 .grid-row {
   display: flex;
+  flex-direction: row;
+}
+
+.card-cd-s1__row.grid-row {
   flex-direction: column;
   flex-wrap: wrap;
+  width: 100%;
 
   @include lg {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -19,7 +30,7 @@
   width: 100%;
 
   @include lg {
-    width: 50%;
+    width: 48%;
   }
 }
 
@@ -37,10 +48,10 @@
   }
 }
 
-.card-cd-s1 .grid-row {
-  justify-content: flex-start;
-  width: 100%;
-}
+//.card-cd-s1 .grid-row {
+//  justify-content: flex-start;
+//  width: 100%;
+//}
 
 .grid-row__address {
   margin-right: $indent-15;
@@ -60,6 +71,7 @@
 
 .card-cd-s1__col50.grid-col50.col50-reverse {
   order: 2;
+  margin-bottom: 0;
 
   @include lg {
     order: 1;
@@ -68,6 +80,10 @@
 
 .card-cd-s1__col50.grid-col50 {
   order: 1;
+
+  @include lg-down {
+    margin-bottom: $indent-10;
+  }
 
   @include lg {
    order: 2;
@@ -150,6 +166,19 @@
   color: $gray-tx;
 }
 
+.button-block__sum {
+  display: flex;
+}
+
+.button-block__info {
+  display: flex;
+  align-items: center;
+}
+
+.card-cd-s1 .currency.button-s {
+  margin-right: $indent-20;
+}
+
 .button-block__sum-repeal {
   color: $gray-b;
   text-decoration: line-through;
@@ -164,11 +193,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: $indent-20 $indent-35;
+  background-color: $white;
+  border-radius: 15px;
+  margin-top: $indent-40;
 }
 
 .button-block .button-rect {
   max-width: 136px;
   border-radius: 15px;
+  padding: $indent-10;
 }
 
 .swiper-slide.xs-slide {
@@ -182,7 +216,16 @@
   z-index: 2;
 }
 
-.card-cd-s1 .swiper-slide.xs-slide .circle-el {
+.xs__slider {
+  position: relative;
+}
+
+.xs-slider.swiper-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-cd-s1 .xs__slider .circle-el {
   position: absolute;
   top: 0;
   left: 0;
@@ -202,7 +245,7 @@
 .xs-slide__card {
   position: relative;
   overflow: hidden;
-  padding-top: 56.25%;
+  padding-top: 75.25%;
 }
 
 .xs-slide__card img {

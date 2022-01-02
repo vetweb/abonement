@@ -1,8 +1,18 @@
 import {Swiper, Mousewheel, Navigation, Pagination} from 'swiper'
 
 Swiper.use([ Mousewheel, Navigation, Pagination])
+import Scrollbar from 'smooth-scrollbar';
 
 document.addEventListener('DOMContentLoaded', () => {
+
+	//smooth-scrollbar
+	let modalBlockOptions = {
+		damping: .1,
+	}
+
+	if (modalBlock) {
+		Scrollbar.init(modalBlock, modalBlockOptions);
+	}
 
 	//Слайдер standard__slider
 	const standardSwiper = document.querySelector('.js-standard-slider');
@@ -61,3 +71,63 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 });
+
+//js-xs-slider
+const xsSwiper = document.querySelector('.js-xs-slider');
+const xsSwipers = document.querySelectorAll('.js-xs-slider');
+let myXsSwiper;
+
+if (xsSwiper) {
+	createXsSwiper();
+}
+
+function createXsSwiper() {
+	xsSwipers.forEach((el) => {
+		myXsSwiper = new Swiper(el, {
+			direction: "horizontal",
+			loop: true,
+			speed: 1000,
+			slidesPerView: 1,
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			}
+		});
+	});
+}
+
+//js-card3-slider
+
+const threeSwiper = document.querySelector('.js-card3-slider');
+const threeSwipers = document.querySelectorAll('.js-card3-slider');
+let myThreeSwiper;
+
+if (threeSwiper) {
+	createThreeSwiper();
+}
+
+function createThreeSwiper() {
+	threeSwipers.forEach((el) => {
+		myThreeSwiper = new Swiper(el, {
+			direction: "horizontal",
+			speed: 1000,
+			slidesPerView: 1.3,
+			spaceBetween: 10,
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+			scrollbar: {
+				el: ".swiper-scrollbar",
+				hide: false,
+			},
+			breakpoints: {
+				768: {
+					slidesPerView: 3,
+					spaceBetween: 30,
+					grabCursor: true,
+				}
+			}
+		});
+	});
+}

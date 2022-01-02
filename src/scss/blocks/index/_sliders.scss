@@ -25,7 +25,7 @@
     padding-right: calc(50vw - 690px);
   }
 }
-
+.card-cd-s3__slider,
 .card-m-slider,
 .card-s-slider,
 .card-l-slider,
@@ -57,6 +57,32 @@
   }
 }
 
+
+.swiper-button-prev.btn-transparent.btn__prev,
+.swiper-button-next.btn-transparent.btn__next {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.swiper-button-next.btn-transparent.btn__next img {
+  transform: translateX(30%);
+}
+
+.card-cd-s3__slider .swiper-button-prev.btn__prev {
+  left: 16px;
+}
+
+.card-cd-s3__slider .swiper-button-next.btn__next {
+  right: 16px;
+}
+
 .card-m-slider .swiper-button-prev.btn__prev,
 .card-l-slider .swiper-button-prev.btn__prev,
 .card-s-slider .swiper-button-prev.btn__prev {
@@ -69,6 +95,8 @@
   right: -67px;
 }
 
+.card-cd-s3__slider .swiper-button-next.btn__next,
+.card-cd-s3__slider .swiper-button-prev.btn__prev,
 .card-l-slider .swiper-button-next.btn__next,
 .card-l-slider .swiper-button-prev.btn__prev,
 .card-m-slider .swiper-button-next.btn__next,
