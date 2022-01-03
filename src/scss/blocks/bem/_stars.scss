@@ -1,0 +1,15 @@
+.stars {
+  max-width: 124px;
+  width: 100%;
+  display: flex;
+}
+
+.rating-m__stars__el {
+  display: flex;
+  align-items: center;
+}
+
+.rating-m__stars__el svg {
+  width: 20px;
+  height: 20px;
+}

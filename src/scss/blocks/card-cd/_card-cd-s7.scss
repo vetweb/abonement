@@ -1,0 +1,19 @@
+.card-cd-s7 {
+  padding: 0 0 40px;
+
+  @include sm {
+    padding: 0 0 85px;
+  }
+
+  @include lg {
+    padding: 0 0 110px;
+  }
+}
+
+.card-cd-s7 .h3 {
+  padding-bottom: $indent-20;
+
+  @include lg {
+    padding-bottom: $indent-30;
+  }
+}

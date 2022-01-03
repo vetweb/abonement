@@ -12,10 +12,6 @@
 
 .grid-row {
   display: flex;
-  flex-direction: row;
-}
-
-.card-cd-s1__row.grid-row {
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;

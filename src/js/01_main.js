@@ -1,18 +1,8 @@
 import {Swiper, Mousewheel, Navigation, Pagination} from 'swiper'
 
 Swiper.use([ Mousewheel, Navigation, Pagination])
-import Scrollbar from 'smooth-scrollbar';
 
 document.addEventListener('DOMContentLoaded', () => {
-
-	//smooth-scrollbar
-	let modalBlockOptions = {
-		damping: .1,
-	}
-
-	if (modalBlock) {
-		Scrollbar.init(modalBlock, modalBlockOptions);
-	}
 
 	//Слайдер standard__slider
 	const standardSwiper = document.querySelector('.js-standard-slider');
@@ -97,7 +87,6 @@ function createXsSwiper() {
 }
 
 //js-card3-slider
-
 const threeSwiper = document.querySelector('.js-card3-slider');
 const threeSwipers = document.querySelectorAll('.js-card3-slider');
 let myThreeSwiper;

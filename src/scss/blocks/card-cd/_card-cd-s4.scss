@@ -14,8 +14,8 @@
   color: $blue;
 }
 
-.index-s__top .h3::first-letter {
-  color: $blue;
+.card-cd-s4 .index-s__top .h3::first-letter {
+  color: inherit;
 }
 
 .table-m {
@@ -144,16 +144,6 @@
   overflow: hidden;
 }
 
-.table-m__body-el .btn-white{
-  transition: all .3s;
-}
-
-.table-m__body-el:hover .btn-white{
-  background-color: $blue;
-  border: 1px solid $blue;
-  color: $white;
-}
-
 .table-m__body-el .button-rect {
   border-radius: 15px;
   font-weight: 700;
@@ -161,6 +151,7 @@
   color: $white;
   padding: $indent-15 0;
   border: 1px solid $blue;
+  transition: all .3s;
 
   @include sm {
     max-width: 136px;
@@ -169,7 +160,7 @@
   }
 }
 
-.table-m__body-el .button-rect:hover {
+.table-m__body-el:hover .button-rect {
   background-color: $blue;
   color: $white;
 }
