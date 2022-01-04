@@ -76,3 +76,150 @@
    display: none;
   }
 }
+
+.grid-row__col50-top.grid-row__col50-top--mob .h3 {
+  display: block;
+
+  @include lg {
+    display: none;
+  }
+}
+
+.grid-row__col50-top.grid-row__col50-top--mob .rating-m  {
+  display: flex;
+  margin-bottom: $indent-25;
+
+  @include lg {
+    display: none;
+  }
+}
+
+.reviews-block__review {
+  margin-bottom: $indent-25;
+  color: $black-t;
+}
+
+.data-time {
+  color: $gray-tx;
+}
+
+.reviews-block__review-inner {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $indent-15;
+
+  @include lg {
+    flex-direction: row;
+  }
+}
+
+.reviews-block__review-l {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  order: 1;
+  margin-bottom: 8px;
+
+  @include lg {
+    width: 70%;
+    margin-bottom: 0;
+  }
+}
+
+.reviews-block__review-r {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 1px solid $gray-l;
+  padding-top: $indent-15;
+
+  @include lg {
+    border-top: 1px solid transparent;
+    border-left: 1px solid $gray-l;
+    width: 30%;
+    flex-direction: column;
+    padding-top: 0;
+    padding-left: $indent-30;
+  }
+}
+
+.recom-block__text {
+  display: none;
+
+  @include sm {
+    display: inline-block;
+    color: $gray-tx;
+  }
+}
+
+.reviews-block__name {
+  margin-bottom: 5px;
+}
+
+.reviews-block__review-r .stars {
+  margin-bottom: 7px;
+}
+
+.reviews-block__review-r {
+  order: 3;
+
+  @include lg {
+    order: 2;
+  }
+}
+
+.reviews-block__text {
+  order: 2;
+
+  @include lg {
+    order: 3;
+  }
+}
+
+.recom-block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.recom-block__img {
+  margin-right: 10px;
+}
+
+.reviews-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reviews-btn .button-rect {
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  font-weight: 700;
+
+  @include lg {
+    max-width: 166px;
+
+  }
+}
+
+.reviews-btn__link-mob {
+  display: flex;
+  color: $blue;
+
+  @include lg {
+   display: none;
+  }
+}
+
+.reviews-btn__link-desk {
+  display: none;
+
+  @include lg {
+    display: flex;
+    color: $blue;
+    text-decoration: none;
+  }
+}
