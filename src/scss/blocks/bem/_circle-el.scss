@@ -20,7 +20,9 @@
 .circle-el:active,
 .circle-el:hover {
   background-color: $blue;
+  color: $white;
 }
+
 
 .circle-el svg {
   width: 45px;
