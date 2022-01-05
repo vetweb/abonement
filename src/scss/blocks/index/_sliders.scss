@@ -57,7 +57,6 @@
   }
 }
 
-
 .swiper-button-prev.btn-transparent.btn__prev,
 .swiper-button-next.btn-transparent.btn__next {
   position: absolute;
@@ -86,13 +85,13 @@
 .card-m-slider .swiper-button-prev.btn__prev,
 .card-l-slider .swiper-button-prev.btn__prev,
 .card-s-slider .swiper-button-prev.btn__prev {
-  left: -67px;
+  left: 11%;
 }
 
 .card-m-slider .swiper-button-next.btn__next,
 .card-l-slider .swiper-button-next.btn__next,
 .card-s-slider .swiper-button-next.btn__next {
-  right: -67px;
+  right: 11%;
 }
 
 .card-cd-s3__slider .swiper-button-next.btn__next,
@@ -153,5 +152,28 @@
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: $gold;
   border: 1px solid transparent;
+}
+
+.card-cd-s1 .xs__slider .swiper-pagination {
+  position: absolute;
+  opacity: 1;
+  width: 100px;
+  bottom: 13px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10px;
+  z-index: 10;
+}
+
+.card-cd-s1 .xs__slider .swiper-pagination-bullet {
+  background-color: $white;
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+  opacity: 1;
+}
+
+.card-cd-s1 .xs__slider .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: $blue;
 }
 

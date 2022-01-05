@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
 				slidesPerView: 'auto',
 				freeMode: true,
 				navigation: {
-					nextEl: ".swiper-button-next",
-					prevEl: ".swiper-button-prev",
+					nextEl: el.querySelector(".swiper-button-next"),
+					prevEl: el.querySelector(".swiper-button-prev"),
 				},
 				scrollbar: {
-					el: ".swiper-scrollbar",
+					el: el.querySelector(".swiper-scrollbar"),
 					hide: true,
 				},
 			});
@@ -50,11 +50,11 @@ document.addEventListener('DOMContentLoaded', () => {
 				speed: 1000,
 				slidesPerView: 1,
 				navigation: {
-					nextEl: ".swiper-button-next",
-					prevEl: ".swiper-button-prev",
+					nextEl: el.querySelector(".swiper-button-next"),
+					prevEl: el.querySelector(".swiper-button-prev"),
 				},
 				pagination: {
-					el: ".swiper-pagination",
+					el: el.querySelector(".swiper-pagination"),
 					clickable: true,
 				},
 			});
@@ -79,9 +79,13 @@ function createXsSwiper() {
 			speed: 1000,
 			slidesPerView: 1,
 			navigation: {
-				nextEl: ".swiper-button-next",
-				prevEl: ".swiper-button-prev",
-			}
+				nextEl: el.querySelector(".swiper-button-next"),
+				prevEl: el.querySelector(".swiper-button-prev"),
+			},
+			pagination: {
+				el: el.querySelector(".swiper-pagination"),
+				clickable: true,
+			},
 		});
 	});
 }
@@ -103,18 +107,17 @@ function createThreeSwiper() {
 			slidesPerView: 1.3,
 			spaceBetween: 10,
 			navigation: {
-				nextEl: ".swiper-button-next",
-				prevEl: ".swiper-button-prev",
+				nextEl: el.querySelector(".swiper-button-next"),
+				prevEl: el.querySelector(".swiper-button-prev"),
 			},
 			scrollbar: {
-				el: ".swiper-scrollbar",
+				el: el.querySelector(".swiper-scrollbar"),
 				hide: false,
 			},
 			breakpoints: {
 				768: {
 					slidesPerView: 3,
 					spaceBetween: 30,
-					grabCursor: true,
 				}
 			}
 		});

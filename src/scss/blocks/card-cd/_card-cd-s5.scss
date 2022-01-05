@@ -18,6 +18,17 @@
   }
 }
 
+.grid-row {
+  width: 100%;
+  height: 100%;
+}
+
+.card-cd-s5 .grid-row {
+  @include lg {
+    height: 100%;
+  }
+}
+
 .grid-row__col50:not(:last-child) {
 
   @include lg-down {
@@ -27,6 +38,18 @@
   @include sm-down {
     margin-bottom: $indent-30;
   }
+}
+
+.grid-row__col50-top.grid-row__col50-desk {
+  padding-bottom: $indent-20;
+
+  @include lg {
+    padding-bottom: $indent-30;
+  }
+}
+
+.grid-row__col50-top.grid-row__col50-desk .h3{
+  padding-bottom: 0;
 }
 
 .grid-row__col50-top {
@@ -53,7 +76,12 @@
 .reviews-block {
   border-radius: 15px;
   width: 100%;
+  height: 100%;
   overflow: hidden;
+
+  @include lg {
+    max-height: 440px;
+  }
 }
 
 .reviews-block {
@@ -65,7 +93,7 @@
   }
 
   @include lg {
-    padding: $indent-25 $indent-30;
+    padding: $indent-25 $indent-30 $indent-30;
   }
 }
 
@@ -189,8 +217,13 @@
 
 .reviews-btn {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+
+  @include sm {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .reviews-btn .button-rect {
@@ -198,18 +231,19 @@
   border-radius: 15px;
   overflow: hidden;
   font-weight: 700;
+  padding: 13px 8px;
 
-  @include lg {
+  @include sm {
     max-width: 166px;
-
   }
 }
 
 .reviews-btn__link-mob {
   display: flex;
   color: $blue;
+  margin-bottom: $indent-20;
 
-  @include lg {
+  @include sm {
    display: none;
   }
 }
@@ -217,9 +251,19 @@
 .reviews-btn__link-desk {
   display: none;
 
-  @include lg {
+  @include sm {
     display: flex;
+    align-items: center;
     color: $blue;
     text-decoration: none;
   }
+}
+
+.reviews-btn__link-desk span {
+  margin-right: $indent-10;
+}
+
+.reviews-btn__link-desk img {
+  width: 12px;
+  height: 6px;
 }

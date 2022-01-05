@@ -22,8 +22,15 @@
   }
 }
 
+.card-cd-s1 .grid-column .grid-row {
+  @include lg {
+    justify-content: flex-start;
+  }
+}
+
 .grid-col50 {
   width: 100%;
+  height: 100%;
 
   @include lg {
     width: 49%;
@@ -43,11 +50,6 @@
     margin-bottom: $indent-40;
   }
 }
-
-//.card-cd-s1 .grid-row {
-//  justify-content: flex-start;
-//  width: 100%;
-//}
 
 .grid-row__address {
   margin-right: $indent-15;
@@ -88,9 +90,33 @@
 
 .card-cd-s1 .row-link-ic.row-link-ic--mob {
   display: inline-flex;
+  margin-bottom: $indent-15;
 
   @include lg {
    display: none;
+  }
+}
+
+.card-cd-s1 .row-link-ic.row-link-ic--mob img {
+
+}
+
+.grid-row__address.grid-row__address--mob {
+  display: inline-flex;
+  margin-bottom: $indent-15;
+
+  @include lg {
+    display: none;
+  }
+}
+
+.grid-row__address.grid-row__address--desk {
+  margin-bottom: $indent-15;
+  display: none;
+
+  @include lg {
+    display: inline-flex;
+    margin-bottom: 0;
   }
 }
 
@@ -169,6 +195,13 @@
 .button-block__info {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin-bottom: $indent-10;
+
+  @include sm {
+    margin-bottom: 0;
+    justify-content: flex-start;
+  }
 }
 
 .card-cd-s1 .currency.button-s {
@@ -187,18 +220,27 @@
 
 .button-block {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   padding: $indent-20 $indent-35;
   background-color: $white;
   border-radius: 15px;
   margin-top: $indent-40;
+
+  @include sm {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .button-block .button-rect {
-  max-width: 136px;
+  width: 100%;
   border-radius: 15px;
   padding: $indent-10;
+
+  @include sm {
+    max-width: 136px;
+  }
 }
 
 .swiper-slide.xs-slide {
@@ -223,8 +265,8 @@
 
 .card-cd-s1 .xs__slider .circle-el {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 25px;
+  left: 39px;
   z-index: 2;
   flex-shrink: 0;
   transform: translate(-50%, -30%);
@@ -233,6 +275,8 @@
   height: 60px;
 
   @include lg {
+    top: 0;
+    left: 0;
     height: 92px;
     max-width: 92px;
   }
@@ -241,7 +285,7 @@
 .xs-slide__card {
   position: relative;
   overflow: hidden;
-  padding-top: 75.25%;
+  padding-top: 73.25%;
 }
 
 .xs-slide__card img {
@@ -251,4 +295,11 @@
   width: 100%;
   object-fit: cover;
   height: 100%;
+}
+
+.card-cd-s1 .swiper-button-next,
+.card-cd-s1 .swiper-button-prev {
+  @include sm-down {
+    display: none;
+  }
 }

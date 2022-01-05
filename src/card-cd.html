@@ -19,7 +19,8 @@
                       @@include('components/blocks/bem/_row-link-ic.html')
                       @@include('components/blocks/bem/_row-link-ic--mob.html')
                       <div class="grid-row">
-                          <p class="grid-row__address">г. Свилочь, ул. К.Калиновского 2</p>
+                          <p class="grid-row__address grid-row__address--desk">г. Свилочь, ул. К.Калиновского 2</p>
+                          <p class="grid-row__address grid-row__address--mob">Беларусь, Минск, пр. Победителей, 84 (ТРЦ ARENAcity, 2-й этаж – Детский развлекательный центр «Карамелька»)</p>
                           <a href="#" class="link-s grid-row__link">Посмотреть на карте</a>
                       </div>
                   </div>
@@ -80,7 +81,7 @@
                           <div class="swiper-wrapper xs-slider__wrap">
                               <div class="swiper-slide xs-slide">
                                   <div class="xs-slide__card">
-                                      <img src="/img/banner-bg1.png" alt="">
+                                      <img src="/img/bg1-sl.png" alt="">
                                   </div>
                                   @@include('components/blocks/bem/_favorites.html')
                               </div>
@@ -91,9 +92,10 @@
                                   @@include('components/blocks/bem/_favorites.html')
                               </div>
                           </div>
+                          <div class="swiper-pagination"></div>
+                          <div class="swiper-button-prev btn-transparent btn__prev"><img src="/img/arrow-prev.svg" alt=""></div>
+                          <div class="swiper-button-next btn-transparent btn__next"><img src="/img/arrow-next.svg" alt=""></div>
                       </div>
-                      <div class="swiper-button-prev btn-transparent btn__prev"><img src="/img/arrow-prev.svg" alt=""></div>
-                      <div class="swiper-button-next btn-transparent btn__next"><img src="/img/arrow-next.svg" alt=""></div>
                   </div>
               </div>
           </div>
@@ -265,7 +267,11 @@
                 <div class="grid-row__col50 grid-col50">
                     <h3 class="h3">Где мы находимся</h3>
                     <div class="map-block">
-                        <div style="border-color: transparent; position:relative;overflow:hidden;"><a href="https://yandex.by/maps/157/minsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Минск</a><a href="https://yandex.by/maps/157/minsk/house/Zk4Ycw9pQEcGQFtpfXR4d3xlYg==/?ll=27.589921%2C53.896066&utm_medium=mapframe&utm_source=maps&z=14.31" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Захарова, 77А — Яндекс.Карты</a><iframe src="https://yandex.by/map-widget/v1/-/CCUyJPXHSD" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                        <div style="border-color: transparent; position:relative;overflow:hidden;">
+                            <a href="https://yandex.by/maps/157/minsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Минск</a>
+                            <a href="https://yandex.by/maps/157/minsk/house/Zk4Ycw9pQEcGQFtpfXR4d3xlYg==/?ll=27.589921%2C53.896066&utm_medium=mapframe&utm_source=maps&z=14.31" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Захарова, 77А — Яндекс.Карты</a>
+                            <iframe src="https://yandex.by/map-widget/v1/-/CCUyJPXHSD" width="100%" height="440px" allowfullscreen="true" style="position:relative;"></iframe>
+                        </div>
                     </div>
                 </div>
                 <div class="grid-row__col50 grid-col50">
@@ -300,7 +306,7 @@
                         <div class="reviews-block__review">
                             <div class="reviews-block__review-inner">
                                 <div class="reviews-block__review-l">
-                                    <span class="reviews-block__name text-xs-500">Анна </span>
+                                    <span class="reviews-block__name text-xs-500">Анна</span>
                                     <div class="data-time">
                                         <span class="data-time__date">29 января 2019 </span> в <span
                                             class="data-time__time">0:45</span>
@@ -317,7 +323,10 @@
                             <p class="reviews-block__text text-s">Ребёнок занимается уже 5 месяцев. Готов бежать на тренировку 24/7, страдает, что нет возможности заниматься каждый день)). Мы очень рады, что сын нашёл свой спорт и свой клуб! </p>
                         </div>
                         <div class="reviews-btn">
-                            <a href="#" class="reviews-btn__link-desk h5">Смотреть еще</a>
+                            <a href="#" class="reviews-btn__link-desk h5">
+                                <span>Смотреть еще</span>
+                                <img src="/img/arrow-down.svg" alt="">
+                            </a>
                             <a href="#" class="reviews-btn__link-mob h5">Подробнее</a>
                             <button class="button-rect btn-blue">Написать отзыв</button>
                         </div>
@@ -351,7 +360,7 @@
             </div>
         </div>
     </section>
-    <section class="card-cd-s7">
+    <section class="card-cd-s7" style="background-image: url('/img/bg-s7.png')">
         <div class="container">
             <h3 class="h3">Вы смотрели</h3>
             <div class="card-m-slider">

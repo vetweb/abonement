@@ -1,5 +1,8 @@
 .card-cd-s7 {
   padding: 0 0 40px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   @include sm {
     padding: 0 0 85px;
