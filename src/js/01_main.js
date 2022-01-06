@@ -1,8 +1,22 @@
 import {Swiper, Mousewheel, Navigation, Pagination} from 'swiper'
+import Scrollbar from 'smooth-scrollbar'
 
 Swiper.use([ Mousewheel, Navigation, Pagination])
 
 document.addEventListener('DOMContentLoaded', () => {
+
+	// smooth-scrollbar
+
+	const tabsBlock = document.querySelector(".js-tabs-block");
+
+	let optionsTabsBlock = {
+		damping: .1,
+		alwaysShowTracks: true,
+	}
+
+	if (tabsBlock) {
+		Scrollbar.init(tabsBlock, optionsTabsBlock);
+	}
 
 	//Слайдер standard__slider
 	const standardSwiper = document.querySelector('.js-standard-slider');
@@ -123,3 +137,44 @@ function createThreeSwiper() {
 		});
 	});
 }
+
+// Табы на странице Blog
+let tabNavLink = document.querySelectorAll('.js-tabs-nav__tab');
+let tabContent = document.querySelectorAll('.js-tabs-content__el');
+
+if (tabContent && tabNavLink) {
+	tabsNav();
+}
+
+function tabsNav() {
+	tabNavLink.forEach(item => {
+		item.addEventListener('click', selectTab);
+	});
+
+	function selectTab(e) {
+		e.preventDefault();
+		tabNavLink.forEach(item => {
+
+			if (item === this) {
+				this.classList.add('active');
+			} else {
+				item.classList.remove('active');
+			}
+
+			let pathTab = this.dataset.id;
+			let targetContent = document.querySelector(`[data-content-id='${pathTab}']`);
+
+			tabContent.forEach(item => {
+				item.classList.remove('active');
+			});
+
+			if (!targetContent.classList.contains('active')) {
+				targetContent.classList.add('active');
+			}
+
+		});
+	}
+
+}
+
+tabsNav();

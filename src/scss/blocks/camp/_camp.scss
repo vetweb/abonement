@@ -1,0 +1,240 @@
+.camp-2 {
+  padding: 0 0 50px;
+
+  @include sm {
+    padding: 0 0 85px;
+  }
+
+  @include lg {
+    padding: 0 0 120px;
+  }
+}
+
+
+.description-block {
+  padding: $indent-30 $indent-10 $indent-40;
+  border-radius: 10px;
+  overflow: hidden;
+
+  @include sm {
+    padding: $indent-50 $indent-30 $indent-80;
+  }
+}
+
+.description-block .h3 {
+  margin-bottom: $indent-15;
+  color: $blue-bg;
+
+  @include sm {
+    margin-bottom: $indent-25;
+  }
+
+  @include lg {
+    margin-bottom: $indent-20;
+  }
+}
+
+.description-block__top {
+  color: $black-t;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-bottom: $indent-25;
+
+  @include sm {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: $indent-20;
+  }
+
+  @include lg {
+    margin-bottom: $indent-30;
+  }
+}
+
+.description-block__top-text:not(:last-child) {
+  margin-bottom: $indent-20;
+}
+
+.description-block__body {
+  display: flex;
+  flex-direction: column;
+
+  @include md {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.description-block__body-col50 {
+  width: 100%;
+  padding: $indent-20 $indent-10 $indent-50;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  position: relative;
+
+  @include md {
+    font-size: 18px;
+    line-height: 26px;
+    width: 48%;
+    padding: $indent-30 $indent-20 $indent-50;
+  }
+
+  @include lg {
+    padding: $indent-30 $indent-45 $indent-55 $indent-25;
+  }
+}
+
+.description-block__body-col50:not(:last-child) {
+  margin-bottom: $indent-20;
+
+  @include md {
+    margin-bottom: 0;
+  }
+}
+
+.description-block__body-title {
+  font-weight: 700;
+  margin-bottom: $indent-20;
+}
+
+.description-block__body-el {
+  list-style-type: none;
+  padding-left: 15px;
+  position: relative;
+}
+
+.description-block__body-el:after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  background-color: $black-t;
+}
+
+.description-block__body-el:not(:last-child) {
+  margin-bottom: $indent-10;
+}
+
+.description-block__body-images {
+  display: none;
+
+  @include sm {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+  }
+
+  @include md {
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    z-index: 10;
+  }
+
+  @include lg {
+    bottom: -30px;
+    right: 0;
+  }
+}
+
+.description-block__body-inner {
+  position: relative;
+}
+
+.description-block__body-img2 {
+  height: 205px;
+}
+
+.description-block__body-img1 {
+  height: 96px;
+  position: absolute;
+  bottom: 0;
+  right: 70px;
+}
+
+.description-block__wrap {
+  margin-bottom: $indent-30;
+
+  @include sm {
+    margin-bottom: $indent-80;
+  }
+
+  @include lg {
+    margin-bottom: $indent-70;
+  }
+}
+
+.tabs-nav__tab:not(:last-child) {
+  margin-right: $indent-30;
+
+  @include sm {
+    margin-right: $indent-60;
+  }
+}
+.tabs-nav__tab.active .tabs-nav__tab-title {
+  color: $blue-bg;
+}
+
+.tabs-nav__tab-title {
+  margin-bottom: $indent-20;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: $gray-tx;
+}
+
+.tabs-nav {
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #E0E0E0;
+  width: max-content;
+  margin-bottom: $indent-20;
+
+  @include sm {
+    margin-bottom: $indent-30;
+  }
+}
+
+.tabs-nav__tab {
+  cursor: pointer;
+}
+
+.tabs-nav__tab.active .tabs-nav__tab-active {
+  background: #2C4CA3;
+  border-radius: 30px 30px 0 0;
+  height: 6px;
+  width: 100%;
+}
+
+.tabs-content {
+  display: flex;
+}
+
+.tabs-content__el {
+  display: none;
+  color: $gray-tx;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.tabs-content__el.active {
+  display: flex;
+}
+
+.tabs-list__el {
+  list-style: inside;
+}
+
+.tabs-block .scrollbar-thumb.scrollbar-thumb-x,
+.tabs-block .scrollbar-track.scrollbar-track-x.show{
+  opacity: 0;
+}
