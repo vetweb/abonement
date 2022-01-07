@@ -63,7 +63,7 @@
   }
 
   @include lg {
-    margin-bottom: $indent-10;
+    margin-bottom: $indent-15;
   }
 }
 
@@ -286,7 +286,11 @@
 .xs-slide__card {
   position: relative;
   overflow: hidden;
-  padding-top: 73.25%;
+  padding-top: 56.25%;
+
+  @include lg {
+    padding-top: 76.25%;
+  }
 }
 
 .xs-slide__card img {
