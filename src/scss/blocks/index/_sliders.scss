@@ -26,6 +26,7 @@
   }
 }
 .card-cd-s3__slider,
+.card-img-slider,
 .card-m-slider,
 .card-s-slider,
 .card-l-slider,
@@ -165,6 +166,7 @@
   z-index: 10;
 }
 
+.camp-3 .card-img-slider .swiper-pagination-bullet,
 .card-cd-s1 .xs__slider .swiper-pagination-bullet {
   background-color: $white;
   width: 10px;
@@ -173,6 +175,7 @@
   opacity: 1;
 }
 
+.camp-3 .card-img-slider .swiper-pagination-bullet.swiper-pagination-bullet-active,
 .card-cd-s1 .xs__slider .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: $blue;
 }

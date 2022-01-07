@@ -10,7 +10,7 @@
 <body>
 @@include('components/blocks/page/_header.html')
 <main class="main camp">
-    <section class="card-cd-s1">
+    <section class="camp-1 card-cd-s1">
       <div class="container">
           <div class="card-cd-s1__row grid-row">
               <div class="card-cd-s1__col50 grid-col50 col50-reverse">
@@ -220,6 +220,34 @@
                         <div class="tabs-content__el js-tabs-content__el" data-content-id="id5">
                             <p class="tabs-content__el-desc">Text</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="camp-3">
+        <div class="container">
+            <h3 class="h3">Наши тренеры и вожатые</h3>
+            <div class="card-img-slider">
+                <div class="img-slider standard-slider js-standard-slider swiper-container free-slider">
+                    <div class="swiper-wrapper grid-cards__list">
+                        <div class="swiper-slide card-img__list-el">
+                            @@include('components/blocks/bem/_card-img.html')
+                        </div>
+                        <div class="swiper-slide card-img__list-el">
+                            @@include('components/blocks/bem/_card-img.html')
+                        </div>
+                        <div class="swiper-slide card-img__list-el">
+                            @@include('components/blocks/bem/_card-img.html')
+                        </div>
+                        <div class="swiper-slide card-img__list-el">
+                            @@include('components/blocks/bem/_card-img.html')
+                        </div>
+                    </div>
+                    <div class="swiper-btn__wrap">
+                        <div class="swiper-button-prev btn__prev"><img src="/img/arrow-prev.svg" alt=""></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next btn__next"><img src="/img/arrow-next.svg" alt=""></div>
                     </div>
                 </div>
             </div>

@@ -43,6 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
 					el: el.querySelector(".swiper-scrollbar"),
 					hide: true,
 				},
+				pagination: {
+					el: el.querySelector(".swiper-pagination"),
+					clickable: true,
+				}
 			});
 		});
 	}
