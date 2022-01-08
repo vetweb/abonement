@@ -1,0 +1,48 @@
+
+.avatar-block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.avatar-block__mask {
+  position: relative;
+  max-width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  object-position: center;
+  margin-right: $indent-15;
+}
+
+.avatar-block__mask img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  mask-image: url("/img/sprite.svg#circle-mask");
+  mask-position: top left;
+  mask-repeat: no-repeat;
+  mask-size: 50px 50px;
+  object-fit: cover;
+}
+
+.avatar-block__desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.avatar-block__desc-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: $black-t;
+  margin-bottom: 3px;
+}
+
+.avatar-block__desc-position {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  color: $gray-tx;
+}

@@ -1,0 +1,34 @@
+.certif-scroll-block__el {
+  min-width: 200px;
+  max-width: 200px;
+  height: 240px;
+  border-radius: 10px;
+  background-color: $white;
+
+  @include lg {
+    min-width: 230px;
+    max-width: 230px;
+    height: 360px;
+  }
+}
+
+.certif-scroll-block__wrap .certif-scroll-block__el:not(:last-child) {
+  margin-right: 10px;
+
+  @include lg {
+    margin-right: 30px;
+  }
+}
+
+.certif-scroll-block__wrap {
+  display: flex;
+  padding-bottom: $indent-30;
+}
+
+.certif-scroll-block .scrollbar-track.scrollbar-track-x.show {
+  bottom: 5px;
+}
+
+.reviews-block__inner {
+  display: flex;
+}

@@ -1,0 +1,67 @@
+.fc-s5 .container-br-10 {
+  @include sm-down {
+    background-color: $white;
+    padding: $indent-30 $indent-10;
+  }
+}
+
+.address-block {
+  display: flex;
+  flex-direction: column;
+  color: $black-t;
+}
+
+.address-block__title {
+  margin-bottom: 5px;
+
+  @include sm {
+    margin-bottom: $indent-20;
+  }
+}
+
+.address-block__desc {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+
+  @include sm {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.address-block__desc:not(:last-child) {
+  margin-bottom: $indent-20;
+}
+
+.address-block__desc-el:not(:last-child) {
+  margin-bottom: $indent-10;
+}
+
+.grid-row__col50-card.grid-col50,
+.grid-row__col50-address.grid-col50 {
+  @include lg {
+    height: 320px;
+    overflow: hidden;
+  }
+}
+
+.grid-row__col50-card.grid-col50 {
+  margin-bottom: $indent-20;
+
+  @include sm {
+    margin-bottom: $indent-30;
+  }
+
+  @include lg {
+    margin-bottom: 0;
+    width: 48%;
+  }
+}
+
+.grid-row__col50-address.grid-col50 {
+
+  @include lg {
+    width: 49%;
+  }
+}

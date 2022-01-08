@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+@@include('components/blocks/page/_head.html',{
+"lang":"en",
+"title":"Абонемент",
+"description":"Абонемент",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+@@include('components/blocks/page/_header.html')
+<main class="main fc">
+    <section class="fc-s1">
+      <div class="container">
+          <div class="fc-s1__wrap">
+              <div class="index-s__top">
+                  <h2 class="h2">Футбольный клуб “Football team Svyloch”</h2>
+              </div>
+              <div class="fc-s1__top grid-row">
+                  <div class="grid-col30">
+                      <div class="grid-col30__rating">
+                          <div class="grid-col30__rating-desc">
+                              <span class="grid-col30__rating-score">28</span>
+                              <span class="grid-col30__rating-text">отзывов</span>
+                          </div>
+                          @@include('components/blocks/bem/_stars-el.html')
+                          <span class="rating-m__score rating-text">4.6</span>
+                      </div>
+                  </div>
+                  <div class="grid-col70">
+                      <p class="grid-row__address grid-row__address--desk">г. Свилочь, ул. К.Калиновского 2</p>
+                      @@include('components/blocks/bem/_metro-block.html')
+                      <a href="#" class="link-s grid-row__link">Посмотреть на карте</a>
+                  </div>
+              </div>
+              <div class="grid-row fc-s1__body">
+                  <div class="grid-col50 fc-s1__body-text">1</div>
+                  <div class="grid-col50 fc-s1__body-slider">2
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    <section class="fc-s2">
+        <div class="container">
+            <div class="container-br-10">
+                <div class="index-s__top plr-55">
+                    <h3 class="h3">Абонементы</h3>
+                    <a href="#" class="link-s">Все абонементы </a>
+                </div>
+                <div class="card-m-slider">
+                    <div class="standard-slider js-standard-slider swiper-container">
+                        <div class="swiper-wrapper grid-cards__list plr-55">
+                            <div class="swiper-slide card-m__list-el">
+                                @@include('components/blocks/bem/_card-m.html')
+                            </div>
+                            <div class="swiper-slide card-m__list-el">
+                                @@include('components/blocks/bem/_card-m.html')
+                            </div>
+                            <div class="swiper-slide card-m__list-el">
+                                @@include('components/blocks/bem/_card-m.html')
+                            </div>
+                            <div class="swiper-slide card-m__list-el">
+                                @@include('components/blocks/bem/_card-m.html')
+                            </div>
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fc-s3 mt-60 mb-60">
+        <div class="container">
+            <div class="container-br-10">
+                <div class="index-s__top plr-55">
+                    <h3 class="h3">Набор 2021</h3>
+                    <a href="#" class="link-s">Подробнее</a>
+                </div>
+                <div class="card-big-ic-slider">
+                    <div class="standard-slider js-standard-slider swiper-container">
+                        <div class="swiper-wrapper grid-cards__list plr-55">
+                            <div class="swiper-slide card-big-ic__list-el">
+                                @@include('components/blocks/bem/_card-big-ic.html')
+                            </div>
+                            <div class="swiper-slide card-big-ic__list-el">
+                                @@include('components/blocks/bem/_card-big-ic.html')
+                            </div>
+                            <div class="swiper-slide card-big-ic__list-el">
+                                @@include('components/blocks/bem/_card-big-ic.html')
+                            </div>
+                            <div class="swiper-slide card-big-ic__list-el">
+                                @@include('components/blocks/bem/_card-big-ic.html')
+                            </div>
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fc-s4 mt-60 mb-60">
+        <div class="container">
+            <div class="container-br-10">
+                <div class="index-s__top plr-55">
+                    <h3 class="h3">Набор в детские лагеря</h3>
+                    <a href="#" class="link-s">Подробнее</a>
+                </div>
+                <div class="card-big-slider">
+                    <div class="standard-slider js-standard-slider swiper-container">
+                        <div class="swiper-wrapper grid-cards__list plr-55">
+                            <div class="swiper-slide card-big__list-el">
+                                @@include('components/blocks/bem/_card-big.html')
+                            </div>
+                            <div class="swiper-slide card-big__list-el">
+                                @@include('components/blocks/bem/_card-big.html')
+                            </div>
+                            <div class="swiper-slide card-big__list-el">
+                                @@include('components/blocks/bem/_card-big.html')
+                            </div>
+                            <div class="swiper-slide card-big__list-el">
+                                @@include('components/blocks/bem/_card-big.html')
+                            </div>
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fc-s5 mt-60 mb-60">
+        <div class="container">
+            <div class="container-br-10">
+                <div class="index-s__top plr-55">
+                    <h3 class="h3">Контакты и адрес</h3>
+                </div>
+                <div class="grid-row plr-55">
+                    <div class="grid-row__col50-card grid-col50">
+                        <div class="map-block">
+                            <div style="border-color: transparent; position:relative;overflow:hidden;">
+                                <a href="https://yandex.by/maps/157/minsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Минск</a>
+                                <a href="https://yandex.by/maps/157/minsk/house/Zk4Ycw9pQEcGQFtpfXR4d3xlYg==/?ll=27.589921%2C53.896066&utm_medium=mapframe&utm_source=maps&z=14.31" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Захарова, 77А — Яндекс.Карты</a>
+                                <iframe src="https://yandex.by/map-widget/v1/-/CCUyJPXHSD" width="100%" height="320px" allowfullscreen="true" style="position:relative;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-row__col50-address grid-col50">
+                        <div class="address-block">
+                            <p class="address-block__title text-xs-500">Адрес</p>
+                            <div class="address-block__desc">Город Свилочь, ул. К.Калиновского 2</div>
+                            <p class="address-block__title text-xs-500">Контакты</p>
+                            <div class="address-block__desc">
+                                <p class="address-block__desc-el">Телефон: +375 44 7 888 880, +375 17 289 00 00
+                                </p>
+                                <p class="address-block__desc-el">Факс: +375 17 279 80 00
+                                </p>
+                            </div>
+                            <p class="address-block__title text-xs-500">Реквизиты</p>
+                            <div class="address-block__desc">
+                                <p class="address-block__desc-el">Общество с ограниченной ответственностью «ЕВРОТОРГ»
+                                </p>
+                                <p class="address-block__desc-el">Почтовый адрес: 220019 г. Минск, ул. Монтажников, 2
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fc-s6 mt-60 mb-60">
+        <div class="container">
+            <div class="container-br-10">
+                <div class="index-s__top plr-55">
+                    <h3 class="h3">Сертификаты</h3>
+                </div>
+               <div class="certif-scroll-block js-certif-scroll-block plr-55">
+                   <div class="certif-scroll-block__wrap">
+                       <div class="certif-scroll-block__el" style="background-image: url('/img/bg1-sl.png');">
+                       </div>
+                       <div class="certif-scroll-block__el" style="background-image: url('/img/bg1-sl.png');">
+                       </div>
+                       <div class="certif-scroll-block__el" style="background-image: url('/img/bg1-sl.png');">
+                       </div>
+                       <div class="certif-scroll-block__el" style="background-image: url('/img/bg1-sl.png');">
+                       </div>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </section>
+    <section class="fc-s6 mt-60 mb-60">
+        <div class="container">
+            <div class="container-br-10">
+               <div class="reviews-container">
+                   <div class="reviews-block reviews-block--revers">
+                       <div class="grid-row__col50-top grid-row__col50-top--mob">
+                           <h3 class="h3">Отзывы о футбольном клубе “Foot”</h3>
+                           <div class="reviews-block__inner">
+                               @@include('components/blocks/bem/_rating-m.html')
+                               <button class="button-rect btn-blue button-s">Написать отзыв</button>
+                           </div>
+                       </div>
+                       <div class="reviews-block__review">
+                           <div class="reviews-block__review-inner">
+                               <div class="reviews-block__review-l">
+                                   <div class="reviews-block__review-wrapper">
+                                       <span class="reviews-block__name text-xs-500">Лана Cтолярова</span>
+                                       <div class="data-time">
+                                           <span class="data-time__date">7 апреля 2019</span>в <span
+                                               class="data-time__time">16:34</span>
+                                       </div>
+                                   </div>
+                                   <p class="reviews-block__text reviews-block__text--mob text-s">Сын очень доволен их команда выигрывает футбольные турниры.</p>
+                               </div>
+                               <div class="reviews-block__review-r">
+                                   @@include('components/blocks/bem/_stars.html')
+                                   <div class="recom-block">
+                                       <img src="/img/heart-red.svg" class="recom-block__img" alt="">
+                                       <span class="recom-block__text">Рекомендую</span>
+                                   </div>
+                               </div>
+                           </div>
+                           <p class="reviews-block__text reviews-block__text--desk text-s">Сын очень доволен их команда выигрывает футбольные турниры.</p>
+                       </div>
+                       <div class="reviews-block__review">
+                           <div class="reviews-block__review-inner">
+                               <div class="reviews-block__review-l">
+                                   <div class="reviews-block__review-wrapper">
+                                       <span class="reviews-block__name text-xs-500">Анна</span>
+                                       <div class="data-time">
+                                           <span class="data-time__date">29 января 2019</span>в <span
+                                               class="data-time__time">0:45</span>
+                                       </div>
+                                   </div>
+                                   <p class="reviews-block__text reviews-block__text--mob text-s">Ребёнок занимается уже 5 месяцев. Готов бежать на тренировку 24/7, страдает, что нет возможности заниматься каждый день)). Мы очень рады, что сын нашёл свой спорт и свой клуб! </p>
+                               </div>
+                               <div class="reviews-block__review-r">
+                                   @@include('components/blocks/bem/_stars.html')
+                                   <div class="recom-block">
+                                       <img src="/img/heart-red.svg" class="recom-block__img" alt="">
+                                       <span class="recom-block__text">Рекомендую</span>
+                                   </div>
+                               </div>
+                           </div>
+                           <p class="reviews-block__text reviews-block__text--desk text-s">Ребёнок занимается уже 5 месяцев. Готов бежать на тренировку 24/7, страдает, что нет возможности заниматься каждый день)). Мы очень рады, что сын нашёл свой спорт и свой клуб!</p>
+                       </div>
+                       <div class="reviews-btn">
+                           <a href="#" class="reviews-btn__link-desk h5">
+                               <span>Смотреть еще</span>
+                               <img src="/img/arrow-down.svg" alt="">
+                           </a>
+                           <a href="#" class="reviews-btn__link-mob h5">Подробнее</a>
+                           <button class="button-rect btn-blue button-s">Написать отзыв</button>
+                       </div>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </section>
+</main>
+@@include('components/blocks/page/_footer.html')
+@@include('components/blocks/page/_scripts.html')
+</body>
+
+</html>

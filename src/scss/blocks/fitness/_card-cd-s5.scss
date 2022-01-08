@@ -161,6 +161,7 @@
   width: 100%;
   border-top: 1px solid $gray-l;
   padding-top: $indent-15;
+  order: 3;
 
   @include lg {
     border-top: 1px solid transparent;
@@ -169,6 +170,7 @@
     flex-direction: column;
     padding-top: 0;
     padding-left: $indent-30;
+    order: 2;
   }
 }
 
@@ -187,14 +189,6 @@
 
 .reviews-block__review-r .stars {
   margin-bottom: 7px;
-}
-
-.reviews-block__review-r {
-  order: 3;
-
-  @include lg {
-    order: 2;
-  }
 }
 
 .reviews-block__text {

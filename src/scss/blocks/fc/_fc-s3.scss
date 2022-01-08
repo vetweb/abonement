@@ -1,0 +1,236 @@
+.container-br-10 {
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0;
+  background-color: $blue-light;
+
+  @include sm {
+    background-color: $white;
+    padding: $indent-30 0 $indent-35;
+  }
+
+  @include lg {
+    padding: $indent-25 0 $indent-35;
+  }
+}
+
+.fc .index-s__top {
+  margin-bottom: $indent-30;
+
+  @include sm-down {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: $indent-15;
+  }
+}
+
+.plr-55 {
+  @include sm {
+    padding: 0 $indent-30 0;
+  }
+
+  @include lg {
+    padding: 0 $indent-55 0;
+  }
+}
+
+.fc-s3 .index-s__top .h3 {
+  padding-bottom: 0;
+}
+
+.fc .index-s__top .h3 {
+
+  @include sm-down {
+    margin-bottom: $indent-10;
+  }
+}
+
+.fc-s3 .standard-slider.swiper-container {
+  overflow: hidden;
+}
+
+.fc .swiper-wrapper.grid-cards__list {
+  margin-bottom: $indent-20;
+}
+
+.card-big-ic.card {
+  padding-bottom: $indent-10;
+
+  @include lg {
+    padding-bottom: $indent-25;
+  }
+}
+
+.card-big-ic-slider .swiper-container-horizontal>.swiper-scrollbar {
+  display: block;
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  left: 0;
+  padding: 0;
+  margin: 0 auto;
+
+  @include sm {
+    padding: 0 $indent-30;
+  }
+
+  @include lg {
+    padding: 0 $indent-55;
+  }
+}
+
+.fc .swiper-slide.card-big-ic__list-el {
+  width: 190px;
+  height: 310px;
+  border-radius: 10px;
+  background-color: $white;
+
+  @include sm {
+    box-shadow: 6px 7px 10px 5px rgba(20, 40, 96, 0.15);
+  }
+
+  @include lg {
+    width: 502px;
+    height: 560px;
+    box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
+  }
+}
+
+.swiper-slide.card-big-ic__list-el:not(:last-child) {
+  margin-right: 10px;
+
+  @include lg {
+    margin-right: 30px;
+  }
+}
+
+.card-big-ic__el-img {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  background-color: #646A7D;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: $white;
+  border-radius: 10px;
+  overflow: hidden;
+
+  @include lg {
+    height: 250px;
+  }
+}
+
+.card-big-ic__el-images {
+  position: relative;
+  margin-bottom: $indent-10;
+}
+
+.card-big-ic__el-images .circle-el {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+
+  @include lg {
+    width: 60px;
+    height: 60px;
+    top: 20px;
+    right: 30px;
+  }
+}
+
+.card-big-ic__el-images .circle-el svg {
+  width: 30px;
+  height: 30px;
+
+  @include lg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.card-big-ic__el-content {
+  padding: 0 $indent-15;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $blue-bg;
+  margin-bottom: $indent-10;
+
+  @include lg {
+    padding: 0 $indent-30;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.card-big-ic__el-footer {
+  padding: 0 $indent-15;
+  display: inline-flex;
+  justify-content: center;
+  vertical-align: bottom;
+  margin: auto 0 0;
+
+  @include lg {
+    padding: 0 $indent-30;
+  }
+}
+
+.card-big-ic__el-desc {
+  margin-bottom: $indent-10;
+}
+
+.card-big-ic__el-address {
+  display: flex;
+  align-items: center;
+
+  @include lg {
+    margin-bottom: $indent-15;
+  }
+}
+
+.card-big-ic__el-address .metro-block {
+  margin-bottom: 0;
+  display: none;
+
+  @include lg {
+    display: flex;
+  }
+}
+
+
+.fc-s3 .card-big-ic__el-address .grid-row__address.grid-row__address--desk {
+  color: $gray-tx;
+
+  @include sm-down {
+    display: flex;
+  }
+}
+
+.card-big-ic-slider .avatar-block {
+  display: none;
+
+  @include lg {
+    display: flex;
+  }
+}
+
+.card-big-ic__el-footer .button-full-mob {
+  display: inline-block;
+
+  @include lg {
+    display: none;
+  }
+}
+
+.card-big-ic__el-footer .button-full .button-full-desk {
+  display: none;
+
+  @include lg {
+    display: inline-block;
+  }
+}

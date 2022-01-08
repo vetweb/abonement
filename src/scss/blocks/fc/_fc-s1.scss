@@ -1,0 +1,147 @@
+.fc-s1 .fc-s1__top.grid-row {
+  justify-content: flex-start;
+  margin-bottom: $indent-10;
+
+  @include sm {
+    margin-bottom: $indent-15;
+  }
+
+  @include lg {
+    margin-bottom: $indent-35;
+  }
+}
+
+.grid-col30 {
+  @include sm-down {
+    margin-bottom: 5px;
+  }
+}
+
+.grid-col30__rating {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.fc-s1 .grid-col70 {
+  display: none;
+
+  @include sm {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+}
+
+.fc-s1 .grid-col70 .text-xxs {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.fc-s1 .grid-col30 {
+  margin-right: $indent-35;
+}
+
+.grid-col30__rating-desc {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: $black-t;
+  padding-right: $indent-10;
+  border-right: 1px solid $blue;
+  margin-right: $indent-10;
+
+  @include sm {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+.grid-col70 .grid-row__address.grid-row__address--desk {
+  color: $gray-tx;
+  margin-right: $indent-20;
+}
+
+.grid-col70 .metro-block {
+  margin-bottom: 0;
+  margin-right: $indent-25;
+}
+
+.grid-col70 .grid-row__link {
+  color: $blue;
+  font-weight: 400;
+}
+
+.fc-s1 .rating-m__score.rating-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+
+  @include sm-down {
+    margin-right: 0;
+  }
+}
+
+.fc-s1 .grid-row__address.grid-row__address--desk {
+  display: inline-flex;
+  margin-bottom: 0;
+}
+
+/* swiper-bullets styling */
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin: 0 15px;
+  background-color: tomato;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: navy;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: static;
+  margin-left: 10px;
+}
+
+.swiper-container {
+  padding-bottom: 50px;
+}
+
+.slider {
+  display: flex;
+}
+
+.slider-nav {
+  overflow: hidden;
+  width: 100px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  height: 305px;
+}
+
+.slider-main {
+  overflow: hidden;
+  height: 305px;
+}
+
+.slider-nav .swiper-slide {
+  width: 65px;
+  height: 65px;
+}
+
+.slider-nav .swiper-slide img {
+  max-height: 100%;
+}
+
+.grid-col50.fc-s1__body-slider {
+  height: 100%;
+  max-height: 305px;
+  overflow: hidden;
+}

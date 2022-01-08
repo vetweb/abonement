@@ -1,5 +1,8 @@
 .camp-3 {
   padding: 0 0 50px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   @include sm {
     padding: 0 0 85px;
