@@ -1,0 +1,129 @@
+.card-tr {
+  flex-direction: column;
+  padding: $indent-20 $indent-15 $indent-15;
+  background-color: $white;
+  border-radius: 10px 10px 15px 15px;
+
+  @include lg {
+    padding: $indent-20;
+  }
+}
+
+.swiper-slide.card-tr__list-el {
+  width: 222px;
+  height: 407px;
+  border-radius: 10px;
+
+  @include sm {
+    box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
+  }
+
+  @include lg {
+    width: 298px;
+    height: 493px;
+  }
+}
+
+.card-tr__el-img {
+  width: 100%;
+  height: 152px;
+  position: relative;
+  background-color: #646A7D;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: $white;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: $indent-15;
+
+  @include lg {
+    height: 215px;
+    margin-bottom: $indent-10;
+  }
+}
+
+.swiper-slide.card-tr__list-el:not(:last-child) {
+  margin-right: 10px;
+
+  @include lg {
+    margin-right: 30px;
+  }
+}
+
+.card-tr__el-name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 6px;
+
+  @include lg {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: $indent-10;
+  }
+}
+
+.card-tr__el-desc {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #BDBDBD;
+  margin-bottom: $indent-10;
+
+  @include sm {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: $indent-15;
+  }
+}
+
+.card-tr__el-top {
+  margin-bottom: $indent-10;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-tr__el-top .card-tr__el-experience {
+  display: flex;
+
+  @include sm {
+    display: none;
+  }
+}
+
+.card-tr__el-bottom {
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-tr__el-bottom .card-tr__el-experience {
+  display: none;
+
+  @include sm {
+    display: flex;
+  }
+}
+
+.card-tr .card-s__el-top {
+  justify-content: flex-start;
+}
+
+.card-tr__el-text.button-s {
+  color: $black-t;
+  font-weight: 400;
+}
+
+.swiper-wrapper.grid-cards__list {
+  padding-bottom: $indent-40;
+}
+.card-tr__el-bottom .rating-m__stars.stars{
+  display: flex;
+  max-width: 66px;
+}
+
+.card-tr__el-bottom .rating-m__stars__el svg {
+  width: 9px;
+  height: 9px;
+}

@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	// smooth-scrollbar
 	const tabsBlock = document.querySelector(".js-tabs-block");
 	const certifScroll = document.querySelector(".js-certif-scroll-block");
+	const galleryScroll = document.querySelector(".js-gallery-scroll-block");
 
 	let optionsTabsBlock = {
 		damping: .1,
@@ -19,13 +20,21 @@ document.addEventListener('DOMContentLoaded', () => {
 		alwaysShowTracks: true,
 	}
 
+	let optionsGalleryScroll= {
+		damping: .1,
+		alwaysShowTracks: true,
+	}
+
 	if (tabsBlock) {
 		Scrollbar.init(tabsBlock, optionsTabsBlock);
 	}
 
 	if (certifScroll) {
-		console.log('kkk');
 		Scrollbar.init(certifScroll, optionsCertifScroll);
+	}
+
+	if (galleryScroll) {
+		Scrollbar.init(galleryScroll, optionsGalleryScroll);
 	}
 
 	//Слайдер standard__slider
