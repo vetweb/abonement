@@ -17,6 +17,10 @@
   }
 }
 
+.circles-block .circle-el {
+  box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.05);
+}
+
 .circle-el:active,
 .circle-el:hover {
   background-color: $blue;
