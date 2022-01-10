@@ -7,10 +7,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// smooth-scrollbar
 	const tabsBlock = document.querySelector(".js-tabs-block");
+	const tabsBlockTwo = document.querySelector(".js-tabs-block2");
 	const certifScroll = document.querySelector(".js-certif-scroll-block");
 	const galleryScroll = document.querySelector(".js-gallery-scroll-block");
 
 	let optionsTabsBlock = {
+		damping: .1,
+		alwaysShowTracks: true,
+	}
+
+	let optionsTabsBlockTwo = {
 		damping: .1,
 		alwaysShowTracks: true,
 	}
@@ -27,6 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	if (tabsBlock) {
 		Scrollbar.init(tabsBlock, optionsTabsBlock);
+	}
+	if (tabsBlockTwo) {
+		Scrollbar.init(tabsBlockTwo, optionsTabsBlockTwo);
 	}
 
 	if (certifScroll) {
@@ -98,69 +107,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 
-	//Slider work-description__slider
-	//Slider work-direction__slider
-	const swiperDir = document.querySelector('.js-work-direction__slider');
-	const swiperDesc = document.querySelector('.js-work-description__slider');
-
-	if (swiperDir) {
-
-		function getDirection() {
-			let windowWidth = window.innerWidth;
-			let direction = window.innerWidth >= 992 ? 'vertical' : 'horizontal';
-
-			return direction;
-		}
-
-		const swiperWorkDirection = new Swiper(swiperDir, {
-			direction: getDirection(),
-			loop: true,
-			mousewheel: true,
-			speed: 1500,
-			grabCursor: true,
-			spaceBetween: 10,
-			slideToClickedSlide: true,
-			breakpoints: {
-				// when window width is >= 320px
-				320: {
-					slidesPerView: 'auto',
-					spaceBetween: 24,
-					initialSlide: 0,
-					centeredSlides: false,
-				},
-				992: {
-					initialSlide: 2,
-					centeredSlides: true,
-					spaceBetween: 0,
-					slidesPerView: 5,
-					grabCursor: true,
-				},
-			},
-			on: {
-				resize: function () {
-					swiperWorkDirection.changeDirection(getDirection());
-				},
-			},
-		});
-
-		const swiperWorkDescription = new Swiper(swiperDesc, {
-			loop: true,
-			speed: 1500,
-			effect: "fade",
-			initialSlide: 2,
-			grabCursor: false,
-			spaceBetween: 10,
-			slideToClickedSlide: true,
-			fadeEffect: {
-				crossFade: true
-			}
-		});
-
-		swiperWorkDirection.on('slideChange', () => {
-			swiperWorkDescription.slideTo(swiperWorkDirection.realIndex, 800)
-		});
-	}
-
 //js-xs-slider
 	const xsSwiper = document.querySelector('.js-xs-slider');
 	const xsSwipers = document.querySelectorAll('.js-xs-slider');
@@ -223,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 
-// Табы на странице Blog
+// Табы
 	let tabNavLink = document.querySelectorAll('.js-tabs-nav__tab');
 	let tabContent = document.querySelectorAll('.js-tabs-content__el');
 
@@ -263,5 +209,72 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	tabsNav();
+
+	//Slider work-description__slider
+	//Slider work-direction__slider
+	const swiperDir = document.querySelector('.js-slider-nav');
+	const swiperDesc = document.querySelector('.js-work-description__slider');
+
+	if (swiperDir) {
+
+		function getDirection() {
+			let windowWidth = window.innerWidth;
+			let direction = window.innerWidth >= 992 ? 'vertical' : 'horizontal';
+
+			return direction;
+		}
+
+		const swiperWorkDirection = new Swiper(swiperDir, {
+			direction: getDirection(),
+			loop: true,
+			mousewheel: true,
+			speed: 1500,
+			grabCursor: true,
+			slideToClickedSlide: true,
+			//loopedSlides: 5,
+			breakpoints: {
+				// when window width is >= 320px
+				320: {
+					slidesPerView: 'auto',
+					spaceBetween: 24,
+					initialSlide: 0,
+					centeredSlides: false,
+				},
+				992: {
+					initialSlide: 2,
+					centeredSlides: true,
+					spaceBetween: 0,
+					slidesPerView: 4,
+					grabCursor: true,
+				},
+			},
+			on: {
+				resize: function () {
+					swiperWorkDirection.changeDirection(getDirection());
+				},
+			},
+		});
+
+		const swiperWorkDescription = new Swiper(swiperDesc, {
+			grabCursor: true,
+			slidesPerView: 1,
+			spaceBetween: 10,
+			//loopedSlides: 5,
+			freeMode: true,
+			watchSlidesVisibility: true,
+			watchSlidesProgress: true,
+			loop: true,
+			direction: 'vertical',
+			slideToClickedSlide: true,
+			thumbs: {
+				swiper: swiperWorkDirection,
+			}
+		});
+
+		swiperWorkDirection.on('slideChange', () => {
+			swiperWorkDescription.slideTo(swiperWorkDirection.realIndex, 800)
+		});
+	}
+
 
 });

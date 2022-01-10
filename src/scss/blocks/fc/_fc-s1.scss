@@ -1,3 +1,11 @@
+.fc-s1 {
+  margin-bottom: $indent-30;
+
+  @include lg {
+    margin-bottom: $indent-60;
+  }
+}
+
 .fc-s1 .fc-s1__top.grid-row {
   justify-content: flex-start;
   margin-bottom: $indent-10;
@@ -8,6 +16,13 @@
 
   @include lg {
     margin-bottom: $indent-35;
+  }
+}
+.fc-s1__wrap {
+  margin-bottom: $indent-15;
+
+  @include lg {
+    margin-bottom: $indent-55;
   }
 }
 
@@ -23,17 +38,81 @@
   justify-content: flex-start;
 }
 
-.fc-s1 .grid-col70 {
+.fc-s1__top .grid-col70 {
   display: none;
 
   @include sm {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-size: 18px;
-    line-height: 21px;
-    font-weight: 400;
   }
+}
+
+.fc-s1 .fc-s1__body .grid-col70 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: $indent-20;
+  font-size: 14px;
+  line-height: 17px;
+
+  @include lg {
+    display: none;
+  }
+}
+
+.fc-s1 .grid-row.fc-s1__body {
+  @include lg-down {
+    flex-direction: column-reverse;
+  }
+}
+
+.tag-hashtag {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 6px 12px;
+  overflow: hidden;
+  color: $white;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  margin-bottom: $indent-10;
+}
+
+.tag-hashtag:not(:last-child) {
+  margin-right: $indent-10;
+}
+
+.fc-s1 .fc-s1__body .grid-col70 .link-s {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.fc-s1__body-tags-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: $indent-35;
+
+  @include lg {
+    margin-bottom: $indent-60;
+  }
+}
+
+.fc-s1 .fc-s1__body .grid-col70 .metro-block .text-xxs {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.grid-col70-inner {
+  display: flex;
+  flex-direction: row;
+}
+
+.fc-s1 .grid-col70 {
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
 }
 
 .fc-s1 .grid-col70 .text-xxs {
@@ -121,7 +200,7 @@
 .slider-nav {
   overflow: hidden;
   width: 100px;
-  margin-right: 10px;
+  margin-left: 10px;
   flex-shrink: 0;
   height: 305px;
 }
@@ -144,4 +223,142 @@
   height: 100%;
   max-height: 305px;
   overflow: hidden;
+}
+
+.fc-s1__body-inner {
+  margin-bottom: $indent-10;
+
+  @include sm-down {
+    //background: linear-gradient(180deg, #374160 0%, rgba(55, 65, 96, 0) 81.7%);
+  }
+  @include lg {
+    margin-bottom: $indent-30;
+  }
+}
+
+.fc-s1__body-inner-el {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: $black-t;
+
+  @include lg {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.fc-s1__body-inner-el:not(:last-child) {
+  margin-bottom: $indent-30;
+}
+
+// slider work-direction
+
+.thumb-slider__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-nav .swiper-container,
+.slider-main .swiper-container {
+  height: 100%;
+}
+
+.swiper-wrapper.slider-nav__wrapper {
+  flex-direction: row;
+
+  @include lg {
+    flex-direction: column;
+    height: 305px;
+  }
+}
+
+.slider-nav {
+  margin-left: 10px;
+  width: 100%;
+
+  @include lg {
+    width: 12%;
+    height: 305px;
+  }
+}
+
+.slider-nav__slide.swiper-slide {
+  width: 65px;
+  height: 65px;
+}
+
+.slider-nav__card {
+  width: 65px;
+  height: 65px;
+}
+
+.slider-nav__card img {
+  width: 100%;
+  height: 100%;
+}
+
+//tabs
+.fc-s1__bottom .tabs-nav {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.fc-s1 .tabs-nav__tab-title {
+  white-space: nowrap;
+
+  @include sm-down {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: $indent-10;
+  }
+}
+
+// slider work-description
+.work-description-slider {
+  width: 100%;
+  overflow: hidden;
+
+  @include lg {
+    width: 55%;
+  }
+}
+
+.description-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  @include md {
+    align-items: flex-end;
+  }
+}
+
+.description-card__desc {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  color: $black;
+  width: 90%;
+  margin-bottom: 65px;
+  @include md {
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 0;
+    font-size: 32px;
+    line-height: 42px;
+  }
+  @include xl {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  @include xl {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+
+.description-card__images .description-card__img {
+  width: clamp(231px, 450px, 520px);
 }

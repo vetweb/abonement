@@ -216,18 +216,21 @@
 }
 
 .tabs-content {
-  display: flex;
+  display: block;
 }
 
 .tabs-content__el {
   display: none;
+}
+
+.camp .tabs-content__el {
   color: $gray-tx;
   font-size: 18px;
   line-height: 26px;
 }
 
 .tabs-content__el.active {
-  display: flex;
+  display: block;
 }
 
 .tabs-list__el {
