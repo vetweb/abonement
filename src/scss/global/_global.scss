@@ -214,17 +214,13 @@ hr {
 }
 
 .container {
-	width: 100%;
 	max-width: $container-width;
-	padding: 0 $container-padding-sm;
+	width: 100%;
+	padding: 0 80px;
 	margin: 0 auto;
 
-	@include sm {
-		padding: 0 $container-padding-md;
-	}
-
-	@include md {
-		padding: 0 $container-padding;
+	@include sm-down {
+		padding: 0 10px;
 	}
 }
 
@@ -447,4 +443,10 @@ h6, .h6 {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 24px;
+}
+
+.icon-svg {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
 }

@@ -1,0 +1,17 @@
+.location-change {
+  @include flex-center;
+}
+
+.location-change__icon {
+  display: block;
+  width: 14px;
+  height: 17px;
+  margin-right: 10px;
+}
+
+.location-change__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: $white;
+}

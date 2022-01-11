@@ -1,0 +1,21 @@
+.header {
+	background: $blue-bg;
+}
+.header__top {
+	padding: 20px 0;
+}
+
+.header__logo {
+	display: block;
+	width: 250px;
+	height: 60px;
+	background: url("/img/logo.png") no-repeat center;
+	background-size: contain;
+}
+
+.header__left {
+	@include flex(center, flex-start);
+}
+
+.header__center {}
+.header__right {}
