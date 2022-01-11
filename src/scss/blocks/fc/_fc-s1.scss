@@ -253,50 +253,50 @@
 }
 
 // slider work-direction
-
-.thumb-slider__wrap {
-  display: flex;
-  justify-content: space-between;
-}
-
-.slider-nav .swiper-container,
-.slider-main .swiper-container {
-  height: 100%;
-}
-
-.swiper-wrapper.slider-nav__wrapper {
-  flex-direction: row;
-
-  @include lg {
-    flex-direction: column;
-    height: 305px;
-  }
-}
-
-.slider-nav {
-  margin-left: 10px;
-  width: 100%;
-
-  @include lg {
-    width: 12%;
-    height: 305px;
-  }
-}
-
-.slider-nav__slide.swiper-slide {
-  width: 65px;
-  height: 65px;
-}
-
-.slider-nav__card {
-  width: 65px;
-  height: 65px;
-}
-
-.slider-nav__card img {
-  width: 100%;
-  height: 100%;
-}
+//
+//.thumb-slider__wrap {
+//  display: flex;
+//  justify-content: space-between;
+//}
+//
+//.slider-nav .swiper-container,
+//.slider-main .swiper-container {
+//  height: 100%;
+//}
+//
+//.swiper-wrapper.slider-nav__wrapper {
+//  flex-direction: row;
+//
+//  @include lg {
+//    flex-direction: column;
+//    height: 305px;
+//  }
+//}
+//
+//.slider-nav {
+//  margin-left: 10px;
+//  width: 100%;
+//
+//  @include lg {
+//    width: 12%;
+//    height: 305px;
+//  }
+//}
+//
+//.slider-nav__slide.swiper-slide {
+//  width: 65px;
+//  height: 65px;
+//}
+//
+//.slider-nav__card {
+//  width: 65px;
+//  height: 65px;
+//}
+//
+//.slider-nav__card img {
+//  width: 100%;
+//  height: 100%;
+//}
 
 //tabs
 .fc-s1__bottom .tabs-nav {
@@ -316,49 +316,121 @@
 }
 
 // slider work-description
-.work-description-slider {
+//.work-description-slider {
+//  width: 100%;
+//  overflow: hidden;
+//
+//  @include lg {
+//    width: 55%;
+//  }
+//}
+//
+//.description-card {
+//  display: flex;
+//  flex-direction: column;
+//  align-items: flex-start;
+//  @include md {
+//    align-items: flex-end;
+//  }
+//}
+//
+//.description-card__desc {
+//  font-weight: 600;
+//  font-size: 22px;
+//  line-height: 28px;
+//  letter-spacing: -0.02em;
+//  color: $black;
+//  width: 90%;
+//  margin-bottom: 65px;
+//  @include md {
+//    font-weight: 500;
+//    width: 100%;
+//    margin-bottom: 0;
+//    font-size: 32px;
+//    line-height: 42px;
+//  }
+//  @include xl {
+//    font-size: 38px;
+//    line-height: 46px;
+//  }
+//  @include xl {
+//    font-size: 32px;
+//    line-height: 42px;
+//  }
+//}
+//
+//.description-card__images .description-card__img {
+//  width: clamp(231px, 450px, 520px);
+//}
+
+.swiper {
   width: 100%;
-  overflow: hidden;
-
-  @include lg {
-    width: 55%;
-  }
+  height: 100%;
 }
 
-.description-card {
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  @include md {
-    align-items: flex-end;
-  }
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
-.description-card__desc {
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 28px;
-  letter-spacing: -0.02em;
-  color: $black;
-  width: 90%;
-  margin-bottom: 65px;
-  @include md {
-    font-weight: 500;
-    width: 100%;
-    margin-bottom: 0;
-    font-size: 32px;
-    line-height: 42px;
-  }
-  @include xl {
-    font-size: 38px;
-    line-height: 46px;
-  }
-  @include xl {
-    font-size: 32px;
-    line-height: 42px;
-  }
+//.swiper-slide img {
+//  display: block;
+//  width: 100%;
+//  height: 100%;
+//  object-fit: cover;
+//}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.description-card__images .description-card__img {
-  width: clamp(231px, 450px, 520px);
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
 }
+
+.mySwiper2 {
+  height: 50%;
+  width: 100%;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+//.swiper-slide img {
+//  display: block;
+//  width: 100%;
+//  height: 100%;
+//  object-fit: cover;
+//}

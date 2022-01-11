@@ -1,0 +1,11 @@
+.tc-7 {
+  padding-bottom: $indent-170;
+  @include lg {
+    padding-bottom: $indent-120;
+  }
+}
+
+.tc-7 .grid-gallery__card {
+  border-radius: 10px;
+  overflow: hidden;
+}

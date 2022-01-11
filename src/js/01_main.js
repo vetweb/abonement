@@ -212,69 +212,90 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	//Slider work-description__slider
 	//Slider work-direction__slider
-	const swiperDir = document.querySelector('.js-slider-nav');
-	const swiperDesc = document.querySelector('.js-work-description__slider');
+	// const swiperDir = document.querySelector('.js-slider-nav');
+	// const swiperDesc = document.querySelector('.js-work-description__slider');
+	//
+	// if (swiperDir) {
+	//
+	// 	function getDirection() {
+	// 		let windowWidth = window.innerWidth;
+	// 		let direction = window.innerWidth >= 992 ? 'vertical' : 'horizontal';
+	//
+	// 		return direction;
+	// 	}
+	//
+	// 	const swiperWorkDirection = new Swiper(swiperDir, {
+	// 		direction: getDirection(),
+	// 		loop: true,
+	// 		mousewheel: true,
+	// 		speed: 1500,
+	// 		grabCursor: true,
+	// 		slideToClickedSlide: true,
+	// 		//loopedSlides: 5,
+	// 		breakpoints: {
+	// 			// when window width is >= 320px
+	// 			320: {
+	// 				slidesPerView: 'auto',
+	// 				spaceBetween: 24,
+	// 				initialSlide: 0,
+	// 				centeredSlides: false,
+	// 			},
+	// 			992: {
+	// 				initialSlide: 2,
+	// 				centeredSlides: true,
+	// 				spaceBetween: 0,
+	// 				slidesPerView: 4,
+	// 				grabCursor: true,
+	// 			},
+	// 		},
+	// 		on: {
+	// 			resize: function () {
+	// 				swiperWorkDirection.changeDirection(getDirection());
+	// 			},
+	// 		},
+	// 	});
+	//
+	// 	const swiperWorkDescription = new Swiper(swiperDesc, {
+	// 		grabCursor: true,
+	// 		slidesPerView: 1,
+	// 		spaceBetween: 10,
+	// 		//loopedSlides: 5,
+	// 		freeMode: true,
+	// 		watchSlidesVisibility: true,
+	// 		watchSlidesProgress: true,
+	// 		loop: true,
+	// 		direction: 'vertical',
+	// 		slideToClickedSlide: true,
+	// 		thumbs: {
+	// 			swiper: swiperWorkDirection,
+	// 		}
+	// 	});
+	//
+	// 	swiperWorkDirection.on('slideChange', () => {
+	// 		swiperWorkDescription.slideTo(swiperWorkDirection.realIndex, 800)
+	// 	});
+	// }
 
-	if (swiperDir) {
+	let swiper = new Swiper(".mySwiper", {
+		loop: true,
+		spaceBetween: 10,
+		slidesPerView: 4,
+		freeMode: true,
+		watchSlidesProgress: true,
+	});
 
-		function getDirection() {
-			let windowWidth = window.innerWidth;
-			let direction = window.innerWidth >= 992 ? 'vertical' : 'horizontal';
-
-			return direction;
-		}
-
-		const swiperWorkDirection = new Swiper(swiperDir, {
-			direction: getDirection(),
-			loop: true,
-			mousewheel: true,
-			speed: 1500,
-			grabCursor: true,
-			slideToClickedSlide: true,
-			//loopedSlides: 5,
-			breakpoints: {
-				// when window width is >= 320px
-				320: {
-					slidesPerView: 'auto',
-					spaceBetween: 24,
-					initialSlide: 0,
-					centeredSlides: false,
-				},
-				992: {
-					initialSlide: 2,
-					centeredSlides: true,
-					spaceBetween: 0,
-					slidesPerView: 4,
-					grabCursor: true,
-				},
-			},
-			on: {
-				resize: function () {
-					swiperWorkDirection.changeDirection(getDirection());
-				},
-			},
-		});
-
-		const swiperWorkDescription = new Swiper(swiperDesc, {
-			grabCursor: true,
-			slidesPerView: 1,
-			spaceBetween: 10,
-			//loopedSlides: 5,
-			freeMode: true,
-			watchSlidesVisibility: true,
-			watchSlidesProgress: true,
-			loop: true,
-			direction: 'vertical',
-			slideToClickedSlide: true,
-			thumbs: {
-				swiper: swiperWorkDirection,
-			}
-		});
-
-		swiperWorkDirection.on('slideChange', () => {
-			swiperWorkDescription.slideTo(swiperWorkDirection.realIndex, 800)
-		});
-	}
+	let swiper2 = new Swiper(".mySwiper2", {
+		loop: true,
+		spaceBetween: 10,
+		slidesPerView: 'auto',
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		thumbs: {
+			swiper: swiper,
+		},
+	});
 
 
 });

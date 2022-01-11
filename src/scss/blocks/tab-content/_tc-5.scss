@@ -1,0 +1,31 @@
+.tc-5 {
+  padding-bottom: $indent-170;
+  @include lg {
+    padding-bottom: $indent-120;
+  }
+}
+
+.tc-5 .grid-gallery {
+  grid-template-columns: 1fr;
+
+  @include csx {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include sm {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include lg {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.tc-5 .grid-gallery__card {
+  min-height: 360px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
