@@ -1,0 +1,35 @@
+.fc-s2 {
+  margin-bottom: $indent-50;
+
+  @include lg {
+    margin-bottom: $indent-60;
+  }
+}
+
+.fc .swiper-slide.card-m__list-el {
+  box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
+}
+
+.fc-s2 .standard-slider.swiper-container {
+  overflow: hidden;
+}
+
+.fc-s2 .swiper-wrapper.grid-cards__list {
+  margin-bottom: $indent-20;
+}
+
+.fc-s2 .card-m-slider .swiper-container-horizontal>.swiper-scrollbar {
+  display: block;
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  left: 0;
+}
+
+.card-big-slider .swiper-container-horizontal>.swiper-scrollbar {
+  display: block;
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  left: 0;
+}

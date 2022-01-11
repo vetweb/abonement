@@ -1,0 +1,232 @@
+.card-sub-2 {
+   padding: 0 0 50px;
+
+  @include sm {
+    padding: 0 0 85px;
+  }
+
+  @include lg {
+    padding: 0 0 120px;
+  }
+}
+
+.card-sub-2 .h3 {
+  margin-bottom: $indent-20;
+  color: $blue-bg;
+}
+
+.card-sub-2__desc {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $black-t;
+  margin-bottom: $indent-20;
+
+  @include sm {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: $indent-40;
+  }
+}
+
+.grid-col50__img {
+  max-height: 365px;
+  height: 100%;
+}
+
+.card-sub-2__desc-title {
+  font-weight: 700;
+  margin-bottom: $indent-15;
+}
+
+.card-sub-2__desc-item {
+  list-style-type: none;
+  padding-left: 10px;
+  position: relative;
+}
+
+.card-sub-2__desc-item:after {
+  content: '';
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-color: $black-t;
+}
+
+.btn-wrapp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include sm {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.btn-wrapp .button-rect {
+  width: 100%;
+  border-radius: 15px;
+  padding: 12px 8px;
+
+  @include sm {
+    max-width: 202px;
+  }
+}
+
+.btn-wrapp .button-rect span {
+  margin-right: $indent-10;
+}
+
+.btn-wrapp .button-rect svg {
+  width: 19px;
+  height: 17px;
+  color: $blue;
+  transition: all .3s;
+}
+
+.button-rect:hover svg {
+  color: $white
+}
+
+.btn-wrapp .btn-blue {
+  transition: all .3s;
+}
+
+.btn-wrapp .btn-blue:hover {
+  background-color: $white;
+  color: $blue;
+  border: 1px solid $blue;
+}
+
+.btn-wrapp .btn-white {
+  margin-bottom: $indent-10;
+
+  @include md {
+    margin-bottom: 0;
+    margin-right: $indent-10;
+  }
+}
+
+.card-sub-2__row {
+  display: flex;
+  flex-direction: column;
+
+  @include md {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.card-sub-2__col50.card-sub-2__col50--hidden {
+  display: none;
+
+  @include md {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.card-sub-2__col50{
+  width: 100%;
+  height: 100%;
+
+  @include md {
+    width: 49%;
+  }
+}
+
+.table-l {
+  background-color: $white;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
+  border-radius: 10px;
+  padding: $indent-15 $indent-15;
+
+  @include lg {
+    padding: $indent-15 $indent-30;
+  }
+}
+
+.table-l__header {
+  display: none;
+
+  @include lg {
+    color: $black-t;
+    padding: $indent-20 $indent-30;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.table-l__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-l__body-el {
+  padding: $indent-20 0;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: inherit;
+  border-radius: 0;
+  transition: all .3s;
+  cursor: pointer;
+
+  @include sm {
+    padding: $indent-30 $indent-30;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include lg {
+    padding: $indent-30 $indent-30;
+  }
+}
+
+.table-m__body-el-desc {
+  color: $blue;
+
+  @include sm-down {
+    padding: $indent-15 0;
+  }
+}
+
+.table-l__body-el:hover {
+  background-color: $blue-bg4;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.table-l__body-el .button-rect {
+  border-radius: 15px;
+  font-weight: 700;
+  background-color: $white;
+  color: $blue;
+  padding: $indent-15 0;
+  border: 1px solid $blue;
+  transition: all .3s;
+
+  @include sm {
+    max-width: 136px;
+  }
+}
+
+.table-l__body-el:hover .button-rect {
+  background-color: $blue;
+  color: $white;
+}
+
+.table-l a ,
+.table-m a {
+  text-decoration: none;
+}

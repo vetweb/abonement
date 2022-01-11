@@ -1,0 +1,111 @@
+.camp-3 {
+  padding: 0 0 50px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include sm {
+    padding: 0 0 85px;
+  }
+
+  @include lg {
+    padding: 0 0 120px;
+  }
+}
+
+.camp-3 .h3 {
+  margin-bottom: $indent-15;
+  color: $blue-bg;
+
+  @include sm {
+    margin-bottom: $indent-25;
+  }
+
+  @include lg {
+    margin-bottom: $indent-20;
+  }
+}
+
+.swiper-slide.card-img__list-el {
+  width: 145px;
+  height: 208px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  @include sm {
+    width: 330px;
+    height: 357px;
+  }
+
+  @include lg {
+    width: 298px;
+    height: 357px;
+  }
+}
+
+.swiper-slide.card-img__list-el:not(:last-child) {
+  margin-right: 10px;
+
+  @include lg {
+    margin-right: 30px;
+  }
+}
+
+.card-img__img {
+  height: 142px;
+  background-color: #646A7D;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: $white;
+
+  @include sm {
+    height: 291px;
+  }
+}
+
+.card-img__cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  color: $black-t;
+  padding: $indent-20 $indent-10;
+}
+
+.card-img-slider .swiper-wrapper.grid-cards__list {
+  margin-bottom: $indent-30;
+}
+
+.card-img-slider .swiper-btn__wrap {
+  width: 40%;
+  height: 50px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+  left: 0;
+
+  @include sm-down {
+    bottom: 0;
+    width: 100%;
+  }
+
+  @include lg {
+    width: 30%;
+  }
+}
+
+.card-img-slider .swiper-pagination {
+  position: relative;
+  opacity: 1;
+  height: 10px;
+}
+
+.card-img-slider .swiper-container-horizontal>.swiper-pagination-bullets {
+  width: 100px;
+  margin: 0 auto;
+  bottom: 0;
+  left: 0;
+}

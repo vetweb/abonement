@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+@@include('components/blocks/page/_head.html',{
+"lang":"en",
+"title":"Абонемент",
+"description":"Абонемент",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+@@include('components/blocks/page/_header.html')
+<main class="main camp">
+    <section class="camp-1 card-cd-s1">
+      <div class="container">
+          <div class="card-cd-s1__row grid-row">
+              <div class="card-cd-s1__col50 grid-col50 col50-reverse">
+                  <h3 class="h3">Лагерь «Три мишки»</h3>
+                  <div class="grid-column">
+                      @@include('components/blocks/bem/_row-link-ic.html')
+                      @@include('components/blocks/bem/_row-link-ic--mob.html')
+                      <div class="grid-row">
+                          <p class="grid-row__address grid-row__address--desk">г. Свилочь, ул. К.Калиновского 2</p>
+                          <p class="grid-row__address grid-row__address--mob">Беларусь, Минск, пр. Победителей, 84 (ТРЦ ARENAcity, 2-й этаж – Детский развлекательный центр «Карамелька»)</p>
+                          <a href="#" class="link-s grid-row__link">Посмотреть на карте</a>
+                      </div>
+                  </div>
+                  <div class="grid-icon">
+                      <div class="grid-icon__el">
+                          <div class="grid-icon__image">
+                              <img src="/img/grid-icon1.svg" alt="">
+                          </div>
+                          <div class="grid-icon-info">
+                              <span class="link-s">Возраст</span>
+                              <span class="text-sx">от 5 до 12 лет</span>
+                          </div>
+                      </div>
+                      <div class="grid-icon__el">
+                          <div class="grid-icon__image">
+                              <img src="/img/grid-icon2.svg" alt="">
+                          </div>
+                          <div class="grid-icon-info">
+                              <span class="link-s">Дата заезда и выезда</span>
+                              <span class="text-sx">с 28.12.21 по 08.01.21</span>
+                          </div>
+                      </div>
+                      <div class="grid-icon__el">
+                          <div class="grid-icon__image">
+                              <img src="/img/grid-icon3.svg" alt="">
+                          </div>
+                          <div class="grid-icon-info">
+                              <span class="link-s">Время</span>
+                              <span class="text-sx">20:00</span>
+                          </div>
+                      </div>
+                      <div class="grid-icon__el">
+                          <div class="grid-icon__image">
+                              <img src="/img/grid-icon4.svg" alt="">
+                          </div>
+                          <div class="grid-icon-info">
+                              <span class="link-s">Кол-во мест</span>
+                              <span class="text-sx">24</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="button-block">
+                      <div class="button-block__info">
+                          <span class="button-block__desc">Цена</span>
+                          <div class="button-block__sum">
+                              <span class="value button-s">90</span>
+                              <span class="currency button-s ">Br</span>
+                          </div>
+                      </div>
+                      <button class="button-rect btn-blue link-s">Купить</button>
+                  </div>
+              </div>
+              <div class="card-cd-s1__col50 grid-col50">
+                  <div class="xs__slider">
+                      @@include('components/blocks/bem/_circle-el.html')
+                      <div class="xs-slider js-xs-slider swiper-container">
+                          <div class="swiper-wrapper xs-slider__wrap">
+                              <div class="swiper-slide xs-slide">
+                                  <div class="xs-slide__card">
+                                      <img src="/img/camp1.png" alt="">
+                                  </div>
+                                  @@include('components/blocks/bem/_favorites.html')
+                              </div>
+                              <div class="swiper-slide xs-slide">
+                                  <div class="xs-slide__card">
+                                      <img src="/img/banner-bg1.png" alt="">
+                                  </div>
+                                  @@include('components/blocks/bem/_favorites.html')
+                              </div>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                          <div class="swiper-button-prev btn-transparent btn__prev"><img src="/img/arrow-prev.svg" alt=""></div>
+                          <div class="swiper-button-next btn-transparent btn__next"><img src="/img/arrow-next.svg" alt=""></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    <section class="camp-2">
+        <div class="container">
+            <div class="description-block" style="background-color: #ffffff">
+                <div class="description-block__wrap">
+                    <h3 class="h3">О лагере</h3>
+                    <div class="description-block__top">
+                        <p class="description-block__top-text">Зимний лагерь в Карамельке — это активный отдых с
+                            веселыми и необычными занятиями на развитие смекалки и логики! С 28 декабря по
+                            8 января ребят ждут мастер-классы, просмотр мультфильмов и познавательных программ,
+                            подвижные игры на игровых площадках и Xbox, прогулки на природе и домашнее питание.
+                            Отправляйте ребёнка в лагерь до работы, а забирайте после. Всего 39 руб. в день при покупке
+                            абонемента на 10 дней. Все развлечения и 3-разовое питание входят в стоимость.
+                        </p>
+                        <p class="description-block__top-text"> Рекомендуемый возраст: от 5 до 12 лет.</p>
+                    </div>
+                    <div class="description-block__body">
+                        <div class="description-block__body-col50" style="background-color: #EFF5FF">
+                            <p class="description-block__body-title">Зимние каникулы в Карамельке – это:</p>
+                            <ul class="description-block__body-list">
+                                <li class="description-block__body-el">развлечения в лабиринте, на батуте в самом
+                                    центре;
+                                </li>
+                                <li class="description-block__body-el">удобный график и гибкая система посещений. Вы
+                                    сами
+                                    выбираете удобные для вас дни посещений в течение всех каникул. Покупая абонемент в
+                                    лагерь, вы не подстраиваетесь под смены и сами планируете свой отдых. Всегда идём
+                                    навстречу, если у родителей смещенный график. Все вопросы обсуждаем индивидуально с
+                                    каждым клиентом;
+                                </li>
+                                <li class="description-block__body-el">мастер-классы по танцам, творческие мастер-классы
+                                    по лепке из пластилина, рисованию на гипсовых фигурках, оригами;
+                                    3-разовое домашнее питание;
+                                </li>
+                                <li class="description-block__body-el">прогулки и зимние игры на детских площадках;
+                                    посещение собственного кинотеатра;
+                                </li>
+                                <li class="description-block__body-el">игровые аттракционы;</li>
+                                <li class="description-block__body-el">утренние зарядки и тематические вечеринки.</li>
+                            </ul>
+                        </div>
+                        <div class="description-block__body-col50" style="background-color: #FFFDE5">
+                            <p class="description-block__body-title">Что получит ребенок на зимних каникулах в
+                                Карамельке?</p>
+                            <ul class="description-block__body-list">
+                                <li class="description-block__body-el">Отдых. Здесь никто не заставляет учить или делать
+                                    сложные задания. Дети развиваются через творческие занятия, общение и игры в
+                                    интерактивной форме. Молодые воспитатели понимают детей с полуслова, рассказывают им
+                                    интересные истории, учат играть в шахматы, настольные игры.
+                                </li>
+                                <li class="description-block__body-el">Новых друзей и новые навыки. Ребята учатся
+                                    общаться
+                                    в коллективе, познавать всё новое вместе и быть самостоятельными.
+                                </li>
+                                <li class="description-block__body-el">Теплые впечатления о путешествии в сказочную
+                                    страну,
+                                    в которую он может приходить снова и снова.
+                                </li>
+                            </ul>
+                            <div class="description-block__body-images">
+                                <div class="description-block__body-inner">
+                                    <img class="description-block__body-img1" src="/img/apple.png" alt="">
+                                    <img class="description-block__body-img2" src="/img/bottle.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs-block js-tabs-block">
+                    <div class="tabs-nav">
+                        <div class="tabs-nav__tab js-tabs-nav__tab active" data-id="id1">
+                            <span class="tabs-nav__tab-title">Режим работы</span>
+                            <div class="tabs-nav__tab-active"></div>
+                        </div>
+                        <div class="tabs-nav__tab js-tabs-nav__tab" data-id="id2">
+                            <span class="tabs-nav__tab-title">Распорядок дня</span>
+                            <div class="tabs-nav__tab-active"></div>
+                        </div>
+                        <div class="tabs-nav__tab js-tabs-nav__tab" data-id="id3">
+                            <span class="tabs-nav__tab-title">Питание</span>
+                            <div class="tabs-nav__tab-active"></div>
+                        </div>
+                        <div class="tabs-nav__tab js-tabs-nav__tab" data-id="id4">
+                            <span class="tabs-nav__tab-title">Безопастость</span>
+                            <div class="tabs-nav__tab-active"></div></div>
+                        <div class="tabs-nav__tab js-tabs-nav__tab" data-id="id5">
+                            <span class="tabs-nav__tab-title">Цены</span>
+                            <div class="tabs-nav__tab-active"></div></div>
+                    </div>
+                    <div class="tabs-content">
+                        <div class="tabs-content__el js-tabs-content__el active" data-content-id="id1">
+                            <ul class="tabs-list">
+                                <li class="tabs-list__el">время: с 8.20 до 18.00;</li>
+                                <li class="tabs-list__el">дни работы: с 28.12.20 по 08.01.21 (10 рабочих дней,
+                                    2 выходных).</li>
+                            </ul>
+                        </div>
+                        <div class="tabs-content__el js-tabs-content__el" data-content-id="id2">
+                            <ul class="tabs-list">
+                                <li class="tabs-list__el">время: с 8.20 до 18.00;</li>
+                                <li class="tabs-list__el">дни работы: с 28.12.20 по 08.01.21 (10 рабочих дней,
+                                    2 выходных).</li>
+                            </ul>
+                        </div>
+                        <div class="tabs-content__el js-tabs-content__el" data-content-id="id3">
+                            <ul class="tabs-list">
+                                <li class="tabs-list__el">время: с 8.20 до 18.00;</li>
+                                <li class="tabs-list__el">дни работы: с 28.12.20 по 08.01.21 (10 рабочих дней,
+                                    2 выходных).</li>
+                            </ul>
+                        </div>
+                        <div class="tabs-content__el js-tabs-content__el" data-content-id="id4">
+                            <ul class="tabs-list">
+                                <li class="tabs-list__el">время: с 8.20 до 18.00;</li>
+                                <li class="tabs-list__el">дни работы: с 28.12.20 по 08.01.21 (10 рабочих дней,
+                                    2 выходных).</li>
+                            </ul>
+                        </div>
+                        <div class="tabs-content__el js-tabs-content__el" data-content-id="id5">
+                            <p class="tabs-content__el-desc">Text</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="camp-3" style="background-image: url('/img/camp-bg3.png')">
+        <div class="container">
+            <h3 class="h3">Наши тренеры и вожатые</h3>
+            <div class="card-img-slider">
+                <div class="img-slider standard-slider js-standard-slider swiper-container free-slider">
+                    <div class="swiper-wrapper grid-cards__list">
+                        <div class="swiper-slide card-img__list-el">
+                            @@include('components/blocks/bem/_card-img.html')
+                        </div>
+                        <div class="swiper-slide card-img__list-el">
+                            @@include('components/blocks/bem/_card-img.html')
+                        </div>
+                        <div class="swiper-slide card-img__list-el">
+                            @@include('components/blocks/bem/_card-img.html')
+                        </div>
+                        <div class="swiper-slide card-img__list-el">
+                            @@include('components/blocks/bem/_card-img.html')
+                        </div>
+                    </div>
+                    <div class="swiper-btn__wrap">
+                        <div class="swiper-button-prev btn__prev"><img src="/img/arrow-prev.svg" alt=""></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next btn__next"><img src="/img/arrow-next.svg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="card-cd-s5">
+        <div class="container">
+            <div class="grid-row">
+                <div class="grid-row__col50 grid-col50">
+                    <h3 class="h3">Где мы находимся</h3>
+                    <div class="map-block">
+                        <div style="border-color: transparent; position:relative;overflow:hidden;">
+                            <a href="https://yandex.by/maps/157/minsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Минск</a>
+                            <a href="https://yandex.by/maps/157/minsk/house/Zk4Ycw9pQEcGQFtpfXR4d3xlYg==/?ll=27.589921%2C53.896066&utm_medium=mapframe&utm_source=maps&z=14.31" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Захарова, 77А — Яндекс.Карты</a>
+                            <iframe src="https://yandex.by/map-widget/v1/-/CCUyJPXHSD" width="100%" height="440px" allowfullscreen="true" style="position:relative;"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-row__col50 grid-col50">
+                    <div class="grid-row__col50-top grid-row__col50-desk">
+                        <h3 class="h3">Отзывы</h3>
+                        @@include('components/blocks/bem/_rating-m.html')
+                    </div>
+                    <div class="reviews-block">
+                        <div class="grid-row__col50-top grid-row__col50-top--mob">
+                            <h3 class="h3">Отзывы</h3>
+                            @@include('components/blocks/bem/_rating-m.html')
+                        </div>
+                        <div class="reviews-block__review">
+                            <div class="reviews-block__review-inner">
+                                <div class="reviews-block__review-l">
+                                    <span class="reviews-block__name text-xs-500">Лана Cтолярова</span>
+                                    <div class="data-time">
+                                        <span class="data-time__date">7 апреля 2019</span>в <span
+                                            class="data-time__time">16:34</span>
+                                    </div>
+                                </div>
+                                <div class="reviews-block__review-r">
+                                    @@include('components/blocks/bem/_stars.html')
+                                    <div class="recom-block">
+                                        <img src="/img/heart-red.svg" class="recom-block__img" alt="">
+                                        <span class="recom-block__text">Рекомендую</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="reviews-block__text text-s">Сын очень доволен их команда выигрывает футбольные турниры.</p>
+                        </div>
+                        <div class="reviews-block__review">
+                            <div class="reviews-block__review-inner">
+                                <div class="reviews-block__review-l">
+                                    <span class="reviews-block__name text-xs-500">Анна</span>
+                                    <div class="data-time">
+                                        <span class="data-time__date">29 января 2019 </span> в <span
+                                            class="data-time__time">0:45</span>
+                                    </div>
+                                </div>
+                                <div class="reviews-block__review-r">
+                                    @@include('components/blocks/bem/_stars.html')
+                                    <div class="recom-block">
+                                        <img src="/img/heart-red.svg" class="recom-block__img" alt="">
+                                        <span class="recom-block__text">Рекомендую</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="reviews-block__text text-s">Ребёнок занимается уже 5 месяцев. Готов бежать на тренировку 24/7, страдает, что нет возможности заниматься каждый день)). Мы очень рады, что сын нашёл свой спорт и свой клуб! </p>
+                        </div>
+                        <div class="reviews-btn">
+                            <a href="#" class="reviews-btn__link-desk h5">
+                                <span>Смотреть еще</span>
+                                <img src="/img/arrow-down.svg" alt="">
+                            </a>
+                            <a href="#" class="reviews-btn__link-mob h5">Подробнее</a>
+                            <button class="button-rect btn-blue">Написать отзыв</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="card-cd-s6">
+        <div class="container">
+            <h3 class="h3">С этим абонементом рекомендуют</h3>
+            <div class="card-m-slider">
+                <div class="standard-slider js-standard-slider swiper-container free-slider">
+                    <div class="swiper-wrapper grid-cards__list">
+                        <div class="swiper-slide card-m__list-el">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="swiper-slide card-m__list-el">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="swiper-slide card-m__list-el">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="swiper-slide card-m__list-el">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="card-cd-s7" style="background-image: url('/img/bg-s7.png')">
+        <div class="container">
+            <h3 class="h3">Вы смотрели</h3>
+            <div class="card-m-slider">
+                <div class="standard-slider js-standard-slider swiper-container free-slider">
+                    <div class="swiper-wrapper grid-cards__list">
+                        <div class="swiper-slide card-m__list-el">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="swiper-slide card-m__list-el">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="swiper-slide card-m__list-el">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="swiper-slide card-m__list-el">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+@@include('components/blocks/page/_footer.html')
+@@include('components/blocks/page/_scripts.html')
+</body>
+
+</html>

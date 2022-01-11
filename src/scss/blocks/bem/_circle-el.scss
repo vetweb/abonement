@@ -1,32 +1,46 @@
 .circle-el {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   overflow: hidden;
-  width: auto;
+  max-width: 60px;
   height: 60px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  cursor: pointer;
+  background-color: $white;
+  position: relative;
+  transition: all .3s;
 
   @include lg {
     height: 92px;
+    max-width: 92px;
   }
 }
 
-.index-s__top-img {
-  display: none;
+.circles-block .circle-el {
+  box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.05);
+}
+
+.circle-el:active,
+.circle-el:hover {
+  background-color: $blue;
+  color: $white;
+}
+
+
+.circle-el svg {
+  width: 45px;
+  height: auto;
+  color: $blue;
+  transition: all .3s;
 
   @include lg {
-    display: block;
-    width: 200px;
-    position: absolute;
-    right: 92px;
-    top: 0;
-    z-index: 1;
+    width: 60px;
+    height: 70px;
   }
 }
 
-.index-s__top-img img {
-    width: 100%;
-    transform: rotate(8deg);
+.circle-el:active svg,
+.circle-el:hover svg {
+  color: $white;
 }

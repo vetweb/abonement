@@ -1,0 +1,263 @@
+.card-cd-s5 {
+  padding: 0 0 40px;
+
+  @include sm {
+    padding: 0 0 85px;
+  }
+
+  @include lg {
+    padding: 0 0 110px;
+  }
+}
+
+.card-cd-s5 .h3 {
+  padding-bottom: $indent-20;
+
+  @include lg {
+    padding-bottom: $indent-30;
+  }
+}
+
+.grid-row {
+  width: 100%;
+  height: 100%;
+}
+
+.card-cd-s5 .grid-row {
+  @include lg {
+    height: 100%;
+  }
+}
+
+.grid-row__col50:not(:last-child) {
+
+  @include lg-down {
+    margin-bottom: $indent-40;
+  }
+
+  @include sm-down {
+    margin-bottom: $indent-30;
+  }
+}
+
+.grid-row__col50-top.grid-row__col50-desk {
+  padding-bottom: $indent-20;
+
+  @include lg {
+    padding-bottom: $indent-30;
+  }
+}
+
+.grid-row__col50-top.grid-row__col50-desk .h3{
+  padding-bottom: 0;
+}
+
+.grid-row__col50-top {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @include lg {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.grid-row__col50-top .card-cd-s5 .h3 {
+  display: none;
+
+  @include lg {
+    display: block;
+  }
+}
+
+.map-block,
+.reviews-block {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  @include lg {
+    max-height: 440px;
+  }
+}
+
+.reviews-block {
+  background-color: $white;
+  padding: $indent-25 $indent-15;
+
+  @include sm {
+    padding: $indent-45 $indent-30;
+  }
+
+  @include lg {
+    padding: $indent-25 $indent-30 $indent-30;
+  }
+}
+
+.reviews-block .h3.h3--mob {
+  display: block;
+
+  @include lg {
+   display: none;
+  }
+}
+
+.grid-row__col50-top.grid-row__col50-top--mob .h3 {
+  display: block;
+
+  @include lg {
+    display: none;
+  }
+}
+
+.grid-row__col50-top.grid-row__col50-top--mob .rating-m  {
+  display: flex;
+  margin-bottom: $indent-25;
+
+  @include lg {
+    display: none;
+  }
+}
+
+.reviews-block__review {
+  margin-bottom: $indent-25;
+  color: $black-t;
+}
+
+.data-time {
+  color: $gray-tx;
+}
+
+.reviews-block__review-inner {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $indent-15;
+
+  @include lg {
+    flex-direction: row;
+  }
+}
+
+.reviews-block__review-l {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  order: 1;
+  margin-bottom: 8px;
+
+  @include lg {
+    width: 70%;
+    margin-bottom: 0;
+  }
+}
+
+.reviews-block__review-r {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 1px solid $gray-l;
+  padding-top: $indent-15;
+  order: 3;
+
+  @include lg {
+    border-top: 1px solid transparent;
+    border-left: 1px solid $gray-l;
+    width: 30%;
+    flex-direction: column;
+    padding-top: 0;
+    padding-left: $indent-30;
+    order: 2;
+  }
+}
+
+.recom-block__text {
+  display: none;
+
+  @include sm {
+    display: inline-block;
+    color: $gray-tx;
+  }
+}
+
+.reviews-block__name {
+  margin-bottom: 5px;
+}
+
+.reviews-block__review-r .stars {
+  margin-bottom: 7px;
+}
+
+.reviews-block__text {
+  order: 2;
+
+  @include lg {
+    order: 3;
+  }
+}
+
+.recom-block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.recom-block__img {
+  margin-right: 10px;
+}
+
+.reviews-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include sm {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.reviews-btn .button-rect {
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  font-weight: 700;
+  padding: 13px 8px;
+
+  @include sm {
+    max-width: 166px;
+  }
+}
+
+.reviews-btn__link-mob {
+  display: flex;
+  color: $blue;
+  margin-bottom: $indent-20;
+
+  @include sm {
+   display: none;
+  }
+}
+
+.reviews-btn__link-desk {
+  display: none;
+
+  @include sm {
+    display: flex;
+    align-items: center;
+    color: $blue;
+    text-decoration: none;
+  }
+}
+
+.reviews-btn__link-desk span {
+  margin-right: $indent-10;
+}
+
+.reviews-btn__link-desk img {
+  width: 12px;
+  height: 6px;
+}

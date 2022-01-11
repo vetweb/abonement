@@ -1,0 +1,168 @@
+.card-cd-s4 {
+  padding: 0 0 40px;
+
+  @include sm {
+    padding: 0 0 85px;
+  }
+
+  @include lg {
+    padding: 0 0 110px;
+  }
+}
+
+.card-cd-s4 .index-s__top a {
+  color: $blue;
+}
+
+.card-cd-s4 .index-s__top .h3::first-letter {
+  color: inherit;
+}
+
+.table-m {
+  background-color: $white;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
+  border-radius: 10px;
+  padding: $indent-15 $indent-15;
+
+  @include lg {
+    padding: $indent-15 $indent-30;
+  }
+}
+
+.table-m__header {
+  display: none;
+
+  @include lg {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.table-m__header__cell{
+  padding: $indent-30 0;
+  width: 170px;
+}
+
+.table-m__header__cell:first-child {
+  padding-left: $indent-30;
+}
+
+.table-m__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-m__body__cell {
+  color: $blue;
+}
+
+.table-m__body-el {
+  padding: $indent-30 0;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: inherit;
+  border-radius: 0;
+  transition: all .3s;
+  cursor: pointer;
+
+  @include sm {
+    padding: $indent-30 $indent-30;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include lg {
+    padding: $indent-30 $indent-30;
+  }
+}
+
+.table-m__body-el-wrap {
+  @include sm-down {
+    margin-bottom: $indent-15;
+  }
+
+  @include sm {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+  }
+
+  @include lg {
+    justify-content: space-between;
+  }
+}
+
+.table-m__body-el__inner {
+  display: flex;
+  flex-direction: column;
+
+  @include sm {
+    width: 25%;
+    margin-right: 10px;
+  }
+
+  @include lg {
+    width: auto;
+  }
+}
+
+.table-m__body-el__inner:not(:last-child) {
+  margin-bottom: $indent-15;
+
+  @include sm {
+    margin-bottom: $indent-20;
+    margin-right: $indent-20;
+  }
+
+  @include lg {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+.table-m__body-el__inner .table-m__header__cell.table-m__header__cell--mob{
+  display: flex;
+  padding: 0;
+  color: $black-t;
+
+  @include lg {
+    display: none;
+  }
+}
+
+.table-m__body-el:hover {
+  background-color: $blue-bg4;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.table-m__body-el .button-rect {
+  border-radius: 15px;
+  font-weight: 700;
+  background-color: $blue;
+  color: $white;
+  padding: $indent-15 0;
+  border: 1px solid $blue;
+  transition: all .3s;
+
+  @include sm {
+    max-width: 136px;
+    background-color: $white;
+    color: $blue;
+  }
+}
+
+.table-m__body-el:hover .button-rect {
+  background-color: $blue;
+  color: $white;
+}

@@ -4,12 +4,25 @@
   padding: $indent-60 0 $indent-40;
 }
 
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 80px;
+  margin: 0 auto;
+
+  @include sm-down {
+    padding: 0 10px;
+  }
+}
+
 .cont-block {
   display: flex;
   flex-direction: row;
+  padding-bottom: $indent-50;
 
   @include lg {
     flex-direction: column;
+    padding-bottom: 0;
   }
 }
 
@@ -119,10 +132,6 @@
     justify-content: space-between;
     max-width: none;
   }
-
-  //@include csx-down {
-  //  max-width: none;
-  //}
 }
 
 .footer-logo {

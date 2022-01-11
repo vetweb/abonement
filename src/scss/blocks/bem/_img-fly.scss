@@ -1,0 +1,14 @@
+.index-s__top-img {
+  display: block;
+
+  @include lg {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+  }
+}
+
+.index-s__top-img img {
+  width: 100%;
+}

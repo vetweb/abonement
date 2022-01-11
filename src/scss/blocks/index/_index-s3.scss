@@ -59,6 +59,9 @@
   font-size: 20px;
   line-height: 26px;
   text-align: center;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all .3s;
 
   @include sm {
     padding: $indent-35 0;
@@ -69,6 +72,10 @@
     font-size: 30px;
     line-height: 36px;
   }
+}
+
+.button-max:hover {
+  transform: scale(1.05);
 }
 
 .card-l-slider {

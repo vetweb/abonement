@@ -1,0 +1,40 @@
+.fc-s9 .index-s__top a {
+  text-decoration: none;
+}
+
+.gallery-scroll-block__el {
+  min-width: 200px;
+  height: 135px;
+  border-radius: 10px;
+  background-color: $white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+
+  @include lg {
+    min-width: 298px;
+    height: 200px;
+  }
+}
+
+.gallery-scroll-block__wrap .gallery-scroll-block__el:not(:last-child) {
+  margin-right: 10px;
+
+  @include lg {
+    margin-right: 30px;
+  }
+}
+
+.gallery-scroll-block__wrap {
+  display: flex;
+  padding-bottom: $indent-30;
+}
+
+.gallery-scroll-block .scrollbar-track.scrollbar-track-y,
+.gallery-scroll-block .scrollbar-track.scrollbar-track-y.show {
+  opacity: 0;
+}
+
+.gallery-scroll-block .scrollbar-track.scrollbar-track-x.show {
+  bottom: 5px;
+}

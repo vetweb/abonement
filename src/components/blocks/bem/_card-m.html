@@ -8,12 +8,8 @@
                 </div>
                 <div class="card-m__el-bottom">
                     <div class="card-m__el-tags">
-                        <div class="card-m__el-tag online"
-                             style="background-color: #2C4CA1">Онлайн
-                        </div>
-                        <div class="card-m__el-tag offline"
-                             style="background-color: #051138">Оффлайн
-                        </div>
+                        @@include('_tg-online.html')
+                        @@include('_tg-offline.html')
                     </div>
                     <div class="rating-block">
                         <span class="rating-block__el">
@@ -52,7 +48,7 @@
             @@include('_metro-block.html')
             @@include('_icon-block.html')
         </div>
-        <div class="button-full btn-blue" type="button">
+        <div class="button-full" type="button">
             <img src="/img/cart.svg" class="button__i" alt="">
             <span class="value button-s">1000</span>
             <span class="currency button-s ">Br</span>

@@ -1,0 +1,310 @@
+.card-cd-s1 {
+  padding: 90px 0 50px;
+
+  @include sm {
+    padding: 120px 0 85px;
+  }
+
+  @include lg {
+    padding: 90px 0 120px;
+  }
+}
+
+.grid-row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @include lg {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.card-cd-s1 .grid-column .grid-row {
+  @include lg {
+    justify-content: flex-start;
+  }
+}
+
+.grid-col50 {
+  width: 100%;
+  height: 100%;
+
+  @include lg {
+    width: 49%;
+  }
+}
+
+.grid-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-cd-s1 .grid-column {
+  align-items: flex-start;
+  margin-bottom: $indent-25;
+
+  @include lg {
+    margin-bottom: $indent-40;
+  }
+}
+
+.grid-row__address {
+  margin-right: $indent-15;
+}
+
+.card-cd-s1__col50.grid-col50 .h3{
+  margin-bottom: $indent-15;
+
+  @include sm {
+    margin-bottom: $indent-25;
+  }
+
+  @include lg {
+    margin-bottom: $indent-15;
+  }
+}
+
+.card-cd-s1__col50.grid-col50.col50-reverse {
+  order: 2;
+  margin-bottom: 0;
+
+  @include lg {
+    order: 1;
+  }
+}
+
+.card-cd-s1__col50.grid-col50 {
+  order: 1;
+
+  @include lg-down {
+    margin-bottom: $indent-10;
+  }
+
+  @include lg {
+   order: 2;
+  }
+}
+
+.card-cd-s1 .row-link-ic.row-link-ic--mob {
+  display: inline-flex;
+  margin-bottom: $indent-15;
+
+  @include lg {
+   display: none;
+  }
+}
+
+.card-cd-s1 .row-link-ic.row-link-ic--mob img {
+
+}
+
+.grid-row__address.grid-row__address--mob {
+  display: inline-flex;
+  margin-bottom: $indent-15;
+
+  @include lg {
+    display: none;
+  }
+}
+
+.card-cd-s1 .grid-row__address.grid-row__address--desk {
+  margin-bottom: $indent-15;
+  display: none;
+
+  @include lg {
+    display: inline-flex;
+    margin-bottom: 0;
+  }
+}
+
+.card-cd-s1 .row-link-ic {
+  display: none;
+
+  @include lg {
+    display: flex;
+  }
+}
+
+.card-cd-s1 a {
+  color: $blue;
+}
+
+.grid-icon {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: -10px;
+
+  @include sm {
+    flex-direction: row;
+    margin: -15px;
+  }
+}
+
+.grid-icon__el {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+
+  @include sm {
+    width: 50%;
+    padding: 15px;
+  }
+}
+
+.grid-icon__el .link-s {
+  color: $gray-l;
+  margin-bottom: 7px;
+}
+
+.grid-icon__el .text-sx {
+  color: $black-t;
+  margin-bottom: 7px;
+}
+
+.grid-icon-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-icon__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: $blue-bg;
+  margin-right: $indent-10;
+}
+
+.button-block__desc {
+  max-width: 81px;
+  width: 100%;
+  color: $gray-tx;
+}
+
+.button-block__sum {
+  display: flex;
+}
+
+.button-block__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: $indent-10;
+
+  @include sm {
+    margin-bottom: 0;
+    justify-content: flex-start;
+  }
+}
+
+.card-cd-s1 .currency.button-s {
+  margin-right: $indent-20;
+}
+
+.button-block__sum-repeal {
+  color: $gray-b;
+  text-decoration: line-through;
+}
+
+.button-block__sum .value,
+.button-block__sum .currency {
+  color: $blue;
+}
+
+.button-block {
+  display: flex;
+  flex-direction: column;
+  padding: $indent-20 $indent-35;
+  background-color: $white;
+  border-radius: 15px;
+  margin-top: $indent-40;
+  box-shadow: 1px 2px 52px 3px rgba(34, 60, 80, 0.12);
+
+  @include sm {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.button-block .button-rect {
+  width: 100%;
+  border-radius: 15px;
+  padding: $indent-10;
+
+  @include sm {
+    max-width: 136px;
+  }
+}
+
+.swiper-slide.xs-slide {
+  position: relative;
+}
+
+.card-cd-s1 .swiper-slide.xs-slide .favorites-block {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+.xs__slider {
+  position: relative;
+}
+
+.xs-slider.swiper-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-cd-s1 .xs__slider .circle-el {
+  position: absolute;
+  top: 25px;
+  left: 39px;
+  z-index: 2;
+  flex-shrink: 0;
+  transform: translate(-50%, -30%);
+  width: 100%;
+  min-width: 60px;
+  height: 60px;
+
+  @include lg {
+    top: 0;
+    left: 0;
+    height: 92px;
+    max-width: 92px;
+  }
+}
+
+.xs-slide__card {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+
+  @include lg {
+    padding-top: 76.25%;
+  }
+}
+
+.xs-slide__card img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.card-cd-s1 .swiper-button-next,
+.card-cd-s1 .swiper-button-prev {
+  @include sm-down {
+    display: none;
+  }
+}
