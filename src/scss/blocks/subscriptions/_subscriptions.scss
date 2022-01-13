@@ -63,6 +63,211 @@
     width: 346px;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -5%;
+    z-index: 10000;
   }
 }
+
+//search
+.search-block {
+  padding: $indent-20 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @include lg {
+    flex-wrap: nowrap;
+  }
+}
+
+.search-block__left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: $indent-20;
+
+  @include sm {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @include lg {
+    width: 80%;
+    margin-bottom: 0;
+    flex-wrap: nowrap;
+  }
+}
+
+.search-block__left__search {
+  width: 100%;
+  position: relative;
+  display: flex;
+  margin-bottom: $indent-15;
+
+  @include sm {
+    width: 48%;
+    margin-bottom: 0;
+  }
+
+  @include lg {
+    width: 88%;
+  }
+}
+
+.search-block__right {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include lg {
+    width: 20%;
+    justify-content: flex-end;
+  }
+}
+
+.search-term {
+  width: 100%;
+  border: 1px solid $black-t;
+  border-right: none;
+  padding: 15px;
+  height: 40px;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  color: #051138;
+}
+
+.search-term:focus{
+  color: $black-t;
+}
+
+.button-search {
+  width: 40px;
+  height: 40px;
+  border: 1px solid $black-t;
+  background: transparent;
+  text-align: center;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.button-search svg {
+  width: 20px;
+  height: 20px;
+}
+
+.search-block .button-rect.btn-dark {
+  width: 100%;
+  border-radius: 10px;
+  padding: $indent-10;
+
+  @include sm {
+    width: 48%;
+    margin: 0 0 0 $indent-10;
+  }
+
+  @include lg {
+    max-width: 110px;
+  }
+}
+
+.search-block__right .button-rect.btn-green {
+  display: flex;
+  align-items: center;
+  width: 48%;
+  border-radius: 10px;
+  padding: $indent-10;
+  margin: 0 0 0 $indent-10;
+
+  @include lg {
+    display: none;
+  }
+}
+
+// select
+
+.select-wrapper{
+  display: block;
+  width: 48%;
+  height: 40px;
+
+  @include lg {
+    width: 180px;
+    margin: 0 0 0 $indent-10;
+  }
+}
+
+.dropholder {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  font: 16px arial;
+  color: $blue-bg;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.holder {
+  line-height: 40px;
+  font-size: 16px;
+  margin: 0;
+}
+
+.dropdown,
+.dropholder {
+  background: $gray;
+}
+
+.dropdown {
+  float: left;
+  width: 100%;
+  border-radius: 10px;
+  font: 16px arial;
+  cursor: pointer;
+  height: 40px;
+  position: relative;
+  padding-left: 20px;
+  box-sizing: border-box;
+  z-index: 20;
+  &:after {
+    content: "▾";
+    font-size: 18px;
+    position: absolute;
+    right: 20px;
+    top: 9px;
+    display: block;
+  }
+  &.active + .dropdownOption {
+    display: block;
+  }
+}
+
+.dropdownOption {
+  padding: 10px 0 0 0;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  right: 0;
+  margin: 0;
+  cursor: pointer;
+  display: none;
+  background: $gray;
+  border-radius: 10px;
+  z-index: 10000;
+  li {
+    padding: 10px 15px;
+    color: $blue-bg;
+    list-style: none;
+    &:hover:not(.current) {
+      color: grey;
+    }
+  }
+}
+
+.current {
+  background-color: $blue-vk;
+}
+

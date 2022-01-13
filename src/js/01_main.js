@@ -210,59 +210,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	tabsNav();
 
-//
-	//Slider work-description__slider
-	//Slider work-direction__slider
+	//
+	function selectIcons() {
+		let elem = document.querySelector('.js-toggle-btn');
+		if (!elem) {
+			return false;
+		}
+		let elems = document.querySelectorAll('.js-toggle-btn')
 
-	//
-	// 	const swiperWorkDirection = new Swiper(swiperDir, {
-	// 		direction: getDirection(),
-	// 		loop: true,
-	// 		mousewheel: true,
-	// 		speed: 1500,
-	// 		grabCursor: true,
-	// 		spaceBetween: 10,
-	// 		slideToClickedSlide: true,
-	// 		breakpoints: {
-	// 			// when window width is >= 320px
-	// 			320: {
-	// 				slidesPerView: 'auto',
-	// 				spaceBetween: 24,
-	// 				initialSlide: 0,
-	// 				centeredSlides: false,
-	// 			},
-	// 			992: {
-	// 				initialSlide: 2,
-	// 				centeredSlides: true,
-	// 				spaceBetween: 0,
-	// 				slidesPerView: 5,
-	// 				grabCursor: true,
-	// 			},
-	// 		},
-	// 		on: {
-	// 			resize: function () {
-	// 				swiperWorkDirection.changeDirection(getDirection());
-	// 			},
-	// 		},
-	// 	});
-	//
-	// 	const swiperWorkDescription = new Swiper(swiperDesc, {
-	// 		loop: true,
-	// 		speed: 1500,
-	// 		effect: "fade",
-	// 		initialSlide: 2,
-	// 		grabCursor: false,
-	// 		spaceBetween: 10,
-	// 		slideToClickedSlide: true,
-	// 		fadeEffect: {
-	// 			crossFade: true
-	// 		}
-	// 	});
-	//
-	// 	swiperWorkDirection.on('slideChange', () => {
-	// 		swiperWorkDescription.slideTo(swiperWorkDirection.realIndex, 800)
-	// 	});
-	// }
+		elems.forEach((item) => {
+			item.addEventListener('click', toggleClass)
+		})
+
+		function toggleClass() {
+			this.classList.add('active');
+			for (let k = 0; elems.length  > k; k++) {
+				let item = elems[k];
+				if (item !== this && item.classList.contains('active')) {
+					item.classList.remove('active')
+				}
+			}
+		}
+	}
+	selectIcons();
+
+//
 	const galleryThumbs = document.querySelector('.js-gallery-thumbs');
 	const galleryTop = document.querySelector('.js-gallery-top');
 
@@ -270,7 +242,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		function getDirection() {
 			let direction = window.innerWidth >= 992 ? 'vertical' : 'horizontal';
-			console.log('rr');
 			return direction;
 		}
 
@@ -315,8 +286,34 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 
 	    myGalleryThumbs.on('slideChange', () => {
-		    console.log('aaa');
 		    myGalleryTop.slideTo(myGalleryThumbs.realIndex, 800)
 	    });
 	}
+
+	let navigationSelect = document.querySelector('.select-wrapper');
+
+	function initSelect(elem){
+		let selectHolder = elem.querySelector('.holder');
+		let selectOptions = elem.querySelectorAll('.dropdownOption li');
+		let dropHolder = elem.querySelector('.dropdown');
+		let selectedOption = selectOptions[0];
+
+		selectedOption.classList.add('current');
+
+		selectHolder.addEventListener('click', function () {
+			dropHolder.classList.toggle('active');
+		});
+
+		selectOptions.forEach(function(currentElement) {
+			currentElement.addEventListener('click', function(){
+				selectedOption.classList.remove('current');
+				selectedOption = currentElement;
+				currentElement.classList.add('current');
+				selectHolder.innerText = currentElement.textContent;
+				dropHolder.classList.toggle('active');
+			});
+		});
+	}
+
+	initSelect(navigationSelect);
 });
