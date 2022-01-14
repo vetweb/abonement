@@ -294,7 +294,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	function initSelect(elem){
 		let selectHolder = elem.querySelector('.holder');
-		let selectOptions = elem.querySelectorAll('.dropdownOption li');
+		let selectOptions = elem.querySelectorAll('.dropdown-option li');
 		let dropHolder = elem.querySelector('.dropdown');
 		let selectedOption = selectOptions[0];
 

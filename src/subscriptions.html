@@ -141,7 +141,7 @@
                                         <div class="dropdown">
                                             <p class="holder">По цене</p>
                                         </div>
-                                        <ul class="dropdownOption">
+                                        <ul class="dropdown-option">
                                             <li>По цене</li>
                                             <li>По цене2</li>
                                             <li>По цене3</li>
@@ -157,12 +157,146 @@
             </div>
         </div>
     </section>
-    <section class="section tc-2 ">
+    <section class="section tc-2">
         <div class="container">
             <div class="tc-2">
                 <div class="tabs-content__col-20">
                     <div class="filter-block">
-                        filter
+                        <div class="filter-block__top">
+                            <p class="filter-block__top-title">Фильтр</p>
+                            <span>
+                                <svg viewBox="0 0 22 22">
+                                    <use xlink:href="/img/sprite.svg#circle-close"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="filter-block__body">
+                            <div class="filter-block__body-item">
+                                <div class="data-picker">2</div>
+                                <div class="filter-block__select select-wrapper">
+                                    <div class="dropholder">
+                                        <div class="dropdown">
+                                            <p class="holder">По цене</p>
+                                        </div>
+                                        <ul class="dropdown-option">
+                                            <li>По цене</li>
+                                            <li>По цене2</li>
+                                            <li>По цене3</li>
+                                            <li>По цене4</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="filter-block__select select-wrapper">
+                                    <div class="dropholder">
+                                        <div class="dropdown">
+                                            <p class="holder">По цене</p>
+                                        </div>
+                                        <ul class="dropdown-option">
+                                            <li>По цене</li>
+                                            <li>По цене2</li>
+                                            <li>По цене3</li>
+                                            <li>По цене4</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-block__body-item">
+                                <div class="filter-block__range">
+                                    <p class="filter-block__range-title">Цена</p>
+                                    <div class="slider-area">
+                                        <div class="slider-area-wrapper">
+                                            <div class="slider-area-values">
+                                                <div class="slider-area-values__el">
+                                                    <span class="skip-value-lower">10</span>
+                                                    <span class="skip-curr">BYN</span>
+                                                </div>
+                                                <div class="slider-area-values__el">
+                                                    <span class="skip-value-upper">10</span>
+                                                    <span class="skip-curr">BYN</span>
+                                                </div>
+                                            </div>
+                                            <input id="rangeInput" type="range" min="0" max="200"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter-block__range">
+                                    <p class="filter-block__range-title">Кол-во занятий</p>
+                                    <div class="slider-area">
+                                        <div class="slider-area-wrapper">
+                                            <div class="slider-area-values">
+                                                <div class="slider-area-values__el">
+                                                    <span class="skip-value-lower">1</span>
+                                                </div>
+                                                <div class="slider-area-values__el">
+                                                    <span class="skip-value-upper">7</span>
+                                                </div>
+                                            </div>
+                                            <input id="rangeInput" type="range" min="0" max="200"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter-block__range">
+                                    <p class="filter-block__range-title">Возраст</p>
+                                    <div class="slider-area">
+                                        <div class="slider-area-wrapper">
+                                            <div class="slider-area-values">
+                                                <div class="slider-area-values__el">
+                                                    <span class="skip-value-lower">1</span>
+                                                    <span class="skip-curr">год</span>
+                                                </div>
+                                                <div class="slider-area-values__el">
+                                                    <span class="skip-value-upper">18</span>
+                                                    <span class="skip-curr">лет</span>
+                                                </div>
+                                            </div>
+                                            <input id="rangeInput" type="range" min="0" max="200"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter-block__range">
+                                    <p class="filter-block__range-title">Время работы</p>
+                                    <div class="slider-area">
+                                        <div class="slider-area-wrapper">
+                                            <div class="slider-area-values">
+                                                <div class="slider-area-values__el">
+                                                    <span class="skip-value-lower">00:00</span>
+                                                </div>
+                                                <div class="slider-area-values__el">
+                                                    <span class="skip-value-upper">22:00</span>
+                                                </div>
+                                            </div>
+                                            <input id="rangeInput" type="range" min="0" max="200"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter-block__checkbox">
+                                    <span class="filter-block__checkbox-title">Пол</span>
+                                    <div class="checkbox-wrap">
+                                        <label for="scales">М</label>
+                                        <input type="checkbox" id="scales" name="scales" checked>
+                                    </div>
+                                    <div class="checkbox-wrap">
+                                        <label for="scales1">Ж</label>
+                                        <input type="checkbox" id="scales1" name="scales1" checked>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-block__body-item">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" id="scales3" name="scales" checked>
+                                    <label for="scales3">С абонементом</label>
+                                </div>
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" id="scales4" name="scales" checked>
+                                    <label for="scales4">Индивидуальные</label>
+                                </div>
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" id="scales5" name="scales">
+                                    <label for="scales5">Групповые</label>
+                                </div>
+                                <button class="button-rect btn-green">Применить</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="tabs-content__col-80">
