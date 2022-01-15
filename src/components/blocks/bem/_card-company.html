@@ -1,0 +1,34 @@
+<div class="card-company card">
+    <div class="card-company__el-wrap">
+        <div class="card__el-inner card-company__el-inner">
+        <div class="card-company__el-img" style="background-image: url('/img/card-comp1.png');">
+            <div class="card-company__el-top">
+                @@include('_favorites.html')
+            </div>
+        </div>
+    </div>
+        <div class="card-company__el-content">
+        <div class="card-company__el-top">
+            @@include('_stars.html')
+            @@include('_favorites.html')
+        </div>
+        <div class="card-company__el-desc">
+            <div class="card-company__el-top text-xs-500 ">Название организации</div>
+            <div class="card-company__el-bottom">
+                <span class="card-company__el-city">Минск</span>
+                <div class="card-company__el-geo">
+                    <svg viewBox="0 0 24 24">
+                        <use xlink:href="/img/sprite.svg#geo"></use>
+                    </svg>
+                    <p class="card-company__el-distance">1.1<span class="card-company__el-kilometers"> км</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="card-company__el-text h5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </div>
+    </div>
+    </div>
+    <div class="card-company__el-btn">
+        <a href="#" class="card-company__el-link">Перейти в карточку организации</a>
+        <button class="button-rect btn-blue button-s">Подробнее</button>
+    </div>
+</div>

@@ -33,8 +33,7 @@
   border-radius: 10px;
   overflow: hidden;
 }
-
-.tabs-content__col-20 {
+.parent-box.active .tabs-content__col-20 {
   width: 100%;
 
   @include lg {
@@ -43,7 +42,15 @@
   }
 }
 
-.tabs-content__col-80 {
+.parent-box .tabs-content__col-20 {
+  width: 0;
+}
+
+.parent-box .tabs-content__col-80 {
+  width: 100%;
+}
+
+.parent-box.active .tabs-content__col-80 {
   width: 100%;
 
   @include lg {
@@ -52,7 +59,82 @@
   }
 }
 
+.cc-s2 .tc-2 .grid-gallery__card {
+  overflow: hidden;
+}
+
+.cc-s2 .grid-gallery {
+  @include lg {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-bottom: $indent-60;
+  }
+}
+
+.parent-box.active .cc-s2 .grid-gallery {
+  @include lg {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.map-wrap {
+  padding-bottom: $indent-10;
+}
+
+.tabs-content__col-80 .map-block {
+  width: 100%;
+  height: 170px;
+  margin-bottom: $indent-10;
+}
+
+.map-wrap__btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.map-wrap__btn .button-rect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 9px;
+  max-width: 270px;
+  width: 100%;
+}
+
+.map-wrap__btn .button-rect.btn-dark {
+  border: 1px solid transparent;
+  transition: all .3s;
+}
+
+.map-wrap__btn .button-rect:not(:last-child) {
+  margin-right: $indent-25;
+}
+
+.map-wrap__btn .button-rect span {
+  margin-left: $indent-20;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.map-wrap__btn .button-rect svg {
+  width: 24px;
+  height: 24px;
+  color: $white;
+}
+
+.map-wrap__btn .button-rect.btn-dark:hover svg {
+  color: $blue-bg;
+}
+
+.map-wrap__btn .button-rect.btn-dark:hover {
+  color: $blue-bg;
+  background-color: $white;
+  border: 1px solid $blue-bg;
+}
+
 .filter-block {
+  display: none;
   width: 100%;
   background-color: $white;
   margin-bottom: $indent-40;
@@ -68,6 +150,11 @@
   }
 }
 
+.filter-block.show {
+  display: flex;
+  flex-direction: column;
+}
+
 .filter-block__select.select-wrapper {
   width: 100%;
   max-width: 100%;
@@ -76,6 +163,10 @@
 
 .filter-block__select.select-wrapper:not(:last-child) {
   margin-bottom: $indent-15;
+}
+
+.filter-block__close {
+  cursor: pointer;
 }
 
 //search
@@ -138,7 +229,7 @@
   }
 }
 
-.search-term {
+.search-big {
   width: 100%;
   border: 1px solid $black-t;
   border-right: none;
@@ -149,7 +240,7 @@
   color: #051138;
 }
 
-.search-term:focus{
+.search-big:focus{
   color: $black-t;
 }
 

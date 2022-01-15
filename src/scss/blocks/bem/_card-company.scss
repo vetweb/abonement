@@ -1,0 +1,151 @@
+.card-company {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: $indent-20 $indent-15;
+}
+
+.card-company__el-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include sm {
+    width: 74%;
+  }
+}
+
+.card-company__el-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $indent-10;
+
+  @include sm {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.card-company__el-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $indent-10;
+}
+
+.card-company__el-top .favorites-block{
+  display: none;
+
+  @include sm {
+    display: flex;
+  }
+}
+
+.card-company__el-city {
+  margin-right: $indent-15;
+}
+
+.card-company__el-bottom {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: $blue;
+  margin-bottom: $indent-20;
+}
+
+.card-company__el-geo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card-company__el-distance {
+  margin-right: 5px;
+}
+
+.card-company__el-geo svg {
+  width: 24px;
+  height: 24px;
+  color: $blue;
+  margin-right: 5px;
+}
+
+.card-company__el-text.h5 {
+  font-weight: 400;
+  color: $blue-bg;
+  max-width: 385px;
+  width: 100%;
+}
+
+.card-company__el-img {
+  width: 100%;
+  height: 175px;
+  position: relative;
+  background-color: #646A7D;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: $white;
+  border-radius: 15px;
+  overflow: hidden;
+
+  @include lg {
+    height: 164px;
+  }
+}
+.card__el-inner.card-company__el-inner {
+  width: 100%;
+  margin-bottom: $indent-30;
+
+  @include sm {
+    width: 251px;
+    margin-right: $indent-30;
+    margin-bottom: 0;
+
+  }
+}
+
+.card-company__el-img .favorites-block {
+  display: flex;
+
+  @include sm {
+    display: none;
+  }
+}
+
+.card-company__el-btn {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  @include sm {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.card-company__el-btn .button-rect {
+  border-radius: 10px;
+  width: 100%;
+  padding: $indent-15 $indent-10;
+  margin-bottom: $indent-20;
+
+  @include sm {
+    margin-bottom: 0;
+    max-width: 180px;
+  }
+}
+
+.card-company__el-btn a {
+  color: $blue;
+}
+
+.card-company__el-btn a.card-company__el-link {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
