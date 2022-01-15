@@ -25,8 +25,8 @@
   z-index: 10;
 }
 
-.swiper-slide.card-s__list-el:hover .card-s__line {
-  background-color: $gold;
+.swiper-slide.card-s__list-el:hover {
+  border-bottom: 4px solid $gold;
 }
 
 .swiper-slide.card-s__list-el:hover .card-s {
