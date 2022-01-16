@@ -9,12 +9,30 @@
 
 <body>
 @@include('components/blocks/page/_header.html')
-<main class="company-card js-parent-box parent-box">
+<main class="company-card-s js-parent-box parent-box">
     <section class="fc-s1 cc-s1" style="background-color: #fff">
         <div class="container">
-            <div class="">
+            <div class="search-nav">
+                <div class="breadcrumbs-block">
+                    <span class="breadcrumbs-block__item">
+                        <a href="#" class="breadcrumbs-block__link" title="Олимпийские виды спорта">
+                            <span class="breadcrumbs-block__text text-xs " >Олимпийские виды спорта</span>
+                            <svg viewBox="0 0 24 24" class="breadcrumbs-block__arrow">
+                                <use xlink:href="/img/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </span>
+                    <span class="breadcrumbs-block__item">
+                        <a href="#" class="breadcrumbs-block__link" title="Футбол">
+                            <span class="breadcrumbs-block__text text-xs " >Футбол</span>
+                        </a>
+                    </span>
+                </div>
                 <div class="search-block js-search-block">
                     <div class="search-block__left">
+                        <button class="button-rect btn-white-border">
+                            <span>Показать организации</span>
+                        </button>
                         <div class="search-block__left__search">
                             <input type="text" class="search-big js-search-big" placeholder="Поиск абонементов">
                             <button type="submit" class="button-search">
@@ -25,23 +43,34 @@
                                     </span>
                             </button>
                         </div>
-                        <button class="button-rect btn-dark">Найти</button>
+                        <button class="button-rect btn-dark btn-search">Найти</button>
+                        <button class="button-rect btn-dark button-s btn-mob">
+                            <svg viewBox="0 0 24 24">
+                                <use xlink:href="/img/sprite.svg#geo"></use>
+                            </svg>
+                            <span>Поблизости</span>
+                        </button>
                     </div>
                     <div class="search-block__right">
-                        <div class="select-wrapper">
-                            <div class="dropholder">
-                                <div class="dropdown">
-                                    <p class="holder">По цене</p>
+                        <div class="search-block__right-top">
+                            <div class="select-wrapper">
+                                <div class="dropholder">
+                                    <div class="dropdown">
+                                        <p class="holder">По цене</p>
+                                    </div>
+                                    <ul class="dropdown-option">
+                                        <li>По цене</li>
+                                        <li>По цене2</li>
+                                        <li>По цене3</li>
+                                        <li>По цене4</li>
+                                    </ul>
                                 </div>
-                                <ul class="dropdown-option">
-                                    <li>По цене</li>
-                                    <li>По цене2</li>
-                                    <li>По цене3</li>
-                                    <li>По цене4</li>
-                                </ul>
                             </div>
+                            <button class="button-rect btn-green">Фильтрация</button>
                         </div>
-                        <button class="button-rect btn-green">Фильтрация</button>
+                        <button class="button-rect btn-white-border">
+                            <span>Показать организации</span>
+                        </button>
                     </div>
                 </div>
             </div>

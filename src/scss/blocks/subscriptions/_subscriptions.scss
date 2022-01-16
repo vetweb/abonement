@@ -54,7 +54,7 @@
   width: 100%;
 
   @include lg {
-    width: 75%;
+    width: 70%;
     margin: 0 0 0 auto;
   }
 }
@@ -107,7 +107,7 @@
   transition: all .3s;
 }
 
-.map-wrap__btn .button-rect:not(:last-child) {
+.subscriptions-s .map-wrap__btn .button-rect:not(:last-child) {
   margin-right: $indent-25;
 }
 
@@ -170,19 +170,20 @@
 }
 
 //search
-.search-block {
-  padding: $indent-20 0;
+.subscriptions-s .search-block {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   align-items: center;
   flex-wrap: wrap;
+  padding: 20px 0;
 
   @include lg {
     flex-wrap: nowrap;
   }
 }
 
-.search-block__left {
+.subscriptions-s .search-block__left {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -195,13 +196,13 @@
   }
 
   @include lg {
-    width: 80%;
+    width: 85%;
     margin-bottom: 0;
     flex-wrap: nowrap;
   }
 }
 
-.search-block__left__search {
+.subscriptions-s .search-block__left__search {
   width: 100%;
   position: relative;
   display: flex;
@@ -217,7 +218,26 @@
   }
 }
 
-.search-block__right {
+.subscriptions-s .search-block__right {
+ width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @include sm {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  @include lg {
+    width: 15%;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.subscriptions-s .search-block__right-top {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -261,6 +281,11 @@
 }
 
 .search-block .button-rect.btn-dark {
+  border-radius: 10px;
+  padding: $indent-10;
+}
+
+.subscriptions-s .search-block .button-rect.btn-dark {
   width: 100%;
   border-radius: 10px;
   padding: $indent-10;
@@ -276,11 +301,13 @@
 }
 
 .search-block__right .button-rect.btn-green {
-  display: flex;
-  align-items: center;
-  width: 48%;
   border-radius: 10px;
   padding: $indent-10;
+  margin: 0 0 0 $indent-10;
+}
+
+.subscriptions-s .button-rect.btn-green {
+  width: 48%;
   margin: 0 0 0 $indent-10;
 
   @include lg {
@@ -288,17 +315,18 @@
   }
 }
 
-// select
+  // select remake
+.subscriptions-s .select-wrapper{
+  width: 48%;
+
+  @include lg {
+    margin: 0 0 0 $indent-10;
+  }
+}
 
 .select-wrapper{
   display: block;
-  width: 48%;
   height: 40px;
-
-  @include lg {
-    width: 180px;
-    margin: 0 0 0 $indent-10;
-  }
 }
 
 .dropholder {
@@ -308,6 +336,10 @@
   color: $blue-bg;
   position: relative;
   box-sizing: border-box;
+
+  @include lg {
+    width: 145px;
+  }
 }
 
 .holder {
@@ -402,9 +434,7 @@
   padding: $indent-20 0;
 }
 
-//
-
-
+// remake
 .filter-block__range {
   color: #051138;
   margin-bottom: $indent-20;
