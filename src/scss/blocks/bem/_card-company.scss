@@ -259,6 +259,12 @@ a.breadcrumbs-block__link {
   display: flex;
   flex-direction: column;
 
+  @include sm {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   @include lg {
     width: 15%;
     flex-direction: row;
@@ -274,10 +280,13 @@ a.breadcrumbs-block__link {
   align-items: center;
   margin-bottom: $indent-15;
 
+  @include sm {
+    margin-bottom: 0;
+  }
+
   @include lg {
     width: 20%;
     justify-content: flex-end;
-    margin-bottom: 0;
   }
 }
 
@@ -366,6 +375,10 @@ a.breadcrumbs-block__link {
   display: flex;
   width: 100%;
   margin-right: 0;
+
+  @include sm {
+    margin-left: $indent-10;
+  }
 
   @include lg {
     display: none;
