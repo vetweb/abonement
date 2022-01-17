@@ -5,10 +5,11 @@
 .swiper-slide.card-s__list-el {
   width: 190px;
   height: 324px;
-  transition: all .3s;
+  transition: all .2s;
   position: relative;
   cursor: pointer;
   border-radius: 10px 10px 15px 15px;
+  border-bottom: 4px solid transparent;
 
   @include lg {
     width: 240px;
@@ -21,12 +22,18 @@
   width: 100%;
   height: 4px;
   background-color: transparent;
-  transition: all .3s;
+  transition: all .2s;
   z-index: 10;
 }
 
 .swiper-slide.card-s__list-el:hover {
   border-bottom: 4px solid $gold;
+}
+
+.swiper-slide.card-s__list-el .card-s {
+  background-color: $white;
+  color: $blue-bg;
+  transition: all .2s;
 }
 
 .swiper-slide.card-s__list-el:hover .card-s {
@@ -48,7 +55,7 @@
   opacity: 0;
   display: none;
   z-index: 10;
-  transition: all .3s;
+  transition: all .2s;
 }
 
 .swiper-slide.card-s__list-el:hover .card-circle-btn {
@@ -75,9 +82,8 @@
 .card-s {
   flex-direction: column;
   padding: $indent-15;
-  background-color: $white;
   border-radius: 10px 10px 15px 15px;
-  transition: all .3s;
+  transition: all .2s;
   position: relative;
 }
 
@@ -87,7 +93,7 @@
   width: 18px;
   height: 18px;
   color: $white;
-  transition: all .3s;
+  transition: all .2s;
 }
 
 .button-rect.btn-blue-s:hover svg {
@@ -220,7 +226,7 @@
   border-radius: 5px;
   padding: $indent-10;
   margin: auto 0 0;
-  transition: all .3s;
+  transition: all .2s;
 }
 
 .button-full__i {
