@@ -101,13 +101,13 @@
   }
 }
 
-.btn-blue-s__ic svg {
-  width: 46px;
-  height: 92px;
+.row-block__grid-el .btn-blue-s__icon {
+  max-height: 65px;
+  margin-bottom: $indent-10;
 
   @include lg {
-    width: 82px;
-    height: 165px;
+    max-height: 125px;
+    margin-bottom: $indent-15;
   }
 }
 
