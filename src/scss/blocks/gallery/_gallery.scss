@@ -1,0 +1,85 @@
+.tc-8 {
+  padding-bottom: $indent-170;
+  @include lg {
+    padding-bottom: $indent-120;
+  }
+}
+
+.grid-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+  margin-bottom: $indent-30;
+
+  @include sm {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: $indent-50;
+  }
+
+  @include lg {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-bottom: $indent-60;
+  }
+}
+
+.tc-8 .grid-gallery {
+  @include csx {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include md {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include lg {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.tc-8 .grid-gallery__card {
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include csx {
+    height: 221px;
+  }
+
+  @include lg {
+    height: 200px;
+  }
+}
+
+.tabs-content__el-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabs-content__el-btn .button-rect {
+  padding: 14px;
+  border-radius: 5px;
+  overflow: hidden;
+  font-weight: 700;
+
+  @include sm {
+    max-width: 321px;
+  }
+}
+
+.tabs-content__el-btn .button-rect span {
+  margin-right: 10px;
+}
+
+.tabs-content__el-btn .button-rect svg {
+  width: 12px;
+  height: 6px;
+  color: $white;
+}
+.tabs-content__el-btn .button-rect.btn-blue:hover svg {
+  color: $blue;
+}

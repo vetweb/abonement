@@ -1,5 +1,17 @@
+.tc-7 {
+  padding-bottom: $indent-170;
+  @include lg {
+    padding-bottom: $indent-120;
+  }
+}
+
+.tc-7 .grid-gallery__card {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 .reviews-container .reviews-block.reviews-block--revers{
-    padding: 0 $indent-15 $indent-20;
+  padding: 0 $indent-15 $indent-20;
 }
 
 .reviews-block.reviews-block--revers .grid-row__col50-top.grid-row__col50-top--mob .rating-m  {
@@ -34,7 +46,7 @@
   display: none;
 
   @include lg {
-   display: flex;
+    display: flex;
   }
 }
 

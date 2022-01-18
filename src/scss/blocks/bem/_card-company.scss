@@ -1,0 +1,410 @@
+.card-company {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: $indent-20 $indent-15;
+}
+
+.card-company__el-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include sm {
+    width: 74%;
+  }
+}
+
+.card-company__el-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $indent-10;
+
+  @include sm {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.card-company__el-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $indent-10;
+}
+
+.card-company__el-top .favorites-block{
+  display: none;
+
+  @include sm {
+    display: flex;
+  }
+}
+
+.card-company__el-city {
+  margin-right: $indent-15;
+}
+
+.card-company__el-bottom {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: $blue;
+  margin-bottom: $indent-20;
+}
+
+.card-company__el-geo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card-company__el-distance {
+  margin-right: 5px;
+}
+
+.card-company__el-geo svg {
+  width: 24px;
+  height: 24px;
+  color: $blue;
+  margin-right: 5px;
+}
+
+.card-company__el-text.h5 {
+  font-weight: 400;
+  color: $blue-bg;
+  max-width: 385px;
+  width: 100%;
+}
+
+.card-company__el-img {
+  width: 100%;
+  height: 175px;
+  position: relative;
+  background-color: #646A7D;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: $white;
+  border-radius: 15px;
+  overflow: hidden;
+
+  @include lg {
+    height: 164px;
+  }
+}
+
+.card__el-inner.card-company__el-inner {
+  width: 100%;
+  margin-bottom: $indent-30;
+
+  @include sm {
+    width: 251px;
+    margin-right: $indent-30;
+    margin-bottom: 0;
+
+  }
+}
+
+.card-company__el-img .favorites-block {
+  display: flex;
+
+  @include sm {
+    display: none;
+  }
+}
+
+.card-company__el-btn {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  @include sm {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.card-company__el-btn .button-rect {
+  border-radius: 10px;
+  width: 100%;
+  padding: $indent-15 $indent-10;
+  margin-bottom: $indent-20;
+
+  @include sm {
+    margin-bottom: 0;
+    max-width: 180px;
+  }
+}
+
+.card-company__el-btn a.card-company__el-link {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.company-card-s .search-nav {
+  display: flex;
+  flex-direction: column;
+  padding: $indent-20 0;
+
+  @include lg {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+//breadcrumbs-block
+.breadcrumbs-block {
+  color: $black-t;
+}
+
+.company-card-s .breadcrumbs-block {
+  margin-bottom: $indent-20;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  white-space: nowrap;
+
+  @include lg {
+    width: 30%;
+    margin-bottom: 0;
+  }
+}
+
+a.breadcrumbs-block__link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: $black-t;
+}
+
+.breadcrumbs-block__item svg{
+  width: 20px;
+  height: 12px;
+  color: $black-t;
+  margin-left: 5px;
+}
+
+//search
+
+.company-card-s .search-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+
+  @include lg {
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: $indent-10;
+  }
+}
+
+.company-card-s .search-block__left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: $indent-20;
+
+  @include sm {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  @include lg {
+    width: 77%;
+    margin-bottom: 0;
+    flex-wrap: nowrap;
+  }
+}
+
+.map-wrap__btn {
+  display: flex;
+  flex-direction: column;
+
+  @include sm {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.map-wrap__btn .button-rect.btn-dark:not(:last-child) {
+    @include sm-down {
+      margin: 0 0 10px;
+    }
+  @include sm {
+    margin: 0 10px 0 0;
+  }
+}
+
+.map-wrap__btn .button-rect.btn-dark {
+  @include sm-down {
+    max-width: 100%;
+  }
+}
+
+.company-card-s .search-block__right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @include sm {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include lg {
+    width: 15%;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.company-card-s .search-block__right-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $indent-15;
+
+  @include sm {
+    margin-bottom: 0;
+  }
+
+  @include lg {
+    width: 20%;
+    justify-content: flex-end;
+  }
+}
+
+.company-card-s .button-rect.btn-green {
+  display: flex;
+  width: 40%;
+  margin: 0 0 0 $indent-10;
+
+  @include lg {
+    display: none;
+  }
+}
+
+.company-card-s .select-wrapper {
+  width: 60%;
+
+  @include lg {
+    width: fit-content;
+  }
+}
+
+.search-block .button-rect.btn-white-border {
+  margin-right: $indent-30;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.company-card-s .search-block .button-rect.btn-dark.btn-search {
+  width: 100%;
+  border-radius: 10px;
+  padding: $indent-10;
+  margin: 0 0 $indent-10 0;
+
+  @include sm {
+    width: 49%;
+    margin: 0 $indent-10 0 0;
+  }
+
+  @include md {
+    max-width: 110px;
+    margin: 0 0 0 $indent-10;
+  }
+
+  @include lg {
+    max-width: 110px;
+  }
+}
+
+.button-rect.btn-dark.btn-mob {
+  display: flex;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  width: 100%;
+
+  @include sm {
+   width: 49%;
+    margin: 0;
+  }
+
+  @include md {
+    max-width: 240px;
+    margin: 0 0 0 $indent-10;
+  }
+
+  @include lg {
+   display: none;
+  }
+}
+
+.button-rect.btn-dark.btn-mob svg {
+  width: 18px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.search-block__left .button-rect.btn-white-border {
+  display: none;
+
+  @include lg {
+    display: flex;
+    max-width: 188px;
+  }
+}
+
+.search-block__right .button-rect.btn-white-border {
+  display: flex;
+  width: 100%;
+  margin-right: 0;
+
+  @include sm {
+    margin-left: $indent-10;
+  }
+
+  @include lg {
+    display: none;
+  }
+}
+
+.company-card-s .search-block__left__search {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin: 0 0 $indent-10 0;
+
+  @include md {
+    width: 55%;
+    margin: 0 $indent-10 0 0;
+  }
+
+  @include lg {
+    max-width: 388px;
+  }
+
+  @include xl {
+    max-width: 388px;
+    margin: 0 $indent-20 0 0;
+  }
+}

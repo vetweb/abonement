@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+@@include('components/blocks/page/_head.html',{
+"lang":"en",
+"title":"Абонемент",
+"description":"Абонемент",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+@@include('components/blocks/page/_header.html')
+<main class="cart-s js-parent-box parent-box">
+    <section class="cart-s1">
+        <div class="container">
+            <div class="index-s__top">
+                <h2 class="h2">Корзина</h2>
+            </div>
+            <div class="table-m">
+                <div class="table-m__header">
+                    <div class="table-m__header__cell">Товар</div>
+                    <div class="table-m__header__bottom">
+                        <div class="table-m__header__cell">Количество</div>
+                        <div class="table-m__header__cell">Цена</div>
+                    </div>
+                </div>
+                <div class="table-m__body">
+                    <a href="#" class="table-m__body-el">
+                        <div class="table-m__body-el-wrap">
+                            <div class="table-m__body-el__inner">
+                                <div class="table-m__body-cell table-m-cell-img" style="background-image: url('/img/bg1-sl.png');">
+                                </div>
+                            </div>
+                            <div class="table-m__body-el__inner p-10 table-m__body-el__inner-desc">
+                                <div class="table-m__body-cell h5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmod tempor </div>
+                                <div class="table-m__body-cell h6">Продавец: Фитнес-клуб “Барбара”</div>
+                            </div>
+                            <div class="table-m__body-el__inner p-10">
+                                <div class="table-m__body-cell table-m__body-cell--quantity">
+                                    <span class="cart-increase">-</span>
+                                    <span class="cart-quantity">2</span>
+                                    <span class="cart-decrease">+</span>
+                                </div>
+                            </div>
+                            <div class="table-m__body-el__inner p-10">
+                                <div class="table-m__body-cell">
+                                    <span class="value button-s">44</span>
+                                    <span class="currency button-s ">Br</span>
+                                </div>
+                            </div>
+                            <div class="table-m__body-el__inner p-10 table-m__body-el__inner--icn">
+                                <span>
+                                    <svg viewBox="0 0 20 18">
+                                        <use xlink:href="/img/sprite.svg#heart"></use>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg viewBox="0 0 16 16">
+                                        <use xlink:href="/img/sprite.svg#close-x"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="table-m__body-el">
+                        <div class="table-m__body-el-wrap">
+                            <div class="table-m__body-el__inner">
+                                <div class="table-m__body-cell table-m-cell-img" style="background-image: url('/img/bg1-sl.png');">
+                                </div>
+                            </div>
+                            <div class="table-m__body-el__inner p-10 table-m__body-el__inner-desc">
+                                <div class="table-m__body-cell h5">Lorem ipsum dolor sit amet</div>
+                                <div class="table-m__body-cell h6">Продавец: “Свислочская специализированная детско-юношеская школа олимпийского резерва”</div>
+                            </div>
+                            <div class="table-m__body-el__inner p-10">
+                                <div class="table-m__body-cell table-m__body-cell--quantity">
+                                    <span class="cart-increase">-</span>
+                                    <span class="cart-quantity">2</span>
+                                    <span class="cart-decrease">+</span>
+                                </div>
+                            </div>
+                            <div class="table-m__body-el__inner p-10">
+                                <div class="table-m__body-cell">
+                                    <span class="value button-s">44</span>
+                                    <span class="currency button-s ">Br</span>
+                                </div>
+                            </div>
+                            <div class="table-m__body-el__inner p-10 table-m__body-el__inner--icn">
+                                <span>
+                                    <svg viewBox="0 0 20 18">
+                                        <use xlink:href="/img/sprite.svg#heart"></use>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg viewBox="0 0 16 16">
+                                        <use xlink:href="/img/sprite.svg#close-x"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="">
+        <div class="container">
+            <div class="index-s__top">
+                <h2 class="h2">Вас может заинтересовать</h2>
+            </div>
+            <div class="card-m-slider">
+                <div class="standard-slider js-standard-slider swiper-container free-slider">
+                    <div class="swiper-wrapper grid-cards__list">
+                        <div class="swiper-slide card-m__list-el">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="swiper-slide card-m__list-el">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="swiper-slide card-m__list-el">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="swiper-slide card-m__list-el">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev btn__prev"><img src="/img/arrow-prev.svg" alt=""></div>
+                    <div class="swiper-button-next btn__next"><img src="/img/arrow-next.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+@@include('components/blocks/page/_footer.html')
+@@include('components/blocks/page/_scripts.html')
+</body>
+
+</html>

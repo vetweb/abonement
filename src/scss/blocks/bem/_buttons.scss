@@ -91,3 +91,20 @@ button {
   width: 16px;
   height: 11px;
 }
+
+.btn-dark {
+  background-color: $blue-bg;
+}
+
+.btn-green {
+  background-color: $olive;
+}
+
+.btn-white-border {
+  border: 1px solid $black-t;
+  background: $white;
+  color: $black-t;
+  padding: $indent-10;
+  border-radius: 10px;
+  overflow: hidden;
+}

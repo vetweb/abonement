@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+@@include('components/blocks/page/_head.html',{
+"lang":"en",
+"title":"Абонемент",
+"description":"Абонемент",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+@@include('components/blocks/page/_header.html')
+<main class="company-card-s js-parent-box parent-box">
+    <section class="fc-s1 cc-s1" style="background-color: #fff">
+        <div class="container">
+            <div class="search-nav">
+                <div class="breadcrumbs-block">
+                    <span class="breadcrumbs-block__item">
+                        <a href="#" class="breadcrumbs-block__link" title="Олимпийские виды спорта">
+                            <span class="breadcrumbs-block__text text-xs " >Олимпийские виды спорта</span>
+                            <svg viewBox="0 0 24 24" class="breadcrumbs-block__arrow">
+                                <use xlink:href="/img/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </span>
+                    <span class="breadcrumbs-block__item">
+                        <a href="#" class="breadcrumbs-block__link" title="Футбол">
+                            <span class="breadcrumbs-block__text text-xs " >Футбол</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="search-block js-search-block">
+                    <div class="search-block__left">
+                        <button class="button-rect btn-white-border">
+                            <span>Показать организации</span>
+                        </button>
+                        <div class="search-block__left__search">
+                            <input type="text" class="search-big js-search-big" placeholder="Поиск абонементов">
+                            <button type="submit" class="button-search">
+                                    <span>
+                                       <svg viewBox="0 0 24 24">
+                                            <use xlink:href="/img/sprite.svg#search"></use>
+                                        </svg>
+                                    </span>
+                            </button>
+                        </div>
+                        <button class="button-rect btn-dark btn-search">Найти</button>
+                        <button class="button-rect btn-dark button-s btn-mob">
+                            <svg viewBox="0 0 24 24">
+                                <use xlink:href="/img/sprite.svg#geo"></use>
+                            </svg>
+                            <span>Поблизости</span>
+                        </button>
+                    </div>
+                    <div class="search-block__right">
+                        <div class="search-block__right-top">
+                            <div class="select-wrapper">
+                                <div class="dropholder">
+                                    <div class="dropdown">
+                                        <p class="holder">По цене</p>
+                                    </div>
+                                    <ul class="dropdown-option">
+                                        <li>По цене</li>
+                                        <li>По цене2</li>
+                                        <li>По цене3</li>
+                                        <li>По цене4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="button-rect btn-green">Фильтрация</button>
+                        </div>
+                        <button class="button-rect btn-white-border">
+                            <span>Показать организации</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section cc-s2">
+        <div class="container">
+            <div class="tc-2">
+                <div class="tabs-content__col-20">
+                    <div class="filter-block js-filter-block">
+                        <div class="filter-block__top">
+                            <p class="filter-block__top-title">Фильтр</p>
+                            <span class="filter-block__close js-filter-block__close">
+                                <svg viewBox="0 0 22 22">
+                                    <use xlink:href="/img/sprite.svg#circle-close"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="filter-block__body">
+                            <div class="filter-block__body-item">
+                                <div class="data-picker">2</div>
+                                <div class="filter-block__select select-wrapper">
+                                    <div class="dropholder">
+                                        <div class="dropdown">
+                                            <p class="holder">По цене</p>
+                                        </div>
+                                        <ul class="dropdown-option">
+                                            <li>По цене</li>
+                                            <li>По цене2</li>
+                                            <li>По цене3</li>
+                                            <li>По цене4</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="filter-block__select select-wrapper">
+                                    <div class="dropholder">
+                                        <div class="dropdown">
+                                            <p class="holder">По цене</p>
+                                        </div>
+                                        <ul class="dropdown-option">
+                                            <li>По цене</li>
+                                            <li>По цене2</li>
+                                            <li>По цене3</li>
+                                            <li>По цене4</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-block__body-item">
+                                <div class="filter-block__range">
+                                    <p class="filter-block__range-title">Цена</p>
+                                    <div class="slider-area">
+                                        <div class="slider-area-wrapper">
+                                            <div class="slider-area-values">
+                                                <div class="slider-area-values__el">
+                                                    <span class="skip-value-lower">10</span>
+                                                    <span class="skip-curr">BYN</span>
+                                                </div>
+                                                <div class="slider-area-values__el">
+                                                    <span class="skip-value-upper">10</span>
+                                                    <span class="skip-curr">BYN</span>
+                                                </div>
+                                            </div>
+                                            <input id="rangeInput" type="range" min="0" max="200"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter-block__range">
+                                    <p class="filter-block__range-title">Кол-во занятий</p>
+                                    <div class="slider-area">
+                                        <div class="slider-area-wrapper">
+                                            <div class="slider-area-values">
+                                                <div class="slider-area-values__el">
+                                                    <span class="skip-value-lower">1</span>
+                                                </div>
+                                                <div class="slider-area-values__el">
+                                                    <span class="skip-value-upper">7</span>
+                                                </div>
+                                            </div>
+                                            <input id="rangeInput" type="range" min="0" max="200"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter-block__range">
+                                    <p class="filter-block__range-title">Возраст</p>
+                                    <div class="slider-area">
+                                        <div class="slider-area-wrapper">
+                                            <div class="slider-area-values">
+                                                <div class="slider-area-values__el">
+                                                    <span class="skip-value-lower">1</span>
+                                                    <span class="skip-curr">год</span>
+                                                </div>
+                                                <div class="slider-area-values__el">
+                                                    <span class="skip-value-upper">18</span>
+                                                    <span class="skip-curr">лет</span>
+                                                </div>
+                                            </div>
+                                            <input id="rangeInput" type="range" min="0" max="200"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter-block__range">
+                                    <p class="filter-block__range-title">Время работы</p>
+                                    <div class="slider-area">
+                                        <div class="slider-area-wrapper">
+                                            <div class="slider-area-values">
+                                                <div class="slider-area-values__el">
+                                                    <span class="skip-value-lower">00:00</span>
+                                                </div>
+                                                <div class="slider-area-values__el">
+                                                    <span class="skip-value-upper">22:00</span>
+                                                </div>
+                                            </div>
+                                            <input id="rangeInput" type="range" min="0" max="200"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter-block__checkbox">
+                                    <span class="filter-block__checkbox-title">Пол</span>
+                                    <div class="checkbox-wrap">
+                                        <label for="scales">М</label>
+                                        <input type="checkbox" id="scales" name="scales" checked>
+                                    </div>
+                                    <div class="checkbox-wrap">
+                                        <label for="scales1">Ж</label>
+                                        <input type="checkbox" id="scales1" name="scales1" checked>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-block__body-item">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" id="scales3" name="scales" checked>
+                                    <label for="scales3">С абонементом</label>
+                                </div>
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" id="scales4" name="scales" checked>
+                                    <label for="scales4">Индивидуальные</label>
+                                </div>
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" id="scales5" name="scales">
+                                    <label for="scales5">Групповые</label>
+                                </div>
+                                <button class="button-rect btn-green">Применить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs-content__col-80">
+                    <div class="map-wrap">
+                        <div class="map-block">
+                        <div style="border-color: transparent; position:relative;overflow:hidden;">
+                            <a href="https://yandex.by/maps/157/minsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Минск</a>
+                            <a href="https://yandex.by/maps/157/minsk/house/Zk4Ycw9pQEcGQFtpfXR4d3xlYg==/?ll=27.589921%2C53.896066&utm_medium=mapframe&utm_source=maps&z=14.31" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Захарова, 77А — Яндекс.Карты</a>
+                            <iframe src="https://yandex.by/map-widget/v1/-/CCUyJPXHSD" width="100%" height="440px" allowfullscreen="true" style="position:relative;"></iframe>
+                        </div>
+                    </div>
+                        <div class="map-wrap__btn">
+                            <button class="button-rect btn-dark button-s">
+                                <svg viewBox="0 0 24 24">
+                                    <use xlink:href="/img/sprite.svg#geo"></use>
+                                </svg>
+                                <span>Поблизости</span>
+                            </button>
+                            <button class="button-rect btn-dark button-s">
+                                <svg viewBox="0 0 24 24">
+                                    <use xlink:href="/img/sprite.svg#geo2"></use>
+                                </svg>
+                                <span>Расширенный фильтр</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="grid-gallery">
+                        <div class="grid-gallery__card">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="grid-gallery__card">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="grid-gallery__card">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="grid-gallery__card">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="grid-gallery__card">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="grid-gallery__card">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                    </div>
+                    <div class="tabs-content__el-btn">
+                        <button class="button-rect btn-blue button-s">
+                            <span class="">Показать еще</span>
+                            <svg viewBox="0 0 15 8">
+                                <use xlink:href="/img/sprite.svg#arr-down"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+@@include('components/blocks/page/_footer.html')
+@@include('components/blocks/page/_scripts.html')
+</body>
+
+</html>

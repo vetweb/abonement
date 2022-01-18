@@ -210,71 +210,159 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	tabsNav();
 
-	//Slider work-description__slider
-	//Slider work-direction__slider
-	const swiperDir = document.querySelector('.js-slider-nav');
-	const swiperDesc = document.querySelector('.js-work-description__slider');
+	//
+	function selectIcons() {
+		let elem = document.querySelector('.js-toggle-btn');
+		if (!elem) {
+			return false;
+		}
+		let elems = document.querySelectorAll('.js-toggle-btn')
 
-	if (swiperDir) {
+		elems.forEach((item) => {
+			item.addEventListener('click', toggleClass)
+		})
+
+		function toggleClass() {
+			this.classList.add('active');
+			for (let k = 0; elems.length  > k; k++) {
+				let item = elems[k];
+				if (item !== this && item.classList.contains('active')) {
+					item.classList.remove('active')
+				}
+			}
+		}
+	}
+	selectIcons();
+
+//
+	const galleryThumbs = document.querySelector('.js-gallery-thumbs');
+	const galleryTop = document.querySelector('.js-gallery-top');
+
+	if (galleryThumbs && galleryTop) {
 
 		function getDirection() {
-			let windowWidth = window.innerWidth;
 			let direction = window.innerWidth >= 992 ? 'vertical' : 'horizontal';
-
 			return direction;
 		}
 
-		const swiperWorkDirection = new Swiper(swiperDir, {
-			direction: getDirection(),
-			loop: true,
+		let myGalleryThumbs = new Swiper(galleryThumbs, {
 			mousewheel: true,
 			speed: 1500,
-			grabCursor: true,
+			spaceBetween: 10,
 			slideToClickedSlide: true,
-			//loopedSlides: 5,
+			freeMode: true,
+			grabCursor: true,
+			loop: true,
+			direction: getDirection(),
 			breakpoints: {
 				// when window width is >= 320px
 				320: {
-					slidesPerView: 'auto',
-					spaceBetween: 24,
-					initialSlide: 0,
-					centeredSlides: false,
+					slidesPerView: 'auto'
 				},
-				992: {
-					initialSlide: 2,
-					centeredSlides: true,
+				768: {
 					spaceBetween: 0,
 					slidesPerView: 4,
-					grabCursor: true,
 				},
 			},
 			on: {
 				resize: function () {
-					swiperWorkDirection.changeDirection(getDirection());
-				},
-			},
-		});
-
-		const swiperWorkDescription = new Swiper(swiperDesc, {
-			grabCursor: true,
-			slidesPerView: 1,
-			spaceBetween: 10,
-			//loopedSlides: 5,
-			freeMode: true,
-			watchSlidesVisibility: true,
-			watchSlidesProgress: true,
-			loop: true,
-			direction: 'vertical',
-			slideToClickedSlide: true,
-			thumbs: {
-				swiper: swiperWorkDirection,
+					myGalleryThumbs.changeDirection(getDirection());
+				}
 			}
 		});
 
-		swiperWorkDirection.on('slideChange', () => {
-			swiperWorkDescription.slideTo(swiperWorkDirection.realIndex, 800)
+		let myGalleryTop = new Swiper(galleryTop, {
+			loop: true,
+			speed: 1500,
+			initialSlide: 0,
+			spaceBetween: 10,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			thumbs: {
+				swiper: myGalleryThumbs
+			}
+		});
+
+	    myGalleryThumbs.on('slideChange', () => {
+		    myGalleryTop.slideTo(myGalleryThumbs.realIndex, 800)
+	    });
+	}
+
+	let navigationSelect = document.querySelector('.select-wrapper');
+
+	function initSelect(elem){
+		let selectHolder = elem.querySelector('.holder');
+		let selectOptions = elem.querySelectorAll('.dropdown-option li');
+		let dropHolder = elem.querySelector('.dropdown');
+		let selectedOption = selectOptions[0];
+
+		selectedOption.classList.add('current');
+
+		selectHolder.addEventListener('click', function () {
+			dropHolder.classList.toggle('active');
+		});
+
+		selectOptions.forEach(function(currentElement) {
+			currentElement.addEventListener('click', function(){
+				selectedOption.classList.remove('current');
+				selectedOption = currentElement;
+				currentElement.classList.add('current');
+				selectHolder.innerText = currentElement.textContent;
+				dropHolder.classList.toggle('active');
+			});
 		});
 	}
+
+	initSelect(navigationSelect);
+
+	let searchBigInput = document.querySelector('.js-search-big');
+	let searchBigInputs = document.querySelectorAll('.js-search-big');
+	let filterBlockCloseBtns = document.querySelectorAll('.js-filter-block__close');
+	let filterBlockCloseBtn = document.querySelector('.js-filter-block__close');
+	let filterBlocks = document.querySelectorAll('.js-filter-block');
+
+	if (!searchBigInput) {
+		return false;
+	}
+
+	searchBigInputs.forEach((item) => {
+		item.addEventListener('click', showFiletBlock);
+
+		function showFiletBlock() {
+			filterBlocks.forEach((elem) => {
+				let parentBox = this.closest('.js-parent-box');
+				console.log(parentBox);
+				if(!elem.classList.contains('show')) {
+					parentBox.classList.add('active');
+					console.log(this);
+					elem.classList.add('show');
+				} else {
+					parentBox.classList.remove('active');
+					elem.classList.remove('show');
+				}
+			})
+		}
+	})
+
+	if (!filterBlockCloseBtn) {
+		return false;
+	}
+
+	filterBlockCloseBtns.forEach((item) => {
+		item.addEventListener('click', closeFiletBlock);
+
+		function closeFiletBlock() {
+			filterBlocks.forEach((elem) => {
+				let parentBox = this.closest('.js-parent-box');
+				if(elem.classList.contains('show')) {
+					elem.classList.remove('show');
+					parentBox.classList.remove('active');
+				}
+			})
+		}
+	})
 
 
 });

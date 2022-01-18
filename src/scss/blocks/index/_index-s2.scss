@@ -20,12 +20,18 @@
   z-index: 10;
   width: 135px;
   position: absolute;
-  bottom: 197px;
+  bottom: 220px;
   right: 0;
 
   @include sm {
     bottom: 20%;
     right: 42%;
+    width: 155px;
+  }
+
+  @include sm {
+    bottom: -10px;
+    right: 100px;
     width: 155px;
   }
 
@@ -73,6 +79,10 @@
   flex-direction: row;
   display: flex;
   color: $white;
+
+  @include sm-down {
+    padding-top: 20px;
+  }
 
   @include lg {
     width: 20%;
@@ -137,11 +147,11 @@
 }
 
 .banner-slider__inner {
-  position: absolute;
   left: $indent-10;
   z-index: 3;
 
   @include sm {
+    position: absolute;
     left: $indent-20;
     max-width: 325px;
     top: 67px;
@@ -153,6 +163,22 @@
 
   @include sm-down {
     bottom: 110px;
+  }
+}
+
+.banner-slider__image {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  width: 60%;
+
+  @include xl {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
   }
 }
 
@@ -211,8 +237,11 @@
   position: relative;
   max-width: 100%;
   width: 100%;
-  height: 100%;
   z-index: 2;
+
+  @include sm {
+    height: 100%;
+  }
 
   @include xl {
     width: 100%;
@@ -232,6 +261,7 @@
   z-index: 4;
 
   @include sm-down {
+    position: relative;
     bottom: $indent-50;
   }
 }
@@ -241,59 +271,51 @@
   position: relative;
   height: 100%;
   min-height: 535px;
+}
 
-  &:before {
+.banner-slider-el.banner-slider-el-mask {
+  position: relative;
+}
+
+.banner-slider-el.banner-slider-el-mask .banner-slider__inner {
+  color: $blue;
+}
+
+.banner-slider-el.banner-slider-el-nomask .banner-slider__inner {
+  color: $blue;
+
+    @include md {
+      color: $white
+    }
+
+}
+
+.banner-slider-el.banner-slider-el-nomask .banner-slider__img {
+  @include sm{
+    height: 100%;
+  }
+}
+
+.banner-slider-el.banner-slider-el-mask:before {
+  @include xl {
+    width: 65%;
+    mask-image: url("/img/mask.svg");
     position: absolute;
     content: '';
     left: 0;
     top: 0;
-    width: 100%;
     height: 100%;
     min-height: 535px;
-    mask-image: url("/img/mask2.svg");
     mask-size: 100%;
     mask-repeat: no-repeat;
     z-index: 3;
     background: white;
-
-    @include sm {
-      width: 72%;
-      mask-image: url("/img/mask.svg");
-    }
-
-    @include lg {
-      left: -55px;
-    }
-
-    @include sm-down {
-      top: 2%;
-      min-height: 293px;
-    }
-
-    @include csx-down {
-      top: 17%;
-    }
-
-    @include xs-down {
-      top: 7%;
-    }
-  }
-
-  @include sm-down {
-    min-height: 410px;
-  }
-}
-
-.banner-slider__mask {
-  @include sm{
-    min-height: 535px;
-    height: 100%;
   }
 }
 
 .main-banner__col-small .card-s__el-img {
   width: 100%;
-  height: 98px;
+  height: 120px;
   position: relative;
   background-color: #646A7D;
   background-size: cover;
@@ -304,14 +326,15 @@
   overflow: hidden;
   margin-bottom: $indent-15;
 
-  @include sm {
-    height: 120px;
-  }
-
   @include lg {
     height: 125px;
     margin-bottom: $indent-45;
   }
+}
+
+.main-banner .swiper-button-next,
+.main-banner .swiper-button-prev {
+  margin-left: 0;
 }
 
 .main-banner__col-small .main-banner__col20-col {
