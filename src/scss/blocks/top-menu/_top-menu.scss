@@ -1,0 +1,42 @@
+.top-menu {
+  @include flex(center, space-between);
+}
+
+.top-menu__list {
+  @include flex(center, flex-start);
+}
+
+.top-menu__item {
+  list-style: none;
+
+  &:last-child {
+    .top-menu__link:before  {
+      display: none;
+    }
+  }
+}
+
+.top-menu__link {
+  display: block;
+  position: relative;
+  padding: 24px 25px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color .3s ease;
+
+  &:hover {
+    background-color: #2C4CA3;
+  }
+
+  &:before {
+    position: absolute;
+    content: '';
+    height: 36px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    background: rgba(195, 195, 195, .5);
+  }
+}

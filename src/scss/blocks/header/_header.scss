@@ -5,6 +5,10 @@
 	padding: 20px 0;
 }
 
+.header__container {
+	@include flex(center, space-between);
+}
+
 .header__logo {
 	display: block;
 	width: 250px;
@@ -17,5 +21,29 @@
 	@include flex(center, flex-start);
 }
 
-.header__center {}
-.header__right {}
+.header__center {
+	width: 300px;
+	flex: 0 0 auto;
+}
+
+.header__right {
+	@include flex(center, flex-start);
+}
+
+.header__cont-block.header__cont-block {
+	flex-direction: row;
+	padding-bottom: 0;
+}
+
+.header__cont-block .cont-row {
+	margin-bottom: 0;
+	align-items: center;
+
+	&:first-child {
+		margin-right: 20px;
+	}
+
+	a {
+		color: rgba(195, 195, 195, .5);
+	}
+}
