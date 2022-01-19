@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+@@include('components/blocks/page/_head.html',{
+"lang":"en",
+"title":"Абонемент",
+"description":"Абонемент",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+<!--@@include('components/blocks/page/_header.html')-->
+<main class="support-s js-parent-box parent-box">
+    <section class="support-s1">
+        <div class="container">
+            <div class="index-s__top">
+                <h2 class="h2">Техническая поддержка</h2>
+            </div>
+            <div class="support-inner">
+                <div class="support-inner__col70">
+                    <form action="" class="support-s__form" style="background-color: #fff">
+                        <h4 class="h4">Сообщение в поддержку</h4>
+                        <p class="support-s__form-text">Заполните эту форму, чтобы сообщить об ошибке на Abonement.by
+                            или получить помощь</p>
+                        <textarea name="" id="" rows="10" placeholder="Подробно расскажите о проблеме или ошибке" class="support-s__form-desc"></textarea>
+                        <input type="text" placeholder="ФИО" class="support-s__form-name"/>
+                        <input type="tel" placeholder="Контактный телефон" class="support-s__form-number"/>
+                        <input type="mail" placeholder="E-mail" class="support-s__form-mail"/>
+                        <div class="support-s__form-btn">
+                            <button class="btn-rect btn-blue button-s">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="support-inner__col30">
+                    <img src="/img/supp-man.png" alt="" class="support-inner__img"/>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+@@include('components/blocks/page/_footer.html')
+@@include('components/blocks/page/_scripts.html')
+</body>
+
+</html>

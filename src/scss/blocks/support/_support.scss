@@ -1,0 +1,121 @@
+.support-s1 {
+  padding: $indent-25 0 $indent-170;
+  position: relative;
+
+  @include lg {
+    padding: $indent-60 0 $indent-260;
+  }
+}
+
+.support-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.support-inner__col70 {
+  width: 100%;
+  box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
+
+  @include lg {
+    width: 70%;
+  }
+}
+
+::placeholder {
+  color: #828282;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.support-inner__col30 {
+  display: none;
+
+  @include lg {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    width: 20%;
+  }
+}
+
+.support-s__form {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: $indent-20 $indent-15;
+
+  @include md {
+    padding: $indent-50 $indent-40;
+  }
+
+  @include lg {
+    padding: $indent-40 $indent-80;
+  }
+}
+
+.support-s__form .h4{
+  margin-bottom: $indent-10;
+  color: $blue-bg;
+
+  @include md {
+    margin-bottom: $indent-30;
+  }
+
+  @include lg {
+    margin-bottom: $indent-40;
+  }
+}
+
+.support-s__form-text {
+  color: $blue-bg;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: $indent-20;
+
+  @include lg {
+    margin-bottom: $indent-40;
+  }
+}
+
+.support-s__form-desc {
+  padding: $indent-15 $indent-30;
+  width: 100%;
+  margin-bottom: $indent-30;
+  border: 1px solid #2C4CA3;
+  border-radius: 10px;
+}
+
+.support-s__form input {
+  border: 1px solid #2C4CA3;
+  border-radius: 10px;
+  width: 100%;
+  padding: $indent-15 $indent-30;
+}
+
+.support-s__form input:not(:last-child) {
+  margin-bottom: $indent-30;
+}
+
+.support-inner__img {
+  max-height: 390px;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+}
+
+.support-s__form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.support-s__form .btn-rect {
+  padding: $indent-20;
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 180px;
+}
