@@ -290,33 +290,41 @@ document.addEventListener('DOMContentLoaded', () => {
 	    });
 	}
 
-	let navigationSelect = document.querySelector('.select-wrapper');
+// custom select
+	document.querySelectorAll('.select').forEach(select => {
 
-	function initSelect(elem){
-		let selectHolder = elem.querySelector('.holder');
-		let selectOptions = elem.querySelectorAll('.dropdown-option li');
-		let dropHolder = elem.querySelector('.dropdown');
-		let selectedOption = selectOptions[0];
+		let selectCurrent = select.querySelector('.select__current'),
+			selectList = select.querySelector('.select__list'),
+			selectInput = select.querySelector('.select__input'),
+			selectItem = select.querySelectorAll('.select__item');
 
-		selectedOption.classList.add('current');
-
-		selectHolder.addEventListener('click', function () {
-			dropHolder.classList.toggle('active');
+		selectCurrent.addEventListener('click', () => {
+			selectList.classList.toggle('select__list--show')
 		});
 
-		selectOptions.forEach(function(currentElement) {
-			currentElement.addEventListener('click', function(){
-				selectedOption.classList.remove('current');
-				selectedOption = currentElement;
-				currentElement.classList.add('current');
-				selectHolder.innerText = currentElement.textContent;
-				dropHolder.classList.toggle('active');
-			});
-		});
-	}
+		selectItem.forEach(item =>{
+			item.addEventListener('click', ()=>{
+				let itemValue = item.getAttribute('data-value')
+				let itemText = item.textContent
+				selectInput.value = itemValue
+				selectCurrent.textContent = itemText
 
-	initSelect(navigationSelect);
+				selectListHide()
+			})
+		})
 
+		// функция закрытия выпадающего списка
+		let selectListHide = () => {
+			selectList.classList.remove('select__list--show')
+		}
+		//Закрываем выпадающий сисок, если клик был вне области
+		document.addEventListener('mouseup', (e) =>{
+			if (!select.contains(e.target))	selectListHide()
+		})
+
+	})
+
+	//searchBig
 	let searchBigInput = document.querySelector('.js-search-big');
 	let searchBigInputs = document.querySelectorAll('.js-search-big');
 	let filterBlockCloseBtns = document.querySelectorAll('.js-filter-block__close');
