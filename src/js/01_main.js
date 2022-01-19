@@ -291,38 +291,39 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 // custom select
-	document.querySelectorAll('.select').forEach(select => {
 
-		let selectCurrent = select.querySelector('.select__current'),
-			selectList = select.querySelector('.select__list'),
-			selectInput = select.querySelector('.select__input'),
-			selectItem = select.querySelectorAll('.select__item');
+	let selectHeader = document.querySelector('.js-select__header');
+	let selectHeaders = document.querySelectorAll('.js-select__header');
+	let selectItems = document.querySelectorAll('.js-select__item');
 
-		selectCurrent.addEventListener('click', () => {
-			selectList.classList.toggle('select__list--show')
-		});
+	if (!selectHeader) {
+		return false;
+	}
+	selectHandler();
+	function selectHandler() {
 
-		selectItem.forEach(item =>{
-			item.addEventListener('click', ()=>{
-				let itemValue = item.getAttribute('data-value')
-				let itemText = item.textContent
-				selectInput.value = itemValue
-				selectCurrent.textContent = itemText
-
-				selectListHide()
-			})
-		})
-
-		// функция закрытия выпадающего списка
-		let selectListHide = () => {
-			selectList.classList.remove('select__list--show')
-		}
-		//Закрываем выпадающий сисок, если клик был вне области
-		document.addEventListener('mouseup', (e) =>{
-			if (!select.contains(e.target))	selectListHide()
-		})
-
+	selectHeaders.forEach((item) => {
+		item.addEventListener('click', selectToggle)
 	})
+
+	selectItems.forEach((item) => {
+		item.addEventListener('click', selectChose)
+	})
+
+	function selectToggle() {
+		console.log(this.parentElement);
+		this.parentElement.classList.toggle('is-active');
+	}
+
+	function selectChose() {
+		let textSelect = this.innerText,
+		select = this.closest('.js-select'),
+		currentText =select.querySelector('.js-select__current');
+		currentText.innerText = textSelect;
+		select.classList.remove('is-active');
+	}
+	}
+
 
 	//searchBig
 	let searchBigInput = document.querySelector('.js-search-big');

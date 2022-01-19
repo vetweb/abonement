@@ -8,7 +8,7 @@
 })
 
 <body>
-@@include('components/blocks/page/_header.html')
+<!--@@include('components/blocks/page/_header.html')-->
 <main class="subscriptions-s js-parent-box parent-box">
     <section class="fc-s1" style="background-color: #fff">
         <div class="container">
@@ -136,17 +136,19 @@
                                 <button class="button-rect btn-dark">Найти</button>
                             </div>
                             <div class="search-block__right">
-                                <div class="select-wrapper">
-                                    <div class="dropholder">
-                                        <div class="dropdown">
-                                            <p class="holder">По цене</p>
-                                        </div>
-                                        <ul class="dropdown-option">
-                                            <li>По цене</li>
-                                            <li>По цене2</li>
-                                            <li>По цене3</li>
-                                            <li>По цене4</li>
-                                        </ul>
+                                <div class="select js-select">
+                                    <div class="select__header js-select__header">
+                                        <div class="select__current js-select__current">По цене</div>
+                                        <span class="select__icon js-select__icon">
+                                            <svg viewBox="0 0 16 10">
+                                                <use xlink:href="/img/sprite.svg#arrow-down-select"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="select__body js-select__body">
+                                        <div class="select__item js-select__item">По цене1</div>
+                                        <div class="select__item js-select__item">По цене2</div>
+                                        <div class="select__item js-select__item">По цене3</div>
                                     </div>
                                 </div>
                                 <button class="button-rect btn-green">Фильтрация</button>
