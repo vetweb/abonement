@@ -1,0 +1,157 @@
+.pay-m-s1 .index-s__top {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.pay-m-s1 .index-s__top h2{
+  margin-bottom: $indent-10;
+
+  @include sm {
+    margin-bottom: $indent-30;
+  }
+
+  @include lg {
+    margin-bottom: $indent-20;
+  }
+}
+
+ .index-s__top .index-s__top__desc {
+  font-size: 18px;
+  line-height: 24px;
+   font-weight: 400;
+   display: block;
+
+   @include md {
+     display: none;
+   }
+
+   @include lg {
+     display: block;
+   }
+}
+
+.pay-m-s1 .row__col50 {
+  padding: $indent-30 $indent-15;
+  box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
+  border-radius: 20px;
+  min-height: 350px;
+
+  @include sm {
+    padding: $indent-40 $indent-40;
+  }
+}
+
+.pay-m-s1 .row__col50 {
+  margin-bottom: $indent-30;
+
+  @include md {
+    width: 48%;
+    margin-bottom: 0;
+  }
+}
+
+ .row__col50.pay-m-s1__bg1 {
+   background-size: contain;
+   background-position: bottom left;
+   background-repeat: no-repeat;
+   color: $blue-bg;
+ }
+
+.row__col50.pay-m-s1__bg2 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.row-inner__block-title {
+  display: inline-block;
+  margin-bottom: $indent-20;
+}
+
+.row-inner__block-desc {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.pay-m-s2 .row-block__grid {
+  margin: 0;
+}
+
+.pay-m-s2 .row-block__grid-item {
+  width: 100%;
+  margin-bottom: $indent-20;
+  display: flex;
+  flex-direction: column;
+  padding: 0 $indent-20 0 $indent-40;
+
+  @include sm {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  @include md {
+    padding: 0 $indent-70 0;
+  }
+}
+
+.pay-m-s2 .row-block__grid-item:first-child {
+  @include sm {
+    border-right: 1px solid $blue;
+  }
+}
+
+.pay-m-s1 {
+  padding: 90px 0 20px;
+
+  @include sm {
+    padding: 120px 0 70px;
+  }
+
+  @include lg {
+    padding: 90px 0 70px;
+  }
+}
+
+.pay-m-s2 {
+  padding: 0 0 50px;
+
+  @include sm {
+    padding: 0 0 85px;
+  }
+
+  @include lg {
+    padding: 0 0 120px;
+  }
+}
+
+.pay-m-s2 .row-block  {
+  padding: $indent-30 $indent-15;
+  box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
+  border-radius: 20px;
+  background-color: $white;
+
+  @include sm {
+    padding: $indent-40 $indent-40;
+  }
+
+  @include lg {
+    min-height: 415px;
+  }
+}
+
+.pay-m-s2 .row-block__grid-item .row-inner__block-desc:not(:last-child) {
+  margin-bottom: $indent-20;
+  font-weight: 400;
+}
+
+.row-inner__list {
+  margin-bottom: $indent-20;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.row-inner__list li {
+  list-style-position: outside;
+}

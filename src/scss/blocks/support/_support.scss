@@ -11,12 +11,12 @@
   }
 }
 
-.support-inner {
+.row-inner {
   display: flex;
   justify-content: space-between;
 }
 
-.support-inner__col70 {
+.row-inner__col70 {
   width: 100%;
   box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
 
@@ -32,7 +32,7 @@
   font-weight: 400;
 }
 
-.support-inner__col30 {
+.row-inner__col30 {
   display: none;
 
   @include lg {
@@ -43,7 +43,7 @@
   }
 }
 
-.support-inner__col30 .index-s__top-img {
+.row-inner__col30 .index-s__top-img {
   display: none;
   @include lg {
     display: block;
@@ -113,7 +113,7 @@
   margin-bottom: $indent-30;
 }
 
-.support-inner__img {
+.row-inner__img {
   max-height: 390px;
   position: absolute;
   bottom: -100px;

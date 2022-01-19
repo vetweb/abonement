@@ -1,0 +1,42 @@
+.conditions-s1 {
+  padding: 90px 0 50px;
+
+  @include sm {
+    padding: 120px 0 85px;
+  }
+
+  @include lg {
+    padding: 90px 0 120px;
+  }
+}
+
+.row-inner__block {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: $indent-20 $indent-15;
+
+  @include md {
+    padding: $indent-50 $indent-40;
+  }
+
+  @include lg {
+    padding: $indent-40 $indent-80;
+  }
+}
+
+.row-inner__item {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.row-inner__item:not(:last-child) {
+  margin-bottom: $indent-30;
+}
+
+.row-inner__block-title {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
