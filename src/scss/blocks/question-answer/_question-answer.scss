@@ -1,0 +1,134 @@
+.fqa-s-s1 {
+  padding: 25px 0 170px;
+
+  @include sm {
+    padding: 50px 0 190px;
+  }
+
+  @include lg {
+    padding: 60px 0 170px;
+  }
+}
+
+.fqa-s-s1 .row-inner__col70 {
+  box-shadow: none;
+}
+
+.faq-block {
+  padding: $indent-15 $indent-15;
+  background-color: $white;
+  box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @include sm {
+    padding: $indent-20 $indent-40;
+  }
+}
+
+a.faq-block {
+  text-decoration: none;
+}
+
+.faq-block:not(:last-child) {
+  margin-bottom: $indent-10;
+
+  @include sm {
+    margin-bottom: $indent-20;
+  }
+}
+
+.faq-block__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: $blue-bg;
+  margin-bottom: $indent-10;
+
+  @include sm {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.faq-block__desc {
+  font-size: 14px;
+  line-height: 20px;
+  color: $gray-tx;
+  font-weight: 400;
+
+  @include sm {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+.faq-block__icon {
+  position: absolute;
+  right: $indent-40;
+  top: 50%;
+
+  @include sm-down {
+    right: $indent-15;
+    top: $indent-20;
+  }
+
+  @include sm {
+    transform: translateY(-50%);
+  }
+}
+
+.faq-block__icon svg {
+  width: 10px;
+  height: 16px;
+  color: $blue;
+
+  @include sm {
+    width: 14px;
+    height: 24px;
+  }
+}
+
+.row-inner .form__field.search__field {
+  max-width: 100%;
+  margin-bottom: $indent-40;
+
+  @include sm {
+    margin-bottom: $indent-70;
+  }
+}
+
+.row-inner .search__button {
+  right: auto;
+  top: 0;
+  left: 20px;
+}
+
+.row-inner .form__input {
+  border: 1px solid $blue;
+  padding: 12px 16px 12px 70px;
+  background: $white;
+
+  @include sm {
+    height: 56px;
+    padding: 19px 16px 19px 70px;
+  }
+}
+
+.row-inner .form__input::placeholder {
+  font-size: 14px;
+  line-height: 24px;
+
+  @include sm {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+}
+
+.row-inner .search__button .search__icon {
+  color: $blue;
+}

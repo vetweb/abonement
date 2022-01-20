@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+@@include('components/blocks/page/_head.html',{
+"lang":"en",
+"title":"Абонемент",
+"description":"Абонемент",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+@@include('components/blocks/page/_header.html')
+<main class="fqa-s js-parent-box parent-box">
+    <section class="fqa-s-s1">
+        <div class="container">
+            <div class="index-s__top">
+                <h2 class="h2">Вопросы и ответы</h2>
+            </div>
+            <div class="row-inner">
+                <div class="row-inner__col70">
+                    <form action="" class="search__form">
+                        <div class="form__field search__field">
+                            <input type="text" name="" class="search__input form__input" placeholder="Поиск ответов...">
+                            <button class="search__button">
+                                <span class="search__icon">
+                                     <svg class="icon-svg" viewBox="0 0 20 20" >
+                                        <use xlink:href="/img/sprite.svg#search"></use>
+                                     </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                    @@include('components/blocks/bem/_faq-block.html')
+                    @@include('components/blocks/bem/_faq-block.html')
+                    @@include('components/blocks/bem/_faq-block.html')
+                    @@include('components/blocks/bem/_faq-block.html')
+                    @@include('components/blocks/bem/_faq-block.html')
+                    @@include('components/blocks/bem/_faq-block.html')
+                    @@include('components/blocks/bem/_faq-block.html')
+                    @@include('components/blocks/bem/_faq-block.html')
+                    @@include('components/blocks/bem/_faq-block.html')
+                    @@include('components/blocks/bem/_faq-block.html')
+                </div>
+                <div class="row-inner__col30">
+                    <img src="/img/faq-man.png" alt="" class="row-inner__img"/>
+                    @@include('components/blocks/bem/_img-fly.html')
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+@@include('components/blocks/page/_footer.html')
+@@include('components/blocks/page/_scripts.html')
+</body>
+
+</html>
