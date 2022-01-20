@@ -87,7 +87,7 @@
   margin-bottom: $indent-10;
   color: $blue-bg;
 
-  @include sm {
+  @include md {
     font-size: 20px;
     line-height: 24px;
   }
@@ -95,6 +95,10 @@
 
 .card-big__el-t-desc.text-sx {
  color: $black-t;
+}
+
+.fc-s10 .card-big-t .card-big-t__btn {
+  display: none;
 }
 
 .card-big__el-t-footer {
