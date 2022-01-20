@@ -1,0 +1,93 @@
+.about-s1,
+.about-s2,
+.about-s3 {
+  padding: 0 0 $indent-50;
+  color: $blue-bg;
+
+  @include lg {
+    padding: $indent-95 0 $indent-80;
+  }
+}
+
+.row-inner__block-desc span {
+  font-weight: 600;
+}
+
+.row-inner__block-desc.row-inner__block-desc--top {
+  margin-bottom: $indent-30;
+}
+
+.row {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include md {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.row__col50 {
+  width: 100%;
+  position: relative;
+
+  @include md {
+    width: 45%;
+  }
+}
+
+.partners .index-s__top .h2 {
+  display: flex;
+
+  @include md {
+    display: none;
+  }
+}
+
+.about-s .row__col50 .row__col50-images {
+  box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+
+  @include md {
+    margin-bottom: 0;
+  }
+}
+
+.about-s .row__col50 .row__col50-images:not(:last-child) {
+  margin-bottom: $indent-30;
+}
+
+.about-s .row__col50 .row__col50-images:not(:last-child) {
+  @include md-down {
+    margin-bottom: $indent-30;
+  }
+}
+
+.row__col50 .row__col50-images {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.row__col50 .row__col50-images img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+//about-s2
+.about-s2 .row__col50 .h4,
+.about-s3 .row__col50 .h4 {
+  margin-bottom: $indent-30;
+  font-weight: 700;
+}
+
+.about-s3 .row__col50 {
+  align-self: flex-start;
+}
