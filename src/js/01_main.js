@@ -95,6 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				loop: true,
 				speed: 1000,
 				slidesPerView: 1,
+				clickable: true,
 				navigation: {
 					nextEl: el.querySelector(".swiper-button-next"),
 					prevEl: el.querySelector(".swiper-button-prev"),
