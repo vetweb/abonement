@@ -9,28 +9,25 @@
 
 <body>
 @@include('components/blocks/page/_header.html')
-<main class="news-s js-parent-box parent-box">
-    <section class="news-s1">
+<main class="blog-video-s js-parent-box parent-box">
+    <section class="blog-video-s1">
         <div class="container">
             <div class="index-s__top">
-                <h2 class="h2">Новости</h2>
+                <h2 class="h2">Блог</h2>
             </div>
             <div class="row">
                 <div class="row__top">
                     <div class="row__top-left">
-                        <h4 class="row__top-title h4">Белорусы завоевали 8 медалей во второй день международного
-                            турнира по самбо в Минске</h4>
+                        <h4 class="row__top-title h4">Какие преимущества получит ребенок от единоборства?
+                        </h4>
                         <span class="data-time__date">12.01.2021</span>
                     </div>
                     <div class="row__top-right">
-                        <a href="#" class="text-s">Смотреть все новости </a>
+                        <a href="#" class="text-s">Смотреть все блоги</a>
                     </div>
                 </div>
                 <div class="row__body">
-                    <div class="row__col50">
-                        <div class="row__col50-images">
-                            <img class="row__col50-img" src="/img/faq-detail1.png" alt="">
-                        </div>
+                    <div class="row__col50 row__col50--left">
                         <p class="row__col50-desc">
                             8 сентября, Минск /Корр. БЕЛТА/. Белорусские атлеты завоевали восемь наград во второй день открытого XXV Международного турнира категории А по самбо на призы Президента Беларуси. Соревнования завершились в минском спорткомплексе "Чижовка-Арена", передает корреспондент БЕЛТА.
                         </p>
@@ -44,16 +41,20 @@
                             Напомним, что накануне белорусы выиграли 17 медалей различного достоинства. Победы в спортивном разделе праздновали Анфиса Копаева (50 кг), Татьяна Мацко (59 кг), Владислав Бурдь (58 кг) и Дмитрий Хохлов (свыше 99 кг). В боевом самбо титула чемпиона удостоился Евгений Михно (64 кг).
                         </p>
                     </div>
-                    <div class="row__col50">
-                        <div class="row__col50__title text-s">Рекомендуем к прочтению</div>
-                        <div class="news-block__wrap">
-                            @@include('components/blocks/bem/_news-block.html')
-                            @@include('components/blocks/bem/_news-block.html')
-                            @@include('components/blocks/bem/_news-block.html')
-                            @@include('components/blocks/bem/_news-block.html')
-                            @@include('components/blocks/bem/_news-block.html')
+                    <div class="row__col50 row__col50--right">
+                        <div class="news-block__video">
+                            <div class="block-video__wrap js-block-video__wrap">
+                                <video muted loop class="video-with-btn js-video-with-btn" poster="/img/poster.png">
+                                    <source src="https://youtu.be/b6RpvwmMLWU" type="video/mp4">
+                                </video>
+                                <span class="btn-play js-btn-play">
+                                    <svg viewBox="0 0 17 20">
+                                        <use xlink:href="/img/sprite.svg#play-btn"></use>
+                                    </svg>
+                                </span>
+                            </div>
                         </div>
-                        <img src="/img/faq-man.png" alt="" class="row-inner__img"/>
+                        <a href="#" class="row__col50-subtitle">Какие преимущества получит ребенок от единоборства?</a>
                     </div>
                 </div>
                 <div class="row__bottom">

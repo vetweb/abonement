@@ -374,5 +374,30 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	})
 
+	// Video
+
+	const wrapperVideo = document.querySelector('.js-block-video__wrap');
+	const wrapperVideos = document.querySelectorAll('.js-block-video__wrap');
+
+	if (wrapperVideo) {
+		wrapperVideos.forEach(el => {
+			el.addEventListener('click', toggleWrapperVideo);
+		})
+
+		function toggleWrapperVideo () {
+			let currentVideoWrap = this.closest('.js-block-video__wrap');
+			let currentVideo = currentVideoWrap.querySelector('.js-video-with-btn');
+			let currentVideoBtn = currentVideoWrap.querySelector('.js-btn-play');
+
+			if (currentVideo.paused) {
+				currentVideo.play();
+				currentVideoBtn.classList.add('hide');
+			} else {
+				currentVideo.pause();
+				currentVideoBtn.classList.remove('hide');
+			}
+		}
+	}
+
 
 });

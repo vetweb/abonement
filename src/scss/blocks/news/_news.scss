@@ -40,52 +40,6 @@
     width: 70%;
   }
 }
-//
-//.row__col50 {
-//  width: 100%;
-//  position: relative;
-//
-//  @include md {
-//    width: 45%;
-//  }
-//}
-//
-//.row__top {
-//  width: 100%;
-//  display: flex;
-//  justify-content: space-between;
-//  align-items: flex-end;
-//  margin-bottom: $indent-30;
-//
-//  @include sm {
-//    margin-bottom: $indent-20;
-//  }
-//
-//  @include md {
-//    align-items: flex-start;
-//    margin-bottom: $indent-10;
-//  }
-//}
-//
-//.row__top-title {
-//  margin-bottom: $indent-15;
-//
-//  @include md {
-//    margin-bottom: $indent-20;
-//  }
-//}
-//
-//.row__body {
-//  display: flex;
-//  flex-direction: column;
-//
-//  @include md {
-//    flex-direction: row;
-//    justify-content: space-between;
-//    align-items: flex-start;
-//  }
-//}
-//
 
 .news-s1 .row__col50 .row__col50-images{
   margin-bottom: $indent-25;
@@ -115,40 +69,6 @@
 .news-s1 .row__col50-desc:not(:last-child) {
   margin-bottom: $indent-20;
 }
-
-//.faq-detail-s1 .faq-block {
-//  @include md {
-//    padding: $indent-15;
-//  }
-//}
-//
-//.faq-detail-s1 .faq-block__icon {
-//
-//  @include md {
-//    right: 15px;
-//  }
-//}
-//
-//.row__top .data-time__date {
-//  color: $gray-tx;
-//}
-//
-//.row__top a.text-s {
-//  color: $blue;
-//}
-//
-//.row__top-right {
-//  display: flex;
-//  align-self: flex-end;
-//}
-//
-//.faq-detail-s1 .row__col50:not(:last-child) {
-//  margin-bottom: $indent-50;
-//
-//  @include md {
-//    margin-bottom: 0;
-//  }
-//}
 
 //news-block
 
@@ -214,18 +134,27 @@ a.news-block  {
 //
 
 .row__body {
+  display: flex;
+  flex-direction: column;
   margin-bottom: $indent-20;
 
   @include sm {
     margin-bottom: $indent-60;
   }
+
+  @include md {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
   @include lg {
     margin-bottom:  $indent-80;
   }
 }
 
 .row__bottom {
-  padding: $indent-40 0;
+  padding: $indent-40 0 0 0;
   border-top: 1px solid #E1EBF5;
   width: 100%;
   display: flex;

@@ -1,0 +1,129 @@
+.blog-video-s1 {
+  padding: 25px 0 40px;
+
+  @include sm {
+    padding: 50px 0 40px;
+  }
+
+  @include lg {
+    padding: 60px 0 40px;
+  }
+}
+
+.blog-video-s1 .row__top {
+  @include lg-down {
+    flex-direction: column;
+  }
+}
+
+.news-block__video {
+  margin-bottom: $indent-30;
+}
+
+.blog-video-s1 .row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @include md {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    padding: $indent-40 $indent-80;
+    box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
+    border-radius: 10px;
+  }
+}
+
+.block-video__wrap {
+  box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
+  border-radius: 10px;
+}
+
+.block-video__wrap {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.block-video__wrap video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.btn-play {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 47px;
+  height: 47px;
+  background-color: $white;
+  border-radius: 50%;
+}
+
+.btn-play.hide {
+  display: none;
+}
+
+.btn-play svg {
+  width: 20px;
+  height: 22px;
+  color: $blue-bg;
+  transform: translateX(12%);
+}
+
+a.row__col50-subtitle {
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  color: $blue;
+}
+
+.blog-video-s .row__body .row__col50.row__col50--left {
+
+  @include md {
+    width: 40%;
+  }
+}
+
+.blog-video-s .row__body .row__col50.row__col50--right {
+  margin-bottom: $indent-30;
+
+  @include md {
+    margin-bottom: 0;
+    width: 57%;
+  }
+}
+
+.blog-video-s .row__body{
+
+  @include md-down {
+    flex-direction: column-reverse;
+  }
+}
+
+.blog-video-s .row__col50-desc {
+  color: $blue-bg;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+
+  @include md {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.blog-video-s .row__col50-desc:not(:last-child) {
+  margin-bottom: $indent-20;
+}
