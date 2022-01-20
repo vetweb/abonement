@@ -1,5 +1,9 @@
 .fqa-s-s1 {
   padding: 25px 0 170px;
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url("/img/sup-bg.png");
 
   @include sm {
     padding: 50px 0 190px;
