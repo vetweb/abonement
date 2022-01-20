@@ -70,8 +70,6 @@
   margin-bottom: $indent-20;
 }
 
-//news-block
-
 .news-block {
   padding: $indent-15 $indent-15;
   background-color: $white;
@@ -91,14 +89,6 @@
 a.news-block  {
   text-decoration: none;
 }
-
-//.news-block:not(:last-child) {
-//  margin-bottom: $indent-10;
-//
-//  @include sm {
-//    margin-bottom: $indent-20;
-//  }
-//}
 
 .news-block__title {
   font-weight: 600;
@@ -130,8 +120,6 @@ a.news-block  {
   border-radius: 6px;
   width: 90px;
 }
-
-//
 
 .row__body {
   display: flex;
@@ -257,9 +245,9 @@ a.news-block  {
   margin-bottom: $indent-20;
 }
 
-//
-
-.news-s2 .grid-gallery {
+.blog-video-s .grid-gallery,
+.blog-article-s .grid-gallery,
+.news-s .grid-gallery {
 
   @include csx {
     grid-template-columns: repeat(2, 1fr);
@@ -274,10 +262,14 @@ a.news-block  {
   }
 }
 
-.news-s2 .container-br-10 {
+.blog-video-s .container-br-10,
+.blog-article-s .container-br-10,
+.news-s .container-br-10 {
   background-color: transparent;
 }
 
+.blog-video-s .card-big-t,
+.blog-article-s .card-big-t,
 .news-s2 .card-big-t {
   background-color: $white;
   height: 437px;
@@ -288,7 +280,9 @@ a.news-block  {
   }
 }
 
-.news-s2 .card-big-t a.card-big-t__btn {
+.blog-video-s .card-big-t a.card-big-t__btn,
+.blog-article-s .card-big-t a.card-big-t__btn,
+.news-s .card-big-t a.card-big-t__btn {
   text-decoration: none;
   display: flex;
   justify-content: space-between;
@@ -307,6 +301,8 @@ a.news-block  {
   margin-left: 10px;
 }
 
+.blog-article-s .card-big-t__el-img,
+.blog-video-s .card-big-t__el-img,
 .news-s2 .card-big-t__el-img {
   height: 124px;
 
@@ -315,6 +311,8 @@ a.news-block  {
   }
 }
 
+.blog-article-s .card-big__el-t-desc,
+.blog-video-s .card-big__el-t-desc,
 .news-s2 .card-big__el-t-desc{
   margin-bottom: $indent-10;
 }
