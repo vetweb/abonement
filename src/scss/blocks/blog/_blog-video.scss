@@ -1,4 +1,5 @@
 .blog-video-s1 {
+  position: relative;
   padding: 25px 0 40px;
 
   @include sm {
@@ -11,8 +12,37 @@
 }
 
 .blog-video-s1 .row__top {
+  position: relative;
+  z-index: 2;
   @include lg-down {
     flex-direction: column;
+  }
+}
+
+.blog-video-s1 .row{
+  position: relative;
+  z-index: 2;
+}
+
+.blog-video-s1 .row__top-left {
+  width: 100%;
+
+  @include md {
+    width: 70%;
+  }
+}
+
+.blog-video-s1 .index-s__top-image {
+  display: none;
+
+  @include lg {
+    display: block;
+    width: 185px;
+    position: absolute;
+    right: 300px;
+    bottom: auto;
+    top: 80px;
+    z-index: 1;
   }
 }
 
