@@ -244,7 +244,7 @@ a.news-block  {
   font-weight: 400;
   margin-bottom: $indent-20;
 }
-
+.kos-s .grid-gallery,
 .blog-video-s .grid-gallery,
 .blog-article-s .grid-gallery,
 .news-s .grid-gallery {
@@ -262,6 +262,7 @@ a.news-block  {
   }
 }
 
+.kos-s .kos-s7 .container-br-10,
 .blog-video-s .container-br-10,
 .blog-article-s .container-br-10,
 .news-s .container-br-10 {
@@ -270,7 +271,8 @@ a.news-block  {
 
 .blog-video-s .card-big-t,
 .blog-article-s .card-big-t,
-.news-s2 .card-big-t {
+.news-s2 .card-big-t,
+.kos-s7 .card-big-t {
   background-color: $white;
   height: 437px;
 
@@ -280,6 +282,7 @@ a.news-block  {
   }
 }
 
+.kos-s .card-big-t a.card-big-t__btn,
 .blog-video-s .card-big-t a.card-big-t__btn,
 .blog-article-s .card-big-t a.card-big-t__btn,
 .news-s .card-big-t a.card-big-t__btn {
@@ -303,7 +306,8 @@ a.news-block  {
 
 .blog-article-s .card-big-t__el-img,
 .blog-video-s .card-big-t__el-img,
-.news-s2 .card-big-t__el-img {
+.news-s2 .card-big-t__el-img,
+.kos-s7 .card-big-t__el-img {
   height: 124px;
 
   @include lg {
@@ -313,6 +317,7 @@ a.news-block  {
 
 .blog-article-s .card-big__el-t-desc,
 .blog-video-s .card-big__el-t-desc,
-.news-s2 .card-big__el-t-desc{
+.kos-s7 .card-big__el-t-desc,
+.news-s2 .card-big__el-t-desc {
   margin-bottom: $indent-10;
 }
