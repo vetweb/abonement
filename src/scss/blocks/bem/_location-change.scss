@@ -1,5 +1,6 @@
 .location-change {
   @include flex-center;
+  cursor: pointer;
 }
 
 .location-change__icon {

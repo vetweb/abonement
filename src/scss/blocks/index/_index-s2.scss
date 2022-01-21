@@ -1,424 +1,429 @@
 .index-s2 {
-  padding: 0 0 $indent-50;
+	padding: 0 0 $indent-50;
 
-  @include lg {
-    padding: $indent-95 0 $indent-80;
-  }
+	@include lg {
+		padding: $indent-95 0 $indent-80;
+	}
 }
 
-.main-banner{
-  display: flex;
-  flex-direction: column;
-  position: relative;
+.main-banner {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	filter: drop-shadow(10px 20px 50px rgba(20, 40, 96, 0.15));
 
-  @include lg {
-    flex-direction: row;
-  }
+	@include lg {
+		flex-direction: row;
+	}
 }
 
 .index-s2 .index-s__top-img {
-  z-index: 10;
-  width: 135px;
-  position: absolute;
-  bottom: 220px;
-  right: 0;
+	z-index: 10;
+	width: 135px;
+	position: absolute;
+	bottom: 220px;
+	right: 0;
 
-  @include sm {
-    bottom: 20%;
-    right: 42%;
-    width: 155px;
-  }
+	@include sm {
+		bottom: 20%;
+		right: 42%;
+		width: 155px;
+	}
 
-  @include sm {
-    bottom: -10px;
-    right: 100px;
-    width: 155px;
-  }
+	@include sm {
+		bottom: -10px;
+		right: 100px;
+		width: 155px;
+	}
 
-  @include lg {
-    left: -15px;
-    top: -62px;
-  }
+	@include lg {
+		left: -15px;
+		top: -62px;
+	}
 }
 
 .main-banner__col-big {
-  width: 100%;
-  display: flex;
+	width: 100%;
+	display: flex;
 
-  @include lg {
-    width: 78.5%;
-    flex-direction: row;
-    order: 2;
-    z-index: 1;
-  }
+	@include lg {
+		width: 80%;
+		flex-direction: row;
+		order: 2;
+		z-index: 1;
+	}
 }
 
 .main-banner__col-big .main-banner__col60 {
-  width: 100%;
-  position: relative;
+	width: 100%;
+	position: relative;
 
-  @include lg {
-    width: 80%;
-  }
+	@include lg {
+		width: 77%;
+	}
 }
 
 .main-banner__col-big .main-banner__col20-hidden {
-  display: none;;
+	display: none;
+	overflow: hidden;
+	border-radius: 0 5px 5px 0;
 
-  @include lg {
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    color: $white;
-  }
+	@include lg {
+		display: flex;
+		flex-direction: column;
+		width: 23%;
+		color: $white;
+	}
 }
 
 .main-banner__col-small {
-  width: 100%;
-  height: 100%;
-  flex-direction: row;
-  display: flex;
-  color: $white;
+	width: 100%;
+	height: 100%;
+	flex-direction: row;
+	display: flex;
+	color: $white;
+	border-radius: 5px 0 0 5px;
+	overflow: hidden;
 
-  @include sm-down {
-    padding-top: 20px;
-  }
+	@include sm-down {
+		padding-top: 20px;
+	}
 
-  @include lg {
-    width: 20%;
-    min-height: 535px;
-    flex-direction: column;
-    order: 1;
-  }
+	@include lg {
+		width: 20%;
+		min-height: 535px;
+		flex-direction: column;
+		order: 1;
+	}
 }
 
 .main-banner__col-small .main-banner__col20-hidden {
-  display: none;
-  overflow: hidden;
+	display: none;
+	overflow: hidden;
 
-  @include sm {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-  }
+	@include sm {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+	}
 
-  @include lg {
-    display: none;
-  }
+	@include lg {
+		display: none;
+	}
 }
 
 .main-banner__col-big .main-banner__col20-hidden .main-banner__col20-fullcol {
-  display: none;
+	display: none;
 
-  @include lg {
-    flex-direction: column;
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    min-width: 218px;
-  }
+	@include lg {
+		flex-direction: column;
+		display: flex;
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+		min-width: 218px;
+	}
 }
 
 .main-banner__col-small .main-banner__col20-visible {
-  display: flex;
-  flex-direction: row;
-  width: 50%;
-  overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	width: 50%;
+	overflow: hidden;
 
-  @include lg {
-    flex-direction: column;
-    width: 100%;
-  }
+	@include lg {
+		flex-direction: column;
+		width: 100%;
+	}
 
-  @include sm-down {
-    width: 100%;
-  }
+	@include sm-down {
+		width: 100%;
+	}
 }
 
 .main-banner__col-small .main-banner__col20-visible .main-banner__col20-col {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 
-  @include sm-down {
-    width: 50%;
-  }
+	@include sm-down {
+		width: 50%;
+	}
 }
 
 .banner-slider__inner {
-  left: $indent-10;
-  z-index: 3;
+	left: $indent-10;
+	z-index: 3;
 
-  @include sm {
-    position: absolute;
-    left: $indent-20;
-    max-width: 325px;
-    top: 67px;
-  }
+	@include sm {
+		position: absolute;
+		left: $indent-20;
+		max-width: 380px;
+		top: 67px;
+	}
 
-  @include xl {
-    left: $indent-50;
-  }
+	@include xl {
+		left: $indent-50;
+	}
 
-  @include sm-down {
-    bottom: 110px;
-  }
+	@include sm-down {
+		bottom: 110px;
+	}
 }
 
 .banner-slider__image {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 5;
-  width: 60%;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 5;
+	width: 60%;
 
-  @include xl {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 60%;
-  }
+	@include xl {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 60%;
+	}
 }
 
 .banner-slider__inner .button-rect {
-  display: none;
+	display: none;
 
-  @include sm {
-    display: flex;
-  }
+	@include sm {
+		display: flex;
+	}
 }
 
 .swiper-btn__wrap .button-rect {
-  display: flex;
+	display: flex;
 
-  @include sm {
-    display: none;
-  }
+	@include sm {
+		display: none;
+	}
 }
 
 .main-banner .button-rect {
-  font-weight: 700;
+	font-weight: 700;
 
-  @include sm-down {
-   padding: $indent-15 0;
-  }
+	@include sm-down {
+		padding: $indent-15 0;
+	}
 }
 
 .banner-slider__inner .banner-slider__desc {
-  margin-bottom: $indent-20;
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: 400;
+	margin-bottom: $indent-20;
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: 400;
 
-  @include sm {
-    margin-bottom: $indent-75;
-    font-size: 18px;
-    line-height: 21px;
-  }
+	@include sm {
+		margin-bottom: $indent-75;
+		font-size: 18px;
+		line-height: 21px;
+	}
 }
 
 .banner-slider__inner .h2 {
-  margin-bottom: $indent-10;
-  width: 100%;
+	margin-bottom: $indent-10;
+	width: 100%;
 
-  @include sm {
-    margin-bottom: $indent-40;
-    max-width: 325px;
-  }
+	@include sm {
+		margin-bottom: $indent-40;
+		max-width: 325px;
+	}
 
-  @include sm-down {
-    max-width: 176px;
-  }
+	@include sm-down {
+		max-width: 176px;
+	}
 }
 
 .banner-slider__img {
-  position: relative;
-  max-width: 100%;
-  width: 100%;
-  z-index: 2;
+	position: relative;
+	max-width: 100%;
+	width: 100%;
+	z-index: 2;
 
-  @include sm {
-    height: 100%;
-  }
+	@include sm {
+		height: 100%;
+	}
 
-  @include xl {
-    width: 100%;
-    max-width: 100%;
-  }
+	@include xl {
+		width: 100%;
+		max-width: 100%;
+	}
 }
 
 .swiper-btn__wrap {
-  display: flex;
-  width: 100%;
-  height: 50px;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  z-index: 4;
+	display: flex;
+	width: 100%;
+	height: 50px;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	z-index: 4;
 
-  @include sm-down {
-    position: relative;
-    bottom: $indent-50;
-  }
+	@include sm-down {
+		position: relative;
+		bottom: $indent-50;
+	}
 }
 
 .banner-slider.swiper-container {
-  overflow: hidden;
-  position: relative;
-  height: 100%;
-  min-height: 535px;
+	overflow: hidden;
+	position: relative;
+	height: 100%;
+	min-height: 535px;
 }
 
 .banner-slider-el.banner-slider-el-mask {
-  position: relative;
+	position: relative;
 }
 
 .banner-slider-el.banner-slider-el-mask .banner-slider__inner {
-  color: $blue;
+	color: $blue;
 }
 
 .banner-slider-el.banner-slider-el-nomask .banner-slider__inner {
-  color: $blue;
+	color: $blue;
 
-    @include md {
-      color: $white
-    }
+	@include md {
+		color: $white
+	}
 
 }
 
 .banner-slider-el.banner-slider-el-nomask .banner-slider__img {
-  @include sm{
-    height: 100%;
-  }
+	@include sm {
+		height: 100%;
+	}
 }
 
 .banner-slider-el.banner-slider-el-mask:before {
-  @include xl {
-    width: 65%;
-    mask-image: url("/img/mask.svg");
-    position: absolute;
-    content: '';
-    left: 0;
-    top: 0;
-    height: 100%;
-    min-height: 535px;
-    mask-size: 100%;
-    mask-repeat: no-repeat;
-    z-index: 3;
-    background: white;
-  }
+	@include xl {
+		width: 65%;
+		mask-image: url("/img/mask.svg");
+		position: absolute;
+		content: '';
+		left: 0;
+		top: 0;
+		height: 100%;
+		min-height: 535px;
+		mask-size: 100%;
+		mask-repeat: no-repeat;
+		z-index: 3;
+		background: white;
+	}
 }
 
 .main-banner__col-small .card-s__el-img {
-  width: 100%;
-  height: 120px;
-  position: relative;
-  background-color: #646A7D;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: $white;
-  border-radius: 15px;
-  overflow: hidden;
-  margin-bottom: $indent-15;
+	width: 100%;
+	height: 120px;
+	position: relative;
+	background-color: #646A7D;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: $white;
+	border-radius: 15px;
+	overflow: hidden;
+	margin-bottom: $indent-15;
 
-  @include lg {
-    height: 125px;
-    margin-bottom: $indent-45;
-  }
+	@include lg {
+		height: 125px;
+		margin-bottom: $indent-45;
+	}
 }
 
 .main-banner .swiper-button-next,
 .main-banner .swiper-button-prev {
-  margin-left: 0;
+	margin-left: 0;
 }
 
 .main-banner__col-small .main-banner__col20-col {
-  padding: $indent-20 $indent-10;
-  cursor: pointer;
+	padding: $indent-20 $indent-10;
+	cursor: pointer;
 
-  @include lg {
-    padding: $indent-25 $indent-20 $indent-25;
-  }
+	@include lg {
+		padding: $indent-25 $indent-20 $indent-25;
+	}
 }
 
 .main-banner__col-small .main-banner__col20-fullcol,
 .main-banner__col-big .main-banner__col20-fullcol {
-  padding: $indent-25;
+	padding: $indent-25;
 
-  @include lg {
-    padding: $indent-25 $indent-20 $indent-30;
-  }
+	@include lg {
+		padding: $indent-25 $indent-20 $indent-30;
+	}
 }
 
 .main-banner__col-small .main-banner__col20-fullcol {
-  display: flex;
+	display: flex;
 }
 
 .main-banner__col20-hidden .col20-fullcol-inner.col20-fullcol-inner--top {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 .main-banner__col20-hidden .col20-fullcol-inner.col20-fullcol-inner--top .h4 {
-  display: block;
-  margin-bottom: $indent-15;
+	display: block;
+	margin-bottom: $indent-15;
 
-  @include sm {
-    display: none;
-  }
+	@include sm {
+		display: none;
+	}
 }
 
 .main-banner__col20-hidden .col20-fullcol-inner.col20-fullcol-inner--bottom .h4 {
-  display: block;
+	display: block;
 
-  @include lg {
-    display: none;
-  }
-  @include lg-down {
-    font-size: 24px;
-    line-height: 29px;
-    margin-bottom: $indent-15;
-  }
+	@include lg {
+		display: none;
+	}
+	@include lg-down {
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: $indent-15;
+	}
 }
 
 .col20-fullcol-inner.col20-fullcol-inner--bottom {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  overflow: hidden;
-  padding-left: $indent-20;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	overflow: hidden;
+	padding-left: $indent-20;
 }
 
 .main-banner__col20-desc {
-  width: 100%;
+	width: 100%;
 }
 
 .main-banner__col20-desc.link-s {
-  margin-bottom: 20px;
-  display: inline-flex;
-  white-space: break-spaces;
+	margin-bottom: 20px;
+	display: inline-flex;
+	white-space: break-spaces;
 }
 
 .main-banner__col-big .button-rect {
-  max-width: 180px;
-  border-radius: 10px;
+	max-width: 180px;
+	border-radius: 10px;
 }
 
 .main-banner__col-big .main-banner__col20-fullcol .h4 {
-  margin-bottom: $indent-25;
+	margin-bottom: $indent-25;
 }
 
 .main-banner__col-small .main-banner__col20-desc.link-s {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 .main-banner__col20-link a {
-  color: $gray-l;
-  text-decoration: none;
-  border-bottom: 1px solid $gray-l;
+	color: $gray-l;
+	text-decoration: none;
+	border-bottom: 1px solid $gray-l;
 }
