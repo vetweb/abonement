@@ -1,0 +1,107 @@
+.error-s1 {
+  padding: $indent-100 0 $indent-170;
+  color: $blue-bg;
+
+  @include lg {
+    padding: $indent-55 0 $indent-65;
+  }
+}
+
+.error-wrap {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+
+  @include lg {
+    width: 70%;
+  }
+}
+//
+.error-wrap__body {
+  width: 100%;
+  min-height: 230px;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: $indent-70;
+
+  @include sm {
+    min-height: 380px;
+    margin-bottom: $indent-60;
+  }
+
+  @include lg {
+    min-height: 600px;
+    margin-bottom: $indent-30;
+  }
+}
+
+.error-wrap__bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-s1 .img-fly-r1 .index-s__top-img{
+  width: 70px;
+  height: 50px;
+  position: absolute;
+  top: auto;
+  bottom: 15%;
+  left: 10%;
+  z-index: 1;
+  display: block;
+
+  @include lg {
+    width: 170px;
+    height: 110px;
+    bottom: 25%;
+    left: -20%;
+  }
+}
+
+.error-s1 .img-fly-r2 .index-s__top-img{
+  display: block;
+  position: absolute;
+  width: 70px;
+  height: 40px;
+  top: auto;
+  bottom: 10%;
+  right: 0;
+  left: auto;
+  z-index: 1;
+
+  @include lg {
+    width: 90px;
+    height: 60px;
+    bottom: 20%;
+    right: -10%;
+  }
+}
+
+.error-s1 .img-fly-l .index-s__top-img {
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -10%;
+  left: auto;
+  right: 10%;
+  z-index: 1;
+
+  @include lg {
+    width: 200px;
+    height: 200px;
+    right: -20%;
+  }
+}
+.error-wrap__bottom {
+  color: $blue-bg;
+}
+
+.error-wrap__bottom .h4 {
+  margin-bottom: $indent-25;
+}

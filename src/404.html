@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+@@include('components/blocks/page/_head.html',{
+"lang":"en",
+"title":"Абонемент",
+"description":"Абонемент",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+<!--@@include('components/blocks/page/_header.html')-->
+<main class="error-s js-parent-box parent-box">
+    <section class="error-s1">
+        <div class="container">
+            <div class="error-wrap">
+                <div class="error-wrap__body" style="background-image: url('/img/error.png');">
+<!--                    <img src="/img/error.png" class="error-wrap__img" alt="">-->
+                </div>
+                <div class="img-fly-r1">
+                    @@include('components/blocks/bem/_img-fly-r.html')
+                </div>
+                <div class="img-fly-r2">
+                    @@include('components/blocks/bem/_img-fly-r.html')
+                </div>
+                <div class="img-fly-l">
+                    @@include('components/blocks/bem/_img-fly.html')
+                </div>
+                <div class="error-wrap__bottom">
+                    <h4 class="h4">Что-то пошло не так..</h4>
+                    <p class="error-wrap__text h5">Пожалуйста, вернитесь на главную страницу</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+@@include('components/blocks/page/_footer.html')
+@@include('components/blocks/page/_scripts.html')
+</body>
+
+</html>
