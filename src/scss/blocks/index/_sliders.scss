@@ -59,13 +59,14 @@
 .card-m-slider .swiper-button-prev.btn__prev,
 .card-l-slider .swiper-button-prev.btn__prev,
 .card-s-slider .swiper-button-prev.btn__prev {
-  left: 11%;
+  left: -60px;
+  margin-left: 0;
 }
 
 .card-m-slider .swiper-button-next.btn__next,
 .card-l-slider .swiper-button-next.btn__next,
 .card-s-slider .swiper-button-next.btn__next {
-  right: 11%;
+  right: -60px;
 }
 
 .card-cd-s3__slider .swiper-button-next.btn__next,
