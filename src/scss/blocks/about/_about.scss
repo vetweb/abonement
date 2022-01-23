@@ -1,11 +1,25 @@
 .about-s1,
 .about-s2,
-.about-s3 {
+.about-s3,
+.about-s4 {
   padding: 0 0 $indent-50;
   color: $blue-bg;
 
   @include lg {
     padding: $indent-95 0 $indent-80;
+  }
+}
+
+.about-s5 {
+  padding: 0 0 $indent-170;
+  color: $blue-bg;
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url("/img/sup-bg.png");
+
+  @include lg {
+    padding: $indent-95 0 $indent-260;
   }
 }
 
@@ -56,6 +70,29 @@
   }
 }
 
+.about-s .row-inner__list {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+
+  @include sm {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.kos-s .row-inner__block-desc,
+.about-s .row-inner__block-desc {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+
+  @include sm {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
 .about-s .row__col50 .row__col50-images:not(:last-child) {
   margin-bottom: $indent-30;
 }
@@ -81,13 +118,253 @@
   height: 100%;
 }
 
-//about-s2
+.kos-s1 .row__col50 .h4,
+.kos-s4 .row__col50 .h4,
+.kos-s2 .row__col50 .h4,
+.kos-s3 .row__col50 .h4,
 .about-s2 .row__col50 .h4,
-.about-s3 .row__col50 .h4 {
+.about-s3 .row__col50 .h4,
+.about-s4 .row__col70 .h4 {
   margin-bottom: $indent-30;
   font-weight: 700;
 }
 
 .about-s3 .row__col50 {
   align-self: flex-start;
+}
+
+.about-s4 .row {
+  display: flex;
+  background-color: $white;
+  padding: $indent-30 $indent-15;
+  box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
+  border-radius: 10px;
+
+  @include sm {
+    padding: $indent-50 $indent-40 $indent-55;
+  }
+
+  @include lg {
+    padding: $indent-65 $indent-60;
+  }
+}
+
+.about-s4 .index-s__top-image {
+  display: none;
+
+  @include lg {
+    display: block;
+    width: 185px;
+    position: absolute;
+    z-index: 0;
+    right: auto;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.about-s4 .row__body {
+  @include sm-down {
+    flex-direction: column-reverse;
+  }
+
+  @include sm{
+    flex-direction: row;
+  }
+}
+
+.about-s4 .row__col70 {
+  width: 100%;
+
+  @include sm {
+    width: 70%;
+  }
+}
+
+.about-s4 .row__col30 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: $indent-30;
+
+  @include sm {
+    margin-bottom: 0;
+    width: 25%;
+    align-items: center;
+  }
+}
+
+.about-s4 .row__col70 .row__col50-desc {
+  margin-bottom: $indent-30;
+}
+
+.about-s4 .row__col30__img {
+  max-height: 200px;
+  height: 100%;
+
+  @include md {
+    max-height: 385px;
+  }
+}
+
+.about-s4 .btn-wrapp {
+  width: 100%;
+
+  @include md {
+    max-width: 450px;
+  }
+}
+
+.about-s4 .btn-wrapp .button-rect {
+  border-radius: 5px;
+}
+
+.about-s4 .btn-wrapp .btn-blue {
+  margin-bottom: $indent-10;
+
+  @include sm {
+    margin-bottom: 0;
+    margin-right: $indent-10;
+  }
+}
+
+.about-s4 .btn-wrapp .btn-white {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+.form-wrap {
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 15px;
+  border-radius: 10px;
+  box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
+
+  @include md {
+    padding: 60px 40px;
+  }
+
+  @include lg {
+    width: 70%;
+    padding: 60px 80px;
+  }
+}
+
+.form-wrap__form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-wrap__form-text {
+  margin: 0 auto 30px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: $blue;
+
+  @include md {
+    margin: 0 auto 60px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+.form-wrap__form .h2 {
+  margin-bottom: $indent-20;
+
+  @include md {
+    margin-bottom: $indent-40;
+  }
+}
+
+.form-wrap__form .h2:first-letter {
+  color: $blue;
+}
+
+.form-wrap__form textarea,
+.form-wrap__form input {
+  border: 0;
+  border-bottom: 2px solid #E5E5E5;
+  padding: $indent-10 $indent-20;
+
+  @include md {
+    padding: $indent-15 $indent-30;
+  }
+}
+
+.form-wrap__form input {
+  margin-bottom: $indent-15;
+  outline: none;
+
+  @include md {
+    margin-bottom: $indent-30;
+  }
+}
+
+.form-wrap__form textarea {
+  outline: none;
+  overflow-y: auto;
+}
+
+.form-wrap__form ::placeholder {
+  color: $gray-tx;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+
+  @include md {
+    margin: 0 auto 60px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+.form-wrap__form .row-inner__form-btn {
+  margin-bottom: $indent-50;
+}
+
+.form-wrap__form .btn-rect {
+  padding: $indent-20;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 100%;
+
+  @include sm {
+    max-width: 180px;
+  }
+}
+
+.form-wrap__form-desc {
+  margin-bottom: $indent-30;
+}
+
+.form-wrap__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrap__bottom svg {
+  width: 24px;
+  height: 24px;
+  margin-right: $indent-10;
+}
+
+.form-wrap__bottom-desc {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $blue-bg;
+  width: 70%;
+
+  @include md {
+    font-size: 18px;
+    line-height: 24px;
+    width: 50%;
+  }
+
+  @include lg {
+    width: auto;
+  }
 }

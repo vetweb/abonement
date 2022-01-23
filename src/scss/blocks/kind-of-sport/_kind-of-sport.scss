@@ -1,0 +1,120 @@
+.kos-s1,
+.kos-s2,
+.kos-s3 {
+  padding: $indent-25 0 $indent-20;
+  color: $blue-bg;
+
+  @include lg {
+    padding: $indent-25 0 $indent-20;
+  }
+}
+
+.kos-s6,
+.kos-s5,
+.kos-s4 {
+  padding: $indent-25 0 $indent-50;
+  color: $blue-bg;
+
+  @include lg {
+    padding: $indent-25 0 $indent-80;
+  }
+}
+
+.kos-s2 .news-block__wrap,
+.kos-s3 .news-block__wrap {
+  margin-bottom: 0;
+}
+
+.kos-s4 .row-inner__block-desc:not(:last-child),
+.kos-s3 .row-inner__block-desc:not(:last-child),
+.kos-s2 .row-inner__block-desc:not(:last-child),
+.kos-s1 .row-inner__block-desc:not(:last-child) {
+  margin-bottom: $indent-20;
+}
+
+.kos-s .row {
+  align-items: flex-start;
+}
+
+.kos-s4 .row {
+  display: flex;
+  flex-direction: column;
+}
+
+.kos-s4 .row__bottom {
+  padding: $indent-40 0;
+
+  @include lg {
+    padding: $indent-40 $indent-80;
+    background-color: $white;
+    box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+.kos-s4 .row__bottom .soc-list {
+
+  @include sm-down{
+    justify-content: flex-start;
+  }
+}
+
+.kos-s .row__col50.row__col50--text {
+  margin-bottom: $indent-30;
+
+  @include md {
+    margin-bottom: 0;
+    width: 63%;
+  }
+}
+
+.kos-s .row__col50.row__col50--image {
+  margin-bottom: $indent-30;
+
+  @include md {
+    margin-bottom: 0;
+    width: 32%;
+  }
+}
+
+.kos-s2 .row__body,
+.kos-s3 .row__body {
+  margin-bottom: 0;
+}
+
+.news-block__grid {
+  width: 100%;
+  grid-row-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @include sm {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+  }
+
+  @include lg {
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.news-block__grid .news-block {
+  padding: 20px 10px;
+}
+
+.kos-s6 .circles-block {
+  margin-bottom: 0;
+}
+
+.kos-s3-half .container-br-10 {
+  padding: $indent-40 0;
+
+  @include lg {
+    padding: $indent-40 $indent-80;
+    background-color: $white;
+    box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
