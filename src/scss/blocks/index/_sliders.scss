@@ -7,6 +7,18 @@
   position: relative;
 }
 
+.card-s-slider__football-icon {
+  position: absolute;
+  right: 25%;
+  top: -70px;
+}
+
+.card-s-slider__diagram-icon {
+  position: absolute;
+  left: -55px;
+  top: 20px
+}
+
 .swiper-button-prev.btn__prev,
 .swiper-button-next.btn__next {
   position: absolute;

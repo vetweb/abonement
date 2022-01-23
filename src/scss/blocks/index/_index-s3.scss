@@ -1,5 +1,9 @@
 .index-s3 {
-  padding: 0 0 $indent-80;
+  padding: 0 0 $indent-50;
+
+  @include md {
+    padding: 0 0 $indent-80;
+  }
 }
 
 .index-s3 .card-m-slider {

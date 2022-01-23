@@ -17,9 +17,7 @@
 
 .index-s__top {
 	margin-bottom: $indent-15;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	@include flex(baseline, space-between);
 
 	@include sm {
 		margin-bottom: $indent-30;
@@ -72,6 +70,7 @@
 
 .index-s7__top {
 	position: relative;
+	align-items: center;
 }
 
 .form-gray__inner {
