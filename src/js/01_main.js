@@ -311,20 +311,18 @@ document.addEventListener('DOMContentLoaded', () => {
 		item.addEventListener('click', selectChose)
 	})
 
-	function selectToggle() {
-		console.log(this.parentElement);
-		this.parentElement.classList.toggle('is-active');
-	}
+		function selectToggle() {
+			this.parentElement.classList.toggle('is-active');
+		}
 
-	function selectChose() {
-		let textSelect = this.innerText,
-		select = this.closest('.js-select'),
-		currentText =select.querySelector('.js-select__current');
-		currentText.innerText = textSelect;
-		select.classList.remove('is-active');
+		function selectChose() {
+			let textSelect = this.innerText,
+			select = this.closest('.js-select'),
+			currentText =select.querySelector('.js-select__current');
+			currentText.innerText = textSelect;
+			select.classList.remove('is-active');
+		}
 	}
-	}
-
 
 	//searchBig
 	let searchBigInput = document.querySelector('.js-search-big');

@@ -1,0 +1,88 @@
+.topical-s1 {
+  padding: 25px 0 170px;
+
+  @include sm {
+    padding: 50px 0 190px;
+  }
+
+  @include lg {
+    padding: 60px 0 170px;
+  }
+}
+
+.topical-s1 .index-s__top .search-block {
+  width: 100%;
+
+  @include sm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @include md {
+    width: 70%;
+  }
+}
+
+.topical-s1 .index-s__top .h3 {
+  width: 100%;
+  margin-bottom: $indent-30;
+
+  @include md {
+    width: 20%;
+    margin-bottom: 0;
+    margin-right: $indent-10;
+  }
+}
+
+.topical-s1 .index-s__top {
+  flex-direction: column;
+
+  @include md {
+    margin-right: $indent-10;
+    flex-direction: row;
+  }
+}
+
+.topical-s1 .search-block__left__search {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-right: $indent-10;
+  width: 65%;
+
+  @include sm {
+    width: 85%;
+  }
+}
+
+.topical-s1 .search-block__left {
+  margin-bottom: $indent-10;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include sm {
+    margin-bottom: 0;
+    margin-right: $indent-10;
+    width: 75%;
+  }
+}
+
+.topical-s1 .search-block__right {
+  @include sm {
+    width: 190px;
+  }
+}
+
+.topical-s1 .search-block__left .button-rect {
+
+  @include sm-down {
+    width: 30%;
+  }
+
+  @include sm {
+    width: 90px;
+  }
+}
