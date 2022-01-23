@@ -387,6 +387,10 @@ a.breadcrumbs-block__link {
     display: none;
   }
 }
+.search-block__left__search {
+  display: flex;
+  flex-wrap: nowrap;
+}
 
 .company-card-s .search-block__left__search {
   display: flex;

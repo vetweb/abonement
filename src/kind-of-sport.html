@@ -8,7 +8,7 @@
 })
 
 <body>
-<!--@@include('components/blocks/page/_header.html')-->
+@@include('components/blocks/page/_header.html')
 <main class="kos-s">
     <section class="kos-s1">
         <div class="container">
@@ -35,7 +35,8 @@
                 </div>
                 <div class="row__col50 row__col50--image">
                     <div class="row__col50-images">
-                        <img class="row__col50-img" src="/img/about1.png" alt="">
+                        @@include('components/blocks/bem/_circle-el.html')
+                        <img class="row__col50-img" src="/img/kos1-bg.png" alt="">
                     </div>
                 </div>
             </div>
@@ -112,11 +113,11 @@
             </div>
         </div>
     </section>
-    <section class="kos-s3-half">
-        <div class="container">
+    <section class="kos-s8">
+        <div class="container kos-s8__container">
             <div class="container-br-10">
-                <h3 class="h3">Вы смотрели</h3>
-                <div class="card-m-slider">
+                <h3 class="h3 plr-55">Вы смотрели</h3>
+                <div class="card-m-slider plr-55">
                     <div class="standard-slider js-standard-slider swiper-container free-slider">
                         <div class="swiper-wrapper grid-cards__list">
                             <div class="swiper-slide card-m__list-el">
@@ -131,6 +132,30 @@
                             <div class="swiper-slide card-m__list-el">
                                 @@include('components/blocks/bem/_card-m.html')
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-timer" style="background-image: url('/img/banner-kos.png');">
+                <div class="banner-timer__inner">
+                    <h4 class="h4 banner-timer__title">Внимание, акция!</h4>
+                    <p class="banner-timer__desc">Пройдите уникальное тестирование способности личности по
+                        отпечаткам пальца!</p>
+                    <button class="btn-rect btn-blue h6">Пройти тест</button>
+                    <div class="banner-timer__wrapper">
+                        <div class="banner-timer__el">
+                            <span class="banner-timer__el-value">0</span>
+                            <span class="banner-timer__el-value">3</span>
+                        </div>
+                        <span class="banner-timer__separator">:</span>
+                        <div class="banner-timer__el">
+                            <span class="banner-timer__el-value">5</span>
+                            <span class="banner-timer__el-value">9</span>
+                        </div>
+                        <span class="banner-timer__separator">:</span>
+                        <div class="banner-timer__el">
+                            <span class="banner-timer__el-value">5</span>
+                            <span class="banner-timer__el-value">9</span>
                         </div>
                     </div>
                 </div>
