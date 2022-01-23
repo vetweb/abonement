@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+@@include('components/blocks/page/_head.html',{
+"lang":"en",
+"title":"Абонемент",
+"description":"Абонемент",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+<!--@@include('components/blocks/page/_header.html')-->
+<main class="blog-video-s event-article-s js-parent-box parent-box">
+    <section class="blog-video-s1 event-video-s1">
+        <div class="container">
+            @@include('components/blocks/bem/_img-ball.html')
+            <div class="index-s__top">
+                <h2 class="h2">Блог</h2>
+            </div>
+            <div class="row">
+                <div class="row__body">
+                    <div class="row__col50 row__col50--left">
+                        <div class="row__top">
+                            <div class="row__top-left">
+                                <h4 class="row__top-title h4">Какие преимущества получит ребенок от единоборства?
+                                </h4>
+                                <span class="data-time__date">12.01.2021</span>
+                            </div>
+                        </div>
+                        <p class="row__col50-desc">
+                            8 сентября, Минск /Корр. БЕЛТА/. Белорусские атлеты завоевали восемь наград во второй день открытого XXV Международного турнира категории А по самбо на призы Президента Беларуси. Соревнования завершились в минском спорткомплексе "Чижовка-Арена", передает корреспондент БЕЛТА.
+                        </p>
+                        <p class="row__col50-desc">
+                            Золото выиграли Сергей Копылов (71 кг, боевое самбо), Карина Шут (80 кг). Серебро на счету Сергея Лесяка (98 кг) и Марины Жарской (54 кг). Бронзовыми медалями копилку наград белорусской сборной пополнили Дмитрий Кириллов (64 кг), Вера Гореликова (65 кг), Александр Кокша (79 кг), Алена Купаво (54 кг).
+                        </p>
+                        <p class="row__col50-desc">
+                            Напомним, что накануне белорусы выиграли 17 медалей различного достоинства. Победы в спортивном разделе праздновали Анфиса Копаева (50 кг), Татьяна Мацко (59 кг), Владислав Бурдь (58 кг) и Дмитрий Хохлов (свыше 99 кг). В боевом самбо титула чемпиона удостоился Евгений Михно (64 кг).
+                        </p>
+                        <p class="row__col50-desc">
+                            Напомним, что накануне белорусы выиграли 17 медалей различного достоинства. Победы в спортивном разделе праздновали Анфиса Копаева (50 кг), Татьяна Мацко (59 кг), Владислав Бурдь (58 кг) и Дмитрий Хохлов (свыше 99 кг). В боевом самбо титула чемпиона удостоился Евгений Михно (64 кг).
+                        </p>
+                    </div>
+                    <div class="row__col50 row__col50--right">
+                        <div class="news-block__video">
+                            <div class="block-video__wrap js-block-video__wrap">
+                                <video muted loop class="video-with-btn js-video-with-btn" poster="/img/poster.png">
+                                    <source src="https://youtu.be/b6RpvwmMLWU" type="video/mp4">
+                                </video>
+                                <span class="btn-play js-btn-play">
+                                    <svg viewBox="0 0 17 20">
+                                        <use xlink:href="/img/sprite.svg#play-btn"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <a href="#" class="row__col50-subtitle">Смотреть все мероприятия</a>
+                        @@include('components/blocks/bem/_img-fly.html')
+                    </div>
+                </div>
+                <div class="row__bottom">
+                    <div class="row__soc-list">
+                        <span class="soc-list__title">Поделиться публикацией в социальных сетях:</span>
+                        @@include('components/blocks/bem/_soc-list.html')
+                    </div>
+                    <div class="row__bottom-btn">
+                        <button class="button-rect btn-blue">Скопировать ссылку</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="news-s2">
+        <div class="container">
+            <div class="container-br-10">
+                <div class="index-s__top">
+                    <h3 class="h3">Публикации по теме:</h3>
+                </div>
+                <div class="grid-gallery">
+                    <div class="grid-gallery__card">
+                        @@include('components/blocks/bem/_card-big-t.html')
+                    </div>
+                    <div class="grid-gallery__card">
+                        @@include('components/blocks/bem/_card-big-t.html')
+                    </div>
+                    <div class="grid-gallery__card">
+                        @@include('components/blocks/bem/_card-big-t.html')
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+@@include('components/blocks/page/_footer.html')
+@@include('components/blocks/page/_scripts.html')
+</body>
+
+</html>
