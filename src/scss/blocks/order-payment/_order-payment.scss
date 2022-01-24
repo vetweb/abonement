@@ -1,0 +1,142 @@
+.order-payment-s1 {
+  padding: 25px 0 170px;
+
+  @include sm {
+    padding: 50px 0 190px;
+    }
+
+  @include lg {
+    padding: 60px 0 170px;
+  }
+}
+
+.row.grid-op {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.row.grid-op .row__col70 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  @include md {
+    width: 65%;
+  }
+}
+
+.row.grid-op .row__col30 {
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+  @include md {
+    width: 28%;
+  }
+}
+
+.grid-op__wrap {
+  padding: $indent-25 $indent-15;
+  background-color: $white;
+  box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+
+  @include sm {
+    padding: $indent-25 $indent-30;
+  }
+
+  @include lg {
+    grid-gap: 30px;
+  }
+}
+
+.grid-op__inner {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+
+  @include sm {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include lg {
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+  }
+}
+
+.grid-op__card {
+  padding: $indent-20;
+  background-color: $white;
+  box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include lg {
+    padding: $indent-30;
+  }
+}
+
+.title-op {
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 700;
+  margin-bottom: $indent-25;
+}
+
+.order-list__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.order-list__footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.order-list__footer-item {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #828282;
+}
+
+.order-list .table-m__body-cell {
+  display: flex;
+}
+
+.order-list__item-desc.text-xxs {
+  font-weight: 600;
+  margin-bottom: $indent-10;
+}
+
+.order-list__item {
+  padding: $indent-15 0;
+  border-top: 1px solid #F3F3F3;
+  border-bottom: 1px solid #F3F3F3;
+}
+
+.description-op {
+  padding: $indent-20;
+  background-color: $white;
+  box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+
+  @include lg {
+    padding: $indent-30;
+  }
+}
