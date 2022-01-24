@@ -8,14 +8,14 @@
 })
 
 <body>
-@@include('components/blocks/page/_header.html')
+<!--@@include('components/blocks/page/_header.html')-->
 <main class="topical-s parent-box">
     <section class="topical-s1">
         <div class="container">
             <div class="container-br-10">
                 <div class="index-s__top">
                     <h3 class="h3">Актуальное</h3>
-                    <div class="search-block js-search-block">
+                    <div class="search-block">
                         <div class="search-block__left">
                             <div class="search-block__left__search">
                                 <input type="text" class="search-big" placeholder="Поиск абонементов">
@@ -48,6 +48,27 @@
                         </div>
                     </div>
                 </div>
+                <div class="btn-links__slider">
+                    <div class="swiper btn-links js-btn-links">
+                        <div class="swiper-wrapper btn-links__wrap">
+                            <div class="swiper-slide btn-links__slide active js-toggle-btn">
+                                <a href="#" class="btn-links__btn js-btn-links__btn">
+                                    Спортивные мероприятия
+                                </a>
+                            </div>
+                            <div class="swiper-slide btn-links__slide js-toggle-btn">
+                                <a href="#" class="btn-links__btn js-btn-links__btn">
+                                    Новости
+                                </a>
+                            </div>
+                            <div class="swiper-slide btn-links__slide js-toggle-btn">
+                                <a href="#" class="btn-links__btn js-btn-links__btn">
+                                    Блог
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="grid-gallery">
                     <div class="grid-gallery__card">
                         @@include('components/blocks/bem/_card-big-t.html')
@@ -75,6 +96,34 @@
                             <use xlink:href="/img/sprite.svg#arr-down"></use>
                         </svg>
                     </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" topical-s2">
+        <div class="container">
+            <div class="row">
+                <div class="row__body row__body--reverse">
+                    <div class="row__col50 row__col50--70">
+                        <div class="form-gray__inner">
+                            <form class="form-gray">
+                                <h2 class="form-gray__title">Подпишись на спортивную рассылку</h2>
+                                <div class="btns__wrap">
+                                    <input type="text" class="form-gray__input" placeholder="Введите почту"/>
+                                    <button class="button-rect btn-blue button-xs">Подписаться</button>
+                                </div>
+                            </form>
+                            <img src="/img/man.png" class="form-gray__img" alt="">
+                        </div>
+                    </div>
+                    <div class="row__col50 row__col50--30">
+                        <div class="row__col50__title text-s">Рекомендуем к прочтению</div>
+                        <div class="news-block__wrap">
+                            @@include('components/blocks/bem/_news-block.html')
+                            @@include('components/blocks/bem/_news-block.html')
+                            @@include('components/blocks/bem/_news-block.html')
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

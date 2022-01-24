@@ -341,7 +341,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		function showFiletBlock() {
 			filterBlocks.forEach((elem) => {
 				let parentBox = this.closest('.js-parent-box');
-				console.log(parentBox);
 				if(!elem.classList.contains('show')) {
 					parentBox.classList.add('active');
 					console.log(this);
@@ -372,8 +371,31 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	})
 
-	// Video
 
+	// slider btn-links
+	 // const swiperBtnLinks = document.querySelector('.js-btn-links');
+	// let mySwiperBtnLinks;
+	//
+	// if (swiperBtnLinks) {
+	// 	createSwiperBtnLinks();
+	// }
+	//
+	// function createSwiperBtnLinks() {
+	// 	mySwiperBtnLinks = new Swiper(swiperBtnLinks, {
+	// 		slidesPerView: "auto",
+	// 		centeredSlides: true,
+	// 		slideToClickedSlide: true,
+	// 		speed: 1500,
+	// 		breakpoints: {
+	// 			// when window width is >= 320px
+	// 			769: {
+	// 				centeredSlides: false,
+	// 			},
+	// 		},
+	// 	});
+	// }
+
+	// Video
 	const wrapperVideo = document.querySelector('.js-block-video__wrap');
 	const wrapperVideos = document.querySelectorAll('.js-block-video__wrap');
 
@@ -396,6 +418,5 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		}
 	}
-
 
 });
