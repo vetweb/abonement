@@ -343,7 +343,6 @@ document.addEventListener('DOMContentLoaded', () => {
 				let parentBox = this.closest('.js-parent-box');
 				if(!elem.classList.contains('show')) {
 					parentBox.classList.add('active');
-					console.log(this);
 					elem.classList.add('show');
 				} else {
 					parentBox.classList.remove('active');
@@ -417,6 +416,76 @@ document.addEventListener('DOMContentLoaded', () => {
 				currentVideoBtn.classList.remove('hide');
 			}
 		}
+	}
+
+	//Modal
+	let openBtn = document.querySelector('.js-open-md');
+	console.log('jjj');
+	let closeBtn = document.querySelector('.js-close-md');
+	let modalWindow = document.querySelector('.js-modal-window');
+
+	if (openBtn && closeBtn && modalWindow) {
+		modalWindowShow();
+	}
+
+	function modalWindowShow() {
+
+		if (!openBtn) {
+			return false;
+		}
+
+		let openBtns = document.querySelectorAll('.js-open-md');
+
+		openBtns.forEach((item) => {
+			item.addEventListener('click', function openModal() {
+
+				let pathBtnOpen = this.dataset.opn;
+				let modalWindow = document.querySelector(`[data-md='${pathBtnOpen}']`);
+
+				if (!modalWindow.classList.contains('show-md')) {
+					modalWindow.classList.add('show-md');
+					document.body.style.overflowY = 'hidden';
+				} else {
+					modalWindow.classList.remove('show-md');
+					document.body.style.overflowY = 'visible';
+				}
+			});
+		});
+
+		if (!closeBtn) {
+			return false
+		}
+
+		let closeBtns = document.querySelectorAll('.js-close-md');
+
+		closeBtns.forEach((item) => {
+			item.addEventListener('click', function closeModal() {
+
+				let pathBtnClose = this.dataset.cls;
+
+				let modalWindow = document.querySelector(`[data-md='${pathBtnClose}']`);
+				if (modalWindow.classList.contains('show-md')) {
+					modalWindow.classList.remove('show-md');
+					document.body.style.overflowY = 'visible';
+				}
+			})
+		});
+
+		let modalWindows = document.querySelectorAll('.js-modal-window');
+
+		modalWindows.forEach(item => {
+			item.addEventListener('click', (e) => {
+				item.classList.remove('show-md');
+				document.body.style.overflowY = 'visible';
+			});
+		});
+
+		document.addEventListener('keydown', (event) => {
+			if (event.key === 'Escape') {
+				modalWindow.classList.remove('show-md');
+				document.body.style.overflowY = 'visible';
+			}
+		});
 	}
 
 });

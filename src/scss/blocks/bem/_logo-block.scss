@@ -1,13 +1,25 @@
 .logo-block {
-  margin-bottom: 26px;
+  margin-bottom: $indent-25;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   color: $white;
   text-decoration: none;
 
+  @include csx {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @include sm {
+    margin-bottom:0;
+  }
+
   @include md {
     margin-bottom: 41px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -18,7 +30,7 @@
 }
 
 .logo-block img {
-  width: 30px;
+  //width: 30px;
   height: 40px;
 }
 
@@ -27,4 +39,9 @@
   font-weight: 800;
   font-size: 20px;
   line-height: 24px;
+  margin-top: $indent-10;
+
+  @include csx {
+    margin-top: 0;
+  }
 }
