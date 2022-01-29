@@ -1,4 +1,5 @@
 .top-menu {
+	position: relative;
 	@include flex(center, space-between);
 }
 

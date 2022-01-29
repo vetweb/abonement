@@ -1,0 +1,29 @@
+.menu-filter {
+  position: absolute;
+  top: 68px;
+  left: 253px;
+  width: 100%;
+  max-width: 1000px;
+  background: #fff;
+  z-index: 1;
+}
+
+.menu-filter__content {
+  padding: 10px 15px;
+}
+
+.menu-filter-search {
+  margin-top: 15px;
+}
+
+.menu-filter-search .search__field {
+  max-width: 100%;
+}
+
+.menu-filter-search .form__input {
+  border-color: #374160;
+}
+
+.menu-filter-search .search__icon {
+  color: #374160;
+}

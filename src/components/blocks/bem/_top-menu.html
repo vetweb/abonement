@@ -1,22 +1,22 @@
 <div class="container">
     <div class="top-menu">
         <ul class="top-menu__list">
-            <li class="top-menu__item top-menu__item-catalog js-dropdown-menu">
+            <li class="top-menu__item top-menu__item-catalog">
                 <a href="##" class="top-menu__link">
                     <i class="top-menu__burger"></i>
                     Каталог
                 </a>
                 <ul class="top-menu__dropdown">
-                    <li class="top-menu__dropdown-item">
+                    <li class="top-menu__dropdown-item js-filter">
                         Виды спорта
                     </li>
-                    <li class="top-menu__dropdown-item">
+                    <li class="top-menu__dropdown-item js-filter">
                         Неолимпийские виды спорта
                     </li>
-                    <li class="top-menu__dropdown-item">
+                    <li class="top-menu__dropdown-item js-filter">
                         Виды спорта
                     </li>
-                    <li class="top-menu__dropdown-item">
+                    <li class="top-menu__dropdown-item js-filter">
                         Виды спорта
                     </li>
                 </ul>
@@ -40,6 +40,35 @@
                 <a href="##" class="top-menu__link">Актуальное</a>
             </li>
         </ul>
+        <div class="menu-filter">
+            <div class="menu-filter__content">
+                <div class="menu-filter__switcher">
+                    <div class="switcher switcher__with-label">
+                        <label class="switcher__label" for="switcher">
+                            <span class="switcher__label-text">Показать персональные тренировки</span>
+                        </label>
+                        <input type="checkbox" id="switcher"/>
+                    </div>
+                </div>
+                <div class="menu-filter-search">
+                    <div class="search form">
+                        <form action="" class="search__form">
+                            <div class="form__field search__field">
+                                <input type="text" name="" class="search__input form__input"
+                                       placeholder="Поиск по сайту">
+                                <button class="search__button">
+                                        <span class="search__icon">
+                                             <svg class="icon-svg">
+                                                <use xlink:href="/img/sprite.svg#search"></use>
+                                             </svg>
+                                        </span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="menu-buttons">
             <a href="##" class="menu-buttons__favorite">
                 <svg class="icon-svg">

@@ -1,10 +1,10 @@
 import {Swiper, Mousewheel, Navigation, Pagination} from 'swiper'
 import Scrollbar from 'smooth-scrollbar'
+import anime from 'animejs/lib/anime.es.js';
 
 Swiper.use([ Mousewheel, Navigation, Pagination])
 
 document.addEventListener('DOMContentLoaded', () => {
-
 	// smooth-scrollbar
 	const tabsBlock = document.querySelector(".js-tabs-block");
 	const tabsBlockTwo = document.querySelector(".js-tabs-block2");
@@ -297,45 +297,35 @@ document.addEventListener('DOMContentLoaded', () => {
 	let selectHeaders = document.querySelectorAll('.js-select__header');
 	let selectItems = document.querySelectorAll('.js-select__item');
 
-	if (!selectHeader) {
-		return false;
-	}
 	selectHandler();
 	function selectHandler() {
 
-	selectHeaders.forEach((item) => {
-		item.addEventListener('click', selectToggle)
-	})
+		selectHeaders.forEach((item) => {
+			item.addEventListener('click', selectToggle)
+		})
 
-	selectItems.forEach((item) => {
-		item.addEventListener('click', selectChose)
-	})
+		selectItems.forEach((item) => {
+			item.addEventListener('click', selectChose)
+		})
 
-	function selectToggle() {
-		console.log(this.parentElement);
-		this.parentElement.classList.toggle('is-active');
+		function selectToggle() {
+			console.log(this.parentElement);
+			this.parentElement.classList.toggle('is-active');
+		}
+
+		function selectChose() {
+			let textSelect = this.innerText,
+			select = this.closest('.js-select'),
+			currentText =select.querySelector('.js-select__current');
+			currentText.innerText = textSelect;
+			select.classList.remove('is-active');
+		}
 	}
-
-	function selectChose() {
-		let textSelect = this.innerText,
-		select = this.closest('.js-select'),
-		currentText =select.querySelector('.js-select__current');
-		currentText.innerText = textSelect;
-		select.classList.remove('is-active');
-	}
-	}
-
 
 	//searchBig
-	let searchBigInput = document.querySelector('.js-search-big');
 	let searchBigInputs = document.querySelectorAll('.js-search-big');
 	let filterBlockCloseBtns = document.querySelectorAll('.js-filter-block__close');
-	let filterBlockCloseBtn = document.querySelector('.js-filter-block__close');
 	let filterBlocks = document.querySelectorAll('.js-filter-block');
-
-	if (!searchBigInput) {
-		return false;
-	}
 
 	searchBigInputs.forEach((item) => {
 		item.addEventListener('click', showFiletBlock);
@@ -355,10 +345,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			})
 		}
 	})
-
-	if (!filterBlockCloseBtn) {
-		return false;
-	}
 
 	filterBlockCloseBtns.forEach((item) => {
 		item.addEventListener('click', closeFiletBlock);
@@ -398,6 +384,5 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		}
 	}
-
 
 });
