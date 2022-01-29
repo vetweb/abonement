@@ -46,9 +46,15 @@
   }
 }
 
-.cart-s .table-m__body-el__inner:not(:last-child) {
+.cart-s .table-m__body-el__inner {
   @include sm {
     margin-right: 20px;
+  }
+}
+
+.cart-s .table-m__body-el__inner:last-child {
+  @include sm {
+    margin-right: 0;
   }
 }
 
@@ -227,12 +233,23 @@
   min-width: 202px;
   width: 100%;
   white-space: nowrap;
+
+  @include sm-down {
+    max-width: 100%;
+  }
 }
 
 .cart-s1 .btn-wrapp .button-rect.btn-blue {
+  margin-bottom: $indent-10;
+
   @include sm {
+    margin-bottom: 0;
     margin-right: $indent-20;
   }
+}
+
+.cart-s1 .btn-wrapp .btn-white {
+  margin-bottom: 0;
 }
 
 .modal-window {
@@ -265,11 +282,17 @@
   border-radius: 15px;
   color: $blue-bg;
   position: relative;
-  width: 520px;
+  width: 50%;
 }
 
 .modal-window__content.modal-window__content--cart {
-  padding: $indent-60 $indent-90;
+  padding: $indent-20;
+  width: 320px;
+
+  @include sm {
+    width: 520px;
+    padding: $indent-60 $indent-90;
+  }
 }
 
 .modal-window__close svg {
@@ -283,10 +306,18 @@
 }
 
 .md-cart-form__title {
-  font-size: 24px;
+  text-align: center;
+  font-size: 18px;
   line-height: 20px;
   font-weight: 700;
-  margin-bottom: $indent-35;
+  margin-bottom: $indent-15;
+
+  @include sm {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 700;
+    margin-bottom: $indent-35;
+  }
 }
 
 .md-cart-form__label {
@@ -310,19 +341,31 @@
 
 .md-cart-form__input  {
   width: 100%;
-  height: 42px;
+  height: 32px;
   background: $white;
   border: 1px solid #E1EBF5;
   border-radius: 10px;
   padding: 5px;
+
+  @include sm {
+    height: 42px;
+  }
 }
 
 .md-cart-form__input.md-cart-form--name {
-  margin-bottom: $indent-15;
+  margin-bottom: $indent-10;
+
+  @include sm {
+    margin-bottom: $indent-15;
+  }
 }
 
 .md-cart-form__input.md-cart-form--email {
-  margin-bottom: $indent-25;
+  margin-bottom: $indent-15;
+
+  @include sm {
+    margin-bottom: $indent-25;
+  }
 }
 
 a.policy-link {
@@ -341,15 +384,23 @@ a.policy-link {
 .md-cart-form__label-policy {
   font-size: 14px;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 18px;
   color: $blue-bg;
+
+  @include sm {
+    line-height: 21px;
+  }
 }
 
 .md-cart-form__label.md-cart-form--policy {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-bottom: $indent-25;
+  margin-bottom: $indent-15;
+
+  @include sm {
+    margin-bottom: $indent-25;
+  }
 }
 
 .modal-window__form .button-rect {
@@ -357,6 +408,10 @@ a.policy-link {
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
+
+  @include sm-down {
+    padding: 10px 0;
+  }
 }
 
 .styled-checkbox {

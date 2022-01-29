@@ -134,10 +134,7 @@
   transition: all .3s;
   box-shadow: none;
   border-radius: 9px;
-
-  @include sm {
-    width: 210px;
-  }
+  overflow: hidden;
 
   @include md {
     padding: $indent-30;

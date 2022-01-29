@@ -174,9 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	let tabNavLink = document.querySelectorAll('.js-tabs-nav__tab');
 	let tabContent = document.querySelectorAll('.js-tabs-content__el');
 
-	if (tabContent && tabNavLink) {
-		tabsNav();
-	}
+	tabsNav();
 
 	function tabsNav() {
 		tabNavLink.forEach(item => {
@@ -209,14 +207,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	}
 
-	tabsNav();
-
 	//
 	function selectIcons() {
 		let elem = document.querySelector('.js-toggle-btn');
+
 		if (!elem) {
 			return false;
 		}
+
 		let elems = document.querySelectorAll('.js-toggle-btn')
 
 		elems.forEach((item) => {
@@ -233,6 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		}
 	}
+
 	selectIcons();
 
 //
@@ -297,9 +296,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	let selectHeaders = document.querySelectorAll('.js-select__header');
 	let selectItems = document.querySelectorAll('.js-select__item');
 
-	if (!selectHeader) {
-		return false;
-	}
+	// if (!selectHeader) {
+	// 	return false;
+	// }
+
 	selectHandler();
 	function selectHandler() {
 
@@ -331,9 +331,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	let filterBlockCloseBtn = document.querySelector('.js-filter-block__close');
 	let filterBlocks = document.querySelectorAll('.js-filter-block');
 
-	if (!searchBigInput) {
-		return false;
-	}
+	// if (!searchBigInput) {
+	// 	return false;
+	// }
 
 	searchBigInputs.forEach((item) => {
 		item.addEventListener('click', showFiletBlock);
@@ -352,9 +352,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	})
 
-	if (!filterBlockCloseBtn) {
-		return false;
-	}
+	// if (!filterBlockCloseBtn) {
+	// 	return false;
+	// }
 
 	filterBlockCloseBtns.forEach((item) => {
 		item.addEventListener('click', closeFiletBlock);
@@ -372,27 +372,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 	// slider btn-links
-	 // const swiperBtnLinks = document.querySelector('.js-btn-links');
-	// let mySwiperBtnLinks;
-	//
-	// if (swiperBtnLinks) {
-	// 	createSwiperBtnLinks();
-	// }
-	//
-	// function createSwiperBtnLinks() {
-	// 	mySwiperBtnLinks = new Swiper(swiperBtnLinks, {
-	// 		slidesPerView: "auto",
-	// 		centeredSlides: true,
-	// 		slideToClickedSlide: true,
-	// 		speed: 1500,
-	// 		breakpoints: {
-	// 			// when window width is >= 320px
-	// 			769: {
-	// 				centeredSlides: false,
-	// 			},
-	// 		},
-	// 	});
-	// }
+	const swiperBtnLinks = document.querySelector('.js-btn-links');
+	let mySwiperBtnLinks;
+
+	if (swiperBtnLinks) {
+		createSwiperBtnLinks();
+	}
+
+	function createSwiperBtnLinks() {
+		mySwiperBtnLinks = new Swiper(swiperBtnLinks, {
+			slidesPerView: "auto",
+			centeredSlides: true,
+			slideToClickedSlide: true,
+			speed: 1500,
+			breakpoints: {
+				// when window width is >= 320px
+				769: {
+					centeredSlides: false,
+				},
+			},
+		});
+	}
 
 	// Video
 	const wrapperVideo = document.querySelector('.js-block-video__wrap');
@@ -420,7 +420,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	//Modal
 	let openBtn = document.querySelector('.js-open-md');
-	console.log('jjj');
 	let closeBtn = document.querySelector('.js-close-md');
 	let modalWindow = document.querySelector('.js-modal-window');
 
@@ -475,8 +474,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		modalWindows.forEach(item => {
 			item.addEventListener('click', (e) => {
-				item.classList.remove('show-md');
-				document.body.style.overflowY = 'visible';
+				if (e.target === item) {
+					item.classList.remove('show-md');
+					document.body.style.overflowY = 'visible';
+				}
 			});
 		});
 
