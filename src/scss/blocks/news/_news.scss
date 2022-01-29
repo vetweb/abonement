@@ -258,7 +258,7 @@ a.news-block  {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  @include lg {
+  @include lgx {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -279,12 +279,13 @@ a.news-block  {
   background-color: $white;
   height: 446px;
 
-  @include lg {
-    height: 466px;
+  @include lgx {
+    height: 475px;
     box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
   }
 }
 
+.topical-s1 .card-big-t a.card-big-t__btn,
 .kos-s .card-big-t a.card-big-t__btn,
 .blog-video-s .card-big-t a.card-big-t__btn,
 .blog-article-s .card-big-t a.card-big-t__btn,

@@ -7,8 +7,7 @@
 .cont-block {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  //padding-bottom: $indent-50;
+  justify-content: flex-start;
 
   @include sm {
     justify-content: flex-start;
@@ -72,7 +71,7 @@
 }
 
 .footer-col30 {
-  width: 47%;
+  width: 46%;
   margin: 0 10px 30px 0;
 
   @include csx {

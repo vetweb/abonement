@@ -57,8 +57,18 @@
   margin-bottom: $indent-30;
 }
 
+.card-cd-s4 .table-m__body {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
 .table-m__body__cell {
   color: $blue;
+}
+
+.table-m__body-el:not(:last-child) {
+  border-bottom: 1px solid #DCECFC;
 }
 
 .table-m__body-el {

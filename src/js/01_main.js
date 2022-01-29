@@ -253,7 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	if (galleryThumbs && galleryTop) {
 
 		function getDirection() {
-			let direction = window.innerWidth >= 992 ? 'vertical' : 'horizontal';
+			let direction = window.innerWidth >= 768 ? 'vertical' : 'horizontal';
 			return direction;
 		}
 
@@ -308,10 +308,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	let selectHeaders = document.querySelectorAll('.js-select__header');
 	let selectItems = document.querySelectorAll('.js-select__item');
 
-	// if (!selectHeader) {
-	// 	return false;
-	// }
-
 	selectHandler();
 	function selectHandler() {
 
@@ -342,10 +338,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	let filterBlockCloseBtns = document.querySelectorAll('.js-filter-block__close');
 	let filterBlockCloseBtn = document.querySelector('.js-filter-block__close');
 	let filterBlocks = document.querySelectorAll('.js-filter-block');
-
-	// if (!searchBigInput) {
-	// 	return false;
-	// }
 
 	searchBigInputs.forEach((item) => {
 		item.addEventListener('click', showFiletBlock);
