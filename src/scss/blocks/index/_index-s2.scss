@@ -21,7 +21,7 @@
 	z-index: 10;
 	width: 135px;
 	position: absolute;
-	bottom: 220px;
+	bottom: 100px;
 	right: 0;
 
 	@include sm {
@@ -275,7 +275,11 @@
 	overflow: hidden;
 	position: relative;
 	height: 100%;
-	min-height: 535px;
+	min-height: 400px;
+
+	@include sm {
+		min-height: 535px;
+	}
 }
 
 .banner-slider-el.banner-slider-el-mask {
@@ -292,7 +296,6 @@
 	@include md {
 		color: $white
 	}
-
 }
 
 .banner-slider-el.banner-slider-el-nomask .banner-slider__img {
@@ -302,7 +305,7 @@
 }
 
 .banner-slider-el.banner-slider-el-mask:before {
-	@include xl {
+	@include lgx {
 		width: 65%;
 		mask-image: url("/img/mask.svg");
 		position: absolute;

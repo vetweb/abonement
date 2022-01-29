@@ -15,12 +15,12 @@
   transition: all .3s;
 
   @include sm {
+    width: 397px;
+    height: 466px;
     box-shadow: 6px 7px 10px 5px rgba(20, 40, 96, 0.15);
   }
 
-  @include lg {
-    width: 397px;
-    height: 466px;
+  @include md {
     box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
   }
 }
@@ -46,7 +46,7 @@
   overflow: hidden;
   margin-bottom: $indent-10;
 
-  @include lg {
+  @include md {
     height: 168px;
   }
 }

@@ -110,6 +110,13 @@
 	}
 }
 
+.index-s7 .form-gray {
+
+	@include lg-down {
+		align-items: flex-start;
+	}
+}
+
 .index-s7 .form-gray .button-rect {
 	border-radius: 5px;
 	padding: $indent-15 0;
