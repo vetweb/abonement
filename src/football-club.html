@@ -8,7 +8,7 @@
 })
 
 <body>
-@@include('components/blocks/page/_header.html')
+<!--@@include('components/blocks/page/_header.html')-->
 <main class="main fc">
     <section class="fc-s1" style="background-color: #fff">
       <div class="container">
@@ -353,16 +353,16 @@
                 <div class="card-tr-slider">
                     <div class="standard-slider js-standard-slider swiper-container">
                         <div class="swiper-wrapper grid-cards__list plr-55">
-                            <div class="swiper-slide card-tr__list-el">
+                            <div class="swiper-slide card-tr__list-el js-open-md" data-opn="trainer-md1">
                                 @@include('components/blocks/bem/_card-tr.html')
                             </div>
-                            <div class="swiper-slide card-tr__list-el">
+                            <div class="swiper-slide card-tr__list-el js-open-md" data-opn="trainer-md2">
                                 @@include('components/blocks/bem/_card-tr.html')
                             </div>
-                            <div class="swiper-slide card-tr__list-el">
+                            <div class="swiper-slide card-tr__list-el js-open-md" data-opn="trainer-md3">
                                 @@include('components/blocks/bem/_card-tr.html')
                             </div>
-                            <div class="swiper-slide card-tr__list-el">
+                            <div class="swiper-slide card-tr__list-el js-open-md" data-opn="trainer-md4">
                                 @@include('components/blocks/bem/_card-tr.html')
                             </div>
                         </div>
@@ -417,6 +417,37 @@
                             </div>
                         </div>
                         <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-window js-modal-window" data-md="trainer-md4">
+        <div class="modal-window__content modal-window__content--trainer">
+            <div class="modal-window__close js-close-md" data-cls="trainer-md4">
+                <svg viewBox="0 0 22 22">
+                    <use xlink:href="/img/sprite.svg#circle-close"></use>
+                </svg>
+            </div>
+            <div class="modal-window__trainer">
+                @@include('components/blocks/bem/_card-tr.html')
+                <div class="modal-window__certif">
+                    <div class="container-br-10">
+                        <div class="index-s__top plr-55">
+                            <h3 class="h3">Сертификаты</h3>
+                        </div>
+                        <div class="certif-scroll-block js-certif-scroll-block2 plr-55">
+                            <div class="certif-scroll-block__wrap">
+                                <div class="certif-scroll-block__el" style="background-image: url('/img/srcif2-bg.png');">
+                                </div>
+                                <div class="certif-scroll-block__el" style="background-image: url('/img/sercif-bg.png');">
+                                </div>
+                                <div class="certif-scroll-block__el" style="background-image: url('/img/sertif3-bg.png');">
+                                </div>
+                                <div class="certif-scroll-block__el" style="background-image: url('/img/sercif-bg.png');">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
