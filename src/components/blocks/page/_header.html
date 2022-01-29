@@ -55,4 +55,36 @@
         </div>
     </div>
     @@include('../bem/_top-menu.html')
+    <div class="modal-window modal-window--reg-auth js-modal-window" data-md="reg-auth" style="background-image: url('/img/reg-bg.png');">
+        <div class="modal-window__top">
+            @@include('../bem/_logo-block.html')
+            <div class="modal-window__inner">
+                <div class="modal-window__nav">
+                    <a href="#" class="modal-window__nav-link">О компании</a>
+                    <a href="#" class="modal-window__nav-link">Новости</a>
+                    <a href="#" class="modal-window__nav-link">Контакты</a>
+                </div>
+                <a href="#" class="modal-window__inner-link">
+                    <span class="">Помощь</span>
+                    <img src="/img/help-ic.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="modal-window__content modal-window__content--reg">
+            <div class="modal-window__close js-close-md" data-cls="reg-auth">
+                <svg viewBox="0 0 22 22">
+                    <use xlink:href="/img/sprite.svg#circle-close"></use>
+                </svg>
+            </div>
+            <form class="modal-window__form reg-auth__form">
+                <div class="md-cart-form__title">Войдите по почте</div>
+                <p class="md-cart-form__label">
+                    <label for="md-email" class="md-cart-form__label-name">Электронная почта</label>
+                </p>
+                <input type="text" id="md-email" class="md-cart-form__input md-cart-form--email">
+                <button class="button-rect btn-blue">Получить ссылку</button>
+                <a href="#" class="modal-window__form--link">Вернуться на главный экран</a>
+            </form>
+        </div>
+    </div>
 </header>
