@@ -14,10 +14,16 @@
                     </div>
                 </div>
                 <div class="header__center">
-                    <div class="search form">
+                    <div class="header__search-form search form js-header-search-form">
                         <form action="" class="search__form">
                             <div class="form__field search__field">
-                                <input type="text" name="" class="search__input form__input" placeholder="Поиск по сайту">
+                                <input type="text" name="" class="search__input form__input"
+                                       placeholder="Поиск по сайту">
+                                <span class="search__icon search__icon-header hidden-md js-search-toggle">
+                                     <svg class="icon-svg">
+                                        <use xlink:href="/img/sprite.svg#search"></use>
+                                     </svg>
+                                </span>
                                 <button class="search__button">
                                     <span class="search__icon">
                                          <svg class="icon-svg">
@@ -50,6 +56,18 @@
                             <use xlink:href="/img/sprite.svg#icon-plus"></use>
                         </svg>
                     </button>
+                </div>
+                <div class="header__mobile-right">
+                    <a href="#" class="header__mobile-right-icon">
+                        <svg class="icon-svg">
+                            <use xlink:href="/img/sprite.svg#icon-cart"></use>
+                        </svg>
+                    </a>
+                    <div class="header__mobile-right-icon burger js-mobile-menu-toggle">
+                        <svg class="icon-svg">
+                            <use xlink:href="/img/sprite.svg#burger"></use>
+                        </svg>
+                    </div>
                 </div>
             </div>
         </div>

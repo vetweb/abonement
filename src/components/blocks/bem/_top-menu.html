@@ -6,7 +6,7 @@
                     <i class="top-menu__burger"></i>
                     Каталог
                 </a>
-                <ul class="top-menu__dropdown">
+                <ul class="top-menu__dropdown js-filter-parent">
                     <li class="top-menu__dropdown-item js-filter">
                         Виды спорта
                     </li>
@@ -40,7 +40,7 @@
                 <a href="##" class="top-menu__link">Актуальное</a>
             </li>
         </ul>
-        <div class="menu-filter">
+        <div class="menu-filter js-filter-menu">
             <div class="menu-filter__content">
                 <div class="menu-filter__switcher">
                     <div class="switcher switcher__with-label">
@@ -66,6 +66,9 @@
                             </div>
                         </form>
                     </div>
+                </div>
+                <div class="menu-filter-search__catalog-alpha">
+                    @@include('_catalog-alpha.html')
                 </div>
             </div>
         </div>

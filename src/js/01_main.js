@@ -385,4 +385,32 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	}
 
+	//Search mobile header
+	let searchHeader = document.querySelector('.js-header-search-form')
+	let searchToggleIcon = document.querySelector('.js-search-toggle')
+
+
+	//Top menu header
+	let listParentTopMenu = document.querySelector('.js-filter-parent')
+	let listItemsTopMenu = listParentTopMenu.querySelectorAll('.js-filter')
+	let dropdownFilterMenu = document.querySelector('.js-filter-menu')
+
+	listItemsTopMenu.forEach(function(elem) {
+		elem.onmouseover = function(e) {
+			e = e || event;
+			let target = e.target || e.srcElement;
+			dropdownFilterMenu.classList.add('active');
+			listParentTopMenu.classList.add('active');
+		};
+
+		dropdownFilterMenu.onmouseleave = function(e) {
+			console.log('jj')
+			e = e || event;
+			let target = e.target || e.srcElement;
+			listParentTopMenu.classList.remove('active');
+			dropdownFilterMenu.classList.remove('active');
+		};
+	});
+
+
 });

@@ -1,6 +1,10 @@
 .top-menu {
 	position: relative;
-	@include flex(center, space-between);
+	display: none;
+
+	@include lg {
+		@include flex(center, space-between);
+	}
 }
 
 .top-menu__list {
@@ -84,6 +88,12 @@
 	width: 278px;
 	z-index: 1;
 	transition: all .3s;
+
+	&.active {
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0);
+	}
 }
 
 .top-menu__dropdown-item {

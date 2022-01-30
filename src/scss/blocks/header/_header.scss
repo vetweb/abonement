@@ -1,6 +1,7 @@
 .header {
 	background: $blue-bg;
 }
+
 .header__top {
 	padding: 20px 0;
 }
@@ -22,12 +23,36 @@
 }
 
 .header__center {
-	width: 300px;
-	flex: 0 0 auto;
+	overflow: hidden;
+	width: 50px;
+	margin-left: auto;
+
+	@include md {
+		width: 230px;
+		flex: 0 0 auto;
+	}
+
+	@include lg {
+		width: 300px;
+	}
 }
 
 .header__right {
-	@include flex(center, flex-start);
+	display: none;
+	@include lg {
+		@include flex(center, flex-start);
+	}
+}
+
+.header__mobile-right {
+	margin-left: 10px;
+	@include flex(center, flex-start)
+}
+
+.header__mobile-right-icon {
+	@include flex(center,center);
+	width: 50px;
+	height: 50px;
 }
 
 .header__cont-block.header__cont-block {
@@ -45,5 +70,27 @@
 
 	a {
 		color: rgba(195, 195, 195, .5);
+	}
+}
+
+.header__search-form {
+	.search__button {
+		@include md-down {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+
+	input {
+		@include md-down {
+			&::placeholder,
+			&::-webkit-input-placeholder {
+				color: transparent;
+			}
+		}
+	}
+
+	.form__input {
+		color: #ffffff;
 	}
 }

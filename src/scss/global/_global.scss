@@ -124,7 +124,7 @@ body {
 	background: $white;
 }
 
-.ev-section--governance .ev-grid__col{
+.ev-section--governance .ev-grid__col {
 	margin-bottom: 24px;
 
 	&:last-child {
@@ -211,6 +211,12 @@ hr {
 
 .hidden {
 	display: none;
+}
+
+.hidden-md {
+	@include md {
+		display: none;
+	}
 }
 
 .container {
