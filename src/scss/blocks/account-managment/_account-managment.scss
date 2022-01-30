@@ -1,0 +1,111 @@
+.account-m-s1 {
+  padding: 25px 0 60px;
+
+  @include sm {
+    padding: 50px 0 60px;
+  }
+
+  @include lg {
+    padding: 60px 0 100px;
+  }
+}
+
+.account-m-s__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+
+  @include lg {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.account-m-s .index-s__top {
+  margin-bottom: $indent-35;
+}
+
+.row-acc__col25-top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: $indent-25 $indent-20 $indent-15;
+}
+
+.row-acc__col25-title {
+  color: $blue-bg;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.row-acc__col25-top .row-acc__list-icon svg {
+  width: 20px;
+  height: 20px;
+  color: $blue-bg;
+  margin-right: $indent-15;
+}
+
+.row-acc__list--acc .row-acc__list-el {
+  padding: $indent-10 $indent-45;
+}
+
+.row-acc__form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.row-acc__form-col {
+  width: 48%;
+}
+
+.row-acc__form .button-rect.button-dis {
+  background-color: #EEF3F8;
+  border: 1px solid #EEF3F8;
+  color: #D1D5D9;
+  transition: all .3s;
+}
+
+.row-acc__form .button-rect {
+  border-radius: 15px;
+  padding: $indent-10;
+  max-width: 190px;
+  background-color: $blue;
+  color: $white;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+}
+
+.row-acc__form.row-acc__form--data {
+  margin-bottom: $indent-50;
+}
+
+.row-acc.row-acc--acc .row-acc__col25.row-acc__col25--right {
+  padding: $indent-25 $indent-15 $indent-35;
+}
+
+.row-acc.row-acc--acc .row-acc__col25.row-acc__col25--right .button-rect {
+  border-radius: 15px;
+  padding: $indent-10;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.row-acc.row-acc--acc .row-acc__col25.row-acc__col25--right .row-acc__col25-top {
+  padding: 0;
+  margin-bottom: $indent-20;
+}
+
+
+.row-acc__col25.row-acc__col25--right .row-acc__col25--desc {
+  margin-bottom: $indent-20;
+}
+
+.row-acc.row-acc--acc .row-acc__col25.row-acc__col25--right .row-acc__col25-top svg {
+  color: $red;
+  width: 20px;
+  height: 20px;
+}
