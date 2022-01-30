@@ -1,3 +1,33 @@
+.img-slider.free-slider
+.btn-links__slider.free-slider
+.standard-slider.free-slider {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: -10px;
+  margin-right: -10px;
+
+  @include sm {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  @include md {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  @include xl {
+    margin-left: calc(-50vw + 690px);
+    margin-right: calc(-50vw + 690px);
+    padding-left: calc(50vw - 690px);
+    padding-right: calc(50vw - 690px);
+  }
+}
+
 .card-cd-s3__slider,
 .card-img-slider,
 .card-m-slider,

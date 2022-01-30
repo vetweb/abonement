@@ -18,7 +18,7 @@
 		box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
 	}
 
-	@include lg {
+	@include lgx {
 		width: 298px;
 		height: 493px;
 	}
@@ -37,7 +37,7 @@
 	overflow: hidden;
 	margin-bottom: $indent-15;
 
-	@include lg {
+	@include lgx {
 		height: 215px;
 		margin-bottom: $indent-10;
 	}
@@ -46,7 +46,7 @@
 .swiper-slide.card-tr__list-el:not(:last-child) {
 	margin-right: 10px;
 
-	@include lg {
+	@include sm {
 		margin-right: 30px;
 	}
 }
@@ -110,13 +110,20 @@
 	justify-content: flex-start;
 }
 
-.card-tr__el-text.button-s {
+.card-tr__el-text{
 	color: $black-t;
 	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+
+	@include lg {
+		font-size: 18px;
+		line-height: 21px;
+	}
 }
 
-.swiper-wrapper.grid-cards__list {
-	//padding-bottom: $indent-40;
+.card-tr .card__el-inner.card-s__el-inner {
+	margin-bottom: $indent-10;
 }
 
 .card-tr__el-bottom .rating-m__stars.stars {

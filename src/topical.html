@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+@@include('components/blocks/page/_head.html',{
+"lang":"en",
+"title":"Абонемент",
+"description":"Абонемент",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+<!--@@include('components/blocks/page/_header.html')-->
+<main class="topical-s parent-box">
+    <section class="topical-s1">
+        <div class="container">
+            <div class="container-br-10">
+                <div class="index-s__top">
+                    <h3 class="h3">Актуальное</h3>
+                    <div class="search-block">
+                        <div class="search-block__left">
+                            <div class="search-block__left__search">
+                                <input type="text" class="search-big" placeholder="Поиск абонементов">
+                                <button type="submit" class="button-search">
+                                    <span>
+                                       <svg viewBox="0 0 24 24">
+                                            <use xlink:href="/img/sprite.svg#search"></use>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <button class="button-rect btn-dark">Найти</button>
+                        </div>
+                        <div class="search-block__right">
+                            <div class="select js-select">
+                                <div class="select__header js-select__header">
+                                    <div class="select__current js-select__current">По дате</div>
+                                    <span class="select__icon js-select__icon">
+                                            <svg viewBox="0 0 16 10">
+                                                <use xlink:href="/img/sprite.svg#arrow-down-select"></use>
+                                            </svg>
+                                        </span>
+                                </div>
+                                <div class="select__body js-select__body">
+                                    <div class="select__item js-select__item">По цене1</div>
+                                    <div class="select__item js-select__item">По цене2</div>
+                                    <div class="select__item js-select__item">По цене3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-links__slider">
+                    <div class="swiper btn-links js-btn-links">
+                        <div class="swiper-wrapper btn-links__wrap">
+                            <div class="swiper-slide btn-links__slide active js-toggle-btn">
+                                <a href="#" class="btn-links__btn js-btn-links__btn">
+                                    Спортивные мероприятия
+                                </a>
+                            </div>
+                            <div class="swiper-slide btn-links__slide js-toggle-btn">
+                                <a href="#" class="btn-links__btn js-btn-links__btn">
+                                    Новости
+                                </a>
+                            </div>
+                            <div class="swiper-slide btn-links__slide js-toggle-btn">
+                                <a href="#" class="btn-links__btn js-btn-links__btn">
+                                    Блог
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-gallery">
+                    <div class="grid-gallery__card">
+                        @@include('components/blocks/bem/_card-big-t.html')
+                    </div>
+                    <div class="grid-gallery__card">
+                        @@include('components/blocks/bem/_card-big-t.html')
+                    </div>
+                    <div class="grid-gallery__card">
+                        @@include('components/blocks/bem/_card-big-t.html')
+                    </div>
+                    <div class="grid-gallery__card">
+                        @@include('components/blocks/bem/_card-big-t.html')
+                    </div>
+                    <div class="grid-gallery__card">
+                        @@include('components/blocks/bem/_card-big-t.html')
+                    </div>
+                    <div class="grid-gallery__card">
+                        @@include('components/blocks/bem/_card-big-t.html')
+                    </div>
+                </div>
+                <div class="tabs-content__el-btn">
+                    <button class="button-rect btn-blue button-s">
+                        <span class="">Показать еще</span>
+                        <svg viewBox="0 0 15 8">
+                            <use xlink:href="/img/sprite.svg#arr-down"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" topical-s2">
+        <div class="container">
+            <div class="row">
+                <div class="row__body row__body--reverse">
+                    <div class="row__col50 row__col50--70">
+                        <div class="form-gray__inner">
+                            <form class="form-gray">
+                                <h2 class="form-gray__title">Подпишись на спортивную рассылку</h2>
+                                <div class="btns__wrap">
+                                    <input type="text" class="form-gray__input" placeholder="Введите почту"/>
+                                    <button class="button-rect btn-blue button-xs">Подписаться</button>
+                                </div>
+                            </form>
+                            <img src="/img/man.png" class="form-gray__img" alt="">
+                        </div>
+                    </div>
+                    <div class="row__col50 row__col50--30">
+                        <div class="row__col50__title text-s">Рекомендуем к прочтению</div>
+                        <div class="news-block__wrap">
+                            @@include('components/blocks/bem/_news-block.html')
+                            @@include('components/blocks/bem/_news-block.html')
+                            @@include('components/blocks/bem/_news-block.html')
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+@@include('components/blocks/page/_footer.html')
+@@include('components/blocks/page/_scripts.html')
+</body>
+
+</html>

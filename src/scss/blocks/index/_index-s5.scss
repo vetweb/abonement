@@ -8,7 +8,7 @@
   border-radius: 10px;
   box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
 
-  @include lg {
+  @include md {
     width: 297px;
     height: 343px;
   }
@@ -181,7 +181,7 @@
   margin-bottom: $indent-10;
 }
 
-.button-full {
+.card-m .button-full {
   display: inline-flex;
   justify-content: center;
   vertical-align: bottom;

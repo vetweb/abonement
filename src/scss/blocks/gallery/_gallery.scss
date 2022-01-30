@@ -16,7 +16,7 @@
     margin-bottom: $indent-50;
   }
 
-  @include lg {
+  @include lgx {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
     margin-bottom: $indent-60;
@@ -32,7 +32,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  @include lg {
+  @include lgx {
     grid-template-columns: repeat(4, 1fr);
   }
 }

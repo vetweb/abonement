@@ -5,7 +5,7 @@
   padding: 0 0 $indent-50;
   color: $blue-bg;
 
-  @include lg {
+  @include lgx {
     padding: $indent-95 0 $indent-80;
   }
 }
@@ -18,7 +18,7 @@
   background-repeat: no-repeat;
   background-image: url("/img/sup-bg.png");
 
-  @include lg {
+  @include lgx {
     padding: $indent-95 0 $indent-260;
   }
 }
@@ -144,7 +144,7 @@
     padding: $indent-50 $indent-40 $indent-55;
   }
 
-  @include lg {
+  @include lgx {
     padding: $indent-65 $indent-60;
   }
 }
@@ -152,7 +152,7 @@
 .about-s4 .index-s__top-image {
   display: none;
 
-  @include lg {
+  @include lgx {
     display: block;
     width: 185px;
     position: absolute;
@@ -244,7 +244,7 @@
     padding: 60px 40px;
   }
 
-  @include lg {
+  @include lgx {
     width: 70%;
     padding: 60px 80px;
   }
@@ -364,7 +364,7 @@
     width: 50%;
   }
 
-  @include lg {
+  @include lgx {
     width: auto;
   }
 }

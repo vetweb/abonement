@@ -35,7 +35,7 @@
 .row-inner__col30 {
   display: none;
 
-  @include lg {
+  @include lgx {
     display: flex;
     align-items: flex-end;
     position: relative;
@@ -45,7 +45,8 @@
 
 .row-inner__col30 .index-s__top-img {
   display: none;
-  @include lg {
+
+  @include lgx {
     display: block;
     position: absolute;
     top: 30%;

@@ -23,15 +23,24 @@
   height: 100%;
 }
 
-.card-cd-s5 .grid-row {
+.card-cd-s5 .grid-col50 {
+  width: 100%;
+  height: 100%;
+
   @include lg {
+    width: 49%;
+  }
+}
+
+.card-cd-s5 .grid-row {
+  @include lgx {
     height: 100%;
   }
 }
 
 .grid-row__col50:not(:last-child) {
 
-  @include lg-down {
+  @include lgx-down {
     margin-bottom: $indent-40;
   }
 
@@ -40,15 +49,19 @@
   }
 }
 
-.grid-row__col50-top.grid-row__col50-desk {
+.card-cd-s5 .grid-row__col50-top.grid-row__col50-desk {
   padding-bottom: $indent-20;
+  display: none;
 
-  @include lg {
-    padding-bottom: $indent-30;
+  @include lgx {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
-.grid-row__col50-top.grid-row__col50-desk .h3{
+.card-cd-s5 .grid-row__col50-top.grid-row__col50-desk .h3{
   padding-bottom: 0;
 }
 
@@ -74,13 +87,22 @@
 
 .map-block,
 .reviews-block {
-  border-radius: 15px;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  border-radius: 15px;
+}
 
-  @include lg {
-    max-height: 440px;
+.grid-row__col50.grid-col50 {
+  height: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.grid-row__col50.grid-col50:not(:last-child) {
+
+  @include lg-down {
+    margin-bottom: $indent-20;
   }
 }
 
@@ -92,15 +114,15 @@
     padding: $indent-45 $indent-30;
   }
 
-  @include lg {
-    padding: $indent-25 $indent-30 $indent-30;
+  @include lgx {
+    padding: $indent-20 $indent-30;
   }
 }
 
 .reviews-block .h3.h3--mob {
   display: block;
 
-  @include lg {
+  @include lgx {
    display: none;
   }
 }
@@ -108,7 +130,7 @@
 .grid-row__col50-top.grid-row__col50-top--mob .h3 {
   display: block;
 
-  @include lg {
+  @include lgx {
     display: none;
   }
 }
@@ -117,13 +139,13 @@
   display: flex;
   margin-bottom: $indent-25;
 
-  @include lg {
+  @include lgx {
     display: none;
   }
 }
 
 .reviews-block__review {
-  margin-bottom: $indent-25;
+  margin-bottom: $indent-20;
   color: $black-t;
 }
 
@@ -226,9 +248,11 @@
   overflow: hidden;
   font-weight: 700;
   padding: 13px 8px;
+  white-space: nowrap;
 
   @include sm {
     max-width: 166px;
+    padding: 15px 10px;
   }
 }
 

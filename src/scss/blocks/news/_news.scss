@@ -245,6 +245,7 @@ a.news-block  {
   margin-bottom: $indent-20;
 }
 .kos-s .grid-gallery,
+.topical-s .grid-gallery,
 .blog-video-s .grid-gallery,
 .blog-article-s .grid-gallery,
 .news-s .grid-gallery {
@@ -257,7 +258,7 @@ a.news-block  {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  @include lg {
+  @include lgx {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -265,6 +266,7 @@ a.news-block  {
 .kos-s .kos-s7 .container-br-10,
 .blog-video-s .container-br-10,
 .blog-article-s .container-br-10,
+.topical-s .container-br-10,
 .news-s .container-br-10 {
   background-color: transparent;
 }
@@ -272,16 +274,18 @@ a.news-block  {
 .blog-video-s .card-big-t,
 .blog-article-s .card-big-t,
 .news-s2 .card-big-t,
+.topical-s1 .card-big-t,
 .kos-s7 .card-big-t {
   background-color: $white;
-  height: 437px;
+  height: 446px;
 
-  @include lg {
-    height: 466px;
+  @include lgx {
+    height: 475px;
     box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
   }
 }
 
+.topical-s1 .card-big-t a.card-big-t__btn,
 .kos-s .card-big-t a.card-big-t__btn,
 .blog-video-s .card-big-t a.card-big-t__btn,
 .blog-article-s .card-big-t a.card-big-t__btn,
@@ -307,6 +311,7 @@ a.news-block  {
 .blog-article-s .card-big-t__el-img,
 .blog-video-s .card-big-t__el-img,
 .news-s2 .card-big-t__el-img,
+.topical-s1 .card-big-t__el-img,
 .kos-s7 .card-big-t__el-img {
   height: 124px;
 
@@ -318,6 +323,7 @@ a.news-block  {
 .blog-article-s .card-big__el-t-desc,
 .blog-video-s .card-big__el-t-desc,
 .kos-s7 .card-big__el-t-desc,
+.topical-s1 .card-big__el-t-desc,
 .news-s2 .card-big__el-t-desc {
   margin-bottom: $indent-10;
 }

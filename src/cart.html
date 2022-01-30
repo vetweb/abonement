@@ -8,7 +8,7 @@
 })
 
 <body>
-@@include('components/blocks/page/_header.html')
+<!--@@include('components/blocks/page/_header.html')-->
 <main class="cart-s js-parent-box parent-box">
     <section class="cart-s1">
         <div class="container">
@@ -41,24 +41,35 @@
                                     <span class="cart-quantity">2</span>
                                     <span class="cart-decrease">+</span>
                                 </div>
-                            </div>
-                            <div class="table-m__body-el__inner p-10">
-                                <div class="table-m__body-cell">
-                                    <span class="value button-s">44</span>
-                                    <span class="currency button-s ">Br</span>
+                                <div class="order-list__footer-inner">
+                                    <p class="order-list__footer-item">
+                                        <span class="quantity">2</span>
+                                        <span class="pieces">шт</span>
+                                    </p>
+                                    <p class="order-list__footer-item">( <span class="quantity">22</span>
+                                        <span class="currency">br</span> шт)
+                                    </p>
                                 </div>
                             </div>
-                            <div class="table-m__body-el__inner p-10 table-m__body-el__inner--icn">
-                                <span>
+                            <div class="table-m__body-el__inner table-m__body-el__inner--mobile">
+                                <div class="table-m__body-el__inner p-10">
+                                    <div class="table-m__body-cell">
+                                        <span class="value button-s">44</span>
+                                        <span class="currency button-s ">Br</span>
+                                    </div>
+                                </div>
+                                <div class="table-m__body-el__inner p-10 table-m__body-el__inner--icn">
+                                <span class="table-m__favorite js-table-m__favorite">
                                     <svg viewBox="0 0 20 18">
                                         <use xlink:href="/img/sprite.svg#heart"></use>
                                     </svg>
                                 </span>
-                                <span>
+                                <span class="table-m__close js-table-m__close">
                                     <svg viewBox="0 0 16 16">
                                         <use xlink:href="/img/sprite.svg#close-x"></use>
                                     </svg>
                                 </span>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -69,8 +80,10 @@
                                 </div>
                             </div>
                             <div class="table-m__body-el__inner p-10 table-m__body-el__inner-desc">
-                                <div class="table-m__body-cell h5">Lorem ipsum dolor sit amet</div>
-                                <div class="table-m__body-cell h6">Продавец: “Свислочская специализированная детско-юношеская школа олимпийского резерва”</div>
+                                <div class="table-m__body-cell h5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmod tempor </div>
+                                <div class="table-m__body-cell h6">Продавец: “Свислочская специализированная
+                                    етско-юношеская школа олимпийского резерва”</div>
                             </div>
                             <div class="table-m__body-el__inner p-10">
                                 <div class="table-m__body-cell table-m__body-cell--quantity">
@@ -78,32 +91,49 @@
                                     <span class="cart-quantity">2</span>
                                     <span class="cart-decrease">+</span>
                                 </div>
-                            </div>
-                            <div class="table-m__body-el__inner p-10">
-                                <div class="table-m__body-cell">
-                                    <span class="value button-s">44</span>
-                                    <span class="currency button-s ">Br</span>
+                                <div class="order-list__footer-inner">
+                                    <p class="order-list__footer-item">
+                                        <span class="quantity">2</span>
+                                        <span class="pieces">шт</span>
+                                    </p>
+                                    <p class="order-list__footer-item">( <span class="quantity">22</span>
+                                        <span class="currency">br</span> шт)
+                                    </p>
                                 </div>
                             </div>
-                            <div class="table-m__body-el__inner p-10 table-m__body-el__inner--icn">
-                                <span>
+                            <div class="table-m__body-el__inner table-m__body-el__inner--mobile">
+                                <div class="table-m__body-el__inner p-10">
+                                    <div class="table-m__body-cell">
+                                        <span class="value button-s">44</span>
+                                        <span class="currency button-s ">Br</span>
+                                    </div>
+                                </div>
+                                <div class="table-m__body-el__inner p-10 table-m__body-el__inner--icn">
+                                <span class="table-m__favorite js-table-m__favorite">
                                     <svg viewBox="0 0 20 18">
                                         <use xlink:href="/img/sprite.svg#heart"></use>
                                     </svg>
                                 </span>
-                                <span>
+                                <span class="table-m__close js-table-m__close">
                                     <svg viewBox="0 0 16 16">
                                         <use xlink:href="/img/sprite.svg#close-x"></use>
                                     </svg>
                                 </span>
+                                </div>
                             </div>
                         </div>
                     </a>
                 </div>
+                <div class="btn-wrapp">
+                    <button class="button-rect btn-blue button-xs js-open-md" data-opn="cart-md">Оформить заказ</button>
+                    <button class="button-rect btn-white button-xs">
+                        Продолжить покупки
+                    </button>
+                </div>
             </div>
         </div>
     </section>
-    <section class="">
+    <section class="cart-s2">
         <div class="container">
             <div class="index-s__top">
                 <h2 class="h2">Вас может заинтересовать</h2>
@@ -130,7 +160,37 @@
             </div>
         </div>
     </section>
+    <div class="modal-window js-modal-window" data-md="cart-md">
+        <div class="modal-window__content modal-window__content--cart">
+            <div class="modal-window__close js-close-md" data-cls="cart-md">
+                <svg viewBox="0 0 22 22">
+                    <use xlink:href="/img/sprite.svg#circle-close"></use>
+                </svg>
+            </div>
+            <form class="modal-window__form md-cart-form">
+                <div class="md-cart-form__title">Вход</div>
+                <p class="md-cart-form__label">
+                    <label for="md-name" class="md-cart-form__label-name">Имя</label>
+                    <span class="modal-window-form__symbol">*</span>
+                </p>
+                <input type="text" id="md-name" class="md-cart-form__input md-cart-form--name">
+                <p class="md-cart-form__label">
+                    <label for="md-email" class="md-cart-form__label-name">Email</label>
+                    <span class="modal-window-form__symbol">*</span>
+                </p>
+                <input type="text" id="md-email" class="md-cart-form__input md-cart-form--email">
+                <p class="md-cart-form__label md-cart-form--policy">
+                    <input type="checkbox" id="md-policy"  class="styled-checkbox policy-checkbox">
+                    <label for="md-policy" class="md-cart-form__label-policy">Я соглашаюсь с
+                        <a href="" class="policy-link">Пользовательским cоглашением</a> и с <a href="" class="policy-link">Правилами
+                            обработки персональных данных</a> в соответствии с Политикой конфиденциальности</label>
+                </p>
+                <button class="button-rect btn-blue">Продолжить</button>
+            </form>
+        </div>
+    </div>
 </main>
+
 @@include('components/blocks/page/_footer.html')
 @@include('components/blocks/page/_scripts.html')
 </body>

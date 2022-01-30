@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+@@include('components/blocks/page/_head.html',{
+"lang":"en",
+"title":"Абонемент",
+"description":"Абонемент",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+@@include('components/blocks/page/_header.html')
+<main class="notifications-s">
+    <section class="notifications-s1">
+    <div class="container">
+        <div class="index-s__top">
+            <p class="notifications-s__title">Уведомления</p>
+        </div>
+        <div class="row-acc row-acc--notif">
+            <div class="row-acc__col25 row-acc__col25--left">
+                <ul class="row-acc__list">
+                    <li class="row-acc__list-el active js-toggle-btn">
+                        <a href="#" class="row-acc__list-link">
+                            <span class="row-acc__list-icon">
+                                <svg>
+                                    <use xlink:href="/img/sprite.svg#notification"></use>
+                                </svg>
+                            </span>
+                            <span class="row-acc__list-title">Все уведомления</span>
+                            <span class="row-acc__list-count">0</span>
+                        </a>
+                    </li>
+                    <li class="row-acc__list-el js-toggle-btn">
+                        <a href="#" class="row-acc__list-link">
+                            <span class="row-acc__list-icon">
+                                <svg>
+                                    <use xlink:href="/img/sprite.svg#message"></use>
+                                </svg>
+                            </span>
+                            <span class="row-acc__list-title">Общение с покупателями</span>
+                            <span class="row-acc__list-count">0</span>
+                        </a>
+                    </li>
+                    <li class="row-acc__list-el js-toggle-btn">
+                        <a href="#" class="row-acc__list-link">
+                            <span class="row-acc__list-icon">
+                                <svg>
+                                    <use xlink:href="/img/sprite.svg#help-c"></use>
+                                </svg>
+                            </span>
+                            <span class="row-acc__list-title">Поддержка</span>
+                            <span class="row-acc__list-count">0</span>
+                        </a>
+                    </li>
+                    <li class="row-acc__list-el js-toggle-btn">
+                        <a href="#" class="row-acc__list-link">
+                            <span class="row-acc__list-icon">
+                                <svg>
+                                    <use xlink:href="/img/sprite.svg#notif-c"></use>
+                                </svg>
+                            </span>
+                            <span class="row-acc__list-title">Уведомления сайта</span>
+                            <span class="row-acc__list-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row-acc__col50">
+                <div class="row-acc__col50-inner">
+                    <div class="row-acc__col50--title">Нет уведомлений</div>
+                    <div class="row-acc__col50--body">
+                        <p class="row-acc__col50--desc">Здесь появиться уведомление o заказах, ответы службы аоддержки и вопросы покупателей</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row-acc__col25 row-acc__col25--right">
+                <div class="row-acc__col25-body">
+                    <span class="row-acc__col25-icon">
+                        <svg>
+                            <use xlink:href="/img/sprite.svg#messages"></use>
+                        </svg>
+                    </span>
+                    <p class="row-acc__col25--desc">Выберите сообщение или диалог в списке слева</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+@@include('components/blocks/page/_footer.html')
+@@include('components/blocks/page/_scripts.html')
+</body>
+
+</html>

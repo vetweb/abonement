@@ -42,10 +42,10 @@
     box-shadow: 6px 7px 10px 5px rgba(20, 40, 96, 0.15);
   }
 
-  @include lg {
+  @include lgx {
+    box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
     width: 502px;
     height: 466px;
-    box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
   }
 }
 
@@ -68,7 +68,7 @@
 .swiper-slide.card-big__list-el:not(:last-child) {
   margin-right: 10px;
 
-  @include lg {
+  @include sm {
     margin-right: 30px;
   }
 }
@@ -85,7 +85,7 @@
   border-radius: 10px;
   overflow: hidden;
 
-  @include lg {
+  @include lgx {
     height: 250px;
   }
 }

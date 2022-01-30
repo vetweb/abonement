@@ -8,8 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	// smooth-scrollbar
 	const tabsBlock = document.querySelector(".js-tabs-block");
 	const tabsBlockTwo = document.querySelector(".js-tabs-block2");
+	const certifScroll2 = document.querySelector(".js-certif-scroll-block2");
 	const certifScroll = document.querySelector(".js-certif-scroll-block");
 	const galleryScroll = document.querySelector(".js-gallery-scroll-block");
+
 
 	let optionsTabsBlock = {
 		damping: .1,
@@ -26,6 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		alwaysShowTracks: true,
 	}
 
+	let optionsCertifScroll2= {
+		damping: .1,
+		alwaysShowTracks: true,
+	}
+
 	let optionsGalleryScroll= {
 		damping: .1,
 		alwaysShowTracks: true,
@@ -34,12 +41,17 @@ document.addEventListener('DOMContentLoaded', () => {
 	if (tabsBlock) {
 		Scrollbar.init(tabsBlock, optionsTabsBlock);
 	}
+
 	if (tabsBlockTwo) {
 		Scrollbar.init(tabsBlockTwo, optionsTabsBlockTwo);
 	}
 
 	if (certifScroll) {
 		Scrollbar.init(certifScroll, optionsCertifScroll);
+	}
+
+	if (certifScroll2) {
+		Scrollbar.init(certifScroll2, optionsCertifScroll2);
 	}
 
 	if (galleryScroll) {
@@ -174,9 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	let tabNavLink = document.querySelectorAll('.js-tabs-nav__tab');
 	let tabContent = document.querySelectorAll('.js-tabs-content__el');
 
-	if (tabContent && tabNavLink) {
-		tabsNav();
-	}
+	tabsNav();
 
 	function tabsNav() {
 		tabNavLink.forEach(item => {
@@ -209,14 +219,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	}
 
-	tabsNav();
-
 	//
 	function selectIcons() {
 		let elem = document.querySelector('.js-toggle-btn');
+
 		if (!elem) {
 			return false;
 		}
+
 		let elems = document.querySelectorAll('.js-toggle-btn')
 
 		elems.forEach((item) => {
@@ -233,6 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		}
 	}
+
 	selectIcons();
 
 //
@@ -242,7 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	if (galleryThumbs && galleryTop) {
 
 		function getDirection() {
-			let direction = window.innerWidth >= 992 ? 'vertical' : 'horizontal';
+			let direction = window.innerWidth >= 768 ? 'vertical' : 'horizontal';
 			return direction;
 		}
 
@@ -300,16 +311,15 @@ document.addEventListener('DOMContentLoaded', () => {
 	selectHandler();
 	function selectHandler() {
 
-		selectHeaders.forEach((item) => {
-			item.addEventListener('click', selectToggle)
-		})
+	selectHeaders.forEach((item) => {
+		item.addEventListener('click', selectToggle)
+	})
 
-		selectItems.forEach((item) => {
-			item.addEventListener('click', selectChose)
-		})
+	selectItems.forEach((item) => {
+		item.addEventListener('click', selectChose)
+	})
 
 		function selectToggle() {
-			console.log(this.parentElement);
 			this.parentElement.classList.toggle('is-active');
 		}
 
@@ -333,10 +343,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		function showFiletBlock() {
 			filterBlocks.forEach((elem) => {
 				let parentBox = this.closest('.js-parent-box');
-				console.log(parentBox);
 				if(!elem.classList.contains('show')) {
 					parentBox.classList.add('active');
-					console.log(this);
 					elem.classList.add('show');
 				} else {
 					parentBox.classList.remove('active');
@@ -360,8 +368,31 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	})
 
-	// Video
 
+	// slider btn-links
+	const swiperBtnLinks = document.querySelector('.js-btn-links');
+	let mySwiperBtnLinks;
+
+	if (swiperBtnLinks) {
+		createSwiperBtnLinks();
+	}
+
+	function createSwiperBtnLinks() {
+		mySwiperBtnLinks = new Swiper(swiperBtnLinks, {
+			slidesPerView: "auto",
+			centeredSlides: true,
+			slideToClickedSlide: true,
+			speed: 1500,
+			breakpoints: {
+				// when window width is >= 320px
+				769: {
+					centeredSlides: false,
+				},
+			},
+		});
+	}
+
+	// Video
 	const wrapperVideo = document.querySelector('.js-block-video__wrap');
 	const wrapperVideos = document.querySelectorAll('.js-block-video__wrap');
 
@@ -412,5 +443,75 @@ document.addEventListener('DOMContentLoaded', () => {
 		};
 	});
 
+	//Modal
+	let openBtn = document.querySelector('.js-open-md');
+	let closeBtn = document.querySelector('.js-close-md');
+	let modalWindow = document.querySelector('.js-modal-window');
+
+	if (openBtn && closeBtn && modalWindow) {
+		modalWindowShow();
+	}
+
+	function modalWindowShow() {
+
+		if (!openBtn) {
+			return false;
+		}
+
+		let openBtns = document.querySelectorAll('.js-open-md');
+
+		openBtns.forEach((item) => {
+			item.addEventListener('click', function openModal() {
+
+				let pathBtnOpen = this.dataset.opn;
+				let modalWindow = document.querySelector(`[data-md='${pathBtnOpen}']`);
+
+				if (!modalWindow.classList.contains('show-md')) {
+					modalWindow.classList.add('show-md');
+					document.body.style.overflowY = 'hidden';
+				} else {
+					modalWindow.classList.remove('show-md');
+					document.body.style.overflowY = 'visible';
+				}
+			});
+		});
+
+		if (!closeBtn) {
+			return false
+		}
+
+		let closeBtns = document.querySelectorAll('.js-close-md');
+
+		closeBtns.forEach((item) => {
+			item.addEventListener('click', function closeModal() {
+
+				let pathBtnClose = this.dataset.cls;
+
+				let modalWindow = document.querySelector(`[data-md='${pathBtnClose}']`);
+				if (modalWindow.classList.contains('show-md')) {
+					modalWindow.classList.remove('show-md');
+					document.body.style.overflowY = 'visible';
+				}
+			})
+		});
+
+		let modalWindows = document.querySelectorAll('.js-modal-window');
+
+		modalWindows.forEach(item => {
+			item.addEventListener('click', (e) => {
+				if (e.target === item) {
+					item.classList.remove('show-md');
+					document.body.style.overflowY = 'visible';
+				}
+			});
+		});
+
+		document.addEventListener('keydown', (event) => {
+			if (event.key === 'Escape') {
+				modalWindow.classList.remove('show-md');
+				document.body.style.overflowY = 'visible';
+			}
+		});
+	}
 
 });
