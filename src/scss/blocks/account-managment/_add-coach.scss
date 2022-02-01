@@ -1,0 +1,157 @@
+.row-acc__col50-inner__top .link-back {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+}
+
+.link-back .row-acc__icon {
+  width: 20px;
+  height: 20px;
+  background-color: $blue;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: $indent-10;
+}
+
+.link-back .row-acc__icon svg {
+  width: 10px;
+  height: 8px;
+  color: $white;
+  transform: rotate(180deg);
+}
+
+a.link-back .row-acc__title {
+  color: $blue;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.account-m-s1 .row-acc__col50-inner__top {
+  margin-bottom: $indent-25;
+}
+
+.account-m-s1 .row-acc__col50--desc {
+  margin-bottom: $indent-40;
+}
+
+// add
+.row-acc__form-col.row-acc__form-col--date,
+.add-coach-s .row-acc__form-row--top .row-acc__form-col {
+  width: 100%;
+
+  @include sm {
+    width: 32%;
+  }
+}
+
+.row-acc__form-col.row-acc__form-col--date {
+  margin-bottom: $indent-40;
+}
+
+.add-coach-s .row-acc__form-col:not(:last-child) {
+  @include sm {
+    margin-right: $indent-10;
+  }
+}
+
+.row-acc__form-row--middle .row-acc__form-col.row-acc__form-col--70 {
+  width: 100%;
+
+  @include sm {
+    width: 70%;
+  }
+}
+
+.row-acc__form-row--bottom .row-acc__form-col.row-acc__form-col--100,
+.row-acc__form-row--middle .row-acc__form-col.row-acc__form-col--100 {
+  width: 100%;
+}
+
+.add-coach-s .row-acc__form-row.row-acc__form-row--middle {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-textarea__light  {
+  width: 100%;
+  background: $white;
+  border: 1px solid #E1EBF5;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.add-coach-s .form-textarea__light  {
+  height: 78px;
+  margin-bottom: $indent-20;
+
+  @include sm {
+    margin-bottom: $indent-40;
+  }
+}
+
+.form-row__icon svg {
+  width: 20px;
+  height: 28px;
+  color: $gray-tx;
+  margin-right: $indent-20;
+}
+
+.md-cart-form__label-file {
+  font-size: 14px;
+  line-height: 20px;
+  color: $blue-bg;
+  margin-right: $indent-20;
+}
+
+.row-acc__col50-inner .row-acc__col50--title {
+  margin-bottom: $indent-20;
+}
+
+.row-acc__form-row.row-acc__form-row--bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.row-acc__form-row--bottom .row-acc__form-col.row-acc__form-col--100 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px dashed #E6E6E6;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: $indent-30 0;
+  margin-bottom: $indent-35;
+}
+
+.row-acc__form-row--bottom .row-acc__form-col.row-acc__form-col--100  .md-cart-form__label {
+  margin-bottom: 0;
+  align-items: center;
+}
+
+[type="file"]::-webkit-file-upload-button {
+  background: $white;
+  border: 2px solid $blue;
+  color: $blue;
+  cursor: pointer;
+  font-size: 12px;
+  outline: none;
+  padding: $indent-10;
+  text-transform: uppercase;
+  transition: all 1s ease;
+  border-radius: 15px;
+  width: 150px;
+}
+
+
+[type="file"]::-webkit-file-upload-button:hover {
+  background: $blue ;
+  border: 2px solid $white;
+  color: $white;
+}

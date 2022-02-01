@@ -57,8 +57,13 @@
   align-items: center;
   width: 100%;
 }
+
 .row-acc__form-col {
-  width: 48%;
+  width: 100%;
+
+  @include sm {
+    width: 48%;
+  }
 }
 
 .row-acc__form .button-rect.button-dis {
