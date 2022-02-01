@@ -87,8 +87,13 @@
   position: relative;
 }
 
-.btn-blue-s svg {
+.button-rect .btn-blue-s__ic {
+  width: 18px;
+  height: 18px;
   margin-right: $indent-10;
+}
+
+.btn-blue-s svg {
   display: inline-block;
   width: 18px;
   height: 18px;

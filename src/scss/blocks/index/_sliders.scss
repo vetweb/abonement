@@ -1,5 +1,5 @@
-.img-slider.free-slider
-.btn-links__slider.free-slider
+.img-slider.free-slider,
+.btn-links__slider.free-slider,
 .standard-slider.free-slider {
   padding-left: 10px;
   padding-right: 10px;
@@ -37,16 +37,32 @@
   position: relative;
 }
 
+.img-slider.swiper-container,
+.btn-links__slider.swiper-container,
+.standard-slider.swiper-container {
+  overflow: inherit;
+}
+
 .card-s-slider__football-icon {
+  display: block;
   position: absolute;
   right: 25%;
   top: -70px;
+
+  @include sm-down {
+    display: none;
+  }
 }
 
 .card-s-slider__diagram-icon {
+  display: block;
   position: absolute;
   left: -55px;
-  top: 20px
+  top: 20px;
+
+  @include sm-down {
+    display: none;
+  }
 }
 
 .swiper-button-prev.btn__prev,
@@ -135,13 +151,9 @@
 .card-l-slider .swiper-container-horizontal>.swiper-scrollbar,
 .card-m-slider .swiper-container-horizontal>.swiper-scrollbar {
   display: block;
-  position: absolute;
-  left: 0;
-  bottom: -15px;
-
-  @include sm {
-    bottom: -20px;
-  }
+  bottom: -20px;
+  position: relative;
+  z-index: -1;
 
   @include lgx {
     display: none;
@@ -155,7 +167,7 @@
   left: 50%;
 
   @include sm-down {
-    bottom: $indent-15;
+    bottom: -4px;
   }
 }
 
