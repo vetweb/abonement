@@ -94,6 +94,14 @@
   }
 }
 
+.table-m__body-el:first-child {
+  padding-top: 0;
+}
+
+.table-m__body-el:last-child {
+  padding-bottom: 0;
+}
+
 .table-m__body-el-wrap {
   @include sm-down {
     margin-bottom: $indent-15;

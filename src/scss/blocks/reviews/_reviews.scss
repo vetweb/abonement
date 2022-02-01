@@ -12,6 +12,10 @@
 
 .tabs-content__reviews .reviews-block__inner .button-rect {
   display: flex;
+
+  @include sm-down {
+    padding: $indent-10 0;
+  }
 }
 
 .tabs-content__reviews-top {

@@ -100,13 +100,19 @@
   }
 }
 
-.card-cd-s1 .row-link-ic.row-link-ic--mob img {
-
+.camp-1 .grid-row .link-s.grid-row__link  {
+  @include sm-down {
+      font-size: 14px;
+      line-height: 17px;
+  }
 }
 
 .grid-row__address.grid-row__address--mob {
   display: inline-flex;
   margin-bottom: $indent-15;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
 
   @include lg {
     display: none;
@@ -197,6 +203,7 @@
 
 .button-block__sum {
   display: flex;
+  align-items: center;
   font-size: 32px;
   line-height: 39px;
   color: $blue;
@@ -219,6 +226,17 @@
   margin-right: $indent-20;
 }
 
+.button-block .button-block__sum-repeal {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+
+  @include sm {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
 .button-block__sum-repeal {
   color: $gray-b;
   text-decoration: line-through;
@@ -227,18 +245,26 @@
 .button-block__sum .value,
 .button-block__sum .currency {
   color: $blue;
+  font-size: 26px;
+  line-height: 31px;
+
+  @include sm {
+    font-size: 32px;
+    line-height: 39px;
+  }
 }
 
 .button-block {
   display: flex;
   flex-direction: column;
-  padding: $indent-20 $indent-35;
+  padding: $indent-15 $indent-10;
   background-color: $white;
   border-radius: 15px;
   margin-top: $indent-40;
   box-shadow: 1px 2px 52px 3px rgba(34, 60, 80, 0.12);
 
   @include sm {
+    padding: $indent-20 $indent-35;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;

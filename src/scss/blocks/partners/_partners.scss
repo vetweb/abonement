@@ -6,6 +6,16 @@
   }
 }
 
+.row-block__grid-text.text-m {
+  @include csx {
+    width: 60%;
+  }
+
+  @include sm {
+    width: 100%;
+  }
+}
+
 .row {
   display: flex;
   flex-direction: column-reverse;

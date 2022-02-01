@@ -240,8 +240,12 @@
   margin-bottom: 0;
 }
 
+.camp-2 .tabs-nav__tab-title,
 .fc-s1 .tabs-nav__tab-title {
   white-space: nowrap;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
 
   @include sm-down {
     font-weight: 500;

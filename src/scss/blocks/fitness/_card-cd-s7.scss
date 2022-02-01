@@ -1,14 +1,16 @@
 .card-cd-s7 {
-  padding: 0 0 40px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  padding: 30px 0 65px;
+  background-color: $white;
 
   @include sm {
-    padding: 0 0 85px;
+    padding: 45px 0 85px;
   }
 
   @include lg {
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url("/img/sup-bg.png");
     padding: 0 0 110px;
   }
 }

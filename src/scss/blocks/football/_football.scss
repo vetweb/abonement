@@ -56,6 +56,11 @@
   left: 0;
   background-color: $black-t;
 }
+.card-sub-2__col50 .btn-wrapp {
+  @include sm {
+    justify-content: flex-start;
+  }
+}
 
 .btn-wrapp {
   display: flex;

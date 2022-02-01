@@ -1,5 +1,5 @@
 .img-slider.free-slider,
-.btn-links__slider.free-slider,
+.btn-links.free-slider,
 .standard-slider.free-slider {
   padding-left: 10px;
   padding-right: 10px;
@@ -147,6 +147,7 @@
   background-color: rgba(44, 76, 163, 0.2);
 }
 
+.card3-slider .swiper-container-horizontal>.swiper-scrollbar,
 .card-s-slider .swiper-container-horizontal>.swiper-scrollbar,
 .card-l-slider .swiper-container-horizontal>.swiper-scrollbar,
 .card-m-slider .swiper-container-horizontal>.swiper-scrollbar {

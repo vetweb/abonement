@@ -18,8 +18,10 @@
 .index-s__top {
 	margin-bottom: $indent-15;
 	@include flex(baseline, space-between);
+	flex-direction: column;
 
 	@include sm {
+		flex-direction: row;
 		margin-bottom: $indent-30;
 	}
 
@@ -30,6 +32,12 @@
 
 .index-s__top a {
 	color: $blue;
+
+	@include sm-down {
+		margin-top: $indent-15;
+		font-size: 14px;
+		line-height: 17px;
+	}
 }
 
 .index-s__top.index-s7__top .button-rect {
