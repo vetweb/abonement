@@ -1,0 +1,27 @@
+.info-company-s1 {
+  padding: 25px 0 60px;
+
+  @include sm {
+    padding: 50px 0 60px;
+  }
+
+  @include lg {
+    padding: 60px 0 100px;
+  }
+}
+
+.info-company-s .row-acc.row-acc--acc .row-acc__col25.row-acc__col25--right .row-acc__col25-top svg {
+  color: $orange;
+}
+
+.info-company-s .row-acc__form-row.row-acc__form-row--middle {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.info-company-s .row-acc__form-row.row-acc__form-row--middle {
+
+  @include sm {
+    flex-direction: row;
+  }
+}
