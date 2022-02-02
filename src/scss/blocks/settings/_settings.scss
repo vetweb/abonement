@@ -1,4 +1,4 @@
-.account-m-s1 {
+.settings-s1 {
   padding: 25px 0 60px;
 
   @include sm {
@@ -10,10 +10,11 @@
   }
 }
 
-.account-m-s__title {
+.settings-s__title {
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
+  color: $blue-bg;
 
   @include lg {
     font-size: 32px;
@@ -21,7 +22,7 @@
   }
 }
 
-.account-m-s .index-s__top {
+.settings-s .index-s__top {
   margin-bottom: $indent-35;
 }
 
@@ -32,6 +33,7 @@
   padding: $indent-25 $indent-20 $indent-15;
 }
 
+.row-prod__col30-title,
 .row-acc__col25-title {
   color: $blue-bg;
   font-weight: 600;
@@ -58,7 +60,7 @@
   width: 100%;
 }
 
-.account-m-s1 .row-acc__form-col {
+.settings-s1 .row-acc__form-col {
   width: 48%;
 }
 
@@ -118,6 +120,6 @@
   height: 20px;
 }
 
-.account-m-s .row-acc.row-acc--acc .row-acc__col25.row-acc__col25--right .row-acc__col25-top svg {
+.settings-s .row-acc.row-acc--acc .row-acc__col25.row-acc__col25--right .row-acc__col25-top svg {
   color: $red;
 }
