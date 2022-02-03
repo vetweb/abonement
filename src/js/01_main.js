@@ -465,7 +465,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 				let pathBtnOpen = this.dataset.opn;
 				let modalWindow = document.querySelector(`[data-md='${pathBtnOpen}']`);
-				console.log(modalWindow);
 
 				if (!modalWindow.classList.contains('show-md')) {
 					modalWindow.classList.add('show-md');

@@ -16,7 +16,7 @@
   }
 }
 
-.add-camp-s1 .index-s__mob {
+.index-s__mob-s .index-s__mob {
   display: none;
 
   @include lgx-down {
@@ -28,49 +28,50 @@
   }
 }
 
-.add-camp-s1 .index-s__mob .link-back .index-s__mob__icon svg {
+.index-s__mob-s .index-s__mob .link-back .index-s__mob__icon svg {
   color: currentColor;
   width: 13px;
   height: 13px;
   margin-right: $indent-15;
 }
 
-.add-camp-s1 .index-s__mob .row-acc__title {
+.index-s__mob-s .index-s__mob .row-acc__title {
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   color: #374160;
 }
 
-.add-camp-s1 .index-s__mob a.link-back {
+.index-s__mob-s .index-s__mob a.link-back {
   text-decoration: none;
   display: flex;
   align-items: center;
   margin-bottom: $indent-15;
 }
 
-.add-camp-s1 .index-s__mob .row-acc__list-title {
+.index-s__mob-s .index-s__mob .row-acc__list-title {
   color: $blue;
   margin-bottom: $indent-10;
   display: block;
 }
 
-.add-camp-s1 .index-s__mob .settings-s__title {
+.index-s__mob-s .index-s__mob .settings-s__title {
   margin-bottom: $indent-20;
 }
 
-.add-camp-s1 .index-s__mob .time-line {
+.index-s__mob-s .index-s__mob .time-line {
   border-top: 1px solid $blue;
   width: 100%;
 }
 
-.add-camp-s1 .index-s__top,
-.add-camp-s1 .row-acc__col25.row-acc__col25--left {
+.index-s__mob-s .index-s__top,
+.index-s__mob-s .row-acc__col25.row-acc__col25--left {
   @include lgx-down {
     display: none;
   }
 }
 
+.specifications-s1 .row-acc__form-row,
 .add-camp-s1 .row-acc__form-row {
   @include sm-down {
     flex-direction: column;
@@ -87,7 +88,7 @@
   margin-right: $indent-15;
   position: relative;
   overflow: hidden;
-  padding-top: 10.25%;
+  padding-top: 6.25%;
   width: 56px;
   height: 47px;
   background-size: cover;
@@ -101,7 +102,7 @@
   top: 0;
   width: 100%;
   object-fit: cover;
-  height: 100%;
+  //height: 100%;
 
 }
 
@@ -260,7 +261,8 @@ a.row-acc__col25--link {
 
 .add-camp-s1 .row-acc__col25,
 .add-camp-s1 .row-acc__col25,
-.add-camp-s1 .row-acc__col50 {
+.add-camp-s1 .row-acc__col50,
+.specifications-s1 .row-acc__col50{
   @include sm-down {
     background-color: transparent;
   }

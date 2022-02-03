@@ -9,8 +9,8 @@
 
 <body>
 @@include('components/blocks/page/_header.html')
-<main class="add-camp-s index-s__mob-s">
-    <section class="add-camp-s1">
+<main class="index-s__mob-s media-s">
+    <section class="media-s1">
         <div class="index-s__mob">
             <div class="container">
                 <a href="/coaches.html" class="link-back">
@@ -21,18 +21,18 @@
                     </span>
                     <span class="row-acc__title">Назад</span>
                 </a>
-                <p class="settings-s__title">Добавление лагеря</p>
-                <span class="row-acc__list-title">Информация о товаре</span>
+                <p class="settings-s__title">Добавление товара</p>
+                <span class="row-acc__list-title">Медиа</span>
                 <div class="index-s__mob-line">
                     <div class="circle-item1">
-                        <div class="circle-item2 active"></div>
+                        <div class="circle-item2"></div>
                     </div>
                     <div class="index-s__mob-line1"></div>
                     <div class="circle-item1">
                         <div class="circle-item2"></div>
                     </div>
                     <div class="circle-item1 circle-item1--before">
-                        <div class="circle-item2"></div>
+                        <div class="circle-item2 active"></div>
                     </div>
                     <div class="circle-item1 circle-item1--after">
                         <div class="circle-item2"></div>
@@ -42,12 +42,12 @@
         </div>
     <div class="container">
         <div class="index-s__top">
-            <p class="settings-s__title">Добавление лагеря</p>
+            <p class="settings-s__title">Добавление товара</p>
         </div>
         <div class="row-acc row-acc--acc">
             <div class="row-acc__col25 row-acc__col25--left">
                 <ul class="row-acc__list row-acc__list--prod">
-                    <li class="row-acc__list-el active js-toggle-btn">
+                    <li class="row-acc__list-el js-toggle-btn">
                         <div class="circle-item1">
                             <div class="circle-item2">
                             </div>
@@ -65,7 +65,7 @@
                             <span class="row-acc__list-title">Характеристики</span>
                         </a>
                     </li>
-                    <li class="row-acc__list-el js-toggle-btn">
+                    <li class="row-acc__list-el active js-toggle-btn">
                         <div class="circle-item1">
                             <div class="circle-item2">
                             </div>
@@ -87,116 +87,8 @@
             </div>
             <div class="row-acc__col50">
                 <div class="row-acc__col50-inner">
-                    <div class="row-acc__col50--title">Личные данные</div>
-                    <form class="row-acc__form row-acc__form--add-camp">
-                        <p class="label-light label-light--ic">
-                            <label for="ac-comp-name" class="label-light__title">Название организации</label>
-                            <span class="label-light__symbol">*</span>
-                            <a href="#" class="label-light--link">
-                                <img src="/img/notif-reverse.svg" alt="" class="label-light--ic">
-                            </a>
-                        </p>
-                        <div class="input-light__wrap">
-                            <input type="text" id="ac-comp-name" class="input-light input-light--ic input-light__mb15">
-                            <a href="#" class="label-light--link">
-                                <img src="/img/notif-reverse.svg" alt="" class="label-light--ic">
-                            </a>
-                        </div>
-                        <p class="label-light label-light--ic">
-                            <label for="ac-comp-address" class="label-light__title">Адрес</label>
-                            <span class="label-light__symbol">*</span>
-                            <a href="#" class="label-light--link">
-                                <img src="/img/address-ic.svg" alt="" class="label-light--ic">
-                            </a>
-                        </p>
-                        <div class="input-light__wrap">
-                            <input type="text" id="ac-comp-address" class="input-light input-light--ic input-light__mb15">
-                            <a href="#" class="label-light--link">
-                                <img src="/img/address-ic.svg" alt="" class="label-light--ic">
-                            </a>
-                        </div>
-                        <div class="form__img-block input-light__mb15">
-                            <div class="form__img-block-img form__img-block-img--small" style="background-image: url('/img/preview.png');">
-                                <img src="/img/banner-kos.png" alt="">
-                            </div>
-                            <input type="file" id="md-file" class="form-row__file">
-                        </div>
-                        <p class="label-light">
-                            <label for="ac-k-of-s" class="label-light__title">Вид спорта</label>
-                            <span class="label-light__symbol">*</span>
-                        </p>
-                        <input type="text" id="ac-k-of-s" class="input-light input-light__mb15">
-                        <p class="label-light label-light--ic">
-                            <label for="ac-coach" class="label-light__title">Тренер</label>
-                            <span class="label-light__symbol">*</span>
-                            <a href="#" class="label-light--link">
-                                <img src="/img/coach-ic.svg" alt="" class="label-light--ic">
-                            </a>
-                        </p>
-                        <div class="input-light__wrap">
-                            <input type="text" id="ac-coach" class="input-light input-light--ic input-light__mb15">
-                            <a href="#" class="label-light--link">
-                                <img src="/img/coach-ic.svg" alt="" class="label-light--ic">
-                            </a>
-                        </div>
-                        <p class="label-light label-light--ic">
-                            <label for="ac-info" class="label-light__title">Информация о наборе</label>
-                            <span class="label-light__symbol">*</span>
-                            <a href="#" class="label-light--link">
-                                <img src="/img/notif-reverse.svg" alt="" class="label-light--ic">
-                            </a>
-                        </p>
-                        <div class="input-light__wrap">
-                            <textarea type="text" id="ac-info" placeholder="" class="form-textarea__light input-light__mb15"></textarea>
-                            <a href="#" class="label-light--link">
-                                <img src="/img/coach-ic.svg" alt="" class="label-light--ic">
-                            </a>
-                        </div>
-                        <div class="row-acc__form-row">
-                            <div class="row-acc__form-col">
-                                <p class="label-light">
-                                    <label for="ac-date" class="label-light__title">Дата</label>
-                                    <span class="label-light__symbol">*</span>
-                                </p>
-                                <input type="date" id="ac-date" class="input-light input-light__mb15">
-                            </div>
-                            <div class="row-acc__form-col">
-                                <p class="label-light">
-                                    <label for="ac-time" class="label-light__title">Время</label>
-                                    <span class="label-light__symbol">*</span>
-                                </p>
-                                <input type="time" id="ac-time" class="input-light input-light__mb15">
-                            </div>
-                        </div>
-                        <p class="label-light">
-                            <label for="ac-lessons" class="label-light__title">Кол-во занятий</label>
-                            <span class="label-light__symbol">*</span>
-                        </p>
-                        <input type="text" id="ac-lessons" class="input-light input-light__mb15">
-                        <div class="row-acc__form-row">
-                            <div class="row-acc__form-col">
-                                <p class="label-light">
-                                    <label for="ac-price" class="label-light__title">Цена</label>
-                                    <span class="label-light__symbol">*</span>
-                                </p>
-                                <input type="number" id="ac-price" class="input-light input-light__mb15">
-                            </div>
-                            <div class="row-acc__form-col js-row-acc__form-col row-acc__form-col--info-block">
-                                <div class="label-light label-light--ic">
-                                    <label for="ac-sale" class="label-light__title">Скидка</label>
-                                    <span class="label-light__symbol">*</span>
-                                    <div class="label-light--link js-xx js-open-md" data-opn="info-block1">
-                                        <img src="/img/notif-reverse.svg" alt="" class="label-light--ic">
-                                    </div>
-                                </div>
-                                <div class="input-light__wrap">
-                                    <input type="number" id="ac-sale" class="input-light input-light--ic input-light__mb15">
-                                    <div class="label-light--link js-open-md" data-opn="info-block1">
-                                        <img src="/img/notif-reverse.svg" alt="" class="label-light--ic">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="row-acc__col50--title">Медиа</div>
+                    <form class="row-acc__form">
                         <div class="form__img-block form__img-block--big input-light__mb25">
                             <div class="form__img-block-top">
                                 <label for="ac-img" class="label-light__title">Галлерея фото 0/15</label>
@@ -253,7 +145,96 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form__btn-wrap">
+                        <div class="form__img-block form__img-block--big input-light__mb25">
+                            <div class="form__img-block-top">
+                                <label for="ac-video" class="label-light__title">Видео 0/1</label>
+                                <input type="file" id="ac-video" class="form-row__file">
+                            </div>
+                            <div class="form__img-block-body">
+                                <div class="form__img-block-img form__img-block-img--big"
+                                     style="background-image: url('/img/preview.png');">
+<!--                                    <video muted loop class="" poster="/img/poster.png">-->
+<!--                                        <source src="https://youtu.be/b6RpvwmMLWU" type="video/mp4">-->
+<!--                                    </video>-->
+                                </div>
+                                <div class="form__img-block-grid">
+                                    <div class="form__img-block-el" style="background-image: url('/img/preview.png');">
+                                        <video muted loop class="" poster="/img/poster.png">
+                                            <source src="https://youtu.be/b6RpvwmMLWU" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="form__img-block-el" style="background-image: url('/img/preview.png');">
+                                        <video muted loop class="" poster="/img/poster.png">
+                                            <source src="https://youtu.be/b6RpvwmMLWU" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="form__img-block-el" style="background-image: url('/img/preview.png');">
+                                        <video muted loop class="" poster="/img/poster.png">
+                                            <source src="https://youtu.be/b6RpvwmMLWU" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="form__img-block-el" style="background-image: url('/img/preview.png');">
+                                        <video muted loop class="" poster="/img/poster.png">
+                                            <source src="https://youtu.be/b6RpvwmMLWU" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="form__img-block-el" style="background-image: url('/img/preview.png');">
+                                        <video muted loop class="" poster="/img/poster.png">
+                                            <source src="https://youtu.be/b6RpvwmMLWU" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="form__img-block-el" style="background-image: url('/img/preview.png');">
+                                        <video muted loop class="" poster="/img/poster.png">
+                                            <source src="https://youtu.be/b6RpvwmMLWU" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="form__img-block-el" style="background-image: url('/img/preview.png');">
+                                        <video muted loop class="" poster="/img/poster.png">
+                                            <source src="https://youtu.be/b6RpvwmMLWU" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="form__img-block-el" style="background-image: url('/img/preview.png');">
+                                        <video muted loop class="" poster="/img/poster.png">
+                                            <source src="https://youtu.be/b6RpvwmMLWU" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="form__img-block-el" style="background-image: url('/img/preview.png');">
+                                        <video muted loop class="" poster="/img/poster.png">
+                                            <source src="https://youtu.be/b6RpvwmMLWU" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="form__img-block-el" style="background-image: url('/img/preview.png');">
+                                        <video muted loop class="" poster="/img/poster.png">
+                                            <source src="https://youtu.be/b6RpvwmMLWU" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="form__img-block-el" style="background-image: url('/img/preview.png');">
+                                        <video muted loop class="" poster="/img/poster.png">
+                                            <source src="https://youtu.be/b6RpvwmMLWU" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="form__img-block-el" style="background-image: url('/img/preview.png');">
+                                        <video muted loop class="" poster="/img/poster.png">
+                                            <source src="https://youtu.be/b6RpvwmMLWU" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="form__img-block-el" style="background-image: url('/img/preview.png');">
+                                        <video muted loop class="" poster="/img/poster.png">
+                                            <source src="https://youtu.be/b6RpvwmMLWU" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="form__img-block-el" style="background-image: url('/img/preview.png');">
+                                        <video muted loop class="" poster="/img/poster.png">
+                                            <source src="https://youtu.be/b6RpvwmMLWU" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-wrapper">
+                            <button class="button-rect btn-white">
+                                <span class="">Назад</span>
+                            </button>
                             <button class="button-rect btn-blue">Далее</button>
                         </div>
                     </form>

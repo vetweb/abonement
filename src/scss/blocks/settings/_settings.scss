@@ -79,12 +79,15 @@
   transition: all .3s;
 }
 
+.settings-s1 .row-acc__form .button-rect {
+  background-color: $blue;
+  color: $white;
+}
+
 .row-acc__form .button-rect {
   border-radius: 15px;
   padding: $indent-10;
   max-width: 190px;
-  background-color: $blue;
-  color: $white;
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
@@ -94,6 +97,7 @@
   margin-bottom: $indent-50;
 }
 
+.row-acc.row-acc--prod .row-acc__col25.row-acc__col25--right,
 .row-acc.row-acc--acc .row-acc__col25.row-acc__col25--right {
   padding: $indent-25 $indent-15 $indent-35;
 }

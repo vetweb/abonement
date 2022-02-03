@@ -1,0 +1,52 @@
+.media-s1 {
+  padding: 0 0 60px;
+
+  @include lgx {
+    padding: 50px 0 60px;
+  }
+
+  @include lg {
+    padding: 60px 0 100px;
+  }
+}
+
+
+.form__img-block-img.form__img-block-img--big {
+  width: 57px;
+  height: 47px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include lgx {
+    width: 20%;
+    height: 100%;
+    margin-right: $indent-10;
+  }
+}
+
+//.form__img-block-img.form__img-block-img--big video {
+//  min-height: 95px;
+//  height: 100%;
+//  width: 100%;
+//  object-fit: cover;
+//}
+
+.form__img-block-el {
+  position: relative;
+  overflow: hidden;
+  padding-top: 76.25%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.form__img-block-el video{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}

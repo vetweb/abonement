@@ -1,0 +1,152 @@
+.specifications-s1 {
+  padding: 0 0 60px;
+
+  @include lgx {
+    padding: 50px 0 60px;
+  }
+
+  @include lg {
+    padding: 60px 0 100px;
+  }
+}
+
+.specifications-s1 .row-acc__col50 {
+  @include sm-down {
+    width: 100%;
+  }
+}
+
+.specifications-s1 .row-acc__col25--right .row-acc__col25-top {
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0;
+  margin-bottom: $indent-20;
+}
+
+.index-s__mob-s .row-acc__list.row-acc__list--prod {
+  position: relative;
+}
+
+.specifications-s1 .row-acc__col25.row-acc__col25--right {
+  @include lg-down {
+   display: none;
+  }
+}
+
+.index-s__mob-s .row-acc__list.row-acc__list--prod:after {
+  @include lgx {
+    position: absolute;
+    content: '';
+    top: 18px;
+    left: 19px;
+    width: 2px;
+    height: 124px;
+    background-color: $blue;
+    z-index: 1;
+  }
+}
+
+.index-s__mob-s .row-acc__list-el {
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.index-s__mob-s .row-acc__list-el.active {
+  background-color: transparent;
+}
+
+.index-s__mob-s .index-s__mob-line .circle-item1 {
+  margin-right: 0;
+}
+
+.index-s__mob-s .circle-item1.circle-item1--before {
+  position: absolute;
+  top: 0;
+  right: 30%;
+}
+
+.index-s__mob-s .circle-item1.circle-item1--after {
+  position: absolute;
+  top: 0;
+  left: 30%;
+}
+
+.row-acc__list-el.active .circle-item2 {
+  background-color: $blue;
+}
+
+.circle-item2 {
+  width: 6px;
+  height: 6px;
+  background-color: $white;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.index-s__mob-line .circle-item2.active {
+  background-color: $blue;
+}
+
+.circle-item1 {
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  border: 1px solid $blue;
+  background-color: $white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: $indent-10;
+  position: relative;
+  z-index: 3;
+}
+
+.row-acc__list-el:hover {
+  color: $blue;
+}
+
+.index-s__mob-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.index-s__mob-line1 {
+  @include lgx-down {
+    height: 1px;
+    width: 100%;
+    background-color: $blue;
+    z-index: 1;
+  }
+}
+
+.specifications-s1 .row-acc__col50--desc {
+  margin-bottom: $indent-20;
+}
+
+.row-acc__col50--title.row-acc__col50--title--gray {
+  color: $gray-tx;
+}
+
+.row-acc__col50-inner .btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+.row-acc__col50-inner .btn-wrapper .button-rect {
+  max-width: 147px;
+}
+
+.row-acc__col50-inner .btn-wrapper .btn-white {
+  margin-bottom: 0;
+  margin-right: $indent-10;
+}
