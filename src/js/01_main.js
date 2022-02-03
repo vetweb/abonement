@@ -448,7 +448,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	let closeBtn = document.querySelector('.js-close-md');
 	let modalWindow = document.querySelector('.js-modal-window');
 
-	if (openBtn && closeBtn && modalWindow) {
+	if (openBtn && modalWindow) {
 		modalWindowShow();
 	}
 
@@ -465,6 +465,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 				let pathBtnOpen = this.dataset.opn;
 				let modalWindow = document.querySelector(`[data-md='${pathBtnOpen}']`);
+				console.log(modalWindow);
 
 				if (!modalWindow.classList.contains('show-md')) {
 					modalWindow.classList.add('show-md');
