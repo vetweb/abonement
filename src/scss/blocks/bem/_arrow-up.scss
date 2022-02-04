@@ -1,0 +1,24 @@
+.arrow-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $blue;
+  border-radius: 50%;
+  width: 51px;
+  height: 51px;
+  z-index: 5;
+  opacity: 0;
+}
+
+.arrow-up.show {
+  position: fixed;
+  bottom: 20%;
+  right: 30px;
+  opacity: 1;
+}
+
+.arrow-up svg {
+  width: 15px;
+  height: 17px;
+  color: $white;
+}

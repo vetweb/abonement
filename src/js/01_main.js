@@ -514,4 +514,18 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 
+	let arrowUp = document.querySelector('.js-arrow-up');
+
+	window.addEventListener('scroll', function () {
+		if (pageYOffset > 400) {
+			arrowUp.classList.add('show');
+		}
+		if (pageYOffset <= 400) {
+			arrowUp.classList.remove('show');
+		}
+	});
+
+	arrowUp.addEventListener('click', function () {
+		window.scrollTo({top: 0, behavior: 'smooth'});
+	});
 });
