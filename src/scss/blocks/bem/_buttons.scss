@@ -23,9 +23,10 @@ button {
 }
 
 .button-rect {
-  padding: $indent-20 0;
   color: $white;
   width: 100%;
+  padding: $indent-10;
+  border-radius: 15px;
   display: flex;
   align-items: center;
   justify-content: center;

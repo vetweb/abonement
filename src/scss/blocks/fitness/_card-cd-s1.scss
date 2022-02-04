@@ -273,8 +273,6 @@
 
 .button-block .button-rect {
   width: 100%;
-  border-radius: 15px;
-  padding: $indent-10;
 
   @include sm {
     max-width: 136px;

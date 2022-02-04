@@ -401,10 +401,10 @@ a.policy-link {
 }
 
 .modal-window__form .button-rect {
-  border-radius: 15px;
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
+  padding: 20px 0;
 
   @include sm-down {
     padding: 10px 0;
