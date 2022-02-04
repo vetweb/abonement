@@ -28,6 +28,13 @@
   }
 }
 
+.index-s__mob-s .preview-s1 .row-acc__col50,
+.index-s__mob-s .row-acc__col25.row-acc__col25--left {
+  @include lg {
+    min-height: 248px;
+  }
+}
+
 .index-s__mob-s .index-s__mob .link-back .index-s__mob__icon svg {
   color: currentColor;
   width: 13px;

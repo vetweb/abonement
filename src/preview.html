@@ -88,18 +88,37 @@
             <div class="row-acc__col50">
                 <div class="row-acc__col50-inner">
                     <div class="row-acc__col50--title">Предварительный просмотр</div>
-                    <form class="row-acc__form">
-                        <div class="btn-wrapper">
-                            <button class="button-rect btn-white">
-                                <span class="">Назад</span>
-                            </button>
-                            <button class="button-rect btn-blue">Далее</button>
-                        </div>
-                    </form>
+                    <div class="btn-wrapper">
+                        <button class="button-rect btn-white">
+                            <span class="">Назад</span>
+                        </button>
+                        <button class="button-rect btn-blue js-open-md" data-opn="prod-md1">Далее</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+        <div class="modal-window js-modal-window" data-md="prod-md1">
+            <div class="modal-window__content modal-window__content--prod">
+                <div class="modal-window__close js-close-md" data-cls="prod-md1">
+                    <svg viewBox="0 0 22 22">
+                        <use xlink:href="/img/sprite.svg#circle-close"></use>
+                    </svg>
+                </div>
+                <div class="modal-inner">
+                    <p class="modal-inner__title">Товар отправлен на модерацию!</p>
+                    <p class="modal-inner__desc">
+                        Обычно эта процедура занимает от 1 часа до 2х дней.
+                    </p>
+                    <div class="links-wrapper">
+                        <a href="/index.html" class="button-rect btn-white">
+                            <span class="">На главную</span>
+                        </a>
+                        <a href="#" class="button-rect btn-blue">Далее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 </section>
 </main>
 @@include('components/blocks/page/_footer.html')

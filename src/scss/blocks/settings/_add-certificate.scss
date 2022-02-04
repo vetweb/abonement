@@ -1,0 +1,319 @@
+.add-certif-s1 {
+  padding: 25px 0 60px;
+
+  @include sm {
+    padding: 50px 0 60px;
+  }
+
+  @include lg {
+    padding: 60px 0 100px;
+  }
+}
+
+.row-product {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-product__col:not(:last-child) {
+  margin-bottom: $indent-30;
+}
+
+.row-product__col-top {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 10px;
+
+  @include sm {
+    padding: $indent-25 $indent-30;
+    background-color: $white;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.row-product__col-top .button-rect {
+  border-radius: 15px;
+  padding: $indent-10;
+  font-size: 16px;
+  line-height: 18px;
+  width: 100%;
+
+  @include sm {
+    max-width: 220px;
+  }
+}
+
+.row-product__col-top .search__form {
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: $indent-15;
+
+  @include sm {
+    max-width: 287px;
+    margin-bottom: 0;
+  }
+}
+
+.row-product__col-top .search__field {
+  @include sm-down {
+    max-width: 100%;
+  }
+}
+
+.row-product__col-top .search__input {
+  @include sm-down {
+   background-color: $white;
+    border: 1px solid $blue;
+  }
+}
+
+.row-product__col-top .search__button .search__icon {
+  color: $blue;
+  width: 15px;
+  height: 15px;
+}
+
+.row-product__col-top .search__button {
+  width: 30px;
+}
+
+.row-product__col-inner,
+.row-acc__col50-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.row-product__col.row-product__col--middle {
+  padding: 0;
+  background-color: transparent;
+  border-radius: 10px;
+
+  @include sm {
+    padding: $indent-25 $indent-30;
+    background-color: $white;
+  }
+}
+
+.row-product__col--middle .row-acc-grid__top.row-acc-grid__row .row-acc-grid__cell {
+  background-color: transparent;
+}
+
+.row-product__col--middle .row-acc-grid__body .row-acc-grid__cell {
+  border: 0;
+}
+
+.row-product__col--middle .row-acc-grid__body .row-acc-grid__row {
+  @include sm {
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid transparent;
+  }
+}
+
+.row-product__col--middle .row-acc-grid__body .row-acc-grid__row:first-child {
+  @include sm {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+  }
+}
+
+.row-product__col--middle .row-acc-grid__top.row-acc-grid__row .row-acc-grid__cell {
+  color: $gray-tx;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.row-product__col--middle .row-acc-grid__row.row-acc-grid__row-bottom .row-acc-grid__cell {
+  color: $blue-bg;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.row-product .row-product__col--middle .row-acc-grid__row.row-acc-grid__row-bottom .row-acc-grid__cell:nth-child(1),
+.row-product .row-product__col--middle .row-acc-grid__row .row-acc-grid__cell:nth-child(1) {
+  width: fit-content;
+
+  @include sm {
+    width: 15%;
+  }
+}
+
+.row-product .row-product__col--middle .row-acc-grid__row .row-acc-grid__cell:nth-child(2) {
+  width: 100%;
+
+  @include sm {
+    width: 20%;
+  }
+}
+
+.row-product .row-product__col--middle .row-acc-grid__row .row-acc-grid__cell:nth-child(3) {
+  width: 100%;
+
+  @include sm {
+    width: 30%;
+  }
+}
+
+.row-product .row-product__col--middle .row-acc-grid__row .row-acc-grid__cell:nth-child(4) {
+  width: 100%;
+
+  @include sm {
+    width: 15%;
+  }
+}
+
+.row-product .row-product__col--middle .row-acc-grid__row .row-acc-grid__cell:nth-child(5) {
+  width: 100%;
+
+  @include sm {
+    width: 15%;
+  }
+}
+
+.row-product .row-product__col--middle .row-acc-grid__row .row-acc-grid__cell:nth-child(6) {
+  width: 100%;
+
+  @include sm {
+    width: 15%;
+  }
+}
+
+.row-product .row-product__col--middle .row-acc-grid__cell .row-acc__list-icon svg {
+  width: 20px;
+  height: 20px;
+  color: #D4DCE3;
+}
+
+.row-product .row-product__col--middle .row-acc-grid__cell:hover .row-acc__list-icon svg {
+  color: $blue;
+}
+
+.row-product .row-product__col--middle .row-acc-grid__cell.row-acc-grid__cell--text,
+.row-product .row-product__col--middle .row-acc-grid__cell.row-acc-grid__cell--ic {
+  @include sm {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.row-product .row-product__col--middle .row-acc-grid__cell.row-acc-grid__cell--text{
+  @include sm-down {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.row-product .row-product__col--middle .row-acc-grid__cell{
+  @include sm {
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+.btn-tag {
+  width: 131px;
+  padding: $indent-10;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.btn-tag.btn-tag--green {
+  background-color: #EBFFF5;
+  color: $green-dark;
+}
+
+.btn-tag.btn-tag--orange{
+  background-color: #FFF8DF;
+  color: $orange;
+}
+
+.btn-tag.btn-tag--red{
+  background-color: #FFF2F2;
+  color: $red;
+}
+
+
+.row-product .row-product__col--middle .row-acc-grid__cell-img {
+  display: inline-flex;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 59px;
+  height: 88px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.row-product .row-product__col--middle .row-acc-grid__cell-img img {
+  width: 59px;
+  height: 88px;
+  border-radius: 4px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.row-product .row-product__col--middle .row-acc-grid__cell--desk {
+  display: none;
+
+  @include sm {
+    display: flex;
+  }
+}
+
+.row-product .row-product__col--middle .row-acc-grid__row {
+  @include sm-down {
+    width: 100%;
+  }
+}
+
+.row-product .row-product__col--middle .row-acc-grid__cell.row-acc-grid__cell--mob {
+  @include sm-down {
+    padding-top: $indent-25;
+    justify-content: center;
+    display: flex;
+    border-top: 1px solid #F3F3F3;
+  }
+}
+
+.row-product .row-product__col--middle .row-acc-grid__cell.row-acc-grid__cell--mob span:first-child {
+  @include sm-down {
+    margin-right: $indent-40;
+  }
+}
+
+.row-product .row-product__col--middle .row-acc__list-icon.row-acc__list-icon--mob {
+  display: flex;
+
+  @include sm {
+    display: none;
+  }
+}
+
+.row-product .row-product__col--middle .row-acc-grid__cell-mobile {
+  display: flex;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $blue-bg;
+
+  @include sm {
+    display: none;
+  }
+}
+
+.row-product .row-product__col--middle .row-acc-grid__row--body {
+  @include sm-down {
+    padding: $indent-20 $indent-25;
+  }
+}

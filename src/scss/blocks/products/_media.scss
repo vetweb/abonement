@@ -1,5 +1,4 @@
-.media-s1,
-.preview-s1 {
+.media-s1 {
   padding: 0 0 60px;
 
   @include lgx {
@@ -117,3 +116,4 @@
 .media-s1 .row-acc__col25-top.row-acc__col25--bottom .row-acc__col25-ic svg {
   color: $red;
 }
+
