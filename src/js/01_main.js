@@ -420,6 +420,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	let searchHeader = document.querySelector('.js-header-search-form')
 	let searchToggleIcon = document.querySelector('.js-search-toggle')
 
+	let mobileMenu = document.querySelector('.js-header-search-form')
 
 	//Top menu header
 	let listParentTopMenu = document.querySelector('.js-filter-parent')
@@ -435,7 +436,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		};
 
 		dropdownFilterMenu.onmouseleave = function(e) {
-			console.log('jj')
 			e = e || event;
 			let target = e.target || e.srcElement;
 			listParentTopMenu.classList.remove('active');

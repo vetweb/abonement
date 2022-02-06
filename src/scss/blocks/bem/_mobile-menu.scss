@@ -1,0 +1,47 @@
+.mobile-menu {
+	position: fixed;
+	top: 70px;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 100;
+	background: #0F1F53;
+
+	@include md {
+		top: 90px;
+	}
+
+	@include lg {
+		display: none;
+	}
+}
+
+.mobile-menu__container {
+	margin: 20px 10px;
+}
+
+.mobile-menu__search {
+	margin-bottom: 25px;
+}
+
+.mobile-menu__btn-add-company {
+	justify-content: space-between;
+	margin-left: 0;
+	margin-bottom: 10px;
+}
+
+.mobile-menu__btn-reg-auth {
+	justify-content: space-between;
+}
+
+.mobile-menu__cont-block .cont__mail {
+	color: rgba(195, 195, 195, .5);
+}
+
+.mobile-menu__wrapper {
+	margin: 40px 0;
+}
+
+.mobile-menu-list__item {
+
+}

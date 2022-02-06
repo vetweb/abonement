@@ -119,6 +119,7 @@ button {
 
 .btn-add-company {
   height: 40px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,6 +131,10 @@ button {
   border-radius: 5px;
   padding: 0 16px;
   border: none;
+
+  @include md {
+    width: auto;
+  }
 }
 
 .btn-add-company__icon {
@@ -140,6 +145,7 @@ button {
 
 .btn-reg-auth {
   @include flex(center, center);
+  width: 100%;
   border: 1px solid rgba(195, 195, 195, 0.2);
   padding: 8px 14px 8px 20px;
   border-radius: 5px;
@@ -148,6 +154,10 @@ button {
 
   &:hover {
     border-color: #fff;
+  }
+
+  @include md {
+    width: auto;
   }
 }
 
