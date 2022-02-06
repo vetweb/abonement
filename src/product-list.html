@@ -89,35 +89,35 @@
                 <div class="row-product__col row-product__col--middle">
                     <div class="row-product__col-inner">
                         <div class="row-acc-grid__top row-acc-grid__row row-acc-grid__row--desk">
-                            <a href="#" class="row-acc-grid__cell active row-acc-grid__cell--top">
+                            <a href="#" class="row-acc-grid__cell row-acc-grid__cell--top active js-toggle-btn">
                                 <span class="">0</span>
                                 <span class="row-acc-grid__cell-title">Все товары</span>
                             </a>
-                            <a href="#" class="row-acc-grid__cell row-acc-grid__cell--top">
+                            <a href="#" class="row-acc-grid__cell row-acc-grid__cell--top js-toggle-btn">
                                 <span class="">0</span>
                                 <span class="">Готовы к продаже</span>
                             </a>
-                            <a href="#" class="row-acc-grid__cell row-acc-grid__cell--top">
+                            <a href="#" class="row-acc-grid__cell row-acc-grid__cell--top js-toggle-btn">
                                 <span class="">0</span>
                                 <span class="">В продаже</span>
                             </a>
-                            <a href="#" class="row-acc-grid__cell row-acc-grid__cell--top">
+                            <a href="#" class="row-acc-grid__cell row-acc-grid__cell--top js-toggle-btn">
                                 <span class="">0</span>
                                 <span class="">С ошибками</span>
                             </a>
-                            <a href="#" class="row-acc-grid__cell row-acc-grid__cell--top">
+                            <a href="#" class="row-acc-grid__cell row-acc-grid__cell--top js-toggle-btn">
                                 <span class="">0</span>
                                 <span class="">Плохое описание</span>
                             </a>
-                            <a href="#" class="row-acc-grid__cell row-acc-grid__cell--top">
+                            <a href="#" class="row-acc-grid__cell row-acc-grid__cell--top js-toggle-btn">
                                 <span class="">0</span>
                                 <span class="">Без фото</span>
                             </a>
-                            <a href="#" class="row-acc-grid__cell row-acc-grid__cell--top">
+                            <a href="#" class="row-acc-grid__cell row-acc-grid__cell--top js-toggle-btn">
                                 <span class="">0</span>
                                 <span class="">Снято с продажи</span>
                             </a>
-                            <a href="#" class="row-acc-grid__cell row-acc-grid__cell--top">
+                            <a href="#" class="row-acc-grid__cell row-acc-grid__cell--top js-toggle-btn">
                                 <span class="">0</span>
                                 <span class="">В архиве</span>
                             </a>
@@ -178,11 +178,45 @@
                                             <div class="row-acc-grid__cell-img row-acc-grid__cell-img--prod" style="background-image: url('/img/user-bg.png');">
                                                 <img src="/img/bg1-sl.png" alt="">
                                             </div>
-                                            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            <p class="row-acc-grid__cell-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                                 sed do eiusmod tempor </p>
                                         </div>
                                         <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--text">
-                                            <span class="">12.12.2021 16:54</span>
+                                            <span class="row-acc-grid__cell-date">12.12.2021 16:54</span>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--text">
+                                            <p class="row-acc-grid__cell-price">22 <span class="">br</span></p>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--prod js-edit-certif row-acc-grid__cell--ic row-acc-grid__cell--mob">
+                                            <span class="row-acc__list-icon">
+                                                <svg viewBox="0 0 24 24">
+                                                    <use xlink:href="/img/sprite.svg#edit-c"></use>
+                                                </svg>
+                                            </span>
+                                            <span class="row-acc__list-icon row-acc__list-icon--mob">
+                                                <svg viewBox="0 0 24 24">
+                                                    <use xlink:href="/img/sprite.svg#trash"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--prod js-delete-certif row-acc-grid__cell--ic row-acc-grid__cell--desk">
+                                            <span class="row-acc__list-icon">
+                                                <svg viewBox="0 0 24 24">
+                                                    <use xlink:href="/img/sprite.svg#trash"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="row-acc-grid__row row-acc-grid__row-bottom">
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--desk">
+                                            <div class="row-acc-grid__cell-img row-acc-grid__cell-img--prod" style="background-image: url('/img/user-bg.png');">
+                                                <img src="/img/bg1-sl.png" alt="">
+                                            </div>
+                                            <p class="row-acc-grid__cell-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                sed do eiusmod tempor </p>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--text">
+                                            <span class="row-acc-grid__cell-date">12.12.2021 16:54</span>
                                         </div>
                                         <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--text">
                                             <p class="row-acc-grid__cell-price">22 <span class="">br</span></p>
@@ -225,6 +259,25 @@
                                             </svg>
                                         </span>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination-block">
+                        <span class="pagination-block__title">Кол-во строк:</span>
+                        <div class="pagination-block__select-wrapper select-wrapper">
+                            <div class="pagination-block__select select js-select">
+                                <div class="select__header js-select__header">
+                                    <div class="select__current js-select__current">10</div>
+                                    <span class="pagination-block__ic js-select__icon">
+                                        <svg viewBox="0 0 14 13">
+                                            <use xlink:href="/img/sprite.svg#arr-down"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="select__body js-select__body">
+                                    <div class="select__item js-select__item">20</div>
+                                    <div class="select__item js-select__item">50</div>
                                 </div>
                             </div>
                         </div>
