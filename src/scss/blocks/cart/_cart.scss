@@ -290,14 +290,19 @@
   }
 }
 
-.modal-window__close svg {
-  width: 17px;
-  height: 17px;
-  flex-shrink: 0;
+.modal-window__close {
   position: absolute;
   top: 15px;
   right: 15px;
   cursor: pointer;
+}
+
+.modal-window__close svg {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+  top: 15px;
+  right: 15px;
 }
 
 .md-cart-form__title {

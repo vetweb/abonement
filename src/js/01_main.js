@@ -422,26 +422,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 	//Top menu header
-	let listParentTopMenu = document.querySelector('.js-filter-parent')
-	let listItemsTopMenu = listParentTopMenu.querySelectorAll('.js-filter')
-	let dropdownFilterMenu = document.querySelector('.js-filter-menu')
-
-	listItemsTopMenu.forEach(function(elem) {
-		elem.onmouseover = function(e) {
-			e = e || event;
-			let target = e.target || e.srcElement;
-			dropdownFilterMenu.classList.add('active');
-			listParentTopMenu.classList.add('active');
-		};
-
-		dropdownFilterMenu.onmouseleave = function(e) {
-			console.log('jj')
-			e = e || event;
-			let target = e.target || e.srcElement;
-			listParentTopMenu.classList.remove('active');
-			dropdownFilterMenu.classList.remove('active');
-		};
-	});
+	// let listParentTopMenu = document.querySelector('.js-filter-parent')
+	// let listItemsTopMenu = listParentTopMenu.querySelectorAll('.js-filter')
+	// let dropdownFilterMenu = document.querySelector('.js-filter-menu')
+	//
+	// listItemsTopMenu.forEach(function(elem) {
+	// 	elem.onmouseover = function(e) {
+	// 		e = e || event;
+	// 		let target = e.target || e.srcElement;
+	// 		dropdownFilterMenu.classList.add('active');
+	// 		listParentTopMenu.classList.add('active');
+	// 	};
+	//
+	// 	dropdownFilterMenu.onmouseleave = function(e) {
+	// 		console.log('jj')
+	// 		e = e || event;
+	// 		let target = e.target || e.srcElement;
+	// 		listParentTopMenu.classList.remove('active');
+	// 		dropdownFilterMenu.classList.remove('active');
+	// 	};
+	// });
 
 	//Modal
 	let openBtn = document.querySelector('.js-open-md');
@@ -469,9 +469,11 @@ document.addEventListener('DOMContentLoaded', () => {
 				if (!modalWindow.classList.contains('show-md')) {
 					modalWindow.classList.add('show-md');
 					document.body.style.overflowY = 'hidden';
+					document.body.style.paddingRight = '14px';
 				} else {
 					modalWindow.classList.remove('show-md');
 					document.body.style.overflowY = 'visible';
+					document.body.style.paddingRight = '';
 				}
 			});
 		});
@@ -513,6 +515,21 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		});
 	}
+
+	// hidden Modal (chat)
+	let chatBtns = document.querySelectorAll('.js-chat-btn');
+
+	chatBtns.forEach(btn => {
+		btn.addEventListener('click', hiddenModal);
+
+		function hiddenModal() {
+			let parentModal = this.closest('.js-modal-window');
+
+			if (parentModal.classList.contains('show-md')) {
+				parentModal.classList.remove('show-md');
+			}
+		}
+	});
 
 	let arrowUp = document.querySelector('.js-arrow-up');
 
