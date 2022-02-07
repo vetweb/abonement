@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+@@include('components/blocks/page/_head.html',{
+"lang":"en",
+"title":"Абонемент",
+"description":"Абонемент",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+<!--@@include('components/blocks/page/_header.html')-->
+<main class="customer-reviews-s index-s__mob-s">
+    <section class="customer-reviews-s1">
+        <div class="index-s__mob">
+            <div class="container">
+                <a href="/coaches.html" class="link-back">
+                     <span class="index-s__mob__icon">
+                        <svg  viewBox="0 0 8 15">
+                            <use xlink:href="/img/sprite.svg#arr-left"></use>
+                        </svg>
+                    </span>
+                    <span class="row-acc__title">Назад</span>
+                </a>
+                <p class="settings-s__title">Список товаров</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="index-s__top">
+                <p class="settings-s__title">Список товаров</p>
+            </div>
+            <div class="row-product table-r">
+                <div class="row-product__col row-product__col--middle">
+                    <div class="row-acc-grid__top row-acc-grid__row row-acc-grid__row--desk row-acc-grid__row--mr">
+                        <a href="#" class="row-acc-grid__cell row-acc-grid__cell--top active js-toggle-btn">
+                            <span class="">0</span>
+                            <span class="row-acc-grid__cell-title">Все отзывы</span>
+                        </a>
+                        <a href="#" class="row-acc-grid__cell row-acc-grid__cell--top js-toggle-btn">
+                            <span class="">0</span>
+                            <span class="">Новые</span>
+                        </a>
+                        <a href="#" class="row-acc-grid__cell row-acc-grid__cell--top js-toggle-btn">
+                            <span class="">0</span>
+                            <span class="">Просмотренные</span>
+                        </a>
+                        <a href="#" class="row-acc-grid__cell row-acc-grid__cell--top js-toggle-btn">
+                            <span class="">0</span>
+                            <span class="">Обработанные</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row-product__col row-product__col--10 row-product__col--middle">
+                    <div class="row-product__col-inner">
+                        <div class="row-acc-grid">
+                            <div class="row-acc-grid__body">
+                                <div class="row-product__col-top row-product__col-top--btns">
+                                    <form action="" class="search__form">
+                                        <div class="form__field search__field">
+                                            <input type="text" name="" class="search__input form__input" placeholder="Поиск поназванию или артиклу">
+                                            <button class="search__button">
+                                                <span class="search__icon">
+                                                     <svg class="icon-svg" viewBox="0 0 20 20" >
+                                                        <use xlink:href="/img/sprite.svg#search"></use>
+                                                     </svg>
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <div class="select-wrapper select-wrapper--grid">
+                                            <div class="select select-light js-select">
+                                                <div class="select__header js-select__header">
+                                                    <div class="select__current js-select__current">Любые оценки</div>
+                                                    <div class="select__ic-wrap">
+                                                        <span class="select__icon js-select__icon">
+                                                            <svg viewBox="0 0 16 10">
+                                                                <use xlink:href="/img/sprite.svg#arr-down"></use>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="select__body js-select__body">
+                                                    <div class="select__item js-select__item">1</div>
+                                                    <div class="select__item js-select__item">2</div>
+                                                    <div class="select__item js-select__item">3</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="row-product__col-btns">
+                                        <button class="button-rect btn-white">
+                                            <span class="">Отметить все как просмотренные</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row-acc-grid__top row-acc-grid__row row-acc-grid__row--desk">
+                                    <div class="row-acc-grid__cell row-acc-grid__cell--icon">
+                                        <span class="row-acc-grid__cell-name">Дата и время</span>
+                                        <span class="row-acc__list-icon">
+                                            <svg viewBox="0 0 24 24">
+                                                <use xlink:href="/img/sprite.svg#arr-down-long"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="row-acc-grid__cell row-acc-grid__cell--icon">
+                                        <span class="row-acc-grid__cell-name">Статус</span>
+                                        <span class="row-acc__list-icon">
+                                            <svg viewBox="0 0 24 24">
+                                                <use xlink:href="/img/sprite.svg#arr-down-long"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="row-acc-grid__cell">Товар</div>
+                                    <div class="row-acc-grid__cell row-acc-grid__cell--icon">
+                                        <span class="row-acc-grid__cell-name">Оценка</span>
+                                        <span class="row-acc__list-icon">
+                                            <svg viewBox="0 0 24 24">
+                                                <use xlink:href="/img/sprite.svg#arr-down-long"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="row-acc-grid__cell">Достоинства</div>
+                                    <div class="row-acc-grid__cell">Недостатки</div>
+                                    <div class="row-acc-grid__cell">Ком-и</div>
+                                    <div class="row-acc-grid__cell row-acc-grid__cell--icon">
+                                        <span class="row-acc-grid__cell-name">Пол-й</span>
+                                        <span class="row-acc__list-icon">
+                                            <svg viewBox="0 0 24 24">
+                                                <use xlink:href="/img/sprite.svg#arr-down-long"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="row-acc-grid__cell row-acc-grid__cell--icon">
+                                        <span class="row-acc-grid__cell-name">Беспол-й</span>
+                                        <span class="row-acc__list-icon">
+                                            <svg viewBox="0 0 24 24">
+                                                <use xlink:href="/img/sprite.svg#arr-down-long"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="row-acc-grid__cell"></div>
+                                </div>
+                                <div class="row-acc-grid__row--body">
+                                    <div class="row-acc-grid__row row-acc-grid__row--mob">
+                                        <div class="select-wrapper">
+                                            <div class="select js-select">
+                                                <div class="select__header js-select__header">
+                                                    <div class="select__current js-select__current">Все товары (0)</div>
+                                                    <span class="select__icon js-select__icon">
+                                                        <svg viewBox="0 0 16 10">
+                                                            <use xlink:href="/img/sprite.svg#arrow-down-select"></use>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <div class="select__body js-select__body">
+                                                    <div class="select__item js-select__item">Все товары (0)</div>
+                                                    <div class="select__item js-select__item">Все товары (0)</div>
+                                                    <div class="select__item js-select__item">Все товары (0)</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row-acc-grid__row row-acc-grid__row-bottom">
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <span class="row-acc-grid__cell-mobile">Дата и время</span>
+                                            <span class="row-acc-grid__cell-line">12.12.2021 16:54</span>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <span class="row-acc-grid__cell-mobile">Статус</span>
+                                            <div class="btn-tag btn-tag--green">Проверен</div>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <span class="row-acc-grid__cell-mobile">Товар</span>
+                                            <span class="row-acc-grid__cell-line">Посещение спортзала “Платинум Фитнес”</span>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <span class="row-acc-grid__cell-mobile">Оценка</span>
+                                            <span class="row-acc-grid__cell-line">2/5</span>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <span class="row-acc-grid__cell-mobile">Достоинства</span>
+                                            <span class="row-acc-grid__cell-line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </span>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <span class="row-acc-grid__cell-mobile">Комментарии</span>
+                                            <span class="row-acc-grid__cell-line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </span>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <span class="row-acc-grid__cell-line">1</span>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <span class="row-acc-grid__cell-line">1</span>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <span class="row-acc-grid__cell-line">1</span>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <button class="button-rect btn-blue">Разместить в карточке</button>
+                                        </div>
+                                    </div>
+                                    <div class="row-acc-grid__row row-acc-grid__row-bottom">
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <span class="row-acc-grid__cell-mobile">Дата и время</span>
+                                            <span class="row-acc-grid__cell-line">12.12.2021 16:54</span>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <span class="row-acc-grid__cell-mobile">Статус</span>
+                                            <div class="btn-tag btn-tag--green">Проверен</div>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <span class="row-acc-grid__cell-mobile">Товар</span>
+                                            <span class="row-acc-grid__cell-line">Посещение спортзала “Платинум Фитнес”</span>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <span class="row-acc-grid__cell-mobile">Оценка</span>
+                                            <span class="row-acc-grid__cell-line">2/5</span>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <span class="row-acc-grid__cell-mobile">Достоинства</span>
+                                            <span class="row-acc-grid__cell-line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </span>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <span class="row-acc-grid__cell-mobile">Комментарии</span>
+                                            <span class="row-acc-grid__cell-line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </span>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <span class="row-acc-grid__cell-line">1</span>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <span class="row-acc-grid__cell-line">1</span>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <span class="row-acc-grid__cell-line">1</span>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <button class="button-rect btn-blue">Разместить в карточке</button>
+                                        </div>
+                                    </div>
+                                    <div class="row-acc-grid__row row-acc-grid__row-bottom">
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <span class="row-acc-grid__cell-mobile">Дата и время</span>
+                                            <span class="row-acc-grid__cell-line">12.12.2021 16:54</span>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <span class="row-acc-grid__cell-mobile">Статус</span>
+                                            <div class="btn-tag btn-tag--green">Проверен</div>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <span class="row-acc-grid__cell-mobile">Товар</span>
+                                            <span class="row-acc-grid__cell-line">Посещение спортзала “Платинум Фитнес”</span>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <span class="row-acc-grid__cell-mobile">Оценка</span>
+                                            <span class="row-acc-grid__cell-line">2/5</span>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <span class="row-acc-grid__cell-mobile">Достоинства</span>
+                                            <span class="row-acc-grid__cell-line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </span>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <span class="row-acc-grid__cell-mobile">Комментарии</span>
+                                            <span class="row-acc-grid__cell-line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </span>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <span class="row-acc-grid__cell-line">1</span>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <span class="row-acc-grid__cell-line">1</span>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <span class="row-acc-grid__cell-line">1</span>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--rev">
+                                            <button class="button-rect btn-blue">Разместить в карточке</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination-block">
+                        <span class="pagination-block__title">Кол-во строк:</span>
+                        <div class="pagination-block__select-wrapper select-wrapper">
+                            <div class="pagination-block__select select js-select">
+                                <div class="select__header js-select__header">
+                                    <div class="select__current js-select__current">10</div>
+                                    <span class="pagination-block__ic js-select__icon">
+                                        <svg viewBox="0 0 14 13">
+                                            <use xlink:href="/img/sprite.svg#arr-down"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="select__body js-select__body">
+                                    <div class="select__item js-select__item">20</div>
+                                    <div class="select__item js-select__item">50</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+@@include('components/blocks/page/_footer.html')
+@@include('components/blocks/page/_scripts.html')
+</body>
+
+</html>
