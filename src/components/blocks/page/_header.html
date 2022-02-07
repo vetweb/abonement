@@ -3,7 +3,7 @@
         <div class="container">
             <div class="header__container">
                 <div class="header__left">
-                    <a href="##" class="header__logo"></a>
+                    @@include('../bem/_logo.html')
                     <div class="header__location-change location-change js-location-change">
                         <span class="location-change__icon">
                             <svg class="icon-svg">
@@ -75,20 +75,6 @@
     @@include('../bem/_top-menu.html')
     @@include('../bem/_mobile-menu.html')
     <div class="modal-window modal-window--reg-auth js-modal-window" data-md="reg-auth" style="background-image: url('/img/reg-bg.png');">
-        <div class="modal-window__top">
-            @@include('../bem/_logo-block.html')
-            <div class="modal-window__inner">
-                <div class="modal-window__nav">
-                    <a href="#" class="modal-window__nav-link">О компании</a>
-                    <a href="#" class="modal-window__nav-link">Новости</a>
-                    <a href="#" class="modal-window__nav-link">Контакты</a>
-                </div>
-                <a href="#" class="modal-window__inner-link">
-                    <span class="">Помощь</span>
-                    <img src="/img/help-ic.png" alt="">
-                </a>
-            </div>
-        </div>
         <div class="modal-window__content modal-window__content--reg">
             <div class="modal-window__close js-close-md" data-cls="reg-auth">
                 <svg viewBox="0 0 22 22">

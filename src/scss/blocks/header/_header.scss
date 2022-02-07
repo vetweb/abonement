@@ -1,5 +1,14 @@
 .header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
 	background: $blue-bg;
+	z-index: 101;
+
+	@include lg {
+		position: relative;
+	}
 }
 
 .header__top {
@@ -14,7 +23,7 @@
 	@include flex(center, space-between);
 }
 
-.header__logo {
+.logo {
 	display: block;
 	width: 140px;
 	height: 34px;
@@ -31,7 +40,7 @@
 	display: none;
 
 	@include md {
-		display: block;
+		display: flex;
 	}
 }
 
@@ -116,7 +125,6 @@
 	}
 
 	.form__input {
-		border-color: transparent;
 		color: #ffffff;
 	}
 }

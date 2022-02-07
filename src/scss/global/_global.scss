@@ -114,6 +114,11 @@ body {
 
 .main {
 	overflow: hidden;
+	padding-top: 70px;
+
+	@include lg {
+		padding-top: 0;
+	}
 }
 
 .ev-section {
