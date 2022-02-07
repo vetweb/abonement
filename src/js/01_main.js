@@ -422,26 +422,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 	//Top menu header
-	// let listParentTopMenu = document.querySelector('.js-filter-parent')
-	// let listItemsTopMenu = listParentTopMenu.querySelectorAll('.js-filter')
-	// let dropdownFilterMenu = document.querySelector('.js-filter-menu')
-	//
-	// listItemsTopMenu.forEach(function(elem) {
-	// 	elem.onmouseover = function(e) {
-	// 		e = e || event;
-	// 		let target = e.target || e.srcElement;
-	// 		dropdownFilterMenu.classList.add('active');
-	// 		listParentTopMenu.classList.add('active');
-	// 	};
-	//
-	// 	dropdownFilterMenu.onmouseleave = function(e) {
-	// 		console.log('jj')
-	// 		e = e || event;
-	// 		let target = e.target || e.srcElement;
-	// 		listParentTopMenu.classList.remove('active');
-	// 		dropdownFilterMenu.classList.remove('active');
-	// 	};
-	// });
+	let listParentTopMenu = document.querySelector('.js-filter-parent')
+	let listItemsTopMenu = listParentTopMenu.querySelectorAll('.js-filter')
+	let dropdownFilterMenu = document.querySelector('.js-filter-menu')
+
+	listItemsTopMenu.forEach(function(elem) {
+		elem.onmouseover = function(e) {
+			e = e || event;
+			let target = e.target || e.srcElement;
+			dropdownFilterMenu.classList.add('active');
+			listParentTopMenu.classList.add('active');
+		};
+
+		dropdownFilterMenu.onmouseleave = function(e) {
+			console.log('jj')
+			e = e || event;
+			let target = e.target || e.srcElement;
+			listParentTopMenu.classList.remove('active');
+			dropdownFilterMenu.classList.remove('active');
+		};
+	});
 
 	//Modal
 	let openBtn = document.querySelector('.js-open-md');

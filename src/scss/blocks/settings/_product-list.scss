@@ -92,7 +92,7 @@
   padding: $indent-10;
 
   @include sm {
-    padding: $indent-20;
+    padding: $indent-20 0;
   }
 
   @include lg {

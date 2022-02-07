@@ -1,0 +1,23 @@
+.report-s1 {
+  padding: 0 0 60px;
+  background-color: $white;
+
+  @include sm {
+    background-color: transparent;
+    padding: 0 0 60px;
+  }
+
+  @include lgx {
+    padding: 60px 0 100px;
+  }
+}
+
+.report-s1 .row-product.row-certif {
+  margin-bottom: $indent-20;
+}
+
+.report-s1 .row-acc-grid__body .row-acc-grid__top.row-acc-grid__row {
+  @include lg {
+    justify-content: flex-start;
+  }
+}
