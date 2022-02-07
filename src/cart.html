@@ -8,8 +8,8 @@
 })
 
 <body>
-<!--@@include('components/blocks/page/_header.html')-->
-<main class="main cart-s js-parent-box parent-box">
+@@include('components/blocks/page/_header.html')
+<main class="cart-s js-parent-box parent-box">
     <section class="cart-s1">
         <div class="container">
             <div class="index-s__top">
@@ -167,19 +167,19 @@
                     <use xlink:href="/img/sprite.svg#circle-close"></use>
                 </svg>
             </div>
-            <form class="modal-window__form md-cart-form">
+            <form class="modal-window__form form-light md-cart-form">
                 <div class="md-cart-form__title">Вход</div>
-                <p class="md-cart-form__label">
-                    <label for="md-name" class="md-cart-form__label-name">Имя</label>
-                    <span class="modal-window-form__symbol">*</span>
+                <p class="label-light">
+                    <label for="md-name" class="label-light__title">Имя</label>
+                    <span class="label-light__symbol">*</span>
                 </p>
-                <input type="text" id="md-name" class="md-cart-form__input md-cart-form--name">
-                <p class="md-cart-form__label">
-                    <label for="md-email" class="md-cart-form__label-name">Email</label>
-                    <span class="modal-window-form__symbol">*</span>
+                <input type="text" id="md-name" class="input-light input-light__mb15">
+                <p class="label-light">
+                    <label for="md-email" class="label-light__title">Email</label>
+                    <span class="label-light__symbol">*</span>
                 </p>
-                <input type="text" id="md-email" class="md-cart-form__input md-cart-form--email">
-                <p class="md-cart-form__label md-cart-form--policy">
+                <input type="text" id="md-email" class="input-light input-light__mb25">
+                <p class="label-light label-light--policy">
                     <input type="checkbox" id="md-policy"  class="styled-checkbox policy-checkbox">
                     <label for="md-policy" class="md-cart-form__label-policy">Я соглашаюсь с
                         <a href="" class="policy-link">Пользовательским cоглашением</a> и с <a href="" class="policy-link">Правилами

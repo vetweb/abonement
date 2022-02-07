@@ -1,0 +1,119 @@
+.media-s1 {
+  padding: 0 0 60px;
+
+  @include lgx {
+    padding: 50px 0 60px;
+  }
+
+  @include lg {
+    padding: 60px 0 100px;
+  }
+}
+
+.form__img-block-video {
+  width: 57px;
+  height: 47px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  @include lgx {
+    width: 20%;
+    height: 100%;
+    max-height: 185px;
+    margin-right: $indent-10;
+  }
+}
+
+.form__img-block-video__big {
+  position: relative;
+  overflow: hidden;
+  padding-top: 75.25%;
+
+  @include lgx {
+    padding-top: 80.25%;
+  }
+}
+
+.form__img-block-video__big video{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+
+  @include lgx {
+    max-height: 185px;
+  }
+}
+
+.form__img-block-el {
+  position: relative;
+  overflow: hidden;
+  padding-top: 76.25%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form__img-block-el video{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.row-acc__col25--desc .row-acc__col25--start {
+  color: $blue-bg;
+}
+
+.media-s1 .row-acc__col25.row-acc__col25--right .row-acc__col25--desc {
+  margin-bottom: $indent-10;
+}
+
+.media-s1 .row-acc__col25.row-acc__col25--right .row-acc__col25--desc:last-child {
+  margin-bottom: 0;
+}
+
+.row-acc__col25--start,
+.media-s1 .row-acc__col25--desc {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.row-acc__col25--start {
+  color: $blue-bg;
+}
+
+.media-s1 a.row-acc__col25--link {
+  color: $blue;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.media-s1 .row-acc__col25.row-acc__col25--right .row-acc__col25-body {
+  align-items: flex-start;
+}
+
+.media-s1 .row-acc__col25-ic svg {
+  color: $orange;
+  width: 20px;
+  height: 20px;
+  margin-right: $indent-10;
+}
+
+.row-acc__col25-top.row-acc__col25--bottom {
+  margin-top: $indent-30;
+}
+
+.media-s1 .row-acc__col25-top.row-acc__col25--bottom .row-acc__col25-ic svg {
+  color: $red;
+}
+

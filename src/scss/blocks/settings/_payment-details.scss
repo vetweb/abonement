@@ -1,0 +1,78 @@
+.payment-details-s1 {
+  padding: 25px 0 60px;
+
+  @include sm {
+    padding: 50px 0 60px;
+  }
+
+  @include lg {
+    padding: 60px 0 100px;
+  }
+}
+
+.select-light .select__header {
+  border-radius: 10px;
+  cursor: pointer;
+  padding: $indent-10;
+  width: 100%;
+  color: $blue-bg;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  height: 42px;
+  background: $white;
+  border: 1px solid #E1EBF5;
+}
+
+.select__ic-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.select-light .select__icon svg {
+  color: $blue-bg;
+  width: 14px;
+  height: 10px;
+}
+
+.select__icon--close {
+  margin-left: $indent-10;
+}
+
+.select__icon--close svg {
+  width: 20px;
+  height: 20px;
+  bottom: -2px;
+  position: relative;
+}
+
+.select-light .select__body {
+  display: none;
+  overflow: hidden;
+  background: $white;
+  border: 1px solid #E1EBF5;
+  border-radius: 10px;
+  width: 100%;
+  color: $blue-bg;
+}
+
+.select-light .select__item {
+  border-top: 1px solid #E1EBF5;
+  border-bottom: 1px solid #E1EBF5;
+}
+
+.select-light .select__item:first-child {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.select-light .select__item:last-child {
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+}
+
+.payment-details-s1 .row-acc__col25--right .row-acc__list-icon svg {
+  color: $red;
+}

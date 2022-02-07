@@ -227,6 +227,12 @@
   color: $gray-tx;
   font-size: 18px;
   line-height: 26px;
+  font-weight: 400;
+
+  @include sm-down {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 .tabs-content__el.active {

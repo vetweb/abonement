@@ -290,9 +290,18 @@ a.breadcrumbs-block__link {
   }
 }
 
+.company-card-s .search-block__right-top .select {
+  margin-left: 0;
+  width: 190px;
+
+  @include sm-down {
+    width: 100%;
+  }
+}
+
 .company-card-s .button-rect.btn-green {
   display: flex;
-  width: 40%;
+  width: 50%;
   margin: 0 0 0 $indent-10;
 
   @include lg {

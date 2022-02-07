@@ -153,6 +153,15 @@
 	}
 }
 
+.main-banner__col20-visible .main-banner__col20-col .main-banner__col20-desc.link-s {
+	max-width: 140px;
+	width: 100%;
+}
+
+.main-banner__col-small .main-banner__col20-visible .main-banner__col20-col:last-child {
+	background-color: $blue;
+}
+
 .banner-slider__inner {
 	z-index: 3;
 	padding: 10px;
@@ -308,7 +317,7 @@
 
 .banner-slider-el.banner-slider-el-mask:before {
 	@include lgx {
-		width: 65%;
+		width: 69%;
 		mask-image: url("/img/mask.svg");
 		position: absolute;
 		content: '';
@@ -423,6 +432,10 @@
 	width: 100%;
 	overflow: hidden;
 	padding-left: $indent-20;
+}
+
+.col20-fullcol-inner.col20-fullcol-inner--bottom .button-rect {
+	border-radius: 10px;
 }
 
 .main-banner__col20-desc {

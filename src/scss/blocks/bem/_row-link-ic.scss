@@ -11,6 +11,14 @@
   margin-right: $indent-15;
 }
 
+.row-link-ic.row-link-ic--mob .h5.row-link-ic__title {
+  @include sm-down {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
 .row-link-ic img {
   width: 6px;
   height: 12px;

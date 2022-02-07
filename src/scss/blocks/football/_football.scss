@@ -56,6 +56,11 @@
   left: 0;
   background-color: $black-t;
 }
+.card-sub-2__col50 .btn-wrapp {
+  @include sm {
+    justify-content: flex-start;
+  }
+}
 
 .btn-wrapp {
   display: flex;
@@ -70,7 +75,6 @@
 
 .btn-wrapp .button-rect {
   width: 100%;
-  border-radius: 15px;
   padding: 12px 8px;
 
   @include sm {
@@ -203,12 +207,10 @@
 
 .table-l__body-el:hover {
   background-color: $blue-bg4;
-  border-radius: 15px;
   overflow: hidden;
 }
 
 .table-l__body-el .button-rect {
-  border-radius: 15px;
   font-weight: 700;
   background-color: $white;
   color: $blue;

@@ -1,3 +1,16 @@
+.add-coach-s1,
+.coaches-s1 {
+  padding: 25px 0 60px;
+
+  @include sm {
+    padding: 50px 0 60px;
+  }
+
+  @include lg {
+    padding: 60px 0 100px;
+  }
+}
+
 .row-acc__col50-inner__top {
   display: flex;
   flex-direction: column;
@@ -11,8 +24,6 @@
 }
 
 .row-acc__col50-inner__top .button-rect {
-  border-radius: 15px;
-  padding: $indent-10;
   max-width: 100%;
   margin-top: 10px;
 
@@ -22,17 +33,25 @@
   }
 }
 
+.preview-s .row-acc__col50,
+.coaches-s .row-acc__col50 {
+  @include sm-down  {
+    background-color: transparent;
+  }
+}
+
+.preview-s .row-acc__col50,
+.add-coach-s .row-acc__col50,
 .coaches-s .row-acc__col50 {
   @include sm-down  {
     padding: $indent-10;
-    background-color: transparent;
     border-radius: 0;
   }
 
-    @include lg {
-      max-width: 955px;
-      height: 100%;
-    }
+  @include lg {
+    max-width: 955px;
+    height: 100%;
+  }
 }
 
 .row-acc-grid__row a {

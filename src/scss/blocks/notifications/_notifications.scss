@@ -63,7 +63,7 @@
   width: 100%;
   padding: $indent-35;
   border-radius: 8px;
-  overflow: hidden;
+  //overflow: hidden;
 
   @include lg {
     max-width: 630px;
@@ -201,6 +201,7 @@ a.row-acc__list-link {
   margin-bottom: $indent-50;
 }
 
+.row-prod__col30--desc,
 .row-acc__col25--desc {
   font-weight: 400;
   font-size: 14px;

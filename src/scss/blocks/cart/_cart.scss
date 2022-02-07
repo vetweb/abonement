@@ -314,8 +314,7 @@
     margin-bottom: $indent-35;
   }
 }
-
-.md-cart-form__label {
+.label-light {
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 16px;
@@ -325,29 +324,32 @@
   justify-content: flex-start;
 }
 
-.md-cart-form__label-name {
+.label-light__title {
   color: #828282;
   margin-right: 5px;
 }
 
-.modal-window-form__symbol {
+.label-light__symbol {
   color: $red;
 }
 
-.md-cart-form__input  {
+.input-light  {
+  font-size: 16px;
+  line-height: 20px;
+  color: $blue-bg;
   width: 100%;
   height: 32px;
   background: $white;
   border: 1px solid #E1EBF5;
   border-radius: 10px;
-  padding: 5px;
+  padding: 10px;
 
   @include sm {
     height: 42px;
   }
 }
 
-.md-cart-form__input.md-cart-form--name {
+.input-light__mb15 {
   margin-bottom: $indent-10;
 
   @include sm {
@@ -355,7 +357,7 @@
   }
 }
 
-.md-cart-form__input.md-cart-form--email {
+.input-light__mb25 {
   margin-bottom: $indent-15;
 
   @include sm {
@@ -387,7 +389,7 @@ a.policy-link {
   }
 }
 
-.md-cart-form__label.md-cart-form--policy {
+.label-light.label-light--policy {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -399,10 +401,10 @@ a.policy-link {
 }
 
 .modal-window__form .button-rect {
-  border-radius: 15px;
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
+  padding: 20px 0;
 
   @include sm-down {
     padding: 10px 0;
