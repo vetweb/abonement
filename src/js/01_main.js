@@ -416,11 +416,19 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	}
 
+
+	// Mobile Menu
+	let mobileBurger = document.querySelector('.js-mobile-menu-toggle')
+	let mobileMenu = document.querySelector('.js-mobile-menu')
+
+	mobileBurger.addEventListener('click', function () {
+		mobileMenu.classList.toggle('show');
+		this.classList.toggle('show');
+	});
+
 	//Search mobile header
 	let searchHeader = document.querySelector('.js-header-search-form')
 	let searchToggleIcon = document.querySelector('.js-search-toggle')
-
-	let mobileMenu = document.querySelector('.js-header-search-form')
 
 	//Top menu header
 	let listParentTopMenu = document.querySelector('.js-filter-parent')
@@ -442,6 +450,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			dropdownFilterMenu.classList.remove('active');
 		};
 	});
+
 
 	//Modal
 	let openBtn = document.querySelector('.js-open-md');

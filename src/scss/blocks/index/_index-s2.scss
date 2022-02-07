@@ -10,7 +10,7 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	margin: 0 -15px;
+	margin: 0 -10px;
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
 	@include lg {
@@ -154,8 +154,8 @@
 }
 
 .banner-slider__inner {
-	left: $indent-10;
 	z-index: 3;
+	padding: 10px;
 
 	@include sm {
 		position: absolute;
@@ -164,12 +164,12 @@
 		top: 67px;
 	}
 
-	@include xl {
-		left: $indent-50;
+	@include lg {
+		padding: 0;
 	}
 
-	@include sm-down {
-		bottom: 110px;
+	@include xl {
+		left: $indent-50;
 	}
 }
 

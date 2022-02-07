@@ -2,3 +2,20 @@
 	color: #ffffff;
 	cursor: pointer;
 }
+
+.burger__open, .burger__close {
+	transition: all .3s ease-in-out;
+}
+
+.burger__close {
+	position: absolute;
+	transform: scale(0);
+}
+
+.burger.show .burger__open {
+	transform: scale(0);
+}
+
+.burger.show .burger__close {
+	transform: scale(1);
+}
