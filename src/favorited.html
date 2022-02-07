@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+@@include('components/blocks/page/_head.html',{
+"lang":"en",
+"title":"Абонемент",
+"description":"Абонемент",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+@@include('components/blocks/page/_header.html')
+<main class="product-list-s report-s favorited-s index-s__mob-s">
+    <section class=" report-s1">
+        <div class="index-s__mob">
+            <div class="container">
+                <a href="/coaches.html" class="link-back">
+                     <span class="index-s__mob__icon">
+                        <svg  viewBox="0 0 8 15">
+                            <use xlink:href="/img/sprite.svg#arr-left"></use>
+                        </svg>
+                    </span>
+                    <span class="row-acc__title">Назад</span>
+                </a>
+                <p class="settings-s__title">Отчеты</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="index-s__top">
+                <p class="settings-s__title">Отчеты</p>
+            </div>
+            <div class="row-product row-certif">
+                <div class="row-product__col row-product__col--middle">
+                    <div class="row-acc-grid__top row-acc-grid__row row-acc-grid__row--desk row-acc-grid__row--mr">
+                        <a href="/reports.html" class="row-acc-grid__cell row-acc-grid__cell--top js-toggle-btn">
+                            <span class="">0</span>
+                            <span class="row-acc-grid__cell-title">Проданные</span>
+                        </a>
+                        <a href="/returns.html" class="row-acc-grid__cell row-acc-grid__cell--top js-toggle-btn">
+                            <span class="">0</span>
+                            <span class="">Возвраты</span>
+                        </a>
+                        <a href="/views.html" class="row-acc-grid__cell row-acc-grid__cell--top js-toggle-btn">
+                            <span class="">0</span>
+                            <span class="">Просмотры</span>
+                        </a>
+                        <a href="/favorited.html" class="row-acc-grid__cell active row-acc-grid__cell--top js-toggle-btn">
+                            <span class="">0</span>
+                            <span class="">Занесено в любимое</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-product row-certif">
+                <div class="row-product__col row-product__col--middle">
+                    <div class="row-product__col-inner">
+                        <div class="row-acc-grid">
+                            <div class="row-acc-grid__body">
+                                <div class="row-acc-grid__row row-acc-grid__row--mob">
+                                    <div class="select-wrapper">
+                                        <div class="select js-select">
+                                            <div class="select__header js-select__header">
+                                                <div class="select__current js-select__current">Все товары (0)</div>
+                                                <span class="select__icon js-select__icon">
+                                                        <svg viewBox="0 0 16 10">
+                                                            <use xlink:href="/img/sprite.svg#arrow-down-select"></use>
+                                                        </svg>
+                                                    </span>
+                                            </div>
+                                            <div class="select__body js-select__body">
+                                                <div class="select__item js-select__item">Все товары (0)</div>
+                                                <div class="select__item js-select__item">Все товары (0)</div>
+                                                <div class="select__item js-select__item">Все товары (0)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row-product__col-top row-product__col-top--btns">
+                                    <form action="" class="search__form">
+                                        <div class="form__field search__field">
+                                            <input type="text" name="" class="search__input form__input" placeholder="Поиск поназванию или артиклу">
+                                            <button class="search__button">
+                                                <span class="search__icon">
+                                                     <svg class="icon-svg" viewBox="0 0 20 20" >
+                                                        <use xlink:href="/img/sprite.svg#search"></use>
+                                                     </svg>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </form>
+                                    <div class="row-product__col-btns">
+                                        <button class="button-rect button-rect--svg btn-white">
+                                            <span class="">Выгрузить отчет</span>
+                                            <svg viewBox="0 0 14 13">
+                                                <use xlink:href="/img/sprite.svg#arr-download"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row-acc-grid__top row-acc-grid__row row-acc-grid__row--desk">
+                                    <div class="row-acc-grid__cell row-acc-grid__cell--prod">Товар</div>
+                                    <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--text">Дата и время</div>
+                                    <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--text">Количество занесений</div>
+                                </div>
+                                <div class="row-acc-grid__row--body">
+                                    <div class="row-acc-grid__cell row-acc-grid__cell--mob">
+                                        <div class="row-acc-grid__cell-img" style="background-image: url('/img/user-bg.png');">
+                                            <img src="/img/bg1-sl.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row-acc-grid__row row-acc-grid__row-bottom">
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--desk">
+                                            <div class="row-acc-grid__cell-img row-acc-grid__cell-img--prod" style="background-image: url('/img/user-bg.png');">
+                                                <img src="/img/bg1-sl.png" alt="">
+                                            </div>
+                                            <p class="row-acc-grid__cell-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                sed do eiusmod tempor </p>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--text">
+                                            <span class="row-acc-grid__cell-date">12.12.2021 16:54</span>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--text">
+                                            <p class="row-acc-grid__cell-num">1</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row-acc-grid__row--body">
+                                    <div class="row-acc-grid__cell row-acc-grid__cell--mob">
+                                        <div class="row-acc-grid__cell-img" style="background-image: url('/img/user-bg.png');">
+                                            <img src="/img/bg1-sl.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row-acc-grid__row row-acc-grid__row-bottom">
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--desk">
+                                            <div class="row-acc-grid__cell-img row-acc-grid__cell-img--prod" style="background-image: url('/img/user-bg.png');">
+                                                <img src="/img/bg1-sl.png" alt="">
+                                            </div>
+                                            <p class="row-acc-grid__cell-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                sed do eiusmod tempor </p>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--text">
+                                            <span class="row-acc-grid__cell-date">12.12.2021 16:54</span>
+                                        </div>
+                                        <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--text">
+                                            <p class="row-acc-grid__cell-num">1</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination-block">
+                        <span class="pagination-block__title">Кол-во строк:</span>
+                        <div class="pagination-block__select-wrapper select-wrapper">
+                            <div class="pagination-block__select select js-select">
+                                <div class="select__header js-select__header">
+                                    <div class="select__current js-select__current">10</div>
+                                    <span class="pagination-block__ic js-select__icon">
+                                        <svg viewBox="0 0 14 13">
+                                            <use xlink:href="/img/sprite.svg#arr-down"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="select__body js-select__body">
+                                    <div class="select__item js-select__item">20</div>
+                                    <div class="select__item js-select__item">50</div>
+                                    <div class="select__item js-select__item">100</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+@@include('components/blocks/page/_footer.html')
+@@include('components/blocks/page/_scripts.html')
+</body>
+
+</html>

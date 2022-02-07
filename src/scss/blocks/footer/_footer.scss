@@ -322,6 +322,7 @@
   overflow: hidden;
   border: 2px solid $white;
   background-color: $blue-bg;
+  cursor: pointer;
 
   @include lg {
     right: 100px;
@@ -333,4 +334,157 @@
   height: 25px;
   top: 3px;
   position: relative;
+}
+
+.modal-window__chat {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background: transparent;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  transition: transform .5s ease;
+}
+
+.modal-window__chat.show-md {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-window__content.modal-window__content--chat {
+  padding: $indent-20;
+  width: 293px;
+  box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
+  height: 147px;
+}
+
+.modal-window__content.modal-window__content--chat .modal-inner {
+  align-items: flex-start;
+}
+
+.modal-window__content.modal-window__content--chat .modal-inner__title {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.chat-btns {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+}
+
+.chat-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  background-color: $white;
+  padding: $indent-10 0;
+  border-radius: 10px;
+}
+
+.chat-btn:hover {
+  background: $gray-light;
+}
+
+.chat-btn__ic {
+  margin-right: $indent-10;
+}
+
+.chat-btn__ic svg {
+  width: 20px;
+  height: 20px;
+  color: $gray-tx;
+}
+
+.chat-btn__title {
+  color: $gray-tx;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.modal-window__chat-help {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.4);
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  transition: transform .5s ease;
+}
+
+.modal-window__chat-help.show-md {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-window__content.modal-window__content--chat-help {
+  padding: $indent-20;
+  width: 560px;
+  height: 100%;
+  border-radius: 0;
+
+  @include lg {
+    padding: $indent-40 $indent-30;
+    height: 871px;
+  }
+}
+
+.modal-window__content.modal-window__content--chat-help .modal-inner {
+  align-items: flex-start;
+}
+
+.modal-window__content.modal-window__content--chat-help .row-acc__form.row-acc__form--chat-help {
+  width: 100%;
+}
+
+.row-acc__form.row-acc__form--chat-help .row-acc__col50--title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 20px;
+  margin-bottom: $indent-80;
+}
+
+.modal-window__content.modal-window__content--chat-help .modal-inner__title  {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 20px;
+  padding-bottom: $indent-30;
+  border-bottom: 1px solid #F1F2F5;
+
+  @include lg {
+    margin-bottom: $indent-100;
+  }
+}
+
+.modal-window__content.modal-window__content--chat-help .button-rect {
+  margin: 0 0 0 auto;
+}
+
+.modal-window__content.modal-window__content--chat-help .modal-window__close svg {
+  width: 53px;
+  height: 53px;
+}
+
+.modal-window__content.modal-window__content--chat-help .modal-window__close {
+  position: absolute;
+  top: 15px;
+  right: auto;
+  left: -60px;
+  cursor: pointer;
 }

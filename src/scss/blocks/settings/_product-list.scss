@@ -86,13 +86,13 @@
 
 .row-product__col-top.row-product__col-top--btns {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   width: 100%;
   background-color: $white;
   padding: $indent-10;
 
   @include sm {
-    padding: $indent-20;
+    padding: $indent-20 0;
   }
 
   @include lg {
@@ -128,7 +128,7 @@
   border-radius: 10px;
   margin-bottom: $indent-10;
 
-  @include lg {
+  @include lgx {
     margin-bottom: 0;
   }
 }
@@ -157,6 +157,11 @@
 
 .row-product__col-top--btns .search__input {
   min-width: 300px;
+  margin-bottom: $indent-15;
+
+  @include lg {
+    margin-bottom: 0;
+  }
 }
 
 .row-product__col-top--btns .search__input::placeholder {
@@ -194,7 +199,12 @@ a.row-acc-grid__cell.row-acc-grid__cell--top {
   align-items: flex-end;
 }
 
-.row-acc-grid__cell.row-acc-grid__cell--top.active .row-acc-grid__cell-title{
+.row-product__col--middle .row-acc-grid__top.row-acc-grid__row .row-acc-grid__cell.row-acc-grid__cell--top {
+  background-color: transparent;
+  color: $gray-tx;
+}
+
+.row-product__col--middle .row-acc-grid__top.row-acc-grid__row .row-acc-grid__cell.row-acc-grid__cell--top.active {
   color: $blue;
 }
 
@@ -212,7 +222,7 @@ a.row-acc-grid__cell.row-acc-grid__cell--top {
   width: fit-content;
 
   @include sm {
-    width: 45%;
+    width: 35%;
   }
 }
 
@@ -221,7 +231,7 @@ a.row-acc-grid__cell.row-acc-grid__cell--top {
   width: 100%;
 
   @include sm {
-    width: 15%;
+    width: 20%;
   }
 }
 
@@ -230,7 +240,7 @@ a.row-acc-grid__cell.row-acc-grid__cell--top {
   width: 100%;
 
   @include sm {
-    width: 15%;
+    width: 20%;
   }
 }
 
@@ -252,20 +262,28 @@ a.row-acc-grid__cell.row-acc-grid__cell--top {
 }
 
 .row-product .row-product__col--middle .row-acc-grid__cell-img.row-acc-grid__cell-img--prod {
-  width: 160px;
+  width: 110px;
   height: 88px;
   margin-right: $indent-10;
 }
 
 .row-product .row-product__col--middle .row-acc-grid__cell-img.row-acc-grid__cell-img--prod img {
-  width: 160px;
+  width: 110px;
   height: 88px;
   border-radius: 4px;
 }
 
-.row-acc-grid__body .row-acc-grid__top.row-acc-grid__row,
-.row-acc-grid__top.row-acc-grid__row.row-acc-grid__row--desk {
-  //display: none;
+.row-acc-grid__body .row-acc-grid__top.row-acc-grid__row {
+  @include lg {
+    display: flex;
+    justify-content: space-between;
+    padding: $indent-10 0;
+    border-bottom: 1px solid #E0E0E0;
+  }
+}
+
+.product-list-s1 .row-acc-grid__top.row-acc-grid__row.row-acc-grid__row--desk {
+  display: none;
 
   @include lg {
     display: flex;
@@ -285,12 +303,6 @@ a.row-acc-grid__cell.row-acc-grid__cell--top {
     display: none;
   }
 }
-//
-//.row-acc-grid__row.row-acc-grid__row--mob .select-wrapper {
-//  @include lg {
-//    margin-bottom: $indent-20;
-//  }
-//}
 
 .product-list-s .row-product__col--middle .row-acc-grid__body .row-acc-grid__row.row-acc-grid__row--blue,
 .product-list-s .row-product__col--middle .row-acc-grid__body .row-acc-grid__row.row-acc-grid__row--green {
@@ -305,6 +317,11 @@ a.row-acc-grid__cell.row-acc-grid__cell--top {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 0;
+
+  @include lg {
+    margin-bottom: $indent-55;
+  }
 }
 
 .row-acc-grid__row.row-acc-grid__row--green {
@@ -341,4 +358,79 @@ a.row-acc-grid__cell.row-acc-grid__cell--top {
   @include sm-down {
     padding: $indent-10;
   }
+}
+
+.row-acc-grid__cell.row-acc-grid__cell--prod .row-acc-grid__cell-text {
+  max-width: 200px;
+  min-width: 145px;
+}
+
+.pagination-block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $gray-tx;
+  width: 100%;
+}
+
+.product-list-s1 .pagination-block {
+  display: none;
+
+  @include lg {
+    display: flex;
+  }
+}
+
+.pagination-block__select-wrapper.select-wrapper {
+  width: 65px;
+}
+
+.pagination-block .select__item {
+  padding: $indent-10;
+}
+
+.pagination-block .select__current {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $gray-tx;
+  margin-right: $indent-20;
+}
+
+.pagination-block .select__header {
+  background: transparent;
+  border-radius: 0;
+  cursor: pointer;
+  padding: 0 0 0 $indent-10;
+  width: 100%;
+  color: $gray-tx;
+}
+
+.pagination-block .select__body {
+  display: none;
+  overflow: hidden;
+  background: $white;
+  width: 100%;
+  color: $gray-tx;
+}
+
+.pagination-block__title {
+  margin-right: 5px;
+}
+
+.pagination-block__ic svg {
+  width: 15px;
+  height: 10px;
+  color: $blue-bg;
+  cursor: pointer;
+  transform: rotate(0deg);
+  transition: all .3s;
+  flex-shrink: 0;
+}
+
+.select.is-active .pagination-block__ic svg {
+  transform: rotate(180deg);
 }

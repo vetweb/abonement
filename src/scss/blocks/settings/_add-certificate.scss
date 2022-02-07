@@ -250,6 +250,7 @@
   height: 88px;
   border-radius: 4px;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .row-product .row-product__col--middle .row-acc-grid__cell-img img {
@@ -258,6 +259,7 @@
   border-radius: 4px;
   overflow: hidden;
   object-fit: cover;
+  flex-shrink: 0;
 }
 
 .row-product .row-product__col--middle .row-acc-grid__cell--desk {

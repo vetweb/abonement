@@ -1,0 +1,85 @@
+.information-s1 {
+  padding: 0 0 60px;
+
+  @include lgx {
+    padding: 50px 0 60px;
+  }
+
+  @include lg {
+    padding: 60px 0 100px;
+  }
+}
+
+.index-s__mob-s.information-s .row-acc__col25 {
+  width: 100%;
+  border-radius: 8px;
+  padding: $indent-35;
+
+  @include lg {
+    max-width: 630px;
+    height: 100%;
+  }
+}
+
+.index-s__mob-s.information-s .row-acc__col50--title {
+  margin-bottom: $indent-25;
+}
+
+.index-s__mob-s.information-s .row-acc__col25.row-acc__col25--left {
+  @include sm-down {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  @include lgx-down {
+    display: block;
+  }
+}
+
+.index-s__mob-s.information-s .button-rect {
+  margin-left: auto;
+  max-width: 100%;
+
+  @include sm {
+    max-width: 147px;
+  }
+}
+
+.index-s__mob-s.information-s .row-acc__col50 {
+  width: 100%;
+  padding: $indent-35;
+  border-radius: 8px;
+
+  @include sm-down {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  @include lg {
+    max-width: 630px;
+    height: 100%;
+  }
+}
+
+.index-s__mob-s.information-s .row-acc__col25.row-acc__col25--left textarea {
+  height: 120px;
+  margin-bottom: $indent-45;
+  background-color: $white;
+
+  @include sm {
+    height: 245px;
+  }
+
+  @include lg {
+    height: 282px;
+  }
+}
+
+//input[type=file] {
+//  color: transparent;
+//  width: 100px;
+//
+//  @include sm {
+//    width: 153px;
+//  }
+//}
