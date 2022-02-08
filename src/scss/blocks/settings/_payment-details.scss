@@ -42,10 +42,15 @@
 }
 
 .select__icon--close svg {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   bottom: -2px;
   position: relative;
+
+  @include lg {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .select-light .select__body {

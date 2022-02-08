@@ -105,9 +105,8 @@
         </div>
         @@include('../bem/_chat-circle.html')
         @@include('../bem/_arrow-up.html')
-        <div class="modal-window__chat js-modal-window" data-md="chat-md">
+        <div class="modal-window__chat js-info-block" data-block="info-block2">
             <div class="modal-window__content modal-window__content--chat">
-                <div class="modal-window__close js-close-md" data-cls="chat-md"></div>
                 <div class="modal-inner">
                     <p class="modal-inner__title">Служба поддержки</p>
                     <div class="chat-btns">
@@ -119,7 +118,7 @@
                             </span>
                             <span class="chat-btn__title">Помощь</span>
                         </div>
-                        <div class="chat-btn js-chat-btn js-open-md" data-opn="help-chat"  type="button">
+                        <div class="chat-btn js-chat-btn js-close-info-block js-open-md" data-opn="help-chat" data-hidden="info-block2"  type="button">
                             <span class="chat-btn__ic">
                                 <svg viewBox="0 0 22 22">
                                     <use xlink:href="/img/sprite.svg#message"></use>
@@ -131,94 +130,98 @@
                 </div>
             </div>
         </div>
-        <div class="modal-window__chat-help js-modal-window" data-md="help-chat">
-            <div class="modal-window__content modal-window__content--chat-help">
-                <div class="modal-window__close js-close-md" data-cls="help-chat">
-                    <svg viewBox="0 0 53 53">
-                        <use xlink:href="/img/sprite.svg#x-circle"></use>
-                    </svg>
-                </div>
-                <div class="modal-inner">
-                    <p class="modal-inner__title">Помощь</p>
-                    <form action="" class="row-acc__form row-acc__form--chat-help">
-                        <div class="row-acc__col50--title">Какой у вас вопрос?</div>
-                        <p class="label-light">
-                            <label class="label-light__title">Валюта</label>
-                            <span class="label-light__symbol">*</span>
-                        </p>
-                        <div class="select-wrapper input-light__mb15">
-                            <div class="select select-light js-select">
-                                <div class="select__header js-select__header">
-                                    <div class="select__current js-select__current">Выбрать валюту</div>
-                                    <div class="select__ic-wrap">
-                                        <span class="select__icon js-select__icon">
-                                            <svg viewBox="0 0 16 10">
-                                                <use xlink:href="/img/sprite.svg#arr-down"></use>
-                                            </svg>
-                                        </span>
-                                        <span class="select__icon--close js-select__icon--close">
-                                            <svg viewBox="0 0 22 22">
-                                                <use xlink:href="/img/sprite.svg#circle-close"></use>
-                                            </svg>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="select__body js-select__body">
-                                    <div class="select__item js-select__item">RUB</div>
-                                    <div class="select__item js-select__item">USD</div>
-                                    <div class="select__item js-select__item">BLR</div>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="label-light">
-                            <label class="label-light__title">Валюта</label>
-                            <span class="label-light__symbol">*</span>
-                        </p>
-                        <div class="select-wrapper input-light__mb15">
-                            <div class="select select-light js-select">
-                                <div class="select__header js-select__header">
-                                    <div class="select__current js-select__current">Выбрать валюту</div>
-                                    <div class="select__ic-wrap">
-                                        <span class="select__icon js-select__icon">
-                                            <svg viewBox="0 0 16 10">
-                                                <use xlink:href="/img/sprite.svg#arr-down"></use>
-                                            </svg>
-                                        </span>
-                                        <span class="select__icon--close js-select__icon--close">
-                                            <svg viewBox="0 0 22 22">
-                                                <use xlink:href="/img/sprite.svg#circle-close"></use>
-                                            </svg>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="select__body js-select__body">
-                                    <div class="select__item js-select__item">RUB</div>
-                                    <div class="select__item js-select__item">USD</div>
-                                    <div class="select__item js-select__item">BLR</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="input-light__wrap">
-                            <textarea type="text" id="ac-info" placeholder="" class="form-textarea__light input-light__mb15"></textarea>
-                        </div>
-                        <div class="row-acc__form-row row-acc__form-row--bottom">
-                            <div class="row-acc__col50--title">Документы</div>
-                            <div class="row-acc__form-col row-acc__form-col--100">
-                                <p class="label-light">
-                                        <span class="form-row__icon">
-                                            <svg class="icon-svg">
-                                                <use xlink:href="/img/sprite.svg#file"></use>
-                                            </svg>
-                                        </span>
-                                    <label for="md-file" class="label-light__file">Перетащите файл или</label>
-                                </p>
-                                <input type="file" id="md-file" class="form-row__file">
-                            </div>
-                        </div>
-                        <button class="button-rect btn-blue">Далее</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+        <div class="overlay js-overlay-info-block" data-overlay="info-block2"></div>
     </div>
 </footer>
+<div class="modal-window__chat-help js-modal-window" data-md="help-chat">
+    <div class="modal-window__content modal-window__content--chat-help">
+        <div class="modal-window__close js-close-md" data-cls="help-chat">
+            <svg viewBox="0 0 53 53">
+                <use xlink:href="/img/sprite.svg#x-circle"></use>
+            </svg>
+        </div>
+        <div class="modal-inner">
+            <p class="modal-inner__title">Помощь</p>
+            <form action="" class="row-acc__form row-acc__form--chat-help">
+                <div class="row-acc__col50--title">Какой у вас вопрос?</div>
+                <p class="label-light">
+                    <label class="label-light__title">Выберите тему</label>
+                </p>
+                <div class="select-wrapper input-light__mb15">
+                    <div class="select select-light js-select">
+                        <div class="select__header js-select__header">
+                            <div class="select__current js-select__current"></div>
+                            <div class="select__ic-wrap">
+                                <span class="select__icon js-select__icon">
+                                    <svg viewBox="0 0 16 10">
+                                        <use xlink:href="/img/sprite.svg#arr-down"></use>
+                                    </svg>
+                                </span>
+                                <span class="select__icon--close js-select__icon--close">
+                                    <svg viewBox="0 0 22 22">
+                                        <use xlink:href="/img/sprite.svg#circle-close"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="select__body js-select__body">
+                            <div class="select__item js-select__item">1</div>
+                            <div class="select__item js-select__item">2</div>
+                            <div class="select__item js-select__item">3</div>
+                        </div>
+                    </div>
+                </div>
+                <p class="label-light">
+                    <label class="label-light__title">Выберите подтему</label>
+                </p>
+                <div class="select-wrapper input-light__mb15">
+                    <div class="select select-light js-select">
+                        <div class="select__header js-select__header">
+                            <div class="select__current js-select__current"></div>
+                            <div class="select__ic-wrap">
+                                <span class="select__icon js-select__icon">
+                                    <svg viewBox="0 0 16 10">
+                                        <use xlink:href="/img/sprite.svg#arr-down"></use>
+                                    </svg>
+                                </span>
+                                <span class="select__icon--close js-select__icon--close">
+                                    <svg viewBox="0 0 22 22">
+                                        <use xlink:href="/img/sprite.svg#circle-close"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="select__body js-select__body">
+                            <div class="select__item js-select__item">1</div>
+                            <div class="select__item js-select__item">2</div>
+                            <div class="select__item js-select__item">3</div>
+                        </div>
+                    </div>
+                </div>
+                <p class="label-light">
+                    <label class="label-light__title">Опишите что случилось</label>
+                </p>
+                <div class="input-light__wrap">
+                    <textarea type="text" id="ac-info" placeholder="" class="form-textarea__light input-light__mb15"></textarea>
+                </div>
+                <div class="row-acc__form-row row-acc__form-row--bottom">
+                    <div class="row-acc__form-col row-acc__form-col--100">
+                        <div class="row-acc__form-col row-acc__form-col--wrap">
+                            <p class="label-light">
+                            <span class="form-row__icon">
+                                <svg class="icon-svg">
+                                    <use xlink:href="/img/sprite.svg#file"></use>
+                                </svg>
+                            </span>
+                                <label for="md-file" class="label-light__file">Перетащите файл или</label>
+                            </p>
+                            <input type="file" id="md-file" class="form-row__file">
+                        </div>
+                        <div class="row-acc__form-desc">Максимум 5 файлов до 10 МБ каждый</div>
+                    </div>
+                </div>
+                <button class="button-rect btn-blue">Далее</button>
+            </form>
+        </div>
+    </div>
+</div>

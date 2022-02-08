@@ -2,6 +2,7 @@
   background-color: $blue-bg;
   color: $white;
   padding: $indent-60 0 $indent-40;
+  position: relative;
 }
 
 .cont-block {
@@ -339,20 +340,28 @@
 .modal-window__chat {
   display: flex;
   justify-content: flex-end;
-  position: fixed;
+  position: absolute;
   visibility: hidden;
   opacity: 0;
-  width: 100%;
-  height: 100%;
-  overflow-y: scroll;
+  width: 293px;
   background: transparent;
-  bottom: 0;
-  right: 0;
-  z-index: 100;
+  top: -250px;
+  right: 10px;
+  z-index: 101;
   transition: transform .5s ease;
+  box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
+  border-radius: 10px;
+
+  @include sm {
+    right: 100px;
+  }
+
+  @include lg {
+    right: 150px;
+  }
 }
 
-.modal-window__chat.show-md {
+.modal-window__chat.show {
   visibility: visible;
   opacity: 1;
 }
@@ -360,8 +369,7 @@
 .modal-window__content.modal-window__content--chat {
   padding: $indent-20;
   width: 293px;
-  box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
-  height: 147px;
+  height: 160px;
 }
 
 .modal-window__content.modal-window__content--chat .modal-inner {
@@ -413,18 +421,25 @@
 
 .modal-window__chat-help {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   position: fixed;
   visibility: hidden;
   opacity: 0;
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.4);
   bottom: 0;
   right: 0;
-  z-index: 100;
+  z-index: 102;
   transition: transform .5s ease;
+
+  @include sm {
+    justify-content: flex-end;
+  }
+
+  @include lg {
+    overflow-y: scroll;
+  }
 }
 
 .modal-window__chat-help.show-md {
@@ -433,10 +448,16 @@
 }
 
 .modal-window__content.modal-window__content--chat-help {
-  padding: $indent-20;
-  width: 560px;
+  padding: $indent-10;
   height: 100%;
   border-radius: 0;
+  z-index: 102;
+  width: 320px;
+
+  @include sm {
+    padding: $indent-20;
+    width: 560px;
+  }
 
   @include lg {
     padding: $indent-40 $indent-30;
@@ -455,19 +476,34 @@
 .row-acc__form.row-acc__form--chat-help .row-acc__col50--title {
   text-align: center;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 20px;
-  margin-bottom: $indent-80;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: $indent-10;
+
+  @include sm {
+    font-size: 22px;
+    line-height: 20px;
+    margin-bottom: $indent-30;
+  }
+
+  @include lg {
+    margin-bottom: $indent-80;
+    font-size: 32px;
+    line-height: 20px;
+  }
 }
 
 .modal-window__content.modal-window__content--chat-help .modal-inner__title  {
   font-weight: 600;
-  font-size: 32px;
-  line-height: 20px;
-  padding-bottom: $indent-30;
-  border-bottom: 1px solid #F1F2F5;
+  font-size: 16px;
+  line-height: 19px;
 
   @include lg {
+    border-bottom: 1px solid #F1F2F5;
+    padding-bottom: $indent-30;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 20px;
     margin-bottom: $indent-100;
   }
 }
@@ -477,14 +513,113 @@
 }
 
 .modal-window__content.modal-window__content--chat-help .modal-window__close svg {
-  width: 53px;
-  height: 53px;
+  width: 30px;
+  height: 30px;
+
+  @include lg {
+    width: 53px;
+    height: 53px;
+  }
 }
 
 .modal-window__content.modal-window__content--chat-help .modal-window__close {
   position: absolute;
-  top: 15px;
-  right: auto;
-  left: -60px;
+  top: 10px;
+  right: 10px;
+  left: auto;
   cursor: pointer;
+
+  @include lg {
+    top: 15px;
+    right: auto;
+    left: -60px;
+  }
+}
+
+.row-acc__form--chat-help .form-textarea__light  {
+  height: 48px;
+  margin-bottom: $indent-10;
+  padding: $indent-10;
+
+  @include lg {
+    height: 98px;
+    margin-bottom: $indent-15;
+  }
+
+  @include lg-down {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.row-acc__form--chat-help .row-acc__form-row--bottom .row-acc__form-col.row-acc__form-col--100 {
+  flex-direction: column;
+
+  @include lg-down {
+    padding: 0;
+    margin-bottom: $indent-10;
+  }
+}
+
+.row-acc__form--chat-help .select-light .select__header {
+  @include lg-down {
+    height: 32px;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+
+.row-acc__form--chat-help .select__item {
+
+  @include lg-down {
+    padding: 5px $indent-10;
+  }
+}
+
+
+.row-acc__form--chat-help .label-light__file {
+  margin-right: 0;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.row-acc__form--chat-help .form-row__icon {
+  @include lg-down {
+    display: none;
+  }
+}
+
+.row-acc__form--chat-help .row-acc__form-col.row-acc__form-col--wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+
+  @include lg {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.row-acc__form--chat-help [type="file"]::-webkit-file-upload-button {
+  background: $white;
+  border: 2px solid transparent;
+  color: $blue;
+  cursor: pointer;
+  font-size: 12px;
+  outline: none;
+  padding: 5px 0;
+  transition: all 1s ease;
+  border-radius: 15px;
+  width: 150px;
+}
+
+.row-acc__form-desc {
+  font-size: 12px;
+  line-height: 17px;
+  color: $gray-tx;
+  font-weight: 400;
+  margin-top: 5px;
 }
