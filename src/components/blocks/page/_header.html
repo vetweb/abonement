@@ -95,4 +95,75 @@
             </form>
         </div>
     </div>
+    <div class="modal-window modal-window--entrance js-modal-window" data-md="entrance" style="background-image: url('/img/reg-bg.png');">
+        <div class="modal-window__content modal-window__content--reg">
+            <div class="modal-window__close js-close-md" data-cls="entrance">
+                <svg viewBox="0 0 22 22">
+                    <use xlink:href="/img/sprite.svg#circle-close"></use>
+                </svg>
+            </div>
+            <form class="modal-window__form modal-window__form--reg">
+                <div class="md-cart-form__title">Вход</div>
+                <p class="label-light">
+                    <label for="md-email2" class="label-light__title">Email</label>
+                    <span class="label-light__symbol">*</span>
+                </p>
+                <input type="text" id="md-email2" class="input-light input-light__mb25">
+                <p class="label-light">
+                    <label for="md-password2" class="label-light__title">Пароль</label>
+                    <span class="label-light__symbol">*</span>
+                </p>
+                <input type="text" id="md-password2" class="input-light">
+                <a href="#" class="password-link input-light__mb25 js-open-md js-close-md" data-cls="entrance">Забыли пароль?</a>
+                <a href="#" class="button-rect btn-blue js-open-md js-close-md input-light__mb25" data-cls="entrance">Войти</a>
+                <a href="#" class="modal-window__form--link js-open-md js-close-md" data-cls="entrance" data-opn="reg">Зарегестрироваться</a>
+            </form>
+        </div>
+    </div>
+    <div class="modal-window modal-window--entrance js-modal-window" data-md="reg" style="background-image: url('/img/reg-bg.png');">
+        <div class="modal-window__content modal-window__content--complete-reg">
+            <div class="modal-window__close js-close-md" data-cls="reg">
+                <svg viewBox="0 0 22 22">
+                    <use xlink:href="/img/sprite.svg#circle-close"></use>
+                </svg>
+            </div>
+            <form class="modal-window__form modal-window__form--complete-reg">
+                <div class="md-cart-form__title">Завершить регистрацию</div>
+                <div class="modal-window__form-row">
+                    <div class="row-acc__form-col">
+                        <p class="label-light">
+                            <label for="md-city2" class="label-light__title">Город</label>
+                            <span class="label-light__symbol">*</span>
+                        </p>
+                        <input type="text" id="md-city2" class="input-light input-light__mb25">
+                    </div>
+                    <div class="row-acc__form-col">
+                        <p class="label-light">
+                            <label for="md-comp-name" class="label-light__title">Юридическое название компании</label>
+                            <span class="label-light__symbol">*</span>
+                        </p>
+                        <input type="text" id="md-comp-name" class="input-light input-light__mb25">
+                    </div>
+                </div>
+                <div class="modal-window__form-row">
+                    <div class="row-acc__form-col">
+                        <p class="label-light">
+                            <label for="md-subname" class="label-light__title">Название, которое увидит покупатель</label>
+                            <span class="label-light__symbol">*</span>
+                        </p>
+                        <input type="text" id="md-subname" class="input-light input-light__mb25">
+                    </div>
+                    <div class="row-acc__form-col">
+                        <p class="label-light">
+                            <label for="md-email2" class="label-light__title">Телефон</label>
+                            <span class="label-light__symbol">*</span>
+                        </p>
+                        <input type="tel" id="md-phone" class="input-light input-light__mb25">
+                    </div>
+                </div>
+                <button class="button-rect btn-blue js-close-md" data-cls="reg">Готово</button>
+                <a href="#" class="modal-window__form--link js-close-md" data-cls="reg">Выйти из профиля</a>
+            </form>
+        </div>
+    </div>
 </header>

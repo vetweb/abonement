@@ -1,3 +1,4 @@
+.modal-window.modal-window--entrance,
 .modal-window.modal-window--reg-auth {
   background-size: cover;
   background-position: center;
@@ -19,6 +20,8 @@
   text-decoration: none;
   margin: 0 auto;
   display: inline-block;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .reg-auth__form .button-rect {
@@ -28,4 +31,77 @@
 .reg-auth__form {
   display: flex;
   flex-direction: column;
+}
+
+a.password-link {
+  font-size: 12px;
+  line-height: 16px;
+
+  color: $blue;
+  margin-left: auto;
+  margin-top: 5px;
+}
+
+.modal-window.modal-window--entrance .modal-window__form .button-rect {
+  padding: $indent-10;
+}
+
+.modal-window__form.modal-window__form--reg {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-window__form.modal-window__form--reg a {
+  text-decoration: none;
+}
+
+.modal-window__content.modal-window__content--complete-reg {
+  padding: $indent-15;
+  width: 320px;
+
+  @include lgx {
+    width: 884px;
+    padding: $indent-60 $indent-90;
+  }
+}
+
+.modal-window__form.modal-window__form--complete-reg {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-window__form-row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include lgx {
+   flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.modal-window__form.modal-window__form--complete-reg .row-acc__form-col {
+  width: 100%;
+
+  @include lgx {
+    width: 48%;
+  }
+}
+
+.modal-window__form.modal-window__form--complete-reg .input-light__mb25 {
+  margin-bottom: $indent-15;
+
+  @include lgx {
+    margin-bottom: $indent-25;
+  }
+}
+
+.modal-window__form.modal-window__form--complete-reg .button-rect {
+  max-width: 340px;
+  margin: 0 auto $indent-10;
+
+  @include sm {
+    margin: 0 auto $indent-30;
+  }
 }
