@@ -111,7 +111,7 @@
                                 <use xlink:href="/img/sprite.svg#heart-svg"></use>
                             </svg>
                         </button>
-                        <button class="button-rect btn-blue">Записаться</button>
+                        <button class="button-rect btn-blue js-open-md" data-opn="sign-up">Записаться</button>
                     </div>
                 </div>
                 <div class="card-sub-2__col50 card-sub-2__col50--hidden">
@@ -316,6 +316,53 @@
 </main>
 @@include('components/blocks/page/_footer.html')
 @@include('components/blocks/page/_scripts.html')
+<div class="modal-window js-modal-window" data-md="sign-up">
+    <div class="modal-window__content modal-window__content--sign">
+        <div class="modal-window__close js-close-md" data-cls="sign-up">
+            <svg viewBox="0 0 22 22">
+                <use xlink:href="/img/sprite.svg#circle-close-bl"></use>
+            </svg>
+        </div>
+        <div class="modal-window__title">Для записи на набор свяжитесь с организацией:</div>
+        <div class="modal-window__row modal-window__row--top">
+            <div class="modal-window__links">
+                <span class="modal-window__icon">
+                    <svg viewBox="0 0 24 24">
+                        <use xlink:href="/img/sprite.svg#tel"></use>
+                    </svg>
+                </span>
+                <a href="tel:+88005553535" class="modal-window__tel">8 800 555-35-35</a>
+            </div>
+            <ul class="soc-block__soc-list soc-list">
+                <li class="soc-list__icon soc-list__icon1">
+                    <a href="#"><img src="/img/telegram.svg" alt=""></a>
+                </li>
+                <li class="soc-list__icon soc-list__icon4">
+                    <a href="#"><img src="/img/insta.svg" alt=""></a>
+                </li>
+                <li class="soc-list__icon soc-list__icon5">
+                    <a href="#"><img src="/img/vbr.svg" alt=""></a>
+                </li>
+            </ul>
+        </div>
+        <div class="modal-window__row modal-window__row--bottom">
+            <div class="modal-window__row-image">
+                <div class="modal-window__row-img">
+                    <img src="/img/bg1-sl.png" alt="">
+                </div>
+                <div class="modal-window__row-title modal-window__row-title--mob">Набор в группу по Футболу 2021</div>
+            </div>
+            <div class="grid-row grid-row--md">
+                <div class="modal-window__row-title modal-window__row-title--desk">Набор в группу по Футболу 2021</div>
+                <a href="#" class="row-link-ic">
+                    <h5 class="h5 row-link-ic__title">Свислочская специализированная детско-юношеская школа олимпийского резерва</h5>
+                    <img src="/img/arrow-right.svg" alt="">
+                </a>
+                <p class="grid-row__address">г. Свилочь, ул. К.Калиновского 2</p>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 
 </html>
