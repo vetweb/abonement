@@ -280,11 +280,33 @@ a.row-acc__col25--link {
   position: relative;
 }
 
+.overlay {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  transition: transform .5s ease;
+}
+
+.overlay.show {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
 .md-info-block {
   display: none;
-  position: fixed;
-  bottom: 50%;
-  right: 10%;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
   width: 300px;
   flex-direction: column;
   padding: $indent-20 $indent-15;
@@ -294,6 +316,7 @@ a.row-acc__col25--link {
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
+  z-index: 101;
 }
 
 .md-info-block__desc {
@@ -306,6 +329,6 @@ a.md-info-block__link {
   text-decoration: none;
 }
 
-.md-info-block.show-md {
+.md-info-block.show {
   display: flex;
 }

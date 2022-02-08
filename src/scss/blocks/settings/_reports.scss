@@ -125,3 +125,15 @@
   line-height: 21px;
   font-weight: 700;
 }
+
+.views-s .row-product__col-btns,
+.favorited-s .row-product__col-btns {
+  @include lg {
+    width: fit-content;
+  }
+}
+
+.views-s .form__field.search__field,
+.favorited-s .form__field.search__field {
+  margin-right: $indent-10;
+}

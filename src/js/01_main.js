@@ -525,21 +525,64 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 
-	// hidden Modal (chat)
-	let chatBtns = document.querySelectorAll('.js-chat-btn');
+	// show/hidden info-block
+	let openBtnsInfoBlocks = document.querySelectorAll('.js-open-info-block');
+	let overlaysInfoBlock = document.querySelectorAll('.js-overlay-info-block');
+	let closeBtnsInfoBlocks = document.querySelectorAll('.js-close-info-block');
 
-	chatBtns.forEach(btn => {
-		btn.addEventListener('click', hiddenModal);
+	openBtnsInfoBlocks.forEach( btn => {
+		btn.addEventListener('click', showInfoBlock);
 
-		function hiddenModal() {
-			let parentModal = this.closest('.js-modal-window');
+		function showInfoBlock() {
+			let pathBtnShow= this.dataset.show;
+			let infoBlock = document.querySelector(`[data-block='${pathBtnShow}']`);
+			let overlay = document.querySelector(`[data-overlay='${pathBtnShow}']`);
 
-			if (parentModal.classList.contains('show-md')) {
-				parentModal.classList.remove('show-md');
+			if (!infoBlock.classList.contains('show')) {
+				overlay.classList.add('show');
+				infoBlock.classList.add('show');
+				document.body.style.overflowY = 'hidden';
+			} else {
+				overlay.classList.remove('show');
+				infoBlock.classList.remove('show');
+				document.body.style.overflowY = 'visible';
 			}
 		}
-	});
+	})
 
+	closeBtnsInfoBlocks.forEach( btn => {
+		btn.addEventListener('click', closeInfoBlock);
+
+		function closeInfoBlock(e) {
+			e.preventDefault();
+			let pathBtnHidden = this.dataset.hidden;
+			let infoBlock = document.querySelector(`[data-block='${pathBtnHidden}']`);
+			let overlay = document.querySelector(`[data-overlay='${pathBtnHidden}']`);
+
+			if (infoBlock.classList.contains('show')) {
+				overlay.classList.remove('show');
+				infoBlock.classList.remove('show');
+				document.body.style.overflowY = 'visible';
+			}
+		}
+	})
+
+	overlaysInfoBlock.forEach(item => {
+		item.addEventListener('click', closeInfoBlock);
+
+		function closeInfoBlock() {
+			let pathOverlay = this.dataset.overlay;
+			let infoBlock = document.querySelector(`[data-block='${pathOverlay}']`);
+
+			if (infoBlock.classList.contains('show')) {
+				item.classList.remove('show');
+				infoBlock.classList.remove('show');
+				document.body.style.overflowY = 'visible';
+			}
+		}
+	})
+
+	//
 	let arrowUp = document.querySelector('.js-arrow-up');
 
 	window.addEventListener('scroll', function () {

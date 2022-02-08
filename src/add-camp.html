@@ -185,13 +185,22 @@
                                 <div class="label-light label-light--ic">
                                     <label for="ac-sale" class="label-light__title">Скидка</label>
                                     <span class="label-light__symbol">*</span>
-                                    <div class="label-light--link js-xx js-open-md" data-opn="info-block1">
+                                    <div class="label-light--link js-xx">
                                         <img src="/img/notif-reverse.svg" alt="" class="label-light--ic">
                                     </div>
                                 </div>
+                                <div class="md-info-block js-info-block" data-block="info-block1">
+                                    <div class="md-info-block__desc">
+                                        По этой цене товар могут купить только подписчики
+                                        Premium — обычно они покупают больше товаров и по более высокой цене. Если вы
+                                        установите цену с Ozon Premium, ваш товар появится на странице акций для подписчиков.
+                                    </div>
+                                    <a href="#" class="md-info-block__link js-close-info-block" data-hidden="info-block1"> Подробнее в помощи</a>
+                                </div>
+                                <div class="overlay js-overlay-info-block" data-overlay="info-block1"></div>
                                 <div class="input-light__wrap">
                                     <input type="number" id="ac-sale" class="input-light input-light--ic input-light__mb15">
-                                    <div class="label-light--link js-open-md" data-opn="info-block1">
+                                    <div class="label-light--link js-open-info-block" data-show="info-block1">
                                         <img src="/img/notif-reverse.svg" alt="" class="label-light--ic">
                                     </div>
                                 </div>
@@ -275,14 +284,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="md-info-block js-modal-window" data-md="info-block1">
-        <div class="md-info-block__desc">
-            По этой цене товар могут купить только подписчики
-            Premium — обычно они покупают больше товаров и по более высокой цене. Если вы
-            установите цену с Ozon Premium, ваш товар появится на странице акций для подписчиков.
-        </div>
-        <a href="#" class="md-info-block__link"> Подробнее в помощи</a>
     </div>
 </section>
 </main>
