@@ -166,4 +166,48 @@
             </form>
         </div>
     </div>
+<!-- add to the button (js-open-md && data-opn="no-active"), on click of which this modal window will be called-->
+    <div class="modal-window modal-window--entrance js-modal-window" data-md="no-active">
+        <div class="modal-window__content modal-window__content--no-active">
+            <div class="modal-window__close js-close-md" data-cls="no-active">
+                <svg viewBox="0 0 22 22">
+                    <use xlink:href="/img/sprite.svg#circle-close"></use>
+                </svg>
+            </div>
+            <div class="row-acc__col25-top">
+                <span class="row-acc__list-icon">
+                    <svg>
+                        <use xlink:href="/img/sprite.svg#notif-c"></use>
+                    </svg>
+                </span>
+                <span class="row-acc__col25-title">Аккаунт не активирован!</span>
+            </div>
+            <p class="row-acc__col25--desc input-light__mb25">Напоминаем, что для начала продаж вам необходимо заполнить и
+                отправить на проверку данные о компании. Обычно это занимает один рабочий день</p>
+            <a href="#" class="button-rect btn-blue input-light__mb25 js-close-md" data-cls="no-active">Заполнить документы</a>
+            <button class="modal-window__form--link js-close-md" data-cls="no-active">Напомнить позже</button>
+        </div>
+    </div>
+    <!-- add to the button (js-open-md && data-opn="check-email"), on click of which this modal window will be called-->
+    <div class="modal-window modal-window--entrance js-modal-window" data-md="check-email">
+        <div class="modal-window__content modal-window__content--check-email">
+            <div class="modal-window__close js-close-md" data-cls="check-email">
+                <svg viewBox="0 0 22 22">
+                    <use xlink:href="/img/sprite.svg#circle-close"></use>
+                </svg>
+            </div>
+            <div class="row-acc__col25-top">
+                <span class="row-acc__list-icon">
+                    <svg>
+                        <use xlink:href="/img/sprite.svg#notif-c"></use>
+                    </svg>
+                </span>
+                <span class="row-acc__col25-title">Проверьте адрес электронной почты!</span>
+            </div>
+            <p class="row-acc__col25--desc input-light__mb25">Мы отправили письмо со ссылкой для подтверждения.
+                Если письмо не пришло, проверьте папку со спамом. Если письма там нет, напишите нам
+                PRIMERHELP@TUT.BY или поробуйте зарегестрироваться с другой почты в лучшее времядля вас</p>
+            <a href="#" class="modal-window__form--link js-close-md" data-cls="no-active">Назад</a>
+        </div>
+    </div>
 </header>

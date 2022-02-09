@@ -128,3 +128,41 @@
 		color: #ffffff;
 	}
 }
+
+.modal-window__content.modal-window__content--check-email,
+.modal-window__content.modal-window__content--no-active {
+	padding: $indent-15;
+	width: 320px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+
+	@include lgx {
+		width: 400px;
+		padding: $indent-45 $indent-30;
+	}
+}
+
+.modal-window__content.modal-window__content--check-email .row-acc__col25-top,
+.modal-window__content.modal-window__content--no-active .row-acc__col25-top {
+	flex-direction: column;
+}
+
+.modal-window__content.modal-window__content--no-active .row-acc__list-icon svg {
+	color: $red;
+	width: 35px;
+	height: 35px;
+	margin-bottom: $indent-35;
+}
+
+.modal-window__content.modal-window__content--check-email .row-acc__list-icon svg {
+	color: $orange;
+	width: 35px;
+	height: 35px;
+	margin-bottom: $indent-35;
+}
+
+.modal-window__content.modal-window__content--check-email a,
+.modal-window__content.modal-window__content--no-active a {
+	text-decoration: none;
+}
