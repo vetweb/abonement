@@ -416,7 +416,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	}
 
-
 	// Mobile Menu
 	let mobileBurger = document.querySelector('.js-mobile-menu-toggle')
 	let mobileMenu = document.querySelector('.js-mobile-menu')
@@ -450,7 +449,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			dropdownFilterMenu.classList.remove('active');
 		};
 	});
-
 
 	//Modal
 	let openBtn = document.querySelector('.js-open-md');
@@ -597,4 +595,51 @@ document.addEventListener('DOMContentLoaded', () => {
 	arrowUp.addEventListener('click', function () {
 		window.scrollTo({top: 0, behavior: 'smooth'});
 	});
+
+	//
+
+	//Accordion filter-company-page
+	let allSvBtns = document.querySelectorAll('.js-sv-item__btn');
+	let allSvItem = document.querySelectorAll('.js-sv-item');
+	let allSvCont = document.querySelectorAll('.js-sv-item__cont');
+
+
+	allSvBtns.forEach((btn) => {
+		btn.addEventListener('click', openSvContent);
+	});
+
+	function openSvContent() {
+
+		let currentSvItem = this.closest('.js-sv-item');
+		let currentSvCont = currentSvItem.querySelector('.js-sv-item__cont');
+		let currentSvContWrap = currentSvItem.querySelector('.js-sv-item__wrap');
+		let currentSvBtn = currentSvItem.querySelector('.js-sv-item__btn');
+		let currentSvContHeight = currentSvContWrap.clientHeight;
+
+		if (!currentSvCont.classList.contains('open')) {
+			currentSvItem.classList.add('active');
+			currentSvBtn.classList.add('active');
+			currentSvCont.style.maxHeight = `${currentSvContHeight}px`;
+			currentSvCont.classList.add('open');
+
+			for (let i = 0; i < allSvCont.length; i++) {
+				if (allSvCont[i].classList.contains('open') && allSvCont[i] !== currentSvCont) {
+					allSvCont[i].classList.remove('open');
+					allSvCont[i].style.maxHeight = '0px';
+				}
+				if (allSvBtns[i].classList.contains('active') && allSvBtns[i] !== currentSvBtn) {
+					allSvBtns[i].classList.remove('active');
+				}
+				if (allSvItem[i].classList.contains('active') && allSvItem[i] !== currentSvItem) {
+					allSvItem[i].classList.remove('active');
+				}
+			}
+		} else {
+			currentSvItem.classList.remove('active');
+			currentSvBtn.classList.remove('active');
+			currentSvCont.style.maxHeight = '0px';
+			currentSvCont.classList.remove('open');
+		}
+	}
+
 });

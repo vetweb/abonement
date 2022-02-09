@@ -1,7 +1,10 @@
 .tariff-s1 {
+  margin-top: $indent-30;
   padding: $indent-25 0 $indent-170;
+  position: relative;
 
   @include lg {
+    margin-top: 0;
     padding: $indent-60 0 $indent-260;
   }
 }
@@ -17,4 +20,191 @@
 
 .index-s__top-desc {
   color: $blue-bg;
+}
+
+.tariff-gallery {
+  position: relative;
+}
+
+.tariff-gallery .grid-gallery {
+  grid-template-columns: 1fr;
+  margin-bottom: $indent-50;
+
+  @include lg {
+    margin-bottom: $indent-80;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card-tariff {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 331px;
+  background-color: $white;
+  box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
+  border-radius: 20px;
+  z-index: 1;
+  position: relative;
+
+  @include lg {
+    width: 400px;
+  }
+}
+
+.card-tariff-desc {
+  padding: $indent-15;
+  display: inline-flex;
+
+  @include sm {
+    padding: $indent-30;
+  }
+}
+
+.card-tariff-bottom {
+  display: inline-flex;
+  padding: $indent-15;
+  border-top: 1px solid #E0E0E0;
+  vertical-align: bottom;
+
+  @include sm {
+    padding: $indent-25 $indent-30 $indent-30;
+  }
+}
+
+.card-tariff-bottom a {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.card-tariff-top {
+  display: inline-flex;
+  width: 100%;
+}
+
+.card-tariff-top__title {
+  width: 100%;
+  min-height: 74px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
+  border-radius: 20px;
+  padding: $indent-15;
+
+  @include sm {
+    min-height: 110px;
+    padding: $indent-25;
+  }
+}
+
+.card-tariff-top__title-bolt {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  color: $blue-bg;
+  white-space: nowrap;
+
+  @include sm {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.card-tariff-top__title-light {
+  font-weight: 400;
+  color: $gray-tx;
+}
+
+.card-tariff-top__subtitle {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: $gray-tx;
+}
+
+.card-tariff__el {
+  font-size: 14px;
+  line-height: 17px;
+  color: $blue-bg;
+  font-weight: 400;
+  padding-left: 30px;
+  list-style-type: none;
+  position: relative;
+
+  @include sm {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+.card-tariff__el:not(:last-child) {
+  margin-bottom: $indent-15;
+}
+
+.card-tariff__el:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/img/done-blue.svg");
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.tariff-gallery .index-s__top-image {
+  width: 100px;
+  height: 100px;
+  display: block;
+  position: absolute;
+  bottom: -50px;
+  right: 10px;
+  z-index: 0;
+
+  @include sm {
+    bottom: -80px;
+    width: 196px;
+    height: 196px;
+  }
+
+  @include lgx {
+    bottom: -100px;
+  }
+}
+
+.tariff-img {
+  min-height: 220px;
+  display: inline-block;
+
+  @include sm {
+    max-height: 386px;
+  }
+}
+
+.tariff-s1 .index-s__top-img {
+  position: absolute;
+  right: 15%;
+  bottom: 10%;
+  width: 95px;
+  height: 60px;
+  display: block;
+
+  @include lgx {
+    width: 170px;
+    height: 110px;
+  }
+
+  @include lg {
+    bottom: 20%;
+    right: 30%;
+  }
 }

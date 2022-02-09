@@ -1,0 +1,41 @@
+
+.tc-3 {
+  padding-bottom: $indent-170;
+  position: relative;
+
+  @include lg {
+    padding-bottom: $indent-120;
+  }
+}
+
+.tc-3.tabs-content__el.tc-3.active {
+  display: flex;
+  flex-direction: column;
+
+  @include lg {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.tc-3 .grid-gallery {
+  grid-template-columns: 1fr;
+}
+
+.tc-3 .grid-gallery__card {
+  border-radius: 10px;
+}
+
+.tc-3 .grid-gallery__card .card {
+  height: fit-content;
+}
+
+.sv-item__cont {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .2s;
+}
+
+.sv-item__cont.open {
+  max-height: none;
+}
