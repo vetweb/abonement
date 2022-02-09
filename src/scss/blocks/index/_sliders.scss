@@ -117,14 +117,14 @@
 .card-m-slider .swiper-button-prev.btn__prev,
 .card-l-slider .swiper-button-prev.btn__prev,
 .card-s-slider .swiper-button-prev.btn__prev {
-	left: -60px;
+	left: calc(50vw - 760px);
 	margin-left: 0;
 }
 
 .card-m-slider .swiper-button-next.btn__next,
 .card-l-slider .swiper-button-next.btn__next,
 .card-s-slider .swiper-button-next.btn__next {
-	right: -60px;
+	right: calc(50vw - 760px);
 }
 
 .card-cd-s3__slider .swiper-button-next.btn__next,

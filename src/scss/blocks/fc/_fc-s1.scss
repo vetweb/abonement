@@ -95,10 +95,10 @@
 .fc-s1__body-tags-block {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: $indent-35;
+  //margin-bottom: $indent-35;
 
   @include lg {
-    margin-bottom: $indent-60;
+    //margin-bottom: $indent-60;
   }
 }
 

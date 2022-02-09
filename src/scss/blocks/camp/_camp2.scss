@@ -248,3 +248,12 @@
   opacity: 0;
 }
 
+.tabs-block .scrollbar-thumb.scrollbar-thumb-y,
+.tabs-block .scrollbar-track.scrollbar-track-y.show{
+  opacity: 0;
+  display: none;
+}
+
+//.tabs-block {
+//  overflow: visible;
+//}

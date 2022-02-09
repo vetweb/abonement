@@ -198,8 +198,9 @@
   }
 
   @include lg {
-    width: 85%;
+    width: 84%;
     margin-bottom: 0;
+    margin-right: $indent-10;
     flex-wrap: nowrap;
   }
 }
@@ -325,6 +326,10 @@
 
 .search-block .select {
   width: 50%;
+
+  @include lgx {
+    width: 100%;
+  }
 }
 
 .search-block__right-top .select {
