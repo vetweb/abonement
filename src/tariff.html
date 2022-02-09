@@ -39,7 +39,7 @@
                             </ul>
                         </div>
                         <div class="card-tariff-bottom">
-                            <a href="tel:+375291111111" class="button-rect btn-blue">Связаться</a>
+                            <button class="button-rect btn-blue js-open-md" data-opn="tariff-md1">Связаться</button>
                         </div>
                     </div>
                     <div class="card-tariff card">
@@ -63,7 +63,7 @@
                             </ul>
                         </div>
                         <div class="card-tariff-bottom">
-                            <a href="tel:+375291111111" class="button-rect btn-blue">Связаться</a>
+                            <button class="button-rect btn-blue js-open-md" data-opn="tariff-md1">Связаться</button>
                         </div>
                     </div>
                     <div class="card-tariff card">
@@ -87,7 +87,7 @@
                             </ul>
                         </div>
                         <div class="card-tariff-bottom">
-                            <a href="tel:+375291111111" class="button-rect btn-blue">Связаться</a>
+                            <button class="button-rect btn-blue js-open-md" data-opn="tariff-md1">Связаться</button>
                         </div>
                     </div>
                     <div class="card-tariff card">
@@ -105,7 +105,7 @@
                             </ul>
                         </div>
                         <div class="card-tariff-bottom">
-                            <a href="tel:+375291111111" class="button-rect btn-blue">Связаться</a>
+                            <button class="button-rect btn-blue js-open-md" data-opn="tariff-md1">Связаться</button>
                         </div>
                     </div>
                     <div class="card-tariff card">
@@ -124,28 +124,28 @@
                             </ul>
                         </div>
                         <div class="card-tariff-bottom">
-                            <a href="tel:+375291111111" class="button-rect btn-blue">Связаться</a>
+                            <button class="button-rect btn-blue js-open-md" data-opn="tariff-md1">Связаться</button>
                         </div>
                     </div>
                     <div class="card-tariff card">
-                            <div class="card-tariff-top">
-                                <div class="card-tariff-top__title">
-                                    <p class="card-tariff-top__title-bolt">2 Weeks <span class="card-tariff-top__title-light">(Спецпредложение)</span></p>
-                                    <span class="card-tariff-top__subtitle">14 дней</span>
-                                </div>
-                            </div>
-                            <div class="card-tariff-desc">
-                                <ul class="card-tariff__list">
-                                    <li class="card-tariff__el">Инфо о нас</li>
-                                    <li class="card-tariff__el">Неограниченное количество абонементов</li>
-                                    <li class="card-tariff__el">Информация о бесплатном наборе</li>
-                                    <li class="card-tariff__el">Добавление лагеря</li>
-                                </ul>
-                            </div>
-                            <div class="card-tariff-bottom">
-                                <a href="tel:+375291111111" class="button-rect btn-blue">Связаться</a>
+                        <div class="card-tariff-top">
+                            <div class="card-tariff-top__title">
+                                <p class="card-tariff-top__title-bolt">2 Weeks <span class="card-tariff-top__title-light">(Спецпредложение)</span></p>
+                                <span class="card-tariff-top__subtitle">14 дней</span>
                             </div>
                         </div>
+                        <div class="card-tariff-desc">
+                            <ul class="card-tariff__list">
+                                <li class="card-tariff__el">Инфо о нас</li>
+                                <li class="card-tariff__el">Неограниченное количество абонементов</li>
+                                <li class="card-tariff__el">Информация о бесплатном наборе</li>
+                                <li class="card-tariff__el">Добавление лагеря</li>
+                            </ul>
+                        </div>
+                        <div class="card-tariff-bottom">
+                            <button class="button-rect btn-blue js-open-md js-close-md" data-opn="tariff-md1">Связаться</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="index-s__top-image">
                     <img src="/img/tennis-ball.png" alt="">
@@ -157,6 +157,65 @@
             @@include('components/blocks/bem/_img-fly-r.html')
         </div>
     </section>
+    <div class="modal-window js-modal-window" data-md="tariff-md1">
+        <div class="modal-window__content modal-window__content--tariff">
+            <div class="modal-window__close js-close-md" data-cls="tariff-md1">
+                <svg viewBox="0 0 22 22">
+                    <use xlink:href="/img/sprite.svg#circle-close"></use>
+                </svg>
+            </div>
+            <form class="modal-window__form form-light md-cart-form">
+                <div class="md-cart-form__title">Оставьте свои данные, менеджер свяжется с Вами</div>
+                <p class="label-light">
+                    <label for="md-name" class="label-light__title">Имя</label>
+                    <span class="label-light__symbol">*</span>
+                </p>
+                <input type="text" id="md-name" class="input-light input-light__mb15">
+                <p class="label-light">
+                    <label for="md-email" class="label-light__title">Email</label>
+                    <span class="label-light__symbol">*</span>
+                </p>
+                <input type="text" id="md-email" class="input-light input-light__mb25">
+                <p class="label-light">
+                    <label for="md-desc-t" class="label-light__title">Вопрос или сообщение менеджеру</label>
+                </p>
+                <textarea type="text" id="md-desc-t" class="form-textarea__light input-light__mb15"></textarea>
+                <div class="form__img-block input-light__mb15">
+                    <div class="form__img-block-img form__img-block-img--small" style="background-image: url('/img/preview.png');">
+                        <img src="/img/preview.png" alt="">
+                    </div>
+                    <input type="file" id="md-file-certif" class="form-row__file">
+                </div>
+                <p class="label-light">
+                    <label for="md-subname" class="label-light__title">Название, которое увидит покупатель</label>
+                    <span class="label-light__symbol">*</span>
+                </p>
+                <input type="text" id="md-subname" class="input-light input-light__mb15">
+                <p class="label-light label-light--policy">
+                    <input type="checkbox" checked="checked" id="md-policy" class="styled-checkbox policy-checkbox">
+                    <label for="md-policy" class="md-cart-form__label-policy">Я соглашаюсь с
+                        <a href="" class="policy-link">Пользовательским cоглашением</a> и с <a href="" class="policy-link">Правилами
+                            обработки персональных данных</a> в соответствии с Политикой конфиденциальности</label>
+                </p>
+                <a href="#" type="submit" class="button-rect btn-blue js-close-md js-open-md" data-cls="tariff-md1" data-opn="tariff-md2">Отправить</a>
+            </form>
+        </div>
+    </div>
+    <div class="modal-window js-modal-window" data-md="tariff-md2">
+        <div class="modal-window__content modal-window__content--tariff2">
+            <div class="modal-window__close js-close-md" data-cls="tariff-md2">
+                <svg viewBox="0 0 22 22">
+                    <use xlink:href="/img/sprite.svg#circle-close"></use>
+                </svg>
+            </div>
+            <div class="modal-window__img">
+                @@include('components/blocks/bem/_img-fly-r.html')
+                <div class="modal-window__title">Спасибо за заявку!</div>
+                <div class="modal-window__desc">Наш менеджер свяжется с Вами в ближайшее время.</div>
+            </div>
+            <button class="button-rect btn-blue js-close-md" data-cls="tariff-md2">Хорошо</button>
+        </div>
+    </div>
 </main>
 @@include('components/blocks/page/_footer.html')
 @@include('components/blocks/page/_scripts.html')
