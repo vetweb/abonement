@@ -97,6 +97,15 @@
  color: $black-t;
 }
 
+.fc-s10 {
+  background-color: transparent;
+
+  @include sm {
+    background-color: $white;
+  }
+}
+
+
 .fc-s10 .card-big-t .card-big-t__btn {
   display: none;
 }
