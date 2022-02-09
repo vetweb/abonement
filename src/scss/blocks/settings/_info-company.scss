@@ -19,9 +19,16 @@
   align-items: flex-start;
 }
 
+.coaches-s .row-acc__col50-inner__top a,
+.info-company-s .row-acc__col50-inner__top a {
+  text-decoration: none;
+}
+
 .info-company-s .row-acc__form-row.row-acc__form-row--middle {
 
   @include sm {
     flex-direction: row;
   }
 }
+
+// add-company
