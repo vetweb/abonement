@@ -22,6 +22,14 @@
   }
 }
 
+.card-m {
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    transform: translateY(5px);
+  }
+}
+
 .card-m__el-inner {
   border-radius: 10px;
   background-color: $white;
@@ -62,6 +70,8 @@
 
 .card-m .card-m__el-title {
   display: none;
+  color: #fff;
+  z-index: 1;
 
   @include lg {
   display: block;
@@ -69,15 +79,12 @@
 }
 
 .card-m__el-top {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  @include flex(center, flex-end);
   position: absolute;
   top: 16px;
   left: 0;
   width: 100%;
   padding: 0 9px;
-  z-index: 2;
 
   @include lg {
     justify-content: space-between;
@@ -182,6 +189,7 @@
 }
 
 .card-m .button-full {
+  position: relative;
   display: inline-flex;
   justify-content: center;
   vertical-align: bottom;
@@ -190,6 +198,7 @@
   padding: $indent-10;
   color: $white;
   margin: auto 0 0;
+  z-index: 2;
 }
 
 .button__i {

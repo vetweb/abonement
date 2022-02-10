@@ -45,6 +45,7 @@
 }
 
 .header__left {
+	position: relative;
 	@include flex(center, flex-start);
 }
 

@@ -35,6 +35,10 @@ button {
   transition: all .3s;
 }
 
+.button-rect--xs {
+  border-radius: 5px;
+}
+
 .button-rect.button-dis {
   cursor: pointer;
   background-color: #EEF3F8;

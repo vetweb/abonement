@@ -468,6 +468,23 @@ document.addEventListener('DOMContentLoaded', () => {
 		modalWindowShow();
 	}
 
+	//locationChangeModal
+	function locationChangeModal () {
+		let locationModal = document.querySelector('.js-location-change-modal');
+		let locationModalLink = document.querySelector('.js-location-modal-link');
+		let locationModalLinkClose = document.querySelector('.js-location-modal-link-close');
+
+		locationModalLink.addEventListener('click', function (){
+			locationModal.classList.add('open');
+		});
+
+		locationModalLinkClose.addEventListener('click', function (){
+			locationModal.classList.remove('open');
+		});
+	}
+
+	locationChangeModal();
+
 	function modalWindowShow() {
 
 		if (!openBtn) {

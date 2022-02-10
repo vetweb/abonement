@@ -1,11 +1,12 @@
 <div class="card-m card">
+    <a href="#" class="card__fake-link"></a>
     <div class="card__el-inner card-m__el-inner">
         <div class="card-m__el-images">
+            <div class="card-m__el-top">
+                <span class="card-m__el-title text-sx">Заголовок абонемента</span>
+                @@include('_favorites.html')
+            </div>
             <div class="card-m__el-img" style="background-image: url('/img/bg1-sl.png');">
-                <div class="card-m__el-top">
-                    <span class="card-m__el-title text-sx">Заголовок абонемента</span>
-                    @@include('_favorites.html')
-                </div>
                 <div class="card-m__el-bottom">
                     <div class="card-m__el-tags">
                         @@include('_tg-online.html')

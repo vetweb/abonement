@@ -1,0 +1,58 @@
+.location-change-modal {
+	position: fixed;
+	left: 10px;
+	top: 80px;
+	width: 245px;
+	height: auto;
+	background: #fff;
+	border-radius: 10px;
+	z-index: 10;
+	visibility: hidden;
+	opacity: 0;
+	transform: translateY(-10px);
+	transition: all .3s ease-in-out;
+
+	@include md {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 400px;
+		height: 100%;
+	}
+
+	&.open {
+		visibility: visible;
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.location-change-modal__content {
+	@include flex(center, space-between);
+	flex-direction: column;
+	padding: 20px;
+
+	@include md {
+		flex-direction: row;
+		height: 100%;
+		padding: 0 16px;
+	}
+}
+
+.location-change-modal__text {
+	font-size: 16px;
+	flex: 0 0 auto;
+	margin-bottom: 16px;
+
+	@include md {
+		margin-bottom: 0;
+	}
+}
+
+.location-change-modal__btns button {
+	margin-right: 8px;
+}
+.location-change-modal__btns {
+	flex: 0 0 auto;
+	@include flex(center, center);
+}
