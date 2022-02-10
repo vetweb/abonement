@@ -417,6 +417,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	// Mobile Menu
+	let mobileDropdownCategoryList = document.querySelectorAll('.mobile-menu-list__category')
+	let mobileDropdownList = document.querySelectorAll('.mobile-menu-list__category')
 	let mobileBurger = document.querySelector('.js-mobile-menu-toggle')
 	let mobileMenu = document.querySelector('.js-mobile-menu')
 
@@ -424,6 +426,13 @@ document.addEventListener('DOMContentLoaded', () => {
 		mobileMenu.classList.toggle('show');
 		this.classList.toggle('show');
 	});
+
+	mobileDropdownCategoryList.forEach(function(elem) {
+		elem.addEventListener('click', function () {
+			this.classList.toggle('active');
+		});
+	});
+
 
 	//Search mobile header
 	let searchHeader = document.querySelector('.js-header-search-form')

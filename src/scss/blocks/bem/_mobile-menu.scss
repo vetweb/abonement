@@ -58,6 +58,16 @@
 }
 
 // mobile-menu-list
+.mobile-menu-list__category.active {
+	.mobile-menu-list__submenu {
+		display: block;
+	}
+
+	.mobile-menu-list__category-link:after {
+		transform: rotate(90deg) translate(-50%);
+	}
+}
+
 .mobile-menu-list__category a {
 	display: block;
 	padding: 10px 0;
@@ -79,13 +89,15 @@
 		top: 50%;
 		width: 6px;
 		height: 12px;
-		transform: translateY(-50%);
+		transform: translate(-50%);
+		transition: all .2s ease-in-out;
 		background: url("/img/arrow.svg") no-repeat center;
 		background-size: contain;
 	}
 }
 
 .mobile-menu-list__submenu {
+	display: none;
 	margin: 5px 10px 10px 10px;
 }
 
