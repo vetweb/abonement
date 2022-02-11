@@ -7,9 +7,10 @@ Swiper.use([ Mousewheel, Navigation, Pagination])
 document.addEventListener('DOMContentLoaded', () => {
 	// smooth-scrollbar
 	const tabsBlock = document.querySelector(".js-tabs-block");
+	const modalCity = document.querySelector(".js-modal-city");
 	const tabsBlockTwo = document.querySelector(".js-tabs-block2");
-	const certifScroll2 = document.querySelector(".js-certif-scroll-block2");
 	const certifScroll = document.querySelector(".js-certif-scroll-block");
+	const certifScroll2 = document.querySelector(".js-certif-scroll-block2")
 	const galleryScroll = document.querySelector(".js-gallery-scroll-block");
 
 
@@ -23,17 +24,22 @@ document.addEventListener('DOMContentLoaded', () => {
 		alwaysShowTracks: true,
 	}
 
-	let optionsCertifScroll= {
+	let optionsCertifScroll = {
 		damping: .1,
 		alwaysShowTracks: true,
 	}
 
-	let optionsCertifScroll2= {
+	let optionModalCity = {
 		damping: .1,
 		alwaysShowTracks: true,
 	}
 
-	let optionsGalleryScroll= {
+	let optionsCertifScroll2 = {
+		damping: .1,
+		alwaysShowTracks: true,
+	}
+
+	let optionsGalleryScroll = {
 		damping: .1,
 		alwaysShowTracks: true,
 	}
@@ -44,6 +50,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	if (tabsBlockTwo) {
 		Scrollbar.init(tabsBlockTwo, optionsTabsBlockTwo);
+	}
+
+	if (modalCity) {
+		Scrollbar.init(modalCity, optionModalCity);
 	}
 
 	if (certifScroll) {
@@ -428,8 +438,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 
 	mobileDropdownCategoryList.forEach(function(elem) {
-		elem.addEventListener('click', function () {
-			this.classList.toggle('active');
+		let elemLink = elem.querySelector('.mobile-menu-list__category-link')
+		elemLink.addEventListener('click', function () {
+			elem.classList.toggle('active');
 		});
 	});
 
@@ -469,6 +480,15 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	//locationChangeModal
+	function locationModal () {
+		let locationModalLink = document.querySelector('.js-location-link-list');
+		let locationModal = document.querySelector('.js-location-modal');
+
+		locationModalLink.addEventListener('click', function (){
+			locationModal.classList.add('open');
+		});
+	}
+
 	function locationChangeModal () {
 		let locationModal = document.querySelector('.js-location-change-modal');
 		let locationModalLink = document.querySelector('.js-location-modal-link');

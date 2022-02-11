@@ -1,5 +1,5 @@
 .catalog-alpha {
-
+	max-height: 500px;
 }
 
 .catalog-alpha__tag {
@@ -29,10 +29,11 @@
 
 .catalog-alpha-row {
 	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
 	margin-left: -0.75rem;
 	margin-right: -0.75rem;
 	margin-top: -0.75rem;
-	flex-wrap: wrap;
 }
 
 .catalog-alpha-list__header {
@@ -61,4 +62,13 @@
 	text-decoration: none;
 	font-size: 16px;
 	line-height: 19px;
+}
+
+.modal-window__content.modal-window__content-country {
+	padding: $indent-20 0;
+	width: 95%;
+
+	@include md {
+		width: 50%;
+	}
 }
