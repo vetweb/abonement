@@ -1,0 +1,107 @@
+.account-s.help-account-s .row-acc__col50 {
+  padding: $indent-15;
+}
+
+.account-s.help-account-s .faq-block {
+  padding: $indent-15;
+}
+
+.account-s.help-account-s .faq-block__top {
+  display: flex;
+  flex-direction: column;
+
+  @include sm {
+    flex-direction: row;
+  }
+}
+
+.account-s.help-account-s .faq-block__icon {
+  right: 15px;
+  top: 30px;
+  cursor: pointer;
+}
+
+.account-s.help-account-s .faq-block__icon svg {
+  transform: rotate(0deg);
+  transition: all .1s;
+}
+
+.account-s.help-account-s .faq-block__icon.active svg {
+  transform: rotate(90deg);
+}
+
+.faq-block-date {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: $gray-tx;
+  margin-right: $indent-25;
+}
+
+.account-s.help-account-s .faq-block__title {
+  margin-bottom: 4px;
+
+  @include sm {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+.account-s.help-account-s .form-textarea__light {
+  height: 109px;
+}
+
+.account-s.help-account-s .row-acc__form {
+  width: 100%;
+  margin-top: $indent-10;
+
+  @include sm {
+    width: 82%;
+    margin-left: auto;
+  }
+}
+
+.account-s.help-account-s .faq-block-left {
+  width: 100%;
+
+  @include sm {
+    width: 82%;
+    margin-left: auto;
+  }
+}
+
+.account-s.help-account-s .row-acc__form .button-rect {
+  background-color: #0F1F53;
+  padding: $indent-15;
+  max-width: 100%;
+
+  @include sm {
+    max-width: 336px;
+  }
+}
+
+.account-s.help-account-s .form-rating {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.account-s.help-account-s .form-rating__title {
+  font-size: 18px;
+  line-height: 22px;
+  color: $black;
+  font-weight: 400;
+  margin-right: $indent-30;
+}
+
+.account-s.help-account-s .form-rating__stars {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.form-rating__ic svg {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}

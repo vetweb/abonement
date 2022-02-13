@@ -1,0 +1,8 @@
+.row-acc__col50__tabel .row-acc-grid__cell.row-acc-grid__cell--mob {
+  display: flex;
+  width: fit-content;
+
+  @include sm {
+    display: none;
+  }
+}

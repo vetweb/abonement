@@ -1,0 +1,152 @@
+.account-s1 {
+  padding: 25px 0 60px;
+
+  @include sm {
+    padding: 50px 0 60px;
+  }
+
+  @include lg {
+    padding: 60px 0 100px;
+  }
+}
+.account-s {
+  background: linear-gradient(180deg, rgba(237, 246, 255, 0) 0%, #D7ECFE 100%);
+}
+
+.account-s .row-acc {
+  display: flex;
+  flex-direction: column;
+
+  @include lg {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.account-s .row-acc__col25.row-acc__col25--left {
+  @include lg {
+    margin-right: $indent-30;
+  }
+}
+
+.account-s .form__img-block-img {
+  margin-bottom: $indent-15;
+}
+
+.password__button {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  height: 100%;
+  width: 20px;
+  background: none;
+  border: none;
+}
+
+.password__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  color: $white;
+}
+
+.password__icon svg {
+  width: 16px;
+  height: 16px;
+  color: $gray-tx;
+}
+
+.password__button.active svg {
+  color: $blue;
+}
+
+.input-light__wrapper {
+  position: relative;
+}
+
+.radio-btn__wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  display: inline-block;
+  color: $black;
+  font-size: 12px;
+  line-height: 26px;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #605DEC;
+  border-radius: 100%;
+  background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: #605DEC;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+[type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.radio-btn__inner:not(:last-child) {
+  margin-right: $indent-10;
+}
+
+.profile-s .row-acc__form-row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include sm {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.profile-s .row-acc__form-col {
+  width: 100%;
+
+  @include sm {
+    width: 48%;
+  }
+}
