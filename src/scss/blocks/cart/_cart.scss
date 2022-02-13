@@ -409,11 +409,20 @@ a.policy-link {
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
-  padding: 20px 0;
+  padding: 10px 0;
 
   @include sm-down {
     padding: 10px 0;
   }
+}
+
+.modal-window__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-s .modal-window__form .button-rect {
+  margin-bottom: $indent-10;
 }
 
 .styled-checkbox {

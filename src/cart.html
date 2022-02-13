@@ -154,8 +154,7 @@
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
                     </div>
-                    <div class="swiper-button-prev btn__prev"><img src="/img/arrow-prev.svg" alt=""></div>
-                    <div class="swiper-button-next btn__next"><img src="/img/arrow-next.svg" alt=""></div>
+                    <div class="swiper-scrollbar"></div>
                 </div>
             </div>
         </div>
@@ -185,7 +184,52 @@
                         <a href="" class="policy-link">Пользовательским cоглашением</a> и с <a href="" class="policy-link">Правилами
                             обработки персональных данных</a> в соответствии с Политикой конфиденциальности</label>
                 </p>
-                <button class="button-rect btn-blue">Продолжить</button>
+                <button class="button-rect btn-blue js-close-md" data-cls="cart-md">Продолжить</button>
+                <a href="#" class="modal-window__form--link js-open-md js-close-md" data-cls="cart-md" data-opn="reg-cart">Зарегестрироваться</a>
+            </form>
+        </div>
+    </div>
+    <div class="modal-window js-modal-window" data-md="reg-cart">
+        <div class="modal-window__content modal-window__content--cart">
+            <div class="modal-window__close js-close-md" data-cls="reg-cart">
+                <svg viewBox="0 0 22 22">
+                    <use xlink:href="/img/sprite.svg#circle-close"></use>
+                </svg>
+            </div>
+            <form class="modal-window__form form-light md-cart-form">
+                <div class="md-cart-form__title">Регистрация</div>
+                <p class="label-light">
+                    <label for="md-name-reg" class="label-light__title">Имя</label>
+                    <span class="label-light__symbol">*</span>
+                </p>
+                <input type="text" id="md-name-reg" class="input-light input-light__mb15">
+                <p class="label-light">
+                    <label for="md-email-reg" class="label-light__title">Email</label>
+                    <span class="label-light__symbol">*</span>
+                </p>
+                <input type="text" id="md-email-reg" class="input-light input-light__mb15">
+                <p class="label-light">
+                    <label for="md-tel-reg" class="label-light__title">Телефон</label>
+                    <span class="label-light__symbol">*</span>
+                </p>
+                <input type="tel" id="md-tel-reg" class="input-light input-light__mb15">
+                <p class="label-light">
+                    <label for="md-password-reg" class="label-light__title">Пароль</label>
+                    <span class="label-light__symbol">*</span>
+                </p>
+                <input type="text" id="md-password-reg" class="input-light input-light__mb15">
+                <p class="label-light">
+                    <label for="md-password-rep" class="label-light__title">Повторите пароль</label>
+                    <span class="label-light__symbol">*</span>
+                </p>
+                <input type="text" id="md-password-rep" class="input-light input-light__mb15">
+                <p class="label-light label-light--policy">
+                    <input type="checkbox" id="md-policy-reg" checked="checked" class="styled-checkbox policy-checkbox">
+                    <label for="md-policy-reg" class="md-cart-form__label-policy">Я соглашаюсь с
+                        <a href="" class="policy-link">Пользовательским cоглашением</a> и с <a href="" class="policy-link">Правилами
+                            обработки персональных данных</a> в соответствии с Политикой конфиденциальности</label>
+                </p>
+                <button class="button-rect btn-blue js-close-md" data-cls="reg-cart">Зарегистироваться</button>
             </form>
         </div>
     </div>
