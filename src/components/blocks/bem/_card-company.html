@@ -3,6 +3,14 @@
         <div class="card__el-inner card-company__el-inner">
         <div class="card-company__el-img" style="background-image: url('/img/card-comp1.png');">
             <div class="card-company__el-top">
+                <div class="card-tag card-tag--mob">
+                    <span class="card-tag__ic">
+                        <svg viewBox="0 0 13 16">
+                            <use xlink:href="/img/sprite.svg#fire"></use>
+                        </svg>
+                    </span>
+                    <span class="card-tag__title">Идет набор</span>
+                </div>
                 @@include('_favorites.html')
             </div>
         </div>
@@ -10,7 +18,26 @@
         <div class="card-company__el-content">
         <div class="card-company__el-top">
             @@include('_stars.html')
-            @@include('_favorites.html')
+            <div class="card-company__el-bottom">
+                <span class="card-company__el-city">Минск</span>
+                <div class="card-company__el-geo">
+                    <svg viewBox="0 0 24 24">
+                        <use xlink:href="/img/sprite.svg#geo"></use>
+                    </svg>
+                    <p class="card-company__el-distance">1.1<span class="card-company__el-kilometers"> км</span></p>
+                </div>
+            </div>
+            <div class="card-company__el-right">
+                <div class="card-tag card-tag--desk">
+                    <span class="card-tag__ic">
+                        <svg viewBox="0 0 13 16">
+                            <use xlink:href="/img/sprite.svg#fire"></use>
+                        </svg>
+                    </span>
+                    <span class="card-tag__title">Идет набор</span>
+                </div>
+                @@include('_favorites.html')
+            </div>
         </div>
         <div class="card-company__el-desc">
             <div class="card-company__el-top text-xs-500 ">Название организации</div>
@@ -28,7 +55,7 @@
     </div>
     </div>
     <div class="card-company__el-btn">
-        <a href="#" class="card-company__el-link">Перейти в карточку организации</a>
+        <a href="#" class="card-company__el-link">Посмотреть все услуги</a>
         <button class="button-rect btn-blue button-s js-sv-item__btn">Подробнее</button>
     </div>
 </div>

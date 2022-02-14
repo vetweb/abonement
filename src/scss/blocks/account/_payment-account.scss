@@ -145,6 +145,18 @@ input[type="checkbox"]:disabled + label {
   display: none;
 }
 
+.row-acc__col50__tabel-nodata.active {
+  display: flex;
+}
+
+.add-certif-s .row-acc__col50__tabel-nodata.active,
+.reports-reviews-s .row-acc__col50__tabel-nodata.active,
+.report-s .row-acc__col50__tabel-nodata.active {
+  display: flex;
+  text-align: center;
+  padding: $indent-40 0;
+}
+
 .row-acc__col50__tabel-nodata .row-acc__col50--title {
   font-weight: 600;
   font-size: 24px;

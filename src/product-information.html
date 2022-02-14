@@ -87,10 +87,10 @@
             </div>
             <div class="row-acc__col50">
                 <div class="row-acc__col50-inner">
-                    <div class="row-acc__col50--title">Личные данные</div>
+                    <div class="row-acc__col50--title">Информация о товаре</div>
                     <form class="row-acc__form row-acc__form--add-camp">
                         <p class="label-light label-light--ic">
-                            <label for="ac-comp-name" class="label-light__title">Название организации</label>
+                            <label for="ac-comp-name" class="label-light__title">Заголовок</label>
                             <span class="label-light__symbol">*</span>
                             <a href="#" class="label-light--link">
                                 <img src="/img/notif-reverse.svg" alt="" class="label-light--ic">
@@ -120,27 +120,56 @@
                                 <img src="/img/banner-kos.png" alt="">
                             </div>
                             <input type="file" id="md-file" class="form-row__file">
+                            <label class="label-light__title">Добавить главное фото</label>
                         </div>
                         <p class="label-light">
-                            <label for="ac-k-of-s" class="label-light__title">Вид спорта</label>
+                            <label class="label-light__title">Вид спорта</label>
                             <span class="label-light__symbol">*</span>
                         </p>
-                        <input type="text" id="ac-k-of-s" class="input-light input-light__mb15">
-                        <p class="label-light label-light--ic">
-                            <label for="ac-coach" class="label-light__title">Тренер</label>
-                            <span class="label-light__symbol">*</span>
-                            <a href="#" class="label-light--link">
-                                <img src="/img/coach-ic.svg" alt="" class="label-light--ic">
-                            </a>
-                        </p>
-                        <div class="input-light__wrap">
-                            <input type="text" id="ac-coach" class="input-light input-light--ic input-light__mb15">
-                            <a href="#" class="label-light--link">
-                                <img src="/img/coach-ic.svg" alt="" class="label-light--ic">
-                            </a>
+                        <div class="select-wrapper input-light__mb15">
+                            <div class="select select-light js-select">
+                                <div class="select__header js-select__header">
+                                    <div class="select__current js-select__current"></div>
+                                    <div class="select__ic-wrap">
+                                        <span class="select__icon js-select__icon">
+                                            <svg viewBox="0 0 16 10">
+                                                <use xlink:href="/img/sprite.svg#arr-down"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="select__body js-select__body">
+                                    <div class="select__item js-select__item">1</div>
+                                    <div class="select__item js-select__item">2</div>
+                                    <div class="select__item js-select__item">3</div>
+                                </div>
+                            </div>
                         </div>
                         <p class="label-light label-light--ic">
-                            <label for="ac-info" class="label-light__title">Информация о наборе</label>
+                            <label class="label-light__title">Тренеры и вожатые</label>
+                            <span class="label-light__symbol">*</span>
+                        </p>
+                        <div class="select-wrapper input-light__mb15">
+                            <div class="select select-light js-select">
+                                <div class="select__header js-select__header">
+                                    <div class="select__current js-select__current"></div>
+                                    <div class="select__ic-wrap">
+                                        <span class="select__icon js-select__icon">
+                                            <svg viewBox="0 0 16 10">
+                                                <use xlink:href="/img/sprite.svg#arr-down"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="select__body js-select__body">
+                                    <div class="select__item js-select__item">1</div>
+                                    <div class="select__item js-select__item">2</div>
+                                    <div class="select__item js-select__item">3</div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="label-light label-light--ic">
+                            <label for="ac-info" class="label-light__title">Информация и описание</label>
                             <span class="label-light__symbol">*</span>
                             <a href="#" class="label-light--link">
                                 <img src="/img/notif-reverse.svg" alt="" class="label-light--ic">
@@ -155,17 +184,12 @@
                         <div class="row-acc__form-row">
                             <div class="row-acc__form-col">
                                 <p class="label-light">
-                                    <label for="ac-date" class="label-light__title">Дата</label>
-                                    <span class="label-light__symbol">*</span>
+                                    <label for="ac-date" class="label-light__title">Укажите даты заезда и выезда в лагерь</label>
                                 </p>
                                 <input type="date" id="ac-date" class="input-light input-light__mb15">
                             </div>
                             <div class="row-acc__form-col">
-                                <p class="label-light">
-                                    <label for="ac-time" class="label-light__title">Время</label>
-                                    <span class="label-light__symbol">*</span>
-                                </p>
-                                <input type="time" id="ac-time" class="input-light input-light__mb15">
+                                <input type="date" id="ac-date2" class="input-light input-light__mb15">
                             </div>
                         </div>
                         <p class="label-light">
@@ -208,8 +232,9 @@
                         </div>
                         <div class="form__img-block form__img-block--big input-light__mb25">
                             <div class="form__img-block-top">
-                                <label for="ac-img" class="label-light__title">Галлерея фото 0/15</label>
-                                <input type="file" id="ac-img" class="form-row__file">
+                                <span class="label-light__title">Галлерея фото 0/15</span>
+                                <input type="file" id="md-photo" class="form-row__file">
+                                <label for="md-photo" class="label-light__title">Добавить фото</label>
                             </div>
                             <div class="form__img-block-body">
                                 <div class="form__img-block-img form__img-block-img--big"
