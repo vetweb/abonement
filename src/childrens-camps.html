@@ -9,8 +9,8 @@
 
 <body>
 @@include('components/blocks/page/_header.html')
-<main class="main reviews-s">
-    <section class="fc-s1" style="background-color: #fff">
+<main class="main childrens-camps-s">
+    <section class="fc-s1" style="background-color: #fff" >
         <div class="container">
             <ol class="breadcrumbs-block">
                 <li class="breadcrumbs-block__item">
@@ -115,13 +115,13 @@
                                 <span class="tabs-nav__tab-title">Бесплатный набор</span>
                                 <div class="tabs-nav__tab-active"></div>
                             </a>
-                            <a href="#" class="tabs-nav__tab js-toggle-btn">
+                            <a href="#" class="tabs-nav__tab active js-toggle-btn">
                                 <span class="tabs-nav__tab-title">Детские лагеря</span>
                                 <div class="tabs-nav__tab-active"></div></a>
                             <a href="/certificates.html" class="tabs-nav__tab js-toggle-btn">
                                 <span class="tabs-nav__tab-title">Сертификаты</span>
                                 <div class="tabs-nav__tab-active"></div></a>
-                            <a href="/reviews.html" class="tabs-nav__tab active js-toggle-btn">
+                            <a href="/reviews.html" class="tabs-nav__tab js-toggle-btn">
                                 <span class="tabs-nav__tab-title">Отзывы</span>
                                 <div class="tabs-nav__tab-active"></div></a>
                             <a href="/trainers.html" class="tabs-nav__tab js-toggle-btn">
@@ -136,142 +136,39 @@
             </div>
         </div>
     </section>
-    <section class="section tc-6">
+    <section class="section tc-4" style="background-image: url('/img/main-bg2.svg');">
         <div class="container">
-            <div class="tc-6">
-                <div class="tabs-content__reviews">
-                    <div class="tabs-content__reviews-top">
-                        <h3 class="h3">Отзывы о футбольном клубе “Foot”</h3>
-                        <div class="reviews-block__inner">
-                            @@include('components/blocks/bem/_rating-m.html')
-                            <button class="button-rect btn-blue button-s">Написать отзыв</button>
-                        </div>
+            <div class="tc-4">
+                <div class="grid-gallery">
+                    <div class="grid-gallery__card">
+                        @@include('components/blocks/bem/_card-s.html')
                     </div>
-                    <div class="reviews-block__review">
-                        <div class="reviews-block__review-inner">
-                            <div class="reviews-block__review-l">
-                                <div class="reviews-block__review-wrapper">
-                                    <span class="reviews-block__name text-xs-500">Лана Cтолярова</span>
-                                    <div class="data-time">
-                                        <span class="data-time__date">7 апреля 2019</span>в <span
-                                            class="data-time__time">16:34</span>
-                                    </div>
-                                </div>
-                                <p class="reviews-block__text reviews-block__text--mob text-s">Сын очень доволен их команда выигрывает футбольные турниры.</p>
-                            </div>
-                            <div class="reviews-block__review-r">
-                                @@include('components/blocks/bem/_stars.html')
-                                <div class="recom-block">
-                                    <img src="/img/heart-red.svg" class="recom-block__img" alt="">
-                                    <span class="recom-block__text">Рекомендую</span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="grid-gallery__card">
+                        @@include('components/blocks/bem/_card-s.html')
                     </div>
-                    <div class="reviews-block__review">
-                        <div class="reviews-block__review-inner">
-                            <div class="reviews-block__review-l">
-                                <div class="reviews-block__review-wrapper">
-                                    <span class="reviews-block__name text-xs-500">Лана Cтолярова</span>
-                                    <div class="data-time">
-                                        <span class="data-time__date">7 апреля 2019</span>в <span
-                                            class="data-time__time">16:34</span>
-                                    </div>
-                                </div>
-                                <p class="reviews-block__text reviews-block__text--mob text-s">Сын очень доволен их команда выигрывает футбольные турниры.</p>
-                            </div>
-                            <div class="reviews-block__review-r">
-                                @@include('components/blocks/bem/_stars.html')
-                                <div class="recom-block">
-                                    <img src="/img/heart-red.svg" class="recom-block__img" alt="">
-                                    <span class="recom-block__text">Рекомендую</span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="grid-gallery__card">
+                        @@include('components/blocks/bem/_card-s.html')
                     </div>
-                    <div class="reviews-block__review">
-                        <div class="reviews-block__review-inner">
-                            <div class="reviews-block__review-l">
-                                <div class="reviews-block__review-wrapper">
-                                    <span class="reviews-block__name text-xs-500">Лана Cтолярова</span>
-                                    <div class="data-time">
-                                        <span class="data-time__date">7 апреля 2019</span>в <span
-                                            class="data-time__time">16:34</span>
-                                    </div>
-                                </div>
-                                <p class="reviews-block__text reviews-block__text--mob text-s">Сын очень доволен их команда выигрывает футбольные турниры.</p>
-                            </div>
-                            <div class="reviews-block__review-r">
-                                @@include('components/blocks/bem/_stars.html')
-                                <div class="recom-block">
-                                    <img src="/img/heart-red.svg" class="recom-block__img" alt="">
-                                    <span class="recom-block__text">Рекомендую</span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="grid-gallery__card">
+                        @@include('components/blocks/bem/_card-s.html')
                     </div>
-                    <div class="reviews-block__review">
-                        <div class="reviews-block__review-inner">
-                            <div class="reviews-block__review-l">
-                                <div class="reviews-block__review-wrapper">
-                                    <span class="reviews-block__name text-xs-500">Лана Cтолярова</span>
-                                    <div class="data-time">
-                                        <span class="data-time__date">7 апреля 2019</span>в <span
-                                            class="data-time__time">16:34</span>
-                                    </div>
-                                </div>
-                                <p class="reviews-block__text reviews-block__text--mob text-s">Сын очень доволен их команда выигрывает футбольные турниры.</p>
-                            </div>
-                            <div class="reviews-block__review-r">
-                                @@include('components/blocks/bem/_stars.html')
-                                <div class="recom-block">
-                                    <img src="/img/heart-red.svg" class="recom-block__img" alt="">
-                                    <span class="recom-block__text">Рекомендую</span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="grid-gallery__card">
+                        @@include('components/blocks/bem/_card-s.html')
                     </div>
-                    <div class="reviews-block__review">
-                        <div class="reviews-block__review-inner">
-                            <div class="reviews-block__review-l">
-                                <div class="reviews-block__review-wrapper">
-                                    <span class="reviews-block__name text-xs-500">Лана Cтолярова</span>
-                                    <div class="data-time">
-                                        <span class="data-time__date">7 апреля 2019</span>в <span
-                                            class="data-time__time">16:34</span>
-                                    </div>
-                                </div>
-                                <p class="reviews-block__text reviews-block__text--mob text-s">Сын очень доволен их команда выигрывает футбольные турниры.</p>
-                            </div>
-                            <div class="reviews-block__review-r">
-                                @@include('components/blocks/bem/_stars.html')
-                                <div class="recom-block">
-                                    <img src="/img/heart-red.svg" class="recom-block__img" alt="">
-                                    <span class="recom-block__text">Рекомендую</span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="grid-gallery__card">
+                        @@include('components/blocks/bem/_card-s.html')
                     </div>
-                    <div class="reviews-block__review">
-                        <div class="reviews-block__review-inner">
-                            <div class="reviews-block__review-l">
-                                <div class="reviews-block__review-wrapper">
-                                    <span class="reviews-block__name text-xs-500">Лана Cтолярова</span>
-                                    <div class="data-time">
-                                        <span class="data-time__date">7 апреля 2019</span>в <span
-                                            class="data-time__time">16:34</span>
-                                    </div>
-                                </div>
-                                <p class="reviews-block__text reviews-block__text--mob text-s">Сын очень доволен их команда выигрывает футбольные турниры.</p>
-                            </div>
-                            <div class="reviews-block__review-r">
-                                @@include('components/blocks/bem/_stars.html')
-                                <div class="recom-block">
-                                    <img src="/img/heart-red.svg" class="recom-block__img" alt="">
-                                    <span class="recom-block__text">Рекомендую</span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="grid-gallery__card">
+                        @@include('components/blocks/bem/_card-s.html')
+                    </div>
+                    <div class="grid-gallery__card">
+                        @@include('components/blocks/bem/_card-s.html')
+                    </div>
+                    <div class="grid-gallery__card">
+                        @@include('components/blocks/bem/_card-s.html')
+                    </div>
+                    <div class="grid-gallery__card">
+                        @@include('components/blocks/bem/_card-s.html')
                     </div>
                 </div>
                 <div class="tabs-content__el-btn">

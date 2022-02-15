@@ -1,0 +1,81 @@
+.tc-9 {
+  padding-bottom: $indent-170;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include lg {
+    padding-bottom: $indent-120;
+  }
+}
+
+.tc-9 .grid-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+  margin-bottom: $indent-30;
+
+  @include csx {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include sm {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: $indent-50;
+  }
+
+  @include lgx {
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+    margin-bottom: $indent-60;
+  }
+}
+
+.tc-9 .grid-gallery__card {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tc-9 .card-big__el-content {
+  padding: 0 $indent-15;
+  margin-bottom: $indent-10;
+
+  @include lg {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.tc-9 .metro-block {
+  display: none;
+}
+
+.tc-9 .card-big__el-footer .button-full .button-full-desk {
+  display: none;
+}
+
+.tc-9 .card-big__el-footer .button-full-mob {
+  display: inline-block;
+}
+
+.tc-9 .card-big__el-img {
+  height: 110px;
+}
+
+.tc-9 .card-big__el-images {
+  padding: $indent-15;
+}
+
+.tc-9 .card-big__el-images .circle-el {
+  width: 40px;
+  height: 40px;
+  top: 30px;
+}
+
+.tc-9 .card-big__el-images .circle-el svg {
+  width: 30px;
+  height: 30px;
+}
+
+.tc-9 .card-big__el-footer {
+  padding: 0 $indent-15;
+}

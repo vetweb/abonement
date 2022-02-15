@@ -8,6 +8,7 @@
 
 .card-big.card {
   padding-bottom: $indent-10;
+  background-color: $white;
 
   @include lg {
     padding-bottom: $indent-25;

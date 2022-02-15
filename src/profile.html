@@ -9,46 +9,59 @@
 
 <body>
 @@include('components/blocks/page/_header.html')
-<main class="account-s profile-s settings-s">
+<main class="account-s profile-s index-s__mob-s" style="background-image: url('/img/main-bg.svg');">
     <section class="account-s1">
-    <div class="container">
-        <div class="index-s__top">
-            <p class="settings-s__title">Личный кабинет</p>
-        </div>
-        <div class="row-acc row-acc--acc">
-            <div class="row-acc__col25 row-acc__col25--left">
-                <div class="row-acc__col25-top">
-                    <span class="row-acc__list-icon">
-                        <svg>
-                            <use xlink:href="/img/sprite.svg#user"></use>
+        <div class="index-s__mob">
+            <div class="container">
+                <a href="/coaches.html" class="link-back">
+                     <span class="index-s__mob__icon">
+                        <svg  viewBox="0 0 8 15">
+                            <use xlink:href="/img/sprite.svg#arr-left"></use>
                         </svg>
                     </span>
-                    <span class="row-acc__col25-title">Управление аккаунтом</span>
-                </div>
-                <ul class="row-acc__list row-acc__list--acc">
-                    <li class="row-acc__list-el active js-toggle-btn">
-                        <a href="/profile.html" class="row-acc__list-link">
-                            <span class="row-acc__list-title">Профиль</span>
-                        </a>
-                    </li>
-                    <li class="row-acc__list-el js-toggle-btn">
-                        <a href="/payment-account.html" class="row-acc__list-link">
-                            <span class="row-acc__list-title">Оплата</span>
-                        </a>
-                    </li>
-                    <li class="row-acc__list-el js-toggle-btn">
-                        <a href="/favorites-account.html" class="row-acc__list-link">
-                            <span class="row-acc__list-title">Избранное</span>
-                        </a>
-                    </li>
-                    <li class="row-acc__list-el js-toggle-btn">
-                        <a href="/help-account.html" class="row-acc__list-link">
-                            <span class="row-acc__list-title">Помощь</span>
-                        </a>
-                    </li>
-                </ul>
+                    <span class="row-acc__title">Назад</span>
+                </a>
+                <p class="settings-s__title">Профиль</p>
             </div>
-            <div class="row-acc__col50">
+        </div>
+        <div class="container">
+            <div class="index-s__top">
+                <p class="settings-s__title">Личный кабинет</p>
+            </div>
+            <div class="row-acc row-acc--acc">
+                <div class="row-acc__col25 row-acc__col25--left">
+                    <div class="row-acc__col25-top">
+                        <span class="row-acc__list-icon">
+                            <svg>
+                                <use xlink:href="/img/sprite.svg#user"></use>
+                            </svg>
+                        </span>
+                        <span class="row-acc__col25-title">Управление аккаунтом</span>
+                    </div>
+                    <ul class="row-acc__list row-acc__list--acc">
+                        <li class="row-acc__list-el active js-toggle-btn">
+                            <a href="/profile.html" class="row-acc__list-link">
+                                <span class="row-acc__list-title">Профиль</span>
+                            </a>
+                        </li>
+                        <li class="row-acc__list-el js-toggle-btn">
+                            <a href="/payment-account.html" class="row-acc__list-link">
+                                <span class="row-acc__list-title">Оплата</span>
+                            </a>
+                        </li>
+                        <li class="row-acc__list-el js-toggle-btn">
+                            <a href="/favorites-account.html" class="row-acc__list-link">
+                                <span class="row-acc__list-title">Избранное</span>
+                            </a>
+                        </li>
+                        <li class="row-acc__list-el js-toggle-btn">
+                            <a href="/help-account.html" class="row-acc__list-link">
+                                <span class="row-acc__list-title">Помощь</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row-acc__col50">
                 <div class="row-acc__col50-inner">
                     <div class="row-acc__col50--title">Личные данные</div>
                     <form class="row-acc__form row-acc__form--data">
@@ -133,9 +146,9 @@
                     </form>
                 </div>
             </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 </main>
 @@include('components/blocks/page/_footer.html')
 @@include('components/blocks/page/_scripts.html')

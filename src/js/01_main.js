@@ -7,18 +7,12 @@ Swiper.use([ Mousewheel, Navigation, Pagination])
 document.addEventListener('DOMContentLoaded', () => {
 	// smooth-scrollbar
 	const tabsBlock = document.querySelector(".js-tabs-block");
-	const tabsBlockTwo = document.querySelector(".js-tabs-block2");
 	const certifScroll2 = document.querySelector(".js-certif-scroll-block2");
 	const certifScroll = document.querySelector(".js-certif-scroll-block");
 	const galleryScroll = document.querySelector(".js-gallery-scroll-block");
 
 
 	let optionsTabsBlock = {
-		damping: .1,
-		alwaysShowTracks: true,
-	}
-
-	let optionsTabsBlockTwo = {
 		damping: .1,
 		alwaysShowTracks: true,
 	}
@@ -42,10 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		Scrollbar.init(tabsBlock, optionsTabsBlock);
 	}
 
-	if (tabsBlockTwo) {
-		Scrollbar.init(tabsBlockTwo, optionsTabsBlockTwo);
-	}
-
 	if (certifScroll) {
 		Scrollbar.init(certifScroll, optionsCertifScroll);
 	}
@@ -57,6 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	if (galleryScroll) {
 		Scrollbar.init(galleryScroll, optionsGalleryScroll);
 	}
+
+	Scrollbar.initAll();
 
 	//Слайдер standard__slider
 	const standardSwiper = document.querySelector('.js-standard-slider');
@@ -253,7 +245,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	if (galleryThumbs && galleryTop) {
 
 		function getDirection() {
-			let direction = window.innerWidth >= 768 ? 'vertical' : 'horizontal';
+			let direction = window.innerWidth >= 480 ? 'vertical' : 'horizontal';
 			return direction;
 		}
 
@@ -271,7 +263,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				320: {
 					slidesPerView: 'auto'
 				},
-				768: {
+				480: {
 					spaceBetween: 0,
 					slidesPerView: 4,
 				},
