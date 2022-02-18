@@ -6,6 +6,14 @@
   padding: $indent-15;
 }
 
+.faq-block:not(:last-child) {
+  margin-bottom: $indent-10;
+
+  @include sm {
+    margin-bottom: $indent-20;
+  }
+}
+
 .account-s.help-account-s .faq-block__top {
   display: flex;
   flex-direction: column;
@@ -53,7 +61,6 @@
 
 .account-s.help-account-s .row-acc__form {
   width: 100%;
-  margin-top: $indent-10;
 }
 
 .account-s.help-account-s .row-acc__col50 .sv-item__cont{

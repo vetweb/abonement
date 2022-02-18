@@ -33,7 +33,7 @@
 .sv-item__cont {
   max-height: 0;
   overflow: hidden;
-  transition: max-height .2s;
+  transition: height .2s;
 }
 
 .sv-item__cont.open {
