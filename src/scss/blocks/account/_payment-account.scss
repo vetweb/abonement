@@ -121,12 +121,14 @@ input[type="checkbox"]:disabled + label {
   }
 }
 
+.account-s.orders-history-s .row-product .row-product__col--middle .row-acc-grid__cell-img,
 .account-s.favorites-acc-s .row-product .row-product__col--middle .row-acc-grid__cell-img {
   width: 110px;
   height: 88px;
   flex-shrink: 0;
 }
 
+.account-s.orders-history-s .row-product .row-product__col--middle .row-acc-grid__cell-img img,
 .account-s.favorites-acc-s .row-product .row-product__col--middle .row-acc-grid__cell-img img {
   width: 110px;
   height: 88px;
