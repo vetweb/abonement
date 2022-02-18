@@ -279,7 +279,6 @@
 .row-product .row-product__col--middle .row-acc-grid__cell.row-acc-grid__cell--mob {
   @include sm-down {
     padding-top: $indent-25;
-    //justify-content: center;
     justify-content: flex-start;
     display: flex;
     border-top: 1px solid #F3F3F3;

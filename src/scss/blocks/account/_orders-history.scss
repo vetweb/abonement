@@ -94,6 +94,7 @@
   }
 }
 
+.account-s.favorites-acc-s .row-acc__col50--title,
 .account-s.orders-history-s .row-acc__col50--title {
   display: none;
 
@@ -102,7 +103,7 @@
   }
 }
 
-.account-s.orders-history-s .row-acc-grid__row,
+.account-s.favorites-acc-s .row-acc-grid__row--body,
 .account-s.orders-history-s .row-acc-grid__row--body {
   @include sm-down {
     margin-bottom: 0;
