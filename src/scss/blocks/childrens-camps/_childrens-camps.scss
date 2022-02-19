@@ -1,0 +1,48 @@
+.tc-4 {
+  padding-bottom: $indent-170;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include lg {
+    padding-bottom: $indent-120;
+  }
+}
+
+.tc-4 .grid-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+  margin-bottom: $indent-30;
+
+  @include csx {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include sm {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: $indent-50;
+  }
+
+  @include lgx {
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+    margin-bottom: $indent-60;
+  }
+}
+
+.tc-4 .grid-gallery__card {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tc-4 .card-s__el-top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  top: 16px;
+  left: 0;
+  width: 100%;
+  padding: 0 9px;
+  z-index: 5;
+}

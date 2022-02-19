@@ -1,0 +1,155 @@
+.orders-history-s1 {
+  padding: 70px 0 60px;
+
+  @include sm {
+    padding: 70px 0 60px;
+  }
+
+  @include lg {
+    padding: 70px 0 100px;
+  }
+}
+
+.account-s.orders-history-s .row-acc__col50{
+  @include lg {
+    max-width: 100%;
+  }
+}
+
+.orders-history-s1 .row-product__col--middle .row-acc-grid__body .row-acc-grid__row.row-acc-grid__row-bottom {
+  @include sm {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid #e0e0e0;
+  }
+}
+
+.account-s.orders-history-s .row-acc-grid__cell .row-acc-grid__cell-subtext.row-acc-grid__cell-subtext--desk {
+  display: none;
+
+  @include sm {
+    display: block;
+  }
+}
+
+.account-s.orders-history-s .row-acc-grid__cell.row-acc-grid__cell--text.row-acc-grid__cell--text--desk,
+.account-s.orders-history-s .row-acc-grid__cell.row-acc-grid__cell--quantity.row-acc-grid__cell--quantity--desk {
+  display: none;
+
+  @include sm {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.account-s.orders-history-s .row-product .row-product__col--middle .row-acc-grid__row.row-acc-grid__row-bottom .row-acc-grid__cell.row-acc-grid__cell--prod:nth-child(1),
+.account-s.orders-history-s .row-product .row-product__col--middle .row-acc-grid__top.row-acc-grid__row .row-acc-grid__cell.row-acc-grid__cell--prod:nth-child(1) {
+  width: fit-content;
+
+  @include sm {
+    width: 60%;
+  }
+}
+
+.account-s.orders-history-s .row-acc-grid__cell.row-acc-grid__cell--prod .row-acc-grid__cell-text {
+  max-width: 345px;
+  width: 100%;
+  min-width: 145px;
+  text-align: start;
+  font-weight: 600;
+
+  @include sm-down {
+    max-width: 100%;
+  }
+}
+
+.row-acc-grid__cell-text-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-acc-grid__cell-subtext {
+  text-align: start;
+  margin-top: 7px;
+
+  @include sm-down {
+    margin-bottom: 5px;
+  }
+}
+
+.row-acc-grid__cell.row-acc-grid__cell--mob {
+  display: flex;
+  flex-direction: column;
+}
+
+.account-s.orders-history-s .row-product .row-product__col--middle .row-acc-grid__row--body {
+  @include sm-down {
+    padding: 0;
+  }
+}
+
+.account-s.orders-history-s .row-acc__col50 {
+
+  @include sm-down {
+    padding: $indent-10;
+  }
+}
+
+.account-s.favorites-acc-s .row-acc__col50--title,
+.account-s.orders-history-s .row-acc__col50--title {
+  display: none;
+
+  @include lg {
+    display: block;
+  }
+}
+
+.account-s.favorites-acc-s .row-acc-grid__row--body,
+.account-s.orders-history-s .row-acc-grid__row--body {
+  @include sm-down {
+    margin-bottom: 0;
+  }
+}
+
+.account-s.orders-history-s .row-acc-grid__cell.row-acc-grid__cell--prod {
+  @include sm-down {
+    padding: $indent-10 0 0;
+  }
+}
+
+.account-s.orders-history-s .row-product .row-product__col--middle .row-acc-grid__cell.row-acc-grid__cell--mob {
+  @include sm-down {
+    padding: 0 0 $indent-15 0;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+  }
+}
+
+.account-s.orders-history-s .row-acc-grid__cell__row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.row-acc-grid__cell-gray,
+.row-acc-grid__cell__col30-title {
+  font-size: 14px;
+  line-height: 18px;
+  color: $gray-tx;
+  font-weight: 400;
+}
+
+.row-acc-grid__cell__inner {
+  display: flex;
+  justify-content: space-between;
+
+  @include sm-down {
+    width: 40%;
+  }
+}
+
+.account-s.orders-history-s .row-product .row-product__col--middle .row-acc-grid__cell.row-acc-grid__cell--mob span {
+  @include sm-down {
+    margin-right: 0;
+  }
+}
+

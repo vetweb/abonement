@@ -1,6 +1,6 @@
 .fc-s1 {
   padding-top: $indent-25;
-  border-top: 1px solid $blue;
+ // border-top: 1px solid $blue;
   margin-bottom: $indent-30;
 
   @include lg {
@@ -262,7 +262,7 @@
   flex-direction: column;
   overflow: hidden;
 
-  @include sm {
+  @include csx {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -273,8 +273,7 @@
   width: 100%;
   margin-bottom: $indent-15;
 
-  @include sm {
-    margin-bottom: 0;
+  @include csx {
     margin-right: 10px;
     width: 90%;
   }
@@ -286,7 +285,7 @@
   padding: 0;
   margin-bottom: $indent-15;
 
-  @include sm {
+  @include csx {
     height: 305px;
     width: 60px;
     margin-bottom: 0;
@@ -296,7 +295,7 @@
 .swiper-slide.gallery-thumbs__slide:not(:last-child) {
   margin-right: $indent-15;
 
-  @include sm {
+  @include csx {
     margin-bottom: 19px;
     margin-right: 0;
   }

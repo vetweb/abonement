@@ -133,16 +133,12 @@ a.link-back .row-acc__title {
 .row-acc__form-row--bottom .row-acc__form-col.row-acc__form-col--100 .label-light {
   margin-bottom: 0;
   align-items: center;
+  margin-right: $indent-15;
 }
 
-[type="file"]::-webkit-file-upload-button {
-  background: $white;
-  border: 0;
-  color: $blue;
-  cursor: pointer;
-  font-size: 12px;
-  outline: none;
-  padding: 0;
-  text-transform: uppercase;
-  //width: 150px;
+.label-light__line {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $blue-bg;
 }

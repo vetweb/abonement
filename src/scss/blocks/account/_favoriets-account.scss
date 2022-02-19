@@ -1,0 +1,69 @@
+.row-acc__col50__tabel .row-acc-grid__cell.row-acc-grid__cell--mob {
+  display: flex;
+  width: fit-content;
+
+  @include sm {
+    display: none;
+  }
+}
+
+.account-s.favorites-acc-s .row-acc__col50 {
+  @include sm-down {
+    padding: $indent-15;
+  }
+}
+
+.account-s.favorites-acc-s .row-product .row-product__col--middle .row-acc-grid__row {
+  @include sm-down {
+    margin-bottom: $indent-10;
+  }
+}
+.account-s.favorites-acc-s .row-product .row-product__col--middle .row-acc-grid__row--body {
+  @include sm-down {
+    padding: 0;
+    margin-bottom: 0;
+  }
+}
+
+.account-s.favorites-acc-s .row-acc-grid__cell.row-acc-grid__cell--prod {
+  @include sm-down {
+    padding: $indent-10 0;
+  }
+}
+
+.account-s.favorites-acc-s .row-product .row-product__col--middle .row-acc-grid__cell.row-acc-grid__cell--mob {
+  @include sm-down {
+    padding: 0;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid transparent;
+  }
+}
+
+.account-s.favorites-acc-s .row-product .row-product__col--middle .row-acc-grid__cell.row-acc-grid__cell--mob span:first-child {
+  @include sm-down {
+    margin-right: 0;
+  }
+}
+
+.account-s.favorites-acc-s .row-product .row-product__col--middle .row-acc-grid__cell.row-acc-grid__cell--desk {
+  display: none;
+
+  @include sm {
+    display: flex;
+  }
+}
+
+.favorites-acc-s.account-s .row-acc-grid__row--body .row-acc-grid__row.row-acc-grid__row-bottom {
+  @include sm-down {
+    border-top: 1px solid transparent;
+  }
+}
+
+.favorites-acc-s.account-s .row-product__col--middle .row-acc-grid__body .row-acc-grid__row:first-child {
+  @include sm {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid #F3F3F3;
+  }
+}

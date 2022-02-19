@@ -279,7 +279,7 @@
 .row-product .row-product__col--middle .row-acc-grid__cell.row-acc-grid__cell--mob {
   @include sm-down {
     padding-top: $indent-25;
-    justify-content: center;
+    justify-content: flex-start;
     display: flex;
     border-top: 1px solid #F3F3F3;
   }
@@ -343,7 +343,10 @@
   margin: 0 auto;
 }
 
-input[type="file"] {
-  //color: transparent;
-  width: 153px;
+.modal-window__content.modal-window__content--add-certif .form__img-block-img.form__img-block-img--small {
+  height: 80px;
+}
+
+.modal-window__content.modal-window__content--add-certif .form__img-block-img.form__img-block-img--small img {
+  height: 100%;
 }

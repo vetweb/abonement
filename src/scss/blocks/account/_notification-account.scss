@@ -1,0 +1,108 @@
+.notification-account-s1 {
+  padding: 70px 0 60px;
+  margin-top: 30px;
+
+  @include sm {
+    padding: 70px 0 60px;
+  }
+
+  @include lg {
+    margin-top: 0;
+    padding: 70px 0 100px;
+  }
+}
+
+.account-s.notification-account-s .row-acc {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+  @include lg {
+    flex-direction: row;
+  }
+}
+
+.account-s.notification-account-s .row-acc__col25.row-acc__col25--left {
+  display: none;
+
+  @include lg {
+    display: block;
+    margin-right: 0;
+  }
+}
+
+.account-s.notification-account-s .row-acc__col50 {
+  height: 421px;
+  background-color: transparent;
+  padding: 0;
+  width: 100%;
+  display: none;
+
+  @include sm {
+    display: block;
+    width: 48%;
+    height: 363px;
+  }
+}
+
+.account-s.notification-account-s .row-acc__col50--title {
+  display: none;
+
+  @include lg {
+    display: block;
+    margin-bottom: $indent-40;
+  }
+}
+
+.account-s.notification-account-s .row-acc__col25--right .row-acc__col25-inner,
+.account-s.notification-account-s .row-acc__col50 .row-acc__col50-inner {
+  background-color: $white;
+  border-radius: 8px;
+  padding: $indent-10;
+  height: 100%;
+
+  @include sm {
+    padding: $indent-30 $indent-15;
+  }
+}
+
+.account-s.notification-account-s .row-acc.row-acc--acc .row-acc__col25.row-acc__col25--right {
+  padding: 0 $indent-15 $indent-35;
+
+  @include lg {
+    padding: $indent-60 $indent-15 $indent-35;
+  }
+}
+
+.account-s.notification-account-s .account-s .row-acc {
+  flex-direction: row;
+}
+
+.account-s.notification-account-s .row-acc__col25.row-acc__col25--right {
+  height: 245px;
+  background-color: transparent;
+  width: 100%;
+
+  @include sm {
+    width: 48%;
+    height: 301px;
+  }
+}
+
+.account-s.notification-account-s.index-s__mob-s .index-s__mob {
+  display: none;
+
+  @include lg-down {
+    display: flex;
+    padding: $indent-15 $indent-10 $indent-20;
+    background-color: $white;
+    box-shadow: 10px 10px 30px rgba(20, 40, 96, 0.15);
+    margin-bottom: $indent-30;
+  }
+}
+
+.account-s.notification-account-s.index-s__mob-s .index-s__top {
+  @include lg-down {
+    display: none;
+  }
+}

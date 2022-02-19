@@ -151,6 +151,7 @@
                                     <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--text">Дата и время добавления</div>
                                     <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--text">Цена</div>
                                     <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--text">Редактировать</div>
+                                    <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--text">Дублировать</div>
                                     <div class="row-acc-grid__cell row-acc-grid__cell--prod ">Удалить</div>
                                 </div>
                                 <div class="row-acc-grid__row--body">
@@ -173,72 +174,88 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row-acc-grid__row row-acc-grid__row-bottom">
-                                        <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--desk">
-                                            <div class="row-acc-grid__cell-img row-acc-grid__cell-img--prod" style="background-image: url('/img/user-bg.png');">
-                                                <img src="/img/bg1-sl.png" alt="">
+                                    <div class="row-acc-grid__row--body-wrap">
+                                        <div class="row-acc-grid__row row-acc-grid__row-bottom">
+                                            <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--desk">
+                                                <div class="row-acc-grid__cell-img row-acc-grid__cell-img--prod" style="background-image: url('/img/user-bg.png');">
+                                                    <img src="/img/bg1-sl.png" alt="">
+                                                </div>
+                                                <p class="row-acc-grid__cell-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                    sed do eiusmod tempor </p>
                                             </div>
-                                            <p class="row-acc-grid__cell-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                                sed do eiusmod tempor </p>
-                                        </div>
-                                        <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--text">
-                                            <span class="row-acc-grid__cell-date">12.12.2021 16:54</span>
-                                        </div>
-                                        <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--text">
-                                            <p class="row-acc-grid__cell-price">22 <span class="">br</span></p>
-                                        </div>
-                                        <div class="row-acc-grid__cell row-acc-grid__cell--prod js-edit-certif row-acc-grid__cell--ic row-acc-grid__cell--mob">
-                                            <span class="row-acc__list-icon">
-                                                <svg viewBox="0 0 24 24">
-                                                    <use xlink:href="/img/sprite.svg#edit-c"></use>
-                                                </svg>
-                                            </span>
-                                            <span class="row-acc__list-icon row-acc__list-icon--mob">
-                                                <svg viewBox="0 0 24 24">
-                                                    <use xlink:href="/img/sprite.svg#trash"></use>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                        <div class="row-acc-grid__cell row-acc-grid__cell--prod js-delete-certif row-acc-grid__cell--ic row-acc-grid__cell--desk">
-                                            <span class="row-acc__list-icon">
-                                                <svg viewBox="0 0 24 24">
-                                                    <use xlink:href="/img/sprite.svg#trash"></use>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="row-acc-grid__row row-acc-grid__row-bottom">
-                                        <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--desk">
-                                            <div class="row-acc-grid__cell-img row-acc-grid__cell-img--prod" style="background-image: url('/img/user-bg.png');">
-                                                <img src="/img/bg1-sl.png" alt="">
+                                            <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--text">
+                                                <span class="row-acc-grid__cell-date">12.12.2021 16:54</span>
                                             </div>
-                                            <p class="row-acc-grid__cell-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                                sed do eiusmod tempor </p>
+                                            <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--text">
+                                                <p class="row-acc-grid__cell-price">22 <span class="">br</span></p>
+                                            </div>
+                                            <div class="row-acc-grid__cell row-acc-grid__cell--prod js-edit-certif row-acc-grid__cell--ic row-acc-grid__cell--mob" type="button">
+                                                <span class="row-acc__list-icon">
+                                                    <svg viewBox="0 0 24 24">
+                                                        <use xlink:href="/img/sprite.svg#edit-c"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="row-acc__list-icon row-acc__list-icon--mob">
+                                                    <svg viewBox="0 0 24 24">
+                                                        <use xlink:href="/img/sprite.svg#trash"></use>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <div class="row-acc-grid__cell row-acc-grid__cell--prod js-delete-certif row-acc-grid__cell--ic" type="button">
+                                                <span class="row-acc__list-icon">
+                                                    <svg viewBox="0 0 20 20">
+                                                        <use xlink:href="/img/sprite.svg#duplicate"></use>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <div class="row-acc-grid__cell row-acc-grid__cell--prod js-delete-certif row-acc-grid__cell--ic row-acc-grid__cell--desk" type="button">
+                                                <span class="row-acc__list-icon">
+                                                    <svg viewBox="0 0 24 24">
+                                                        <use xlink:href="/img/sprite.svg#trash"></use>
+                                                    </svg>
+                                                </span>
+                                            </div>
                                         </div>
-                                        <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--text">
-                                            <span class="row-acc-grid__cell-date">12.12.2021 16:54</span>
-                                        </div>
-                                        <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--text">
-                                            <p class="row-acc-grid__cell-price">22 <span class="">br</span></p>
-                                        </div>
-                                        <div class="row-acc-grid__cell row-acc-grid__cell--prod js-edit-certif row-acc-grid__cell--ic row-acc-grid__cell--mob">
-                                            <span class="row-acc__list-icon">
-                                                <svg viewBox="0 0 24 24">
-                                                    <use xlink:href="/img/sprite.svg#edit-c"></use>
-                                                </svg>
-                                            </span>
-                                            <span class="row-acc__list-icon row-acc__list-icon--mob">
-                                                <svg viewBox="0 0 24 24">
-                                                    <use xlink:href="/img/sprite.svg#trash"></use>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                        <div class="row-acc-grid__cell row-acc-grid__cell--prod js-delete-certif row-acc-grid__cell--ic row-acc-grid__cell--desk">
-                                            <span class="row-acc__list-icon">
-                                                <svg viewBox="0 0 24 24">
-                                                    <use xlink:href="/img/sprite.svg#trash"></use>
-                                                </svg>
-                                            </span>
+                                        <div class="row-acc-grid__row row-acc-grid__row-bottom">
+                                            <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--desk">
+                                                <div class="row-acc-grid__cell-img row-acc-grid__cell-img--prod" style="background-image: url('/img/user-bg.png');">
+                                                    <img src="/img/bg1-sl.png" alt="">
+                                                </div>
+                                                <p class="row-acc-grid__cell-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                    sed do eiusmod tempor </p>
+                                            </div>
+                                            <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--text">
+                                                <span class="row-acc-grid__cell-date">12.12.2021 16:54</span>
+                                            </div>
+                                            <div class="row-acc-grid__cell row-acc-grid__cell--prod row-acc-grid__cell--text">
+                                                <p class="row-acc-grid__cell-price">22 <span class="">br</span></p>
+                                            </div>
+                                            <div class="row-acc-grid__cell row-acc-grid__cell--prod js-edit-certif row-acc-grid__cell--ic row-acc-grid__cell--mob" type="button">
+                                                <span class="row-acc__list-icon">
+                                                    <svg viewBox="0 0 24 24">
+                                                        <use xlink:href="/img/sprite.svg#edit-c"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="row-acc__list-icon row-acc__list-icon--mob">
+                                                    <svg viewBox="0 0 24 24">
+                                                        <use xlink:href="/img/sprite.svg#trash"></use>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <div class="row-acc-grid__cell row-acc-grid__cell--prod js-delete-certif row-acc-grid__cell--ic" type="button">
+                                                <span class="row-acc__list-icon">
+                                                    <svg viewBox="0 0 20 20">
+                                                        <use xlink:href="/img/sprite.svg#duplicate"></use>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <div class="row-acc-grid__cell row-acc-grid__cell--prod js-delete-certif row-acc-grid__cell--ic row-acc-grid__cell--desk" type="button">
+                                                <span class="row-acc__list-icon">
+                                                    <svg viewBox="0 0 24 24">
+                                                        <use xlink:href="/img/sprite.svg#trash"></use>
+                                                    </svg>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row-acc-grid__row row-acc-grid__row--green">
