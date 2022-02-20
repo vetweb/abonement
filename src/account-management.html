@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+@@include('components/blocks/page/_head.html',{
+"lang":"en",
+"title":"Абонемент",
+"description":"Абонемент",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+@@include('components/blocks/page/_header.html')
+<main class="account-s account-management-s index-s__mob-s" style="background-image: url('/img/main-bg.svg');">
+    <section class="account-management-s1">
+        <div class="index-s__mob">
+            <div class="container">
+                <a href="/coaches.html" class="link-back">
+                     <span class="index-s__mob__icon">
+                        <svg  viewBox="0 0 8 15">
+                            <use xlink:href="/img/sprite.svg#arr-left"></use>
+                        </svg>
+                    </span>
+                    <span class="row-acc__title">Назад</span>
+                </a>
+                <p class="settings-s__title">Управление аккаунтом</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="index-s__top">
+                <p class="settings-s__title">Управление аккаунтом</p>
+            </div>
+            <div class="row-acc row-acc--acc">
+                <ul class="row-acc__links">
+                    <li class="row-acc__item">
+                        <a href="#" class="row-acc__link">
+                            <span class="row-acc__item-title">Профиль</span>
+                            <span class="row-acc__link-ic">
+                                 <svg viewBox="0 0 8 15">
+                                    <use xlink:href="/img/sprite.svg#arrow-right"></use>
+                                 </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="row-acc__item">
+                        <a href="#" class="row-acc__link">
+                            <span class="row-acc__item-title">Оплата</span>
+                            <span class="row-acc__link-ic">
+                                 <svg viewBox="0 0 8 15">
+                                    <use xlink:href="/img/sprite.svg#arrow-right"></use>
+                                 </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="row-acc__item">
+                        <a href="#" class="row-acc__link">
+                            <span class="row-acc__item-title">Избранное</span>
+                            <span class="row-acc__link-ic">
+                                 <svg viewBox="0 0 8 15">
+                                    <use xlink:href="/img/sprite.svg#arrow-right"></use>
+                                 </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="row-acc__item">
+                        <a href="#" class="row-acc__link">
+                            <span class="row-acc__item-title">Помощь</span>
+                            <span class="row-acc__link-ic">
+                                 <svg viewBox="0 0 8 15">
+                                    <use xlink:href="/img/sprite.svg#arrow-right"></use>
+                                 </svg>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+@@include('components/blocks/page/_footer.html')
+@@include('components/blocks/page/_scripts.html')
+</body>
+
+</html>
