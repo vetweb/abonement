@@ -10,7 +10,7 @@
 <body>
 @@include('components/blocks/page/_header.html')
 <main class="main">
-    <section class="card-cd-s1">
+    <section class="card-cd-s1" style="background-image: url('/img/main-bg.svg');">
       <div class="container">
           <ol class="breadcrumbs-block">
               <li class="breadcrumbs-block__item">
@@ -28,15 +28,20 @@
               </li>
           </ol>
           <div class="card-cd-s1__row grid-row">
-              <div class="card-cd-s1__col50 grid-col50 col50-reverse">
+              <div class="card-cd-s1__col50 card-cd-s1__col50--40 grid-col50 col50-reverse">
                   <h3 class="h3">Набор в группу по Футболу 2021</h3>
                   <div class="grid-column">
-                      @@include('components/blocks/bem/_row-link-ic.html')
-                      @@include('components/blocks/bem/_row-link-ic--mob.html')
                       <div class="grid-row">
+                          <a href="#" class="row-link-icon">
+                              <span class="row-link-icon__title">Свислочская специализированная детско-юношеская школа олимпийского резерва</span>
+                              <span class="row-link-icon__icon">
+                                <svg viewBox="0 0 8 15">
+                                    <use xlink:href="/img/sprite.svg#arrow-right"></use>
+                                </svg>
+                            </span>
+                          </a>
                           <p class="grid-row__address grid-row__address--desk">г. Свилочь, ул. К.Калиновского 2</p>
-                          <p class="grid-row__address grid-row__address--mob">Беларусь, Минск, пр. Победителей, 84 (ТРЦ ARENAcity, 2-й этаж – Детский развлекательный центр «Карамелька»)</p>
-                          <a href="#" class="link-s grid-row__link">Посмотреть на карте</a>
+                          <a href="#" class="grid-row__link">Посмотреть на карте</a>
                       </div>
                   </div>
                   <div class="grid-icon">
@@ -365,9 +370,13 @@
             </div>
             <div class="grid-row grid-row--md">
                 <div class="modal-window__row-title modal-window__row-title--desk">Набор в группу по Футболу 2021</div>
-                <a href="#" class="row-link-ic">
-                    <h5 class="h5 row-link-ic__title">Свислочская специализированная детско-юношеская школа олимпийского резерва</h5>
-                    <img src="/img/arrow-right.svg" alt="">
+                <a href="#" class="row-link-icon">
+                    <span class="row-link-icon__title">Свислочская специализированная детско-юношеская школа олимпийского резерва</span>
+                    <span class="row-link-icon__icon">
+                        <svg viewBox="0 0 8 15">
+                            <use xlink:href="/img/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </span>
                 </a>
                 <p class="grid-row__address">г. Свилочь, ул. К.Калиновского 2</p>
             </div>

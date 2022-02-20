@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+@@include('components/blocks/page/_head.html',{
+"lang":"en",
+"title":"Абонемент",
+"description":"Абонемент",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+@@include('components/blocks/page/_header.html')
+<main class="main order-s cart-s js-parent-box parent-box">
+    <section class="order-s1">
+        <div class="container">
+            <div class="order-img">
+                <img src="/img/order.svg" alt="">
+            </div>
+            <div class="table-m">
+                <div class="table-m__title">Ваш заказ от <span class="table-m__date">29.12.2021</span></div>
+                <div class="table-m__subtitle">№ <span class="table-m__number">132142353456</span></div>
+                <div class="table-m__body">
+                    <div class="table-m__body-el">
+                        <div class="table-m__body-el-wrap">
+                            <div class="table-m__body-el__inner table-m__body-el__inner--img">
+                                <div class="table-m__body-cell table-m-cell-img" style="background-image: url('/img/bg1-sl.png');">
+                                </div>
+                            </div>
+                            <div class="table-m__body-el__inner p-10 table-m__body-el__inner-desc">
+                                <div class="table-m__body-cell h5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmod tempor </div>
+                                <div class="table-m__body-cell h6">Продавец: “Свислочская специализированная
+                                    детско-юношеская школа олимпийского резерва”</div>
+                                <div class="table-m__body-el__inner p-10">
+                                    <div class="order-list__footer-inner">
+                                        <p class="order-list__footer-item">
+                                            <span class="quantity">2</span>
+                                            <span class="pieces">шт</span>
+                                        </p>
+                                        <p class="order-list__footer-item">( <span class="quantity">22</span>
+                                            <span class="currency">br</span> шт)
+                                        </p>
+                                        <div class="table-m__body-cell">
+                                            <span class="value button-s">44</span>
+                                            <span class="currency button-s ">Br</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-m__body-el">
+                        <div class="table-m__body-el-wrap">
+                            <div class="table-m__body-el__inner table-m__body-el__inner--img">
+                                <div class="table-m__body-cell table-m-cell-img" style="background-image: url('/img/camp1.png');">
+                                </div>
+                            </div>
+                            <div class="table-m__body-el__inner p-10 table-m__body-el__inner-desc">
+                                <div class="table-m__body-cell h5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmod tempor </div>
+                                <div class="table-m__body-cell h6">Продавец: Фитнес-клуб “Барбара”</div>
+                                <div class="table-m__body-el__inner p-10">
+                                    <div class="order-list__footer-inner">
+                                        <p class="order-list__footer-item">
+                                            <span class="quantity">2</span>
+                                            <span class="pieces">шт</span>
+                                        </p>
+                                        <p class="order-list__footer-item">( <span class="quantity">22</span>
+                                            <span class="currency">br</span> шт)
+                                        </p>
+                                        <div class="table-m__body-cell">
+                                            <span class="value button-s">44</span>
+                                            <span class="currency button-s ">Br</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-m__body-el">
+                        <div class="table-m__body-el__wrap">
+                            <h5 class="h5">Итого:</h5>
+                            <div class="table-m__body-cell">
+                                <span class="value button-s">76</span>
+                                <span class="currency button-s ">Br</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-m__body-el">
+                        <div class="table-m__body-el__wrap">
+                            <h5 class="h5">Оплата:</h5>
+                            <p class="table-m__body-el-payment">Дебетовая карта MasterCard</p>
+                        </div>
+                    </div>
+                    <div class="table-m__body-el">
+                        <div class="table-m__body-el__wrap">
+                            <h5 class="h5">Получатель</h5>
+                            <p class="table-m__body-el-name">Иванов Иван Иванович</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="order-s2">
+        <div class="container">
+            <div class="index-s__top">
+                <h2 class="h2">Вам также может понравиться</h2>
+            </div>
+            <div class="card-m-slider">
+                <div class="standard-slider js-standard-slider swiper-container free-slider">
+                    <div class="swiper-wrapper grid-cards__list">
+                        <div class="swiper-slide card-m__list-el">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="swiper-slide card-m__list-el">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="swiper-slide card-m__list-el">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="swiper-slide card-m__list-el">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="order-s3">
+        <div class="container">
+            <div class="index-s__top">
+                <h1 class="h2">Приятных покупок!</h1>
+            </div>
+            <div class="card-l-slider">
+                <div class="standard-slider js-standard-slider swiper-container free-slider">
+                    <div class="swiper-wrapper grid-cards__list">
+                        <div class="swiper-slide card-l__list-el" style="background-image: url('/img/bg1-sl.png');">
+                            <div class="card-l card">
+                                <div class="button-max" type="button">
+                                    <span class="currency">Сезонная подборка</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card-l__list-el" style="background-image: url('/img/bg1-sl.png');">
+                            <div class="card-l card">
+                                <div class="button-max" type="button">
+                                    <span class="currency">Сезонная подборка</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev btn__prev"><img src="/img/arrow-prev.svg" alt=""></div>
+                    <div class="swiper-button-next btn__next"><img src="/img/arrow-next.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+@@include('components/blocks/page/_footer.html')
+@@include('components/blocks/page/_scripts.html')
+</body>
+
+</html>

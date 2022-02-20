@@ -9,16 +9,21 @@
 }
 
 .cart-s2 {
-  padding-bottom: $indent-30;
-
-  @include md {
-    padding-bottom: $indent-180;
-  }
+  padding-bottom: $indent-180;
 }
 
 .cart-s .table-m__header {
   width: 90%;
   color: $gray-tx;
+}
+
+.modal-window__content.modal-window__content--cart-order .table-m__header {
+  width: 95%;
+  color: $gray-tx;
+}
+
+.modal-window__content.modal-window__content--cart-order .table-m__body-el:hover {
+  background-color: transparent;
 }
 
 .table-m__header__bottom .table-m__header__cell:not(:last-child) {
@@ -30,6 +35,7 @@
   flex-direction: row;
 }
 
+//.modal-window__content.modal-window__content--cart-order .table-m__body-el__inner,
 .cart-s .table-m__body-el__inner {
   display: flex;
   flex-direction: column;
@@ -46,31 +52,42 @@
   }
 }
 
+.cart-s .table-m__body-el__inner.table-m__body-el__inner--img {
+  @include md {
+    width: 12%;
+    margin-right: 10px;
+  }
+}
+
 .cart-s .table-m__body-el__inner {
   @include sm {
     margin-right: 20px;
   }
 }
 
+.modal-window__content.modal-window__content--cart-order .table-m__body-el__inner:last-child,
 .cart-s .table-m__body-el__inner:last-child {
   @include sm {
     margin-right: 0;
   }
 }
 
+.modal-window__content.modal-window__content--cart-order .table-m__body-el,
 .cart-s .table-m__body-el {
   padding: 0;
 }
 
+.modal-window__content.modal-window__content--cart-order .table-m__body-el:not(:last-child),
 .cart-s .table-m__body-el:not(:last-child) {
   margin-bottom: $indent-20;
 }
 
+.modal-window__content.modal-window__content--cart-order .table-m__body-el-wrap,
 .cart-s .table-m__body-el-wrap {
   width: 100%;
-  padding: $indent-10 0;
 
   @include sm {
+    padding: $indent-10 0;
     flex-wrap: nowrap;
     flex-direction: column;
   }
@@ -83,19 +100,31 @@
 .cart-s .table-m__body-el__inner.table-m__body-el__inner-desc {
   @include md {
     width: 50%;
+    margin-right: $indent-20;
   }
 }
 
+.modal-window__content.modal-window__content--cart-order .table-m__body-cell.h5,
 .cart-s .table-m__body-cell.h5 {
   margin-bottom: $indent-10;
+
+  @include sm-down {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
+.modal-window__content.modal-window__content--cart-order .table-m__body-cell.h6,
 .cart-s .table-m__body-cell.h6 {
   font-weight: 400;
   margin-bottom: $indent-15;
+}
+
+.modal-window__content.modal-window__content--cart-order .index-s__top {
+  margin-bottom: $indent-20;
 
   @include sm {
-    margin-bottom: 0;
+    margin-bottom: $indent-30;
   }
 }
 
@@ -155,6 +184,16 @@
   justify-content: space-between;
 }
 
+.modal-window__content.modal-window__content--cart-order .table-m__body-el__inner.table-m__body-el__inner--mobile {
+  @include sm {
+   width: 10%;
+  }
+}
+
+.modal-window__content.modal-window__content--cart-order .btn-wrapp .btn-white {
+  white-space: nowrap;
+}
+
 .table-m__body-el__inner svg {
   width: 20px;
   height: 20px;
@@ -191,11 +230,13 @@
   margin-right: $indent-15;
 }
 
+.modal-window__content.modal-window__content--cart-order .table-m__body-cell .cart-quantity,
 .cart-s .table-m__body-cell .cart-quantity {
   margin: 0 $indent-25;
   color: $blue-bg;
 }
 
+.modal-window__content.modal-window__content--cart-order .table-m__body-el__inner .table-m__body-cell.table-m-cell-img,
 .cart-s .table-m__body-el__inner .table-m__body-cell.table-m-cell-img {
   border-radius: 5px;
   overflow: hidden;
@@ -212,6 +253,7 @@
   }
 }
 
+.modal-window__content.modal-window__content--cart-order .table-m__body-cell,
 .cart-s .table-m__body-cell {
   color: $blue-bg;
   display: flex;
@@ -234,6 +276,7 @@
   }
 }
 
+.modal-window__content.modal-window__content--cart-order .btn-wrapp .button-rect.btn-blue,
 .cart-s1 .btn-wrapp .button-rect.btn-blue {
   margin-bottom: $indent-10;
 
@@ -245,6 +288,7 @@
 
 .cart-s1 .btn-wrapp .btn-white {
   margin-bottom: 0;
+  white-space: nowrap;
 }
 
 .modal-window {
@@ -470,4 +514,26 @@ a.policy-link {
   top: 6px;
   width: 17px;
   height: 10px;
+}
+
+.modal-window__content.modal-window__content--cart-order {
+  padding: $indent-20;
+  width: 320px;
+
+  @include sm {
+    width: 90%;
+    padding: $indent-35 $indent-30;
+  }
+}
+
+.order-s.cart-s .table-m,
+.modal-window__content--cart-order .table-m {
+  box-shadow: none;
+  border: 1px solid transparent;
+  padding: 0;
+}
+
+.modal-window__content--cart-order .table-m__body-el {
+  padding-left: 0;
+  padding-right: 0;
 }
