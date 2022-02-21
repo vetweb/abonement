@@ -24,13 +24,28 @@
 }
 
 .logo {
-	display: block;
+	display: none;
 	width: 140px;
 	height: 34px;
 	background: url("/img/logo.png") no-repeat center;
 	background-size: contain;
 
 	@include md {
+		display: block;
+		width: 250px;
+		height: 60px;
+	}
+}
+
+.logo-mob {
+	display: block;
+	width: 41px;
+	height: 50px;
+	background: url("/img/logo-mob.svg") no-repeat center;
+	background-size: contain;
+
+	@include md {
+		display: none;
 		width: 250px;
 		height: 60px;
 	}

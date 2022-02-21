@@ -1,5 +1,5 @@
 .location-change {
-  @include flex-center;
+  @include flex(center, flex-start);
   cursor: pointer;
 }
 

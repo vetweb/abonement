@@ -1,22 +1,37 @@
 <div class="mobile-menu js-mobile-menu">
     <div class="mobile-menu__container">
-        <div class="mobile-menu__inside-wrap">
-            <div class="mobile-menu__search search form">
-                <form action="" class="search__form">
-                    <div class="form__field search__field">
-                        <input type="text" name="" class="js-mobile-form-search search__input form__input"
-                               placeholder="Поиск по сайту">
-                        <button class="search__button">
-                        <span class="search__icon">
-                             <svg class="icon-svg">
-                                <use xlink:href="/img/sprite.svg#search"></use>
-                             </svg>
-                        </span>
-                        </button>
-                    </div>
-                </form>
+        <div class="modal-search">
+            <div class="modal-search__header">
+                <div class="modal-search__back">
+                    <svg class="icon-svg" viewBox="0 0 8 15">
+                        <use xlink:href="/img/sprite.svg#arr-common"></use>
+                    </svg>
+                    Назад
+                </div>
+                <div class="modal-search__title">Олимпийские виды спорта</div>
             </div>
-
+            <div class="modal-search__list">
+                <div class="modal-search__wrap">
+                    <form action="" class="search__form">
+                        <div class="form__field search__field">
+                            <input type="text" name="" class="modal-search__input search__input form__input"
+                                   placeholder="Поиск ответов...">
+                            <button class="search__button">
+                                <span class="search__icon">
+                                     <svg class="icon-svg" viewBox="0 0 20 20">
+                                        <use xlink:href="/img/sprite.svg#search"></use>
+                                     </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="modal-search__catalog-alpha js-modal-city">
+                            @@include('_catalog-alpha-list.html')
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu__inside-wrap">
             <button class="btn-add-company mobile-menu__btn-add-company">
                 <span class="btn-add-company__text">Добавить компанию</span>
                 <svg class="btn-add-company__icon icon-svg">
@@ -51,25 +66,39 @@
                         </li>
                     </ul>
                 </li>
-                <li class="mobile-menu-list__category"><a class="mobile-menu-list__category-link" href="##">Абонементы</a></li>
-                <li class="mobile-menu-list__category"><a class="mobile-menu-list__category-link" href="##">Набор</a></li>
-                <li class="mobile-menu-list__category"><a class="mobile-menu-list__category-link" href="##">Лагерь</a></li>
-                <li class="mobile-menu-list__category"><a class="mobile-menu-list__category-link" href="##">Аренда</a></li>
-                <li class="mobile-menu-list__category"><a class="mobile-menu-list__category-link" href="##">Мероприятия</a></li>
-                <li class="mobile-menu-list__category"><a class="mobile-menu-list__category-link" href="##">Актуальное</a></li>
+                <li class="mobile-menu-list__category"><a class="mobile-menu-list__category-link"
+                                                          href="##">Абонементы</a></li>
+                <li class="mobile-menu-list__category"><a class="mobile-menu-list__category-link" href="##">Набор</a>
+                </li>
+                <li class="mobile-menu-list__category"><a class="mobile-menu-list__category-link" href="##">Лагерь</a>
+                </li>
+                <li class="mobile-menu-list__category"><a class="mobile-menu-list__category-link" href="##">Аренда</a>
+                </li>
+                <li class="mobile-menu-list__category"><a class="mobile-menu-list__category-link"
+                                                          href="##">Мероприятия</a></li>
+                <li class="mobile-menu-list__category"><a class="mobile-menu-list__category-link"
+                                                          href="##">Актуальное</a></li>
             </ul>
+            <div class="mobile-menu__location-change location-change js-location-modal-link">
+                        <span class="location-change__icon">
+                            <svg class="icon-svg">
+                                <use xlink:href="/img/sprite.svg#location"></use>
+                            </svg>
+                        </span>
+                <span class="location-change__text">Минск</span>
+            </div>
             <div class="mobile-menu__cont-block cont-block">
-                <div class="cont-row">
-                    <svg class="cont__icon">
-                        <use xlink:href="/img/sprite.svg#instagram"></use>
-                    </svg>
-                    <a href="" class="cont__mail text-xxs">@Abon_Inst_Info</a>
-                </div>
                 <div class="cont-row">
                     <svg class="cont__icon">
                         <use xlink:href="/img/sprite.svg#email"></use>
                     </svg>
                     <a href="mailto:abon@mail.ru" class="cont__mail text-xxs">Abon@mail.ru</a>
+                </div>
+                <div class="cont-row">
+                    <svg class="cont__icon">
+                        <use xlink:href="/img/sprite.svg#instagram"></use>
+                    </svg>
+                    <a href="" class="cont__mail text-xxs">@Abon_Inst_Info</a>
                 </div>
             </div>
         </div>

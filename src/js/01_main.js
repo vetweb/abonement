@@ -2,7 +2,7 @@ import {Swiper, Mousewheel, Navigation, Pagination} from 'swiper'
 import Scrollbar from 'smooth-scrollbar'
 import anime from 'animejs/lib/anime.es.js';
 
-Swiper.use([ Mousewheel, Navigation, Pagination])
+Swiper.use([Mousewheel, Navigation, Pagination])
 
 document.addEventListener('DOMContentLoaded', () => {
 	// smooth-scrollbar
@@ -237,7 +237,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		function toggleClass() {
 			this.classList.add('active');
-			for (let k = 0; elems.length  > k; k++) {
+			for (let k = 0; elems.length > k; k++) {
 				let item = elems[k];
 				if (item !== this && item.classList.contains('active')) {
 					item.classList.remove('active')
@@ -299,9 +299,9 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		});
 
-	    myGalleryThumbs.on('slideChange', () => {
-		    myGalleryTop.slideTo(myGalleryThumbs.realIndex, 800)
-	    });
+		myGalleryThumbs.on('slideChange', () => {
+			myGalleryTop.slideTo(myGalleryThumbs.realIndex, 800)
+		});
 	}
 
 // custom select
@@ -311,15 +311,16 @@ document.addEventListener('DOMContentLoaded', () => {
 	let selectItems = document.querySelectorAll('.js-select__item');
 
 	selectHandler();
+
 	function selectHandler() {
 
-	selectHeaders.forEach((item) => {
-		item.addEventListener('click', selectToggle)
-	})
+		selectHeaders.forEach((item) => {
+			item.addEventListener('click', selectToggle)
+		})
 
-	selectItems.forEach((item) => {
-		item.addEventListener('click', selectChose)
-	})
+		selectItems.forEach((item) => {
+			item.addEventListener('click', selectChose)
+		})
 
 		function selectToggle() {
 			this.parentElement.classList.toggle('is-active');
@@ -327,8 +328,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		function selectChose() {
 			let textSelect = this.innerText,
-			select = this.closest('.js-select'),
-			currentText =select.querySelector('.js-select__current');
+				select = this.closest('.js-select'),
+				currentText = select.querySelector('.js-select__current');
 			currentText.innerText = textSelect;
 			select.classList.remove('is-active');
 		}
@@ -345,7 +346,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		function showFiletBlock() {
 			filterBlocks.forEach((elem) => {
 				let parentBox = this.closest('.js-parent-box');
-				if(!elem.classList.contains('show')) {
+				if (!elem.classList.contains('show')) {
 					parentBox.classList.add('active');
 					elem.classList.add('show');
 				} else {
@@ -362,7 +363,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		function closeFiletBlock() {
 			filterBlocks.forEach((elem) => {
 				let parentBox = this.closest('.js-parent-box');
-				if(elem.classList.contains('show')) {
+				if (elem.classList.contains('show')) {
 					elem.classList.remove('show');
 					parentBox.classList.remove('active');
 				}
@@ -403,7 +404,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			el.addEventListener('click', toggleWrapperVideo);
 		})
 
-		function toggleWrapperVideo () {
+		function toggleWrapperVideo() {
 			let currentVideoWrap = this.closest('.js-block-video__wrap');
 			let currentVideo = currentVideoWrap.querySelector('.js-video-with-btn');
 			let currentVideoBtn = currentVideoWrap.querySelector('.js-btn-play');
@@ -423,13 +424,33 @@ document.addEventListener('DOMContentLoaded', () => {
 	let mobileDropdownList = document.querySelectorAll('.mobile-menu-list__category')
 	let mobileBurger = document.querySelector('.js-mobile-menu-toggle')
 	let mobileMenu = document.querySelector('.js-mobile-menu')
+	let isMenuShow = false;
 
-	mobileBurger.addEventListener('click', function () {
-		mobileMenu.classList.toggle('show');
-		this.classList.toggle('show');
+	function bodyFix(isMenuShow) {
+		if (isMenuShow === true) {
+			document.body.style.overflowY = 'hidden';
+			document.body.style.paddingRight = '14px';
+		} else {
+			document.body.style.overflowY = 'visible';
+			document.body.style.paddingRight = '';
+		}
+	}
+
+	mobileBurger.addEventListener("click", function () {
+		if (isMenuShow) {
+			mobileMenu.classList.remove('show');
+			this.classList.remove('show');
+			bodyFix(false);
+			isMenuShow = false;
+		} else {
+			mobileMenu.classList.add('show');
+			this.classList.add('show');
+			bodyFix(true);
+			isMenuShow = true;
+		}
 	});
 
-	mobileDropdownCategoryList.forEach(function(elem) {
+	mobileDropdownCategoryList.forEach(function (elem) {
 		let elemLink = elem.querySelector('.mobile-menu-list__category-link')
 		elemLink.addEventListener('click', function () {
 			elem.classList.toggle('active');
@@ -446,15 +467,15 @@ document.addEventListener('DOMContentLoaded', () => {
 	let listItemsTopMenu = listParentTopMenu.querySelectorAll('.js-filter')
 	let dropdownFilterMenu = document.querySelector('.js-filter-menu')
 
-	listItemsTopMenu.forEach(function(elem) {
-		elem.onmouseover = function(e) {
+	listItemsTopMenu.forEach(function (elem) {
+		elem.onmouseover = function (e) {
 			e = e || event;
 			let target = e.target || e.srcElement;
 			dropdownFilterMenu.classList.add('active');
 			listParentTopMenu.classList.add('active');
 		};
 
-		dropdownFilterMenu.onmouseleave = function(e) {
+		dropdownFilterMenu.onmouseleave = function (e) {
 			e = e || event;
 			let target = e.target || e.srcElement;
 			listParentTopMenu.classList.remove('active');
@@ -472,25 +493,27 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	//locationChangeModal
-	function locationModal () {
+	function locationModal() {
 		let locationModalLink = document.querySelector('.js-location-link-list');
 		let locationModal = document.querySelector('.js-location-modal');
 
-		locationModalLink.addEventListener('click', function (){
+		locationModalLink.addEventListener('click', function () {
 			locationModal.classList.add('open');
 		});
 	}
 
-	function locationChangeModal () {
+	function locationChangeModal() {
 		let locationModal = document.querySelector('.js-location-change-modal');
-		let locationModalLink = document.querySelector('.js-location-modal-link');
+		let locationModalLink = document.querySelectorAll('.js-location-modal-link');
 		let locationModalLinkClose = document.querySelector('.js-location-modal-link-close');
 
-		locationModalLink.addEventListener('click', function (){
-			locationModal.classList.add('open');
+		locationModalLink.forEach((itemLink) => {
+			itemLink.addEventListener('click', function () {
+				locationModal.classList.add('open');
+			});
 		});
 
-		locationModalLinkClose.addEventListener('click', function (){
+		locationModalLinkClose.addEventListener('click', function () {
 			locationModal.classList.remove('open');
 		});
 	}
@@ -566,11 +589,11 @@ document.addEventListener('DOMContentLoaded', () => {
 	let overlaysInfoBlock = document.querySelectorAll('.js-overlay-info-block');
 	let closeBtnsInfoBlocks = document.querySelectorAll('.js-close-info-block');
 
-	openBtnsInfoBlocks.forEach( btn => {
+	openBtnsInfoBlocks.forEach(btn => {
 		btn.addEventListener('click', showInfoBlock);
 
 		function showInfoBlock() {
-			let pathBtnShow= this.dataset.show;
+			let pathBtnShow = this.dataset.show;
 			let infoBlock = document.querySelector(`[data-block='${pathBtnShow}']`);
 			let overlay = document.querySelector(`[data-overlay='${pathBtnShow}']`);
 
@@ -586,7 +609,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	})
 
-	closeBtnsInfoBlocks.forEach( btn => {
+	closeBtnsInfoBlocks.forEach(btn => {
 		btn.addEventListener('click', closeInfoBlock);
 
 		function closeInfoBlock(e) {

@@ -10,11 +10,20 @@
   opacity: 0;
 }
 
+.arrow-up__icon {
+  margin-top: 5px;
+}
+
 .arrow-up.show {
   position: fixed;
-  bottom: 20%;
-  right: 30px;
+  bottom: 5%;
+  right: 10px;
   opacity: 1;
+
+  @include md {
+    right: 30px;
+    bottom: 20%;
+  }
 }
 
 .arrow-up svg {

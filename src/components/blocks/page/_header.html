@@ -4,6 +4,9 @@
             <div class="header__container">
                 <div class="header__left">
                     @@include('../bem/_logo.html')
+                    <div class="header__logo-mob">
+                    @@include('../bem/_logo-mob.html')
+                    </div>
                     <div class="header__location-change location-change js-location-modal-link">
                         <span class="location-change__icon">
                             <svg class="icon-svg">
@@ -70,6 +73,11 @@
                     <a href="#" class="header__mobile-right-icon">
                         <svg class="icon-svg">
                             <use xlink:href="/img/sprite.svg#icon-cart"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="header__mobile-right-icon">
+                        <svg class="icon-svg">
+                            <use xlink:href="/img/sprite.svg#lk"></use>
                         </svg>
                     </a>
                     <div class="header__mobile-right-icon burger js-mobile-menu-toggle">

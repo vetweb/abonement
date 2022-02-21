@@ -33,7 +33,10 @@
 	width: 100%;
 	margin-left: -0.75rem;
 	margin-right: -0.75rem;
-	margin-top: -0.75rem;
+
+	@include md {
+		margin-top: -0.75rem;
+	}
 }
 
 .catalog-alpha-list__header {

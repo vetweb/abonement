@@ -32,17 +32,13 @@
 }
 
 .mobile-menu__inside-wrap {
-	margin: 20px 10px;
-}
-
-.mobile-menu__search {
-	margin-bottom: 25px;
+	margin: $indent-25 $indent-10;
 }
 
 .mobile-menu__btn-add-company {
 	justify-content: space-between;
 	margin-left: 0;
-	margin-bottom: 10px;
+	margin-bottom: $indent-10;
 }
 
 .mobile-menu__btn-reg-auth {
@@ -54,7 +50,11 @@
 }
 
 .mobile-menu__wrapper {
-	margin: 40px 0;
+	margin: $indent-40 0 $indent-15;
+}
+
+.mobile-menu__location-change {
+	margin: $indent-15 0 $indent-25;
 }
 
 // mobile-menu-list
@@ -70,7 +70,7 @@
 
 .mobile-menu-list__category a {
 	display: block;
-	padding: 10px 0;
+	padding: $indent-10 0;
 	color: #fff;
 	text-decoration: none;
 	font-size: 16px;
@@ -80,7 +80,7 @@
 .mobile-menu-list__category-link {
 	position: relative;
 	font-weight: 700;
-	text-transform: uppercase;
+	text-transform: uppercase§;
 
 	&:after {
 		position: absolute;
@@ -98,7 +98,7 @@
 
 .mobile-menu-list__submenu {
 	display: none;
-	margin: 5px 10px 10px 10px;
+	margin: $indent-5 $indent-10 $indent-10;
 }
 
 .mobile-menu-list__submenu-item a {

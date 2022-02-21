@@ -1,0 +1,73 @@
+.modal-search {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #0f1f53;
+	z-index: 100;
+	@include flex(flex-start,flex-start);
+	flex-wrap: nowrap;
+	flex-direction: column;
+	flex-shrink: 1;
+}
+
+.modal-search__header {
+	padding: $indent-25 0 $indent-20;
+	color: #fff;
+}
+
+.modal-search__title {
+	margin-top: 16px;
+	padding: 0 15px;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.modal-search__back {
+	font-size: 16px;
+	font-weight: 500;
+	color: #C3C3C3;
+	cursor: pointer;
+	padding: 0 15px;
+}
+
+.modal-search__back .icon-svg {
+	width: 6px;
+	height: 12px;
+}
+
+.modal-search__list {
+	padding: $indent-30 $indent-15;
+	background: #fff;
+	height: calc(100% - 171px);
+}
+
+.modal-search .search__icon {
+	color: #0f1f53;
+}
+
+.modal-search__catalog-alpha .catalog-alpha {
+	max-height: 100%;
+}
+
+.modal-search__catalog-alpha {
+	height: 92%;
+	margin-top: 10px;
+}
+
+.modal-search__wrap .search__form {
+	height: 100%;
+}
+
+.modal-search__wrap {
+	height: 100%;
+}
+
+.modal-search__wrap .search__field {
+	max-width: 100%;
+}
+
+.modal-search__input {
+	width: 100%;
+	border-color: #374160;
+}
