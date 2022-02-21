@@ -556,7 +556,7 @@
   flex-direction: column;
 
   @include lg-down {
-    padding: 0;
+    padding: $indent-10 0;
     margin-bottom: $indent-10;
   }
 }
@@ -597,7 +597,7 @@
   width: 100%;
   align-items: center;
 
-  @include lg {
+  @include lgx {
     flex-direction: row;
     justify-content: center;
   }
