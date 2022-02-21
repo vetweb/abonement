@@ -10,6 +10,10 @@
   }
 }
 
+.preview-s1 .row-acc__col50 {
+  padding: 0;
+}
+
 .preview-s1 .row-acc__col50--title {
   display: inline-flex;
 }
@@ -18,6 +22,8 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  padding: 35px;
+  min-height: 248px;
 }
 
 .preview-s1 .modal-window__content.modal-window__content--prod {

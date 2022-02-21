@@ -117,24 +117,14 @@
 .table-subsc__btns .table-subsc__btn {
   background: #5670B5;
   color: $white;
-  width: 77px;
+  min-width: 77px;
+  max-width: 135px;
+  width: 100%;
   border-radius: 10px;
 }
 
 .table-subsc__btns .table-subsc__btn.active {
   background: $olive;
-}
-
-.table-subsc__btn.table-subsc__btn--calendar {
-  width: 100%;
-  background: #E1EBF5;
-  border-radius: 13px;
-  color: $blue-bg;
-  border: 1px solid transparent;
-
-  @include lgx {
-    width: 88px;
-  }
 }
 
 .table-subsc__body {
@@ -151,6 +141,10 @@
     display: flex;
     justify-content: flex-start;
   }
+}
+
+.table-subsc__body-top .table-subsc__cell {
+  cursor: pointer;
 }
 
 .table-subsc__body-top .table-subsc__cell:nth-child(1) {
@@ -211,11 +205,8 @@
   font-weight: 600;
   padding: 8px 0;
 
-  @include sm {
-    padding: 0;
-  }
-
   @include lgx {
+    padding: 0;
     width: 20%;
   }
 }
@@ -228,12 +219,9 @@
   padding: 8px 0;
   border-top: 1px solid #DCECFC;
 
-  @include sm {
+  @include lgx {
     padding: 0;
     border-top: 1px solid transparent;
-  }
-
-  @include lgx {
     width: 19%;
   }
 }
@@ -304,7 +292,7 @@
   }
 }
 
-.button-rect.btn-white{
+.button-rect.btn-white {
   display: flex;
 
   @include lgx {
@@ -312,6 +300,7 @@
   }
 
   @include lg {
+    margin-right: 5px;
     display: flex;
   }
 }
