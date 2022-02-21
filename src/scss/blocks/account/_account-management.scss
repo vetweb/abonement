@@ -1,0 +1,49 @@
+.account-management-s1 {
+  padding: 70px 0 60px;
+
+  @include sm {
+    padding: 70px 0 60px;
+  }
+
+  @include lgx {
+    margin-top: 40px;
+  }
+
+  @include lg {
+    padding: 70px 0 100px;
+  }
+}
+
+.row-acc__links {
+  width: 100%;
+  height: 100%;
+}
+
+.row-acc__item {
+  list-style: none;
+  width: 100%;
+}
+
+.row-acc__item-title {
+  width: 100%;
+}
+
+a.row-acc__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: $indent-15 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $blue;
+  text-decoration: none;
+}
+
+.row-acc__link-ic svg {
+  width: 6px;
+  height: 12px;
+  color: $blue;
+  cursor: pointer;
+}

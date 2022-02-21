@@ -276,6 +276,7 @@ a.breadcrumbs-block__link {
 
 .breadcrumbs-block__text {
   color: $black-t;
+  white-space: nowrap;
 }
 
 .breadcrumbs-block li {

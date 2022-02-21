@@ -70,7 +70,7 @@
                     </button>
                 </div>
                 <div class="header__mobile-right">
-                    <a href="#" class="header__mobile-right-icon">
+                    <a href="#" class="header__mobile-right-icon js-open-md" data-opn="md-cart-order">
                         <svg class="icon-svg">
                             <use xlink:href="/img/sprite.svg#icon-cart"></use>
                         </svg>
@@ -415,6 +415,134 @@
                 <button class="button-rect btn-blue js-close-md" data-cls="reg">Готово</button>
                 <a href="#" class="modal-window__form--link js-close-md" data-cls="reg">Выйти из профиля</a>
             </form>
+        </div>
+    </div>
+    <div class="modal-window modal-window--cart-order js-modal-window" data-md="md-cart-order">
+        <div class="modal-window__content modal-window__content--cart-order">
+            <div class="modal-window__close js-close-md" data-cls="md-cart-order">
+                <svg viewBox="0 0 22 22">
+                    <use xlink:href="/img/sprite.svg#circle-close"></use>
+                </svg>
+            </div>
+            <div class="index-s__top">
+                <h2 class="h2">Корзина</h2>
+            </div>
+            <div class="table-m">
+                <div class="table-m__header">
+                    <div class="table-m__header__cell">Товар</div>
+                    <div class="table-m__header__bottom">
+                        <div class="table-m__header__cell">Количество</div>
+                        <div class="table-m__header__cell">Цена</div>
+                    </div>
+                </div>
+                <div class="table-m__body">
+                    <a href="#" class="table-m__body-el">
+                        <div class="table-m__body-el-wrap">
+                            <div class="table-m__body-el__inner">
+                                <div class="table-m__body-cell table-m-cell-img" style="background-image: url('/img/bg1-sl.png');">
+                                </div>
+                            </div>
+                            <div class="table-m__body-el__inner p-10 table-m__body-el__inner-desc">
+                                <div class="table-m__body-cell h5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmod tempor </div>
+                                <div class="table-m__body-cell h6">Продавец: Фитнес-клуб “Барбара”</div>
+                            </div>
+                            <div class="table-m__body-el__inner p-10">
+                                <div class="table-m__body-cell table-m__body-cell--quantity">
+                                    <span class="cart-increase">-</span>
+                                    <span class="cart-quantity">2</span>
+                                    <span class="cart-decrease">+</span>
+                                </div>
+                                <div class="order-list__footer-inner">
+                                    <p class="order-list__footer-item">
+                                        <span class="quantity">2</span>
+                                        <span class="pieces">шт</span>
+                                    </p>
+                                    <p class="order-list__footer-item">( <span class="quantity">22</span>
+                                        <span class="currency">br</span> шт)
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="table-m__body-el__inner table-m__body-el__inner--mobile">
+                                <div class="table-m__body-el__inner p-10">
+                                    <div class="table-m__body-cell">
+                                        <span class="value button-s">44</span>
+                                        <span class="currency button-s ">Br</span>
+                                    </div>
+                                </div>
+                                <div class="table-m__body-el__inner p-10 table-m__body-el__inner--icn">
+                                <span class="table-m__favorite js-table-m__favorite">
+                                    <svg viewBox="0 0 20 18">
+                                        <use xlink:href="/img/sprite.svg#heart"></use>
+                                    </svg>
+                                </span>
+                                    <span class="table-m__close js-table-m__close">
+                                    <svg viewBox="0 0 16 16">
+                                        <use xlink:href="/img/sprite.svg#close-x"></use>
+                                    </svg>
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="table-m__body-el">
+                        <div class="table-m__body-el-wrap">
+                            <div class="table-m__body-el__inner">
+                                <div class="table-m__body-cell table-m-cell-img" style="background-image: url('/img/bg1-sl.png');">
+                                </div>
+                            </div>
+                            <div class="table-m__body-el__inner p-10 table-m__body-el__inner-desc">
+                                <div class="table-m__body-cell h5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmod tempor </div>
+                                <div class="table-m__body-cell h6">Продавец: “Свислочская специализированная
+                                    етско-юношеская школа олимпийского резерва”</div>
+                            </div>
+                            <div class="table-m__body-el__inner p-10">
+                                <div class="table-m__body-cell table-m__body-cell--quantity">
+                                    <span class="cart-increase">-</span>
+                                    <span class="cart-quantity">2</span>
+                                    <span class="cart-decrease">+</span>
+                                </div>
+                                <div class="order-list__footer-inner">
+                                    <p class="order-list__footer-item">
+                                        <span class="quantity">2</span>
+                                        <span class="pieces">шт</span>
+                                    </p>
+                                    <p class="order-list__footer-item">( <span class="quantity">22</span>
+                                        <span class="currency">br</span> шт)
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="table-m__body-el__inner table-m__body-el__inner--mobile">
+                                <div class="table-m__body-el__inner p-10">
+                                    <div class="table-m__body-cell">
+                                        <span class="value button-s">44</span>
+                                        <span class="currency button-s ">Br</span>
+                                    </div>
+                                </div>
+                                <div class="table-m__body-el__inner p-10 table-m__body-el__inner--icn">
+                                <span class="table-m__favorite js-table-m__favorite">
+                                    <svg viewBox="0 0 20 18">
+                                        <use xlink:href="/img/sprite.svg#heart"></use>
+                                    </svg>
+                                </span>
+                                    <span class="table-m__close js-table-m__close">
+                                    <svg viewBox="0 0 16 16">
+                                        <use xlink:href="/img/sprite.svg#close-x"></use>
+                                    </svg>
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="btn-wrapp">
+                    <button class="button-rect btn-blue button-xs js-open-md" data-opn="cart-md">Оформить заказ</button>
+                    <button class="button-rect btn-white button-xs">
+                        Продолжить покупки
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 <!-- add to the button (js-open-md && data-opn="no-active"), on click of which this modal window will be called-->

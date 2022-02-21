@@ -29,104 +29,62 @@
                 <p class="settings-s__title">Личный кабинет</p>
             </div>
             <div class="row-acc row-acc--acc">
-                <div class="row-acc__col25 row-acc__col25--left">
-                    <div class="row-acc__col25-top">
-                        <span class="row-acc__list-icon">
-                            <svg>
-                                <use xlink:href="/img/sprite.svg#user"></use>
-                            </svg>
-                        </span>
-                        <span class="row-acc__col25-title">Управление аккаунтом</span>
-                    </div>
-                    <ul class="row-acc__list row-acc__list--acc">
-                        <li class="row-acc__list-el active js-toggle-btn">
-                            <a href="/profile.html" class="row-acc__list-link">
-                                <span class="row-acc__list-title">Профиль</span>
-                            </a>
-                        </li>
-                        <li class="row-acc__list-el js-toggle-btn">
-                            <a href="/payment-account.html" class="row-acc__list-link">
-                                <span class="row-acc__list-title">Оплата</span>
-                            </a>
-                        </li>
-                        <li class="row-acc__list-el js-toggle-btn">
-                            <a href="/orders-history.html" class="row-acc__list-link">
-                                <span class="row-acc__list-title">История заказов</span>
-                            </a>
-                        </li>
-                        <li class="row-acc__list-el js-toggle-btn">
-                            <a href="/favorites-account.html" class="row-acc__list-link">
-                                <span class="row-acc__list-title">Избранное</span>
-                            </a>
-                        </li>
-                        <li class="row-acc__list-el js-toggle-btn">
-                            <a href="/notification-account.html" class="row-acc__list-link">
-                                <span class="row-acc__list-title">Уведомления</span>
-                            </a>
-                        </li>
-                        <li class="row-acc__list-el js-toggle-btn">
-                            <a href="/help-account.html" class="row-acc__list-link">
-                                <span class="row-acc__list-title">Помощь</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
                 <div class="row-acc__col50">
-                <div class="row-acc__col50-inner">
-                    <div class="row-acc__col50--title">Личные данные</div>
-                    <form class="row-acc__form row-acc__form--data">
-                        <div class="form__img-block-img form__img-block-img--big"
-                             style="background-image: url('/img/preview.png');">
-                            <img src="/img/preview.png" alt="">
-                        </div>
-                        <div class="row-acc__form-row">
-                            <div class="row-acc__form-col">
-                                <p class="label-light">
-                                    <label for="md-surname" class="label-light__title">Фамилия</label>
-                                    <span class="label-light__symbol">*</span>
-                                </p>
-                                <input type="text" id="md-surname" class="input-light input-light__mb15">
+                    <div class="row-acc__col50-inner">
+                        <div class="row-acc__col50--title">Личные данные</div>
+                        <form class="row-acc__form row-acc__form--data">
+                            <div class="form__img-block-img form__img-block-img--big"
+                                 style="background-image: url('/img/preview.png');">
+                                <img src="/img/preview.png" alt="">
                             </div>
-                            <div class="row-acc__form-col">
-                                <p class="label-light">
-                                    <label for="md-name" class="label-light__title">Имя</label>
-                                    <span class="label-light__symbol">*</span>
-                                </p>
-                                <input type="text" id="md-name" class="input-light input-light__mb15">
+                            <div class="row-acc__form-row">
+                                <div class="row-acc__form-col">
+                                    <p class="label-light">
+                                        <label for="md-surname" class="label-light__title">Фамилия</label>
+                                        <span class="label-light__symbol">*</span>
+                                    </p>
+                                    <input type="text" id="md-surname" class="input-light input-light__mb15">
+                                </div>
+                                <div class="row-acc__form-col">
+                                    <p class="label-light">
+                                        <label for="md-name" class="label-light__title">Имя</label>
+                                        <span class="label-light__symbol">*</span>
+                                    </p>
+                                    <input type="text" id="md-name" class="input-light input-light__mb15">
+                                </div>
                             </div>
-                        </div>
-                        <p class="label-light">
-                            <label for="md-patronymic" class="label-light__title">Отчество</label>
-                            <span class="label-light__symbol">*</span>
-                        </p>
-                        <input type="text" id="md-patronymic" class="input-light input-light__mb15">
-                        <p class="label-light">
-                            <label for="md-phonenum" class="label-light__title">Телефон</label>
-                        </p>
-                        <input type="text" id="md-phonenum" class="input-light input-light__mb15">
-                        <p class="label-light">
-                            <label for="md-email" class="label-light__title">Email</label>
-                            <span class="label-light__symbol">*</span>
-                        </p>
-                        <input type="text" id="md-email" class="input-light input-light__mb15">
-                        <p class="label-light">
-                            <label for="md-gender" class="label-light__title">Ваш пол</label>
-                            <span class="label-light__symbol">*</span>
-                        </p>
-                        <div id="md-gender" class="radio-btn__wrap input-light__mb25">
-                            <p class="radio-btn__inner">
-                                <input type="radio" id="test1" name="radio-group" >
-                                <label for="test1">Жен</label>
+                            <p class="label-light">
+                                <label for="md-patronymic" class="label-light__title">Отчество</label>
+                                <span class="label-light__symbol">*</span>
                             </p>
-                            <p class="radio-btn__inner">
-                                <input type="radio" id="test2" name="radio-group" checked>
-                                <label for="test2">Муж</label>
+                            <input type="text" id="md-patronymic" class="input-light input-light__mb15">
+                            <p class="label-light">
+                                <label for="md-phonenum" class="label-light__title">Телефон</label>
                             </p>
-                        </div>
-                        <button class="button-rect btn-blue button-dis">Отправить</button>
-                    </form>
-                    <div class="row-acc__col50--title">Изменения пароля</div>
-                    <form class="row-acc__form row-acc__form--update">
+                            <input type="text" id="md-phonenum" class="input-light input-light__mb15">
+                            <p class="label-light">
+                                <label for="md-email" class="label-light__title">Email</label>
+                                <span class="label-light__symbol">*</span>
+                            </p>
+                            <input type="text" id="md-email" class="input-light input-light__mb15">
+                            <p class="label-light">
+                                <label for="md-gender" class="label-light__title">Ваш пол</label>
+                                <span class="label-light__symbol">*</span>
+                            </p>
+                            <div id="md-gender" class="radio-btn__wrap input-light__mb25">
+                                <p class="radio-btn__inner">
+                                    <input type="radio" id="test1" name="radio-group" >
+                                    <label for="test1">Жен</label>
+                                </p>
+                                <p class="radio-btn__inner">
+                                    <input type="radio" id="test2" name="radio-group" checked>
+                                    <label for="test2">Муж</label>
+                                </p>
+                            </div>
+                            <button class="button-rect btn-blue button-dis">Отправить</button>
+                        </form>
+                        <div class="row-acc__col50--title">Изменения пароля</div>
+                        <form class="row-acc__form row-acc__form--update">
                         <div class="row-acc__form-row">
                             <div class="row-acc__form-col">
                                 <p class="label-light">
@@ -142,7 +100,7 @@
                                 </p>
                                 <div class="input-light__wrapper input-light__mb15">
                                     <input type="password" id="md-new-password" class="input-light"/>
-                                    <button class="password__button active">
+                                    <button class="password__button">
                                         <span class="password__icon">
                                             <svg class="icon-svg">
                                                 <use xlink:href="/img/sprite.svg#eye"></use>
@@ -154,8 +112,8 @@
                         </div>
                         <button class="button-rect btn-blue button-dis">Отправить</button>
                     </form>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
     </section>

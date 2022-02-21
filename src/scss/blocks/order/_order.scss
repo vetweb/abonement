@@ -1,0 +1,123 @@
+.order-s2 {
+  padding-bottom: $indent-40;
+  padding-top: $indent-30;
+
+  @include md {
+    padding-top: $indent-40;
+  }
+}
+
+.order-s1,
+.order-s3 {
+  background-color: $white;
+  padding-top: $indent-30;
+  padding-bottom: $indent-30;
+
+  @include md {
+    padding-top: $indent-30;
+    padding-bottom: $indent-60;
+  }
+}
+
+.order-img {
+  margin-bottom: $indent-40;
+  display: flex;
+  justify-content: center;
+}
+
+.order-s.cart-s .table-m__body-el-wrap {
+  justify-content: flex-start;
+  display: flex;
+  padding: $indent-20 0;
+}
+
+.order-s.cart-s .order-list__footer-inner .table-m__body-cell {
+  margin-left: $indent-20;
+}
+
+.order-s.cart-s .order-list__footer-item {
+  white-space: nowrap;
+}
+
+.table-m__title {
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $blue-bg;
+  margin-bottom: $indent-15;
+}
+
+.table-m__subtitle {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: $blue-bg;
+  margin-bottom: $indent-15;
+}
+
+.order-s.cart-s .table-m__body-el:not(:last-child) {
+  border-bottom: 1px solid #F3F3F3;
+}
+
+.order-s.cart-s .table-m__body-el:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.table-m__body-el__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: $indent-20 0;
+}
+
+.table-m__body-el-payment,
+.table-m__body-el-name {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $gray-tx;
+}
+
+.table-m__body-el__wrap h5 {
+  color: $blue-bg;
+  font-weight: 600;
+}
+
+.order-s3 .index-s__top h1 {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.order-s.cart-s .table-m__body-el-wrap {
+  margin-bottom: 0;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.cart-s.order-s .table-m__body-el__inner.table-m__body-el__inner--img,
+.order-s.cart-s .table-m__body-el__inner .table-m__body-cell.table-m-cell-img {
+  width: 110px;
+  height: 88px;
+  margin-bottom: 0;
+}
+
+.cart-s.order-s .table-m__body-el__inner.table-m__body-el__inner--img {
+  margin-right: $indent-15;
+}
+
+.order-s.cart-s .table-m__body-el__inner:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.order-s.cart-s .table-m__body-el__inner.table-m__body-el__inner-desc {
+  margin-top: 0;
+}
+
+.order-s.cart-s .table-m__body-el__inner .order-list__footer-inner {
+  margin-left: 0;
+}
+
+.order-s.cart-s .table-m__body-el__inner .order-list__footer-inner {
+  margin-bottom: 0;
+}

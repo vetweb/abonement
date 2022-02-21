@@ -75,7 +75,7 @@
             </div>
         </div>
     </section>
-    <section class="section fcc-s2">
+    <section class="fcc-s2">
         <div class="container">
             <div class="tc-3">
                 <div class="tabs-content__col-20">
@@ -196,33 +196,166 @@
                 <div class="tabs-content__col-80">
                     <div class="map-wrap">
                         <div class="map-block">
-                        <div style="border-color: transparent; position:relative;overflow:hidden;">
-                            <a href="https://yandex.by/maps/157/minsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Минск</a>
-                            <a href="https://yandex.by/maps/157/minsk/house/Zk4Ycw9pQEcGQFtpfXR4d3xlYg==/?ll=27.589921%2C53.896066&utm_medium=mapframe&utm_source=maps&z=14.31" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Захарова, 77А — Яндекс.Карты</a>
-                            <iframe src="https://yandex.by/map-widget/v1/-/CCUyJPXHSD" width="100%" height="400px" allowfullscreen="true" style="position:relative;"></iframe>
+                            <img class="map-block__map" src="/img/map.png" alt="">
                         </div>
                     </div>
-                        <div class="map-wrap__btn">
-                            <button class="button-rect btn-dark button-s">
-                                <svg viewBox="0 0 24 24">
-                                    <use xlink:href="/img/sprite.svg#geo"></use>
-                                </svg>
-                                <span>Поблизости</span>
-                            </button>
-                            <button class="button-rect btn-dark button-s">
-                                <svg viewBox="0 0 24 24">
-                                    <use xlink:href="/img/sprite.svg#geo2"></use>
-                                </svg>
-                                <span>Расширенный фильтр</span>
-                            </button>
-                        </div>
+                    <div class="map-wrap__btn">
+                        <button class="button-rect btn-dark button-s">
+                            <svg viewBox="0 0 24 24">
+                                <use xlink:href="/img/sprite.svg#geo"></use>
+                            </svg>
+                            <span>Поблизости</span>
+                        </button>
+                        <button class="button-rect btn-dark button-s">
+                            <svg viewBox="0 0 24 24">
+                                <use xlink:href="/img/sprite.svg#geo2"></use>
+                            </svg>
+                            <span>Расширенный фильтр</span>
+                        </button>
                     </div>
-                    <div class="grid-gallery js-sv-list ">
+                    <div class="grid-gallery js-sv-list">
                         <div class="grid-gallery__card js-sv-item">
                             @@include('components/blocks/bem/_card-company.html')
                             <div class="sv-item__cont js-sv-item__cont">
                                 <div class="sv-item__wrap js-sv-item__wrap">
-
+                                    <div class="table-subsc">
+                                        <div class="table-subsc__top">
+                                            <div class="table-subsc__top-mob">
+                                                <span class="table-subsc__title">Выбор даты</span>
+                                                <div class="table-subsc__btn table-subsc__btn--mob">
+                                                    <span class="table-subsc__date">22.07.2021</span>
+                                                    <span class="table-subsc__day">ПН</span>
+                                                </div>
+                                            </div>
+                                            <div class="table-subsc__btns">
+                                                <div class="table-subsc__btn active">
+                                                    <span class="table-subsc__date">22.07.2021</span>
+                                                    <span class="table-subsc__day">ПН</span>
+                                                </div>
+                                                <div class="table-subsc__btn">
+                                                    <span class="table-subsc__date">22.07.2021</span>
+                                                    <span class="table-subsc__day">ПН</span>
+                                                </div>
+                                                <div class="table-subsc__btn">
+                                                    <span class="table-subsc__date">22.07.2021</span>
+                                                    <span class="table-subsc__day">ПН</span>
+                                                </div>
+                                                <div class="table-subsc__btn">
+                                                    <span class="table-subsc__date">22.07.2021</span>
+                                                    <span class="table-subsc__day">ПН</span>
+                                                </div>
+                                                <div class="table-subsc__btn">
+                                                    <span class="table-subsc__date">22.07.2021</span>
+                                                    <span class="table-subsc__day">ПН</span>
+                                                </div>
+                                                <div class="table-subsc__btn">
+                                                    <span class="table-subsc__date">22.07.2021</span>
+                                                    <span class="table-subsc__day">ПН</span>
+                                                </div>
+                                                <div class="table-subsc__btn">
+                                                    <span class="table-subsc__date">22.07.2021</span>
+                                                    <span class="table-subsc__day">ПН</span>
+                                                </div>
+                                            </div>
+                                            <input type="date" class="table-subsc__btn table-subsc__btn--calendar"/>
+                                            <div class="table-subsc__top-cls js-sv-item__btn">
+                                                <svg viewBox="0 0 22 22">
+                                                    <use xlink:href="/img/sprite.svg#circle-close"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="table-subsc__body">
+                                            <div class="table-subsc__body-top">
+                                                <div class="table-subsc__cell">Абонемент</div>
+                                                <div class="table-subsc__cell">Время</div>
+                                                <div class="table-subsc__cell">Категория</div>
+                                                <div class="table-subsc__cell">Условия</div>
+                                                <div class="table-subsc__cell">Цена</div>
+                                            </div>
+                                            <div class="table-subsc__row">
+                                                <div class="table-subsc__cell">
+                                                    <div class="table-subsc__cell-mob">Абонемент</div>
+                                                    <div class="table-subsc__cell-cont">Утренний</div>
+                                                </div>
+                                                <div class="table-subsc__cell">
+                                                    <div class="table-subsc__cell-mob">Время</div>
+                                                    <div class="table-subsc__cell-cont">06:00 - 10:00</div>
+                                                </div>
+                                                <div class="table-subsc__cell">
+                                                    <div class="table-subsc__cell-mob">Категория</div>
+                                                    <div class="table-subsc__cell-cont">Взрослый, индивидальный</div>
+                                                </div>
+                                                <div class="table-subsc__cell">
+                                                    <div class="table-subsc__cell-mob">Условия</div>
+                                                    <a href="#" class="table-subsc__cell-cont">Описание тарифа</a>
+                                                </div>
+                                                <div class="table-subsc__cell">
+                                                    <div class="table-subsc__cell-mob">Цена</div>
+                                                    <div class="table-subsc__cell-cont">1000 Br</div>
+                                                </div>
+                                                <div class="table-subsc__cell table-subsc__cell-button">
+                                                   <button class="button-rect btn-white">
+                                                       <span class="">В избранное</span>
+                                                       <svg viewBox="0 0 14 13">
+                                                           <use xlink:href="/img/sprite.svg#heart-svg"></use>
+                                                       </svg>
+                                                   </button>
+                                                    <svg viewBox="0 0 14 13" class="table-subsc__cell-btn">
+                                                        <use xlink:href="/img/sprite.svg#heart-svg"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="table-subsc__cell">
+                                                    <button class="button-rect btn-blue">
+                                                        <span class="">Купить</span>
+                                                        <svg viewBox="0 0 14 13">
+                                                            <use xlink:href="/img/sprite.svg#cart"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="table-subsc__row">
+                                                <div class="table-subsc__cell">
+                                                    <div class="table-subsc__cell-mob">Абонемент</div>
+                                                    <div class="table-subsc__cell-cont">Утренний</div>
+                                                </div>
+                                                <div class="table-subsc__cell">
+                                                    <div class="table-subsc__cell-mob">Время</div>
+                                                    <div class="table-subsc__cell-cont">06:00 - 10:00</div>
+                                                </div>
+                                                <div class="table-subsc__cell">
+                                                    <div class="table-subsc__cell-mob">Категория</div>
+                                                    <div class="table-subsc__cell-cont">Взрослый, индивидальный</div>
+                                                </div>
+                                                <div class="table-subsc__cell">
+                                                    <div class="table-subsc__cell-mob">Условия</div>
+                                                    <a href="#" class="table-subsc__cell-cont">Описание тарифа</a>
+                                                </div>
+                                                <div class="table-subsc__cell">
+                                                    <div class="table-subsc__cell-mob">Цена</div>
+                                                    <div class="table-subsc__cell-cont">1000 Br</div>
+                                                </div>
+                                                <div class="table-subsc__cell table-subsc__cell-button">
+                                                   <button class="button-rect btn-white">
+                                                       <span class="">В избранное</span>
+                                                       <svg viewBox="0 0 14 13">
+                                                           <use xlink:href="/img/sprite.svg#heart-svg"></use>
+                                                       </svg>
+                                                   </button>
+                                                    <svg viewBox="0 0 14 13" class="table-subsc__cell-btn">
+                                                        <use xlink:href="/img/sprite.svg#heart-svg"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="table-subsc__cell">
+                                                    <button class="button-rect btn-blue">
+                                                        <span class="">Купить</span>
+                                                        <svg viewBox="0 0 14 13">
+                                                            <use xlink:href="/img/sprite.svg#cart"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -230,7 +363,103 @@
                             @@include('components/blocks/bem/_card-company.html')
                             <div class="sv-item__cont js-sv-item__cont">
                                 <div class="sv-item__wrap js-sv-item__wrap">
-
+                                    <div class="table-subsc">
+                                        <div class="table-subsc__top">
+                                            <div class="table-subsc__top-mob">
+                                                <span class="table-subsc__title">Выбор даты</span>
+                                                <div class="table-subsc__btn table-subsc__btn--mob">
+                                                    <span class="table-subsc__date">22.07.2021</span>
+                                                    <span class="table-subsc__day">ПН</span>
+                                                </div>
+                                            </div>
+                                            <div class="table-subsc__btns">
+                                                <div class="table-subsc__btn active">
+                                                    <span class="table-subsc__date">22.07.2021</span>
+                                                    <span class="table-subsc__day">ПН</span>
+                                                </div>
+                                                <div class="table-subsc__btn">
+                                                    <span class="table-subsc__date">22.07.2021</span>
+                                                    <span class="table-subsc__day">ПН</span>
+                                                </div>
+                                                <div class="table-subsc__btn">
+                                                    <span class="table-subsc__date">22.07.2021</span>
+                                                    <span class="table-subsc__day">ПН</span>
+                                                </div>
+                                                <div class="table-subsc__btn">
+                                                    <span class="table-subsc__date">22.07.2021</span>
+                                                    <span class="table-subsc__day">ПН</span>
+                                                </div>
+                                                <div class="table-subsc__btn">
+                                                    <span class="table-subsc__date">22.07.2021</span>
+                                                    <span class="table-subsc__day">ПН</span>
+                                                </div>
+                                                <div class="table-subsc__btn">
+                                                    <span class="table-subsc__date">22.07.2021</span>
+                                                    <span class="table-subsc__day">ПН</span>
+                                                </div>
+                                                <div class="table-subsc__btn">
+                                                    <span class="table-subsc__date">22.07.2021</span>
+                                                    <span class="table-subsc__day">ПН</span>
+                                                </div>
+                                            </div>
+                                            <input type="date" class="table-subsc__btn table-subsc__btn--calendar"/>
+                                            <div class="table-subsc__top-cls js-sv-item__btn">
+                                                <svg viewBox="0 0 22 22">
+                                                    <use xlink:href="/img/sprite.svg#circle-close"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="table-subsc__body">
+                                            <div class="table-subsc__body-top">
+                                                <div class="table-subsc__cell">Абонемент</div>
+                                                <div class="table-subsc__cell">Время</div>
+                                                <div class="table-subsc__cell">Категория</div>
+                                                <div class="table-subsc__cell">Условия</div>
+                                                <div class="table-subsc__cell">Цена</div>
+                                            </div>
+                                            <div class="table-subsc__row">
+                                                <div class="table-subsc__cell">
+                                                    <div class="table-subsc__cell-mob">Абонемент</div>
+                                                    <div class="table-subsc__cell-cont">Утренний</div>
+                                                </div>
+                                                <div class="table-subsc__cell">
+                                                    <div class="table-subsc__cell-mob">Время</div>
+                                                    <div class="table-subsc__cell-cont">06:00 - 10:00</div>
+                                                </div>
+                                                <div class="table-subsc__cell">
+                                                    <div class="table-subsc__cell-mob">Категория</div>
+                                                    <div class="table-subsc__cell-cont">Взрослый, индивидальный</div>
+                                                </div>
+                                                <div class="table-subsc__cell">
+                                                    <div class="table-subsc__cell-mob">Условия</div>
+                                                    <a href="#" class="table-subsc__cell-cont">Описание тарифа</a>
+                                                </div>
+                                                <div class="table-subsc__cell">
+                                                    <div class="table-subsc__cell-mob">Цена</div>
+                                                    <div class="table-subsc__cell-cont">1000 Br</div>
+                                                </div>
+                                                <div class="table-subsc__cell table-subsc__cell-button">
+                                                    <button class="button-rect btn-white">
+                                                        <span class="">В избранное</span>
+                                                        <svg viewBox="0 0 14 13">
+                                                            <use xlink:href="/img/sprite.svg#heart-svg"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <svg viewBox="0 0 14 13" class="table-subsc__cell-btn">
+                                                        <use xlink:href="/img/sprite.svg#heart-svg"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="table-subsc__cell">
+                                                    <button class="button-rect btn-blue">
+                                                        <span class="">Купить</span>
+                                                        <svg viewBox="0 0 14 13">
+                                                            <use xlink:href="/img/sprite.svg#cart"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
