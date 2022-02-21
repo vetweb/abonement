@@ -39,3 +39,303 @@
 .sv-item__cont.open {
   max-height: none;
 }
+
+.tc-3 .sv-item__wrap {
+  padding-top: $indent-10;
+}
+
+.table-subsc__top {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  background: #2C4CA3;
+  border-radius: 10px 10px 0 0;
+  padding: 5px 8px 10px;
+
+  @include lgx {
+    flex-direction: row;
+    padding: 14px 25px 25px;
+  }
+}
+
+.table-subsc__title {
+  color: $white;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  white-space: nowrap;
+  margin: auto $indent-10;
+
+  @include lgx {
+    margin-right: $indent-10;
+  }
+}
+
+.table-subsc__btns {
+  display: none;
+
+  @include lgx {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-right: $indent-10;
+  }
+}
+
+.table-subsc__top-mob {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.table-subsc__btn.table-subsc__btn--mob {
+  display: flex;
+  background: #5670B5;
+  color: $white;
+  width: 140px;
+  border-radius: 10px;
+  margin-left: $indent-15;
+  margin-bottom: $indent-15;
+
+  @include lgx {
+    display: none;
+    margin-bottom: 0;
+  }
+}
+
+.table-subsc__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  height: 35px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+}
+
+.table-subsc__btns .table-subsc__btn {
+  background: #5670B5;
+  color: $white;
+  width: 77px;
+  border-radius: 10px;
+}
+
+.table-subsc__btns .table-subsc__btn.active {
+  background: $olive;
+}
+
+.table-subsc__btn.table-subsc__btn--calendar {
+  width: 100%;
+  background: #E1EBF5;
+  border-radius: 13px;
+  color: $blue-bg;
+  border: 1px solid transparent;
+
+  @include lgx {
+    width: 88px;
+  }
+}
+
+.table-subsc__body {
+  background-color: $white;
+  padding: 0 14px 20px 25px;
+}
+
+.table-subsc__body-top {
+  display: none;
+
+  @include lgx {
+    padding: 21px 0 10px;
+    border-bottom: 1px solid #DCECFC;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.table-subsc__body-top .table-subsc__cell:nth-child(1) {
+  @include lgx {
+    width: 16%;
+  }
+}
+
+.table-subsc__body-top .table-subsc__cell:nth-child(2),
+.table-subsc__body-top .table-subsc__cell:nth-child(3),
+.table-subsc__body-top .table-subsc__cell:nth-child(4),
+.table-subsc__body-top .table-subsc__cell:nth-child(5) {
+  @include lgx {
+    width: 15%;
+  }
+}
+
+.table-subsc__cell-mob {
+  display: inline-block;
+
+  @include lgx {
+    display: none;
+  }
+}
+
+.table-subsc__cell-mob,
+.table-subsc__body-top .table-subsc__cell {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: $blue-bg;
+}
+
+.table-subsc__cell a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: $blue-bg;
+}
+
+.table-subsc__row {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  padding: $indent-15 0 0;
+
+  @include lgx {
+    padding: $indent-15 0;
+    border-bottom: 1px solid #DCECFC;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.table-subsc__row .table-subsc__cell:nth-child(1) {
+  font-weight: 600;
+  padding: 8px 0;
+
+  @include sm {
+    padding: 0;
+  }
+
+  @include lgx {
+    width: 20%;
+  }
+}
+
+.table-subsc__row .table-subsc__cell:nth-child(2),
+.table-subsc__row .table-subsc__cell:nth-child(3),
+.table-subsc__row .table-subsc__cell:nth-child(4),
+.table-subsc__row .table-subsc__cell:nth-child(5) {
+  width: 100%;
+  padding: 8px 0;
+  border-top: 1px solid #DCECFC;
+
+  @include sm {
+    padding: 0;
+    border-top: 1px solid transparent;
+  }
+
+  @include lgx {
+    width: 19%;
+  }
+}
+
+.table-subsc__row .table-subsc__cell:nth-child(6),
+.table-subsc__row .table-subsc__cell:nth-child(7) {
+  width: 100%;
+
+  @include lgx {
+    width: 15%;
+  }
+}
+
+.table-subsc__row .table-subsc__cell {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include lgx {
+    justify-content: flex-start;
+  }
+}
+
+.table-subsc__row .table-subsc__cell .button-rect {
+  white-space: nowrap;
+  width: 100%;
+  padding: $indent-10 0;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 7px;
+
+  @include lgx {
+    width: 130px;
+  }
+}
+
+.table-subsc__row .table-subsc__cell .button-rect.btn-blue {
+  padding: $indent-10;
+  margin-top: $indent-15;
+
+  @include lgx {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.table-subsc__cell.table-subsc__cell-button {
+  margin-top: $indent-10;
+  display: flex;
+  justify-content: center;
+
+  @include lgx {
+    margin-top: 0;
+    justify-content: flex-start;
+  }
+}
+
+.table-subsc__cell-btn {
+  display: none;
+
+  @include lgx {
+   display: flex;
+  }
+
+  @include lg {
+    display: none;
+  }
+}
+
+.button-rect.btn-white{
+  display: flex;
+
+  @include lgx {
+    display: none;
+  }
+
+  @include lg {
+    display: flex;
+  }
+}
+
+.table-subsc__row .table-subsc__cell .button-rect svg {
+  margin-left: 5px;
+}
+
+svg.table-subsc__cell-btn,
+.table-subsc__cell .button-rect svg {
+  width: 20px;
+  height: 20px;
+}
+
+.table-subsc__row .table-subsc__cell .button-rect.btn-white svg,
+svg.table-subsc__cell-btn {
+  color: #B3B3B3;
+}
+
+.table-subsc__top-cls svg{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
