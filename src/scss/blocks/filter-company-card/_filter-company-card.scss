@@ -328,3 +328,22 @@ svg.table-subsc__cell-btn {
   height: 15px;
   flex-shrink: 0;
 }
+
+.table-subsc__row-wrap {
+
+  @include lgx {
+    max-height: 290px;
+  }
+}
+
+.table-subsc__row-wrap .scrollbar-track.scrollbar-track-y {
+  opacity: 0;
+
+  @include lgx {
+    opacity: 1;
+  }
+}
+
+.table-subsc__row-wrap .scrollbar-track.scrollbar-track-x {
+  display: none;
+}

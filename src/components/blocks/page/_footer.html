@@ -134,8 +134,13 @@
     </div>
 </footer>
 <div class="modal-window__chat-help js-modal-window" data-md="help-chat">
+    <div class="modal-window__close js-close-md" data-cls="help-chat">
+        <svg viewBox="0 0 53 53">
+            <use xlink:href="/img/sprite.svg#x-circle"></use>
+        </svg>
+    </div>
     <div class="modal-window__content modal-window__content--chat-help">
-        <div class="modal-window__close js-close-md" data-cls="help-chat">
+        <div class="modal-window__close modal-window__close--mob js-close-md" data-cls="help-chat">
             <svg viewBox="0 0 53 53">
                 <use xlink:href="/img/sprite.svg#x-circle"></use>
             </svg>
@@ -221,8 +226,33 @@
                         <div class="row-acc__form-desc">Максимум 5 файлов до 10 МБ каждый</div>
                     </div>
                 </div>
-                <button class="button-rect btn-blue">Далее</button>
+                <a href="#" class="button-rect btn-blue js-close-md js-open-md" data-opn="help-chat-submit" data-cls="help-chat" >Далее</a>
             </form>
+        </div>
+    </div>
+</div>
+<div class="modal-window__chat-help js-modal-window" data-md="help-chat-submit">
+    <div class="modal-window__close js-close-md" data-cls="help-chat-submit">
+        <svg viewBox="0 0 53 53">
+            <use xlink:href="/img/sprite.svg#x-circle"></use>
+        </svg>
+    </div>
+    <div class="modal-window__content modal-window__content--chat-help modal-window__content--chat-help-submit">
+        <div class="modal-window__close modal-window__close--mob js-close-md" data-cls="help-chat-submit">
+            <svg viewBox="0 0 53 53">
+                <use xlink:href="/img/sprite.svg#x-circle"></use>
+            </svg>
+        </div>
+        <div class="modal-inner">
+            <p class="modal-inner__title">Помощь</p>
+            <div class="modal-inner__img">
+                <img src="img/submit-img.svg" alt="">
+            </div>
+            <div class="row-acc__col50--title">Заявка отправлена!</div>
+            <p class="row-acc__col50--subtitle">
+               Спасибо что отправили заявку мы скоро с Вами свяжемся.
+            </p>
+            <button class="button-rect btn-blue js-close-md" data-cls="help-chat-submit">Закрыть</button>
         </div>
     </div>
 </div>

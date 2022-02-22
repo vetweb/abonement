@@ -536,12 +536,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 				if (!modalWindow.classList.contains('show-md')) {
 					modalWindow.classList.add('show-md');
-					document.body.style.overflowY = 'hidden';
-					document.body.style.paddingRight = '14px';
+					isMenuShow = true;
+					bodyFix(isMenuShow);
 				} else {
 					modalWindow.classList.remove('show-md');
-					document.body.style.overflowY = 'visible';
-					document.body.style.paddingRight = '';
+					isMenuShow = false;
+					bodyFix(isMenuShow);
 				}
 			});
 		});
@@ -560,7 +560,8 @@ document.addEventListener('DOMContentLoaded', () => {
 				let modalWindow = document.querySelector(`[data-md='${pathBtnClose}']`);
 				if (modalWindow.classList.contains('show-md')) {
 					modalWindow.classList.remove('show-md');
-					document.body.style.overflowY = 'visible';
+					isMenuShow = false;
+					bodyFix(isMenuShow);
 				}
 			})
 		});
@@ -571,7 +572,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			item.addEventListener('click', (e) => {
 				if (e.target === item) {
 					item.classList.remove('show-md');
-					document.body.style.overflowY = 'visible';
+					isMenuShow = false;
+					bodyFix(isMenuShow);
 				}
 			});
 		});
@@ -579,7 +581,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		document.addEventListener('keydown', (event) => {
 			if (event.key === 'Escape') {
 				modalWindow.classList.remove('show-md');
-				document.body.style.overflowY = 'visible';
+				isMenuShow = false;
+				bodyFix(isMenuShow);
 			}
 		});
 	}
@@ -600,11 +603,13 @@ document.addEventListener('DOMContentLoaded', () => {
 			if (!infoBlock.classList.contains('show')) {
 				overlay.classList.add('show');
 				infoBlock.classList.add('show');
-				document.body.style.overflowY = 'hidden';
+				isMenuShow = true;
+				bodyFix(isMenuShow);
 			} else {
 				overlay.classList.remove('show');
 				infoBlock.classList.remove('show');
-				document.body.style.overflowY = 'visible';
+				isMenuShow = false;
+				bodyFix(isMenuShow);
 			}
 		}
 	})
@@ -621,7 +626,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			if (infoBlock.classList.contains('show')) {
 				overlay.classList.remove('show');
 				infoBlock.classList.remove('show');
-				document.body.style.overflowY = 'visible';
+				isMenuShow = false;
+				bodyFix(isMenuShow);
 			}
 		}
 	})
@@ -636,7 +642,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			if (infoBlock.classList.contains('show')) {
 				item.classList.remove('show');
 				infoBlock.classList.remove('show');
-				document.body.style.overflowY = 'visible';
+				isMenuShow = false;
+				bodyFix(isMenuShow);
 			}
 		}
 	})
