@@ -13,3 +13,55 @@
 .documents-s .row-acc.row-acc--acc .row-acc__col25.row-acc__col25--right .row-acc__col25-top svg {
   color: $orange;
 }
+
+.form-doc__inner {
+  margin-bottom: $indent-25;
+  width: 100%;
+}
+
+.form-doc__el.active {
+  border: 1.5px solid #E1EBF5;
+}
+
+.form-doc__el {
+  width: 100%;
+  padding: $indent-20;
+  border: 1.5px dashed #E1EBF5;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+
+  @include sm {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.form-doc__el:not(:last-child) {
+  margin-bottom: $indent-10;
+}
+
+.form-doc__el-icon {
+  margin-right: $indent-10;
+}
+
+.form-doc__el-icon svg {
+  width: 23px;
+  height: 23px;
+}
+
+.form-doc__el-title {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.form-doc__el-cell {
+  display: flex;
+  align-items: center;
+  margin-bottom: $indent-10;
+
+  @include sm {
+    margin-bottom: 0;
+  }
+}

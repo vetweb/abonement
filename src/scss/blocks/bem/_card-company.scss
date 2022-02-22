@@ -242,10 +242,6 @@
   margin-bottom: 0;
 }
 
-.main.filter-company-card-s {
-  padding-top: 0;
-}
-
   //breadcrumbs-block
 .breadcrumbs-block {
   color: $black-t;
@@ -255,7 +251,7 @@
 }
 
 .company-card-s .breadcrumbs-block {
-  margin-bottom: $indent-20;
+  margin-bottom: 0;
   display: flex;
   align-items: center;
   justify-content: flex-start;
