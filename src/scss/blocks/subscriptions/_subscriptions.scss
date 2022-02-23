@@ -312,7 +312,7 @@
   margin: 0 0 0 $indent-10;
 }
 
-.subscriptions-s .button-rect.btn-green {
+.subscriptions-s .search-block .button-rect.btn-green {
   width: 48%;
   margin: 0 0 0 $indent-10;
 
@@ -436,17 +436,34 @@
   padding: $indent-20 0;
 }
 
-// remake
-.filter-block__range {
-  color: #051138;
+.filter-block__body-item .select-wrapper {
+  width: 100%;
   margin-bottom: $indent-20;
 }
 
+.filter-block__body-item .calendar-wrap {
+  width: 100%;
+}
+
+.filter-block__body-item .form-row__date + label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: $indent-20;
+}
+
+.filter-block__range {
+  color: #051138;
+  margin-bottom: $indent-30;
+}
+
+.filter-block__checkbox-title,
 .filter-block__range-title {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 19px;
-  margin-bottom: $indent-10;
 }
 
 .slider-area-wrapper {
