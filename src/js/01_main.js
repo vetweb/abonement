@@ -466,6 +466,24 @@ document.addEventListener('DOMContentLoaded', () => {
 	let listParentTopMenu = document.querySelector('.js-filter-parent')
 	let listItemsTopMenu = listParentTopMenu.querySelectorAll('.js-filter')
 	let dropdownFilterMenu = document.querySelector('.js-filter-menu')
+	let menuOverlay = document.querySelector('.js-menu-filter-overlay')
+	let topMenuList = document.querySelectorAll('.top-menu__item')
+
+	menuOverlay.onmouseenter = function (e) {
+		e = e || event;
+		this.classList.remove('active');
+		listParentTopMenu.classList.remove('active');
+		dropdownFilterMenu.classList.remove('active');
+	};
+
+	topMenuList.forEach(function (topMenuitem) {
+		let elemLink = topMenuitem.querySelector('.top-menu__link');
+		elemLink.onmouseover = function (e) {
+			listParentTopMenu.classList.remove('active');
+			dropdownFilterMenu.classList.remove('active');
+			menuOverlay.classList.remove('active');
+		};
+	})
 
 	listItemsTopMenu.forEach(function (elem) {
 		elem.onmouseover = function (e) {
@@ -473,6 +491,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			let target = e.target || e.srcElement;
 			dropdownFilterMenu.classList.add('active');
 			listParentTopMenu.classList.add('active');
+			menuOverlay.classList.add('active');
 		};
 
 		dropdownFilterMenu.onmouseleave = function (e) {
@@ -480,6 +499,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			let target = e.target || e.srcElement;
 			listParentTopMenu.classList.remove('active');
 			dropdownFilterMenu.classList.remove('active');
+			menuOverlay.classList.remove('active');
 		};
 	});
 

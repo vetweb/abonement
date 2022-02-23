@@ -18,7 +18,25 @@
 	}
 }
 
+.menu-filter__overlay {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.24);
+	visibility: hidden;
+	opacity: 0;
+	transition: .2s ease-in-out;
+
+	&.active {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
 .menu-filter__content {
+	height: 100%;
 	padding: 10px 15px;
 }
 
@@ -39,5 +57,6 @@
 }
 
 .menu-filter-search__catalog-alpha {
+	height: 100%;
 	margin-top: 25px;
 }
