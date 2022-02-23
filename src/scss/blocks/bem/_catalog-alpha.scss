@@ -1,5 +1,6 @@
 .catalog-alpha {
-	max-height: 500px;
+	height: calc(100% - 70px);
+	overflow-y: auto;
 }
 
 .catalog-alpha__tag {
@@ -14,6 +15,7 @@
 }
 
 .catalog-alpha__tag li a {
+	position: relative;
 	padding: 2px 6px;
 	color: #051138;
 	font-weight: 500;
@@ -23,6 +25,7 @@
 	transition: all .2s ease-in-out;
 
 	&:hover {
+		visibility: visible;
 		box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
 	}
 }
@@ -61,15 +64,26 @@
 }
 
 .catalog-alpha-col li a {
+	position: relative;
 	color: #374160;
 	text-decoration: none;
 	font-size: 16px;
 	line-height: 19px;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.catalog-alpha-col li img {
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .modal-window__content.modal-window__content-country {
 	padding: $indent-20 0;
 	width: 95%;
+	max-height: 95vh;
 
 	@include md {
 		width: 50%;
