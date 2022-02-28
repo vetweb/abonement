@@ -13,6 +13,10 @@
 	margin: 0 -10px;
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
+	@include sm {
+		margin: 0 -15px;
+	}
+
 	@include lg {
 		margin: 0;
 		flex-direction: row;
@@ -99,9 +103,15 @@
 	}
 }
 
+.main-banner__col20-link {
+	color: #C3C3C3;
+}
+
 .main-banner__col-small .main-banner__col20-hidden {
 	display: none;
 	overflow: hidden;
+	color: #fff;
+	text-decoration: none;
 
 	@include sm {
 		display: flex;
@@ -143,6 +153,11 @@
 	}
 }
 
+.main-banner__col20-col {
+	color: #fff;
+	text-decoration: none;
+}
+
 .main-banner__col-small .main-banner__col20-visible .main-banner__col20-col {
 	display: flex;
 	flex-direction: column;
@@ -157,6 +172,7 @@
 	max-width: 140px;
 	width: 100%;
 }
+
 
 .banner-slider__inner {
 	z-index: 3;

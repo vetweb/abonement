@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		standardSwipers.forEach((el) => {
 			myStandardSwiper = new Swiper(el, {
 				direction: "horizontal",
-				loop: false,
+				loop: true,
 				speed: 1000,
 				slidesPerView: 'auto',
 				freeMode: true,
@@ -356,6 +356,36 @@ document.addEventListener('DOMContentLoaded', () => {
 			})
 		}
 	})
+
+	//Search open
+
+	function SearchToggle() {
+		let inptSearch = document.querySelector('.js-search-toggle');
+		let headerCenterBlock = document.querySelector('.header__center');
+		let searchInput = headerCenterBlock.querySelector('.search__input')
+
+		if (!inptSearch) {
+			return false
+		}
+		let inptSearchVal = inptSearch.value;
+
+		inptSearch.onclick = function () {
+			headerCenterBlock.classList.add('header__center-active');
+			inptSearch.parentElement.classList.add('search__field-active');
+			searchInput.focus();
+		}
+
+		inptSearch.onblur = function () {
+
+			if (inptSearchVal.length === 0) {
+				headerCenterBlock.classList.remove('header__center-active');
+				inptSearch.parentElement.classList.remove('search__field-active');
+			}
+		}
+	}
+
+	SearchToggle()
+
 
 	filterBlockCloseBtns.forEach((item) => {
 		item.addEventListener('click', closeFiletBlock);

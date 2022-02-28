@@ -70,6 +70,7 @@
 	overflow: hidden;
 	width: 50px;
 	margin-left: auto;
+	transition: all .2s ease-in-out;
 
 	@include md {
 		width: 230px;
@@ -80,6 +81,10 @@
 		width: 300px;
 		margin-left: 0;
 	}
+}
+
+.header__center-active {
+	width: 100%;
 }
 
 .header__right {
@@ -126,6 +131,8 @@
 }
 
 .header__search-form {
+	padding: 0 10px;
+
 	.search__button {
 		@include md-down {
 			opacity: 0;
@@ -144,6 +151,10 @@
 
 	.form__input {
 		color: #ffffff;
+
+		@include lgx-down {
+			border-color: transparent;
+		}
 	}
 }
 

@@ -6,8 +6,21 @@
 	max-width: 517px;
 }
 
+.search__field-active .search__input {
+	border-bottom-color: white !important;
+	border-radius: 0;
+}
+
 .search__input {
 	width: 100%;
+
+	@include lgx-down {
+		padding-left: 0;
+	}
+}
+
+.search__input:focus {
+	outline: none;
 }
 
 .search__button {
@@ -31,9 +44,9 @@
 
 .search__icon-header {
 	position: absolute;
-	left: 0;
+	right: 0;
 	top: 0;
-	width: 100%;
+	width: 50px;
 	height: 100%;
 	cursor: pointer;
 	color: #646A7D;
