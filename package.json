@@ -8,7 +8,7 @@
   "license": "ISC",
   "scripts": {
     "html": "gulp",
-    "build": "gulp libs_style && gulp style && gulp svg_css && gulp style && gulp build_js && gulp rastr && gulp webp && gulp svg_sprite && gulp html"
+    "build": "gulp libs_style && gulp style && gulp svg_css && gulp style && gulp build_js && gulp svg_sprite && gulp html"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
