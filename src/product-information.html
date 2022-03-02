@@ -9,8 +9,8 @@
 
 <body>
 @@include('components/blocks/page/_header.html')
-<main class="add-camp-s index-s__mob-s">
-    <section class="add-camp-s1">
+<main class="main add-camp-s prod-info-s index-s__mob-s">
+    <section class="add-camp-s1 prod-info-s1">
         <div class="index-s__mob">
             <div class="container">
                 <a href="/coaches.html" class="link-back">
@@ -52,7 +52,7 @@
                             <div class="circle-item2">
                             </div>
                         </div>
-                        <a href="#" class="row-acc__list-link">
+                        <a href="product-information.html" class="row-acc__list-link">
                             <span class="row-acc__list-title">Информация о товаре</span>
                         </a>
                     </li>
@@ -61,7 +61,7 @@
                             <div class="circle-item2">
                             </div>
                         </div>
-                        <a href="#" class="row-acc__list-link">
+                        <a href="specifications.html" class="row-acc__list-link">
                             <span class="row-acc__list-title">Характеристики</span>
                         </a>
                     </li>
@@ -70,7 +70,7 @@
                             <div class="circle-item2">
                             </div>
                         </div>
-                        <a href="#" class="row-acc__list-link">
+                        <a href="media.html" class="row-acc__list-link">
                             <span class="row-acc__list-title">Медиа</span>
                         </a>
                     </li>
@@ -79,7 +79,7 @@
                             <div class="circle-item2">
                             </div>
                         </div>
-                        <a href="#" class="row-acc__list-link">
+                        <a href="preview.html" class="row-acc__list-link">
                             <span class="row-acc__list-title">Предварительный просмотр</span>
                         </a>
                     </li>
@@ -138,10 +138,45 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="select__body js-select__body">
-                                    <div class="select__item js-select__item">1</div>
-                                    <div class="select__item js-select__item">2</div>
-                                    <div class="select__item js-select__item">3</div>
+                                <div class="select__body">
+                                    <div class="catalog-alpha-row catalog-alpha-row--select">
+                                        <div class="catalog-alpha-list__header">
+                                            <span id="А">А</span>
+                                        </div>
+                                        <ul class="catalog-alpha-col catalog-alpha-col--select">
+                                            <li class="catalog-alpha-item js-select__item">Аквабайк
+                                            </li>
+                                            <li class="catalog-alpha-item js-select__item">Аквабайк
+                                            </li>
+                                            <li class="catalog-alpha-item js-select__item">Аквабайк
+                                            </li>
+                                            <li class="catalog-alpha-item js-select__item">Аквабайк
+                                            </li>
+                                            <li class="catalog-alpha-item js-select__item">Аквабайк
+                                            </li>
+                                            <li class="catalog-alpha-item js-select__item">Аквабайк
+                                            </li>
+                                            <li class="catalog-alpha-item js-select__item">Аквабайк
+                                            </li>
+                                            <li class="catalog-alpha-item js-select__item">Аквабайк
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="catalog-alpha-row catalog-alpha-row--select">
+                                        <div class="catalog-alpha-list__header">
+                                            <span id="B">Б</span>
+                                        </div>
+                                        <ul class="catalog-alpha-col catalog-alpha-col--select">
+                                            <li class="catalog-alpha-item js-select__item">Баскетболл
+                                            </li>
+                                            <li class="catalog-alpha-item js-select__item">Баскетболл
+                                            </li>
+                                            <li class="catalog-alpha-item js-select__item">Баскетболл
+                                            </li>
+                                            <li class="catalog-alpha-item js-select__item">Баскетболл
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -181,22 +216,36 @@
                                 <img src="/img/coach-ic.svg" alt="" class="label-light--ic">
                             </a>
                         </div>
-                        <div class="row-acc__form-row">
-                            <div class="row-acc__form-col">
+                        <div class="row-acc__form-row row-acc__form-row--mb">
+                            <div class="row-acc__form-col row-acc__form-col--30">
                                 <p class="label-light">
-                                    <label for="ac-date" class="label-light__title">Укажите даты заезда и выезда в лагерь</label>
+                                    <span class="label-light__title">Набор дней</span>
+                                    <span class="label-light__symbol">*</span>
                                 </p>
-                                <input type="date" id="ac-date" class="input-light input-light__mb15">
+                                <p class="calendar-coach input-light__mb15">
+                                    <input id="ac-date" type="date"/>
+                                    <label for="ac-date" class="calendar-label"></label>
+                                </p>
                             </div>
-                            <div class="row-acc__form-col">
-                                <input type="date" id="ac-date2" class="input-light input-light__mb15">
+                            <div class="row-acc__form-col row-acc__form-col--30">
+                                <p class="label-light">
+                                    <span class="label-light__title">Время</span>
+                                    <span class="label-light__symbol">*</span>
+                                </p>
+                                <p class="calendar-coach input-light__mb15">
+                                    <input id="ac-quantity" type="time"/>
+                                </p>
+                            </div>
+                            <div class="row-acc__form-col row-acc__form-col--30">
+                                <p class="label-light">
+                                    <span class="label-light__title">Кол-во занятий</span>
+                                    <span class="label-light__symbol">*</span>
+                                </p>
+                                <p class="calendar-coach input-light__mb15">
+                                    <input id="ac-time" type="number"/>
+                                </p>
                             </div>
                         </div>
-                        <p class="label-light">
-                            <label for="ac-lessons" class="label-light__title">Кол-во занятий</label>
-                            <span class="label-light__symbol">*</span>
-                        </p>
-                        <input type="text" id="ac-lessons" class="input-light input-light__mb15">
                         <div class="row-acc__form-row">
                             <div class="row-acc__form-col">
                                 <p class="label-light">

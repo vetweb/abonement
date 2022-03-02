@@ -31,4 +31,12 @@
   }
 }
 
-// add-company
+.info-company-s .button-rect {
+  @include lgx {
+    margin-top: 90px;
+  }
+}
+
+.catalog-alpha-item {
+  cursor: pointer;
+}

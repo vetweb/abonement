@@ -22,8 +22,15 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 35px;
   min-height: 248px;
+
+  @include sm {
+    padding-bottom: $indent-10;
+  }
+
+  @include lgx {
+    padding: 35px;
+  }
 }
 
 .preview-s1 .modal-window__content.modal-window__content--prod {
@@ -40,6 +47,11 @@
   display: inline-flex;
   vertical-align: bottom;
   margin: auto 0 0;
+  flex-wrap: wrap;
+
+  @include sm {
+    flex-wrap: nowrap;
+  }
 }
 
 .modal-inner {
@@ -95,4 +107,22 @@
   line-height: 20px;
   color: $blue-bg;
   margin-bottom: $indent-15;
+}
+
+.preview-s1 .row-acc__col50-inner .btn-wrapper .button-rect {
+  max-width: 100%;
+  border-radius:  $indent-15;
+  padding: $indent-10;
+
+  @include sm {
+    margin-bottom: 0;
+    max-width: 147px;
+  }
+}
+
+.preview-s1 .row-acc__col50-inner .btn-wrapper .button-rect.btn-white {
+  @include sm-down {
+    margin-right: 0;
+    margin-bottom: $indent-10;
+  }
 }

@@ -71,6 +71,59 @@
   color: $blue-bg;
 }
 
+.media-s1 .row-acc__col25.row-acc__col25--right {
+  @include sm-down {
+    display: none;
+  }
+}
+
+.media-s1 .row-acc__col50 {
+  @include sm-down {
+    padding: 0;
+    background-color: transparent;
+  }
+}
+
+.media-s1 .row-acc__col50-inner .btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column-reverse;
+
+  @include sm {
+    flex-direction: row;
+  }
+}
+
+.media-s1 .row-acc__col50-inner .btn-wrapper .button-rect {
+  max-width: 100%;
+  border-radius:  $indent-15;
+  padding: $indent-10;
+
+  @include sm {
+    max-width: 147px;
+  }
+}
+
+.media-s1 .row-acc__col50-inner .btn-wrapper .btn-white {
+  margin-top: $indent-10;
+  margin-bottom: 0;
+
+  @include sm {
+    margin-top: 0;
+    margin-right: $indent-10;
+  }
+
+  @include sm-down {
+    background-color: transparent;
+  }
+}
+
+.media-s1 .form__img-block-top .label-light__title.label-light__title--mob {
+  @include sm-down {
+    color: $blue;
+  }
+}
+
 .media-s1 .row-acc__col25.row-acc__col25--right .row-acc__col25--desc {
   margin-bottom: $indent-10;
 }
@@ -106,7 +159,7 @@
   color: $orange;
   width: 20px;
   height: 20px;
-  margin-right: $indent-10;
+  margin-right: 5px;
 }
 
 .row-acc__col25-top.row-acc__col25--bottom {

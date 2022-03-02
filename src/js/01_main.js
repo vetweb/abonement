@@ -306,7 +306,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // custom select
 
-	let selectHeader = document.querySelector('.js-select__header');
 	let selectHeaders = document.querySelectorAll('.js-select__header');
 	let selectItems = document.querySelectorAll('.js-select__item');
 
@@ -800,4 +799,15 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		});
 	});
+
+	//
+	let inputTypeDate = document.querySelectorAll('input[type="date"]');
+	inputTypeDate.forEach((input) => {
+		input.addEventListener('focus', function (e) {
+
+			let label = document.querySelector(`[for="${e.target.id}"]`);
+			label.style.color = 'transparent';
+			input.style.color = '#000';
+		})
+	})
 });

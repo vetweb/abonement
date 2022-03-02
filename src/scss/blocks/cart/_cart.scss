@@ -334,6 +334,10 @@
   }
 }
 
+.modal-window__content.modal-window__content--cart .modal-window__form--link {
+  margin-top: $indent-15;
+}
+
 .modal-window__close {
   position: absolute;
   top: 15px;
@@ -551,6 +555,14 @@ a.policy-link {
     width: 90%;
     padding: $indent-35 $indent-30;
   }
+}
+
+.modal-window__content.modal-window__content--cart-order {
+  overflow-y: scroll;
+}
+
+.modal-window.modal-window--cart-order {
+  overflow-y: auto;
 }
 
 .order-s.cart-s .table-m,

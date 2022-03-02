@@ -40,13 +40,20 @@
   }
 }
 
-.preview-s .row-acc__col50,
 .add-coach-s .row-acc__col50,
 .coaches-s .row-acc__col50 {
   @include sm-down  {
     padding: $indent-10;
     border-radius: 0;
   }
+
+  @include lg {
+    max-width: 955px;
+    height: 100%;
+  }
+}
+
+.preview-s .row-acc__col50 {
 
   @include lg {
     max-width: 955px;

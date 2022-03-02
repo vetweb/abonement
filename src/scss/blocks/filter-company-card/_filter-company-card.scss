@@ -460,3 +460,12 @@ svg.table-subsc__cell-btn {
 .table-subsc__row-wrap .scrollbar-track.scrollbar-track-x {
   display: none;
 }
+
+.filter-company-card-s.company-card-s .search-block__left .button-rect.btn-white-border {
+  display: none;
+
+  @include lg {
+    display: flex;
+    max-width: 188px;
+  }
+}

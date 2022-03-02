@@ -142,3 +142,57 @@ a.link-back .row-acc__title {
   font-weight: 400;
   color: $blue-bg;
 }
+
+.calendar-coach {
+  position: relative;
+  width: 100%;
+}
+
+.calendar-coach input[type="number"],
+.calendar-coach input[type="date"],
+.calendar-coach input[type="time"] {
+  background-color: $white;
+  border: 1px solid #E1EBF5;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px;
+  height: 32px;
+  width: 100%;
+
+  @include sm {
+    height: 42px;
+  }
+}
+
+.calendar-coach input[type="number"],
+.calendar-coach input[type="date"] {
+  color: $blue-bg;
+}
+
+.calendar-coach input[type="date"] {
+  color: transparent;
+}
+
+.calendar-coach input[type="date"] {
+  background-image: url('/img/arrow-down.svg');
+  background-size: 15px;
+  background-position: 95%;
+  background-repeat: no-repeat;
+}
+
+.calendar-coach input[type="time"] + label,
+.calendar-coach input[type="date"] + label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 90%;
+  font-size: 16px;
+  line-height: 20px;
+  color: #CECECE;
+}
+
+.add-camp-s1 .calendar-coach input[type="date"] {
+  background-image: none;
+}

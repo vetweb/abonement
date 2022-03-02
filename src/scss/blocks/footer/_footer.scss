@@ -658,24 +658,38 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: $indent-70;
+  margin-bottom: $indent-30;
+
+  @include sm {
+    margin-bottom: $indent-70;
+  }
 }
 
 .row-acc__col50--subtitle {
-  font-size: 18px;
-  line-height: 23px;
+  font-size: 16px;
+  line-height: 21px;
   color: $gray-tx;
   font-weight: 400;
-  margin: $indent-30 auto $indent-60;
+  margin: $indent-20 auto $indent-30;
   text-align: center;
+
+  @include sm {
+    line-height: 23px;
+    font-size: 18px;
+    margin: $indent-30 auto $indent-60;
+  }
 }
 
 .modal-window__content--chat-help-submit .row-acc__col50--title {
   margin: 0 auto;
   font-weight: 600;
-  font-size: 28px;
+  font-size: 20px;
   line-height: 20px;
   color: $blue-bg;
+
+  @include sm {
+    font-size: 28px;
+  }
 }
 
 .modal-window__content.modal-window__content--chat-help.modal-window__content--chat-help-submit .button-rect {

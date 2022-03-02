@@ -67,11 +67,7 @@
   background-color: $white;
 
   @include sm {
-    height: 245px;
-  }
-
-  @include lg {
-    height: 282px;
+    height: 238px;
   }
 }
 

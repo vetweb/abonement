@@ -9,7 +9,7 @@
 
 <body>
 @@include('components/blocks/page/_header.html')
-<main class="add-coach-s">
+<main class="main add-coach-s">
     <section class="settings-s1">
     <div class="container">
         <div class="index-s__top">
@@ -100,10 +100,13 @@
                             </div>
                             <div class="row-acc__form-col row-acc__form-col--date">
                                 <p class="label-light">
-                                    <label for="md-date" class="label-light__title">Дата рождения</label>
+                                    <span class="label-light__title">Дата рождения</span>
                                     <span class="label-light__symbol">*</span>
                                 </p>
-                                <input type="date" id="md-date" class="input-light input-light__mb15">
+                                <p class="calendar-coach input-light__mb15">
+                                    <input id="calendar-coach1" type="date"/>
+                                    <label for="calendar-coach1" class="calendar-label">__.__.____</label>
+                                </p>
                             </div>
                             <div class="row-acc__form-row row-acc__form-row--middle">
                                 <div class="row-acc__col50--title">Трудовой стаж</div>
