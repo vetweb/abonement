@@ -349,7 +349,7 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 
-.select.select--kos .filter-block .select__body {
+.filter-block .select.select--kos .select__body {
   height: 250px;
   overflow-y: scroll;
 
@@ -395,6 +395,10 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .filter-block__body-item {
+  padding: $indent-20 0;
+}
+
+.filter-block__body-item:not(:first-child) {
   border-top: 1px solid #E1EBF5;
   padding: $indent-20 0;
 }

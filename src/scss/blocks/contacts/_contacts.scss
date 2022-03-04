@@ -97,6 +97,7 @@
   padding: $indent-20;
   overflow: hidden;
   width: 100%;
+  border-radius: $indent-10;
 
   @include sm {
     max-width: 180px;

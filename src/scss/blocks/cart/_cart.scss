@@ -467,11 +467,18 @@ a.policy-link {
 .modal-window__form {
   display: flex;
   flex-direction: column;
-  height: 100%;
+}
+
+.modal-window.modal-window--entrance {
+  overflow-y: auto;
 }
 
 .cart-s .modal-window__form .button-rect {
   margin-bottom: $indent-10;
+}
+
+.modal-window__content.modal-window__content--complete-reg {
+  overflow-y: scroll;
 }
 
 .styled-checkbox {
@@ -575,4 +582,12 @@ a.policy-link {
 .modal-window__content--cart-order .table-m__body-el {
   padding-left: 0;
   padding-right: 0;
+}
+
+.modal-window.modal-window--cart {
+  overflow-y: auto;
+}
+
+.modal-window__content.modal-window__content--cart {
+  overflow-y: scroll;
 }
