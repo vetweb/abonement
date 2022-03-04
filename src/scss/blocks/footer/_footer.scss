@@ -1,8 +1,21 @@
 .footer {
   background-color: $blue-bg;
   color: $white;
-  padding: $indent-60 0 $indent-40;
+  padding: $indent-25 0 $indent-40;
   position: relative;
+
+  @include sm {
+    padding: $indent-60 0 $indent-40;
+  }
+}
+
+.footer .logo {
+  display: flex;
+  margin-bottom: $indent-30;
+
+  @include sm {
+    margin-bottom: $indent-40;
+  }
 }
 
 .cont-block {

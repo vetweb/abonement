@@ -109,6 +109,7 @@
 .grid-col70-inner {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .fc-s1 .grid-col70 {
@@ -172,6 +173,12 @@
 .fc-s1 .grid-row__address.grid-row__address--desk {
   display: inline-flex;
   margin-bottom: 0;
+}
+
+.grid-col50.fc-s1__body-text .grid-row__address.grid-row__address--desk {
+  display: inline-flex;
+  margin-bottom: $indent-10;
+  margin-right: 0;
 }
 
 .slider {

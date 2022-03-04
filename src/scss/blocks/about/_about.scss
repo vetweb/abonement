@@ -1,8 +1,16 @@
-.about-s1,
 .about-s2,
 .about-s3,
 .about-s4 {
   padding: 0 0 $indent-50;
+  color: $blue-bg;
+
+  @include lgx {
+    padding: $indent-95 0 $indent-80;
+  }
+}
+
+.about-s1 {
+  padding: $indent-25 0 $indent-50;
   color: $blue-bg;
 
   @include lgx {
@@ -131,6 +139,12 @@
 
 .about-s3 .row__col50 {
   align-self: flex-start;
+}
+
+.about-s3 .row__col50:not(:first-child) {
+  @include sm-down {
+    margin-bottom: $indent-30;
+  }
 }
 
 .about-s4 .row {

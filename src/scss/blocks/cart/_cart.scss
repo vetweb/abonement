@@ -503,13 +503,13 @@ a.policy-link {
   vertical-align: text-top;
   width: 20px;
   height: 20px;
-  background: $black;
+  background: $white;
   border: 1px solid  $black;
 }
 
 .styled-checkbox.styled-checkbox--male:hover + label:before,
 .styled-checkbox.styled-checkbox--male:active + label:before {
-  background: $black;
+  background: $white;
 }
 
 .styled-checkbox:hover + label:before,
@@ -527,7 +527,7 @@ a.policy-link {
 }
 
 .styled-checkbox.styled-checkbox--male:checked + label:before {
-  background: $black;
+  background: $white;
   border-radius: 4px;
 }
 

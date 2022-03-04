@@ -77,6 +77,7 @@
 
   @include lgx {
     display: flex;
+    align-items: center;
     width: 100%;
     justify-content: space-between;
     margin-right: $indent-10;
@@ -238,7 +239,7 @@
   @include lgx {
     padding: 0;
     border-top: 1px solid transparent;
-    width: 15%;
+    width: 14%;
   }
 }
 
@@ -344,8 +345,101 @@ input[type="range"]::-moz-range-thumb {
   width: 100%;
 
   @include lgx {
-    width: 15%;
+    width: 17%;
   }
+}
+
+.select.select--kos .filter-block .select__body {
+  height: 250px;
+  overflow-y: scroll;
+
+  @include lg {
+    height: 400px;
+  }
+}
+
+.special-offers-s.company-card-s .search-block__left__search {
+  @include lg {
+    width: 78%;
+    margin: 0 $indent-10 0 0;
+  }
+}
+
+.filter-block .catalog-alpha-col {
+  width: 100%;
+  padding: 0;
+}
+
+.filter-block .catalog-alpha-item:hover {
+  background-color: #ecf6ff;
+}
+
+.filter-block .catalog-alpha-item {
+  padding: $indent-10;
+  margin-bottom: 0;
+}
+
+.filter-block__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: $indent-30;
+}
+
+.filter-block__top svg {
+  width: 21px;
+  height: 21px;
+}
+
+.filter-block__body-item {
+  border-top: 1px solid #E1EBF5;
+  padding: $indent-20 0;
+}
+
+.filter-block__body-item .select-wrapper {
+  width: 100%;
+  margin-bottom: $indent-20;
+}
+
+.filter-block__body-item .calendar-wrap {
+  width: 100%;
+}
+
+.filter-block__body-item .form-row__date + label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: $indent-20;
+}
+
+.filter-block__range {
+  color: #051138;
+  margin-bottom: $indent-30;
+}
+
+.filter-block__checkbox-title,
+.filter-block__range-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.filter-company-card-s .filter-block__body-item .label-light:not(:last-child) {
+  margin-bottom: $indent-10;
+}
+
+.filter-company-card-s .catalog-alpha-list__header {
+  width: 100%;
+}
+
+.filter-block__body-item .catalog-alpha-row {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .table-subsc__row .table-subsc__cell {
@@ -361,7 +455,7 @@ input[type="range"]::-moz-range-thumb {
 .table-subsc__row .table-subsc__cell .button-rect {
   white-space: nowrap;
   width: 100%;
-  padding: $indent-10 0;
+  padding: $indent-10 $indent-10 / 2;
   font-size: 14px;
   line-height: 17px;
   border-radius: 7px;

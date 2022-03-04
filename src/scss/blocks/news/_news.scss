@@ -1,16 +1,16 @@
 .news-s1 {
-  padding: 25px 0 170px;
+  padding: 25px 0 50px;
 
   @include sm {
-    padding: 50px 0 190px;
+    padding: 50px 0 50px;
   }
 
   @include lg {
-    padding: 60px 0 170px;
+    padding: 60px 0 50px;
   }
 }
 
-.news-s1  .row {
+.news-s1 .row {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -276,7 +276,11 @@ a.news-block  {
 .topical-s1 .card-big-t,
 .kos-s7 .card-big-t {
   background-color: $white;
-  height: 446px;
+  height: 435px;
+
+  @include sm {
+    height: 457px;
+  }
 
   @include lgx {
     height: 475px;

@@ -1,11 +1,11 @@
 .orders-history-s1 {
-  padding: 70px 0 60px;
+  padding: 0 0 60px;
 
   @include sm {
-    padding: 70px 0 60px;
+    padding: 0 0 60px;
   }
 
-  @include lg {
+  @include lgx {
     padding: 70px 0 100px;
   }
 }

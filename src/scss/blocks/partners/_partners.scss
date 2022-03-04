@@ -1,8 +1,8 @@
 .partners-s1 {
-  padding: 0 0 $indent-50;
+  padding: $indent-25 0 $indent-50;
 
   @include lg {
-    padding: $indent-95 0 $indent-80;
+    padding: $indent-55 0 $indent-80;
   }
 }
 
@@ -36,7 +36,7 @@
   }
 }
 
-.partners .index-s__top .h2 {
+.partners .index-s__top {
   display: flex;
 
   @include md {
