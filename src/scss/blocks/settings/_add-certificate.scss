@@ -325,11 +325,16 @@
 .modal-window__content.modal-window__content--add-certif {
   padding: $indent-20;
   width: 320px;
+  overflow-y: scroll;
 
   @include sm {
     width: 564px;
     padding: $indent-30 $indent-30 $indent-40;
   }
+}
+
+.modal-window.modal-window--add-certif  {
+  overflow-y: auto;
 }
 
 .modal-window__content.modal-window__content--add-certif .md-cart-form__title {

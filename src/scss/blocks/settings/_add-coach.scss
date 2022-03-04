@@ -40,11 +40,20 @@ a.link-back .row-acc__title {
 }
 
 // add
+.add-coach-s .row-acc__form-row.row-acc__form-row--top {
+  display: flex;
+  flex-direction: column;
+
+  @include lgx {
+    flex-direction: row;
+  }
+}
+
 .row-acc__form-col.row-acc__form-col--date,
 .add-coach-s .row-acc__form-row--top .row-acc__form-col {
   width: 100%;
 
-  @include sm {
+  @include lgx {
     width: 32%;
   }
 }

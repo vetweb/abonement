@@ -158,6 +158,7 @@
 .row-product__col-top--btns .search__input {
   min-width: 300px;
   margin-bottom: $indent-15;
+  padding-left: $indent-10;
 
   @include lg {
     margin-bottom: 0;
@@ -374,6 +375,10 @@ a.row-acc-grid__cell.row-acc-grid__cell--top {
   font-weight: 400;
   color: $gray-tx;
   width: 100%;
+}
+
+.report-s .pagination-block {
+  margin-top: $indent-50;
 }
 
 .product-list-s1 .pagination-block {

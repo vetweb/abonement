@@ -1,12 +1,12 @@
 .add-coach-s1,
 .coaches-s1 {
-  padding: 25px 0 60px;
+  padding: 0 0 60px;
 
   @include sm {
-    padding: 50px 0 60px;
+    padding: 0 0 60px;
   }
 
-  @include lg {
+  @include lgx {
     padding: 60px 0 100px;
   }
 }
@@ -150,6 +150,16 @@
 .row-acc-grid__cell.row-acc-grid__cell--mob {
   display: flex;
   width: fit-content;
+
+  @include sm {
+    display: none;
+  }
+}
+
+.add-certif-s .row-acc-grid__cell.row-acc-grid__cell--mob {
+  display: flex;
+  width: fit-content;
+  flex-direction: row;
 
   @include sm {
     display: none;
