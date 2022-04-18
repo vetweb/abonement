@@ -47,6 +47,11 @@ button {
   transition: all .3s;
 }
 
+.btn-yellow {
+  background-color: $gold-btn;
+  color: #000;
+}
+
 .button-full {
   width: 100%;
   cursor: pointer;
@@ -107,10 +112,25 @@ button {
 
 .btn-dark {
   background-color: $blue-bg;
+  border: 1px solid transparent;
+
+  &:hover {
+    color: #051138;
+    background-color: #fdfdfd;
+    border-color: #051138;
+
+    svg {
+      color: #051138 !important;
+    }
+  }
 }
 
 .btn-green {
   background-color: $olive;
+
+  &:hover {
+    background-color: darken($olive, 10%);
+  }
 }
 
 .btn-white-border {

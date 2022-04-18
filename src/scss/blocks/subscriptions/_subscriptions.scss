@@ -141,7 +141,11 @@
   width: 100%;
   background-color: $white;
   margin-bottom: $indent-40;
-  padding: $indent-25 $indent-65;
+  padding: $indent-15 $indent-20;
+
+  @include md {
+    padding: $indent-25 $indent-65;
+  }
 
   @include lg {
     margin-bottom: 0;

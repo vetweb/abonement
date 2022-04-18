@@ -367,6 +367,7 @@
     margin-bottom: $indent-35;
   }
 }
+
 .label-light {
   margin-bottom: 4px;
   font-size: 12px;
@@ -375,6 +376,14 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+}
+
+.label-dark {
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #051138;
 }
 
 .label-light__title {
@@ -465,6 +474,7 @@ a.policy-link {
 }
 
 .modal-window__form {
+  height: 100%;
   display: flex;
   flex-direction: column;
 }

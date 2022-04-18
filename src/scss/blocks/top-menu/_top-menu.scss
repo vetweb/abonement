@@ -96,12 +96,16 @@
 		visibility: visible;
 		transform: translateY(0);
 	}
+
+	.top-menu__item-catalog & {
+		left: -25px;
+	}
 }
 
 .top-menu__dropdown-item {
 	list-style: none;
 	margin: 0;
-	padding: 8px 16px;
+	padding: 8px 24px;
 	color: #C3C3C3;
 	border-bottom: 1px solid rgba(195, 195, 195, 0.5);
 	cursor: pointer;

@@ -357,7 +357,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	})
 
 	//Search open
-
 	function SearchToggle() {
 		let inptSearch = document.querySelector('.js-search-toggle');
 		let headerCenterBlock = document.querySelector('.header__center');
@@ -381,6 +380,14 @@ document.addEventListener('DOMContentLoaded', () => {
 				inptSearch.parentElement.classList.remove('search__field-active');
 			}
 		}
+
+		document.addEventListener('click', function (event) {
+			if (!event.target.closest('.header__center')) {
+				headerCenterBlock.classList.remove('header__center-active');
+				inptSearch.parentElement.classList.remove('search__field-active');
+				searchInput.value = "";
+			}
+		}, false);
 	}
 
 	SearchToggle()

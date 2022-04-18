@@ -386,7 +386,11 @@ input[type="range"]::-moz-range-thumb {
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
-  margin-bottom: $indent-30;
+  margin-bottom: $indent-15;
+
+  @include md {
+    margin-bottom: $indent-30;
+  }
 }
 
 .filter-block__top svg {
@@ -396,6 +400,10 @@ input[type="range"]::-moz-range-thumb {
 
 .filter-block__body-item {
   padding: $indent-20 0;
+
+  &:first-of-type {
+    padding-top: 0;
+  }
 }
 
 .filter-block__body-item:not(:first-child) {

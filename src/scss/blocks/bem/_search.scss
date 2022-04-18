@@ -4,19 +4,26 @@
 
 .search__field {
 	max-width: 517px;
+	margin-left: 10px;
+
+	@include sm {
+		margin: 0 0 0 auto;
+	}
+
+	.search__input {
+		visibility: hidden;
+	}
 }
 
 .search__field-active .search__input {
 	border-bottom-color: white !important;
 	border-radius: 0;
+	visibility: visible;
 }
 
 .search__input {
 	width: 100%;
-
-	@include lgx-down {
-		padding-left: 0;
-	}
+	max-width: 517px;
 }
 
 .search__input:focus {
@@ -46,7 +53,7 @@
 	position: absolute;
 	right: 0;
 	top: 0;
-	width: 50px;
+	width: auto;
 	height: 100%;
 	cursor: pointer;
 	color: #646A7D;
