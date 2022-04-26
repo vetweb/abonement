@@ -138,7 +138,7 @@
 
   @include lgx {
     padding: 21px 0 10px;
-    border-bottom: 1px solid #DCECFC;
+    border-bottom: 1px solid $border;
     display: flex;
     justify-content: flex-start;
   }
@@ -201,7 +201,7 @@
 
   @include lgx {
     padding: $indent-15 $indent-10 0 0;
-    border-bottom: 1px solid #DCECFC;
+    border-bottom: 1px solid $border;
     justify-content: space-between;
     flex-direction: row;
   }
@@ -222,7 +222,7 @@
 .table-subsc__row .table-subsc__cell:nth-child(4) {
   width: 100%;
   padding: 8px 0;
-  border-top: 1px solid #DCECFC;
+  border-top: 1px solid $border;
 
   @include lgx {
     padding: 0;
@@ -234,7 +234,7 @@
 .table-subsc__row .table-subsc__cell:nth-child(5) {
   width: 100%;
   padding: 8px 0;
-  border-top: 1px solid #DCECFC;
+  border-top: 1px solid $border;
 
   @include lgx {
     padding: 0;

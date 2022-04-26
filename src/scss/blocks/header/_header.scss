@@ -147,6 +147,8 @@
 	}
 
 	.search__input {
+		visibility: hidden;
+		
 		@include lgx-down {
 			padding-left: 0;
 		}

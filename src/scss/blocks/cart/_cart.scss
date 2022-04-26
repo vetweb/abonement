@@ -1,603 +1,612 @@
 .cart-s1 {
-  padding-top: $indent-30;
-  padding-bottom: $indent-30;
+	padding-top: $indent-30;
+	padding-bottom: $indent-30;
 
-  @include md {
-    padding-top: $indent-30;
-    padding-bottom: $indent-60;
-  }
+	@include md {
+		padding-top: $indent-30;
+		padding-bottom: $indent-60;
+	}
 }
 
 .cart-s2 {
-  padding-bottom: $indent-180;
+	padding-bottom: $indent-180;
 }
 
 .cart-s .table-m__header {
-  width: 90%;
-  color: $gray-tx;
+	width: 90%;
+	color: $gray-tx;
 }
 
 .modal-window__content.modal-window__content--cart-order .table-m__header {
-  width: 95%;
-  color: $gray-tx;
+	width: 100%;
+	color: $gray-tx;
+	border-bottom: 1px solid $border;
+}
+
+.modal-window__content .table-m__header__cell {
+	padding: 14px 0;
+}
+
+.modal-window__content .table-m__header__cell:first-child {
+	padding-left: 0;
 }
 
 .modal-window__content.modal-window__content--cart-order .table-m__body-el:hover {
-  background-color: transparent;
+	background-color: transparent;
 }
 
 .table-m__header__bottom .table-m__header__cell:not(:last-child) {
-  margin-right: 80px;
+	margin-right: 80px;
 }
 
 .table-m__header__bottom {
-  display: flex;
-  flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 //.modal-window__content.modal-window__content--cart-order .table-m__body-el__inner,
 .cart-s .table-m__body-el__inner {
-  display: flex;
-  flex-direction: column;
-  margin-right: 0;
+	display: flex;
+	flex-direction: column;
+	margin-right: 0;
 
-  @include sm {
-    width: 100%;
-    margin-right: 0;
-  }
+	@include sm {
+		width: 100%;
+		margin-right: 0;
+	}
 
-  @include md {
-    width: 25%;
-    margin-right: 10px;
-  }
+	@include md {
+		width: 25%;
+		margin-right: 10px;
+	}
 }
 
 .cart-s .table-m__body-el__inner.table-m__body-el__inner--img {
-  @include md {
-    width: 12%;
-    margin-right: 10px;
-  }
+	@include md {
+		width: 12%;
+		margin-right: 10px;
+	}
 }
 
 .cart-s .table-m__body-el__inner {
-  @include sm {
-    margin-right: 20px;
-  }
+	@include sm {
+		margin-right: 20px;
+	}
 }
 
 .modal-window__content.modal-window__content--cart-order .table-m__body-el__inner:last-child,
 .cart-s .table-m__body-el__inner:last-child {
-  @include sm {
-    margin-right: 0;
-  }
+	@include sm {
+		margin-right: 0;
+	}
 }
 
 .modal-window__content.modal-window__content--cart-order .table-m__body-el,
 .cart-s .table-m__body-el {
-  padding: 0;
-}
-
-.modal-window__content.modal-window__content--cart-order .table-m__body-el:not(:last-child),
-.cart-s .table-m__body-el:not(:last-child) {
-  margin-bottom: $indent-20;
+	padding: 0;
 }
 
 .modal-window__content.modal-window__content--cart-order .table-m__body-el-wrap,
 .cart-s .table-m__body-el-wrap {
-  width: 100%;
+	width: 100%;
 
-  @include sm {
-    padding: $indent-10 0;
-    flex-wrap: nowrap;
-    flex-direction: column;
-  }
-  @include md {
-    flex-wrap: nowrap;
-    flex-direction: row;
-  }
+	@include sm {
+		padding: $indent-10 0;
+		flex-wrap: nowrap;
+		flex-direction: column;
+	}
+	@include md {
+		flex-wrap: nowrap;
+		flex-direction: row;
+	}
 }
 
 .cart-s .table-m__body-el__inner.table-m__body-el__inner-desc {
-  @include md {
-    width: 50%;
-    margin-right: $indent-20;
-  }
+	@include md {
+		width: 50%;
+		margin: $indent-20;
+	}
 }
 
 .modal-window__content.modal-window__content--cart-order .table-m__body-cell.h5,
 .cart-s .table-m__body-cell.h5 {
-  margin-bottom: $indent-10;
+	margin-bottom: $indent-10;
 
-  @include sm-down {
-    font-size: 16px;
-    line-height: 19px;
-  }
+	@include sm-down {
+		font-size: 16px;
+		line-height: 19px;
+	}
 }
 
 .modal-window__content.modal-window__content--cart-order .table-m__body-cell.h6,
 .cart-s .table-m__body-cell.h6 {
-  font-weight: 400;
-  margin-bottom: $indent-15;
+	font-weight: 400;
+	margin-bottom: $indent-15;
+	color: $blue-dark;
 }
 
 .modal-window__content.modal-window__content--cart-order .index-s__top {
-  margin-bottom: $indent-20;
+	margin-bottom: $indent-20;
 
-  @include sm {
-    margin-bottom: $indent-30;
-  }
+	@include sm {
+		margin-bottom: $indent-30;
+	}
 }
 
 .table-m__body-cell.table-m__body-cell--quantity {
-  width: 100%;
-  padding: $indent-10 $indent-15;
-  border: 1px solid #E1EBF5;
-  box-sizing: border-box;
-  justify-content: space-between;
-  display: flex;
-  border-radius: 10px;
-  overflow: hidden;
-  color: $blue;
-  font-size: 16px;
-  line-height: 20px;
-  margin-bottom: 5px;
+	width: 100%;
+	padding: $indent-10 $indent-15;
+	border: 1px solid #E1EBF5;
+	box-sizing: border-box;
+	justify-content: space-between;
+	display: flex;
+	border-radius: 10px;
+	overflow: hidden;
+	color: $blue;
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 5px;
 
-  @include md {
-    justify-content: center;
-    max-width: 118px;
-  }
+	@include md {
+		justify-content: center;
+		max-width: 118px;
+	}
 }
 
 .table-m__body-el__inner.table-m__body-el__inner-desc {
+	@include sm-down {
+		margin-top: $indent-15;
+	}
 
-  @include sm-down {
-    margin-top: $indent-15;
-  }
+	@include md {
+		width: 62%;
+	}
 }
 
 .cart-s1 .table-m__body-el__inner:not(:last-child) {
-  @include md {
-    margin-bottom: 0;
-  }
+	@include md {
+		margin-bottom: 0;
+	}
 }
 
 .cart-decrease,
 .cart-increase {
-  font-size: 25px;
-  font-weight: 400;
+	font-size: 25px;
+	font-weight: 400;
 }
 
 .table-m__body-el__inner .order-list__footer-inner {
-  margin-left: $indent-35;
-  margin-bottom: $indent-20;
+	text-align: center;
+	margin-bottom: $indent-20;
 
-  @include sm {
-    margin-left: 0;
-    margin-bottom: 0;
-  }
+	@include sm {
+		margin-left: 0;
+		margin-bottom: 0;
+	}
 }
 
 .table-m__body-el__inner.table-m__body-el__inner--mobile {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.modal-window__content.modal-window__content--cart-order .table-m__body-el__inner.table-m__body-el__inner--mobile {
-  @include sm {
-   width: 10%;
-  }
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .modal-window__content.modal-window__content--cart-order .btn-wrapp .btn-white {
-  white-space: nowrap;
+	white-space: nowrap;
 }
 
 .table-m__body-el__inner svg {
-  width: 20px;
-  height: 20px;
-  color: $blue;
+	width: 20px;
+	height: 20px;
+	color: $blue;
 }
 
 .table-m__body-el__inner.table-m__body-el__inner--icn {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-  width: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	width: 70px;
 }
 
 .cart-s1 .table-m__body-el__inner:not(:last-child) {
 
-  @include sm-down {
-    margin-bottom: 0;
-  }
+	@include sm-down {
+		margin-bottom: 0;
+	}
 }
 
-.table-m__body-el__inner.table-m__body-el__inner--icn svg {
-  width: 15px;
-  height: 15px;
+.table-m__body-el__inner.table-m__body-el__inner--icn .table-m__favorite,
+.table-m__body-el__inner.table-m__body-el__inner--icn .table-m__close,
+.table-m__body-el__inner.table-m__body-el__inner--icn svg, {
+	width: 15px;
+	height: 15px;
 }
 
 .cart-s .table-m__body-el:hover {
-  background: transparent;
-  border-radius: 0;
-  overflow: visible;
+	background: transparent;
+	border-radius: 0;
+	overflow: visible;
 }
 
 .table-m__body-el__inner.table-m__body-el__inner--icn span:not(:last-child) {
-  margin-right: $indent-15;
+	margin-right: $indent-15;
 }
 
 .modal-window__content.modal-window__content--cart-order .table-m__body-cell .cart-quantity,
 .cart-s .table-m__body-cell .cart-quantity {
-  margin: 0 $indent-25;
-  color: $blue-bg;
+	margin: 0 $indent-25;
+	color: $blue-bg;
 }
 
 .modal-window__content.modal-window__content--cart-order .table-m__body-el__inner .table-m__body-cell.table-m-cell-img,
 .cart-s .table-m__body-el__inner .table-m__body-cell.table-m-cell-img {
-  border-radius: 5px;
-  overflow: hidden;
-  width: 100%;
-  height: 200px;
-  background-color: #646A7D;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+	border-radius: 5px;
+	overflow: hidden;
+	width: 100%;
+	height: 200px;
+	background-color: #646A7D;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 
-  @include md {
-    width: 110px;
-    height: 88px;
-  }
+	@include md {
+		width: 110px;
+		height: 88px;
+	}
 }
 
 .modal-window__content.modal-window__content--cart-order .table-m__body-cell,
 .cart-s .table-m__body-cell {
-  color: $blue-bg;
-  display: flex;
+	display: flex;
 }
 
 .cart-s1 .btn-wrapp {
-  @include sm {
-    justify-content: flex-start;
-  }
+	@include sm {
+		justify-content: flex-start;
+	}
 }
 
 .cart-s1 .btn-wrapp .button-rect {
-  max-width: max-content;
-  min-width: 202px;
-  width: 100%;
-  white-space: nowrap;
+	max-width: max-content;
+	min-width: 202px;
+	width: 100%;
+	white-space: nowrap;
 
-  @include sm-down {
-    max-width: 100%;
-  }
+	@include sm-down {
+		max-width: 100%;
+	}
 }
 
 .modal-window__content.modal-window__content--cart-order .btn-wrapp .button-rect.btn-blue,
 .cart-s1 .btn-wrapp .button-rect.btn-blue {
-  margin-bottom: $indent-10;
+	margin-bottom: $indent-10;
 
-  @include sm {
-    margin-bottom: 0;
-    margin-right: $indent-20;
-  }
+	@include sm {
+		margin-bottom: 0;
+		margin-right: $indent-20;
+	}
 }
 
 .cart-s1 .btn-wrapp .btn-white {
-  margin-bottom: 0;
-  white-space: nowrap;
+	margin-bottom: 0;
+	white-space: nowrap;
 }
 
 .modal-window {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  overflow-y: scroll;
-  background-color: rgba(0, 0, 0, 0.4);
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 102;
-  transition: transform .5s ease;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	visibility: hidden;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+	background-color: rgba(0, 0, 0, 0.4);
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 102;
+	transition: transform .5s ease;
 }
 
 .modal-window.show-md {
-  visibility: visible;
-  opacity: 1;
+	visibility: visible;
+	opacity: 1;
 }
 
 .modal-window__content {
-  background-color: $white;
-  border-radius: 15px;
-  color: $blue-bg;
-  position: relative;
-  width: 50%;
+	background-color: $white;
+	border-radius: 15px;
+	color: $blue-bg;
+	position: relative;
+	width: 50%;
 }
 
 .modal-window__content.modal-window__content--cart {
-  padding: $indent-20;
-  width: 320px;
+	padding: $indent-20;
+	width: 320px;
 
-  @include sm {
-    width: 520px;
-    padding: $indent-60 $indent-90;
-  }
+	@include sm {
+		width: 520px;
+		padding: $indent-60 $indent-90;
+	}
 }
 
 .modal-window__content.modal-window__content--cart .modal-window__form--link {
-  margin-top: $indent-15;
+	margin-top: $indent-15;
 }
 
 .modal-window__close {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  cursor: pointer;
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	cursor: pointer;
+
+	@include md {
+		right: 15px;
+	}
 }
 
 .modal-window__close svg {
-  width: 17px;
-  height: 17px;
-  flex-shrink: 0;
-  top: 15px;
-  right: 15px;
+	width: 21px;
+	height: 21px;
+	flex-shrink: 0;
 }
 
 .md-cart-form__title {
-  text-align: center;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 700;
-  margin-bottom: $indent-15;
+	text-align: center;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: bold;
+	margin-bottom: $indent-15;
 
-  @include sm {
-    font-size: 24px;
-    line-height: 20px;
-    font-weight: 700;
-    margin-bottom: $indent-35;
-  }
+	@include sm {
+		font-size: 24px;
+		line-height: 20px;
+		font-weight: bold;
+		margin-bottom: $indent-35;
+	}
 }
 
 .label-light {
-  margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 400;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+	margin-bottom: 4px;
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: 400;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
 }
 
 .label-dark {
-  margin-bottom: 4px;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 500;
-  color: #051138;
+	margin-bottom: 4px;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+	color: #051138;
 }
 
 .label-light__title {
-  color: #828282;
-  margin-right: 5px;
+	color: #828282;
+	margin-right: 5px;
 }
 
 .label-light__symbol {
-  color: $red;
+	color: $red;
 }
 
-.input-light  {
-  font-size: 16px;
-  line-height: 20px;
-  color: $blue-bg;
-  width: 100%;
-  height: 32px;
-  background: $white;
-  border: 1px solid #E1EBF5;
-  border-radius: 10px;
-  padding: 10px;
+.input-light {
+	font-size: 16px;
+	line-height: 20px;
+	color: $blue-bg;
+	width: 100%;
+	height: 42px;
+	background: $white;
+	border: 1px solid #E1EBF5;
+	border-radius: 10px;
+	padding: 10px;
+}
 
-  @include sm {
-    height: 42px;
-  }
+.input-light__mb8 {
+	margin-bottom: 8px;
 }
 
 .input-light__mb15 {
-  margin-bottom: $indent-10;
+	margin-bottom: $indent-10;
 
-  @include sm {
-    margin-bottom: $indent-15;
-  }
+	@include sm {
+		margin-bottom: $indent-15;
+	}
 }
 
 .input-light__mb25 {
-  margin-bottom: $indent-15;
+	margin-bottom: $indent-25;
+}
 
-  @include sm {
-    margin-bottom: $indent-25;
-  }
+.m0 {
+	margin: 0 !important;
+}
+.input-light__mb35 {
+	margin-bottom: $indent-25;
+
+	@include md {
+		margin-bottom: $indent-35;
+	}
 }
 
 a.policy-link {
-  color: $blue;
+	color: $blue;
 }
 
 .policy-checkbox {
-  display: flex;
-  flex-shrink: 0;
-  margin-right: $indent-15;
-  border-radius: 4px;
-  width: 20px;
-  height: 20px;
+	display: flex;
+	flex-shrink: 0;
+	margin-right: $indent-15;
+	border-radius: 4px;
+	width: 20px;
+	height: 20px;
 }
 
 .md-cart-form__label-policy {
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 18px;
-  color: $blue-bg;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 18px;
+	color: $blue-bg;
 
-  @include sm {
-    line-height: 21px;
-  }
+	@include sm {
+		line-height: 21px;
+	}
 }
 
 .label-light.label-light--policy {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-bottom: $indent-15;
-
-  @include sm {
-    margin-bottom: $indent-25;
-  }
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-bottom: $indent-25;
 }
 
 .modal-window__form .button-rect {
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: 400;
-  padding: 10px 0;
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 400;
+	padding: 10px 0;
 
-  @include sm-down {
-    padding: 10px 0;
-  }
+	@include sm-down {
+		padding: 10px 0;
+	}
 }
 
 .modal-window__form {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 .modal-window.modal-window--entrance {
-  overflow-y: auto;
+	overflow-y: auto;
 }
 
 .cart-s .modal-window__form .button-rect {
-  margin-bottom: $indent-10;
+	margin-bottom: $indent-10;
 }
 
 .modal-window__content.modal-window__content--complete-reg {
-  overflow-y: scroll;
+	overflow-y: scroll;
 }
 
 .styled-checkbox {
-  position: absolute;
-  opacity: 0;
+	position: absolute;
+	opacity: 0;
 }
 
 .styled-checkbox + label {
-  position: relative;
-  cursor: pointer;
-  padding: 0
+	position: relative;
+	cursor: pointer;
+	padding: 0
 }
 
 .styled-checkbox + label:before {
-  content: '';
-  margin-right: 10px;
-  display: inline-block;
-  vertical-align: text-top;
-  width: 20px;
-  height: 20px;
-  background: $white;
-  border: 1px solid #E1EBF5;
+	content: '';
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: text-top;
+	width: 20px;
+	height: 20px;
+	background: $white;
+	border: 1px solid #E1EBF5;
 }
 
 .styled-checkbox.styled-checkbox--male + label:before {
-  content: '';
-  margin-right: 10px;
-  display: inline-block;
-  vertical-align: text-top;
-  width: 20px;
-  height: 20px;
-  background: $white;
-  border: 1px solid  $black;
+	content: '';
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: text-top;
+	width: 20px;
+	height: 20px;
+	background: $white;
+	border: 1px solid $black;
 }
 
 .styled-checkbox.styled-checkbox--male:hover + label:before,
 .styled-checkbox.styled-checkbox--male:active + label:before {
-  background: $white;
+	background: $white;
 }
 
 .styled-checkbox:hover + label:before,
 .styled-checkbox:active + label:before {
-  background: $white;
+	background: $white;
 }
 
 .styled-checkbox:focus + label:before {
-  background: transparent;
+	background: transparent;
 }
 
 .styled-checkbox:checked + label:before {
-  background: $white;
-  border-radius: 4px;
+	background: $white;
+	border-radius: 4px;
 }
 
 .styled-checkbox.styled-checkbox--male:checked + label:before {
-  background: $white;
-  border-radius: 4px;
+	background: $white;
+	border-radius: 4px;
 }
 
 .styled-checkbox:checked + label:after {
-  content: '';
-  background: url("/img/check.png") no-repeat center;
-  background-size: contain;
-  position: absolute;
-  left: 2px;
-  top: 6px;
-  width: 17px;
-  height: 10px;
+	content: '';
+	background: url("/img/check.png") no-repeat center;
+	background-size: contain;
+	position: absolute;
+	left: 2px;
+	top: 6px;
+	width: 17px;
+	height: 10px;
 }
 
 .styled-checkbox.styled-checkbox--male:checked + label:after {
-  content: '';
-  //background: url("/img/check.png") no-repeat center;
+	content: '';
+	//background: url("/img/check.png") no-repeat center;
 }
 
 .modal-window__content.modal-window__content--cart-order {
-  padding: $indent-20;
-  width: 320px;
+	padding: $indent-20;
+	width: 320px;
 
-  @include sm {
-    width: 90%;
-    padding: $indent-35 $indent-30;
-  }
+	@include sm {
+		width: 100%;
+		max-width: 1280px;
+		padding: $indent-35 $indent-30;
+	}
 }
 
 .modal-window__content.modal-window__content--cart-order {
-  overflow-y: scroll;
+	overflow-y: scroll;
 }
 
 .modal-window.modal-window--cart-order {
-  overflow-y: auto;
+	overflow-y: auto;
 }
 
 .order-s.cart-s .table-m,
 .modal-window__content--cart-order .table-m {
-  box-shadow: none;
-  border: 1px solid transparent;
-  padding: 0;
+	box-shadow: none;
+	border: 1px solid transparent;
+	padding: 0;
 }
 
 .modal-window__content--cart-order .table-m__body-el {
-  padding-left: 0;
-  padding-right: 0;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .modal-window.modal-window--cart {
-  overflow-y: auto;
+	overflow-y: auto;
 }
 
 .modal-window__content.modal-window__content--cart {
-  overflow-y: scroll;
+	overflow-y: scroll;
 }

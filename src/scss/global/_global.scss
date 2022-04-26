@@ -15,7 +15,8 @@ body {
 	background: $blue-light;
 	@include font-base();
 	-webkit-font-smoothing: antialiased;
-	font-family: 'Montserrat', 'Arial', sans-serif;
+	font-family: 'SF Pro Display', 'Arial', sans-serif;
+	font-weight: normal;
 }
 
 body {
@@ -68,43 +69,11 @@ body {
 	}
 }
 
-.i-p-inside {
-	padding-bottom: 120px;
-}
-
-.i-p-t-sm {
-	padding-top: 32px;
+.indent-xs {
+	margin-bottom: 15px;
 
 	@include sm {
-		padding-top: 48px;
-	}
-}
-
-.i-p-base {
-	padding-bottom: 48px;
-}
-
-.i-p-sm {
-	padding-bottom: 32px;
-
-	@include sm {
-		padding-bottom: 48px;
-	}
-}
-
-.i-p-big {
-	padding-bottom: 60px;
-
-	@include md {
-		padding-bottom: 175px;
-	}
-}
-
-.i-p-decor {
-	padding-bottom: $decor-h;
-
-	@include md {
-		padding-bottom: $decor-h + 88px;
+		margin-bottom: 20px;
 	}
 }
 
@@ -259,7 +228,7 @@ hr {
 h1, .h1 {
 	font-size: 24px;
 	line-height: 29px;
-	font-weight: 700;
+	font-weight: bold;
 
 	@include sm {
 		font-size: 48px;
@@ -270,7 +239,7 @@ h1, .h1 {
 h2, .h2 {
 	font-size: 24px;
 	line-height: 29px;
-	font-weight: 700;
+	font-weight: bold;
 
 	@include sm {
 		font-size: 28px;
@@ -380,7 +349,7 @@ h6, .h6 {
 .text-xl {
 	font-size: 26px;
 	line-height: 31px;
-	font-weight: 700;
+	font-weight: bold;
 	letter-spacing: -0.04em;
 
 	@include sm {
@@ -419,7 +388,7 @@ h6, .h6 {
 }
 
 .title-block {
-	font-weight: 700;
+	font-weight: bold;
 	font-size: 18px;
 	line-height: 21px;
 
@@ -442,6 +411,22 @@ h6, .h6 {
 	line-height: 19px;
 	white-space: nowrap;
 	text-decoration: none;
+}
+
+.link-text {
+	color: $blue-dark;
+	text-decoration: none;
+
+	&:hover {
+		color: $blue;
+		text-decoration: underline;
+	}
+}
+
+.link-base {
+	&:hover {
+		color: $orange;
+	}
 }
 
 .button-s {
@@ -487,4 +472,16 @@ h6, .h6 {
 	display: inline-block;
 	width: 1.4em;
 	height: 1.4em;
+}
+
+	.hide-sm-max {
+	@include md-down {
+		display: none;
+	}
+}
+
+.hide-md {
+	@include md {
+		display: none;
+	}
 }

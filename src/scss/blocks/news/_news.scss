@@ -80,6 +80,11 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
 
   @include sm {
     padding: $indent-20 $indent-40;
@@ -302,6 +307,14 @@ a.news-block  {
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
+
+  &:hover {
+    color: $orange;
+
+    svg {
+      color: $orange;
+    }
+  }
 }
 
 .card-big-t__btn svg {

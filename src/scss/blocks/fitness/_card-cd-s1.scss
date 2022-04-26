@@ -1,16 +1,16 @@
 .card-cd-s1 {
-  padding: 15px 0 50px;
+  padding: $indent-15 0 50px;
   background-color: linear-gradient(180deg, rgba(237, 246, 255, 0) 0%, #D7ECFE 100%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   @include sm {
-    padding: 20px 0 85px;
+    padding: $indent-20 0 85px;
   }
 
   @include lg {
-    padding: 25px 0 120px;
+    padding: $indent-25 0 120px;
   }
 }
 
@@ -65,15 +65,11 @@
   margin-right: $indent-15;
 }
 
-.card-cd-s1__col50.grid-col50 .h3{
+.card-cd-s1__col50.grid-col50 .h3 {
   margin-bottom: $indent-15;
 
   @include sm {
-    margin-bottom: $indent-25;
-  }
-
-  @include lg {
-    margin-bottom: $indent-15;
+    margin-bottom: $indent-20;
   }
 }
 
@@ -186,6 +182,18 @@
   }
 }
 
+.grid-icon__el:hover .grid-icon__image {
+  background: $gold;
+}
+
+.grid-icon__el:hover svg {
+  color: $blue-bg;
+}
+
+.grid-icon__el svg {
+  color: $gold;
+}
+
 .grid-icon__el .link-s {
   color: $gray-l;
   margin-bottom: 7px;
@@ -229,7 +237,7 @@
   font-size: 32px;
   line-height: 39px;
   color: $blue;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .button-block__info {
@@ -316,6 +324,12 @@
   position: relative;
 }
 
+.xs-slider__container {
+  overflow: hidden !important;
+  border-radius: 10px;
+  box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
+}
+
 .xs-slider.swiper-container {
   position: relative;
   overflow: hidden;
@@ -331,6 +345,8 @@
   width: 100%;
   min-width: 60px;
   height: 60px;
+  background-color: #2c4ca3;
+  color: #fdfdfd;
 
   @include lg {
     top: 0;
@@ -338,6 +354,14 @@
     height: 92px;
     max-width: 92px;
   }
+
+  svg {
+    color: #fdfdfd;
+  }
+}
+
+.card-cd-s1 .xs__slider .circle-el:hover {
+
 }
 
 .xs-slide__card {

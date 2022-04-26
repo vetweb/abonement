@@ -247,7 +247,15 @@
   color: $black-t;
   list-style: none;
   display: flex;
-  margin-bottom: $indent-20;
+  margin-bottom: $indent-15;
+
+  @include sm {
+    margin-bottom: $indent-20;
+  }
+
+  @include md {
+    margin-bottom: $indent-45;
+  }
 }
 
 .company-card-s .breadcrumbs-block {
@@ -268,10 +276,13 @@ a.breadcrumbs-block__link {
   align-items: center;
   text-decoration: none;
   color: $black-t;
+
+  &:hover {
+    color: $orange;
+  }
 }
 
 .breadcrumbs-block__text {
-  color: $black-t;
   white-space: nowrap;
 }
 

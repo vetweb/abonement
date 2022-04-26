@@ -22,9 +22,12 @@
 .feedback__img svg {
   width: 20px;
   height: 21px;
-  color: $gold;
+  color: $gray-l;
 }
 
+.favorites-block.active .feedback__img svg {
+  color: $gold;
+}
 
 .feedback__img.feedback_img--gray svg {
   color: $gray-l;

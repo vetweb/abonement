@@ -1,16 +1,19 @@
+.about-s {
+  margin-top: $indent-15;
+
+  @include sm {
+    margin-top: $indent-20;
+  }
+
+  @include lg {
+    margin-top: $indent-25;
+  }
+}
+
 .about-s2,
 .about-s3,
 .about-s4 {
   padding: 0 0 $indent-50;
-  color: $blue-bg;
-
-  @include lgx {
-    padding: $indent-95 0 $indent-80;
-  }
-}
-
-.about-s1 {
-  padding: $indent-25 0 $indent-50;
   color: $blue-bg;
 
   @include lgx {
@@ -134,7 +137,7 @@
 .about-s3 .row__col50 .h4,
 .about-s4 .row__col70 .h4 {
   margin-bottom: $indent-30;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .about-s3 .row__col50 {
@@ -245,139 +248,4 @@
 .about-s4 .btn-wrapp .btn-white {
   margin-bottom: 0;
   margin-right: 0;
-}
-
-.form-wrap {
-  width: 100%;
-  margin: 0 auto;
-  padding: 40px 15px;
-  border-radius: 10px;
-  box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
-
-  @include md {
-    padding: 60px 40px;
-  }
-
-  @include lgx {
-    width: 70%;
-    padding: 60px 80px;
-  }
-}
-
-.form-wrap__form {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.form-wrap__form-text {
-  margin: 0 auto 30px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 26px;
-  color: $blue;
-
-  @include md {
-    margin: 0 auto 60px;
-    font-size: 24px;
-    line-height: 29px;
-  }
-}
-
-.form-wrap__form .h2 {
-  margin-bottom: $indent-20;
-
-  @include md {
-    margin-bottom: $indent-40;
-  }
-}
-
-.form-wrap__form .h2:first-letter {
-  color: $blue;
-}
-
-.form-wrap__form textarea,
-.form-wrap__form input {
-  border: 0;
-  border-bottom: 2px solid #E5E5E5;
-  padding: $indent-10 $indent-20;
-
-  @include md {
-    padding: $indent-15 $indent-30;
-  }
-}
-
-.form-wrap__form input {
-  margin-bottom: $indent-15;
-  outline: none;
-
-  @include md {
-    margin-bottom: $indent-30;
-  }
-}
-
-.form-wrap__form textarea {
-  outline: none;
-  overflow-y: auto;
-}
-
-.form-wrap__form ::placeholder {
-  color: $gray-tx;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-
-  @include md {
-    margin: 0 auto 60px;
-    font-size: 24px;
-    line-height: 29px;
-  }
-}
-
-.form-wrap__form .row-inner__form-btn {
-  margin-bottom: $indent-50;
-}
-
-.form-wrap__form .btn-rect {
-  padding: $indent-20;
-  overflow: hidden;
-  width: 100%;
-
-  @include sm {
-    max-width: 180px;
-  }
-}
-
-.form-wrap__form-desc {
-  margin-bottom: $indent-30;
-}
-
-.form-wrap__bottom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.form-wrap__bottom svg {
-  width: 24px;
-  height: 24px;
-  margin-right: $indent-10;
-}
-
-.form-wrap__bottom-desc {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  color: $blue-bg;
-  width: 70%;
-
-  @include md {
-    font-size: 18px;
-    line-height: 24px;
-    width: 50%;
-  }
-
-  @include lgx {
-    width: auto;
-  }
 }

@@ -1,17 +1,9 @@
-.search {
-
-}
-
 .search__field {
 	max-width: 517px;
 	margin-left: 10px;
 
 	@include sm {
 		margin: 0 0 0 auto;
-	}
-
-	.search__input {
-		visibility: hidden;
 	}
 }
 

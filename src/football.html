@@ -9,106 +9,117 @@
 
 <body>
 @@include('components/blocks/page/_header.html')
-<main class="main">
+<main class="main" style="background-color: #D8EDFE;">
     <section class="card-cd-s1" style="background-image: url('/img/main-bg.svg');">
-      <div class="container">
-          <ol class="breadcrumbs-block">
-              <li class="breadcrumbs-block__item">
-                  <a href="#" class="breadcrumbs-block__link" title="Олимпийские виды спорта">
-                      <span class="breadcrumbs-block__text text-xs">Олимпийские виды спорта</span>
-                  </a>
-              </li>
-              <li class="breadcrumbs-block__item">
-                  <a href="#" class="breadcrumbs-block__link" title="Олимпийские виды спорта">
-                      <span class="breadcrumbs-block__text text-xs">Вид спорта</span>
-                  </a>
-              </li>
-              <li class="breadcrumbs-block__item">
-                  <span class="breadcrumbs-block__text text-xs">Абонемент</span>
-              </li>
-          </ol>
-          <div class="card-cd-s1__row grid-row">
-              <div class="card-cd-s1__col50 card-cd-s1__col50--40 grid-col50 col50-reverse">
-                  <h3 class="h3">Набор в группу по Футболу 2021</h3>
-                  <div class="grid-column">
-                      <div class="grid-row">
-                          <a href="#" class="row-link-icon">
-                              <span class="row-link-icon__title">Свислочская специализированная детско-юношеская школа олимпийского резерва</span>
-                              <span class="row-link-icon__icon">
-                                <svg viewBox="0 0 8 15">
-                                    <use xlink:href="/img/sprite.svg#arrow-right"></use>
-                                </svg>
+        <div class="container">
+            <ol class="breadcrumbs-block">
+                <li class="breadcrumbs-block__item">
+                    <a href="#" class="breadcrumbs-block__link" title="Олимпийские виды спорта">
+                        <span class="breadcrumbs-block__text text-xs">Олимпийские виды спорта</span>
+                    </a>
+                </li>
+                <li class="breadcrumbs-block__item">
+                    <a href="#" class="breadcrumbs-block__link" title="Олимпийские виды спорта">
+                        <span class="breadcrumbs-block__text text-xs">Вид спорта</span>
+                    </a>
+                </li>
+                <li class="breadcrumbs-block__item">
+                    <span class="breadcrumbs-block__text text-xs">Абонемент</span>
+                </li>
+            </ol>
+            <div class="card-cd-s1__row grid-row">
+                <div class="card-cd-s1__col50 card-cd-s1__col50--40 grid-col50 col50-reverse">
+                    <h3 class="h3 hide-sm-max">Набор в группу по Футболу 2021</h3>
+                    <div class="grid-column">
+                        <div class="grid-row">
+                            <span class="row-link-icon">
+                                <span class="row-link-icon__title">Свислочская специализированная детско-юношеская школа олимпийского резерва</span>
+                                <span class="row-link-icon__icon">
+                                    <svg viewBox="0 0 8 15">
+                                        <use xlink:href="/img/sprite.svg#arrow-right"></use>
+                                    </svg>
+                                </span>
                             </span>
-                          </a>
-                          <p class="grid-row__address grid-row__address--desk">г. Свилочь, ул. К.Калиновского 2</p>
-                          <a href="#" class="grid-row__link">Посмотреть на карте</a>
-                      </div>
-                  </div>
-                  <div class="grid-icon">
-                      <div class="grid-icon__el">
-                          <div class="grid-icon__image">
-                              <img src="/img/grid-icon1.svg" alt="">
-                          </div>
-                          <div class="grid-icon-info">
-                              <span class="link-s">Кол-во в месяц</span>
-                              <span class="text-sx">8 занятий</span>
-                          </div>
-                      </div>
-                      <div class="grid-icon__el">
-                          <div class="grid-icon__image">
-                              <img src="/img/grid-icon2.svg" alt="">
-                          </div>
-                          <div class="grid-icon-info">
-                              <span class="link-s">Дни занятий</span>
-                              <span class="text-sx">Пн, Пт</span>
-                          </div>
-                      </div>
-                      <div class="grid-icon__el">
-                          <div class="grid-icon__image">
-                              <img src="/img/grid-icon3.svg" alt="">
-                          </div>
-                          <div class="grid-icon-info">
-                              <span class="link-s">Начало занятий</span>
-                              <span class="text-sx">16:00, 20:00</span>
-                          </div>
-                      </div>
-                      <div class="grid-icon__el">
-                          <div class="grid-icon__image">
-                              <img src="/img/grid-icon4.svg" alt="">
-                          </div>
-                          <div class="grid-icon-info">
-                              <span class="link-s">Тренер</span>
-                              <span class="text-sx">Яскулд И. А</span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="card-cd-s1__col50 grid-col50">
-                  <div class="xs__slider">
-                      @@include('components/blocks/bem/_circle-el.html')
-                      <div class="xs-slider js-xs-slider swiper-container">
-                          <div class="swiper-wrapper xs-slider__wrap">
-                              <div class="swiper-slide xs-slide">
-                                  <div class="xs-slide__card">
-                                      <img src="/img/banner-bg1.png" alt="">
-                                  </div>
-                                  @@include('components/blocks/bem/_favorites.html')
-                              </div>
-                              <div class="swiper-slide xs-slide">
-                                  <div class="xs-slide__card">
-                                      <img src="/img/banner-bg1.png" alt="">
-                                  </div>
-                                  @@include('components/blocks/bem/_favorites.html')
-                              </div>
-                          </div>
-                          <div class="swiper-pagination"></div>
-                          <div class="swiper-button-prev btn-transparent btn__prev"><img src="/img/arrow-prev.svg" alt=""></div>
-                          <div class="swiper-button-next btn-transparent btn__next"><img src="/img/arrow-next.svg" alt=""></div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
+                            <p class="grid-row__address grid-row__address--desk">г. Свилочь, ул. К.Калиновского 2</p>
+                            <a href="#" class="grid-row__link">Посмотреть на карте</a>
+                        </div>
+                    </div>
+                    <div class="grid-icon">
+                        <div class="grid-icon__el">
+                            <div class="grid-icon__image">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <use xlink:href="/img/sprite.svg#grid-icon1"></use>
+                                </svg>
+                            </div>
+                            <div class="grid-icon-info">
+                                <span class="link-s">Кол-во в месяц</span>
+                                <span class="text-sx">8 занятий</span>
+                            </div>
+                        </div>
+                        <div class="grid-icon__el">
+                            <div class="grid-icon__image">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <use xlink:href="/img/sprite.svg#grid-icon2"></use>
+                                </svg>
+                            </div>
+                            <div class="grid-icon-info">
+                                <span class="link-s">Дни занятий</span>
+                                <span class="text-sx">Пн, Пт</span>
+                            </div>
+                        </div>
+                        <div class="grid-icon__el">
+                            <div class="grid-icon__image">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <use xlink:href="/img/sprite.svg#grid-icon3"></use>
+                                </svg>
+                            </div>
+                            <div class="grid-icon-info">
+                                <span class="link-s">Начало занятий</span>
+                                <span class="text-sx">16:00, 20:00</span>
+                            </div>
+                        </div>
+                        <div class="grid-icon__el">
+                            <div class="grid-icon__image">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <use xlink:href="/img/sprite.svg#grid-icon4"></use>
+                                </svg>
+                            </div>
+                            <div class="grid-icon-info">
+                                <span class="link-s">Тренер</span>
+                                <span class="text-sx">Яскулд И. А</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-cd-s1__col50 grid-col50">
+                    <h1 class="h1 hide-md indent-xs">Набор в группу по Футболу 2021</h1>
+                    <div class="xs__slider">
+                        @@include('components/blocks/bem/_circle-el.html')
+                        <div class="xs-slider xs-slider__container js-xs-slider swiper-container">
+                            <div class="swiper-wrapper xs-slider__wrap">
+                                <div class="swiper-slide xs-slide">
+                                    <div class="xs-slide__card">
+                                        <img src="/img/banner-bg1.png" alt="">
+                                    </div>
+                                    @@include('components/blocks/bem/_favorites.html')
+                                </div>
+                                <div class="swiper-slide xs-slide">
+                                    <div class="xs-slide__card">
+                                        <img src="/img/banner-bg1.png" alt="">
+                                    </div>
+                                    @@include('components/blocks/bem/_favorites.html')
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev btn-transparent btn__prev"><img src="/img/arrow-prev.svg"
+                                                                                           alt=""></div>
+                            <div class="swiper-button-next btn-transparent btn__next"><img src="/img/arrow-next.svg"
+                                                                                           alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="card-sub-2">
         <div class="container">
@@ -116,12 +127,15 @@
                 <div class="card-sub-2__col50">
                     <h3 class="h3">Набор в группу по Футболу 2021</h3>
                     <div class="card-sub-2__desc">
-                        <div class="card-sub-2__desc-title">Объявляем новый набор 2021 в футбольный клуб «Элит» в Минске 
-                            для детей (мальчиков и девочек) в группы:</div>
+                        <div class="card-sub-2__desc-title">Объявляем новый набор 2021 в футбольный клуб «Элит» в Минске
+                            для детей (мальчиков и девочек) в группы:
+                        </div>
                         <ul class="card-sub-2__desc-list">
                             <li class="card-sub-2__desc-item">дети-начинающие в возрасте 5-6 лет</li>
                             <li class="card-sub-2__desc-item">мальчики в возрасте 7-8 лет</li>
-                            <li class="card-sub-2__desc-item">3 занятия в неделю: 2 занятия тренировки и 1 занятие игра</li>
+                            <li class="card-sub-2__desc-item">3 занятия в неделю: 2 занятия тренировки и 1 занятие
+                                игра
+                            </li>
                         </ul>
                     </div>
                     <div class="btn-wrapp">
@@ -157,7 +171,7 @@
                             </div>
                             <div class="card-m__el-top">
                                 <span class="card-m__el-title text-sx">Заголовок абонемента</span>
-                                <div class="favorites-block">
+                                <div class="favorites-block js-favorites-block">
                                     <span class="feedback__img">
                                         <svg>
                                             <use xlink:href="/img/sprite.svg#heart"></use>
@@ -178,8 +192,10 @@
                         </div>
                     </div>
                     <div class="swiper-scrollbar"></div>
-                    <div class="swiper-button-prev btn-transparent btn__prev"><img src="/img/arrow-prev.svg" alt=""></div>
-                    <div class="swiper-button-next btn-transparent btn__next"><img src="/img/arrow-next.svg" alt=""></div>
+                    <div class="swiper-button-prev btn-transparent btn__prev"><img src="/img/arrow-prev.svg" alt="">
+                    </div>
+                    <div class="swiper-button-next btn-transparent btn__next"><img src="/img/arrow-next.svg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -247,7 +263,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="reviews-block__text text-s">Сын очень доволен их команда выигрывает футбольные турниры.</p>
+                            <p class="reviews-block__text text-s">Сын очень доволен их команда выигрывает футбольные
+                                турниры.</p>
                         </div>
                         <div class="reviews-block__review">
                             <div class="reviews-block__review-inner">
@@ -266,14 +283,15 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="reviews-block__text text-s">Ребёнок занимается уже 5 месяцев. Готов бежать на тренировку 24/7, страдает, что нет возможности заниматься каждый день)). Мы очень рады, что сын нашёл свой спорт и свой клуб! </p>
+                            <p class="reviews-block__text text-s">Ребёнок занимается уже 5 месяцев. Готов бежать на
+                                тренировку 24/7, страдает, что нет возможности заниматься каждый день)). Мы очень рады,
+                                что сын нашёл свой спорт и свой клуб! </p>
                         </div>
                         <div class="reviews-btn">
                             <a href="#" class="reviews-btn__link-desk h5">
                                 <span>Смотреть еще</span>
-                                <img src="/img/arrow-down.svg" alt="">
                             </a>
-                            <a href="#" class="reviews-btn__link-mob h5">Подробнее</a>
+                            <a href="#" class="reviews-btn__link-mob h5 link-base">Подробнее</a>
                             <button class="button-rect btn-blue">Написать отзыв</button>
                         </div>
                     </div>
@@ -287,16 +305,16 @@
             <div class="card-m-slider">
                 <div class="standard-slider js-standard-slider swiper-container free-slider">
                     <div class="swiper-wrapper grid-cards__list">
-                        <div class="swiper-slide card-m__list-el">
+                        <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
-                        <div class="swiper-slide card-m__list-el">
+                        <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
-                        <div class="swiper-slide card-m__list-el">
+                        <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
-                        <div class="swiper-slide card-m__list-el">
+                        <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
                     </div>
@@ -313,16 +331,16 @@
             <div class="card-m-slider">
                 <div class="standard-slider js-standard-slider swiper-container free-slider">
                     <div class="swiper-wrapper grid-cards__list">
-                        <div class="swiper-slide card-m__list-el">
+                        <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
-                        <div class="swiper-slide card-m__list-el">
+                        <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
-                        <div class="swiper-slide card-m__list-el">
+                        <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
-                        <div class="swiper-slide card-m__list-el">
+                        <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
                     </div>
@@ -374,14 +392,14 @@
             </div>
             <div class="grid-row grid-row--md">
                 <div class="modal-window__row-title modal-window__row-title--desk">Набор в группу по Футболу 2021</div>
-                <a href="#" class="row-link-icon">
+                <span class="row-link-icon">
                     <span class="row-link-icon__title">Свислочская специализированная детско-юношеская школа олимпийского резерва</span>
                     <span class="row-link-icon__icon">
                         <svg viewBox="0 0 8 15">
                             <use xlink:href="/img/sprite.svg#arrow-right"></use>
                         </svg>
                     </span>
-                </a>
+                </span>
                 <p class="grid-row__address">г. Свилочь, ул. К.Калиновского 2</p>
             </div>
         </div>

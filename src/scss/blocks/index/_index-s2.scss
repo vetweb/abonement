@@ -227,7 +227,7 @@
 }
 
 .main-banner .button-rect {
-	font-weight: 700;
+	font-weight: bold;
 
 	@include sm-down {
 		padding: $indent-15 0;
@@ -388,6 +388,7 @@
 
 .main-banner__col20-hidden .btn-blue:hover {
 	background: $white;
+	color: $blue;
 }
 
 .main-banner__col-small .main-banner__col20-fullcol,
@@ -470,7 +471,7 @@
 }
 
 .main-banner__col-small .main-banner__col20-desc.link-s {
-	font-weight: 700;
+	font-weight: bold;
 }
 
 .main-banner__col20-link a {

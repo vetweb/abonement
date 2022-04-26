@@ -158,6 +158,19 @@
 .grid-col70 .grid-row__link {
   color: $blue;
   font-weight: 400;
+
+  &:hover {
+    color: $orange;
+  }
+}
+
+.grid-row__link {
+  color: $blue;
+  font-weight: 400;
+
+  &:hover {
+    color: $orange;
+  }
 }
 
 .fc-s1 .rating-m__score.rating-text {

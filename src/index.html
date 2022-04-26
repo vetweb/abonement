@@ -66,7 +66,7 @@
                             </div>
                             <p class="main-banner__col20-desc link-s">Рекламный баннер</p>
                             <div class="main-banner__col20-link">
-                                <span class="text-xxs">Подробнее > </span>
+                                <span class="text-xxs link-base">Подробнее > </span>
                                 <img src='/img/' class="main-banner__col20-img" alt="">
                             </div>
                         </a>
@@ -75,7 +75,7 @@
                             </div>
                             <p class="main-banner__col20-desc link-s">Рекламный баннер</p>
                             <div class="main-banner__col20-link">
-                                <span class="text-xxs">Подробнее > </span>
+                                <span class="text-xxs link-base">Подробнее > </span>
                                 <img src='/img/' class="main-banner__col20-img" alt="">
                             </div>
                         </a>
@@ -107,16 +107,16 @@
             <div class="card-m-slider">
                 <div class="standard-slider js-standard-slider swiper-container free-slider">
                     <div class="swiper-wrapper grid-cards__list">
-                        <div class="swiper-slide card-m__list-el">
+                        <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
-                        <div class="swiper-slide card-m__list-el">
+                        <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
-                        <div class="swiper-slide card-m__list-el">
+                        <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
-                        <div class="swiper-slide card-m__list-el">
+                        <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
                     </div>
@@ -199,16 +199,16 @@
             <div class="card-m-slider">
                 <div class="standard-slider js-standard-slider swiper-container free-slider">
                     <div class="swiper-wrapper grid-cards__list">
-                        <div class="swiper-slide card-m__list-el">
+                        <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
-                        <div class="swiper-slide card-m__list-el">
+                        <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
-                        <div class="swiper-slide card-m__list-el">
+                        <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
-                        <div class="swiper-slide card-m__list-el">
+                        <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
                     </div>
@@ -328,7 +328,7 @@
             <div class="form-gray__inner">
                 <form class=" form-gray">
                     <p class="text-m">Подпишись на спортивную рассылку</p>
-                    <input type="text" class="form-gray__input" placeholder="Введите почту"/>
+                    <input class="form-gray__input" type="email" required placeholder="Введите почту"/>
                     <button class="button-rect btn-blue button-xs">Подписаться</button>
                 </form>
                 <img src="/img/man.png" class="form-gray__img" alt="">

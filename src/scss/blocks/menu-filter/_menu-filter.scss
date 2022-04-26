@@ -37,7 +37,11 @@
 
 .menu-filter__content {
 	height: 100%;
-	padding: 10px 15px;
+	padding: 10px;
+
+	@include md {
+		padding: 10px 15px;
+	}
 }
 
 .menu-filter-search {
@@ -47,6 +51,7 @@
 .menu-filter-search .search__field,
 .menu-filter-search .search__input {
 	max-width: 100%;
+	margin-left: 0;
 }
 
 .menu-filter-search .form__input {

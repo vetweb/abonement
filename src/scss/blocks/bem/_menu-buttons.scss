@@ -5,16 +5,39 @@
 }
 
 .menu-buttons__favorite {
-	opacity: .5;
-	color: #fff;
-	width: 24px;
-	height: 24px;
+	position: relative;
 	display: inline-block;
 	margin-right: 20px;
+	width: 24px;
+	height: 24px;
+	color: #fff;
+
+	svg {
+		opacity: .5;
+	}
 }
 
 .menu-buttons__cart {
+	position: relative;
 	display: inline-block;
 	height: 24px;
 	width: 24px;
+}
+
+.menu-buttons__favorite-count,
+.menu-buttons__cart-count {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	right: -7px;
+	top: -7px;
+	font-size: 8px;
+	width: 17px;
+	height: 17px;
+	overflow: hidden;
+	border-radius: 50%;
+	background: $gold;
+	color: $blue-dark;
+	z-index: 1;
 }

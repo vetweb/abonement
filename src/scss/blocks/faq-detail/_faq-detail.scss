@@ -116,6 +116,13 @@
 .row__top-right {
   display: flex;
   align-self: flex-end;
+  margin-top: -20px;
+
+  @include md {
+    align-self: flex-start;
+    padding-top: 10px;
+    margin-top: 0;
+  }
 }
 
 .faq-detail-s1 .row__col50:not(:last-child) {

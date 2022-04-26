@@ -44,7 +44,7 @@
 }
 
 .card-sub-2__desc-title {
-  font-weight: 700;
+  font-weight: bold;
   margin-bottom: $indent-15;
 }
 
@@ -220,7 +220,7 @@
 }
 
 .table-l__body-el .button-rect {
-  font-weight: 700;
+  font-weight: bold;
   background-color: $white;
   color: $blue;
   padding: $indent-15 0;
@@ -515,7 +515,9 @@ a.modal-window__tel {
   }
 }
 
-a.row-link-icon {
+.row-link-icon {
+  display: inline-block;
+  vertical-align: middle;
   text-decoration: none;
   font-weight: 500;
   font-size: 12px;
@@ -533,7 +535,7 @@ a.row-link-icon {
   width: 6px;
   height: 12px;
   color: $blue;
-  margin-left: $indent-10;
+  margin-left: $indent-5;
 }
 
 .tabs-nav .scroll-content {

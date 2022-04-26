@@ -6,7 +6,7 @@
 }
 
 .modal-window__content.modal-window__content--reg {
-  padding: $indent-20;
+  padding: $indent-20 $indent-10;
   width: 320px;
 
   @include sm {
@@ -48,7 +48,6 @@ a.password-link {
   line-height: 16px;
   text-align: center;
   color: $gray-tx;
-  margin-top: 5px;
 }
 
 .modal-window__form.modal-window__form--reg {

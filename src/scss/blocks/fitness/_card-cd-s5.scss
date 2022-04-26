@@ -50,7 +50,7 @@
 }
 
 .card-cd-s5 .grid-row__col50-top.grid-row__col50-desk {
-  padding-bottom: $indent-20;
+  margin-bottom: $indent-30;
   display: none;
 
   @include lgx {
@@ -245,7 +245,7 @@
 .reviews-btn .button-rect {
   width: 100%;
   overflow: hidden;
-  font-weight: 700;
+  font-weight: bold;
   padding: 13px 8px;
   white-space: nowrap;
 
@@ -276,13 +276,4 @@
     color: $blue;
     text-decoration: none;
   }
-}
-
-.reviews-btn__link-desk span {
-  margin-right: $indent-10;
-}
-
-.reviews-btn__link-desk img {
-  width: 12px;
-  height: 6px;
 }

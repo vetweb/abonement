@@ -9,7 +9,7 @@
 
 <body>
 @@include('components/blocks/page/_header.html')
-<main class="main camp">
+<main class="main camp" style="background-color: #D8EDFE;">
     <section class="camp-1 card-cd-s1" style="background-image: url('/img/main-bg.svg');">
       <div class="container">
           <ol class="breadcrumbs-block">
@@ -42,7 +42,9 @@
                   <div class="grid-icon">
                       <div class="grid-icon__el">
                           <div class="grid-icon__image">
-                              <img src="/img/grid-icon1.svg" alt="">
+                              <svg class="icon-svg" viewBox="0 0 24 24">
+                                  <use xlink:href="/img/sprite.svg#grid-icon1"></use>
+                              </svg>
                           </div>
                           <div class="grid-icon-info">
                               <span class="link-s">Возраст</span>
@@ -51,7 +53,9 @@
                       </div>
                       <div class="grid-icon__el">
                           <div class="grid-icon__image">
-                              <img src="/img/grid-icon2.svg" alt="">
+                              <svg class="icon-svg" viewBox="0 0 24 24">
+                                  <use xlink:href="/img/sprite.svg#grid-icon2"></use>
+                              </svg>
                           </div>
                           <div class="grid-icon-info">
                               <span class="link-s">Дата заезда и выезда</span>
@@ -60,7 +64,9 @@
                       </div>
                       <div class="grid-icon__el">
                           <div class="grid-icon__image">
-                              <img src="/img/grid-icon3.svg" alt="">
+                              <svg class="icon-svg" viewBox="0 0 24 24">
+                                  <use xlink:href="/img/sprite.svg#grid-icon3"></use>
+                              </svg>
                           </div>
                           <div class="grid-icon-info">
                               <span class="link-s">Время</span>
@@ -69,7 +75,9 @@
                       </div>
                       <div class="grid-icon__el">
                           <div class="grid-icon__image">
-                              <img src="/img/grid-icon4.svg" alt="">
+                              <svg class="icon-svg" viewBox="0 0 24 24">
+                                  <use xlink:href="/img/sprite.svg#grid-icon4"></use>
+                              </svg>
                           </div>
                           <div class="grid-icon-info">
                               <span class="link-s">Кол-во мест</span>
@@ -91,7 +99,7 @@
               <div class="card-cd-s1__col50 grid-col50">
                   <div class="xs__slider">
                       @@include('components/blocks/bem/_circle-el.html')
-                      <div class="xs-slider js-xs-slider swiper-container">
+                      <div class="xs-slider__container js-xs-slider swiper-container">
                           <div class="swiper-wrapper xs-slider__wrap">
                               <div class="swiper-slide xs-slide">
                                   <div class="xs-slide__card">
@@ -328,9 +336,8 @@
                         <div class="reviews-btn">
                             <a href="#" class="reviews-btn__link-desk h5">
                                 <span>Смотреть еще</span>
-                                <img src="/img/arrow-down.svg" alt="">
                             </a>
-                            <a href="#" class="reviews-btn__link-mob h5">Подробнее</a>
+                            <a href="#" class="reviews-btn__link-mob h5 link-base">Подробнее</a>
                             <button class="button-rect btn-blue">Написать отзыв</button>
                         </div>
                     </div>
@@ -344,16 +351,16 @@
             <div class="card-m-slider">
                 <div class="standard-slider js-standard-slider swiper-container free-slider">
                     <div class="swiper-wrapper grid-cards__list">
-                        <div class="swiper-slide card-m__list-el">
+                        <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
-                        <div class="swiper-slide card-m__list-el">
+                        <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
-                        <div class="swiper-slide card-m__list-el">
+                        <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
-                        <div class="swiper-slide card-m__list-el">
+                        <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
                     </div>
@@ -370,16 +377,16 @@
             <div class="card-m-slider">
                 <div class="standard-slider js-standard-slider swiper-container free-slider">
                     <div class="swiper-wrapper grid-cards__list">
-                        <div class="swiper-slide card-m__list-el">
+                        <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
-                        <div class="swiper-slide card-m__list-el">
+                        <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
-                        <div class="swiper-slide card-m__list-el">
+                        <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
-                        <div class="swiper-slide card-m__list-el">
+                        <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
                     </div>

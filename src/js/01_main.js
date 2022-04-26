@@ -1,6 +1,5 @@
 import {Swiper, Mousewheel, Navigation, Pagination} from 'swiper'
 import Scrollbar from 'smooth-scrollbar'
-import anime from 'animejs/lib/anime.es.js';
 
 Swiper.use([Mousewheel, Navigation, Pagination])
 
@@ -73,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		standardSwipers.forEach((el) => {
 			myStandardSwiper = new Swiper(el, {
 				direction: "horizontal",
-				loop: true,
+				loop: false,
 				speed: 1000,
 				slidesPerView: 'auto',
 				freeMode: true,
@@ -109,7 +108,11 @@ document.addEventListener('DOMContentLoaded', () => {
 				loop: true,
 				speed: 1000,
 				slidesPerView: 1,
-				clickable: true,
+				centeredSlides: true,
+				autoplay: {
+					delay: 2500,
+					disableOnInteraction: false
+				},
 				navigation: {
 					nextEl: el.querySelector(".swiper-button-next"),
 					prevEl: el.querySelector(".swiper-button-prev"),
@@ -255,8 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	if (galleryThumbs && galleryTop) {
 
 		function getDirection() {
-			let direction = window.innerWidth >= 480 ? 'vertical' : 'horizontal';
-			return direction;
+			return window.innerWidth >= 480 ? 'vertical' : 'horizontal';
 		}
 
 		let myGalleryThumbs = new Swiper(galleryThumbs, {
@@ -266,7 +268,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			slideToClickedSlide: true,
 			freeMode: true,
 			grabCursor: true,
-			loop: true,
+			loop: false,
 			direction: getDirection(),
 			breakpoints: {
 				// when window width is >= 320px
@@ -355,6 +357,22 @@ document.addEventListener('DOMContentLoaded', () => {
 			})
 		}
 	})
+
+	//FavoritesIconClicked
+	function FavoritesToggle() {
+		if(!cards) {
+			return false
+		}
+		let cards = document.querySelectorAll('.js-item-card');
+		cards.forEach((item) => {
+			let favoriteIcon = item.querySelector('.js-favorites-block');
+			favoriteIcon.addEventListener("click", function () {
+				favoriteIcon.classList.toggle('active');
+			})
+		})
+	}
+
+	FavoritesToggle()
 
 	//Search open
 	function SearchToggle() {
@@ -772,15 +790,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	let priceGap = 1000;
 	priceInput.forEach(input => {
-		input.addEventListener("input", e =>{
+		input.addEventListener("input", e => {
 			let minPrice = parseInt(priceInput[0].value),
 				maxPrice = parseInt(priceInput[1].value);
 
-			if((maxPrice - minPrice >= priceGap) && maxPrice <= rangeInput[1].max){
-				if(e.target.className === "input-min"){
+			if ((maxPrice - minPrice >= priceGap) && maxPrice <= rangeInput[1].max) {
+				if (e.target.className === "input-min") {
 					rangeInput[0].value = minPrice;
 					range.style.left = ((minPrice / rangeInput[0].max) * 100) + "%";
-				}else{
+				} else {
 					rangeInput[1].value = maxPrice;
 					range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
 				}
@@ -788,14 +806,14 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	});
 
-	rangeInput.forEach(input =>{
-		input.addEventListener("input", e =>{
+	rangeInput.forEach(input => {
+		input.addEventListener("input", e => {
 			let minVal = parseInt(rangeInput[0].value),
 				maxVal = parseInt(rangeInput[1].value);
 			if ((maxVal - minVal) < priceGap) {
-				if(e.target.className === "range-min"){
+				if (e.target.className === "range-min") {
 					rangeInput[0].value = maxVal - priceGap
-				}else{
+				} else {
 					rangeInput[1].value = minVal + priceGap;
 				}
 			} else {
