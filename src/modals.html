@@ -9,6 +9,12 @@
 
 <body>
 @@include('components/blocks/page/_header.html')
+<style>
+    .modals button {
+        margin-bottom: 20px;
+        width: 200px;
+    }
+</style>
 <main class="main about-s">
     <section class="about-s1">
         <div class="container">
@@ -25,18 +31,20 @@
             <div class="index-s__top">
                 <h2 class="h2">Модалки</h2>
             </div>
-            <button class="button-rect btn-blue button-xs js-open-md" data-opn="reg-auth">Вход/регистрация</button>
-            <button class="button-rect btn-blue button-xs js-open-md" data-opn="pass-changed">Восстановить пароль</button>
-            <button class="button-rect btn-blue button-xs js-open-md" data-opn="reg">Регистрация</button>
-            <button class="button-rect btn-blue button-xs js-open-md" data-opn="auth">Авторизация</button>
-            <button class="button-rect btn-blue button-xs js-open-md" data-opn="modal-country">Регистрация</button>
-            <button class="button-rect btn-blue button-xs js-open-md" data-opn="reg">Выбор страны</button>
-            <button class="button-rect btn-blue button-xs js-open-md" data-opn="reg-final">Регистрация финал</button>
-            <button class="button-rect btn-blue button-xs js-open-md" data-opn="md-cart-order">Заказ</button>
-            <button class="button-rect btn-blue button-xs js-open-md" data-opn="no-active">no-active</button>
-            <button class="button-rect btn-blue button-xs js-open-md" data-opn="check-email">Подтвердить емейл</button>
-            <button class="button-rect btn-blue button-xs js-open-md" data-opn="cart-md">Корзина</button>
-            <button class="button-rect btn-blue button-xs js-open-md" data-opn="reg">Регистрация</button>
+            <div class="modals">
+                <button class="button-rect btn-blue button-xs js-open-md" data-opn="reg-auth">Вход/регистрация</button>
+                <button class="button-rect btn-blue button-xs js-open-md" data-opn="pass-changed">Восстановить пароль
+                </button>
+                <button class="button-rect btn-blue button-xs js-open-md" data-opn="reg">Регистрация</button>
+                <button class="button-rect btn-blue button-xs js-open-md" data-opn="auth">Авторизация</button>
+                <button class="button-rect btn-blue button-xs js-open-md" data-opn="modal-country">Выбор страны</button>
+                <button class="button-rect btn-blue button-xs js-open-md" data-opn="reg-final">Регистрация финал
+                </button>
+                <button class="button-rect btn-blue button-xs js-open-md" data-opn="md-cart-order">Заказ</button>
+                <button class="button-rect btn-blue button-xs js-open-md" data-opn="no-active">Аккаунт не активирован</button>
+                <button class="button-rect btn-blue button-xs js-open-md" data-opn="check-email">Подтвердить email
+                </button>
+            </div>
         </div>
     </section>
 </main>

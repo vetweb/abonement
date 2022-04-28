@@ -58,7 +58,7 @@
 	grid-template-columns: repeat(auto-fit, 60px);
 	margin-bottom: $indent-50;
 
-	@include lg {
+	@include md {
 		grid-template-columns: repeat(auto-fit, 92px);
 		margin-bottom: $indent-180;
 	}
@@ -169,8 +169,8 @@
 	}
 
 	@include lgx {
-		top: -60%;
-		right: -90px;
+		top: -90%;
+		right: -27%;
 		z-index: 1;
 		width: auto;
 		height: 460px;

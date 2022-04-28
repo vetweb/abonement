@@ -360,9 +360,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	//FavoritesIconClicked
 	function FavoritesToggle() {
-		if(!cards) {
-			return false
-		}
 		let cards = document.querySelectorAll('.js-item-card');
 		cards.forEach((item) => {
 			let favoriteIcon = item.querySelector('.js-favorites-block');

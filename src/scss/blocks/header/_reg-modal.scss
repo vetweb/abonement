@@ -108,4 +108,8 @@ a.password-link {
   @include sm {
     margin: 0 auto $indent-30;
   }
+
+  @include lg {
+    margin: 10px auto $indent-30;
+  }
 }
