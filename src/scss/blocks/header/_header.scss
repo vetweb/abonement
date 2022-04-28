@@ -97,10 +97,6 @@
 .header__mobile-right {
 	@include flex(center, flex-start);
 
-	@include md {
-		margin-left: 10px;
-	}
-
 	@include lg {
 		display: none;
 	}
@@ -131,12 +127,20 @@
 
 	a {
 		color: rgba(195, 195, 195, .5);
+
+		&:hover {
+			color: $orange;
+		}
 	}
 }
 
 .header__search-form {
 	@include sm {
 		padding: 0 10px;
+	}
+
+	.search__field {
+		margin: 0 0 0 auto;
 	}
 
 	.search__button {
@@ -147,8 +151,10 @@
 	}
 
 	.search__input {
-		visibility: hidden;
-		
+		@include lg-down {
+			visibility: hidden;
+		}
+
 		@include lgx-down {
 			padding-left: 0;
 		}

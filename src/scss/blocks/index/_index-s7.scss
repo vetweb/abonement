@@ -206,16 +206,32 @@
 	max-width: 180px;
 }
 
-.index-s7 .index-s__top-img {
+.index-s__more-about-us {
 	display: none;
 
-	@include lg {
+	@include sm {
+		position: relative;
+		display: flex;
+		justify-content: flex-end;
+		margin-bottom: 50px;
+	}
+
+	.button-rect {
 		display: block;
-		right: 92px;
-		top: 0;
+		position: relative;
+		max-width: 180px;
+		z-index: 1;
 	}
 }
 
-.index-s7 .index-s__top-img img {
+.index-s__more-about-us .index-s__top-img {
+	position: absolute;
+	width: 190px;
+	display: block;
+	right: 130px;
+	top: -40px;
+}
+
+.index-s__more-about-us .index-s__top-img img {
 	transform: rotate(8deg);
 }

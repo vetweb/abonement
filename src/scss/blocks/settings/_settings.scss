@@ -80,10 +80,15 @@
 }
 
 .row-acc__form .button-rect {
-  max-width: 190px;
+  margin-top: 10px;
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
+
+  @include sm {
+    margin-top: 0;
+    max-width: 190px;
+  }
 }
 
 .row-acc__form.row-acc__form--data {

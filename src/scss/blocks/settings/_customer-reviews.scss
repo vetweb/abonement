@@ -278,7 +278,6 @@ a.row-acc-grid__cell.row-acc-grid__cell--top {
   @include lg {
     display: flex;
     justify-content: space-between;
-    padding: $indent-10 0;
     border-bottom: 1px solid #E0E0E0;
   }
 }

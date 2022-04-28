@@ -60,6 +60,7 @@
     margin-right: 10px;
     flex-direction: row;
     justify-content: space-between;
+    margin-left: 20px;
   }
 }
 
@@ -99,6 +100,10 @@
     flex-direction: row;
     justify-content: space-between;
   }
+}
+
+.row-product__col-top.row-product__col-top-sec-table .search__form {
+  margin-left: 0;
 }
 
 .product-list-s1 .row-acc-grid__body .row-product__col-top.row-product__col-top--btns {
@@ -278,7 +283,6 @@ a.row-acc-grid__cell.row-acc-grid__cell--top {
   @include lg {
     display: flex;
     justify-content: space-between;
-    padding: $indent-10 0;
     border-bottom: 1px solid #E0E0E0;
   }
 }

@@ -1,202 +1,207 @@
 button {
-  appearance: none;
-  border: none;
-  padding: 0;
-  font-size: inherit;
-  line-height: inherit;
-  outline: none;
-  background: transparent;
-  cursor: pointer;
+	appearance: none;
+	border: none;
+	padding: 0;
+	font-size: inherit;
+	line-height: inherit;
+	outline: none;
+	background: transparent;
+	cursor: pointer;
 }
 
 .btn-blue {
-  background-color: $blue;
-  color: $white;
-  transition: all .3s;
-  border: 1px solid transparent;
+	background-color: $blue;
+	color: $white;
+	transition: all .3s;
+	border: 1px solid transparent;
 }
 
 .btn-blue:hover {
-  background-color: $white;
-  border: 1px solid $blue;
-  color: $blue;
+	background-color: $white;
+	border: 1px solid $blue;
+	color: $blue;
 }
 
 .button-rect {
-  color: $white;
-  width: 100%;
-  padding: $indent-10;
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  cursor: pointer;
-  transition: all .3s;
+	color: $white;
+	width: 100%;
+	padding: $indent-10;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	cursor: pointer;
+	transition: all .3s;
 
-  &--height {
-    height: 50px;
-  }
+	&--height {
+		height: 50px;
+	}
 }
 
 .button-rect--xs {
-  border-radius: 5px;
+	border-radius: 5px;
 }
 
 .button-rect.button-dis {
-  cursor: pointer;
-  background-color: #EEF3F8;
-  border: 1px solid #EEF3F8;
-  color: #D1D5D9;
-  transition: all .3s;
+	cursor: pointer;
+	background-color: #EEF3F8;
+	border: 1px solid #EEF3F8;
+	color: #D1D5D9;
+	transition: all .3s;
 }
 
 .btn-yellow {
-  background-color: $gold-btn;
-  color: #000;
+	background-color: $gold-btn;
+	color: #000;
 }
 
 .button-full {
-  width: 100%;
-  cursor: pointer;
-  background-color: $blue;
-  border: 1px solid $blue;
-  color: $white;
-  transition: all .3s;
+	width: 100%;
+	cursor: pointer;
+	background-color: $blue;
+	border: 1px solid $blue;
+	color: $white;
+	transition: all .3s;
 }
 
 .button-full:hover {
-  background-color: $blue-bg;
-  border: 1px solid $blue-bg;
-  color: $white;
+	background-color: $blue-bg;
+	border: 1px solid $blue-bg;
+	color: $white;
 }
 
 .btn-blue-s {
-  cursor: pointer;
-  background-color: $blue;
-  border: 1px solid $blue;
-  color: $white;
-  transition: all .3s;
+	cursor: pointer;
+	background-color: $blue;
+	border: 1px solid $blue;
+	color: $white;
+	transition: all .3s;
 }
 
 .btn-blue-s:hover {
-  background-color: $white;
-  border: 1px solid $white;
-  color: $blue;
+	background-color: $white;
+	border: 1px solid $white;
+	color: $blue;
 }
 
 .btn-white {
-  background-color: $white;
-  border: 1px solid $blue;
-  color: $blue;
-  transition: all .3s;
+	background-color: $white;
+	border: 1px solid $blue;
+	color: $blue;
+	transition: all .3s;
 }
 
 .btn-white:hover {
-  background-color: $blue;
-  border: 1px solid $blue;
-  color: $white;
+	background-color: $blue;
+	border: 1px solid $blue;
+	color: $white;
 }
 
 .card-circle-btn {
-  background: $gold;
-  border-radius: 47px;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	background: $gold;
+	border-radius: 47px;
+	width: 60px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .card-circle-btn svg {
-  color: $blue;
-  width: 16px;
-  height: 11px;
+	color: $blue;
+	width: 16px;
+	height: 11px;
 }
 
 .btn-dark {
-  background-color: $blue-bg;
-  border: 1px solid transparent;
+	background-color: $blue-bg;
+	border: 1px solid transparent;
 
-  &:hover {
-    color: #051138;
-    background-color: #fdfdfd;
-    border-color: #051138;
+	&:hover {
+		color: #051138;
+		background-color: #fdfdfd;
+		border-color: #051138;
 
-    svg {
-      color: #051138 !important;
-    }
-  }
+		svg {
+			color: #051138 !important;
+		}
+	}
 }
 
 .btn-green {
-  background-color: $olive;
+	background-color: $olive;
 
-  &:hover {
-    background-color: darken($olive, 10%);
-  }
+	&:hover {
+		background-color: darken($olive, 10%);
+	}
 }
 
 .btn-white-border {
-  border: 1px solid $black-t;
-  background: $white;
-  color: $black-t;
-  padding: $indent-10;
-  border-radius: 10px;
-  overflow: hidden;
+	border: 1px solid $black-t;
+	background: $white;
+	color: $black-t;
+	padding: $indent-10;
+	border-radius: 10px;
+	overflow: hidden;
 }
 
 .btn-add-company {
-  height: 40px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 40px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  background: #FCDF2B;
-  color: #050424;
-  text-decoration: none;
-  border-radius: 5px;
-  padding: 0 16px;
-  border: none;
+	height: 40px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 40px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	background: #FCDF2B;
+	color: #050424;
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 0 16px;
+	border: none;
+	transition: background .2s ease-in-out;
 
-  @include md {
-    width: auto;
-  }
+	&:hover {
+		background: darken(#FCDF2B, 20%);
+	}
+
+	@include md {
+		width: auto;
+	}
 }
 
 .btn-add-company__icon {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 8px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 8px;
 }
 
 .btn-reg-auth {
-  @include flex(center, center);
-  width: 100%;
-  border: 1px solid rgba(195, 195, 195, 0.2);
-  padding: 8px 14px 8px 20px;
-  border-radius: 5px;
-  color: #fff;
-  transition: border .3s ease;
+	@include flex(center, center);
+	width: 100%;
+	border: 1px solid rgba(195, 195, 195, 0.2);
+	padding: 8px 14px 8px 20px;
+	border-radius: 5px;
+	color: #fff;
+	transition: border .3s ease;
 
-  &:hover {
-    border-color: #fff;
-  }
+	&:hover {
+		border-color: #fff;
+	}
 
-  @include md {
-    width: auto;
-  }
+	@include md {
+		width: auto;
+	}
 }
 
 .btn-reg-auth__text {
-  font-size: 13px;
-  margin-right: 14px;
+	font-size: 13px;
+	margin-right: 14px;
 }
 
 .btn-reg-auth__icon {
-  display: inline-flex;
+	display: inline-flex;
 }

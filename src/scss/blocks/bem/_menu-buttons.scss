@@ -13,8 +13,13 @@
 	color: #fff;
 
 	svg {
-		opacity: .5;
+		opacity: .4;
 	}
+
+	&:hover svg {
+		opacity: .3;
+	}
+
 }
 
 .menu-buttons__cart {
@@ -22,6 +27,10 @@
 	display: inline-block;
 	height: 24px;
 	width: 24px;
+
+	&:hover svg {
+		opacity: .8;
+	}
 }
 
 .menu-buttons__favorite-count,

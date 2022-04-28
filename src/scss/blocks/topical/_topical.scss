@@ -312,7 +312,7 @@ a.btn-links__btn {
 
   @include sm-down {
     order: 1;
-    width: 86px;
+    width: auto;
     height: 226px;
   }
 

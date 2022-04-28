@@ -17,16 +17,37 @@
 .account-s.help-account-s .faq-block__top {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 
   @include sm {
+    width: 95%;
     flex-direction: row;
+  }
+
+  @include md {
+    width: 98%;
+  }
+  @include md {
+    width: 96%;
   }
 }
 
 .account-s.help-account-s .faq-block__icon {
   right: 15px;
-  top: 30px;
+  top: 15px;
   cursor: pointer;
+
+  @include sm {
+    top: 30px;
+  }
+
+  @include md {
+    top: 30px;
+  }
+
+  @include lg {
+    top: 30px;
+  }
 }
 
 .account-s.help-account-s .faq-block__icon svg {
@@ -34,7 +55,7 @@
   transition: all .1s;
 }
 
-.account-s.help-account-s .faq-block__icon.active svg {
+.faq-block.active .faq-block__icon svg {
   transform: rotate(90deg);
 }
 

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+@@include('components/blocks/page/_head.html',{
+"lang":"en",
+"title":"Абонемент",
+"description":"Абонемент",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+@@include('components/blocks/page/_header.html')
+<main class="main about-s">
+    <section class="about-s1">
+        <div class="container">
+            <ol class="breadcrumbs-block">
+                <li class="breadcrumbs-block__item">
+                    <a href="#" class="breadcrumbs-block__link" title="Олимпийские виды спорта">
+                        <span class="breadcrumbs-block__text text-xs">Главная</span>
+                    </a>
+                </li>
+                <li class="breadcrumbs-block__item">
+                    <span class="breadcrumbs-block__text text-xs">Модалки</span>
+                </li>
+            </ol>
+            <div class="index-s__top">
+                <h2 class="h2">Модалки</h2>
+            </div>
+            <button class="button-rect btn-blue button-xs js-open-md" data-opn="reg-auth">Вход/регистрация</button>
+            <button class="button-rect btn-blue button-xs js-open-md" data-opn="pass-changed">Восстановить пароль</button>
+            <button class="button-rect btn-blue button-xs js-open-md" data-opn="reg">Регистрация</button>
+            <button class="button-rect btn-blue button-xs js-open-md" data-opn="auth">Авторизация</button>
+            <button class="button-rect btn-blue button-xs js-open-md" data-opn="modal-country">Регистрация</button>
+            <button class="button-rect btn-blue button-xs js-open-md" data-opn="reg">Выбор страны</button>
+            <button class="button-rect btn-blue button-xs js-open-md" data-opn="reg-final">Регистрация финал</button>
+            <button class="button-rect btn-blue button-xs js-open-md" data-opn="md-cart-order">Заказ</button>
+            <button class="button-rect btn-blue button-xs js-open-md" data-opn="no-active">no-active</button>
+            <button class="button-rect btn-blue button-xs js-open-md" data-opn="check-email">Подтвердить емейл</button>
+            <button class="button-rect btn-blue button-xs js-open-md" data-opn="cart-md">Корзина</button>
+            <button class="button-rect btn-blue button-xs js-open-md" data-opn="reg">Регистрация</button>
+        </div>
+    </section>
+</main>
+@@include('components/blocks/page/_footer.html')
+@@include('components/blocks/page/_scripts.html')
+</body>
+
+</html>

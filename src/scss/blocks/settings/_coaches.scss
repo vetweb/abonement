@@ -1,233 +1,244 @@
 .add-coach-s1,
 .coaches-s1 {
-  padding: 0 0 60px;
+	padding: 0 0 60px;
 
-  @include sm {
-    padding: 0 0 60px;
-  }
+	@include sm {
+		padding: 0 0 60px;
+	}
 
-  @include lgx {
-    padding: 60px 0 100px;
-  }
+	@include lgx {
+		padding: 60px 0 100px;
+	}
 }
 
 .row-acc__col50-inner__top {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: $indent-20;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: $indent-20;
 
-  @include sm {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
+	@include sm {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
 }
 
 .row-acc__col50-inner__top .button-rect {
-  max-width: 100%;
-  margin-top: 10px;
+	max-width: 100%;
+	margin-top: 10px;
 
-  @include sm {
-    margin-top: 0;
-    max-width: 235px;
-  }
+	@include sm {
+		margin-top: 0;
+		max-width: 235px;
+	}
 }
 
 .preview-s .row-acc__col50,
 .coaches-s .row-acc__col50 {
-  @include sm-down  {
-    background-color: transparent;
-  }
+	@include sm-down {
+		background-color: transparent;
+	}
+}
+
+.coaches-s__name {
+	@include sm-down {
+		margin-top: 11px;
+		font-size: 18px;
+	}
+
+	@include sm {
+		font-size: 14px;
+	}
 }
 
 .add-coach-s .row-acc__col50,
 .coaches-s .row-acc__col50 {
-  @include sm-down  {
-    padding: $indent-10;
-    border-radius: 0;
-  }
+	@include sm-down {
+		padding: $indent-10;
+		border-radius: 0;
+	}
 
-  @include lg {
-    max-width: 955px;
-    height: 100%;
-  }
+	@include lg {
+		max-width: 955px;
+		height: 100%;
+	}
 }
 
 .preview-s .row-acc__col50 {
 
-  @include lg {
-    max-width: 955px;
-    height: 100%;
-  }
+	@include lg {
+		max-width: 955px;
+		height: 100%;
+	}
 }
 
 .row-acc-grid__row a {
-  color: $blue-bg;
-  text-decoration: none;
+	color: $blue-bg;
+	text-decoration: none;
 }
 
 .row-acc-grid__row a:hover {
-  color: $blue;
-  text-decoration: underline;
+	color: $blue;
+	text-decoration: underline;
 }
 
 .row-acc__col50-inner__top .row-acc__col50--title {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .row-acc-grid__cell {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	width: 100%;
 
-  @include sm {
-    align-items: center;
-  }
+	@include sm {
+		align-items: center;
+	}
 }
 
 .row-acc-grid__cell-img {
-  display: inline-flex;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  overflow: hidden;
+	display: inline-flex;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	overflow: hidden;
 }
 
 .row-acc-grid__cell-img img {
-  flex-shrink: 0;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  overflow: hidden;
-  object-fit: cover;
+	flex-shrink: 0;
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	overflow: hidden;
+	object-fit: cover;
 }
 
 .row-acc-grid__top.row-acc-grid__row {
-  display: none;
+	display: none;
 
-  @include sm {
-    display: flex;
-  }
+	@include sm {
+		display: flex;
+	}
 }
 
 .row-acc-grid__top.row-acc-grid__row .row-acc-grid__cell {
-  background-color: #EFF5FB;
+	background-color: #EFF5FB;
 }
 
 .row-acc-grid__row {
-  display: flex;
-  flex-direction: row;
+	display: flex;
+	flex-direction: row;
 
-  @include sm-down {
-    margin-bottom: $indent-20;
-    flex-direction: column;
-  }
+	@include sm-down {
+		margin-bottom: $indent-20;
+		flex-direction: column;
+	}
 }
 
 .row-acc-grid__row--body {
-  @include sm-down {
-    background-color: $white;
-    margin-bottom: $indent-20;
-    border-radius: 8px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-  }
+	@include sm-down {
+		background-color: $white;
+		margin-bottom: $indent-20;
+		border-radius: 8px;
+		overflow: hidden;
+		display: flex;
+		flex-direction: row;
+	}
 }
 
 .row-acc-grid__cell.row-acc-grid__cell--desk {
-  display: none;
+	display: none;
 
-  @include sm {
-    display: flex;
-  }
+	@include sm {
+		display: flex;
+	}
 }
 
 .row-acc-grid__cell.row-acc-grid__cell--mob {
-  display: flex;
-  width: fit-content;
+	display: flex;
+	width: fit-content;
 
-  @include sm {
-    display: none;
-  }
+	@include sm {
+		display: none;
+	}
 }
 
 .add-certif-s .row-acc-grid__cell.row-acc-grid__cell--mob {
-  display: flex;
-  width: fit-content;
-  flex-direction: row;
+	display: flex;
+	width: fit-content;
+	flex-direction: row;
 
-  @include sm {
-    display: none;
-  }
+	@include sm {
+		display: none;
+	}
 }
 
 .row-acc-grid__body .row-acc-grid__row {
-  @include sm {
-    border-top: 1px solid #E1EBF5;
-    border-bottom: 1px solid #E1EBF5;
-  }
+	@include sm {
+		border-top: 1px solid #E1EBF5;
+		border-bottom: 1px solid #E1EBF5;
+	}
 }
 
 .row-acc-grid__body .row-acc-grid__cell {
-  padding: $indent-10 $indent-15;
+	padding: $indent-10 $indent-15;
 
-  @include sm {
-    border-left: 1px solid #E1EBF5;
-    border-right: 1px solid #E1EBF5;
-  }
+	@include sm {
+		border-left: 1px solid #E1EBF5;
+		border-right: 1px solid #E1EBF5;
+	}
 }
 
 .row-acc-grid__row.row-acc-grid__row-bottom .row-acc-grid__cell:nth-child(1),
 .row-acc-grid__row .row-acc-grid__cell:nth-child(1) {
-  width: fit-content;
+	width: fit-content;
 
-  @include sm {
-    width: 10%;
-  }
+	@include sm {
+		width: 10%;
+	}
 }
 
 .row-acc-grid__row .row-acc-grid__cell:nth-child(2) {
-  width: 100%;
+	width: 100%;
 
-  @include sm {
-    width: 17%;
-  }
+	@include sm {
+		width: 17%;
+	}
 }
 
 .row-acc-grid__row .row-acc-grid__cell:nth-child(3) {
-  width: 100%;
+	width: 100%;
 
-  @include sm {
-    width: 20%;
-  }
+	@include sm {
+		width: 20%;
+	}
 }
 
 .row-acc-grid__row .row-acc-grid__cell:nth-child(4) {
-  width: 100%;
+	width: 100%;
 
-  @include sm {
-    width: 20%;
-  }
+	@include sm {
+		width: 20%;
+	}
 }
 
 .row-acc-grid__row .row-acc-grid__cell:nth-child(5) {
-  width: 100%;
+	width: 100%;
 
-  @include sm {
-    width: 33%;
-  }
+	@include sm {
+		width: 33%;
+	}
 }
 
 .row-acc-grid__row-inner {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
-  @include sm {
-    flex-direction: row;
-  }
+	@include sm {
+		flex-direction: row;
+	}
 }

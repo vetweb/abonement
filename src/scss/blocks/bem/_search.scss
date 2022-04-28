@@ -1,10 +1,5 @@
 .search__field {
 	max-width: 517px;
-	margin-left: 10px;
-
-	@include sm {
-		margin: 0 0 0 auto;
-	}
 }
 
 .search__field-active .search__input {
@@ -38,7 +33,11 @@
 	justify-content: center;
 	width: 100%;
 	height: 100%;
-	color: $white;
+	color: #646A7D;
+
+	@include lg {
+		color: $white;
+	}
 }
 
 .search__icon-header {

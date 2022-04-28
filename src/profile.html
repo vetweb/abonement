@@ -29,6 +29,43 @@
                 <p class="settings-s__title">Личный кабинет</p>
             </div>
             <div class="row-acc row-acc--acc">
+                <div class="row-acc__col25 row-acc__col25--left">
+                    <div class="row-acc__col25-top">
+                        <span class="row-acc__list-icon">
+                            <svg>
+                                <use xlink:href="/img/sprite.svg#user"></use>
+                            </svg>
+                        </span>
+                        <span class="row-acc__col25-title">Управление аккаунтом</span>
+                    </div>
+                    <ul class="row-acc__list row-acc__list--acc">
+                        <li class="row-acc__list-el active js-toggle-btn">
+                            <a href="/profile.html" class="row-acc__list-link">
+                                <span class="row-acc__list-title">Профиль</span>
+                            </a>
+                        </li>
+                        <li class="row-acc__list-el js-toggle-btn">
+                            <a href="/payment-account.html" class="row-acc__list-link">
+                                <span class="row-acc__list-title">Оплата</span>
+                            </a>
+                        </li>
+                        <li class="row-acc__list-el js-toggle-btn">
+                            <a href="/orders-history.html" class="row-acc__list-link">
+                                <span class="row-acc__list-title">История заказов</span>
+                            </a>
+                        </li>
+                        <li class="row-acc__list-el js-toggle-btn">
+                            <a href="/favorites-account.html" class="row-acc__list-link">
+                                <span class="row-acc__list-title">Избранное</span>
+                            </a>
+                        </li>
+                        <li class="row-acc__list-el js-toggle-btn">
+                            <a href="/help-account.html" class="row-acc__list-link">
+                                <span class="row-acc__list-title">Помощь</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="row-acc__col50">
                     <div class="row-acc__col50-inner">
                         <div class="row-acc__col50--title">Личные данные</div>
@@ -41,21 +78,18 @@
                                 <div class="row-acc__form-col">
                                     <p class="label-light">
                                         <label for="md-surname" class="label-light__title">Фамилия</label>
-                                        <span class="label-light__symbol">*</span>
                                     </p>
                                     <input type="text" id="md-surname" class="input-light input-light__mb15">
                                 </div>
                                 <div class="row-acc__form-col">
                                     <p class="label-light">
                                         <label for="md-name" class="label-light__title">Имя</label>
-                                        <span class="label-light__symbol">*</span>
                                     </p>
                                     <input type="text" id="md-name" class="input-light input-light__mb15">
                                 </div>
                             </div>
                             <p class="label-light">
                                 <label for="md-patronymic" class="label-light__title">Отчество</label>
-                                <span class="label-light__symbol">*</span>
                             </p>
                             <input type="text" id="md-patronymic" class="input-light input-light__mb15">
                             <p class="label-light">
@@ -66,7 +100,7 @@
                                 <label for="md-email" class="label-light__title">Email</label>
                                 <span class="label-light__symbol">*</span>
                             </p>
-                            <input type="text" id="md-email" class="input-light input-light__mb15">
+                            <input type="text" id="md-email" class="input-light input-light__mb15 form__error-field">
                             <p class="label-light">
                                 <label for="md-gender" class="label-light__title">Ваш пол</label>
                                 <span class="label-light__symbol">*</span>
@@ -81,7 +115,7 @@
                                     <label for="test2">Муж</label>
                                 </p>
                             </div>
-                            <button class="button-rect btn-blue button-dis">Отправить</button>
+                            <button class="button-rect btn-blue">Отправить</button>
                         </form>
                         <div class="row-acc__col50--title">Изменения пароля</div>
                         <form class="row-acc__form row-acc__form--update">
@@ -110,7 +144,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="button-rect btn-blue button-dis">Отправить</button>
+                        <button class="button-rect btn-blue">Отправить</button>
                     </form>
                     </div>
                 </div>
