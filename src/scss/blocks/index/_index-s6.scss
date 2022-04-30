@@ -13,6 +13,10 @@
 	width: 100%;
 	padding: $indent-30 0 $indent-40;
 
+	&:hover {
+		color: #FFEE4B;
+	}
+
 	@include sm {
 		padding: $indent-80 0 $indent-90;
 	}
@@ -126,6 +130,10 @@
 	padding-right: $indent-10;
 	border: 1px solid $white;
 
+	&:hover {
+		background: #2c4ca3;
+	}
+
 	@include sm {
 		width: 50%;
 		padding-bottom: $indent-35;
@@ -139,6 +147,7 @@
 		padding-left: $indent-25;
 		padding-right: $indent-25;
 	}
+
 }
 
 .color-block__col50 .title-block {

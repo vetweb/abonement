@@ -112,11 +112,13 @@
 }
 
 .form-gray {
+	position: relative;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
+	z-index: 2;
 
 	@include lg-down {
 		order: 2;

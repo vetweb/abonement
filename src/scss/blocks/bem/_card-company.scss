@@ -41,19 +41,22 @@
   }
 }
 
+.card-company .feedback__img svg {
+  color: #fff;
+}
+
 .card-tag {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #5670B5;
   border-radius: 10px;
-  padding: $indent-10;
-  max-width: 121px;
+  padding: 7px 18px;
+  max-width: 155px;
   width: 100%;
   color: $white;
-  font-size: 12px;
-  line-height: 14px;
-  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
   margin-right: $indent-10;
 }
 
@@ -74,8 +77,8 @@
 }
 
 .card-tag__ic svg {
-  width: 16px;
-  height: 13px;
+  width: 22px;
+  height: 22px;
   margin-right: 5px;
 }
 
@@ -87,6 +90,19 @@
 
   @include sm {
     justify-content: space-between;
+  }
+}
+
+.card-company__el-top-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: none;
+  color: #051138;
+
+  @include md {
+    font-size: 24px;
+    line-height: 28px;
   }
 }
 
@@ -112,7 +128,6 @@
 }
 
 .card-company__el-top .favorites-block{
-  display: none;
 
   @include sm {
     display: flex;
@@ -167,7 +182,7 @@
   background-position: center;
   background-repeat: no-repeat;
   color: $white;
-  border-radius: 15px;
+  border-radius: 10px;
   overflow: hidden;
   padding: $indent-10 $indent-10 0 0;
 
@@ -225,6 +240,10 @@
   line-height: 21px;
   font-weight: 400;
   color: $blue;
+
+  &:hover {
+    color: $orange;
+  }
 }
 
 .company-card-s .search-nav {

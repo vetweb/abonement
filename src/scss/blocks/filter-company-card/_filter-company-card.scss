@@ -55,7 +55,7 @@
 
   @include lgx {
     flex-direction: row;
-    padding: 14px 25px 25px;
+    padding: 14px 70px 14px 25px;
   }
 }
 
@@ -109,10 +109,11 @@
   flex-direction: column;
   align-items: center;
   padding: 5px;
-  height: 35px;
+  height: 40px;
   font-size: 12px;
   line-height: 14px;
   font-weight: 400;
+  text-decoration: none;
 }
 
 .table-subsc__btns .table-subsc__btn {
@@ -122,6 +123,10 @@
   max-width: 135px;
   width: 100%;
   border-radius: 10px;
+
+  &:hover {
+    background: $olive;
+  }
 }
 
 .table-subsc__btns .table-subsc__btn.active {
@@ -197,10 +202,10 @@
   font-size: 12px;
   line-height: 14px;
   font-weight: 400;
-  padding: $indent-15 0 0;
+  padding: $indent-15 0;
 
   @include lgx {
-    padding: $indent-15 $indent-10 0 0;
+    padding: $indent-15 $indent-10 $indent-15 0;
     border-bottom: 1px solid $border;
     justify-content: space-between;
     flex-direction: row;
@@ -340,7 +345,14 @@ input[type="range"]::-moz-range-thumb {
   margin-top: $indent-30;
 }
 
-.table-subsc__row .table-subsc__cell:nth-child(6),
+.table-subsc__row .table-subsc__cell:nth-child(6) {
+  width: 100%;
+
+  @include lgx {
+    width: 33px;
+  }
+}
+
 .table-subsc__row .table-subsc__cell:nth-child(7) {
   width: 100%;
 
@@ -478,7 +490,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .table-subsc__row .table-subsc__cell .button-rect.btn-blue {
-  padding: $indent-10;
+  padding: 5px $indent-10;
   margin-top: $indent-15;
 
   @include lgx {
@@ -496,18 +508,6 @@ input[type="range"]::-moz-range-thumb {
   @include lgx {
     margin-top: 0;
     justify-content: flex-start;
-  }
-}
-
-.table-subsc__cell-btn {
-  display: none;
-
-  @include lgx {
-   display: flex;
-  }
-
-  @include lg {
-    display: none;
   }
 }
 
@@ -539,13 +539,20 @@ svg.table-subsc__cell-btn {
   color: #B3B3B3;
 }
 
-.table-subsc__top-cls svg{
+.table-subsc__top-cls {
   position: absolute;
   top: 5px;
   right: 5px;
-  width: 15px;
-  height: 15px;
+  width: 21px;
+  height: 21px;
   flex-shrink: 0;
+  color: #5670B5;
+  cursor: pointer;
+}
+
+.table-subsc__top-cls svg {
+  width: 21px;
+  height: 21px;
 }
 
 .table-subsc__row-wrap {
