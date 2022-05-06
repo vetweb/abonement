@@ -137,6 +137,14 @@
 	}
 }
 
+.main-banner__col-small .main-banner__col20-hidden .main-banner__col20-fullcol {
+	align-items: stretch;
+}
+
+.main-banner__col-small .main-banner__col20-hidden .card-s__el-img {
+	height: 100%;
+}
+
 .main-banner__col-small .main-banner__col20-visible {
 	display: flex;
 	flex-direction: row;

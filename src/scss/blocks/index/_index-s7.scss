@@ -11,42 +11,6 @@
 	}
 }
 
-.index-s__top h2::first-letter {
-	color: $blue;
-}
-
-.index-s__top h3::first-letter {
-	color: $blue;
-}
-
-.index-s__top {
-	margin-bottom: $indent-20;
-	@include flex(baseline, space-between);
-	flex-direction: column;
-
-	@include sm {
-		flex-direction: row;
-		align-items: center;
-		margin-bottom: $indent-30;
-	}
-}
-
-.index-s__top a {
-	color: $blue;
-	text-decoration: underline;
-
-	&:hover {
-		text-decoration: none;
-		color: $orange-dark;
-	}
-
-	@include sm-down {
-		margin-top: $indent-15;
-		font-size: 14px;
-		line-height: 17px;
-	}
-}
-
 .index-s__top.index-s7__top .button-rect {
 	font-weight: bold;
 }

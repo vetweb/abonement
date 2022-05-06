@@ -1,0 +1,43 @@
+
+.index-s__top {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include sm {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: $indent-30;
+  }
+}
+
+.index-s__top * {
+  @include sm-down {
+    margin-bottom: 15px;
+  }
+}
+
+.index-s__top h2::first-letter {
+  color: $blue;
+}
+
+.index-s__top h3::first-letter {
+  color: $blue;
+}
+
+.index-s__top a {
+  color: $blue;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+    color: $orange-dark;
+  }
+
+  @include sm-down {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

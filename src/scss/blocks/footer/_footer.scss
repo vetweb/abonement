@@ -14,7 +14,11 @@
   margin-bottom: $indent-30;
 
   @include sm {
-    margin-bottom: $indent-40;
+    margin-bottom: 0;
+  }
+
+  @include lg {
+    margin-bottom: $indent-25;
   }
 }
 
@@ -69,7 +73,12 @@
 }
 
 .cont__mail {
-  margin-left: 7px;
+  display: flex;
+  align-items: center;
+}
+
+.cont__icon {
+  margin-right: 8px;
 }
 
 .footer-col80 {
@@ -82,6 +91,10 @@
   @include lg {
     width: 75%;
   }
+}
+
+.footer__list {
+  margin-top: 20px;
 }
 
 .footer-col30 {

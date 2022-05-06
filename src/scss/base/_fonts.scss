@@ -12,18 +12,6 @@
 
 @font-face {
 	font-family: 'SF Pro Display';
-	src: url('/build/fonts/SFProDisplay-Heavy.eot');
-	src: local('SF Pro Display Heavy'), local('SFProDisplay-Heavy'),
-	url('/build/fonts/SFProDisplay-Heavy.eot?#iefix') format('embedded-opentype'),
-	url('/build/fonts/SFProDisplay-Heavy.woff2') format('woff2'),
-	url('/build/fonts/SFProDisplay-Heavy.woff') format('woff'),
-	url('/build/fonts/SFProDisplay-Heavy.ttf') format('truetype');
-	font-weight: 900;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'SF Pro Display';
 	src: url('/build/fonts/SFProDisplay-UltralightItalic.eot');
 	src: local('SF Pro Display UltralightItalic'), local('SFProDisplay-UltralightItalic'),
 	url('/build/fonts/SFProDisplay-UltralightItalic.eot?#iefix') format('embedded-opentype'),
@@ -91,18 +79,6 @@
 	url('/build/fonts/SFProDisplay-Bold.woff') format('woff'),
 	url('/build/fonts/SFProDisplay-Bold.ttf') format('truetype');
 	font-weight: bold;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'SF Pro Display';
-	src: url('/build/fonts/SFProDisplay-Black.eot');
-	src: local('SF Pro Display Black'), local('SFProDisplay-Black'),
-	url('/build/fonts/SFProDisplay-Black.eot?#iefix') format('embedded-opentype'),
-	url('/build/fonts/SFProDisplay-Black.woff2') format('woff2'),
-	url('/build/fonts/SFProDisplay-Black.woff') format('woff'),
-	url('/build/fonts/SFProDisplay-Black.ttf') format('truetype');
-	font-weight: 900;
 	font-style: normal;
 }
 
@@ -176,18 +152,6 @@
 	url('/fonts/SFProDisplay-Semibold.ttf') format('truetype');
 	font-weight: 600;
 	font-style: normal;
-}
-
-@font-face {
-	font-family: 'SF Pro Display';
-	src: url('/build/fonts/SFProDisplay-HeavyItalic.eot');
-	src: local('SF Pro Display HeavyItalic'), local('SFProDisplay-HeavyItalic'),
-	url('/build/fonts/SFProDisplay-HeavyItalic.eot?#iefix') format('embedded-opentype'),
-	url('/build/fonts/SFProDisplay-HeavyItalic.woff2') format('woff2'),
-	url('/build/fonts/SFProDisplay-HeavyItalic.woff') format('woff'),
-	url('/build/fonts/SFProDisplay-HeavyItalic.ttf') format('truetype');
-	font-weight: 900;
-	font-style: italic;
 }
 
 @font-face {

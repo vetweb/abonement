@@ -67,7 +67,6 @@
                             <p class="main-banner__col20-desc link-s">Рекламный баннер</p>
                             <div class="main-banner__col20-link">
                                 <span class="text-xxs link-base">Подробнее > </span>
-                                <img src='/img/' class="main-banner__col20-img" alt="">
                             </div>
                         </a>
                         <a href="##" class="main-banner__col20-col">
@@ -76,7 +75,6 @@
                             <p class="main-banner__col20-desc link-s">Рекламный баннер</p>
                             <div class="main-banner__col20-link">
                                 <span class="text-xxs link-base">Подробнее > </span>
-                                <img src='/img/' class="main-banner__col20-img" alt="">
                             </div>
                         </a>
                     </div>
@@ -119,6 +117,15 @@
                         <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
+                        <div class="swiper-slide card-m__list-el js-item-card">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="swiper-slide card-m__list-el js-item-card">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="swiper-slide card-m__list-el js-item-card">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
                     </div>
                     <div class="swiper-scrollbar"></div>
                     <div class="swiper-button-prev btn__prev"><img src="/img/arrow-prev.svg" alt=""></div>
@@ -128,6 +135,22 @@
             <div class="card-l-slider">
                 <div class="standard-slider js-standard-slider swiper-container free-slider">
                     <div class="swiper-wrapper grid-cards__list">
+                        <div class="swiper-slide card-l__list-el" style="background-image: url('/img/bg1-sl.png');">
+                            <div class="card-l card">
+                                <a href="#" class="card__fake-link"></a>
+                                <div class="button-max">
+                                    <span class="currency">Сезонная подборка</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card-l__list-el" style="background-image: url('/img/bg1-sl.png');">
+                            <div class="card-l card">
+                                <a href="#" class="card__fake-link"></a>
+                                <div class="button-max">
+                                    <span class="currency">Сезонная подборка</span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="swiper-slide card-l__list-el" style="background-image: url('/img/bg1-sl.png');">
                             <div class="card-l card">
                                 <a href="#" class="card__fake-link"></a>
@@ -174,6 +197,22 @@
                             @@include('components/blocks/bem/_card-s.html')
                             @@include('components/blocks/bem/_circle-btn.html')
                         </div>
+                        <div class="swiper-slide card-s__list-el js-item-card">
+                            @@include('components/blocks/bem/_card-s.html')
+                            @@include('components/blocks/bem/_circle-btn.html')
+                        </div>
+                        <div class="swiper-slide card-s__list-el js-item-card">
+                            @@include('components/blocks/bem/_card-s.html')
+                            @@include('components/blocks/bem/_circle-btn.html')
+                        </div>
+                        <div class="swiper-slide card-s__list-el js-item-card">
+                            @@include('components/blocks/bem/_card-s.html')
+                            @@include('components/blocks/bem/_circle-btn.html')
+                        </div>
+                        <div class="swiper-slide card-s__list-el js-item-card">
+                            @@include('components/blocks/bem/_card-s.html')
+                            @@include('components/blocks/bem/_circle-btn.html')
+                        </div>
                         <div class="swiper-slide card-s__list-el">
                             @@include('components/blocks/bem/_card-s.html')
                             @@include('components/blocks/bem/_circle-btn.html')
@@ -199,6 +238,15 @@
             <div class="card-m-slider">
                 <div class="standard-slider js-standard-slider swiper-container free-slider">
                     <div class="swiper-wrapper grid-cards__list">
+                        <div class="swiper-slide card-m__list-el js-item-card">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="swiper-slide card-m__list-el js-item-card">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="swiper-slide card-m__list-el js-item-card">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
                         <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
@@ -279,7 +327,7 @@
                 <div class="index-s__top-img">
                     <img src="/img/glossy.png" alt="">
                 </div>
-                <button class="button-rect btn-blue">Подробнее о нас</button>
+                <a href="##" class="button-rect btn-blue">Подробнее о нас</a>
             </div>
             <div class="index-s__top index-s7__top">
                 <h2 class="h2">Виды спорта</h2>
@@ -330,7 +378,7 @@
             <div class="form-gray__inner">
                 <form class=" form-gray">
                     <p class="text-m">Подпишись на спортивную рассылку</p>
-                    <input class="form-gray__input" type="email" required placeholder="Введите почту"/>
+                    <input class="form-gray__input" type="text" required placeholder="Введите почту"/>
                     <button class="button-rect btn-blue button-xs">Подписаться</button>
                 </form>
                 <img src="/img/man.png" class="form-gray__img" alt="">

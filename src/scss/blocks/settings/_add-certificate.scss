@@ -191,6 +191,7 @@
   width: 20px;
   height: 20px;
   color: #D4DCE3;
+  cursor: pointer;
 }
 
 .row-product .row-product__col--middle .row-acc-grid__cell:hover .row-acc__list-icon svg {
@@ -215,7 +216,6 @@
 .row-product .row-product__col--middle .row-acc-grid__cell{
   @include sm {
     text-align: center;
-    cursor: pointer;
   }
 }
 

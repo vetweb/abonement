@@ -129,6 +129,7 @@
 	padding-left: $indent-10;
 	padding-right: $indent-10;
 	border: 1px solid $white;
+	transition: background .2s ease;
 
 	&:hover {
 		background: #2c4ca3;

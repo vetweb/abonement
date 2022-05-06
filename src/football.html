@@ -101,13 +101,11 @@
                                     <div class="xs-slide__card">
                                         <img src="/img/banner-bg1.png" alt="">
                                     </div>
-                                    @@include('components/blocks/bem/_favorites.html')
                                 </div>
                                 <div class="swiper-slide xs-slide">
                                     <div class="xs-slide__card">
                                         <img src="/img/banner-bg1.png" alt="">
                                     </div>
-                                    @@include('components/blocks/bem/_favorites.html')
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
@@ -160,13 +158,23 @@
             <div class="card-cd-s3__slider">
                 <div class="card3-slider js-card3-slider swiper-container">
                     <div class="swiper-wrapper card3-wrapper">
-                        <div class="swiper-slide card3-slide">
+                        <a href="##" class="swiper-slide card3-slide">
                             <div class="card3-slide__image">
                                 <img src="/img/football1.png" alt="">
                             </div>
-                        </div>
-                        <div class="swiper-slide card3-slide">
-                            <div class="card3-slide__image card3-slide__image--gray">
+                            <div class="card-m__el-top">
+                                <span class="card-m__el-title text-sx">Заголовок абонемента</span>
+                                <div class="favorites-block js-favorites-block">
+                                    <span class="feedback__img">
+                                        <svg>
+                                            <use xlink:href="/img/sprite.svg#heart"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="##" class="swiper-slide card3-slide">
+                            <div class="card3-slide__image">
                                 <img src="/img/place3.png" alt="">
                             </div>
                             <div class="card-m__el-top">
@@ -179,17 +187,37 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide card3-slide">
+                        </a>
+                        <a href="##" class="swiper-slide card3-slide">
                             <div class="card3-slide__image">
                                 <img src="/img/place2.png" alt="">
                             </div>
-                        </div>
-                        <div class="swiper-slide card3-slide">
+                            <div class="card-m__el-top">
+                                <span class="card-m__el-title text-sx">Заголовок абонемента</span>
+                                <div class="favorites-block js-favorites-block">
+                                    <span class="feedback__img">
+                                        <svg>
+                                            <use xlink:href="/img/sprite.svg#heart"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="##" class="swiper-slide card3-slide">
                             <div class="card3-slide__image">
                                 <img src="/img/banner-bg1.png" alt="">
                             </div>
-                        </div>
+                            <div class="card-m__el-top">
+                                <span class="card-m__el-title text-sx">Заголовок абонемента</span>
+                                <div class="favorites-block js-favorites-block">
+                                    <span class="feedback__img">
+                                        <svg>
+                                            <use xlink:href="/img/sprite.svg#heart"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                     <div class="swiper-scrollbar"></div>
                     <div class="swiper-button-prev btn-transparent btn__prev"><img src="/img/arrow-prev.svg" alt="">
@@ -288,11 +316,11 @@
                                 что сын нашёл свой спорт и свой клуб! </p>
                         </div>
                         <div class="reviews-btn">
-                            <a href="#" class="reviews-btn__link-desk h5">
+                            <a href="#" class="reviews-btn__link-desk h5 link-base">
                                 <span>Смотреть еще</span>
                             </a>
                             <a href="#" class="reviews-btn__link-mob h5 link-base">Подробнее</a>
-                            <button class="button-rect btn-blue">Написать отзыв</button>
+                            <a href="##" class="button-rect btn-blue">Написать отзыв</a>
                         </div>
                     </div>
                 </div>
@@ -305,6 +333,15 @@
             <div class="card-m-slider">
                 <div class="standard-slider js-standard-slider swiper-container free-slider">
                     <div class="swiper-wrapper grid-cards__list">
+                        <div class="swiper-slide card-m__list-el js-item-card">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="swiper-slide card-m__list-el js-item-card">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="swiper-slide card-m__list-el js-item-card">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
                         <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
@@ -331,6 +368,15 @@
             <div class="card-m-slider">
                 <div class="standard-slider js-standard-slider swiper-container free-slider">
                     <div class="swiper-wrapper grid-cards__list">
+                        <div class="swiper-slide card-m__list-el js-item-card">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="swiper-slide card-m__list-el js-item-card">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="swiper-slide card-m__list-el js-item-card">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
                         <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>

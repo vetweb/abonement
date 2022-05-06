@@ -10,129 +10,136 @@
 <body>
 @@include('components/blocks/page/_header.html')
 <main class="main" style="background-color: #D8EDFE;">
-  <section class="card-cd-s1" style="background-image: url('/img/main-bg.svg');">
-      <div class="container">
-          <ol class="breadcrumbs-block">
-              <li class="breadcrumbs-block__item">
-                  <a href="#" class="breadcrumbs-block__link" title="Олимпийские виды спорта">
-                      <span class="breadcrumbs-block__text text-xs">Олимпийские виды спорта</span>
-                  </a>
-              </li>
-              <li class="breadcrumbs-block__item">
-                  <a href="#" class="breadcrumbs-block__link" title="Олимпийские виды спорта">
-                      <span class="breadcrumbs-block__text text-xs">Вид спорта</span>
-                  </a>
-              </li>
-              <li class="breadcrumbs-block__item">
-                  <span class="breadcrumbs-block__text text-xs">Абонемент</span>
-              </li>
-          </ol>
-          <div class="card-cd-s1__row grid-row">
-              <div class="card-cd-s1__col50 grid-col50 col50-reverse">
-                  <h3 class="h3">Фитнес зал + баня</h3>
-                  <div class="grid-column">
-                      @@include('components/blocks/bem/_row-link-ic.html')
-                      @@include('components/blocks/bem/_row-link-ic--mob.html')
-                      <div class="grid-row">
-                          <p class="grid-row__address grid-row__address--desk">г. Свилочь, ул. К.Калиновского 2</p>
-                          <p class="grid-row__address grid-row__address--mob">Беларусь, Минск, пр. Победителей, 84 (ТРЦ ARENAcity, 2-й этаж – Детский развлекательный центр «Карамелька»)</p>
-                          <a href="#" class="link-s grid-row__link">Посмотреть на карте</a>
-                      </div>
-                  </div>
-                  <div class="grid-icon">
-                      <div class="grid-icon__el">
-                          <div class="grid-icon__image">
-                              <svg class="icon-svg" viewBox="0 0 24 24">
-                                  <use xlink:href="/img/sprite.svg#grid-icon1"></use>
-                              </svg>
-                          </div>
-                          <div class="grid-icon-info">
-                              <span class="link-s">Кол-во в месяц</span>
-                              <span class="text-sx">8 занятий</span>
-                          </div>
-                      </div>
-                      <div class="grid-icon__el">
-                          <div class="grid-icon__image">
-                              <svg class="icon-svg" viewBox="0 0 24 24">
-                                  <use xlink:href="/img/sprite.svg#grid-icon2"></use>
-                              </svg>
-                          </div>
-                          <div class="grid-icon-info">
-                              <span class="link-s">Дни занятий</span>
-                              <span class="text-sx">Пн, Пт</span>
-                          </div>
-                      </div>
-                      <div class="grid-icon__el">
-                          <div class="grid-icon__image">
-                              <svg class="icon-svg" viewBox="0 0 24 24">
-                                  <use xlink:href="/img/sprite.svg#grid-icon3"></use>
-                              </svg>
-                          </div>
-                          <div class="grid-icon-info">
-                              <span class="link-s">Начало занятий</span>
-                              <span class="text-sx">16:00, 20:00</span>
-                          </div>
-                      </div>
-                      <div class="grid-icon__el">
-                          <div class="grid-icon__image">
-                              <svg class="icon-svg" viewBox="0 0 24 24">
-                                  <use xlink:href="/img/sprite.svg#grid-icon4"></use>
-                              </svg>
-                          </div>
-                          <div class="grid-icon-info">
-                              <span class="link-s">Тип занятия</span>
-                              <span class="text-sx">Индивидуальное</span>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="button-block">
-                      <div class="button-block__info">
-                          <span class="button-block__desc">Цена со скидкой:</span>
-                          <div class="button-block__sum">
-                              <span class="value button-s">48</span>
-                              <span class="currency button-s ">Br</span>
-                              <div class="button-block__sum-repeal">30 Br</div>
-                          </div>
-                      </div>
-                      <button class="button-rect btn-blue link-s">Купить</button>
-                  </div>
-              </div>
-              <div class="card-cd-s1__col50 grid-col50">
-                  <div class="xs__slider">
-                      @@include('components/blocks/bem/_circle-el.html')
-                      <div class="xs-slider__container js-xs-slider swiper-container">
-                          <div class="swiper-wrapper xs-slider__wrap">
-                              <div class="swiper-slide xs-slide">
-                                  <div class="xs-slide__card">
-                                      <img src="/img/bg1-sl.png" alt="">
-                                  </div>
-                                  @@include('components/blocks/bem/_favorites.html')
-                              </div>
-                              <div class="swiper-slide xs-slide">
-                                  <div class="xs-slide__card">
-                                      <img src="/img/banner-bg1.png" alt="">
-                                  </div>
-                                  @@include('components/blocks/bem/_favorites.html')
-                              </div>
-                          </div>
-                          <div class="swiper-pagination"></div>
-                          <div class="swiper-button-prev btn-transparent btn__prev"><img src="/img/arrow-prev.svg" alt=""></div>
-                          <div class="swiper-button-next btn-transparent btn__next"><img src="/img/arrow-next.svg" alt=""></div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
+    <section class="card-cd-s1" style="background-image: url('/img/main-bg.svg');">
+        <div class="container">
+            <ol class="breadcrumbs-block">
+                <li class="breadcrumbs-block__item">
+                    <a href="#" class="breadcrumbs-block__link" title="Олимпийские виды спорта">
+                        <span class="breadcrumbs-block__text text-xs">Олимпийские виды спорта</span>
+                    </a>
+                </li>
+                <li class="breadcrumbs-block__item">
+                    <a href="#" class="breadcrumbs-block__link" title="Олимпийские виды спорта">
+                        <span class="breadcrumbs-block__text text-xs">Вид спорта</span>
+                    </a>
+                </li>
+                <li class="breadcrumbs-block__item">
+                    <span class="breadcrumbs-block__text text-xs">Абонемент</span>
+                </li>
+            </ol>
+            <div class="card-cd-s1__row grid-row">
+                <div class="card-cd-s1__col50 grid-col50 col50-reverse">
+                    <h3 class="h3">Фитнес зал + баня</h3>
+                    <div class="grid-column">
+                        @@include('components/blocks/bem/_row-link-ic.html')
+                        @@include('components/blocks/bem/_row-link-ic--mob.html')
+                        <div class="grid-row">
+                            <p class="grid-row__address grid-row__address--desk">г. Свилочь, ул. К.Калиновского 2</p>
+                            <p class="grid-row__address grid-row__address--mob">Беларусь, Минск, пр. Победителей, 84
+                                (ТРЦ ARENAcity, 2-й этаж – Детский развлекательный центр «Карамелька»)</p>
+                            <a href="#" class="link-s grid-row__link">Посмотреть на карте</a>
+                        </div>
+                    </div>
+                    <div class="grid-icon">
+                        <div class="grid-icon__el">
+                            <div class="grid-icon__image">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <use xlink:href="/img/sprite.svg#grid-icon1"></use>
+                                </svg>
+                            </div>
+                            <div class="grid-icon-info">
+                                <span class="link-s">Кол-во в месяц</span>
+                                <span class="text-sx">8 занятий</span>
+                            </div>
+                        </div>
+                        <div class="grid-icon__el">
+                            <div class="grid-icon__image">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <use xlink:href="/img/sprite.svg#grid-icon2"></use>
+                                </svg>
+                            </div>
+                            <div class="grid-icon-info">
+                                <span class="link-s">Дни занятий</span>
+                                <span class="text-sx">Пн, Пт</span>
+                            </div>
+                        </div>
+                        <div class="grid-icon__el">
+                            <div class="grid-icon__image">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <use xlink:href="/img/sprite.svg#grid-icon3"></use>
+                                </svg>
+                            </div>
+                            <div class="grid-icon-info">
+                                <span class="link-s">Начало занятий</span>
+                                <span class="text-sx">16:00, 20:00</span>
+                            </div>
+                        </div>
+                        <div class="grid-icon__el">
+                            <div class="grid-icon__image">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <use xlink:href="/img/sprite.svg#grid-icon4"></use>
+                                </svg>
+                            </div>
+                            <div class="grid-icon-info">
+                                <span class="link-s">Тип занятия</span>
+                                <span class="text-sx">Индивидуальное</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-block">
+                        <div class="button-block__info">
+                            <span class="button-block__desc">Цена со скидкой:</span>
+                            <div class="button-block__sum">
+                                <span class="value button-s">48</span>
+                                <span class="currency button-s ">Br</span>
+                                <div class="button-block__sum-repeal">30 Br</div>
+                            </div>
+                        </div>
+                        <button class="button-rect btn-blue link-s">Купить</button>
+                    </div>
+                </div>
+                <div class="card-cd-s1__col50 grid-col50">
+                    <div class="xs__slider">
+                        @@include('components/blocks/bem/_circle-el.html')
+                        <div class="xs-slider__container js-xs-slider swiper-container">
+                            <div class="swiper-wrapper xs-slider__wrap">
+                                <div class="swiper-slide xs-slide">
+                                    <div class="xs-slide__card">
+                                        <img src="/img/bg1-sl.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide xs-slide">
+                                    <div class="xs-slide__card">
+                                        <img src="/img/banner-bg1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev btn-transparent btn__prev"><img src="/img/arrow-prev.svg"
+                                                                                           alt=""></div>
+                            <div class="swiper-button-next btn-transparent btn__next"><img src="/img/arrow-next.svg"
+                                                                                           alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="card-cd-s2">
         <div class="container">
             <div class="card-cd-s2__row">
                 <div class="card-cd-s2__col50 grid-col50">
                     <h3 class="h3">Описание и условия</h3>
                     <div class="card-cd-s2__desc">
-                        <p class="card-cd-s2__desc-el">Интересно отметить, что продвижение проекта конструктивно. Узнавание бренда настроено позитивно. Диктат потребителя, следовательно, осмысленно концентрирует потребительский комплексный анализ ситуации. Рекламный макет специфицирует продвигаемый медиамикс. Привлечение аудитории сознательно продуцирует социометрический рекламный макет. Узнаваемость марки консолидирует из ряда вон выходящий медийный канал.</p>
+                        <p class="card-cd-s2__desc-el">Интересно отметить, что продвижение проекта конструктивно.
+                            Узнавание бренда настроено позитивно. Диктат потребителя, следовательно, осмысленно
+                            концентрирует потребительский комплексный анализ ситуации. Рекламный макет специфицирует
+                            продвигаемый медиамикс. Привлечение аудитории сознательно продуцирует социометрический
+                            рекламный макет. Узнаваемость марки консолидирует из ряда вон выходящий медийный канал.</p>
                         <p class="card-cd-s2__desc-el">
-                            Креативная концепция консолидирует конвергентный product placement. Контент основательно подпорчен предыдущим опытом применения. Как отмечает Майкл Мескон, восприятие марки трансформирует межличностный контент, полагаясь на инсайдерскую информацию.</p>
+                            Креативная концепция консолидирует конвергентный product placement. Контент основательно
+                            подпорчен предыдущим опытом применения. Как отмечает Майкл Мескон, восприятие марки
+                            трансформирует межличностный контент, полагаясь на инсайдерскую информацию.</p>
                     </div>
                 </div>
                 <div class="card-cd-s2__col50 grid-col50">
@@ -152,12 +159,22 @@
             <div class="card-cd-s3__slider">
                 <div class="card3-slider js-card3-slider swiper-container">
                     <div class="swiper-wrapper card3-wrapper">
-                        <div class="swiper-slide card3-slide">
+                        <a href="##" class="swiper-slide card3-slide">
                             <div class="card3-slide__image">
                                 <img src="/img/fitnes-bg2.png" alt="">
                             </div>
-                        </div>
-                        <div class="swiper-slide card3-slide">
+                            <div class="card-m__el-top">
+                                <span class="card-m__el-title text-sx">Заголовок абонемента</span>
+                                <div class="favorites-block js-favorites-block">
+                                    <span class="feedback__img">
+                                        <svg>
+                                            <use xlink:href="/img/sprite.svg#heart"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="##" class="swiper-slide card3-slide">
                             <div class="card3-slide__image card3-slide__image--gray">
                                 <img src="/img/fitnes-bg3.png" alt="">
                             </div>
@@ -171,17 +188,37 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide card3-slide">
+                        </a>
+                        <a href="##" class="swiper-slide card3-slide">
                             <div class="card3-slide__image">
                                 <img src="/img/banner-bg1.png" alt="">
                             </div>
-                        </div>
-                        <div class="swiper-slide card3-slide">
+                            <div class="card-m__el-top">
+                                <span class="card-m__el-title text-sx">Заголовок абонемента</span>
+                                <div class="favorites-block js-favorites-block">
+                                    <span class="feedback__img">
+                                        <svg>
+                                            <use xlink:href="/img/sprite.svg#heart"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="##" class="swiper-slide card3-slide">
                             <div class="card3-slide__image">
                                 <img src="/img/banner-bg1.png" alt="">
                             </div>
-                        </div>
+                            <div class="card-m__el-top">
+                                <span class="card-m__el-title text-sx">Заголовок абонемента</span>
+                                <div class="favorites-block js-favorites-block">
+                                    <span class="feedback__img">
+                                        <svg>
+                                            <use xlink:href="/img/sprite.svg#heart"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                     <div class="swiper-scrollbar"></div>
                     <div class="swiper-button-prev btn-transparent btn__prev"><img src="/img/arrow-prev.svg" alt=""></div>
@@ -290,6 +327,25 @@
                     </div>
                 </div>
             </div>
+            <div class="table-custom">
+                <div class="table-custom__header">
+                    <div class="table-custom__header-wrap">
+                        <div class="table-custom__cell table-custom__header-cell">Дни</div>
+                        <div class="table-custom__cell table-custom__header-cell">Время</div>
+                        <div class="table-custom__cell table-custom__header-cell">Тренер</div>
+                        <div class="table-custom__cell table-custom__header-cell">Направление</div>
+                        <div class="table-custom__cell table-custom__header-cell">Кол-во в мес.</div>
+                    </div>
+                </div>
+                <div class="table-custom__row">
+                    <div class="table-custom__cell">Пн, Cр, Пт</div>
+                    <div class="table-custom__cell">09:00 - 10:00</div>
+                    <div class="table-custom__cell">Иванова А. А.</div>
+                    <div class="table-custom__cell">Stretching</div>
+                    <div class="table-custom__cell">8</div>
+                    <div class="table-custom__cell table-custom__cell-buttons"><a href="#" class="button-rect btn-white link-s">Подробнее</a></div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="card-cd-s5">
@@ -328,7 +384,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="reviews-block__text text-s">Сын очень доволен их команда выигрывает футбольные турниры.</p>
+                            <p class="reviews-block__text text-s">Сын очень доволен их команда выигрывает футбольные
+                                турниры.</p>
                         </div>
                         <div class="reviews-block__review">
                             <div class="reviews-block__review-inner">
@@ -347,14 +404,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="reviews-block__text text-s">Ребёнок занимается уже 5 месяцев. Готов бежать на тренировку 24/7, страдает, что нет возможности заниматься каждый день)). Мы очень рады, что сын нашёл свой спорт и свой клуб! </p>
+                            <p class="reviews-block__text text-s">Ребёнок занимается уже 5 месяцев. Готов бежать на
+                                тренировку 24/7, страдает, что нет возможности заниматься каждый день)). Мы очень рады,
+                                что сын нашёл свой спорт и свой клуб! </p>
                         </div>
                         <div class="reviews-btn">
-                            <a href="#" class="reviews-btn__link-desk h5">
+                            <a href="#" class="reviews-btn__link-desk h5 link-base">
                                 <span>Смотреть еще</span>
                             </a>
                             <a href="#" class="reviews-btn__link-mob h5 link-base">Подробнее</a>
-                            <button class="button-rect btn-blue">Написать отзыв</button>
+                            <a href="##" class="button-rect btn-blue">Написать отзыв</a>
                         </div>
                     </div>
                 </div>
@@ -367,6 +426,15 @@
             <div class="card-m-slider">
                 <div class="standard-slider js-standard-slider swiper-container free-slider">
                     <div class="swiper-wrapper grid-cards__list">
+                        <div class="swiper-slide card-m__list-el js-item-card">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="swiper-slide card-m__list-el js-item-card">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="swiper-slide card-m__list-el js-item-card">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
                         <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>
@@ -393,6 +461,15 @@
             <div class="card-m-slider">
                 <div class="standard-slider js-standard-slider swiper-container free-slider">
                     <div class="swiper-wrapper grid-cards__list">
+                        <div class="swiper-slide card-m__list-el js-item-card">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="swiper-slide card-m__list-el js-item-card">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
+                        <div class="swiper-slide card-m__list-el js-item-card">
+                            @@include('components/blocks/bem/_card-m.html')
+                        </div>
                         <div class="swiper-slide card-m__list-el js-item-card">
                             @@include('components/blocks/bem/_card-m.html')
                         </div>

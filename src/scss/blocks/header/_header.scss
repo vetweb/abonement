@@ -14,7 +14,7 @@
 .header__top {
 	position: relative;
 	padding: 10px 0;
-	z-index: 1;
+	z-index: 101;
 
 	@include md {
 		padding: 20px 0;

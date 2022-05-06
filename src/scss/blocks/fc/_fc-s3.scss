@@ -184,7 +184,7 @@
 
 .card-big__el-footer .button-full,
 .card-big-ic__el-footer .button-full {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   vertical-align: bottom;
   width: 100%;
@@ -192,6 +192,8 @@
   padding: $indent-10;
   color: $white;
   margin: auto 0 0;
+  text-decoration: none;
+  z-index: 2;
 }
 
 .card-big-ic__el-desc {

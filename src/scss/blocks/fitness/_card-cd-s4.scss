@@ -61,6 +61,70 @@
 	margin-bottom: $indent-30;
 }
 
+//table-custom
+.table-custom {
+	background-color: $white;
+	border: 1px solid #E5E5E5;
+	box-sizing: border-box;
+	box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
+	border-radius: 10px;
+	padding: $indent-15 $indent-15 $indent-30;
+	font-size: 18px;
+	line-height: 21px;
+
+	@include lg {
+		padding: $indent-20 $indent-30 $indent-40;
+	}
+}
+
+.table-custom__header {
+	@include lg {
+		padding: 16px 25px;
+	}
+}
+
+.table-custom__header-wrap {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.8fr;
+}
+
+.table-custom__row {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.8fr;
+	border-radius: 15px;
+	transition: background-color .2s ease;
+
+	@include lg {
+		padding: 16px 25px;
+	}
+
+	.btn-white {
+		font-weight: 600;
+	}
+
+	&:hover {
+		background-color: #ECF6FF;
+
+		.btn-white {
+			background-color: $blue;
+			border: 1px solid $blue;
+			color: $white;
+		}
+	}
+}
+
+.table-custom__cell {
+	align-self: center;
+
+	@include lg {
+		color: $blue;
+	}
+}
+
+.table-custom__header-cell {
+	color: #374160;
+}
+
 .card-cd-s4 .table-m__body {
 	display: flex;
 	flex-direction: column;

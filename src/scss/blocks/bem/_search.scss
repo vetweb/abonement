@@ -2,10 +2,14 @@
 	max-width: 517px;
 }
 
+.search__field-active {
+	padding-left: 10px;
+}
+
 .search__field-active .search__input {
 	border-bottom-color: white !important;
 	border-radius: 0;
-	visibility: visible;
+	visibility: visible !important;
 }
 
 .search__input {

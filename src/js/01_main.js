@@ -362,7 +362,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	function FavoritesToggle() {
 		let cards = document.querySelectorAll('.js-item-card');
 		cards.forEach((item) => {
-			let cardContent = item.querySelector('.card-company__el-content');
 			let favoriteIcons = item.querySelector('.js-favorites-block');
 			favoriteIcons.addEventListener("click", function () {
 				console.log('click')

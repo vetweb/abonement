@@ -3,6 +3,10 @@
 	overflow-y: auto;
 }
 
+.catalog-alpha__modal-city .catalog-alpha-row {
+	margin-top: 0;
+}
+
 .catalog-alpha__tag {
 	padding: 0;
 	margin: 0 0 20px 0;
@@ -44,10 +48,14 @@
 
 .catalog-alpha-list__header {
 	width: 5.33333%;
-	padding: 20px;
+	padding: 10px 20px;
 	color: #051138;
 	font-size: 24px;
 	font-weight: bold;
+
+	.catalog-alpha__modal-city & {
+		padding: 20px 20px 0;
+	}
 }
 
 .catalog-alpha-col {
@@ -60,7 +68,7 @@
 .catalog-alpha-col li {
 	list-style: none;
 	padding: 0;
-	margin: 0 0 15px 0;
+	margin: 0 0 10px 0;
 }
 
 .catalog-alpha-col li a {

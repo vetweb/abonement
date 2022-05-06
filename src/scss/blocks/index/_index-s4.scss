@@ -210,6 +210,10 @@
   }
 }
 
+.card-s__button {
+  z-index: 2;
+}
+
 .card-s__sales {
   display: flex;
   margin-bottom: $indent-15;
@@ -237,6 +241,7 @@
   padding: $indent-10;
   margin: auto 0 0;
   transition: all .2s;
+  text-decoration: none;
 }
 
 .button-full__i {
