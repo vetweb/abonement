@@ -5,6 +5,8 @@
 
 	@include lg {
 		z-index: 1;
+		height: auto;
+		visibility: visible;
 		@include flex(center, space-between);
 	}
 }
