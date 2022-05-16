@@ -1,139 +1,144 @@
 .report-s1 {
-  padding: 0 0 60px;
-  background-color: $white;
+	padding: 0 0 60px;
+	background-color: $white;
 
-  @include sm {
-    background-color: transparent;
-    padding: 0 0 60px;
-  }
+	@include sm {
+		background-color: transparent;
+		padding: 0 0 60px;
+	}
 
-  @include lgx {
-    padding: 60px 0 100px;
-  }
+	@include lgx {
+		padding: 60px 0 100px;
+	}
 }
 
 .report-s1 .row-product.row-certif {
-  margin-bottom: $indent-20;
+	margin-bottom: $indent-20;
 }
 
 .report-s1 .row-acc-grid__body .row-acc-grid__top.row-acc-grid__row {
-  @include lg {
-    justify-content: flex-start;
-  }
+	@include lg {
+		justify-content: flex-start;
+	}
 }
 
 .report-s .pagination-block {
-  display: none;
+	display: none;
 
-  @include lg {
-    display: flex;
-  }
+	@include lg {
+		display: flex;
+	}
 }
 
 .report-s .row-acc-grid__row {
-  @include lg-down {
-    margin-bottom: 0;
-  }
+	@include lg-down {
+		margin-bottom: 0;
+	}
 }
 
 .product-list-s.report-s .row-product .row-product__col--middle .row-acc-grid__row--body {
-  @include lg-down {
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    padding: $indent-10 0;
-  }
+	@include lg-down {
+		display: flex;
+		flex-direction: row;
+		align-items: start;
+		padding: $indent-10 0;
+	}
 }
 
 .report-s .row-acc-grid__row--body .row-acc-grid__row.row-acc-grid__row-bottom {
-  width: 100%;
-  justify-content: space-between;
+	width: 100%;
+	justify-content: space-between;
 
-  @include lg-down {
-    border-top: 1px solid #f3f3f3;
-  }
+	@include lg-down {
+		border-top: 1px solid #f3f3f3;
+	}
 }
 
 .favorited-s.report-s .row-acc-grid__row--body .row-acc-grid__row.row-acc-grid__row-bottom,
 .views-s.report-s .row-acc-grid__row--body .row-acc-grid__row.row-acc-grid__row-bottom {
-  justify-content: flex-start;
+	justify-content: flex-start;
 }
 
 .row-acc-grid__top.row-acc-grid__row.row-acc-grid__row--desk {
-  justify-content: space-between;
+	justify-content: space-between;
 
-  @include lg-down {
-    width: 100%;
-  }
+	@include lg-down {
+		width: 100%;
+	}
 }
 
 .row-product__col--middle .row-acc-grid__top.row-acc-grid__row .row-acc-grid__cell.row-acc-grid__cell--top.active {
-  color: $blue;
-  border-bottom: 1px solid $blue;
+	color: $blue;
+	border-bottom: 1px solid $blue;
 }
 
 .row-acc-grid__top.row-acc-grid__row.row-acc-grid__row--desk.row-acc-grid__row--mr {
-  padding: 0;
-  max-width: 600px;
-  width: 100%;
+	padding: 0;
+	max-width: 600px;
+	width: 100%;
 
-  @include lg-down {
-    width: 100%;
-  }
+	@include lg-down {
+		width: 100%;
+	}
 }
 
 .row-acc-grid__top.row-acc-grid__row.row-acc-grid__row--desk.row-acc-grid__row--mr .row-acc-grid__cell {
-  padding: $indent-10 0;
+	padding: $indent-10 0;
+	cursor: pointer;
+}
+
+.row-acc-grid__top.row-acc-grid__row.row-acc-grid__row--desk.row-acc-grid__row--mr .row-acc-grid__cell span:last-child {
+	margin-left: 5px;
 }
 
 .report-s .row-product .row-product__col--middle .row-acc-grid__cell-img {
-  width: 110px;
-  height: 89px;
-  flex-shrink: 0;
+	width: 110px;
+	height: 89px;
+	flex-shrink: 0;
 }
 
 .report-s .row-product .row-product__col--middle .row-acc-grid__cell-img img {
-  width: 110px;
-  height: 89px;
-  flex-shrink: 0;
+	width: 110px;
+	height: 89px;
+	flex-shrink: 0;
 }
 
 .report-s .row-acc-grid__row.row-acc-grid__row--mob {
-  @include lg-down {
-    margin-bottom: 0;
-  }
+	@include lg-down {
+		margin-bottom: 0;
+	}
 }
 
 .report-s .row-acc-grid__row--body:last-child {
-  @include lg-down {
-    margin-bottom: 0;
-  }
+	@include lg-down {
+		margin-bottom: 0;
+	}
 
-  @include lg {
-    margin-bottom: $indent-50;
-  }
+	@include lg {
+		margin-bottom: $indent-50;
+	}
 }
 
 .report-s .row-product__col-top.row-product__col-top--btns {
-  @include lg-down {
-    padding: $indent-10 0;
-  }
+	@include lg-down {
+		padding: $indent-10 0;
+	}
 }
 
 .row-acc-grid__cell-price {
-  font-size: 16px;
-  line-height: 21px;
-  font-weight: bold;
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: bold;
 }
 
 .views-s .row-product__col-btns,
 .favorited-s .row-product__col-btns {
-  @include lg {
-    width: fit-content;
-  }
+	@include lg {
+		width: fit-content;
+	}
 }
 
 .views-s .form__field.search__field,
 .favorited-s .form__field.search__field {
-  margin-right: $indent-10;
+	margin-right: $indent-10;
 }

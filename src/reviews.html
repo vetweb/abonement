@@ -24,7 +24,7 @@
             </ol>
             <div class="fc-s1__wrap">
                 <div class="index-s__top">
-                    <h2 class="h2">Футбольный клуб “Football team Svyloch”</h2>
+                    <h2 class="h2">Футбольный клуб “Football team Svysloch”</h2>
                 </div>
                 <div class="fc-s1__top grid-row">
                     <div class="grid-col30">
@@ -40,7 +40,9 @@
                     <div class="grid-col70">
                         <p class="grid-row__address grid-row__address--desk">г. Свилочь, ул. К.Калиновского 2</p>
                         @@include('components/blocks/bem/_metro-block.html')
-                        <a href="#" class="link-s grid-row__link">Посмотреть на карте</a>
+                        <address class="js-to-map-link">
+                            г. Свилочь, ул. К.Калиновского 2
+                        </address>
                     </div>
                 </div>
                 <div class="grid-row fc-s1__body">
@@ -49,7 +51,9 @@
                             <p class="grid-row__address grid-row__address--desk">г. Свилочь, ул. К.Калиновского 2</p>
                             <div class="grid-col70-inner">
                                 @@include('components/blocks/bem/_metro-block.html')
-                                <a href="#" class="link-s grid-row__link">Посмотреть на карте</a>
+                                <address class="js-to-map-link">
+                                    г. Свилочь, ул. К.Калиновского 2
+                                </address>
                             </div>
                         </div>
                         <div class="fc-s1__body-inner">
@@ -162,7 +166,7 @@
                             <div class="reviews-block__review-r">
                                 @@include('components/blocks/bem/_stars.html')
                                 <div class="recom-block">
-                                    <img src="/img/heart-red.svg" class="recom-block__img" alt="">
+                                    <img src="/img/heart-red.svg" class="recom-block__icon" alt="">
                                     <span class="recom-block__text">Рекомендую</span>
                                 </div>
                             </div>
@@ -183,7 +187,7 @@
                             <div class="reviews-block__review-r">
                                 @@include('components/blocks/bem/_stars.html')
                                 <div class="recom-block">
-                                    <img src="/img/heart-red.svg" class="recom-block__img" alt="">
+                                    <img src="/img/heart-red.svg" class="recom-block__icon" alt="">
                                     <span class="recom-block__text">Рекомендую</span>
                                 </div>
                             </div>
@@ -204,7 +208,7 @@
                             <div class="reviews-block__review-r">
                                 @@include('components/blocks/bem/_stars.html')
                                 <div class="recom-block">
-                                    <img src="/img/heart-red.svg" class="recom-block__img" alt="">
+                                    <img src="/img/heart-red.svg" class="recom-block__icon" alt="">
                                     <span class="recom-block__text">Рекомендую</span>
                                 </div>
                             </div>
@@ -225,7 +229,7 @@
                             <div class="reviews-block__review-r">
                                 @@include('components/blocks/bem/_stars.html')
                                 <div class="recom-block">
-                                    <img src="/img/heart-red.svg" class="recom-block__img" alt="">
+                                    <img src="/img/heart-red.svg" class="recom-block__icon" alt="">
                                     <span class="recom-block__text">Рекомендую</span>
                                 </div>
                             </div>
@@ -246,7 +250,7 @@
                             <div class="reviews-block__review-r">
                                 @@include('components/blocks/bem/_stars.html')
                                 <div class="recom-block">
-                                    <img src="/img/heart-red.svg" class="recom-block__img" alt="">
+                                    <img src="/img/heart-red.svg" class="recom-block__icon" alt="">
                                     <span class="recom-block__text">Рекомендую</span>
                                 </div>
                             </div>
@@ -267,7 +271,9 @@
                             <div class="reviews-block__review-r">
                                 @@include('components/blocks/bem/_stars.html')
                                 <div class="recom-block">
-                                    <img src="/img/heart-red.svg" class="recom-block__img" alt="">
+                                    <svg class="icon-svg recom-block__icon" viewBox="0 0 20 18">
+                                        <use xlink:href="/img/sprite.svg#heart"></use>
+                                    </svg>
                                     <span class="recom-block__text">Рекомендую</span>
                                 </div>
                             </div>

@@ -1,6 +1,6 @@
 .index-s7 {
 	padding: $indent-60 0 $indent-130;
-	background-color: $blue-light;
+	//background-color: $blue-light;
 
 	@include sm {
 		padding-bottom: $indent-215;
@@ -24,7 +24,7 @@
 
 	@include md {
 		grid-template-columns: repeat(auto-fit, 92px);
-		margin-bottom: $indent-180;
+		margin-bottom: 230px;
 	}
 }
 
@@ -51,48 +51,9 @@
 	align-items: center;
 }
 
-.form-gray__inner {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: $indent-25 $indent-20 $indent-20;
-	background: $gray-light;
-	box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
-	border-radius: 15px;
-	position: relative;
-
-	@include sm {
-		align-items: flex-start;
-		padding: $indent-30 $indent-30 $indent-35;
-		flex-direction: row;
-	}
-
-	@include lg {
-		flex-direction: row;
-		padding: $indent-90 $indent-110;
-		justify-content: space-between;
-		align-items: center;
-	}
-}
-
-.form-gray {
-	position: relative;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-	z-index: 2;
-
-	@include lg-down {
-		order: 2;
-		flex-direction: column;
-	}
-}
-
 .index-s7 .form-gray {
 
-	@include lg-down {
+	@include lg {
 		align-items: flex-start;
 	}
 }
@@ -106,62 +67,6 @@
 	@include lg {
 		padding: $indent-10 0;
 	}
-}
-
-.form-gray__inner .text-m {
-	margin: 0 0 20px 0;
-
-	@include sm-down {
-		text-align: center;
-	}
-
-	@include lg {
-		margin: 0 10px 0 0;
-	}
-}
-
-.form-gray__img {
-	position: absolute;
-	right: 0;
-	top: -20px;
-	height: 324px;
-	order: 2;
-
-	@include sm-down {
-		position: relative;
-		top: 0;
-		order: 1;
-		height: 270px;
-	}
-
-	@include lgx {
-		top: -90%;
-		right: -27%;
-		z-index: 1;
-		width: auto;
-		height: 460px;
-	}
-}
-
-.form-gray__input {
-	width: 100%;
-	max-width: 421px;
-	padding: 11px 16px;
-	margin: 0 10px 15px 0;
-	border: 1px solid $blue-bg3;
-	border-radius: 5px;
-
-	@include lg {
-		margin: 0 10px 0 0;
-		max-width: 405px;
-	}
-}
-
-.form-gray__input::placeholder {
-	color: $blue-bg3;
-	font-size: 16px;
-	line-height: 19px;
-	font-weight: 400;
 }
 
 .index-s7 .button-rect {

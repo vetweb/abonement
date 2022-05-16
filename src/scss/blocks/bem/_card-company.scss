@@ -1,540 +1,553 @@
 .card-company {
-  display: flex;
-  flex-direction: column;
-  background-color: $white;
-  border-radius: 10px;
-  overflow: hidden;
-  padding: $indent-20 $indent-15;
-  box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
+	display: flex;
+	flex-direction: column;
+	background-color: $white;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: $indent-20 $indent-15;
+	box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
 }
 
 .card-company__el-content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 
-  @include sm {
-    width: 74%;
-  }
+	@include sm {
+		width: 74%;
+	}
 }
 
 .card-company__el-wrap {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: $indent-20;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: $indent-20;
 
-  @include sm {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0;
-  }
+	@include sm {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 0;
+	}
 }
 
 .card-company__el-right {
-  display: none;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
 
-  @include sm {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
+.card-company__el-right .favorites-block {
+	@include sm-down {
+		position: absolute;
+		top: 30px;
+		right: 25px;
+	}
 }
 
 .card-company .feedback__img svg {
-  color: #fff;
+	color: #fff;
 }
 
 .card-tag {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #5670B5;
-  border-radius: 10px;
-  padding: 7px 18px;
-  max-width: 155px;
-  width: 100%;
-  color: $white;
-  font-size: 16px;
-  line-height: 19px;
-  margin-right: $indent-10;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #5670B5;
+	border-radius: 10px;
+	padding: 7px 18px;
+	max-width: 155px;
+	width: 100%;
+	color: $white;
+	font-size: 16px;
+	line-height: 19px;
+	margin-right: $indent-10;
 }
 
 .card-tag.card-tag--desk {
-  display: none;
+	display: none;
 
-  @include sm {
-    display: flex;
-  }
+	@include sm {
+		display: flex;
+	}
 }
 
 .card-tag.card-tag--mob {
-  display: flex;
+	display: flex;
 
-  @include sm {
-    display: none;
-  }
+	@include sm {
+		display: none;
+	}
 }
 
 .card-tag__ic svg {
-  width: 22px;
-  height: 22px;
-  margin-right: 5px;
+	width: 22px;
+	height: 22px;
+	margin-right: 5px;
 }
 
 .card-company__el-top {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-bottom: $indent-10;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-bottom: $indent-10;
 
-  @include sm {
-    justify-content: space-between;
-  }
+	@include sm-down {
+		margin-right: 40px;
+	}
+
+	@include sm {
+		justify-content: space-between;
+	}
 }
 
 .card-company__el-top-title {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 21px;
-  text-decoration: none;
-  color: #051138;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 21px;
+	text-decoration: none;
+	color: #051138;
 
-  @include md {
-    font-size: 24px;
-    line-height: 28px;
-  }
+	&:hover {
+		color: $blue;
+	}
+
+	@include md {
+		font-size: 24px;
+		line-height: 28px;
+	}
 }
 
 .card-company__el-content .card-company__el-top {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 .card-company__el-content .card-company__el-top .card-company__el-bottom {
-  display: flex;
+	display: flex;
 
-  @include sm {
-    display: none;
-  }
+	@include sm {
+		display: none;
+	}
 }
 
 .card-company__el-content .card-company__el-desc .card-company__el-bottom {
-  display: none;
+	display: none;
 
-  @include sm {
-    display: flex;
-  }
+	@include sm {
+		display: flex;
+	}
 }
 
-.card-company__el-top .favorites-block{
+.card-company__el-top .favorites-block {
 
-  @include sm {
-    display: flex;
-  }
+	@include sm {
+		display: flex;
+	}
 }
 
 .card-company__el-city {
-  margin-right: $indent-15;
+	margin-right: $indent-15;
 }
 
 .card-company__el-bottom {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  color: $blue;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	color: $blue;
 
-  @include sm {
-    margin-bottom: $indent-20;
-  }
+	@include sm {
+		margin-bottom: $indent-20;
+	}
 }
 
 .card-company__el-geo {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .card-company__el-distance {
-  margin-right: 5px;
+	margin-right: 5px;
 }
 
 .card-company__el-geo svg {
-  width: 24px;
-  height: 24px;
-  color: $blue;
-  margin-right: 5px;
+	width: 24px;
+	height: 24px;
+	color: $blue;
+	margin-right: 5px;
 }
 
 .card-company__el-text.h5 {
-  font-weight: 400;
-  color: $blue-bg;
-  max-width: 385px;
-  width: 100%;
+	font-weight: 400;
+	color: $blue-bg;
+	max-width: 385px;
+	width: 100%;
 }
 
 .card-company__el-img {
-  width: 100%;
-  height: 175px;
-  position: relative;
-  background-color: #646A7D;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: $white;
-  border-radius: 10px;
-  overflow: hidden;
-  padding: $indent-10 $indent-10 0 0;
+	width: 100%;
+	height: 175px;
+	position: relative;
+	background-color: #646A7D;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: $white;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: $indent-10 $indent-10 0 0;
 
-  @include lg {
-    height: 164px;
-  }
+	@include lg {
+		height: 164px;
+	}
 }
 
 .card__el-inner.card-company__el-inner {
-  width: 100%;
-  margin-bottom: $indent-30;
+	width: 100%;
+	margin-bottom: $indent-30;
 
-  @include sm {
-    width: 251px;
-    margin-right: $indent-30;
-    margin-bottom: 0;
+	@include sm {
+		width: 251px;
+		margin-right: $indent-30;
+		margin-bottom: 0;
 
-  }
+	}
 }
 
 .card-company__el-img .favorites-block {
-  display: flex;
+	display: flex;
 
-  @include sm {
-    display: none;
-  }
+	@include sm {
+		display: none;
+	}
 }
 
 .card-company__el-btn {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
 
-  @include sm {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
+	@include sm {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
 }
 
 .card-company__el-btn .button-rect {
-  border-radius: 10px;
-  width: 100%;
-  padding: $indent-15 $indent-10;
-  margin-bottom: $indent-20;
+	border-radius: 10px;
+	width: 100%;
+	padding: $indent-15 $indent-10;
+	margin-bottom: $indent-20;
 
-  @include sm {
-    margin-bottom: 0;
-    max-width: 180px;
-  }
+	@include sm {
+		margin-bottom: 0;
+		max-width: 180px;
+	}
 }
 
 .card-company__el-btn a.card-company__el-link {
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 400;
-  color: $blue;
+	font-size: 18px;
+	line-height: 21px;
+	font-weight: 400;
+	color: $blue;
 
-  &:hover {
-    color: $orange;
-  }
+	&:hover {
+		color: $orange;
+	}
 }
 
 .company-card-s .search-nav {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
-  @include lg {
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-  }
+	@include lg {
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
+	}
 }
 
 .company-card-s.filter-company-card-s .breadcrumbs-block {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 
-  //breadcrumbs-block
+//breadcrumbs-block
 .breadcrumbs-block {
-  color: $black-t;
-  list-style: none;
-  display: flex;
-  margin-bottom: $indent-15;
+	color: $black-t;
+	list-style: none;
+	display: flex;
+	margin-bottom: $indent-15;
 
-  @include sm {
-    margin-bottom: $indent-20;
-  }
+	@include sm {
+		margin-bottom: $indent-20;
+	}
 
-  @include md {
-    margin-bottom: $indent-45;
-  }
+	@include md {
+		margin-bottom: $indent-45;
+	}
 }
 
 .company-card-s .breadcrumbs-block {
-  margin-bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  white-space: nowrap;
+	margin-bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	white-space: nowrap;
 
-  @include lg {
-    width: 30%;
-    margin-bottom: 0;
-  }
+	@include lg {
+		width: 30%;
+		margin-bottom: 0;
+	}
 }
 
 a.breadcrumbs-block__link {
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-  color: $black-t;
+	display: inline-flex;
+	align-items: center;
+	text-decoration: none;
+	color: $black-t;
 
-  &:hover {
-    color: $orange;
-  }
+	&:hover {
+		color: $orange;
+	}
 }
 
 .breadcrumbs-block__text {
-  white-space: nowrap;
+	white-space: nowrap;
 }
 
 .breadcrumbs-block li {
-  position: relative;
-  margin-right: $indent-20;
+	position: relative;
+	margin-right: $indent-20;
 }
 
 .breadcrumbs-block li:not(:last-child):after {
-  position: absolute;
-  content: '';
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/img/arr-right-br.png");
-  right: -15px;
-  top: 5px;
-  width: 10px;
-  height: 10px;
+	position: absolute;
+	content: '';
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("/img/arr-right-br.png");
+	right: -15px;
+	top: 5px;
+	width: 10px;
+	height: 10px;
 }
 
 //search
 .company-card-s .search-block {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 20px 0;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 20px 0;
 
-  @include lg {
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    //margin-left: $indent-10;
-  }
+	@include lg {
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-between;
+		//margin-left: $indent-10;
+	}
 }
 
 .company-card-s .search-block__left {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin-bottom: $indent-20;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-bottom: $indent-20;
 
-  @include sm {
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-  }
+	@include sm {
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+	}
 
-  @include lg {
-    width: 85%;
-    margin-bottom: 0;
-    flex-wrap: nowrap;
-  }
+	@include lg {
+		width: 85%;
+		margin-bottom: 0;
+		flex-wrap: nowrap;
+	}
 }
 
 .map-wrap__btn {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
-  @include sm {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+	@include sm {
+		flex-direction: row;
+		justify-content: space-between;
+	}
 }
 
 .map-wrap__btn .button-rect.btn-dark:not(:last-child) {
-    @include sm-down {
-      margin: 0 0 10px;
-    }
-  @include sm {
-    margin: 0 10px 0 0;
-  }
+	@include sm-down {
+		margin: 0 0 10px;
+	}
+	@include sm {
+		margin: 0 10px 0 0;
+	}
 }
 
 .map-wrap__btn .button-rect.btn-dark {
-  @include sm-down {
-    max-width: 100%;
-  }
+	@include sm-down {
+		max-width: 100%;
+	}
 }
 
 .company-card-s .search-block__right {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
 
-  @include sm {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
+	@include sm {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
 
-  @include lg {
-    width: 15%;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-  }
+	@include lg {
+		width: 15%;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+	}
 }
 
 .company-card-s .search-block__right-top {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: $indent-15;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: $indent-15;
 
-  @include sm {
-    margin-bottom: 0;
-  }
+	@include sm {
+		margin-bottom: 0;
+	}
 
-  @include lg {
-    width: 20%;
-    justify-content: flex-end;
-  }
+	@include lg {
+		width: 20%;
+		justify-content: flex-end;
+	}
 }
 
 .company-card-s .search-block__right-top .select {
-  margin-left: 0;
-  width: 190px;
+	margin-left: 0;
+	width: 190px;
 
-  @include lg-down {
-    width: 100%;
-  }
+	@include lg-down {
+		width: 100%;
+	}
 }
 
 .company-card-s .search-block .button-rect.btn-green {
-  display: flex;
-  width: 50%;
-  margin: 0 0 0 $indent-10;
+	display: flex;
+	width: 50%;
+	margin: 0 0 0 $indent-10;
 
-  @include lg {
-    display: none;
-  }
+	@include lg {
+		display: none;
+	}
 }
 
 .company-card-s .select-wrapper {
-  width: 60%;
+	width: 60%;
 
-  @include lg {
-    width: fit-content;
-  }
+	@include lg {
+		width: fit-content;
+	}
 }
 
 .search-block .button-rect.btn-white-border {
-  margin-right: $indent-30;
-  white-space: nowrap;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+	margin-right: $indent-30;
+	white-space: nowrap;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
 }
 
 .company-card-s .search-block .button-rect.btn-dark.btn-search {
-  width: 100%;
-  border-radius: 10px;
-  padding: $indent-10;
-  margin: 0 0 $indent-10 0;
+	width: 100%;
+	border-radius: 10px;
+	padding: $indent-10;
+	margin: 0 0 $indent-10 0;
 
-  @include sm {
-    margin: 0 $indent-10 0 0;
-    width: 49%;
-  }
+	@include sm {
+		margin: 0 $indent-10 0 0;
+		width: 49%;
+	}
 
-  @include lg {
-    max-width: 110px;
-  }
+	@include lg {
+		max-width: 110px;
+	}
 }
 
 .button-rect.btn-dark.btn-mob {
-  display: flex;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  width: 100%;
+	display: flex;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	width: 100%;
 
-  @include sm {
-   width: 49%;
-    margin: 0;
-  }
+	@include sm {
+		width: 49%;
+		margin: 0;
+	}
 
-  @include lg {
-    max-width: 240px;
-    margin: 0 0 0 $indent-10;
-  }
+	@include lg {
+		max-width: 240px;
+		margin: 0 0 0 $indent-10;
+	}
 
-  @include lg {
-   display: none;
-  }
+	@include lg {
+		display: none;
+	}
 }
 
 .button-rect.btn-dark.btn-mob svg {
-  width: 18px;
-  height: 20px;
-  margin-right: 10px;
+	width: 18px;
+	height: 20px;
+	margin-right: 10px;
 }
 
 .search-block__left .button-rect.btn-white-border {
-  display: none;
+	display: none;
 
-  //@include lg {
-  //  display: flex;
-  //  max-width: 188px;
-  //}
+	//@include lg {
+	//  display: flex;
+	//  max-width: 188px;
+	//}
 }
 
 .search-block__right .button-rect.btn-white-border {
-  display: flex;
-  width: 100%;
-  margin-right: 0;
+	display: flex;
+	width: 100%;
+	margin-right: 0;
 
-  @include sm {
-    margin-left: $indent-10;
-  }
+	@include sm {
+		margin-left: $indent-10;
+	}
 
-  @include lg {
-    display: none;
-  }
+	@include lg {
+		display: none;
+	}
 }
+
 .search-block__left__search {
-  display: flex;
-  flex-wrap: nowrap;
+	display: flex;
+	flex-wrap: nowrap;
 }
 
 .company-card-s .search-block__left__search {
-  display: flex;
-  flex-wrap: nowrap;
-  width: 100%;
-  margin: 0 0 $indent-10 0;
+	display: flex;
+	flex-wrap: nowrap;
+	width: 100%;
+	margin: 0 0 $indent-10 0;
 
-  @include lg {
-    width: 88%;
-    margin: 0 $indent-10 0 0;
-  }
+	@include lg {
+		width: 88%;
+		margin: 0 $indent-10 0 0;
+	}
 }

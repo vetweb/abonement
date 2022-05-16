@@ -41,7 +41,8 @@
   color: $white;
 }
 
-.swiper-slide.card-s__list-el:hover .btn-blue-s {
+.swiper-slide.card-s__list-el:hover .btn-blue-s,
+.swiper-slide.card-s__list-el:hover .button-add-to-cart__in-cart {
   background-color: $white;
   border: 1px solid $white;
   color: $blue;

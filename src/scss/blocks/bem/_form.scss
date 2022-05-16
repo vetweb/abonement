@@ -1,3 +1,27 @@
+.form__subscribe {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: $indent-25 $indent-20 $indent-20;
+	background: $gray-light;
+	box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
+	border-radius: 15px;
+	position: relative;
+
+	@include sm {
+		align-items: flex-start;
+		padding: $indent-30 $indent-30 $indent-35;
+		flex-direction: row;
+	}
+
+	@include lg {
+		flex-direction: row;
+		padding: $indent-90 $indent-110;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
 .form__field {
 	position: relative;
 }
@@ -21,6 +45,105 @@
 
 .form__error-field:focus {
 	outline: none;
+}
+
+.form__link-bottom {
+	text-align: center;
+	font-size: 14px;
+}
+
+//Form subscribe
+.form__subscribe--inner {
+
+	@include sm {
+		margin-top: 110px;
+	}
+
+	@include md {
+		margin-top: 45px;
+	}
+}
+
+.form-gray {
+	position: relative;
+	width: 100%;
+	z-index: 2;
+
+	@include lg-down {
+		order: 2;
+	}
+}
+
+.form-gray__inner {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+
+	@include sm {
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	@include lg {
+		flex-direction: row;
+	}
+}
+
+.form-gray__inner .text-l {
+	margin: 0 0 20px 0;
+
+	@include sm-down {
+		text-align: center;
+	}
+
+	@include lg {
+		margin: 0 10px 0 0;
+	}
+}
+
+.form-gray__img {
+	position: absolute;
+	right: 0;
+	top: -20px;
+	height: 324px;
+	order: 2;
+
+	@include sm-down {
+		position: relative;
+		top: 0;
+		order: 1;
+		height: 270px;
+	}
+
+	@include lgx {
+		top: -90%;
+		right: -27%;
+		z-index: 1;
+		width: auto;
+		height: 460px;
+	}
+}
+
+.form-gray__input {
+	width: 100%;
+	max-width: 421px;
+	padding: 11px 16px;
+	margin: 0 10px 15px 0;
+	border: 1px solid $blue-bg3;
+	border-radius: 5px;
+
+	@include lg {
+		margin: 0 10px 0 0;
+		max-width: 405px;
+	}
+}
+
+.form-gray__input::placeholder {
+	color: $blue-bg3;
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 400;
 }
 
 //Form wrap

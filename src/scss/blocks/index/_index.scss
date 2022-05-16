@@ -1,0 +1,22 @@
+
+.index-s,
+.index-s2,
+.index-s3,
+.index-s4,
+.index-s5,
+.index-s6,
+.index-s7 {
+	position: relative;
+	z-index: 1;
+}
+
+.bg-index-bottom {
+	position: absolute;
+	bottom: -55%;
+	left: -18%;
+	width: 1920px;
+	height: 5200px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}

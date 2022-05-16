@@ -23,6 +23,10 @@
   }
 }
 
+.gallery-item {
+  width: 200px;
+}
+
 .tc-8 .grid-gallery {
   @include csx {
     grid-template-columns: repeat(2, 1fr);

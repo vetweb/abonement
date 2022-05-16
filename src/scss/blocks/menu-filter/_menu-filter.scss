@@ -8,7 +8,7 @@
 	opacity: 0;
 	visibility: hidden;
 	transform: translateY(-10px);
-	transition: all .3s;
+	transition: all .3s ease;
 	z-index: 1;
 
 	&.active {
@@ -16,6 +16,26 @@
 		visibility: visible;
 		transform: translateY(0);
 	}
+
+	@include lg-down {
+		left: -10px;
+		top: 110px;
+		width: calc(100% + 20px);
+		z-index: 101;
+
+		.menu-filter__switcher {
+			display: none;
+		}
+
+		.catalog-alpha {
+			height: calc(100vh - 260px);
+		}
+	}
+}
+
+.menu-filter.show-mob {
+	visibility: visible;
+	opacity: 1;
 }
 
 .menu-filter__overlay {

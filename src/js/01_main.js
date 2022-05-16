@@ -1,16 +1,44 @@
 import {Swiper, Mousewheel, Navigation, Pagination} from 'swiper'
 import Scrollbar from 'smooth-scrollbar'
+import smoothscroll from 'smoothscroll-polyfill';
 
+smoothscroll.polyfill();
 Swiper.use([Mousewheel, Navigation, Pagination])
 
 document.addEventListener('DOMContentLoaded', () => {
+
+	//Mobile Menu
+	const mobileMenuItems = document.querySelectorAll('.js-mobile-menu-item')
+	const menuFilter = document.querySelector('.js-filter-menu')
+	const menuMobileHeader = document.querySelector('.js-mobile-menu-header')
+	const menuMobileHeaderBackLink = document.querySelector('.js-mobile-menu-header-back')
+	const menuMobileHeaderTitle = document.querySelector('.mobile-menu__header-title')
+
+	mobileMenuItems.forEach((item) => {
+		item.addEventListener('click', function () {
+			const dataAtr = item.dataset.linkText;
+			menuMobileHeaderTitle.innerHTML = dataAtr
+			this.classList.add('active');
+			menuFilter.classList.add('show-mob');
+			menuMobileHeader.classList.add('show');
+		})
+	});
+
+	menuMobileHeaderBackLink.addEventListener('click', function () {
+		menuFilter.classList.remove('show-mob');
+		menuMobileHeader.classList.remove('show');
+
+		mobileMenuItems.forEach((item) => {
+			item.classList.remove('active');
+		})
+	})
+
 	// smooth-scrollbar
 	const tabsBlock = document.querySelector(".js-tabs-block");
 	const certifScroll2 = document.querySelector(".js-certif-scroll-block2");
 	const certifScroll = document.querySelector(".js-certif-scroll-block");
 	const galleryScroll = document.querySelector(".js-gallery-scroll-block");
 	const modalCity = document.querySelector(".js-modal-city");
-
 
 	let optionsTabsBlock = {
 		damping: .1,
@@ -359,18 +387,41 @@ document.addEventListener('DOMContentLoaded', () => {
 	})
 
 	//FavoritesIconClicked
-	function FavoritesToggle() {
-		let cards = document.querySelectorAll('.js-item-card');
+	function cardListeners() {
+		const cards = document.querySelectorAll('.js-item-card');
 		cards.forEach((item) => {
-			let favoriteIcons = item.querySelector('.js-favorites-block');
-			favoriteIcons.addEventListener("click", function () {
-				console.log('click')
-				favoriteIcons.classList.toggle('active');
-			})
+
+			//Favorites
+			const favoriteIcon = item.querySelector('.js-favorites-block');
+			if (favoriteIcon) {
+				favoriteIcon.addEventListener("click", function () {
+					favoriteIcon.classList.toggle('active');
+				})
+			}
+
+			//Add to cart
+			const btnAdded = item.querySelector('.js-add-to-cart');
+			if (btnAdded) {
+				btnAdded.addEventListener("click", function () {
+					btnAdded.classList.toggle('loading');
+				})
+			}
 		})
 	}
 
-	FavoritesToggle()
+	cardListeners()
+
+	//help window toggle
+	function helpWindowToggle() {
+		let helpWindowToggleBtn = document.querySelector('.js-help-window-toggle');
+		let helpWindow = document.querySelector('.js-help-window');
+
+		helpWindowToggleBtn.addEventListener("click", function () {
+			helpWindow.classList.toggle('show');
+		})
+	}
+
+	helpWindowToggle()
 
 	//Search open
 	function SearchToggle() {
@@ -833,4 +884,78 @@ document.addEventListener('DOMContentLoaded', () => {
 			input.style.color = '#000';
 		})
 	})
+
+	//To map scroll
+	// let btnToMapScroll = document.querySelector('.js-to-map-scroll');
+	// let mapWrap = document.querySelector('.js-to-map-wrap');
+	//
+	// btnToMapScroll.addEventListener('click', function () {
+	// 	mapWrap.scrollIntoView({top: 0, behavior: 'smooth'});
+	// })
+	//
+
+	let btnGeoGet = document.querySelector('.js-modal-geo-user');
+
+	if (btnGeoGet) {
+		btnGeoGet.addEventListener('click', function () {
+			navigator.geolocation.getCurrentPosition(
+				displayLocationInfo,
+				handleLocationError,
+				{maximumAge: 1500000, timeout: 0}
+			);
+		})
+	}
+
+	function displayLocationInfo(position) {
+		const lng = position.coords.longitude;
+		const lat = position.coords.latitude;
+
+		console.log(`longitude: ${lng} | latitude: ${lat}`);
+	}
+
+	function handleLocationError(error) {
+		switch (error.code) {
+			case 3:
+				// timeout was hit, meaning nothing's in the cache
+				// let's provide a default location:
+				displayLocationInfo({coords: {longitude: 33.631839, latitude: 27.380583}});
+
+				// now let's make a non-cached request to get the actual position
+				navigator.geolocation.getCurrentPosition(displayLocationInfo, handleLocationError);
+				break;
+			case 2:
+				// ...
+				break;
+			case 1:
+			// ...
+		}
+	}
+
+
+	//Link to google map
+	let toMapLink = document.querySelector('.js-to-map-link');
+	if (toMapLink) {
+		const link = "<a href='http://maps.google.com/maps?q=" + encodeURIComponent(toMapLink.textContent) + "' target='_blank' class='link-s grid-row__link'>" + "Посмотреть на карте" + "</a>";
+		toMapLink.textContent = ''
+		toMapLink.insertAdjacentHTML("afterBegin", link);
+	}
+
+	// Initialize and add the map
+	function initMap() {
+		// The location of Uluru
+		const uluru = {lat: 53.9500344, lng: 27.6163732};
+		// The map, centered at Uluru
+		const map = new google.maps.Map(document.getElementById("map_canvas"), {
+			zoom: 15,
+			center: uluru,
+		});
+		// The marker, positioned at Uluru
+		const marker = new google.maps.Marker({
+			position: uluru,
+			map: map,
+		});
+	}
+
+	initMap()
+
 });

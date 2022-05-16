@@ -13,11 +13,11 @@
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.7",
+    "aos": "^3.0.0-beta.6",
     "babel-loader": "^8.2.2",
     "babel-plugin-module-resolver": "^4.1.0",
     "babel-plugin-root-import": "^6.6.0",
     "babel-preset-env": "^1.7.0",
-    "bootstrap": "^5.0.2",
     "browser-sync": "^2.27.1",
     "browsersync-ssi": "^0.2.4",
     "chalk": "^4.1.2",
@@ -55,13 +55,14 @@
     "sass": "^1.35.1",
     "sass-graph": "^3.0.5",
     "swiper": "^6.8.4",
-    "webpack-stream": "^6.1.2",
-    "aos": "^3.0.0-beta.6"
+    "webpack-stream": "^6.1.2"
   },
   "dependencies": {
     "animejs": "^3.2.1",
     "body-scroll-lock": "^4.0.0-beta.0",
+    "fslightbox": "^3.3.1",
     "slick-carousel": "^1.8.1",
-    "smooth-scrollbar": "^8.6.3"
+    "smooth-scrollbar": "^8.6.3",
+    "smoothscroll-polyfill": "^0.4.4"
   }
 }

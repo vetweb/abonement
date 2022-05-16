@@ -1,5 +1,14 @@
 <div class="mobile-menu js-mobile-menu">
     <div class="mobile-menu__container">
+        <div class="mobile-menu__header js-mobile-menu-header">
+            <a href="#" class="mobile-menu__header-link-back link-back js-mobile-menu-header-back">
+                <svg class="icon-svg" viewBox="0 0 8 15">
+                    <use xlink:href="/img/sprite.svg#arr-left"></use>
+                </svg>
+                <span>Назад</span>
+            </a>
+            <div class="mobile-menu__header-title"></div>
+        </div>
         <div class="modal-search">
             <div class="modal-search__header">
                 <div class="modal-search__back">
@@ -49,19 +58,19 @@
             <ul class="mobile-menu__wrapper mobile-menu-list js-mobile-menu-list">
                 <li class="mobile-menu-list__category"><a href="##" class="mobile-menu-list__category-link">Каталог</a>
                     <ul class="mobile-menu-list__submenu">
-                        <li class="mobile-menu-list__submenu-item active">
+                        <li class="mobile-menu-list__submenu-item js-mobile-menu-item active" data-link-text="Олимпийские виды спорта">
                             <a href="##">Виды спорта</a>
                         </li>
-                        <li class="mobile-menu-list__submenu-item">
+                        <li class="mobile-menu-list__submenu-item js-mobile-menu-item" data-link-text="Инваспорт">
                             <a href="##">Инваспорт</a>
                         </li>
-                        <li class="mobile-menu-list__submenu-item">
+                        <li class="mobile-menu-list__submenu-item js-mobile-menu-item" data-link-text="лагеря">
                             <a href="##">Спорт лагеря</a>
                         </li>
-                        <li class="mobile-menu-list__submenu-item">
+                        <li class="mobile-menu-list__submenu-item js-mobile-menu-item" data-link-text="Online">
                             <a href="##">Online обучение</a>
                         </li>
-                        <li class="mobile-menu-list__submenu-item">
+                        <li class="mobile-menu-list__submenu-item js-mobile-menu-item" data-link-text="Аренда">
                             <a href="##">Аренда</a>
                         </li>
                     </ul>
@@ -92,13 +101,15 @@
                     <a href="mailto:abon@mail.ru" class="cont__mail text-xxs">
                         <svg class="cont__icon">
                             <use xlink:href="/img/sprite.svg#email"></use>
-                        </svg>Abon@mail.ru</a>
+                        </svg>
+                        Abon@mail.ru</a>
                 </div>
                 <div class="cont-row">
                     <a href="" class="cont__mail text-xxs">
                         <svg class="cont__icon">
                             <use xlink:href="/img/sprite.svg#instagram"></use>
-                        </svg>@Abon_Inst_Info</a>
+                        </svg>
+                        @Abon_Inst_Info</a>
                 </div>
             </div>
         </div>

@@ -1,9 +1,5 @@
 .topical-s1 {
-  padding: 25px 0 60px;
-
-  @include sm {
-    padding: 50px 0 160px;
-  }
+  padding: 25px 0 30px;
 
   @include lg {
     padding: 50px 0;
@@ -18,11 +14,11 @@
   padding: 25px 0 170px;
 
   @include sm {
-    padding: 50px 0 190px;
+    padding: 0 0 190px;
   }
 
   @include lg {
-    padding: 60px 0 170px;
+    padding: 0 0 170px;
   }
 }
 
@@ -139,6 +135,7 @@
   box-shadow: none;
   border-radius: 9px;
   overflow: hidden;
+  cursor: pointer;
 
   @include md {
     padding: $indent-30;
@@ -187,7 +184,7 @@ a.btn-links__btn {
 .topical-s2 .row__col50.row__col50--70 {
 
   @include md {
-    width: 70%;
+    width: 71%;
   }
 }
 
@@ -202,17 +199,20 @@ a.btn-links__btn {
   }
 }
 
-.topical-s2 .form-gray .form-gray__title {
+.form-gray .form-gray__title {
+  margin: $indent-20 auto;
   color: $blue;
   font-size: 22px;
   line-height: 26px;
   font-weight: 500;;
-  margin: $indent-20 auto;
+  text-align: center;
 
   @include sm {
+    width: 90%;
+    margin: 0 0 $indent-20;
     font-size: 24px;
     line-height: 29px;
-    margin: 0 0 $indent-20;
+    text-align: left;
   }
 
   @include md {
@@ -222,12 +222,12 @@ a.btn-links__btn {
   }
 }
 
-.row__col50.row__col50--70 .form-gray__inner {
+.row__col50.row__col50--70 .form__subscribe {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: $indent-25 $indent-20;
-  background: $gray-light;
+  background: #fff;
   box-shadow: 10px 20px 50px rgba(20, 40, 96, 0.15);
   border-radius: 15px;
   position: relative;
@@ -245,22 +245,31 @@ a.btn-links__btn {
 
   @include lg {
     flex-direction: row;
-    padding: $indent-80 $indent-45;
+    padding: 72px $indent-70;
     justify-content: space-between;
     align-items: center;
   }
+}
+
+.row__col50.row__col50--70 .form-gray__inner {
+ @include md {
+   flex-direction: column;
+ }
 }
 
 .topical-s2 .form-gray__input {
   width: 100%;
   max-width: 421px;
   padding: 11px 16px;
-  margin: 0 0 10px 0;
+  margin: 0 0 15px 0;
   border: 1px solid $blue-bg3;
   border-radius: 5px;
 
+  @include md {
+    margin-bottom: 0;
+  }
+
   @include lg {
-    margin: 0 10px 0 0;
     max-width: 405px;
   }
 }
@@ -270,6 +279,11 @@ a.btn-links__btn {
   padding: $indent-15 0;
   width: 100%;
   max-width: 180px;
+
+  @include md {
+    padding: 11px 0;
+    margin-left: 30px;
+  }
 
   @include lg {
     padding: $indent-10 0;
@@ -286,7 +300,7 @@ a.btn-links__btn {
   align-items: flex-start;
 }
 
-.row__col50.row__col50--70 .btns__wrap {
+.btns__wrap {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -298,6 +312,7 @@ a.btn-links__btn {
   }
 
   @include md {
+    width: 80%;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
@@ -318,11 +333,16 @@ a.btn-links__btn {
 
   @include sm {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -160px;
+    right: -315px;
+    width: 620px;
+    height: auto;
     z-index: 1;
-    width: 150px;
-    height: 390px;
+  }
+
+  @include md {
+    top: -60px;
+    right: -290px;
   }
 }
 

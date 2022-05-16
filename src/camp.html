@@ -36,7 +36,9 @@
                       <div class="grid-row">
                           <p class="grid-row__address grid-row__address--desk">г. Свилочь, ул. К.Калиновского 2</p>
                           <p class="grid-row__address grid-row__address--mob">Беларусь, Минск, пр. Победителей, 84 (ТРЦ ARENAcity, 2-й этаж – Детский развлекательный центр «Карамелька»)</p>
-                          <a href="#" class="link-s grid-row__link">Посмотреть на карте</a>
+                          <address class="js-to-map-link">
+                              г. Свилочь, ул. К.Калиновского 2
+                          </address>
                       </div>
                   </div>
                   <div class="grid-icon">
@@ -218,28 +220,20 @@
                             </ul>
                         </div>
                         <div class="tabs-content__el js-tabs-content__el" data-content-id="id2">
-                            <ul class="tabs-list">
-                                <li class="tabs-list__el">время: с 8.20 до 18.00;</li>
-                                <li class="tabs-list__el">дни работы: с 28.12.20 по 08.01.21 (10 рабочих дней,
-                                    2 выходных).</li>
-                            </ul>
+                            <h3>Распорядок дня</h3>
+                            <div class="tabs-content__el-desc">Text</div>
                         </div>
                         <div class="tabs-content__el js-tabs-content__el" data-content-id="id3">
-                            <ul class="tabs-list">
-                                <li class="tabs-list__el">время: с 8.20 до 18.00;</li>
-                                <li class="tabs-list__el">дни работы: с 28.12.20 по 08.01.21 (10 рабочих дней,
-                                    2 выходных).</li>
-                            </ul>
+                            <h3>Питание</h3>
+                            <div class="tabs-content__el-desc">Text</div>
                         </div>
                         <div class="tabs-content__el js-tabs-content__el" data-content-id="id4">
-                            <ul class="tabs-list">
-                                <li class="tabs-list__el">время: с 8.20 до 18.00;</li>
-                                <li class="tabs-list__el">дни работы: с 28.12.20 по 08.01.21 (10 рабочих дней,
-                                    2 выходных).</li>
-                            </ul>
+                            <h3>Безопасность</h3>
+                            <div class="tabs-content__el-desc">Text</div>
                         </div>
                         <div class="tabs-content__el js-tabs-content__el" data-content-id="id5">
-                            <p class="tabs-content__el-desc">Text</p>
+                            <h3>Цены</h3>
+                            <div class="tabs-content__el-desc">Text</div>
                         </div>
                     </div>
                 </div>
@@ -288,9 +282,7 @@
             <div class="grid-row">
                 <div class="grid-row__col50 grid-col50">
                     <h3 class="h3">Где мы находимся</h3>
-                    <div class="map-block">
-                        <img class="map-block__map" src="/img/map.png" alt="">
-                    </div>
+                    <div id="map_canvas" class="map-wrap__map map-block"></div>
                 </div>
                 <div class="grid-row__col50 grid-col50">
                     <div class="grid-row__col50-top grid-row__col50-desk">
@@ -314,7 +306,9 @@
                                 <div class="reviews-block__review-r">
                                     @@include('components/blocks/bem/_stars.html')
                                     <div class="recom-block">
-                                        <img src="/img/heart-red.svg" class="recom-block__img" alt="">
+                                        <svg class="icon-svg recom-block__icon" viewBox="0 0 20 18">
+                                            <use xlink:href="/img/sprite.svg#heart"></use>
+                                        </svg>
                                         <span class="recom-block__text">Рекомендую</span>
                                     </div>
                                 </div>
@@ -333,7 +327,9 @@
                                 <div class="reviews-block__review-r">
                                     @@include('components/blocks/bem/_stars.html')
                                     <div class="recom-block">
-                                        <img src="/img/heart-red.svg" class="recom-block__img" alt="">
+                                        <svg class="icon-svg recom-block__icon" viewBox="0 0 20 18">
+                                            <use xlink:href="/img/sprite.svg#heart"></use>
+                                        </svg>
                                         <span class="recom-block__text">Рекомендую</span>
                                     </div>
                                 </div>

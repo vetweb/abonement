@@ -24,7 +24,7 @@
             </ol>
             <div class="fc-s1__wrap">
                 <div class="index-s__top">
-                    <h2 class="h2">Футбольный клуб “Football team Svyloch”</h2>
+                    <h2 class="h2">Футбольный клуб “Football team Svysloch”</h2>
                 </div>
                 <div class="fc-s1__top grid-row">
                     <div class="grid-col30">
@@ -40,7 +40,9 @@
                     <div class="grid-col70">
                         <p class="grid-row__address grid-row__address--desk">г. Свилочь, ул. К.Калиновского 2</p>
                         @@include('components/blocks/bem/_metro-block.html')
-                        <a href="#" class="link-s grid-row__link">Посмотреть на карте</a>
+                        <address class="js-to-map-link">
+                            г. Свилочь, ул. К.Калиновского 2
+                        </address>
                     </div>
                 </div>
                 <div class="grid-row fc-s1__body">
@@ -49,7 +51,9 @@
                             <p class="grid-row__address grid-row__address--desk">г. Свилочь, ул. К.Калиновского 2</p>
                             <div class="grid-col70-inner">
                                 @@include('components/blocks/bem/_metro-block.html')
-                                <a href="#" class="link-s grid-row__link">Посмотреть на карте</a>
+                                <address class="js-to-map-link">
+                                    г. Свилочь, ул. К.Калиновского 2
+                                </address>
                             </div>
                         </div>
                         <div class="fc-s1__body-inner">
@@ -139,22 +143,13 @@
     <section class="section tc-8">
         <div class="container">
             <div class="tc-8">
-                <div class="grid-gallery">
-                    <div class="grid-gallery__card" style="background-image: url('/img/bg1-sl.png');">
-                    </div>
-                    <div class="grid-gallery__card" style="background-image: url('/img/bg1-sl.png');">
-                    </div>
-                    <div class="grid-gallery__card" style="background-image: url('/img/bg1-sl.png');">
-                    </div>
-                    <div class="grid-gallery__card" style="background-image: url('/img/bg1-sl.png');">
-                    </div>
-                    <div class="grid-gallery__card" style="background-image: url('/img/bg1-sl.png');">
-                    </div>
-                    <div class="grid-gallery__card" style="background-image: url('/img/bg1-sl.png');">
-                    </div>
-                    <div class="grid-gallery__card" style="background-image: url('/img/bg1-sl.png');">
-                    </div>
-
+                <div id="gallery-container">
+                    <a data-src="/img/bg1-sl.png">
+                        <img src="/img/bg1-sl.png" />
+                    </a>
+                    <a data-src="/img/bg1-sl.png">
+                        <img src="/img/bg1-sl.png" />
+                    </a>
                 </div>
                 <div class="tabs-content__el-btn">
                     <button class="button-rect btn-blue button-s">

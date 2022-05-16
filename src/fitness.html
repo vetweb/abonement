@@ -37,7 +37,9 @@
                             <p class="grid-row__address grid-row__address--desk">г. Свилочь, ул. К.Калиновского 2</p>
                             <p class="grid-row__address grid-row__address--mob">Беларусь, Минск, пр. Победителей, 84
                                 (ТРЦ ARENAcity, 2-й этаж – Детский развлекательный центр «Карамелька»)</p>
-                            <a href="#" class="link-s grid-row__link">Посмотреть на карте</a>
+                            <address class="js-to-map-link">
+                                г. Свилочь, ул. К.Калиновского 2
+                            </address>
                         </div>
                     </div>
                     <div class="grid-icon">
@@ -353,9 +355,7 @@
             <div class="grid-row">
                 <div class="grid-row__col50 grid-col50">
                     <h3 class="h3">Где мы находимся</h3>
-                    <div class="map-block">
-                        <img class="map-block__map" src="/img/map.png" alt="">
-                    </div>
+                    <div id="map_canvas" class="map-wrap__map map-block"></div>
                 </div>
                 <div class="grid-row__col50 grid-col50">
                     <div class="grid-row__col50-top grid-row__col50-desk">
@@ -379,7 +379,7 @@
                                 <div class="reviews-block__review-r">
                                     @@include('components/blocks/bem/_stars.html')
                                     <div class="recom-block">
-                                        <img src="/img/heart-red.svg" class="recom-block__img" alt="">
+                                        <img src="/img/heart-red.svg" class="recom-block__icon" alt="">
                                         <span class="recom-block__text">Рекомендую</span>
                                     </div>
                                 </div>
@@ -399,7 +399,7 @@
                                 <div class="reviews-block__review-r">
                                     @@include('components/blocks/bem/_stars.html')
                                     <div class="recom-block">
-                                        <img src="/img/heart-red.svg" class="recom-block__img" alt="">
+                                        <img src="/img/heart-red.svg" class="recom-block__icon" alt="">
                                         <span class="recom-block__text">Рекомендую</span>
                                     </div>
                                 </div>

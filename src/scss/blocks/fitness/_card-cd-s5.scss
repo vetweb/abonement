@@ -1,279 +1,302 @@
 .card-cd-s5 {
-  padding: 0 0 40px;
+	padding: 0 0 40px;
 
-  @include sm {
-    padding: 0 0 85px;
-  }
+	@include sm {
+		padding: 0 0 85px;
+	}
 
-  @include lg {
-    padding: 0 0 110px;
-  }
+	@include lg {
+		padding: 0 0 110px;
+	}
 }
 
 .card-cd-s5 .h3 {
-  padding-bottom: $indent-20;
+	padding-bottom: $indent-20;
 
-  @include lg {
-    padding-bottom: $indent-30;
-  }
+	@include lg {
+		padding-bottom: $indent-30;
+	}
 }
 
 .grid-row {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 .card-cd-s5 .grid-col50 {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 
-  @include lg {
-    width: 49%;
-  }
+	@include lg {
+		width: 49%;
+	}
 }
 
 .card-cd-s5 .grid-row {
-  @include lgx {
-    height: 100%;
-  }
+	@include lgx {
+		height: 100%;
+	}
 }
 
 .grid-row__col50:not(:last-child) {
 
-  @include lgx-down {
-    margin-bottom: $indent-40;
-  }
+	@include lgx-down {
+		margin-bottom: $indent-40;
+	}
 
-  @include sm-down {
-    margin-bottom: $indent-30;
-  }
+	@include sm-down {
+		margin-bottom: $indent-30;
+	}
 }
 
 .card-cd-s5 .grid-row__col50-top.grid-row__col50-desk {
-  margin-bottom: $indent-30;
-  display: none;
+	margin-bottom: $indent-30;
+	display: none;
 
-  @include lgx {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
+	@include lgx {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
 }
 
-.card-cd-s5 .grid-row__col50-top.grid-row__col50-desk .h3{
-  padding-bottom: 0;
+.card-cd-s5 .grid-row__col50-top.grid-row__col50-desk .h3 {
+	padding-bottom: 0;
 }
 
 .grid-row__col50-top {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 
-  @include lg {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
+	@include lg {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
 }
 
 .grid-row__col50-top .card-cd-s5 .h3 {
-  display: none;
+	display: none;
 
-  @include lg {
-    display: block;
-  }
+	@include lg {
+		display: block;
+	}
 }
 
 .map-block,
 .reviews-block {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  border-radius: 15px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 15px;
+}
+
+.map-block {
+	min-height: 400px;
+}
+
+.reviews-block .h3 {
+	@include sm-down {
+		padding-bottom: 10px;
+	}
 }
 
 .grid-row__col50.grid-col50 {
-  height: 100%;
-  overflow: hidden;
-  border-radius: 15px;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 15px;
 }
 
 .grid-row__col50.grid-col50:not(:last-child) {
 
-  @include lg-down {
-    margin-bottom: $indent-20;
-  }
+	@include lg-down {
+		margin-bottom: $indent-20;
+	}
 }
 
 .reviews-block {
-  background-color: $white;
-  padding: $indent-25 $indent-15;
+	background-color: $white;
+	padding: $indent-25 $indent-15;
 
-  @include sm {
-    padding: $indent-45 $indent-30;
-  }
+	@include sm {
+		padding: $indent-45 $indent-30;
+	}
 
-  @include lgx {
-    padding: $indent-20 $indent-30;
-  }
+	@include lgx {
+		padding: $indent-20 $indent-30;
+	}
 }
 
 .reviews-block .h3.h3--mob {
-  display: block;
+	display: block;
 
-  @include lgx {
-   display: none;
-  }
+	@include lgx {
+		display: none;
+	}
 }
 
 .grid-row__col50-top.grid-row__col50-top--mob .h3 {
-  display: block;
+	display: block;
 
-  @include lgx {
-    display: none;
-  }
+	@include lgx {
+		display: none;
+	}
 }
 
-.grid-row__col50-top.grid-row__col50-top--mob .rating-m  {
-  display: flex;
-  margin-bottom: $indent-25;
+.grid-row__col50-top.grid-row__col50-top--mob .rating-m {
+	display: flex;
+	margin-bottom: $indent-25;
 
-  @include lgx {
-    display: none;
-  }
+	@include lgx {
+		display: none;
+	}
 }
 
 .reviews-block__review {
-  margin-bottom: $indent-20;
-  color: $black-t;
+	margin-bottom: $indent-30;
+	color: $black-t;
+
+	@include sm {
+		margin-bottom: $indent-40;
+	}
 }
 
 .data-time {
-  color: $gray-tx;
+	color: $gray-tx;
 }
 
 .reviews-block__review-inner {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: $indent-15;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: $indent-15;
 
-  @include lg {
-    flex-direction: row;
-  }
+	@include lg {
+		flex-direction: row;
+	}
 }
 
 .reviews-block__review-l {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  order: 1;
-  margin-bottom: 8px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	order: 1;
+	margin-bottom: 8px;
 
-  @include lg {
-    width: 70%;
-    margin-bottom: 0;
-  }
+	@include lg {
+		width: 70%;
+		margin-bottom: 0;
+	}
 }
 
 .reviews-block__review-r {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  border-top: 1px solid $gray-l;
-  padding-top: $indent-15;
-  order: 3;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	border-top: 1px solid $gray-l;
+	padding-top: $indent-15;
+	order: 3;
 
-  @include lg {
-    border-top: 1px solid transparent;
-    border-left: 1px solid $gray-l;
-    width: 30%;
-    flex-direction: column;
-    padding-top: 0;
-    padding-left: $indent-30;
-    order: 2;
-  }
+	@include lg {
+		border-top: 1px solid transparent;
+		border-left: 1px solid $gray-l;
+		width: 30%;
+		flex-direction: column;
+		padding-top: 0;
+		padding-left: $indent-30;
+		order: 2;
+	}
 }
 
 .recom-block__text {
-  display: none;
+	display: none;
 
-  @include sm {
-    display: inline-block;
-    color: $gray-tx;
-  }
+	@include sm {
+		display: inline-block;
+		color: $gray-tx;
+	}
 }
 
 .reviews-block__name {
-  margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .reviews-block__review-r .stars {
-  margin-bottom: 7px;
+	margin-bottom: 7px;
 }
 
 .reviews-block__text {
-  order: 2;
+	order: 2;
 
-  @include lg {
-    order: 3;
-  }
+	@include lg {
+		order: 3;
+	}
 }
 
 .recom-block {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
 }
 
-.recom-block__img {
-  margin-right: 10px;
+.recom-block__icon {
+	color: $rose;
+
+	@include md {
+		margin-right: 15px;
+	}
+
+	@include lg {
+		margin-right: 10px;
+	}
+
 }
 
 .reviews-btn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
-  @include sm {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+	@include sm {
+		flex-direction: row;
+		justify-content: space-between;
+	}
 }
 
 .reviews-btn .button-rect {
-  width: 100%;
-  overflow: hidden;
-  font-weight: bold;
-  padding: 13px 8px;
-  white-space: nowrap;
+	width: 100%;
+	overflow: hidden;
+	font-weight: bold;
+	padding: 13px 8px;
+	white-space: nowrap;
 
-  @include sm {
-    max-width: 166px;
-    padding: 15px 10px;
-  }
+	@include sm {
+		max-width: 166px;
+		padding: 15px 10px;
+	}
 }
 
 .reviews-btn__link-mob.h5 {
-  display: flex;
-  color: $blue;
-  margin-bottom: $indent-20;
-  font-size: 14px;
-  line-height: 17px;
+	display: flex;
+	color: $blue;
+	margin-bottom: $indent-20;
+	font-size: 14px;
+	line-height: 17px;
 
-  @include sm {
-   display: none;
-  }
+	@include sm {
+		display: none;
+	}
 }
 
 .reviews-btn__link-desk {
-  display: none;
+	display: none;
 
-  @include sm {
-    display: flex;
-    align-items: center;
-    color: $blue;
-    text-decoration: none;
-  }
+	@include sm {
+		display: flex;
+		align-items: center;
+		color: $blue;
+		text-decoration: none;
+	}
 }

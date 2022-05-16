@@ -205,13 +205,9 @@ a.row-acc-grid__cell.row-acc-grid__cell--top {
   align-items: flex-end;
 }
 
-.row-product__col--middle .row-acc-grid__top.row-acc-grid__row .row-acc-grid__cell.row-acc-grid__cell--top {
+.row-product__col--middle .row-acc-grid__top .row-acc-grid__cell--top {
   background-color: transparent;
   color: $gray-tx;
-}
-
-.row-product__col--middle .row-acc-grid__top.row-acc-grid__row .row-acc-grid__cell.row-acc-grid__cell--top.active {
-  color: $blue;
 }
 
 .product-list-s .row-product__col--middle .row-acc-grid__body .row-acc-grid__row {

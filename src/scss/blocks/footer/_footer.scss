@@ -307,9 +307,8 @@
   text-decoration: none;
 }
 
-.footer-col30 span.text-xs {
+.footer__list-title {
   text-transform: uppercase;
-  display: inline-block;
   margin-bottom: 18px;
 
   @include sm {
@@ -423,7 +422,7 @@
   justify-content: flex-start;
   cursor: pointer;
   background-color: $white;
-  padding: $indent-10 0;
+  padding: $indent-10;
   border-radius: 10px;
 }
 
@@ -433,6 +432,7 @@
 
 .chat-btn__ic {
   margin-right: $indent-10;
+  height: 20px;
 }
 
 .chat-btn__ic svg {
