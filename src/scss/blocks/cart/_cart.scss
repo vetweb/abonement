@@ -325,6 +325,8 @@
 	color: $blue-bg;
 	position: relative;
 	width: 50%;
+	max-height: 95vh;
+	overflow: auto;
 }
 
 .modal-window__content.modal-window__content--cart {

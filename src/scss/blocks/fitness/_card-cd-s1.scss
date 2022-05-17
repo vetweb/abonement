@@ -252,6 +252,14 @@
   }
 }
 
+.button-block .button-rect {
+  color: white;
+
+  &:hover {
+    color: $blue;
+  }
+}
+
 .card-cd-s1 .currency.button-s {
   margin-right: $indent-20;
 }

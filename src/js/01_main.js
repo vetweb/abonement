@@ -1,12 +1,12 @@
 import {Swiper, Mousewheel, Navigation, Pagination} from 'swiper'
 import Scrollbar from 'smooth-scrollbar'
 import smoothscroll from 'smoothscroll-polyfill';
+import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
 
 smoothscroll.polyfill();
 Swiper.use([Mousewheel, Navigation, Pagination])
 
 document.addEventListener('DOMContentLoaded', () => {
-
 	//Mobile Menu
 	const mobileMenuItems = document.querySelectorAll('.js-mobile-menu-item')
 	const menuFilter = document.querySelector('.js-filter-menu')
@@ -32,6 +32,48 @@ document.addEventListener('DOMContentLoaded', () => {
 			item.classList.remove('active');
 		})
 	})
+
+
+	//Rating
+	function rating () {
+		const eventItems = document.querySelectorAll('.js-card-events')
+
+		eventItems.forEach((item) => {
+			if (eventItems) {
+				const ratingItems = item.querySelectorAll('.js-rating-el')
+				const ratingCount = item.querySelectorAll('.js-rating-count')
+
+				if (ratingItems) {
+					ratingItems.forEach((ratingItem, w) => {
+						ratingItem.addEventListener('click', () => {
+							ratingItems.forEach((e, r) => {
+								e.classList.remove('active')
+								if (r <= w) {
+									e.classList.toggle('active')
+								}
+							});
+
+							const ratingData = item.dataset.rating;
+
+							console.log('ratingData', ratingData)
+						});
+
+						ratingItem.addEventListener('mouseover', () => {
+							ratingItems.forEach((e, r) => {
+								e.classList.remove('active')
+								if (r <= w) {
+									e.classList.toggle('active')
+								}
+							})
+						});
+
+					})
+				}
+			}
+		})
+	}
+
+	rating()
 
 	// smooth-scrollbar
 	const tabsBlock = document.querySelector(".js-tabs-block");

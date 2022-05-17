@@ -1,6 +1,4 @@
 .rating-block {
-  width: 64px;
-  height: 9px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -11,18 +9,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 0 0 auto;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  color: transparent;
 }
 
 .rating-block__el svg {
-  width: 9px;
-  height: 9px;
+  width: 11px;
+  height: 11px;
+}
+
+.rating-block__el:hover,
+.rating-block__el.active {
   color: $orange;
-}
-
-.rating-block__el:not(:last-child) {
-  margin-right: 4px;
-}
-
-.rating-block__el.active svg #star-i {
-  fill: $orange;
 }

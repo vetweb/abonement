@@ -40,7 +40,7 @@
                     <div class="grid-col70">
                         <p class="grid-row__address grid-row__address--desk">г. Свилочь, ул. К.Калиновского 2</p>
                         @@include('components/blocks/bem/_metro-block.html')
-                        <address class="js-to-map-link">
+                        <address class="js-to-map-link link-s grid-row__link">
                             г. Свилочь, ул. К.Калиновского 2
                         </address>
                     </div>
@@ -51,7 +51,7 @@
                             <p class="grid-row__address grid-row__address--desk">г. Свилочь, ул. К.Калиновского 2</p>
                             <div class="grid-col70-inner">
                                 @@include('components/blocks/bem/_metro-block.html')
-                                <address class="js-to-map-link">
+                                <address class="js-to-map-link link-s grid-row__link">
                                     г. Свилочь, ул. К.Калиновского 2
                                 </address>
                             </div>
@@ -295,14 +295,14 @@
                 </div>
                 <div class="certif-scroll-block js-certif-scroll-block plr-55">
                     <div class="certif-scroll-block__wrap">
-                        <div class="certif-scroll-block__el" style="background-image: url('/img/srcif2-bg.png');">
-                        </div>
-                        <div class="certif-scroll-block__el" style="background-image: url('/img/sercif-bg.png');">
-                        </div>
-                        <div class="certif-scroll-block__el" style="background-image: url('/img/sertif3-bg.png');">
-                        </div>
-                        <div class="certif-scroll-block__el" style="background-image: url('/img/sercif-bg.png');">
-                        </div>
+                        <a href="/img/srcif2-bg.png" data-fancybox="gallery" class="certif-scroll-block__el" style="background-image: url('/img/srcif2-bg.png');">
+                        </a>
+                        <a href="/img/sercif-bg.png" data-fancybox="gallery" class="certif-scroll-block__el" style="background-image: url('/img/sercif-bg.png');">
+                        </a>
+                        <a href="/img/sertif3-bg.png" data-fancybox="gallery" class="certif-scroll-block__el" style="background-image: url('/img/sertif3-bg.png');">
+                        </a>
+                        <a href="/img/sercif-bg.png" data-fancybox="gallery" class="certif-scroll-block__el" style="background-image: url('/img/sercif-bg.png');">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -317,7 +317,6 @@
                             <h3 class="h3">Отзывы о футбольном клубе “Foot”</h3>
                             <div class="reviews-block__inner">
                                 @@include('components/blocks/bem/_rating-m.html')
-                                <a href="##" class="button-rect btn-blue button-s">Написать отзыв</a>
                             </div>
                         </div>
                         <div class="reviews-block__review">
@@ -336,7 +335,9 @@
                                 <div class="reviews-block__review-r">
                                     @@include('components/blocks/bem/_stars.html')
                                     <div class="recom-block">
-                                        <img src="/img/heart-red.svg" class="recom-block__icon" alt="">
+                                        <svg class="icon-svg recom-block__icon" viewBox="0 0 20 18">
+        <use xlink:href="/img/sprite.svg#heart"></use>
+</svg>
                                         <span class="recom-block__text">Рекомендую</span>
                                     </div>
                                 </div>
@@ -362,7 +363,9 @@
                                 <div class="reviews-block__review-r">
                                     @@include('components/blocks/bem/_stars.html')
                                     <div class="recom-block">
-                                        <img src="/img/heart-red.svg" class="recom-block__icon" alt="">
+                                        <svg class="icon-svg recom-block__icon" viewBox="0 0 20 18">
+        <use xlink:href="/img/sprite.svg#heart"></use>
+</svg>
                                         <span class="recom-block__text">Рекомендую</span>
                                     </div>
                                 </div>
@@ -385,7 +388,7 @@
     </div>
     <div class="fc-s8 mt-60 mb-60">
         <div class="container">
-            <div class="container-br-10">
+            <div class="container-br-10 ovrf-hidden">
                 <div class="index-s__top plr-55">
                     <h3 class="h3">Тренеры</h3>
                     <a href="#" class="link-s">Показать еще</a>
@@ -405,6 +408,12 @@
                             <div class="swiper-slide card-tr__list-el js-open-md" data-opn="trainer-md4">
                                 @@include('components/blocks/bem/_card-tr.html')
                             </div>
+                            <div class="swiper-slide card-tr__list-el js-open-md" data-opn="trainer-md3">
+                                @@include('components/blocks/bem/_card-tr.html')
+                            </div>
+                            <div class="swiper-slide card-tr__list-el js-open-md" data-opn="trainer-md4">
+                                @@include('components/blocks/bem/_card-tr.html')
+                            </div>
                         </div>
                         <div class="swiper-scrollbar"></div>
                     </div>
@@ -414,21 +423,25 @@
     </div>
     <div class="fc-s9 mt-60 mb-60">
         <div class="container">
-            <div class="container-br-10">
+            <div class="container-br-10 ovrf-hidden">
                 <div class="index-s__top plr-55">
                     <h3 class="h3">Галерея</h3>
                     <a href="#" class="link-s">Смотреть еще</a>
                 </div>
                 <div class="gallery-scroll-block js-gallery-scroll-block plr-55">
                     <div class="gallery-scroll-block__wrap">
-                        <div class="gallery-scroll-block__el" style="background-image: url('/img/g-bg2.png');">
-                        </div>
-                        <div class="gallery-scroll-block__el" style="background-image: url('/img/g-bg1.png');">
-                        </div>
-                        <div class="gallery-scroll-block__el" style="background-image: url('/img/g-bg3.png');">
-                        </div>
-                        <div class="gallery-scroll-block__el" style="background-image: url('/img/g-bg1.png');">
-                        </div>
+                        <a href="/img/g-bg2.png" data-fancybox="gallery2" class="gallery-scroll-block__el" style="background-image: url('/img/g-bg2.png');">
+                        </a>
+                        <a href="/img/g-bg1.png" data-fancybox="gallery2" class="gallery-scroll-block__el" style="background-image: url('/img/g-bg1.png');">
+                        </a>
+                        <a href="/img/g-bg3.png" data-fancybox="gallery2" class="gallery-scroll-block__el" style="background-image: url('/img/g-bg3.png');">
+                        </a>
+                        <a href="/img/g-bg1.png" data-fancybox="gallery2" class="gallery-scroll-block__el" style="background-image: url('/img/g-bg1.png');">
+                        </a>
+                        <a href="/img/g-bg3.png" data-fancybox="gallery2" class="gallery-scroll-block__el" style="background-image: url('/img/g-bg3.png');">
+                        </a>
+                        <a href="/img/g-bg1.png" data-fancybox="gallery2" class="gallery-scroll-block__el" style="background-image: url('/img/g-bg1.png');">
+                        </a>
                     </div>
                     <div class="swiper-scrollbar"></div>
                 </div>
@@ -437,13 +450,21 @@
     </div>
     <div class="fc-s10 mt-60 mb-60">
         <div class="container">
-            <div class="container-br-10">
+            <div class="container-br-10 ovrf-hidden">
                 <div class="index-s__top plr-55">
                     <h3 class="h3">Новости</h3>
                 </div>
                 <div class="card-big-t-slider">
                     <div class="standard-slider js-standard-slider swiper-container">
                         <div class="swiper-wrapper grid-cards__list plr-55">
+                            <div class="swiper-slide card-big-t__list-el">
+                                <a href="#" class="card-big-t__link"></a>
+                                @@include('components/blocks/bem/_card-big-t.html')
+                            </div>
+                            <div class="swiper-slide card-big-t__list-el">
+                                <a href="#" class="card-big-t__link"></a>
+                                @@include('components/blocks/bem/_card-big-t.html')
+                            </div>
                             <div class="swiper-slide card-big-t__list-el">
                                 <a href="#" class="card-big-t__link"></a>
                                 @@include('components/blocks/bem/_card-big-t.html')
