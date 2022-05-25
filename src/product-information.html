@@ -21,7 +21,7 @@
                     </span>
                     <span class="row-acc__title">Назад</span>
                 </a>
-                <p class="settings-s__title">Добавление лагеря</p>
+                <div class="settings-s__title">Добавление лагеря</div>
                 <span class="row-acc__list-title">Информация о товаре</span>
                 <div class="index-s__mob-line">
                     <div class="circle-item1">
@@ -42,7 +42,7 @@
         </div>
     <div class="container">
         <div class="index-s__top">
-            <p class="settings-s__title">Добавление лагеря</p>
+            <div class="settings-s__title">Добавление лагеря</div>
         </div>
         <div class="row-acc row-acc--acc">
             <div class="row-acc__col25 row-acc__col25--left">
@@ -89,43 +89,59 @@
                 <div class="row-acc__col50-inner">
                     <div class="row-acc__col50--title">Информация о товаре</div>
                     <form class="row-acc__form row-acc__form--add-camp">
-                        <p class="label-light label-light--ic">
+                        <div class="label-light label-light--ic">
                             <label for="ac-comp-name" class="label-light__title">Заголовок</label>
                             <span class="label-light__symbol">*</span>
-                            <a href="#" class="label-light--link">
-                                <img src="/img/notif-reverse.svg" alt="" class="label-light--ic">
-                            </a>
-                        </p>
-                        <div class="input-light__wrap">
-                            <input type="text" id="ac-comp-name" class="input-light input-light--ic input-light__mb15">
-                            <a href="#" class="label-light--link">
+                            <a href="##" class="label-light--link js-open-info-block" data-show="info-block2">
                                 <img src="/img/notif-reverse.svg" alt="" class="label-light--ic">
                             </a>
                         </div>
-                        <p class="label-light label-light--ic">
+                        <div class="input-light__wrap">
+                            <div class="md-info-block js-info-block" data-block="info-block2">
+                                <div class="md-info-block__desc">
+                                    Информация по тому что за поле такое непонятное
+                                </div>
+                                <a href="##" class="md-info-block__link">Какая-то ссылка</a>
+                            </div>
+                            <div class="overlay js-overlay-info-block" data-overlay="info-block2"></div>
+                            <input type="text" id="ac-comp-name" class="input-light input-light--ic input-light__mb15">
+                            <a href="##" class="label-light--link js-open-info-block" data-show="info-block2">
+                                <img src="/img/notif-reverse.svg" alt="" class="label-light--ic">
+                            </a>
+                        </div>
+                        <div class="label-light label-light--ic">
                             <label for="ac-comp-address" class="label-light__title">Адрес</label>
                             <span class="label-light__symbol">*</span>
-                            <a href="#" class="label-light--link">
+                            <a href="##" class="label-light--link js-open-info-block" data-show="info-block3">
                                 <img src="/img/address-ic.svg" alt="" class="label-light--ic">
                             </a>
-                        </p>
+                        </div>
                         <div class="input-light__wrap">
+                            <div class="md-info-block js-info-block" data-block="info-block3">
+                                <div class="md-info-block__desc">
+                                    Информация по тому что за поле такое непонятное
+                                </div>
+                                <a href="##" class="md-info-block__link">Какая-то ссылка</a>
+                            </div>
+                            <div class="overlay js-overlay-info-block" data-overlay="info-block3"></div>
                             <input type="text" id="ac-comp-address" class="input-light input-light--ic input-light__mb15">
-                            <a href="#" class="label-light--link">
+                            <a href="##" class="label-light--link js-open-info-block" data-show="info-block3">
                                 <img src="/img/address-ic.svg" alt="" class="label-light--ic">
                             </a>
                         </div>
                         <div class="form__img-block input-light__mb15">
                             <div class="form__img-block-img form__img-block-img--small" style="background-image: url('/img/preview.png');">
-                                <img src="/img/banner-kos.png" alt="">
+                                <span id="outputFile"></span>
                             </div>
-                            <input type="file" id="md-file" class="form-row__file">
-                            <label class="label-light__title">Добавить главное фото</label>
+                            <div class="form-row__file-btn">
+                                <input type="file" id="file" class="form-row__file-input">
+                                <label class="label-light__title">Добавить главное фото</label>
+                            </div>
                         </div>
-                        <p class="label-light">
+                        <div class="label-light">
                             <label class="label-light__title">Вид спорта</label>
                             <span class="label-light__symbol">*</span>
-                        </p>
+                        </div>
                         <div class="select-wrapper input-light__mb15">
                             <div class="select select-light js-select">
                                 <div class="select__header js-select__header">
@@ -177,13 +193,36 @@
                                             </li>
                                         </ul>
                                     </div>
+                                    <div class="catalog-alpha-row catalog-alpha-row--select">
+                                        <div class="catalog-alpha-list__header">
+                                            <span id="А">А</span>
+                                        </div>
+                                        <ul class="catalog-alpha-col catalog-alpha-col--select">
+                                            <li class="catalog-alpha-item js-select__item">Аквабайк
+                                            </li>
+                                            <li class="catalog-alpha-item js-select__item">Аквабайк
+                                            </li>
+                                            <li class="catalog-alpha-item js-select__item">Аквабайк
+                                            </li>
+                                            <li class="catalog-alpha-item js-select__item">Аквабайк
+                                            </li>
+                                            <li class="catalog-alpha-item js-select__item">Аквабайк
+                                            </li>
+                                            <li class="catalog-alpha-item js-select__item">Аквабайк
+                                            </li>
+                                            <li class="catalog-alpha-item js-select__item">Аквабайк
+                                            </li>
+                                            <li class="catalog-alpha-item js-select__item">Аквабайк
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <p class="label-light label-light--ic">
+                        <div class="label-light label-light--ic">
                             <label class="label-light__title">Тренеры и вожатые</label>
                             <span class="label-light__symbol">*</span>
-                        </p>
+                        </div>
                         <div class="select-wrapper input-light__mb15">
                             <div class="select select-light js-select">
                                 <div class="select__header js-select__header">
@@ -203,62 +242,69 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="label-light label-light--ic">
+                        <div class="label-light label-light--ic">
                             <label for="ac-info" class="label-light__title">Информация и описание</label>
                             <span class="label-light__symbol">*</span>
-                            <a href="#" class="label-light--link">
+                            <a href="##" class="label-light--link js-open-info-block" data-show="info-block4">
                                 <img src="/img/notif-reverse.svg" alt="" class="label-light--ic">
                             </a>
-                        </p>
+                        </div>
                         <div class="input-light__wrap">
+                            <div class="md-info-block js-info-block" data-block="info-block4">
+                                <div class="md-info-block__desc">
+                                    Что-то про Информацию и описание
+                                </div>
+                                <a href="##" class="md-info-block__link">Подробнее</a>
+                            </div>
+                            <div class="overlay js-overlay-info-block" data-overlay="info-block4"></div>
                             <textarea type="text" id="ac-info" placeholder="" class="form-textarea__light input-light__mb15"></textarea>
-                            <a href="#" class="label-light--link">
-                                <img src="/img/coach-ic.svg" alt="" class="label-light--ic">
+                            <a href="##" class="label-light--link js-open-info-block" data-show="info-block4">
+                                <img src="/img/notif-reverse.svg" alt="" class="label-light--ic">
                             </a>
                         </div>
                         <div class="row-acc__form-row row-acc__form-row--mb">
                             <div class="row-acc__form-col row-acc__form-col--30">
-                                <p class="label-light">
+                                <div class="label-light">
                                     <span class="label-light__title">Набор дней</span>
                                     <span class="label-light__symbol">*</span>
-                                </p>
-                                <p class="calendar-coach input-light__mb15">
+                                </div>
+                                <div class="calendar-coach input-light__mb15">
                                     <input id="ac-date" type="date"/>
                                     <label for="ac-date" class="calendar-label"></label>
-                                </p>
+                                </div>
                             </div>
                             <div class="row-acc__form-col row-acc__form-col--30">
-                                <p class="label-light">
+                                <div class="label-light">
                                     <span class="label-light__title">Время</span>
                                     <span class="label-light__symbol">*</span>
-                                </p>
-                                <p class="calendar-coach input-light__mb15">
+                                </div>
+                                <div class="calendar-coach input-light__mb15">
                                     <input id="ac-quantity" type="time"/>
-                                </p>
+                                </div>
                             </div>
                             <div class="row-acc__form-col row-acc__form-col--30">
-                                <p class="label-light">
+                                <div class="label-light">
                                     <span class="label-light__title">Кол-во занятий</span>
                                     <span class="label-light__symbol">*</span>
-                                </p>
-                                <p class="calendar-coach input-light__mb15">
+                                </div>
+                                <div class="calendar-coach input-light__mb15">
                                     <input id="ac-time" type="number"/>
-                                </p>
+                                </div>
                             </div>
                         </div>
                         <div class="row-acc__form-row">
                             <div class="row-acc__form-col">
-                                <p class="label-light">
+                                <div class="label-light">
                                     <label for="ac-price" class="label-light__title">Цена</label>
                                     <span class="label-light__symbol">*</span>
-                                </p>
+                                </div>
                                 <input type="number" id="ac-price" class="input-light input-light__mb15">
                             </div>
                             <div class="row-acc__form-col js-row-acc__form-col row-acc__form-col--info-block">
                                 <div class="label-light label-light--ic">
                                     <label for="ac-sale" class="label-light__title">Скидка</label>
                                     <span class="label-light__symbol">*</span>
-                                    <div class="label-light--link js-xx">
+                                    <div class="label-light--link js-xx js-open-info-block" data-show="info-block1">
                                         <img src="/img/notif-reverse.svg" alt="" class="label-light--ic">
                                     </div>
                                 </div>
@@ -268,7 +314,7 @@
                                         Premium — обычно они покупают больше товаров и по более высокой цене. Если вы
                                         установите цену с Ozon Premium, ваш товар появится на странице акций для подписчиков.
                                     </div>
-                                    <a href="#" class="md-info-block__link js-close-info-block" data-hidden="info-block1"> Подробнее в помощи</a>
+                                    <a href="##" class="md-info-block__link"> Подробнее в помощи</a>
                                 </div>
                                 <div class="overlay js-overlay-info-block" data-overlay="info-block1"></div>
                                 <div class="input-light__wrap">

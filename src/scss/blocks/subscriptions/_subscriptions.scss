@@ -18,7 +18,7 @@
 }
 
 .tc-2 .grid-gallery {
-  grid-template-columns: 1fr;
+  grid-template-columns: 100%;
 
   @include sm {
     grid-template-columns: repeat(2, 1fr);

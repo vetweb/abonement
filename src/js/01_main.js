@@ -1,12 +1,39 @@
 import {Swiper, Mousewheel, Navigation, Pagination} from 'swiper'
 import Scrollbar from 'smooth-scrollbar'
 import smoothscroll from 'smoothscroll-polyfill';
-import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
+import {Fancybox, Carousel, Panzoom} from "@fancyapps/ui";
 
 smoothscroll.polyfill();
 Swiper.use([Mousewheel, Navigation, Pagination])
 
 document.addEventListener('DOMContentLoaded', () => {
+
+	//File loading with preview
+	function handleFileSelect(evt) {
+		let file = evt.target.files; // FileList object
+		let f = file[0];
+		// Only process image files.
+		if (!f.type.match('image.*')) {
+			alert("Image only please....");
+		}
+		let reader = new FileReader();
+		// Closure to capture the file information.
+		reader.onload = (function (theFile) {
+			return function (e) {
+				// Render thumbnail.
+				let span = document.createElement('span');
+				span.innerHTML = ['<img class="thumb" title="', escape(theFile.name), '" src="', e.target.result, '" />'].join('');
+				document.getElementById('outputFile').insertBefore(span, null);
+			};
+		})(f);
+		// Read in the image file as a data URL.
+		reader.readAsDataURL(f);
+	}
+
+	if (document.getElementById('file')) {
+		document.getElementById('file').addEventListener('change', handleFileSelect, false);
+	}
+
 	//Mobile Menu
 	const mobileMenuItems = document.querySelectorAll('.js-mobile-menu-item')
 	const menuFilter = document.querySelector('.js-filter-menu')
@@ -35,40 +62,48 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 	//Rating
-	function rating () {
+	function rating() {
 		const eventItems = document.querySelectorAll('.js-card-events')
 
 		eventItems.forEach((item) => {
 			if (eventItems) {
 				const ratingItems = item.querySelectorAll('.js-rating-el')
 				const ratingCount = item.querySelectorAll('.js-rating-count')
+				const ratingParent = item.querySelectorAll('.js-rating')
+				let clickItem = false
 
 				if (ratingItems) {
 					ratingItems.forEach((ratingItem, w) => {
-						ratingItem.addEventListener('click', () => {
+						ratingItem.addEventListener('click', (event) => {
 							ratingItems.forEach((e, r) => {
 								e.classList.remove('active')
 								if (r <= w) {
 									e.classList.toggle('active')
 								}
 							});
-
+							clickItem = true
 							const ratingData = item.dataset.rating;
-
-							console.log('ratingData', ratingData)
 						});
 
 						ratingItem.addEventListener('mouseover', () => {
-							ratingItems.forEach((e, r) => {
-								e.classList.remove('active')
-								if (r <= w) {
-									e.classList.toggle('active')
-								}
-							})
+							if (!clickItem) {
+								ratingItems.forEach((e, r) => {
+									e.classList.remove('active')
+									if (r <= w) {
+										e.classList.toggle('active')
+									}
+								})
+							}
 						});
 
+						ratingItem.parentNode.addEventListener('mouseleave', () => {
+							if (!clickItem) {
+								ratingItem.classList.remove('active')
+							}
+						});
 					})
 				}
+
 			}
 		})
 	}
@@ -322,58 +357,58 @@ document.addEventListener('DOMContentLoaded', () => {
 	selectIcons();
 
 //
-	const galleryThumbs = document.querySelector('.js-gallery-thumbs');
-	const galleryTop = document.querySelector('.js-gallery-top');
+	const galleryThumbsSelector = document.querySelector('.js-gallery-thumbs');
+	const galleryTopSelector = document.querySelector('.js-gallery-top');
 
-	if (galleryThumbs && galleryTop) {
+	if (galleryThumbsSelector && galleryTopSelector) {
 
 		function getDirection() {
 			return window.innerWidth >= 480 ? 'vertical' : 'horizontal';
 		}
 
-		let myGalleryThumbs = new Swiper(galleryThumbs, {
-			mousewheel: true,
-			speed: 1500,
-			spaceBetween: 10,
-			slideToClickedSlide: true,
-			freeMode: true,
-			grabCursor: true,
-			loop: false,
-			direction: getDirection(),
-			breakpoints: {
-				// when window width is >= 320px
-				320: {
-					slidesPerView: 'auto'
-				},
-				480: {
-					spaceBetween: 0,
-					slidesPerView: 4,
-				},
-			},
-			on: {
-				resize: function () {
-					myGalleryThumbs.changeDirection(getDirection());
-				}
-			}
-		});
-
-		let myGalleryTop = new Swiper(galleryTop, {
-			loop: true,
-			speed: 1500,
-			initialSlide: 0,
+		let galleryTop = new Swiper(galleryTopSelector, {
 			spaceBetween: 10,
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
 			},
-			thumbs: {
-				swiper: myGalleryThumbs
+			loopedSlides: 4,
+			loop: true
+		});
+		let galleryThumbs = new Swiper(galleryThumbsSelector, {
+			spaceBetween: 10,
+			centeredSlides: true,
+			slidesPerView: "auto",
+			slideToClickedSlide: true,
+			direction: getDirection(),
+			freeMode: true,
+			grabCursor: true,
+			loop: true,
+			loopedSlides: 4,
+			breakpoints: {
+				480: {
+					spaceBetween: 0,
+				},
+				on: {
+					resize: function () {
+						galleryThumbs.changeDirection(getDirection());
+					}
+				}
 			}
 		});
 
-		myGalleryThumbs.on('slideChange', () => {
-			myGalleryTop.slideTo(myGalleryThumbs.realIndex, 800)
+		galleryTop.on('slideChangeTransitionEnd', function () {
+			let index_currentSlide = galleryTop.realIndex;
+			let currentSlide = galleryTop.slides[index_currentSlide]
+			galleryThumbs.slideTo(index_currentSlide, 1000, false);
 		});
+
+		galleryThumbs.on('slideChangeTransitionEnd', function () {
+			let index_currentSlide = galleryThumbs.realIndex;
+			let currentSlide = galleryThumbs.slides[index_currentSlide]
+			galleryTop.slideTo(index_currentSlide, 1000, false);
+		});
+
 	}
 
 // custom select
@@ -926,15 +961,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			input.style.color = '#000';
 		})
 	})
-
-	//To map scroll
-	// let btnToMapScroll = document.querySelector('.js-to-map-scroll');
-	// let mapWrap = document.querySelector('.js-to-map-wrap');
-	//
-	// btnToMapScroll.addEventListener('click', function () {
-	// 	mapWrap.scrollIntoView({top: 0, behavior: 'smooth'});
-	// })
-	//
 
 	let btnGeoGet = document.querySelector('.js-modal-geo-user');
 
